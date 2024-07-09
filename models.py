@@ -2,6 +2,8 @@ import torch
 import timm
 from torch import nn
 import math
+import sys
+import os
 
 class ModelWithIntermediateLayers(nn.Module):
     def __init__(self, feature_model, n_last_blocks, autocast_ctx):
@@ -52,7 +54,7 @@ class AttentivePooler(nn.Module):
     def __init__(
         self,
         num_queries=1,
-        embed_dim=768,
+        embed_dim=1536,
         num_heads=12,
         mlp_ratio=4.0,
         depth=1,
@@ -135,7 +137,7 @@ class AttentiveEmbedder(nn.Module):
     """ Attentive Embedder """
     def __init__(
         self,
-        embed_dim=768,
+        embed_dim=1536,
         num_heads=12,
         mlp_ratio=4.0,
         depth=1,
@@ -159,9 +161,12 @@ class AttentiveEmbedder(nn.Module):
         )
         self.linear = nn.Linear(2 * embed_dim, num_classes, bias=True)
 
-    def embed(self, x):
+    def embed(self, x, use_class):
         (patch_tokens, class_token) = x
-        pooled_output = self.pooler(patch_tokens).squeeze(1)
-        combined_output = torch.cat([pooled_output, class_token], dim=-1)
-        x = self.linear(combined_output)
-        return x
+        device = patch_tokens.device  
+        self.pooler = self.pooler.to(device)
+        output = self.pooler(patch_tokens).squeeze(1)
+        if use_class:
+            output = torch.cat([output, class_token.to(device)], dim=-1)
+        output = output.reshape(output.shape[0], -1)
+        return output.float()

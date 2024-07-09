@@ -8,11 +8,12 @@ from sklearn.neighbors import NearestNeighbors
 import argparse
 import logging
 from tqdm import tqdm
+import json
 
 from wildlife_datasets import datasets, splits
-from models import ModelWithIntermediateLayers, create_linear_input
+from models import ModelWithIntermediateLayers, AttentiveEmbedder, create_linear_input
 from datasets import CustomDataset, compute_full_embeddings
-from config import DATASET, get_dataset_root, BATCH_SIZE
+from config import DATASET, MODEL, BATCH_SIZE, CONFIG_PATH, get_dataset_root
 from utils import plot_KNN_ROC
 
 # Initialize logging
@@ -21,18 +22,19 @@ logging.basicConfig(level=logging.INFO, format='%(asctime)s - %(levelname)s - %(
 def parse_args():
     parser = argparse.ArgumentParser(description="KNN Classification Script")
     parser.add_argument('--dataset', type=str, default=DATASET, help='Dataset to use')
+    parser.add_argument('--model', type=str, default=MODEL, help='Feature extractor to use')
     parser.add_argument('--batch_size', type=int, default=BATCH_SIZE, help='Batch size for data loading')
-    parser.add_argument('--use_avgpool', type=bool, default=False, help='Use average pooling')
-    parser.add_argument('--use_class', type=bool, default=True, help='Use class token')
-    parser.add_argument('--use_attentive_pooling', type=bool, default=False, help='Use attentive pooling')
+    parser.add_argument('--configs', type=str, default=CONFIG_PATH, help='Path to JSON file with list of configurations')
     return parser.parse_args()
 
-def load_model(device):
-    model = torch.hub.load('facebookresearch/dinov2', 'dinov2_vitg14', skip_validation=True).to(device)
-    n_last_blocks = 1
-    autocast_ctx = partial(torch.cuda.amp.autocast, enabled=True, dtype=torch.float)
-    return ModelWithIntermediateLayers(model, n_last_blocks, autocast_ctx).to(device)
-
+def load_model(name, device):
+    if name == 'dinov2':
+        model = torch.hub.load('facebookresearch/dinov2', 'dinov2_vitg14', skip_validation=True).to(device)
+        n_last_blocks = 1
+        autocast_ctx = partial(torch.cuda.amp.autocast, enabled=True, dtype=torch.float)
+        return ModelWithIntermediateLayers(model, n_last_blocks, autocast_ctx).to(device)
+    else:
+        raise ValueError(f"Unsupported feature extractor: {name}")
 def get_transformation():
     return transforms.Compose([
         transforms.Resize((224, 224), interpolation=PIL.Image.Resampling.BILINEAR, antialias=True),
@@ -103,14 +105,24 @@ def compute_embeddings(dataloaders, feature_model, device):
         labels.append(l)
     return embeddings, labels
 
-def flatten_embeddings(embeddings, labels, use_avgpool, use_class, use_attentive_pooling):
+def flatten_embeddings(embeddings, labels, pooling_method, use_class, attentive_embedder=None):
     embeddings_f = []
-    if use_attentive_pooling:
-        
-        for t in embeddings:
-            embeddings_f += list([np.array(tr.cpu()) for tr in create_linear_input(t, use_avgpool=use_avgpool, use_class=use_class)])
-    labels_f = np.array([np.array(l.cpu()) for label in labels for l in label])
-    return np.array(embeddings_f), labels_f
+
+    if pooling_method == 'attentive':
+        for embedding in embeddings:
+            device = embedding[0].device
+            attentive_embedder = attentive_embedder.to(device)
+            attended_output = attentive_embedder.embed(embedding, use_class=use_class)
+            embeddings_f.append(attended_output.cpu().detach().numpy())
+    else:
+        for embedding in embeddings:
+            linear_input = create_linear_input(embedding, use_avgpool=(pooling_method == 'linear'), use_class=use_class)
+            embeddings_f.extend([np.array(tr.cpu()) for tr in linear_input])
+
+    labels_f = [np.array(l.cpu()) for label in labels for l in label]
+    embeddings_f = np.vstack(embeddings_f)
+    return np.array(embeddings_f), np.array(labels_f)
+
 
 def evaluate_knn(train_embeddings, test_embeddings, train_labels, test_labels):
     neighbors = NearestNeighbors(n_neighbors=5, algorithm='brute', metric='cosine').fit(train_embeddings)
@@ -125,13 +137,12 @@ def evaluate_knn(train_embeddings, test_embeddings, train_labels, test_labels):
 def main():
     args = parse_args()
 
+    with open(args.configs, 'r') as f:
+        configs = json.load(f)
+
     # Set device
     device = torch.device("cuda:0" if torch.cuda.is_available() else "cpu")
     logging.info(f'Using device: {device}')
-
-    # Load model
-    feature_model = load_model(device)
-    logging.info('Model loaded successfully')
 
     # Define transformations
     transformation = get_transformation()
@@ -150,25 +161,27 @@ def main():
     trainloader, closedtestloader, opentestloader = create_dataloaders(root, df, idx_train, idx_test, transformation, args.batch_size)
     logging.info('Dataloaders created successfully')
 
+    # Load feature extractor
+    feature_extractor = load_model(args.model, device)
+    logging.info('Feature extractor loaded successfully')
+
     # Compute embeddings
     dataloaders = [trainloader, closedtestloader, opentestloader]
-    embeddings, labels = compute_embeddings(dataloaders, feature_model, device)
+    embeddings, labels = compute_embeddings(dataloaders, feature_extractor, device)
     train_embeddings, closed_test_embeddings, open_test_embeddings = embeddings
     train_labels, closed_test_labels, open_test_labels = labels
 
-    # Run experiments with different configurations
-    configs = [
-        {'use_avgpool': False, 'use_class': True},
-        {'use_avgpool': True, 'use_class': False},
-        {'use_avgpool': True, 'use_class': True},
-        # Add more configurations if needed
-    ]
-
     for config in configs:
-        logging.info(f'Running experiment with config: {config}')
-        train_embeddings_f, train_labels_f = flatten_embeddings(train_embeddings, train_labels, config['use_avgpool'], config['use_class'])
-        closed_test_embeddings_f, closed_test_labels_f = flatten_embeddings(closed_test_embeddings, closed_test_labels, config['use_avgpool'], config['use_class'])
-        open_test_embeddings_f, open_test_labels_f = flatten_embeddings(open_test_embeddings, open_test_labels, config['use_avgpool'], config['use_class'])
+        if args.model == 'dinov2' and config['pooling_method'] == 'none' and not config['use_class']:
+            raise ValueError("Invalid configuration: pooling_method='none' and use_class=False is not allowed.")
+
+        # Initialize attentive pooler if needed
+        attentive_embedder = AttentiveEmbedder() if config['pooling_method'] == 'attentive' else None
+
+        logging.info(f'Running experiment with model: {args.model}, pooling method: {config["pooling_method"]}, use_class: {config["use_class"]}')
+        train_embeddings_f, train_labels_f = flatten_embeddings(train_embeddings, train_labels, config['pooling_method'], config['use_class'], attentive_embedder)
+        closed_test_embeddings_f, closed_test_labels_f = flatten_embeddings(closed_test_embeddings, closed_test_labels, config['pooling_method'], config['use_class'], attentive_embedder)
+        open_test_embeddings_f, open_test_labels_f = flatten_embeddings(open_test_embeddings, open_test_labels, config['pooling_method'], config['use_class'], attentive_embedder)
 
         # Evaluate KNN for closed test set
         closed_min_dist, closed_top1_acc = evaluate_knn(train_embeddings_f, closed_test_embeddings_f, train_labels_f, closed_test_labels_f)
@@ -178,8 +191,8 @@ def main():
 
         # Plot ROC curve
         roc_auc = plot_KNN_ROC(closed_min_dist, open_min_dist)
-        logging.info(f'Top-1 acc. for config {config}: {closed_top1_acc:.4f}')
-        logging.info(f'ROC AUC for config {config}: {roc_auc:.4f}')
+        logging.info(f'Top-1 acc. for config: {closed_top1_acc:.4f}')
+        logging.info(f'ROC AUC for config: {roc_auc:.4f}')
 
 if __name__ == '__main__':
     main()
