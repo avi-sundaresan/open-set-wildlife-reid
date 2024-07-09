@@ -1,6 +1,7 @@
 import os
 
-DATASET = 'StripeSpotter'
+# DATASET = 'StripeSpotter'
+DATASET = 'FriesianCattle2017'
 ROOT_DIR = '/home/avisund/data/wildlife_datasets/'
 BATCH_SIZE = 1
 

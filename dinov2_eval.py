@@ -24,6 +24,7 @@ def parse_args():
     parser.add_argument('--batch_size', type=int, default=BATCH_SIZE, help='Batch size for data loading')
     parser.add_argument('--use_avgpool', type=bool, default=False, help='Use average pooling')
     parser.add_argument('--use_class', type=bool, default=True, help='Use class token')
+    parser.add_argument('--use_attentive_pooling', type=bool, default=False, help='Use attentive pooling')
     return parser.parse_args()
 
 def load_model(device):
@@ -102,10 +103,12 @@ def compute_embeddings(dataloaders, feature_model, device):
         labels.append(l)
     return embeddings, labels
 
-def flatten_embeddings(embeddings, labels, use_avgpool, use_class):
+def flatten_embeddings(embeddings, labels, use_avgpool, use_class, use_attentive_pooling):
     embeddings_f = []
-    for t in embeddings:
-        embeddings_f += list([np.array(tr.cpu()) for tr in create_linear_input(t, use_avgpool=use_avgpool, use_class=use_class)])
+    if use_attentive_pooling:
+        
+        for t in embeddings:
+            embeddings_f += list([np.array(tr.cpu()) for tr in create_linear_input(t, use_avgpool=use_avgpool, use_class=use_class)])
     labels_f = np.array([np.array(l.cpu()) for label in labels for l in label])
     return np.array(embeddings_f), labels_f
 
