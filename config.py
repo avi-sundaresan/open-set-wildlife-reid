@@ -2,7 +2,6 @@ import os
 
 MODEL = 'dinov2'
 DATASETS = ['FriesianCattle2017', 
-            'GreenSeaTurtles', 
             'NyalaData',
             'StripeSpotter'
 ]
