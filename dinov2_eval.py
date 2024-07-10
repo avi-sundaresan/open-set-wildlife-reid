@@ -48,7 +48,7 @@ def main():
     logging.info(f'Using device: {device}')
 
     # Define transformations
-    transformation = get_transformation()
+    transformation = get_transformation(args.model)
 
     for dataset in args.datasets:
         # Load dataset

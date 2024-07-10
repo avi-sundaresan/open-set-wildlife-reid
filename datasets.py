@@ -57,6 +57,9 @@ def prepare_datasets(root, dataset_name):
     elif dataset_name == 'GreenSeaTurtles':
         datasets.GreenSeaTurtles.get_data(root)
         d = datasets.GreenSeaTurtles(root)
+    elif dataset_name == 'MacaqueFaces':
+        datasets.MacaqueFaces(root)
+        d = datasets.MacaqueFaces(root)
     elif dataset_name == 'MPDD':
         datasets.MPDD.get_data(root)
         d = datasets.MPDD(root)

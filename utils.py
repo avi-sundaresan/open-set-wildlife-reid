@@ -9,10 +9,16 @@ from tqdm import tqdm
 
 from models import create_linear_input
 
-def get_transformation():
-    return transforms.Compose([
-        transforms.Resize((224, 224), interpolation=PIL.Image.Resampling.BILINEAR, antialias=True),
-        transforms.ToTensor()
+def get_transformation(model):
+    if model == "dinov2":
+        return transforms.Compose([
+            transforms.Resize((224, 224), interpolation=PIL.Image.Resampling.BILINEAR, antialias=True),
+            transforms.ToTensor()
+        ])
+    elif model == "megadescriptor":
+        return transforms.Compose([
+        transforms.Resize((384, 384), interpolation= PIL.Image.Resampling.BILINEAR, antialias=True),
+        transforms.ToTensor(),
     ])
 
 def compute_full_embeddings(dataloader, feature_model, device):

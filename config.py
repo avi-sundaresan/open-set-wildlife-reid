@@ -1,10 +1,18 @@
 import os
 
 MODEL = 'dinov2'
-DATASETS = ['FriesianCattle2017', 
-            'NyalaData',
-            'StripeSpotter'
-]
+
+DATASETS = ['StripeSpotter']
+# DATASETS = ['CTai',
+#             'CZoo',
+#             'DogFaceNet', 
+#             'FriesianCattle2017',
+#             'IPanda50',
+#             'MacaqueFaces',
+#             'MPDD', 
+#             'PolarBearVidID',
+# ]
+
 # DATASETS = ['AerialCattle2017', 
 #             'CTai',
 #             'CZoo',
