@@ -9,11 +9,12 @@ import argparse
 import logging
 from tqdm import tqdm
 import json
+import timm
 
 from wildlife_datasets import datasets, splits
 from models import ModelWithIntermediateLayers, AttentiveEmbedder, create_linear_input
 from datasets import CustomDataset, compute_full_embeddings
-from config import DATASET, MODEL, BATCH_SIZE, CONFIG_PATH, get_dataset_root
+from config import DATASETS, MODEL, BATCH_SIZE, CONFIG_PATH, get_dataset_root
 from utils import plot_KNN_ROC
 
 # Initialize logging
@@ -21,7 +22,7 @@ logging.basicConfig(level=logging.INFO, format='%(asctime)s - %(levelname)s - %(
 
 def parse_args():
     parser = argparse.ArgumentParser(description="KNN Classification Script")
-    parser.add_argument('--dataset', type=str, default=DATASET, help='Dataset to use')
+    parser.add_argument('--datasets', type=list, default=DATASETS, help='Datasets to use')
     parser.add_argument('--model', type=str, default=MODEL, help='Feature extractor to use')
     parser.add_argument('--batch_size', type=int, default=BATCH_SIZE, help='Batch size for data loading')
     parser.add_argument('--configs', type=str, default=CONFIG_PATH, help='Path to JSON file with list of configurations')
@@ -33,6 +34,9 @@ def load_model(name, device):
         n_last_blocks = 1
         autocast_ctx = partial(torch.cuda.amp.autocast, enabled=True, dtype=torch.float)
         return ModelWithIntermediateLayers(model, n_last_blocks, autocast_ctx).to(device)
+    if name == 'megadescriptor':
+        model = timm.create_model("hf-hub:BVRA/MegaDescriptor-L-384", pretrained=True)
+        return model
     else:
         raise ValueError(f"Unsupported feature extractor: {name}")
 def get_transformation():
@@ -42,7 +46,40 @@ def get_transformation():
     ])
 
 def prepare_datasets(root, dataset_name):
-    if dataset_name == 'StripeSpotter':
+    if dataset_name == 'AerialCattle2017':
+        datasets.AerialCattle2017.get_data(root)
+        d = datasets.AerialCattle2017(root)
+    elif dataset_name == 'CTai':
+        datasets.CTai.get_data(root)
+        d = datasets.CTai(root)
+    elif dataset_name == 'CZoo':
+        datasets.CZoo.get_data(root)
+        d = datasets.CZoo(root)
+    elif dataset_name == 'DogFaceNet':
+        datasets.DogFaceNet.get_data(root)
+        d = datasets.DogFaceNet(root)
+    elif dataset_name == 'FriesianCattle2015v2':
+        datasets.FriesianCattle2015v2.get_data(root)
+        d = datasets.FriesianCattle2015v2(root)
+    elif dataset_name == 'IPanda50':
+        datasets.IPanda50.get_data(root)
+        d = datasets.IPanda50(root)
+    elif dataset_name == 'GreenSeaTurtles':
+        datasets.GreenSeaTurtles.get_data(root)
+        d = datasets.GreenSeaTurtles(root)
+    elif dataset_name == 'MPDD':
+        datasets.MPDD.get_data(root)
+        d = datasets.MPDD(root)
+    elif dataset_name == 'NyalaData':
+        datasets.NyalaData.get_data(root)
+        d = datasets.NyalaData(root)
+    elif dataset_name == 'PolarBearVidID':
+        datasets.PolarBearVidID.get_data(root)
+        d = datasets.PolarBearVidID(root)
+    elif dataset_name == 'SeaTurtleIDHeads':
+        datasets.SeaTurtleIDHeads.get_data(root)
+        d = datasets.SeaTurtleIDHeads(root)
+    elif dataset_name == 'StripeSpotter':
         datasets.StripeSpotter.get_data(root)
         d = datasets.StripeSpotter(root)
     elif dataset_name == 'FriesianCattle2017':
@@ -147,52 +184,53 @@ def main():
     # Define transformations
     transformation = get_transformation()
 
-    # Load dataset
-    root = get_dataset_root(args.dataset)
-    logging.info(root)
-    d = prepare_datasets(root, args.dataset)
-    logging.info('Dataset loaded successfully')
+    for dataset in args.datasets:
+        # Load dataset
+        root = get_dataset_root(dataset)
+        logging.info(root)
+        d = prepare_datasets(root, dataset)
+        logging.info(f'Dataset {dataset} loaded successfully')
 
-    # Split dataset
-    df, idx_train, idx_test = split_dataset(d)
-    logging.info('Dataset split successfully')
+        # Split dataset
+        df, idx_train, idx_test = split_dataset(d)
+        logging.info('Dataset split successfully')
 
-    # Create dataloaders
-    trainloader, closedtestloader, opentestloader = create_dataloaders(root, df, idx_train, idx_test, transformation, args.batch_size)
-    logging.info('Dataloaders created successfully')
+        # Create dataloaders
+        trainloader, closedtestloader, opentestloader = create_dataloaders(root, df, idx_train, idx_test, transformation, args.batch_size)
+        logging.info('Dataloaders created successfully')
 
-    # Load feature extractor
-    feature_extractor = load_model(args.model, device)
-    logging.info('Feature extractor loaded successfully')
+        # Load feature extractor
+        feature_extractor = load_model(args.model, device)
+        logging.info('Feature extractor loaded successfully')
 
-    # Compute embeddings
-    dataloaders = [trainloader, closedtestloader, opentestloader]
-    embeddings, labels = compute_embeddings(dataloaders, feature_extractor, device)
-    train_embeddings, closed_test_embeddings, open_test_embeddings = embeddings
-    train_labels, closed_test_labels, open_test_labels = labels
+        # Compute embeddings
+        dataloaders = [trainloader, closedtestloader, opentestloader]
+        embeddings, labels = compute_embeddings(dataloaders, feature_extractor, device)
+        train_embeddings, closed_test_embeddings, open_test_embeddings = embeddings
+        train_labels, closed_test_labels, open_test_labels = labels
 
-    for config in configs:
-        if args.model == 'dinov2' and config['pooling_method'] == 'none' and not config['use_class']:
-            raise ValueError("Invalid configuration: pooling_method='none' and use_class=False is not allowed.")
+        for config in configs:
+            if args.model == 'dinov2' and config['pooling_method'] == 'none' and not config['use_class']:
+                raise ValueError("Invalid configuration: pooling_method='none' and use_class=False is not allowed.")
 
-        # Initialize attentive pooler if needed
-        attentive_embedder = AttentiveEmbedder() if config['pooling_method'] == 'attentive' else None
+            # Initialize attentive pooler if needed
+            attentive_embedder = AttentiveEmbedder() if config['pooling_method'] == 'attentive' else None
 
-        logging.info(f'Running experiment with model: {args.model}, pooling method: {config["pooling_method"]}, use_class: {config["use_class"]}')
-        train_embeddings_f, train_labels_f = flatten_embeddings(train_embeddings, train_labels, config['pooling_method'], config['use_class'], attentive_embedder)
-        closed_test_embeddings_f, closed_test_labels_f = flatten_embeddings(closed_test_embeddings, closed_test_labels, config['pooling_method'], config['use_class'], attentive_embedder)
-        open_test_embeddings_f, open_test_labels_f = flatten_embeddings(open_test_embeddings, open_test_labels, config['pooling_method'], config['use_class'], attentive_embedder)
+            logging.info(f'Running experiment with dataset: {dataset}, model: {args.model}, pooling method: {config["pooling_method"]}, use_class: {config["use_class"]}')
+            train_embeddings_f, train_labels_f = flatten_embeddings(train_embeddings, train_labels, config['pooling_method'], config['use_class'], attentive_embedder)
+            closed_test_embeddings_f, closed_test_labels_f = flatten_embeddings(closed_test_embeddings, closed_test_labels, config['pooling_method'], config['use_class'], attentive_embedder)
+            open_test_embeddings_f, open_test_labels_f = flatten_embeddings(open_test_embeddings, open_test_labels, config['pooling_method'], config['use_class'], attentive_embedder)
 
-        # Evaluate KNN for closed test set
-        closed_min_dist, closed_top1_acc = evaluate_knn(train_embeddings_f, closed_test_embeddings_f, train_labels_f, closed_test_labels_f)
+            # Evaluate KNN for closed test set
+            closed_min_dist, closed_top1_acc = evaluate_knn(train_embeddings_f, closed_test_embeddings_f, train_labels_f, closed_test_labels_f)
 
-        # Evaluate KNN for open test set
-        open_min_dist, open_top1_acc = evaluate_knn(train_embeddings_f, open_test_embeddings_f, train_labels_f, open_test_labels_f)
+            # Evaluate KNN for open test set
+            open_min_dist, open_top1_acc = evaluate_knn(train_embeddings_f, open_test_embeddings_f, train_labels_f, open_test_labels_f)
 
-        # Plot ROC curve
-        roc_auc = plot_KNN_ROC(closed_min_dist, open_min_dist)
-        logging.info(f'Top-1 acc. for config: {closed_top1_acc:.4f}')
-        logging.info(f'ROC AUC for config: {roc_auc:.4f}')
+            # Plot ROC curve
+            roc_auc = plot_KNN_ROC(closed_min_dist, open_min_dist)
+            logging.info(f'Top-1 acc. for config: {closed_top1_acc:.4f}')
+            logging.info(f'ROC AUC for config: {roc_auc:.4f}')  
 
 if __name__ == '__main__':
     main()

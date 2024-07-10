@@ -1,5 +1,9 @@
 [
     {
+        "pooling_method": "none",
+        "use_class": true
+    },
+    {
         "pooling_method": "linear",
         "use_class": true
     },
