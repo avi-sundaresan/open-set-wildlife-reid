@@ -18,7 +18,8 @@ from config import DATASETS, MODEL, BATCH_SIZE, CONFIG_PATH, get_dataset_root
 from utils import plot_KNN_ROC
 
 # Initialize logging
-logging.basicConfig(level=logging.INFO, format='%(asctime)s - %(levelname)s - %(message)s')
+logging.basicConfig(filename='dinov2_open_set_results.log', level=logging.INFO, 
+                    format='%(asctime)s - %(levelname)s - %(message)s')
 
 def parse_args():
     parser = argparse.ArgumentParser(description="KNN Classification Script")
