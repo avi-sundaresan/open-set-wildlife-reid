@@ -1,8 +1,9 @@
 import torch
 from torch import nn
+import torch.nn.functional as F
 import math
-import sys
-import os
+
+from jepa_utils import Block, CrossAttention, CrossAttentionBlock, trunc_normal_
 
 class ModelWithIntermediateLayers(nn.Module):
     def __init__(self, feature_model, n_last_blocks, autocast_ctx):
@@ -19,6 +20,20 @@ class ModelWithIntermediateLayers(nn.Module):
                     images, self.n_last_blocks, return_class_token=True
                 )
         return features
+    
+class ModelWithIntermediateLayersMD(nn.Module):
+    def __init__(self, feature_model, autocast_ctx):
+        super().__init__()
+        self.feature_model = feature_model
+        self.feature_model.eval()  # Set the model to evaluation mode
+        self.autocast_ctx = autocast_ctx
+
+    def forward(self, images):
+        with torch.inference_mode():  # Disable gradient computation
+            with self.autocast_ctx():  # Use mixed precision if applicable
+                patch_tokens = self.feature_model.forward_features(images)
+                class_token = self.feature_model(images) 
+        return ((patch_tokens, class_token),)
 
 def create_linear_input(x_tokens_list, use_avgpool, use_class):
     intermediate_output = x_tokens_list
@@ -37,16 +52,6 @@ def create_linear_input(x_tokens_list, use_avgpool, use_class):
     if not use_avgpool and use_class:
       return class_output.float()
     return None
-
-sys.path.append(os.path.expanduser('~/models'))
-import jepa
-
-from jepa.src.models.utils.modules import (
-    Block,
-    CrossAttention,
-    CrossAttentionBlock
-)
-from jepa.src.utils.tensors import trunc_normal_
 
 class AttentivePooler(nn.Module):
     """ Attentive Pooler """
