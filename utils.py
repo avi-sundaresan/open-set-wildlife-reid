@@ -64,7 +64,6 @@ def flatten_embeddings(embeddings, labels, pooling_method, use_class, attentive_
 def evaluate_knn(train_embeddings, test_embeddings, train_labels, test_labels):
     neighbors = NearestNeighbors(n_neighbors=5, algorithm='brute', metric='cosine').fit(train_embeddings)
     test_knn_distances, test_knn_indices = neighbors.kneighbors(test_embeddings)
-
     t1_hits = sum(1 for i, label in enumerate(test_labels) if train_labels[test_knn_indices[i][0]] == label)
     top1_accuracy = t1_hits / len(test_labels)
 

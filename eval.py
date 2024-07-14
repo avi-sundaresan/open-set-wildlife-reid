@@ -1,9 +1,6 @@
-import pandas as pd
-import numpy as np
 import torch
 import argparse
 import logging
-from tqdm import tqdm
 import json
 import timm
 from functools import partial

@@ -14,6 +14,7 @@ class ModelWithIntermediateLayersMegaDescriptor(nn.Module):
         with torch.inference_mode():  # Disable gradient computation
             with self.autocast_ctx():  # Use mixed precision if applicable
                 patch_tokens = self.feature_model.forward_features(images)
+                patch_tokens = patch_tokens.view(patch_tokens.shape[0], -1, patch_tokens.shape[-1])
                 class_token = self.feature_model(images) 
         return ((patch_tokens, class_token),)
 
