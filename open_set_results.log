@@ -221,3 +221,332 @@
 2024-07-09 23:53:18,263 - INFO - Top-1 acc. for config: 0.8154
 2024-07-09 23:53:18,263 - INFO - ROC AUC for config: 0.8349
 
+2024-07-14 15:41:32,667 - INFO - Using device: cuda:0
+2024-07-14 15:41:32,668 - INFO - /home/avisund/data/wildlife_datasets/CTai/
+2024-07-14 15:41:33,189 - INFO - Dataset CTai loaded successfully
+2024-07-14 15:41:33,199 - INFO - Dataset split successfully
+2024-07-14 15:41:33,204 - INFO - Dataloaders created successfully
+2024-07-14 15:41:35,153 - INFO - Loading pretrained weights from Hugging Face hub (BVRA/MegaDescriptor-L-384)
+2024-07-14 15:41:36,614 - INFO - Feature extractor loaded successfully
+2024-07-14 15:46:05,250 - INFO - Running experiment with dataset: CTai, model: megadescriptor, pooling method: linear, use_class: False
+2024-07-14 15:46:05,708 - INFO - Top-1 acc. for config: 0.9480
+2024-07-14 15:46:05,709 - INFO - ROC AUC for config: 0.9961
+2024-07-14 15:46:05,992 - INFO - Running experiment with dataset: CTai, model: megadescriptor, pooling method: attentive, use_class: False
+2024-07-14 15:46:09,274 - INFO - Top-1 acc. for config: 0.9389
+2024-07-14 15:46:09,274 - INFO - ROC AUC for config: 0.9945
+2024-07-14 15:46:09,274 - INFO - /home/avisund/data/wildlife_datasets/CZoo/
+2024-07-14 15:46:09,503 - INFO - Dataset CZoo loaded successfully
+2024-07-14 15:46:09,508 - INFO - Dataset split successfully
+2024-07-14 15:46:09,511 - INFO - Dataloaders created successfully
+2024-07-14 15:46:11,465 - INFO - Loading pretrained weights from Hugging Face hub (BVRA/MegaDescriptor-L-384)
+2024-07-14 15:46:12,844 - INFO - Feature extractor loaded successfully
+2024-07-14 15:48:15,610 - INFO - Running experiment with dataset: CZoo, model: megadescriptor, pooling method: linear, use_class: False
+2024-07-14 15:48:15,793 - INFO - Top-1 acc. for config: 0.9881
+2024-07-14 15:48:15,794 - INFO - ROC AUC for config: 0.9696
+2024-07-14 15:48:16,074 - INFO - Running experiment with dataset: CZoo, model: megadescriptor, pooling method: attentive, use_class: False
+2024-07-14 15:48:17,558 - INFO - Top-1 acc. for config: 0.9881
+2024-07-14 15:48:17,558 - INFO - ROC AUC for config: 0.9666
+2024-07-14 15:48:17,558 - INFO - /home/avisund/data/wildlife_datasets/DogFaceNet/
+2024-07-14 15:48:17,739 - INFO - Dataset DogFaceNet loaded successfully
+2024-07-14 15:48:17,831 - INFO - Dataset split successfully
+2024-07-14 15:48:17,837 - INFO - Dataloaders created successfully
+2024-07-14 15:48:19,770 - INFO - Loading pretrained weights from Hugging Face hub (BVRA/MegaDescriptor-L-384)
+2024-07-14 15:48:21,144 - INFO - Feature extractor loaded successfully
+2024-07-14 15:56:27,982 - INFO - Running experiment with dataset: DogFaceNet, model: megadescriptor, pooling method: linear, use_class: False
+2024-07-14 15:56:28,839 - INFO - Top-1 acc. for config: 0.5813
+2024-07-14 15:56:28,839 - INFO - ROC AUC for config: 0.6690
+2024-07-14 15:56:29,107 - INFO - Running experiment with dataset: DogFaceNet, model: megadescriptor, pooling method: attentive, use_class: False
+2024-07-14 15:56:35,051 - INFO - Top-1 acc. for config: 0.5602
+2024-07-14 15:56:35,051 - INFO - ROC AUC for config: 0.6620
+2024-07-14 15:56:35,051 - INFO - /home/avisund/data/wildlife_datasets/FriesianCattle2015v2/
+2024-07-14 15:56:35,062 - INFO - Dataset FriesianCattle2015v2 loaded successfully
+2024-07-14 15:56:35,066 - INFO - Dataset split successfully
+2024-07-14 15:56:35,068 - INFO - Dataloaders created successfully
+2024-07-14 15:56:37,036 - INFO - Loading pretrained weights from Hugging Face hub (BVRA/MegaDescriptor-L-384)
+2024-07-14 15:56:38,408 - INFO - Feature extractor loaded successfully
+2024-07-14 15:56:49,529 - INFO - Running experiment with dataset: FriesianCattle2015v2, model: megadescriptor, pooling method: linear, use_class: False
+2024-07-14 15:56:49,556 - INFO - Top-1 acc. for config: 0.9091
+2024-07-14 15:56:49,556 - INFO - ROC AUC for config: 0.8939
+2024-07-14 15:56:49,822 - INFO - Running experiment with dataset: FriesianCattle2015v2, model: megadescriptor, pooling method: attentive, use_class: False
+2024-07-14 15:56:49,973 - INFO - Top-1 acc. for config: 0.8636
+2024-07-14 15:56:49,973 - INFO - ROC AUC for config: 0.9356
+2024-07-14 15:56:49,973 - INFO - /home/avisund/data/wildlife_datasets/FriesianCattle2017/
+2024-07-14 15:56:49,990 - INFO - Dataset FriesianCattle2017 loaded successfully
+2024-07-14 15:56:49,997 - INFO - Dataset split successfully
+2024-07-14 15:56:50,000 - INFO - Dataloaders created successfully
+2024-07-14 15:56:51,900 - INFO - Loading pretrained weights from Hugging Face hub (BVRA/MegaDescriptor-L-384)
+2024-07-14 15:56:53,253 - INFO - Feature extractor loaded successfully
+2024-07-14 15:57:47,459 - INFO - Running experiment with dataset: FriesianCattle2017, model: megadescriptor, pooling method: linear, use_class: False
+2024-07-14 15:57:47,568 - INFO - Top-1 acc. for config: 0.9915
+2024-07-14 15:57:47,569 - INFO - ROC AUC for config: 0.9323
+2024-07-14 15:57:47,859 - INFO - Running experiment with dataset: FriesianCattle2017, model: megadescriptor, pooling method: attentive, use_class: False
+2024-07-14 15:57:48,522 - INFO - Top-1 acc. for config: 0.9915
+2024-07-14 15:57:48,522 - INFO - ROC AUC for config: 0.9325
+2024-07-14 15:57:48,522 - INFO - /home/avisund/data/wildlife_datasets/IPanda50/
+2024-07-14 15:57:48,993 - INFO - Dataset IPanda50 loaded successfully
+2024-07-14 15:57:49,004 - INFO - Dataset split successfully
+2024-07-14 15:57:49,009 - INFO - Dataloaders created successfully
+2024-07-14 15:57:50,893 - INFO - Loading pretrained weights from Hugging Face hub (BVRA/MegaDescriptor-L-384)
+2024-07-14 15:57:52,390 - INFO - Feature extractor loaded successfully
+2024-07-14 16:04:31,712 - INFO - Running experiment with dataset: IPanda50, model: megadescriptor, pooling method: linear, use_class: False
+2024-07-14 16:04:32,362 - INFO - Top-1 acc. for config: 0.9501
+2024-07-14 16:04:32,363 - INFO - ROC AUC for config: 0.7726
+2024-07-14 16:04:32,658 - INFO - Running experiment with dataset: IPanda50, model: megadescriptor, pooling method: attentive, use_class: False
+2024-07-14 16:04:37,523 - INFO - Top-1 acc. for config: 0.9483
+2024-07-14 16:04:37,523 - INFO - ROC AUC for config: 0.7776
+2024-07-14 16:04:37,523 - INFO - /home/avisund/data/wildlife_datasets/MacaqueFaces/
+2024-07-14 16:04:37,680 - INFO - Dataset MacaqueFaces loaded successfully
+2024-07-14 16:04:37,692 - INFO - Dataset split successfully
+2024-07-14 16:04:37,696 - INFO - Dataloaders created successfully
+2024-07-14 16:04:39,690 - INFO - Loading pretrained weights from Hugging Face hub (BVRA/MegaDescriptor-L-384)
+2024-07-14 16:04:41,057 - INFO - Feature extractor loaded successfully
+2024-07-14 16:31:07,023 - INFO - Running experiment with dataset: MacaqueFaces, model: megadescriptor, pooling method: linear, use_class: False
+2024-07-14 16:31:07,589 - INFO - Top-1 acc. for config: 0.9939
+2024-07-14 16:31:07,589 - INFO - ROC AUC for config: 0.9680
+2024-07-14 16:31:07,851 - INFO - Running experiment with dataset: MacaqueFaces, model: megadescriptor, pooling method: attentive, use_class: False
+2024-07-14 16:31:12,234 - INFO - Top-1 acc. for config: 0.9919
+2024-07-14 16:31:12,234 - INFO - ROC AUC for config: 0.9711
+2024-07-14 16:31:12,234 - INFO - /home/avisund/data/wildlife_datasets/NyalaData/
+2024-07-14 16:31:12,276 - INFO - Dataset NyalaData loaded successfully
+2024-07-14 16:31:12,292 - INFO - Dataset split successfully
+2024-07-14 16:31:12,295 - INFO - Dataloaders created successfully
+2024-07-14 16:31:14,361 - INFO - Loading pretrained weights from Hugging Face hub (BVRA/MegaDescriptor-L-384)
+2024-07-14 16:31:15,761 - INFO - Feature extractor loaded successfully
+2024-07-14 16:33:07,641 - INFO - Running experiment with dataset: NyalaData, model: megadescriptor, pooling method: linear, use_class: False
+2024-07-14 16:33:07,809 - INFO - Top-1 acc. for config: 0.5859
+2024-07-14 16:33:07,810 - INFO - ROC AUC for config: 0.7891
+2024-07-14 16:33:08,111 - INFO - Running experiment with dataset: NyalaData, model: megadescriptor, pooling method: attentive, use_class: False
+2024-07-14 16:33:09,472 - INFO - Top-1 acc. for config: 0.5703
+2024-07-14 16:33:09,472 - INFO - ROC AUC for config: 0.7888
+2024-07-14 16:33:09,472 - INFO - /home/avisund/data/wildlife_datasets/SeaTurtleIDHeadsStripeSpotter/
+2024-07-14 16:51:13,565 - INFO - Using device: cuda:0
+2024-07-14 16:51:13,565 - INFO - /home/avisund/data/wildlife_datasets/SeaTurtleIDHeads/
+2024-07-14 16:51:13,642 - INFO - Dataset SeaTurtleIDHeads loaded successfully
+2024-07-14 16:51:13,679 - INFO - Dataset split successfully
+2024-07-14 16:51:13,684 - INFO - Dataloaders created successfully
+2024-07-14 16:51:15,686 - INFO - Loading pretrained weights from Hugging Face hub (BVRA/MegaDescriptor-L-384)
+2024-07-14 16:51:17,140 - INFO - Feature extractor loaded successfully
+2024-07-14 16:58:34,336 - INFO - Running experiment with dataset: SeaTurtleIDHeads, model: megadescriptor, pooling method: linear, use_class: False
+2024-07-14 16:58:35,087 - INFO - Top-1 acc. for config: 0.9479
+2024-07-14 16:58:35,087 - INFO - ROC AUC for config: 0.9501
+2024-07-14 16:58:35,365 - INFO - Running experiment with dataset: SeaTurtleIDHeads, model: megadescriptor, pooling method: attentive, use_class: False
+2024-07-14 16:58:40,805 - INFO - Top-1 acc. for config: 0.9467
+2024-07-14 16:58:40,805 - INFO - ROC AUC for config: 0.9505
+2024-07-14 16:58:40,805 - INFO - /home/avisund/data/wildlife_datasets/StripeSpotter/
+2024-07-14 16:58:40,841 - INFO - Dataset StripeSpotter loaded successfully
+2024-07-14 16:58:40,860 - INFO - Dataset split successfully
+2024-07-14 16:58:40,862 - INFO - Dataloaders created successfully
+2024-07-14 16:58:42,777 - INFO - Loading pretrained weights from Hugging Face hub (BVRA/MegaDescriptor-L-384)
+2024-07-14 16:58:44,129 - INFO - Feature extractor loaded successfully
+2024-07-14 16:59:31,779 - INFO - Running experiment with dataset: StripeSpotter, model: megadescriptor, pooling method: linear, use_class: False
+2024-07-14 16:59:31,853 - INFO - Top-1 acc. for config: 0.9692
+2024-07-14 16:59:31,853 - INFO - ROC AUC for config: 0.9790
+2024-07-14 16:59:32,108 - INFO - Running experiment with dataset: StripeSpotter, model: megadescriptor, pooling method: attentive, use_class: False
+2024-07-14 16:59:32,691 - INFO - Top-1 acc. for config: 0.9692
+2024-07-14 16:59:32,691 - INFO - ROC AUC for config: 0.9788
+
+2024-07-14 19:20:28,582 - INFO - Using device: cuda:0
+2024-07-14 19:20:28,582 - INFO - /home/avisund/data/wildlife_datasets/CTai/
+2024-07-14 19:20:29,096 - INFO - Dataset CTai loaded successfully
+2024-07-14 19:20:29,106 - INFO - Dataset split successfully
+2024-07-14 19:20:29,110 - INFO - Dataloaders created successfully
+2024-07-14 19:20:29,648 - INFO - using SwiGLU layer as FFN
+2024-07-14 19:20:42,973 - INFO - Feature extractor loaded successfully
+2024-07-14 19:23:10,276 - INFO - Using device: cuda:0
+2024-07-14 19:23:10,276 - INFO - /home/avisund/data/wildlife_datasets/CTai/
+2024-07-14 19:23:10,800 - INFO - Dataset CTai loaded successfully
+2024-07-14 19:23:10,810 - INFO - Dataset split successfully
+2024-07-14 19:23:10,814 - INFO - Dataloaders created successfully
+2024-07-14 19:23:11,296 - INFO - using SwiGLU layer as FFN
+2024-07-14 19:23:24,626 - INFO - Feature extractor loaded successfully
+2024-07-14 19:29:53,964 - INFO - Running experiment with dataset: CTai, model: dinov2_reg, pooling method: none, use_class: True
+2024-07-14 19:29:54,447 - INFO - Top-1 acc. for config: 0.7738
+2024-07-14 19:29:54,448 - INFO - ROC AUC for config: 0.6260
+2024-07-14 19:29:54,448 - INFO - Running experiment with dataset: CTai, model: dinov2_reg, pooling method: linear, use_class: True
+2024-07-14 19:29:54,993 - INFO - Top-1 acc. for config: 0.7828
+2024-07-14 19:29:54,993 - INFO - ROC AUC for config: 0.6391
+2024-07-14 19:29:54,993 - INFO - Running experiment with dataset: CTai, model: dinov2_reg, pooling method: linear, use_class: False
+2024-07-14 19:29:55,411 - INFO - Top-1 acc. for config: 0.7398
+2024-07-14 19:29:55,411 - INFO - ROC AUC for config: 0.6343
+2024-07-14 19:29:55,697 - INFO - Running experiment with dataset: CTai, model: dinov2_reg, pooling method: attentive, use_class: True
+2024-07-14 19:29:59,200 - INFO - Top-1 acc. for config: 0.7738
+2024-07-14 19:29:59,200 - INFO - ROC AUC for config: 0.6320
+2024-07-14 19:29:59,479 - INFO - Running experiment with dataset: CTai, model: dinov2_reg, pooling method: attentive, use_class: False
+2024-07-14 19:30:02,876 - INFO - Top-1 acc. for config: 0.7172
+2024-07-14 19:30:02,876 - INFO - ROC AUC for config: 0.6337
+2024-07-14 19:30:02,876 - INFO - /home/avisund/data/wildlife_datasets/CZoo/
+2024-07-14 19:30:03,104 - INFO - Dataset CZoo loaded successfully
+2024-07-14 19:30:03,109 - INFO - Dataset split successfully
+2024-07-14 19:30:03,112 - INFO - Dataloaders created successfully
+2024-07-14 19:30:03,634 - INFO - using SwiGLU layer as FFN
+2024-07-14 19:30:16,925 - INFO - Feature extractor loaded successfully
+2024-07-14 19:33:14,267 - INFO - Running experiment with dataset: CZoo, model: dinov2_reg, pooling method: none, use_class: True
+2024-07-14 19:33:14,489 - INFO - Top-1 acc. for config: 0.9286
+2024-07-14 19:33:14,489 - INFO - ROC AUC for config: 0.6991
+2024-07-14 19:33:14,489 - INFO - Running experiment with dataset: CZoo, model: dinov2_reg, pooling method: linear, use_class: True
+2024-07-14 19:33:14,721 - INFO - Top-1 acc. for config: 0.8750
+2024-07-14 19:33:14,721 - INFO - ROC AUC for config: 0.7061
+2024-07-14 19:33:14,721 - INFO - Running experiment with dataset: CZoo, model: dinov2_reg, pooling method: linear, use_class: False
+2024-07-14 19:33:14,898 - INFO - Top-1 acc. for config: 0.7917
+2024-07-14 19:33:14,898 - INFO - ROC AUC for config: 0.6880
+2024-07-14 19:33:15,189 - INFO - Running experiment with dataset: CZoo, model: dinov2_reg, pooling method: attentive, use_class: True
+2024-07-14 19:33:16,749 - INFO - Top-1 acc. for config: 0.8810
+2024-07-14 19:33:16,749 - INFO - ROC AUC for config: 0.7016
+2024-07-14 19:33:17,050 - INFO - Running experiment with dataset: CZoo, model: dinov2_reg, pooling method: attentive, use_class: False
+2024-07-14 19:33:18,582 - INFO - Top-1 acc. for config: 0.7440
+2024-07-14 19:33:18,582 - INFO - ROC AUC for config: 0.6754
+2024-07-15 12:30:27,236 - INFO - Using device: cuda:0
+2024-07-15 12:30:27,237 - INFO - /home/avisund/data/wildlife_datasets/FriesianCattle2015v2/
+2024-07-15 12:30:27,247 - INFO - Dataset FriesianCattle2015v2 loaded successfully
+2024-07-15 12:30:27,250 - INFO - Dataset split successfully
+2024-07-15 12:30:27,252 - INFO - Dataloaders created successfully
+2024-07-15 12:30:27,359 - INFO - using SwiGLU layer as FFN
+2024-07-15 12:30:40,854 - INFO - Feature extractor loaded successfully
+2024-07-15 12:30:55,980 - INFO - Running experiment with dataset: FriesianCattle2015v2, model: dinov2_reg, pooling method: none, use_class: True
+2024-07-15 12:30:56,067 - INFO - Top-1 acc. for config: 0.9545
+2024-07-15 12:30:56,067 - INFO - ROC AUC for config: 0.8333
+2024-07-15 12:30:56,067 - INFO - Running experiment with dataset: FriesianCattle2015v2, model: dinov2_reg, pooling method: linear, use_class: True
+2024-07-15 12:30:56,093 - INFO - Top-1 acc. for config: 0.9545
+2024-07-15 12:30:56,094 - INFO - ROC AUC for config: 0.8295
+2024-07-15 12:30:56,094 - INFO - Running experiment with dataset: FriesianCattle2015v2, model: dinov2_reg, pooling method: linear, use_class: False
+2024-07-15 12:30:56,113 - INFO - Top-1 acc. for config: 0.8182
+2024-07-15 12:30:56,113 - INFO - ROC AUC for config: 0.8106
+2024-07-15 12:30:56,387 - INFO - Running experiment with dataset: FriesianCattle2015v2, model: dinov2_reg, pooling method: attentive, use_class: True
+2024-07-15 12:30:56,548 - INFO - Top-1 acc. for config: 0.9545
+2024-07-15 12:30:56,548 - INFO - ROC AUC for config: 0.8371
+2024-07-15 12:30:56,805 - INFO - Running experiment with dataset: FriesianCattle2015v2, model: dinov2_reg, pooling method: attentive, use_class: False
+2024-07-15 12:30:56,958 - INFO - Top-1 acc. for config: 0.8182
+2024-07-15 12:30:56,958 - INFO - ROC AUC for config: 0.8068
+2024-07-15 12:30:56,958 - INFO - /home/avisund/data/wildlife_datasets/FriesianCattle2017/
+2024-07-15 12:30:56,975 - INFO - Dataset FriesianCattle2017 loaded successfully
+2024-07-15 12:30:56,982 - INFO - Dataset split successfully
+2024-07-15 12:30:56,984 - INFO - Dataloaders created successfully
+2024-07-15 12:30:57,473 - INFO - using SwiGLU layer as FFN
+2024-07-15 12:31:10,256 - INFO - Feature extractor loaded successfully
+2024-07-15 12:32:26,939 - INFO - Running experiment with dataset: FriesianCattle2017, model: dinov2_reg, pooling method: none, use_class: True
+2024-07-15 12:32:27,081 - INFO - Top-1 acc. for config: 0.8376
+2024-07-15 12:32:27,081 - INFO - ROC AUC for config: 0.7395
+2024-07-15 12:32:27,081 - INFO - Running experiment with dataset: FriesianCattle2017, model: dinov2_reg, pooling method: linear, use_class: True
+2024-07-15 12:32:27,190 - INFO - Top-1 acc. for config: 0.8462
+2024-07-15 12:32:27,190 - INFO - ROC AUC for config: 0.7509
+2024-07-15 12:32:27,190 - INFO - Running experiment with dataset: FriesianCattle2017, model: dinov2_reg, pooling method: linear, use_class: False
+2024-07-15 12:32:27,277 - INFO - Top-1 acc. for config: 0.7265
+2024-07-15 12:32:27,277 - INFO - ROC AUC for config: 0.7373
+2024-07-15 12:32:27,528 - INFO - Running experiment with dataset: FriesianCattle2017, model: dinov2_reg, pooling method: attentive, use_class: True
+2024-07-15 12:32:28,219 - INFO - Top-1 acc. for config: 0.8462
+2024-07-15 12:32:28,219 - INFO - ROC AUC for config: 0.7511
+2024-07-15 12:32:28,475 - INFO - Running experiment with dataset: FriesianCattle2017, model: dinov2_reg, pooling method: attentive, use_class: False
+2024-07-15 12:32:29,156 - INFO - Top-1 acc. for config: 0.7265
+2024-07-15 12:32:29,156 - INFO - ROC AUC for config: 0.7472
+2024-07-15 12:32:29,156 - INFO - /home/avisund/data/wildlife_datasets/IPanda50/
+2024-07-15 12:32:29,639 - INFO - Dataset IPanda50 loaded successfully
+2024-07-15 12:32:29,649 - INFO - Dataset split successfully
+2024-07-15 12:32:29,654 - INFO - Dataloaders created successfully
+2024-07-15 12:32:30,224 - INFO - using SwiGLU layer as FFN
+2024-07-15 12:32:42,831 - INFO - Feature extractor loaded successfully
+2024-07-15 12:42:20,767 - INFO - Running experiment with dataset: IPanda50, model: dinov2_reg, pooling method: none, use_class: True
+2024-07-15 12:42:21,438 - INFO - Top-1 acc. for config: 0.8182
+2024-07-15 12:42:21,438 - INFO - ROC AUC for config: 0.7180
+2024-07-15 12:42:21,438 - INFO - Running experiment with dataset: IPanda50, model: dinov2_reg, pooling method: linear, use_class: True
+2024-07-15 12:42:22,232 - INFO - Top-1 acc. for config: 0.8217
+2024-07-15 12:42:22,232 - INFO - ROC AUC for config: 0.7537
+2024-07-15 12:42:22,232 - INFO - Running experiment with dataset: IPanda50, model: dinov2_reg, pooling method: linear, use_class: False
+2024-07-15 12:42:22,837 - INFO - Top-1 acc. for config: 0.8111
+2024-07-15 12:42:22,837 - INFO - ROC AUC for config: 0.7659
+2024-07-15 12:42:23,080 - INFO - Running experiment with dataset: IPanda50, model: dinov2_reg, pooling method: attentive, use_class: True
+2024-07-15 12:42:28,210 - INFO - Top-1 acc. for config: 0.8289
+2024-07-15 12:42:28,210 - INFO - ROC AUC for config: 0.7482
+2024-07-15 12:42:28,491 - INFO - Running experiment with dataset: IPanda50, model: dinov2_reg, pooling method: attentive, use_class: False
+2024-07-15 12:42:33,498 - INFO - Top-1 acc. for config: 0.8021
+2024-07-15 12:42:33,498 - INFO - ROC AUC for config: 0.7671
+2024-07-15 12:42:33,498 - INFO - /home/avisund/data/wildlife_datasets/MacaqueFaces/
+2024-07-15 12:42:33,658 - INFO - Dataset MacaqueFaces loaded successfully
+2024-07-15 12:42:33,670 - INFO - Dataset split successfully
+2024-07-15 12:42:33,674 - INFO - Dataloaders created successfully
+2024-07-15 12:42:34,133 - INFO - using SwiGLU layer as FFN
+2024-07-15 12:42:46,265 - INFO - Feature extractor loaded successfully
+2024-07-15 12:58:49,974 - INFO - Using device: cuda:0
+2024-07-15 12:58:49,974 - INFO - /home/avisund/data/wildlife_datasets/MacaqueFaces/
+2024-07-15 12:58:50,129 - INFO - Dataset MacaqueFaces loaded successfully
+2024-07-15 12:58:50,139 - INFO - Dataset split successfully
+2024-07-15 12:58:50,143 - INFO - Dataloaders created successfully
+2024-07-15 12:58:50,636 - INFO - using SwiGLU layer as FFN
+2024-07-15 12:59:03,976 - INFO - Feature extractor loaded successfully
+2024-07-15 13:07:48,948 - INFO - Running experiment with dataset: MacaqueFaces, model: dinov2_reg, pooling method: none, use_class: True
+2024-07-15 13:07:49,612 - INFO - Top-1 acc. for config: 0.9065
+2024-07-15 13:07:49,612 - INFO - ROC AUC for config: 0.7436
+2024-07-15 13:07:49,612 - INFO - Running experiment with dataset: MacaqueFaces, model: dinov2_reg, pooling method: linear, use_class: True
+2024-07-15 13:07:50,351 - INFO - Top-1 acc. for config: 0.9187
+2024-07-15 13:07:50,351 - INFO - ROC AUC for config: 0.7576
+2024-07-15 13:07:50,351 - INFO - Running experiment with dataset: MacaqueFaces, model: dinov2_reg, pooling method: linear, use_class: False
+2024-07-15 13:07:50,925 - INFO - Top-1 acc. for config: 0.9187
+2024-07-15 13:07:50,926 - INFO - ROC AUC for config: 0.7665
+2024-07-15 13:07:51,183 - INFO - Running experiment with dataset: MacaqueFaces, model: dinov2_reg, pooling method: attentive, use_class: True
+2024-07-15 13:07:55,892 - INFO - Top-1 acc. for config: 0.9126
+2024-07-15 13:07:55,892 - INFO - ROC AUC for config: 0.7500
+2024-07-15 13:07:56,156 - INFO - Running experiment with dataset: MacaqueFaces, model: dinov2_reg, pooling method: attentive, use_class: False
+2024-07-15 13:08:00,803 - INFO - Top-1 acc. for config: 0.9024
+2024-07-15 13:08:00,804 - INFO - ROC AUC for config: 0.7466
+2024-07-15 13:08:00,804 - INFO - /home/avisund/data/wildlife_datasets/NyalaData/
+2024-07-15 13:08:00,848 - INFO - Dataset NyalaData loaded successfully
+2024-07-15 13:08:00,863 - INFO - Dataset split successfully
+2024-07-15 13:08:00,866 - INFO - Dataloaders created successfully
+2024-07-15 13:08:01,351 - INFO - using SwiGLU layer as FFN
+2024-07-15 13:08:14,859 - INFO - Feature extractor loaded successfully
+2024-07-15 13:10:58,350 - INFO - Running experiment with dataset: NyalaData, model: dinov2_reg, pooling method: none, use_class: True
+2024-07-15 13:10:58,556 - INFO - Top-1 acc. for config: 0.1406
+2024-07-15 13:10:58,557 - INFO - ROC AUC for config: 0.5060
+2024-07-15 13:10:58,557 - INFO - Running experiment with dataset: NyalaData, model: dinov2_reg, pooling method: linear, use_class: True
+2024-07-15 13:10:58,770 - INFO - Top-1 acc. for config: 0.1133
+2024-07-15 13:10:58,771 - INFO - ROC AUC for config: 0.5164
+2024-07-15 13:10:58,771 - INFO - Running experiment with dataset: NyalaData, model: dinov2_reg, pooling method: linear, use_class: False
+2024-07-15 13:10:58,937 - INFO - Top-1 acc. for config: 0.0742
+2024-07-15 13:10:58,937 - INFO - ROC AUC for config: 0.5286
+2024-07-15 13:10:59,214 - INFO - Running experiment with dataset: NyalaData, model: dinov2_reg, pooling method: attentive, use_class: True
+2024-07-15 13:11:00,645 - INFO - Top-1 acc. for config: 0.1211
+2024-07-15 13:11:00,645 - INFO - ROC AUC for config: 0.5210
+2024-07-15 13:11:00,929 - INFO - Running experiment with dataset: NyalaData, model: dinov2_reg, pooling method: attentive, use_class: False
+2024-07-15 13:11:02,338 - INFO - Top-1 acc. for config: 0.0898
+2024-07-15 13:11:02,338 - INFO - ROC AUC for config: 0.5313
+2024-07-15 13:11:02,338 - INFO - /home/avisund/data/wildlife_datasets/SeaTurtleIDHeads/
+2024-07-15 13:11:02,431 - INFO - Dataset SeaTurtleIDHeads loaded successfully
+2024-07-15 13:11:02,468 - INFO - Dataset split successfully
+2024-07-15 13:11:02,473 - INFO - Dataloaders created successfully
+2024-07-15 13:11:02,945 - INFO - using SwiGLU layer as FFN
+2024-07-15 13:11:16,202 - INFO - Feature extractor loaded successfully
+2024-07-15 13:21:53,400 - INFO - Running experiment with dataset: SeaTurtleIDHeads, model: dinov2_reg, pooling method: none, use_class: True
+2024-07-15 13:21:54,204 - INFO - Top-1 acc. for config: 0.4888
+2024-07-15 13:21:54,204 - INFO - ROC AUC for config: 0.5717
+2024-07-15 13:21:54,204 - INFO - Running experiment with dataset: SeaTurtleIDHeads, model: dinov2_reg, pooling method: linear, use_class: True
+2024-07-15 13:21:55,130 - INFO - Top-1 acc. for config: 0.5112
+2024-07-15 13:21:55,130 - INFO - ROC AUC for config: 0.5732
+2024-07-15 13:21:55,130 - INFO - Running experiment with dataset: SeaTurtleIDHeads, model: dinov2_reg, pooling method: linear, use_class: False
+2024-07-15 13:21:55,861 - INFO - Top-1 acc. for config: 0.5050
+2024-07-15 13:21:55,861 - INFO - ROC AUC for config: 0.5677
+2024-07-15 13:21:56,119 - INFO - Running experiment with dataset: SeaTurtleIDHeads, model: dinov2_reg, pooling method: attentive, use_class: True
+2024-07-15 13:22:01,768 - INFO - Top-1 acc. for config: 0.4988
+2024-07-15 13:22:01,768 - INFO - ROC AUC for config: 0.5722
+2024-07-15 13:22:02,033 - INFO - Running experiment with dataset: SeaTurtleIDHeads, model: dinov2_reg, pooling method: attentive, use_class: False
+2024-07-15 13:22:07,575 - INFO - Top-1 acc. for config: 0.4801
+2024-07-15 13:22:07,575 - INFO - ROC AUC for config: 0.5632
+2024-07-15 13:22:07,575 - INFO - /home/avisund/data/wildlife_datasets/StripeSpotter/
+2024-07-15 13:22:07,609 - INFO - Dataset StripeSpotter loaded successfully
+2024-07-15 13:22:07,626 - INFO - Dataset split successfully
+2024-07-15 13:22:07,629 - INFO - Dataloaders created successfully
+2024-07-15 13:22:08,145 - INFO - using SwiGLU layer as FFN
+2024-07-15 13:22:21,344 - INFO - Feature extractor loaded successfully
+2024-07-15 13:23:29,713 - INFO - Running experiment with dataset: StripeSpotter, model: dinov2_reg, pooling method: none, use_class: True
+2024-07-15 13:23:29,827 - INFO - Top-1 acc. for config: 0.7692
+2024-07-15 13:23:29,827 - INFO - ROC AUC for config: 0.7424
+2024-07-15 13:23:29,828 - INFO - Running experiment with dataset: StripeSpotter, model: dinov2_reg, pooling method: linear, use_class: True
+2024-07-15 13:23:29,925 - INFO - Top-1 acc. for config: 0.7846
+2024-07-15 13:23:29,925 - INFO - ROC AUC for config: 0.7537
+2024-07-15 13:23:29,925 - INFO - Running experiment with dataset: StripeSpotter, model: dinov2_reg, pooling method: linear, use_class: False
+2024-07-15 13:23:30,001 - INFO - Top-1 acc. for config: 0.8923
+2024-07-15 13:23:30,001 - INFO - ROC AUC for config: 0.7851
+2024-07-15 13:23:30,283 - INFO - Running experiment with dataset: StripeSpotter, model: dinov2_reg, pooling method: attentive, use_class: True
+2024-07-15 13:23:30,903 - INFO - Top-1 acc. for config: 0.7692
+2024-07-15 13:23:30,903 - INFO - ROC AUC for config: 0.7531
+2024-07-15 13:23:31,188 - INFO - Running experiment with dataset: StripeSpotter, model: dinov2_reg, pooling method: attentive, use_class: False
+2024-07-15 13:23:31,797 - INFO - Top-1 acc. for config: 0.8923
+2024-07-15 13:23:31,797 - INFO - ROC AUC for config: 0.7855

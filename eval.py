@@ -23,10 +23,14 @@ def parse_args():
     return parser.parse_args()
 
 def load_model(name, device):
+    autocast_ctx = partial(torch.cuda.amp.autocast, enabled=True, dtype=torch.float)
     if name == 'dinov2':
         model = torch.hub.load('facebookresearch/dinov2', 'dinov2_vitg14', skip_validation=True).to(device)
         n_last_blocks = 1
-        autocast_ctx = partial(torch.cuda.amp.autocast, enabled=True, dtype=torch.float)
+        return ModelWithIntermediateLayers(model, n_last_blocks, autocast_ctx).to(device)
+    if name == 'dinov2_reg':
+        model = torch.hub.load('facebookresearch/dinov2', 'dinov2_vitg14_reg', skip_validation=True).to(device)
+        n_last_blocks = 1
         return ModelWithIntermediateLayers(model, n_last_blocks, autocast_ctx).to(device)
     if name == 'megadescriptor':
         model = timm.create_model("hf-hub:BVRA/MegaDescriptor-L-384", pretrained=True)

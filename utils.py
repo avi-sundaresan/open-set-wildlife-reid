@@ -10,7 +10,7 @@ from tqdm import tqdm
 from models import create_linear_input
 
 def get_transformation(model):
-    if model == "dinov2":
+    if model == 'dinov2' or 'dinov2_reg':
         return transforms.Compose([
             transforms.Resize((224, 224), interpolation=PIL.Image.Resampling.BILINEAR, antialias=True),
             transforms.ToTensor()
