@@ -1,13 +1,17 @@
 import numpy as np
 import torch
+from torch import nn, optim
 from torchvision import transforms
 import PIL
 from sklearn.metrics import roc_curve, auc
 import matplotlib.pyplot as plt
 from sklearn.neighbors import NearestNeighbors
 from tqdm import tqdm 
+from torch.utils.data import DataLoader
 
-from models import create_linear_input
+
+from models import create_linear_input, AttentiveClassifier
+from datasets import EmbeddingsDataset
 
 def get_transformation(model):
     if model == 'dinov2' or 'dinov2_reg':
@@ -43,14 +47,14 @@ def compute_embeddings(dataloaders, feature_model, device):
         labels.append(l)
     return embeddings, labels
 
-def flatten_embeddings(embeddings, labels, pooling_method, use_class, attentive_embedder=None):
+def flatten_embeddings(embeddings, labels, pooling_method, use_class, attentive_classifier=None):
     embeddings_f = []
 
     if pooling_method == 'attentive':
         for embedding in embeddings:
             device = embedding[0].device
-            attentive_embedder = attentive_embedder.to(device)
-            attended_output = attentive_embedder.embed(embedding, use_class=use_class)
+            attentive_classifier = attentive_classifier.to(device)
+            attended_output = attentive_classifier.get_pooled_output(embedding)
             embeddings_f.append(attended_output.cpu().detach().numpy())
     else:
         for embedding in embeddings:
@@ -60,6 +64,44 @@ def flatten_embeddings(embeddings, labels, pooling_method, use_class, attentive_
     labels_f = [np.array(l.cpu()) for label in labels for l in label]
     embeddings_f = np.vstack(embeddings_f)
     return np.array(embeddings_f), np.array(labels_f)
+
+def train_attentive_classifier(train_embeddings, train_labels, num_classes=1000, use_class=True, num_epochs=10, learning_rate=0.0001, device='cuda'):
+    # Create the embeddings dataset and dataloader
+    train_dataset = EmbeddingsDataset(train_embeddings, train_labels)
+    train_loader = DataLoader(train_dataset, batch_size=None, shuffle=False)
+
+    # Initialize the AttentiveClassifier
+    attentive_classifier = AttentiveClassifier(num_classes=num_classes, use_class=use_class).to(device)
+    
+    # Define loss function and optimizer
+    criterion = nn.CrossEntropyLoss()
+    optimizer = optim.Adam(attentive_classifier.parameters(), lr=learning_rate)
+    
+    # Training loop
+    for epoch in tqdm(range(num_epochs)):
+        attentive_classifier.train()
+        total_loss = 0.0
+        for patch_tokens, class_token, labels in train_loader:
+            patch_tokens = patch_tokens.to(device)
+            class_token = class_token.to(device)
+            labels = labels.to(device)
+            
+            optimizer.zero_grad()
+            
+            # Forward pass
+            outputs = attentive_classifier((patch_tokens, class_token))
+            loss = criterion(outputs, labels)
+            
+            # Backward pass and optimization
+            loss.backward()
+            optimizer.step()
+            
+            total_loss += loss.item()
+        
+        avg_loss = total_loss / len(train_loader)
+        print(f'Epoch [{epoch+1}/{num_epochs}], Loss: {avg_loss:.4f}')
+    
+    return attentive_classifier
 
 def evaluate_knn(train_embeddings, test_embeddings, train_labels, test_labels):
     neighbors = NearestNeighbors(n_neighbors=5, algorithm='brute', metric='cosine').fit(train_embeddings)

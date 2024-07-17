@@ -137,9 +137,8 @@ class AttentivePooler(nn.Module):
                 q = blk(q)
         return q
 
-
-class AttentiveEmbedder(nn.Module):
-    """ Attentive Embedder """
+class AttentiveClassifier(nn.Module):
+    """ Attentive Classifier """
     def __init__(
         self,
         embed_dim=1536,
@@ -151,6 +150,7 @@ class AttentiveEmbedder(nn.Module):
         qkv_bias=True,
         num_classes=1000,
         complete_block=True,
+        use_class=True
     ):
         super().__init__()
         self.pooler = AttentivePooler(
@@ -164,14 +164,20 @@ class AttentiveEmbedder(nn.Module):
             qkv_bias=qkv_bias,
             complete_block=complete_block,
         )
-        self.linear = nn.Linear(2 * embed_dim, num_classes, bias=True)
-
-    def embed(self, x, use_class):
-        (patch_tokens, class_token) = x
-        device = patch_tokens.device  
-        self.pooler = self.pooler.to(device)
-        output = self.pooler(patch_tokens).squeeze(1)
+        self.use_class = use_class
         if use_class:
-            output = torch.cat([output, class_token.to(device)], dim=-1)
-        output = output.reshape(output.shape[0], -1)
-        return output.float()
+            self.linear = nn.Linear(2 * embed_dim, num_classes, bias=True)
+        else:
+            self.linear = nn.Linear(embed_dim, num_classes, bias=True)
+
+    def forward(self, x):
+        pooled_output = self.get_pooled_output(x)
+        x = self.linear(pooled_output)
+        return x
+
+    def get_pooled_output(self, x):
+        (patch_tokens, class_token) = x
+        pooled_output = self.pooler(patch_tokens).squeeze(1)
+        if self.use_class:
+            pooled_output = torch.cat([pooled_output, class_token], dim=-1)
+        return pooled_output

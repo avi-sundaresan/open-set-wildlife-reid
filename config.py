@@ -1,7 +1,7 @@
 import os
 
-MODEL = 'dinov2_reg'
-# MODEL = 'dinov2'
+# MODEL = 'dinov2_reg'
+MODEL = 'dinov2'
 # MODEL = 'megadescriptor'
 
 # DATASETS = ['CTai',
@@ -16,13 +16,8 @@ MODEL = 'dinov2_reg'
 #             'StripeSpotter'
 # ]
 
-DATASETS = ['MacaqueFaces',
-            'NyalaData', 
-            'SeaTurtleIDHeads',
-            'StripeSpotter'
-]
 
-# DATASETS = ['StripeSpotter']
+DATASETS = ['FriesianCattle2015v2']
 
 # DATASETS = ['AerialCattle2017', 
 #             'CTai',
@@ -41,7 +36,7 @@ DATASETS = ['MacaqueFaces',
 # ]
 ROOT_DIR = '/home/avisund/data/wildlife_datasets/'
 BATCH_SIZE = 1
-CONFIG_PATH = 'dinov2-configs.json'
+CONFIG_PATH = 'dinov2-configs-2.json'
 # CONFIG_PATH = 'md-configs.json'
 
 def get_dataset_root(dataset_name):

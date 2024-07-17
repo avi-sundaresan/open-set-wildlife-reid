@@ -5,10 +5,10 @@ import json
 import timm
 from functools import partial
 
-from models import ModelWithIntermediateLayers, ModelWithIntermediateLayersMD, AttentiveEmbedder
+from models import ModelWithIntermediateLayers, ModelWithIntermediateLayersMD
 from datasets import prepare_datasets, split_dataset, create_dataloaders
 from config import DATASETS, MODEL, BATCH_SIZE, CONFIG_PATH, get_dataset_root
-from utils import plot_KNN_ROC, flatten_embeddings, evaluate_knn, compute_embeddings, get_transformation
+from utils import plot_KNN_ROC, flatten_embeddings, evaluate_knn, compute_embeddings, get_transformation, train_attentive_classifier
 
 # Initialize logging
 logging.basicConfig(filename='open_set_results.log', level=logging.INFO, 
@@ -77,23 +77,27 @@ def main():
         train_embeddings, closed_test_embeddings, open_test_embeddings = embeddings
         train_labels, closed_test_labels, open_test_labels = labels
 
+
         for config in configs:
             if args.model == 'dinov2' and config['pooling_method'] == 'none' and not config['use_class']:
                 raise ValueError("Invalid configuration: pooling_method='none' and use_class=False is not allowed.")
 
             # Initialize attentive pooler if needed
-            attentive_embedder = AttentiveEmbedder() if config['pooling_method'] == 'attentive' else None
+            attentive_classifier = None
+            if config['pooling_method'] == 'attentive':
+                num_classes = max(train_labels) + 1
+                attentive_classifier = train_attentive_classifier(train_embeddings, train_labels, use_class=config['use_class'], num_classes=num_classes)
 
             logging.info(f'Running experiment with dataset: {dataset}, model: {args.model}, pooling method: {config["pooling_method"]}, use_class: {config["use_class"]}')
-            train_embeddings_f, train_labels_f = flatten_embeddings(train_embeddings, train_labels, config['pooling_method'], config['use_class'], attentive_embedder)
-            closed_test_embeddings_f, closed_test_labels_f = flatten_embeddings(closed_test_embeddings, closed_test_labels, config['pooling_method'], config['use_class'], attentive_embedder)
-            open_test_embeddings_f, open_test_labels_f = flatten_embeddings(open_test_embeddings, open_test_labels, config['pooling_method'], config['use_class'], attentive_embedder)
+            train_embeddings_f, train_labels_f = flatten_embeddings(train_embeddings, train_labels, config['pooling_method'], config['use_class'], attentive_classifier)
+            closed_test_embeddings_f, closed_test_labels_f = flatten_embeddings(closed_test_embeddings, closed_test_labels, config['pooling_method'], config['use_class'], attentive_classifier)
+            open_test_embeddings_f, open_test_labels_f = flatten_embeddings(open_test_embeddings, open_test_labels, config['pooling_method'], config['use_class'], attentive_classifier)
 
             # Evaluate KNN for closed test set
             closed_min_dist, closed_top1_acc = evaluate_knn(train_embeddings_f, closed_test_embeddings_f, train_labels_f, closed_test_labels_f)
 
             # Evaluate KNN for open test set
-            open_min_dist, open_top1_acc = evaluate_knn(train_embeddings_f, open_test_embeddings_f, train_labels_f, open_test_labels_f)
+            open_min_dist, _ = evaluate_knn(train_embeddings_f, open_test_embeddings_f, train_labels_f, open_test_labels_f)
 
             # Plot ROC curve
             roc_auc = plot_KNN_ROC(closed_min_dist, open_min_dist)

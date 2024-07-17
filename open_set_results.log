@@ -550,3 +550,30 @@
 2024-07-15 13:23:31,188 - INFO - Running experiment with dataset: StripeSpotter, model: dinov2_reg, pooling method: attentive, use_class: False
 2024-07-15 13:23:31,797 - INFO - Top-1 acc. for config: 0.8923
 2024-07-15 13:23:31,797 - INFO - ROC AUC for config: 0.7855
+
+2024-07-17 00:18:35,611 - INFO - Using device: cuda:0
+2024-07-17 00:18:35,611 - INFO - /home/avisund/data/wildlife_datasets/FriesianCattle2015v2/
+2024-07-17 00:18:35,621 - INFO - Dataset FriesianCattle2015v2 loaded successfully
+2024-07-17 00:18:35,624 - INFO - Dataset split successfully
+2024-07-17 00:18:35,627 - INFO - Dataloaders created successfully
+2024-07-17 00:18:35,766 - INFO - using SwiGLU layer as FFN
+2024-07-17 00:18:49,289 - INFO - Feature extractor loaded successfully
+2024-07-17 00:19:11,771 - INFO - Running experiment with dataset: FriesianCattle2015v2, model: dinov2, pooling method: attentive, use_class: True
+2024-07-17 00:19:11,920 - INFO - Top-1 acc. for config: 0.5909
+2024-07-17 00:19:11,920 - INFO - ROC AUC for config: 0.6534
+2024-07-17 00:19:19,695 - INFO - Running experiment with dataset: FriesianCattle2015v2, model: dinov2, pooling method: attentive, use_class: False
+2024-07-17 00:19:19,833 - INFO - Top-1 acc. for config: 0.5909
+2024-07-17 00:19:19,833 - INFO - ROC AUC for config: 0.6951
+2024-07-17 00:21:37,137 - INFO - Using device: cuda:0
+2024-07-17 00:21:37,138 - INFO - /home/avisund/data/wildlife_datasets/FriesianCattle2015v2/
+2024-07-17 00:21:37,148 - INFO - Dataset FriesianCattle2015v2 loaded successfully
+2024-07-17 00:21:37,151 - INFO - Dataset split successfully
+2024-07-17 00:21:37,153 - INFO - Dataloaders created successfully
+2024-07-17 00:21:37,682 - INFO - using SwiGLU layer as FFN
+2024-07-17 00:21:51,391 - INFO - Feature extractor loaded successfully
+2024-07-17 00:22:13,421 - INFO - Running experiment with dataset: FriesianCattle2015v2, model: dinov2, pooling method: attentive, use_class: True
+2024-07-17 00:22:13,567 - INFO - Top-1 acc. for config: 1.0000
+2024-07-17 00:22:13,567 - INFO - ROC AUC for config: 0.9110
+2024-07-17 00:22:21,764 - INFO - Running experiment with dataset: FriesianCattle2015v2, model: dinov2, pooling method: attentive, use_class: False
+2024-07-17 00:22:21,903 - INFO - Top-1 acc. for config: 0.9545
+2024-07-17 00:22:21,903 - INFO - ROC AUC for config: 0.8523

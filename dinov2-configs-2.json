@@ -1,0 +1,11 @@
+[
+    {
+        "pooling_method": "attentive",
+        "use_class": true
+    },
+    {
+        "pooling_method": "attentive",
+        "use_class": false
+    }
+]
+
