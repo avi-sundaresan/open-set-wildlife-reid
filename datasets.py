@@ -1,6 +1,7 @@
 import torch
 from torch.utils.data import Dataset
 from PIL import Image
+from sklearn.model_selection import train_test_split
 from wildlife_datasets import datasets, splits
 
 class CustomDataset(Dataset):
@@ -90,7 +91,43 @@ def split_dataset(d):
     splits.analyze_split(df, idx_train, idx_test)
     return df, idx_train, idx_test
 
-def create_dataloaders(root, df, idx_train, idx_test, transformation, batch_size):
+# def create_dataloaders(root, df, idx_train, idx_test, transformation, batch_size):
+#     df_train, df_test = df.loc[idx_train], df.loc[idx_test]
+#     train_identities = set(df_train['identity'])
+#     test_identities = set(df_test['identity'])
+#     closed_identities = train_identities.intersection(test_identities)
+#     open_identities = test_identities - closed_identities
+
+#     closed_identity_to_label = {identity: idx for idx, identity in enumerate(sorted(closed_identities))}
+#     open_identity_to_label = {identity: idx + len(closed_identity_to_label) for idx, identity in enumerate(sorted(open_identities))}
+#     identity_to_label = {**closed_identity_to_label, **open_identity_to_label}
+
+#     df_train['label'] = df_train['identity'].map(identity_to_label)
+#     df_test['label'] = df_test['identity'].map(identity_to_label)
+
+#     train_paths = df_train[df_train['identity'].isin(closed_identities)]['path'].tolist()
+#     closed_test_paths = df_test[df_test['identity'].isin(closed_identities)]['path'].tolist()
+#     open_test_paths = df_test[df_test['identity'].isin(open_identities)]['path'].tolist()
+
+#     train_labels = df_train[df_train['identity'].isin(closed_identities)]['label'].tolist()
+#     closed_test_labels = df_test[df_test['identity'].isin(closed_identities)]['label'].tolist()
+#     open_test_labels = df_test[df_test['identity'].isin(open_identities)]['label'].tolist()
+
+#     full_train_paths = [root + elem for elem in train_paths]
+#     full_closed_test_paths = [root + elem for elem in closed_test_paths]
+#     full_open_test_paths = [root + elem for elem in open_test_paths]
+
+#     train_dataset = CustomDataset(full_train_paths, train_labels, transformation)
+#     closed_test_dataset = CustomDataset(full_closed_test_paths, closed_test_labels, transformation)
+#     open_test_dataset = CustomDataset(full_open_test_paths, open_test_labels, transformation)
+
+#     trainloader = torch.utils.data.DataLoader(train_dataset, batch_size=batch_size, shuffle=True)
+#     closedtestloader = torch.utils.data.DataLoader(closed_test_dataset, batch_size=batch_size, shuffle=True)
+#     opentestloader = torch.utils.data.DataLoader(open_test_dataset, batch_size=batch_size, shuffle=True)
+
+#     return trainloader, closedtestloader, opentestloader
+
+def create_dataloaders(root, df, idx_train, idx_test, transformation, batch_size, val=True):
     df_train, df_test = df.loc[idx_train], df.loc[idx_test]
     train_identities = set(df_train['identity'])
     test_identities = set(df_test['identity'])
@@ -116,7 +153,16 @@ def create_dataloaders(root, df, idx_train, idx_test, transformation, batch_size
     full_closed_test_paths = [root + elem for elem in closed_test_paths]
     full_open_test_paths = [root + elem for elem in open_test_paths]
 
-    train_dataset = CustomDataset(full_train_paths, train_labels, transformation)
+    if val:
+        train_paths, val_paths, train_labels, val_labels = train_test_split(
+            full_train_paths, train_labels, test_size=0.2, random_state=42
+        )
+        val_dataset = CustomDataset(val_paths, val_labels, transformation)
+        valloader = torch.utils.data.DataLoader(val_dataset, batch_size=batch_size, shuffle=True)
+    else:
+        valloader = None
+
+    train_dataset = CustomDataset(train_paths, train_labels, transformation)
     closed_test_dataset = CustomDataset(full_closed_test_paths, closed_test_labels, transformation)
     open_test_dataset = CustomDataset(full_open_test_paths, open_test_labels, transformation)
 
@@ -124,4 +170,4 @@ def create_dataloaders(root, df, idx_train, idx_test, transformation, batch_size
     closedtestloader = torch.utils.data.DataLoader(closed_test_dataset, batch_size=batch_size, shuffle=True)
     opentestloader = torch.utils.data.DataLoader(open_test_dataset, batch_size=batch_size, shuffle=True)
 
-    return trainloader, closedtestloader, opentestloader
+    return trainloader, closedtestloader, opentestloader, valloader

@@ -1,0 +1,325 @@
+2024-07-23 03:01:10,537 - INFO - Using device: cuda:0
+2024-07-23 03:01:10,538 - INFO - /home/avisund/data/wildlife_datasets/StripeSpotter/
+2024-07-23 03:01:10,573 - INFO - Dataset StripeSpotter loaded successfully
+2024-07-23 03:01:10,590 - INFO - Dataset split successfully
+2024-07-23 03:01:10,593 - INFO - Dataloaders created successfully with batch size 1
+2024-07-23 03:01:11,208 - INFO - using SwiGLU layer as FFN
+2024-07-23 03:01:24,592 - INFO - Feature extractor loaded successfully
+2024-07-23 03:04:52,621 - INFO - Using device: cuda:0
+2024-07-23 03:04:52,621 - INFO - /home/avisund/data/wildlife_datasets/StripeSpotter/
+2024-07-23 03:04:52,656 - INFO - Dataset StripeSpotter loaded successfully
+2024-07-23 03:04:52,673 - INFO - Dataset split successfully
+2024-07-23 03:04:52,676 - INFO - Dataloaders created successfully with batch size 1
+2024-07-23 03:04:53,297 - INFO - using SwiGLU layer as FFN
+2024-07-23 03:05:06,648 - INFO - Feature extractor loaded successfully
+2024-07-23 03:06:36,084 - INFO - Running experiment with dataset: StripeSpotter, model: dinov2, pooling method: attentive, use_class: True, learning rate: 1e-05, batch size: 1
+2024-07-23 03:06:36,557 - INFO - Validation Top-1 acc. for config: 0.9008
+2024-07-23 03:07:05,534 - INFO - Running experiment with dataset: StripeSpotter, model: dinov2, pooling method: attentive, use_class: False, learning rate: 1e-05, batch size: 1
+2024-07-23 03:07:05,993 - INFO - Validation Top-1 acc. for config: 0.9237
+2024-07-23 03:07:33,991 - INFO - Running experiment with dataset: StripeSpotter, model: dinov2, pooling method: attentive, use_class: True, learning rate: 2e-05, batch size: 1
+2024-07-23 03:07:34,458 - INFO - Validation Top-1 acc. for config: 0.8931
+2024-07-23 03:08:02,319 - INFO - Running experiment with dataset: StripeSpotter, model: dinov2, pooling method: attentive, use_class: False, learning rate: 2e-05, batch size: 1
+2024-07-23 03:08:02,780 - INFO - Validation Top-1 acc. for config: 0.9084
+2024-07-23 03:09:36,284 - INFO - Using device: cuda:0
+2024-07-23 03:09:36,284 - INFO - /home/avisund/data/wildlife_datasets/CTai/
+2024-07-23 03:09:36,806 - INFO - Dataset CTai loaded successfully
+2024-07-23 03:09:36,816 - INFO - Dataset split successfully
+2024-07-23 03:09:36,821 - INFO - Dataloaders created successfully with batch size 1
+2024-07-23 03:09:37,390 - INFO - using SwiGLU layer as FFN
+2024-07-23 03:09:50,946 - INFO - Feature extractor loaded successfully
+2024-07-23 03:18:29,632 - INFO - Running experiment with dataset: CTai, model: dinov2, pooling method: attentive, use_class: True, learning rate: 1e-05, batch size: 1
+2024-07-23 03:18:32,454 - INFO - Validation Top-1 acc. for config: 0.8686
+2024-07-23 03:21:09,354 - INFO - Running experiment with dataset: CTai, model: dinov2, pooling method: attentive, use_class: False, learning rate: 1e-05, batch size: 1
+2024-07-23 03:21:12,029 - INFO - Validation Top-1 acc. for config: 0.8418
+2024-07-23 03:23:58,952 - INFO - Running experiment with dataset: CTai, model: dinov2, pooling method: attentive, use_class: True, learning rate: 2e-05, batch size: 1
+2024-07-23 03:24:01,616 - INFO - Validation Top-1 acc. for config: 0.8660
+2024-07-23 03:26:37,703 - INFO - Running experiment with dataset: CTai, model: dinov2, pooling method: attentive, use_class: False, learning rate: 2e-05, batch size: 1
+2024-07-23 03:26:40,343 - INFO - Validation Top-1 acc. for config: 0.8660
+2024-07-23 03:29:28,755 - INFO - Running experiment with dataset: CTai, model: dinov2, pooling method: attentive, use_class: True, learning rate: 5e-05, batch size: 1
+2024-07-23 03:29:31,452 - INFO - Validation Top-1 acc. for config: 0.8552
+2024-07-23 03:32:19,064 - INFO - Running experiment with dataset: CTai, model: dinov2, pooling method: attentive, use_class: False, learning rate: 5e-05, batch size: 1
+2024-07-23 03:32:21,773 - INFO - Validation Top-1 acc. for config: 0.8485
+2024-07-23 03:35:03,223 - INFO - Running experiment with dataset: CTai, model: dinov2, pooling method: attentive, use_class: True, learning rate: 0.0001, batch size: 1
+2024-07-23 03:35:05,948 - INFO - Validation Top-1 acc. for config: 0.8190
+2024-07-23 03:37:45,344 - INFO - Running experiment with dataset: CTai, model: dinov2, pooling method: attentive, use_class: False, learning rate: 0.0001, batch size: 1
+2024-07-23 03:37:47,981 - INFO - Validation Top-1 acc. for config: 0.8298
+2024-07-23 03:40:30,124 - INFO - Running experiment with dataset: CTai, model: dinov2, pooling method: attentive, use_class: True, learning rate: 0.0002, batch size: 1
+2024-07-23 03:40:32,889 - INFO - Validation Top-1 acc. for config: 0.8338
+2024-07-23 03:43:11,924 - INFO - Running experiment with dataset: CTai, model: dinov2, pooling method: attentive, use_class: False, learning rate: 0.0002, batch size: 1
+2024-07-23 03:43:14,619 - INFO - Validation Top-1 acc. for config: 0.8231
+2024-07-23 03:45:59,820 - INFO - Running experiment with dataset: CTai, model: dinov2, pooling method: attentive, use_class: True, learning rate: 0.0005, batch size: 1
+2024-07-23 03:46:02,539 - INFO - Validation Top-1 acc. for config: 0.7091
+2024-07-23 03:48:45,053 - INFO - Running experiment with dataset: CTai, model: dinov2, pooling method: attentive, use_class: False, learning rate: 0.0005, batch size: 1
+2024-07-23 03:48:47,791 - INFO - Validation Top-1 acc. for config: 0.7560
+2024-07-23 03:51:32,302 - INFO - Running experiment with dataset: CTai, model: dinov2, pooling method: attentive, use_class: True, learning rate: 0.001, batch size: 1
+2024-07-23 03:51:35,000 - INFO - Validation Top-1 acc. for config: 0.5643
+2024-07-23 03:54:18,307 - INFO - Running experiment with dataset: CTai, model: dinov2, pooling method: attentive, use_class: False, learning rate: 0.001, batch size: 1
+2024-07-23 03:54:21,058 - INFO - Validation Top-1 acc. for config: 0.7332
+2024-07-23 03:56:57,061 - INFO - Running experiment with dataset: CTai, model: dinov2, pooling method: attentive, use_class: True, learning rate: 0.002, batch size: 1
+2024-07-23 03:56:59,800 - INFO - Validation Top-1 acc. for config: 0.5121
+2024-07-23 03:59:41,219 - INFO - Running experiment with dataset: CTai, model: dinov2, pooling method: attentive, use_class: False, learning rate: 0.002, batch size: 1
+2024-07-23 03:59:43,830 - INFO - Validation Top-1 acc. for config: 0.7145
+2024-07-23 04:02:20,951 - INFO - Running experiment with dataset: CTai, model: dinov2, pooling method: attentive, use_class: True, learning rate: 0.005, batch size: 1
+2024-07-23 04:02:23,658 - INFO - Validation Top-1 acc. for config: 0.2493
+2024-07-23 04:05:09,101 - INFO - Running experiment with dataset: CTai, model: dinov2, pooling method: attentive, use_class: False, learning rate: 0.005, batch size: 1
+2024-07-23 04:05:11,766 - INFO - Validation Top-1 acc. for config: 0.2239
+2024-07-23 04:07:52,921 - INFO - Running experiment with dataset: CTai, model: dinov2, pooling method: attentive, use_class: True, learning rate: 0.01, batch size: 1
+2024-07-23 23:02:44,232 - INFO - Using device: cuda:0
+2024-07-23 23:02:44,232 - INFO - /home/avisund/data/wildlife_datasets/FriesianCattle2015v2/
+2024-07-23 23:02:44,245 - INFO - Dataset FriesianCattle2015v2 loaded successfully
+2024-07-23 23:02:44,248 - INFO - Dataset split successfully
+2024-07-23 23:02:44,251 - INFO - Dataloaders created successfully with batch size 1
+2024-07-23 23:02:44,772 - INFO - using SwiGLU layer as FFN
+2024-07-23 23:02:58,422 - INFO - Feature extractor loaded successfully
+2024-07-23 23:03:19,232 - INFO - Running experiment with dataset: FriesianCattle2015v2, model: dinov2, pooling method: attentive, use_class: True, learning rate: 1e-05, batch size: 1
+2024-07-23 23:03:19,344 - INFO - Validation Top-1 acc. for config: 0.8000
+2024-07-23 23:03:25,699 - INFO - Running experiment with dataset: FriesianCattle2015v2, model: dinov2, pooling method: attentive, use_class: False, learning rate: 1e-05, batch size: 1
+2024-07-23 23:03:25,800 - INFO - Validation Top-1 acc. for config: 0.8000
+2024-07-23 23:03:32,155 - INFO - Running experiment with dataset: FriesianCattle2015v2, model: dinov2, pooling method: attentive, use_class: True, learning rate: 2e-05, batch size: 1
+2024-07-23 23:03:32,258 - INFO - Validation Top-1 acc. for config: 0.8000
+2024-07-23 23:03:39,281 - INFO - Running experiment with dataset: FriesianCattle2015v2, model: dinov2, pooling method: attentive, use_class: False, learning rate: 2e-05, batch size: 1
+2024-07-23 23:03:39,386 - INFO - Validation Top-1 acc. for config: 0.8000
+2024-07-23 23:03:45,765 - INFO - Running experiment with dataset: FriesianCattle2015v2, model: dinov2, pooling method: attentive, use_class: True, learning rate: 0.01, batch size: 1
+2024-07-23 23:03:45,868 - INFO - Validation Top-1 acc. for config: 0.7000
+2024-07-23 23:03:52,397 - INFO - Running experiment with dataset: FriesianCattle2015v2, model: dinov2, pooling method: attentive, use_class: False, learning rate: 0.01, batch size: 1
+2024-07-23 23:03:52,501 - INFO - Validation Top-1 acc. for config: 0.7333
+2024-07-23 23:03:52,501 - INFO - Best configuration: batch size=1, learning rate=1e-05, config={'pooling_method': 'attentive', 'use_class': True}
+2024-07-23 23:03:52,614 - INFO - Closed test set Top-1 acc. for best config: 0.77272727272727
+2024-07-23 23:03:52,616 - INFO - Open test set evaluation complete for best config.
+2024-07-23 23:03:52,617 - INFO - ROC AUC for best config: 0.7822
+2024-07-23 23:11:57,418 - INFO - Using device: cuda:0
+2024-07-23 23:11:57,418 - INFO - /home/avisund/data/wildlife_datasets/CTai/
+2024-07-23 23:11:57,966 - INFO - Dataset CTai loaded successfully
+2024-07-23 23:11:57,976 - INFO - Dataset split successfully
+2024-07-23 23:11:57,981 - INFO - Dataloaders created successfully with batch size 1
+2024-07-23 23:11:58,440 - INFO - using SwiGLU layer as FFN
+2024-07-23 23:12:12,056 - INFO - Feature extractor loaded successfully
+2024-07-23 23:20:53,337 - INFO - Running experiment with dataset: CTai, model: dinov2, pooling method: attentive, use_class: True, learning rate: 0.01, batch size: 1
+2024-07-23 23:26:34,278 - INFO - Using device: cuda:0
+2024-07-23 23:26:34,279 - INFO - /home/avisund/data/wildlife_datasets/FriesianCattle2015v2/
+2024-07-23 23:26:34,289 - INFO - Dataset FriesianCattle2015v2 loaded successfully
+2024-07-23 23:26:34,292 - INFO - Dataset split successfully
+2024-07-23 23:26:34,295 - INFO - Dataloaders created successfully with batch size 1
+2024-07-23 23:26:34,775 - INFO - using SwiGLU layer as FFN
+2024-07-23 23:26:48,377 - INFO - Feature extractor loaded successfully
+2024-07-23 23:27:08,523 - INFO - Running experiment with dataset: FriesianCattle2015v2, model: dinov2, pooling method: attentive, use_class: True, learning rate: 1e-05, batch size: 1
+2024-07-23 23:27:08,632 - INFO - Validation Top-1 acc. for config: 0.8000
+2024-07-23 23:27:14,982 - INFO - Running experiment with dataset: FriesianCattle2015v2, model: dinov2, pooling method: attentive, use_class: False, learning rate: 1e-05, batch size: 1
+2024-07-23 23:27:15,084 - INFO - Validation Top-1 acc. for config: 0.8000
+2024-07-23 23:35:52,228 - INFO - Using device: cuda:0
+2024-07-23 23:35:52,228 - INFO - /home/avisund/data/wildlife_datasets/FriesianCattle2015v2/
+2024-07-23 23:35:52,238 - INFO - Dataset FriesianCattle2015v2 loaded successfully
+2024-07-23 23:35:52,241 - INFO - Dataset split successfully
+2024-07-23 23:35:52,244 - INFO - Dataloaders created successfully with batch size 1
+2024-07-23 23:35:52,729 - INFO - using SwiGLU layer as FFN
+2024-07-23 23:36:06,279 - INFO - Feature extractor loaded successfully
+2024-07-23 23:36:27,179 - INFO - Running experiment with dataset: FriesianCattle2015v2, model: dinov2, pooling method: attentive, use_class: True, learning rate: 1e-05, batch size: 1
+2024-07-23 23:36:27,290 - INFO - Validation Top-1 acc. for config: 0.8000
+2024-07-23 23:36:33,669 - INFO - Running experiment with dataset: FriesianCattle2015v2, model: dinov2, pooling method: attentive, use_class: False, learning rate: 1e-05, batch size: 1
+2024-07-23 23:36:33,770 - INFO - Validation Top-1 acc. for config: 0.8000
+2024-07-23 23:40:42,115 - INFO - Using device: cuda:0
+2024-07-23 23:40:42,115 - INFO - /home/avisund/data/wildlife_datasets/FriesianCattle2015v2/
+2024-07-23 23:40:42,125 - INFO - Dataset FriesianCattle2015v2 loaded successfully
+2024-07-23 23:40:42,128 - INFO - Dataset split successfully
+2024-07-23 23:40:42,131 - INFO - Dataloaders created successfully with batch size 1
+2024-07-23 23:40:42,242 - INFO - using SwiGLU layer as FFN
+2024-07-23 23:40:55,802 - INFO - Feature extractor loaded successfully
+2024-07-23 23:41:16,010 - INFO - Running experiment with dataset: FriesianCattle2015v2, model: dinov2, pooling method: attentive, use_class: True, learning rate: 1e-05, batch size: 1
+2024-07-23 23:41:16,116 - INFO - Validation Top-1 acc. for config: 0.8333
+2024-07-23 23:41:22,484 - INFO - Running experiment with dataset: FriesianCattle2015v2, model: dinov2, pooling method: attentive, use_class: False, learning rate: 1e-05, batch size: 1
+2024-07-23 23:41:22,585 - INFO - Validation Top-1 acc. for config: 0.8000
+2024-07-23 23:42:58,487 - INFO - Using device: cuda:0
+2024-07-23 23:42:58,487 - INFO - /home/avisund/data/wildlife_datasets/FriesianCattle2015v2/
+2024-07-23 23:42:58,497 - INFO - Dataset FriesianCattle2015v2 loaded successfully
+2024-07-23 23:42:58,500 - INFO - Dataset split successfully
+2024-07-23 23:42:58,503 - INFO - Dataloaders created successfully with batch size 1
+2024-07-23 23:42:58,608 - INFO - using SwiGLU layer as FFN
+2024-07-23 23:43:12,145 - INFO - Feature extractor loaded successfully
+2024-07-23 23:43:32,416 - INFO - Running experiment with dataset: FriesianCattle2015v2, model: dinov2, pooling method: attentive, use_class: True, learning rate: 1e-05, batch size: 1
+2024-07-23 23:43:32,525 - INFO - Validation Top-1 acc. for config: 0.8333
+2024-07-23 23:43:39,139 - INFO - Running experiment with dataset: FriesianCattle2015v2, model: dinov2, pooling method: attentive, use_class: False, learning rate: 1e-05, batch size: 1
+2024-07-23 23:43:39,243 - INFO - Validation Top-1 acc. for config: 0.8000
+2024-07-23 23:44:07,426 - INFO - Using device: cuda:0
+2024-07-23 23:44:07,426 - INFO - /home/avisund/data/wildlife_datasets/FriesianCattle2015v2/
+2024-07-23 23:44:07,436 - INFO - Dataset FriesianCattle2015v2 loaded successfully
+2024-07-23 23:44:07,439 - INFO - Dataset split successfully
+2024-07-23 23:44:07,442 - INFO - Dataloaders created successfully with batch size 1
+2024-07-23 23:44:07,558 - INFO - using SwiGLU layer as FFN
+2024-07-23 23:44:21,158 - INFO - Feature extractor loaded successfully
+2024-07-23 23:44:41,833 - INFO - Running experiment with dataset: FriesianCattle2015v2, model: dinov2, pooling method: attentive, use_class: True, learning rate: 1e-05, batch size: 1
+2024-07-23 23:44:41,942 - INFO - Validation Top-1 acc. for config: 0.8000
+2024-07-23 23:44:48,309 - INFO - Running experiment with dataset: FriesianCattle2015v2, model: dinov2, pooling method: attentive, use_class: False, learning rate: 1e-05, batch size: 1
+2024-07-23 23:44:48,411 - INFO - Validation Top-1 acc. for config: 0.8000
+2024-07-23 23:44:56,943 - INFO - Best configuration: batch size=1, learning rate=1e-05, config={'pooling_method': 'attentive', 'use_class': True}
+2024-07-23 23:44:57,061 - INFO - Closed test set Top-1 acc. for best config: 0.86363636363636
+2024-07-23 23:44:57,063 - INFO - Open test set evaluation complete for best config.
+2024-07-23 23:44:57,063 - INFO - ROC AUC for best config: 0.7633
+2024-07-23 23:47:42,264 - INFO - Using device: cuda:0
+2024-07-23 23:47:42,264 - INFO - /home/avisund/data/wildlife_datasets/FriesianCattle2015v2/
+2024-07-23 23:47:42,274 - INFO - Dataset FriesianCattle2015v2 loaded successfully
+2024-07-23 23:47:42,277 - INFO - Dataset split successfully
+2024-07-23 23:47:42,281 - INFO - Dataloaders created successfully with batch size 1
+2024-07-23 23:47:42,775 - INFO - using SwiGLU layer as FFN
+2024-07-23 23:47:56,471 - INFO - Feature extractor loaded successfully
+2024-07-23 23:48:17,020 - INFO - Running experiment with dataset: FriesianCattle2015v2, model: dinov2, pooling method: attentive, use_class: True, learning rate: 1e-05, batch size: 1
+2024-07-23 23:48:17,131 - INFO - Validation Top-1 acc. for config: 0.8000
+2024-07-23 23:48:23,813 - INFO - Running experiment with dataset: FriesianCattle2015v2, model: dinov2, pooling method: attentive, use_class: False, learning rate: 1e-05, batch size: 1
+2024-07-23 23:48:23,918 - INFO - Validation Top-1 acc. for config: 0.8000
+
+
+2024-07-23 23:51:20,938 - INFO - Using device: cuda:0
+2024-07-23 23:51:20,939 - INFO - /home/avisund/data/wildlife_datasets/CTai/
+2024-07-23 23:51:21,464 - INFO - Dataset CTai loaded successfully
+2024-07-23 23:51:21,474 - INFO - Dataset split successfully
+2024-07-23 23:51:21,479 - INFO - Dataloaders created successfully with batch size 1
+2024-07-23 23:51:22,073 - INFO - using SwiGLU layer as FFN
+2024-07-23 23:51:35,552 - INFO - Feature extractor loaded successfully
+2024-07-24 00:00:13,746 - INFO - Running experiment with dataset: CTai, model: dinov2, pooling method: attentive, use_class: True, learning rate: 1e-05, batch size: 1
+2024-07-24 00:00:16,659 - INFO - Validation Top-1 acc. for config: 0.8566
+2024-07-24 00:02:58,657 - INFO - Running experiment with dataset: CTai, model: dinov2, pooling method: attentive, use_class: False, learning rate: 1e-05, batch size: 1
+2024-07-24 00:03:01,364 - INFO - Validation Top-1 acc. for config: 0.8512
+2024-07-24 00:05:50,102 - INFO - Running experiment with dataset: CTai, model: dinov2, pooling method: attentive, use_class: True, learning rate: 2e-05, batch size: 1
+2024-07-24 00:05:52,827 - INFO - Validation Top-1 acc. for config: 0.8700
+2024-07-24 00:08:32,566 - INFO - Running experiment with dataset: CTai, model: dinov2, pooling method: attentive, use_class: False, learning rate: 2e-05, batch size: 1
+2024-07-24 00:08:35,220 - INFO - Validation Top-1 acc. for config: 0.8525
+2024-07-24 00:11:11,003 - INFO - Running experiment with dataset: CTai, model: dinov2, pooling method: attentive, use_class: True, learning rate: 5e-05, batch size: 1
+2024-07-24 00:11:13,732 - INFO - Validation Top-1 acc. for config: 0.8418
+2024-07-24 00:13:51,886 - INFO - Running experiment with dataset: CTai, model: dinov2, pooling method: attentive, use_class: False, learning rate: 5e-05, batch size: 1
+2024-07-24 00:13:54,591 - INFO - Validation Top-1 acc. for config: 0.8351
+2024-07-24 00:16:45,559 - INFO - Running experiment with dataset: CTai, model: dinov2, pooling method: attentive, use_class: True, learning rate: 0.0001, batch size: 1
+2024-07-24 00:16:48,262 - INFO - Validation Top-1 acc. for config: 0.8378
+2024-07-24 00:19:30,249 - INFO - Running experiment with dataset: CTai, model: dinov2, pooling method: attentive, use_class: False, learning rate: 0.0001, batch size: 1
+2024-07-24 00:19:32,896 - INFO - Validation Top-1 acc. for config: 0.8391
+2024-07-24 00:19:32,896 - INFO - /home/avisund/data/wildlife_datasets/CZoo/
+2024-07-24 00:19:33,123 - INFO - Dataset CZoo loaded successfully
+2024-07-24 00:19:33,128 - INFO - Dataset split successfully
+2024-07-24 00:19:33,132 - INFO - Dataloaders created successfully with batch size 1
+2024-07-24 00:19:33,589 - INFO - using SwiGLU layer as FFN
+2024-07-24 00:19:46,829 - INFO - Feature extractor loaded successfully
+2024-07-24 00:23:44,223 - INFO - Running experiment with dataset: CZoo, model: dinov2, pooling method: attentive, use_class: True, learning rate: 1e-05, batch size: 1
+2024-07-24 00:23:45,425 - INFO - Validation Top-1 acc. for config: 0.9586
+2024-07-24 00:24:58,879 - INFO - Running experiment with dataset: CZoo, model: dinov2, pooling method: attentive, use_class: False, learning rate: 1e-05, batch size: 1
+2024-07-24 00:25:00,089 - INFO - Validation Top-1 acc. for config: 0.9467
+2024-07-24 00:26:15,214 - INFO - Running experiment with dataset: CZoo, model: dinov2, pooling method: attentive, use_class: True, learning rate: 2e-05, batch size: 1
+2024-07-24 00:26:16,430 - INFO - Validation Top-1 acc. for config: 0.9260
+2024-07-24 00:27:28,083 - INFO - Running experiment with dataset: CZoo, model: dinov2, pooling method: attentive, use_class: False, learning rate: 2e-05, batch size: 1
+2024-07-24 00:27:29,305 - INFO - Validation Top-1 acc. for config: 0.9704
+2024-07-24 00:28:41,806 - INFO - Running experiment with dataset: CZoo, model: dinov2, pooling method: attentive, use_class: True, learning rate: 5e-05, batch size: 1
+2024-07-24 00:28:43,062 - INFO - Validation Top-1 acc. for config: 0.9586
+2024-07-24 00:29:55,041 - INFO - Running experiment with dataset: CZoo, model: dinov2, pooling method: attentive, use_class: False, learning rate: 5e-05, batch size: 1
+2024-07-24 00:29:56,263 - INFO - Validation Top-1 acc. for config: 0.9645
+2024-07-24 00:31:08,130 - INFO - Running experiment with dataset: CZoo, model: dinov2, pooling method: attentive, use_class: True, learning rate: 0.0001, batch size: 1
+2024-07-24 00:31:09,361 - INFO - Validation Top-1 acc. for config: 0.9379
+2024-07-24 00:32:20,179 - INFO - Running experiment with dataset: CZoo, model: dinov2, pooling method: attentive, use_class: False, learning rate: 0.0001, batch size: 1
+2024-07-24 00:32:21,380 - INFO - Validation Top-1 acc. for config: 0.9586
+2024-07-24 00:32:21,381 - INFO - /home/avisund/data/wildlife_datasets/DogFaceNet/
+2024-07-24 00:32:21,632 - INFO - Dataset DogFaceNet loaded successfully
+2024-07-24 00:32:21,724 - INFO - Dataset split successfully
+2024-07-24 00:32:21,731 - INFO - Dataloaders created successfully with batch size 1
+2024-07-24 00:32:22,351 - INFO - using SwiGLU layer as FFN
+2024-07-24 00:32:34,798 - INFO - Feature extractor loaded successfully
+2024-07-24 00:48:09,397 - INFO - Running experiment with dataset: DogFaceNet, model: dinov2, pooling method: attentive, use_class: True, learning rate: 1e-05, batch size: 1
+2024-07-24 00:48:14,089 - INFO - Validation Top-1 acc. for config: 0.8310
+2024-07-24 00:52:43,265 - INFO - Running experiment with dataset: DogFaceNet, model: dinov2, pooling method: attentive, use_class: False, learning rate: 1e-05, batch size: 1
+2024-07-24 00:52:47,751 - INFO - Validation Top-1 acc. for config: 0.8513
+2024-07-24 00:57:30,135 - INFO - Running experiment with dataset: DogFaceNet, model: dinov2, pooling method: attentive, use_class: True, learning rate: 2e-05, batch size: 1
+2024-07-24 00:57:34,663 - INFO - Validation Top-1 acc. for config: 0.8044
+2024-07-24 01:02:03,026 - INFO - Running experiment with dataset: DogFaceNet, model: dinov2, pooling method: attentive, use_class: False, learning rate: 2e-05, batch size: 1
+2024-07-24 01:02:07,497 - INFO - Validation Top-1 acc. for config: 0.8302
+2024-07-24 01:06:47,226 - INFO - Running experiment with dataset: DogFaceNet, model: dinov2, pooling method: attentive, use_class: True, learning rate: 5e-05, batch size: 1
+2024-07-24 01:06:51,764 - INFO - Validation Top-1 acc. for config: 0.7373
+2024-07-24 01:11:22,595 - INFO - Running experiment with dataset: DogFaceNet, model: dinov2, pooling method: attentive, use_class: False, learning rate: 5e-05, batch size: 1
+2024-07-24 01:11:27,086 - INFO - Validation Top-1 acc. for config: 0.8165
+2024-07-24 01:16:03,703 - INFO - Running experiment with dataset: DogFaceNet, model: dinov2, pooling method: attentive, use_class: True, learning rate: 0.0001, batch size: 1
+2024-07-24 01:16:08,227 - INFO - Validation Top-1 acc. for config: 0.7639
+2024-07-24 01:20:40,742 - INFO - Running experiment with dataset: DogFaceNet, model: dinov2, pooling method: attentive, use_class: False, learning rate: 0.0001, batch size: 1
+2024-07-24 01:20:45,343 - INFO - Validation Top-1 acc. for config: 0.7898
+2024-07-24 01:20:45,343 - INFO - /home/avisund/data/wildlife_datasets/FriesianCattle2015v2/
+2024-07-24 01:20:45,353 - INFO - Dataset FriesianCattle2015v2 loaded successfully
+2024-07-24 01:20:45,357 - INFO - Dataset split successfully
+2024-07-24 01:20:45,360 - INFO - Dataloaders created successfully with batch size 1
+2024-07-24 01:20:45,903 - INFO - using SwiGLU layer as FFN
+2024-07-30 00:03:53,648 - INFO - Using device: cuda:0
+2024-07-30 00:03:53,648 - INFO - /home/avisund/data/wildlife_datasets/FriesianCattle2015v2/
+2024-07-30 00:03:53,661 - INFO - Dataset FriesianCattle2015v2 loaded successfully
+2024-07-30 00:03:53,664 - INFO - Dataset split successfully
+2024-07-30 00:03:53,668 - INFO - Dataloaders created successfully with batch size 1
+2024-07-30 00:03:54,262 - INFO - using SwiGLU layer as FFN
+2024-07-30 00:04:10,164 - INFO - Feature extractor loaded successfully
+2024-07-30 00:04:30,433 - INFO - Running experiment with dataset: FriesianCattle2015v2, model: dinov2, pooling method: attentive, use_class: True, learning rate: 1e-05, batch size: 1
+2024-07-30 00:04:30,546 - INFO - Validation Top-1 acc. for config: 0.8000
+2024-07-30 00:04:36,529 - INFO - Running experiment with dataset: FriesianCattle2015v2, model: dinov2, pooling method: attentive, use_class: False, learning rate: 1e-05, batch size: 1
+2024-07-30 00:04:36,631 - INFO - Validation Top-1 acc. for config: 0.8000
+2024-07-30 00:04:43,009 - INFO - Running experiment with dataset: FriesianCattle2015v2, model: dinov2, pooling method: attentive, use_class: True, learning rate: 2e-05, batch size: 1
+2024-07-30 00:04:43,114 - INFO - Validation Top-1 acc. for config: 0.8000
+2024-07-30 00:04:49,567 - INFO - Running experiment with dataset: FriesianCattle2015v2, model: dinov2, pooling method: attentive, use_class: False, learning rate: 2e-05, batch size: 1
+2024-07-30 00:04:49,673 - INFO - Validation Top-1 acc. for config: 0.8000
+2024-07-30 00:04:56,590 - INFO - Running experiment with dataset: FriesianCattle2015v2, model: dinov2, pooling method: attentive, use_class: True, learning rate: 5e-05, batch size: 1
+2024-07-30 00:04:56,696 - INFO - Validation Top-1 acc. for config: 0.8000
+2024-07-30 00:05:03,656 - INFO - Running experiment with dataset: FriesianCattle2015v2, model: dinov2, pooling method: attentive, use_class: False, learning rate: 5e-05, batch size: 1
+2024-07-30 00:05:03,761 - INFO - Validation Top-1 acc. for config: 0.8667
+2024-07-30 00:05:10,153 - INFO - Running experiment with dataset: FriesianCattle2015v2, model: dinov2, pooling method: attentive, use_class: True, learning rate: 0.0001, batch size: 1
+2024-07-30 00:05:10,257 - INFO - Validation Top-1 acc. for config: 0.8333
+2024-07-30 00:05:17,360 - INFO - Running experiment with dataset: FriesianCattle2015v2, model: dinov2, pooling method: attentive, use_class: False, learning rate: 0.0001, batch size: 1
+2024-07-30 00:05:17,468 - INFO - Validation Top-1 acc. for config: 0.8667
+2024-07-30 00:05:25,909 - INFO - Best configuration: batch size=1, learning rate=5e-05, config={'pooling_method': 'attentive', 'use_class': False}
+2024-07-30 00:05:26,024 - INFO - Closed test set Top-1 acc. for best config: 0.90909090909091
+2024-07-30 00:05:26,026 - INFO - Open test set evaluation complete for best config.
+2024-07-30 00:05:26,027 - INFO - ROC AUC for best config: 0.7765
+
+2024-07-30 00:10:00,054 - INFO - Using device: cuda:0
+2024-07-30 00:10:00,054 - INFO - /home/avisund/data/wildlife_datasets/CTai/
+2024-07-30 00:10:00,596 - INFO - Dataset CTai loaded successfully
+2024-07-30 00:10:00,607 - INFO - Dataset split successfully
+2024-07-30 00:10:00,612 - INFO - Dataloaders created successfully with batch size 1
+2024-07-30 00:10:01,162 - INFO - using SwiGLU layer as FFN
+2024-07-30 00:10:15,088 - INFO - Feature extractor loaded successfully
+2024-07-30 00:18:55,411 - INFO - Running experiment with dataset: CTai, model: dinov2, pooling method: attentive, use_class: True, learning rate: 1e-05, batch size: 1
+2024-07-30 00:18:58,213 - INFO - Validation Top-1 acc. for config: 0.8566
+2024-07-30 00:21:42,267 - INFO - Running experiment with dataset: CTai, model: dinov2, pooling method: attentive, use_class: False, learning rate: 1e-05, batch size: 1
+2024-07-30 00:21:44,916 - INFO - Validation Top-1 acc. for config: 0.8405
+2024-07-30 00:24:27,856 - INFO - Running experiment with dataset: CTai, model: dinov2, pooling method: attentive, use_class: True, learning rate: 2e-05, batch size: 1
+2024-07-30 00:24:30,572 - INFO - Validation Top-1 acc. for config: 0.8432
+2024-07-30 00:27:15,316 - INFO - Running experiment with dataset: CTai, model: dinov2, pooling method: attentive, use_class: False, learning rate: 2e-05, batch size: 1
+2024-07-30 00:27:17,976 - INFO - Validation Top-1 acc. for config: 0.8579
+2024-07-30 00:30:04,343 - INFO - Running experiment with dataset: CTai, model: dinov2, pooling method: attentive, use_class: True, learning rate: 5e-05, batch size: 1
+2024-07-30 00:30:07,053 - INFO - Validation Top-1 acc. for config: 0.8405
+2024-07-30 00:32:46,767 - INFO - Running experiment with dataset: CTai, model: dinov2, pooling method: attentive, use_class: False, learning rate: 5e-05, batch size: 1
+2024-07-30 00:32:49,461 - INFO - Validation Top-1 acc. for config: 0.8525
+2024-07-30 00:35:32,933 - INFO - Running experiment with dataset: CTai, model: dinov2, pooling method: attentive, use_class: True, learning rate: 0.0001, batch size: 1
+2024-07-30 00:35:35,652 - INFO - Validation Top-1 acc. for config: 0.8150
+2024-07-30 00:38:18,326 - INFO - Running experiment with dataset: CTai, model: dinov2, pooling method: attentive, use_class: False, learning rate: 0.0001, batch size: 1
+2024-07-30 00:38:21,040 - INFO - Validation Top-1 acc. for config: 0.8298
+2024-07-30 00:41:42,584 - INFO - Best configuration: batch size=1, learning rate=2e-05, config={'pooling_method': 'attentive', 'use_class': False}
+2024-07-30 00:41:45,424 - INFO - Closed test set Top-1 acc. for best config: 0.87104072398190
+2024-07-30 00:41:45,498 - INFO - Open test set evaluation complete for best config.
+2024-07-30 00:41:45,499 - INFO - ROC AUC for best config: 0.8761
+
+
+2024-07-30 10:24:07,053 - INFO - Using device: cuda:0
+2024-07-30 10:24:07,053 - INFO - /home/avisund/data/wildlife_datasets/CZoo/
+2024-07-30 10:24:07,277 - INFO - Dataset CZoo loaded successfully
+2024-07-30 10:24:07,282 - INFO - Dataset split successfully
+2024-07-30 10:24:07,286 - INFO - Dataloaders created successfully with batch size 1
+2024-07-30 10:24:07,783 - INFO - using SwiGLU layer as FFN
+2024-07-30 10:24:21,669 - INFO - Feature extractor loaded successfully
+2024-07-30 10:28:20,914 - INFO - Running experiment with dataset: CZoo, model: dinov2, pooling method: attentive, use_class: True, learning rate: 1e-05, batch size: 1
+2024-07-30 10:28:22,152 - INFO - Validation Top-1 acc. for config: 0.9556
+2024-07-30 10:29:34,684 - INFO - Running experiment with dataset: CZoo, model: dinov2, pooling method: attentive, use_class: False, learning rate: 1e-05, batch size: 1
+2024-07-30 10:29:35,898 - INFO - Validation Top-1 acc. for config: 0.9556
+2024-07-30 10:30:50,987 - INFO - Running experiment with dataset: CZoo, model: dinov2, pooling method: attentive, use_class: True, learning rate: 2e-05, batch size: 1
+2024-07-30 10:30:52,210 - INFO - Validation Top-1 acc. for config: 0.9615
+2024-07-30 10:32:01,189 - INFO - Running experiment with dataset: CZoo, model: dinov2, pooling method: attentive, use_class: False, learning rate: 2e-05, batch size: 1
+2024-07-30 10:32:02,392 - INFO - Validation Top-1 acc. for config: 0.9556
+2024-07-30 10:33:17,323 - INFO - Running experiment with dataset: CZoo, model: dinov2, pooling method: attentive, use_class: True, learning rate: 5e-05, batch size: 1
+2024-07-30 10:33:18,545 - INFO - Validation Top-1 acc. for config: 0.9704
+2024-07-30 10:34:34,535 - INFO - Running experiment with dataset: CZoo, model: dinov2, pooling method: attentive, use_class: False, learning rate: 5e-05, batch size: 1
+2024-07-30 10:34:35,743 - INFO - Validation Top-1 acc. for config: 0.9704
+2024-07-30 10:35:51,519 - INFO - Running experiment with dataset: CZoo, model: dinov2, pooling method: attentive, use_class: True, learning rate: 0.0001, batch size: 1
+2024-07-30 10:35:52,750 - INFO - Validation Top-1 acc. for config: 0.9379
+2024-07-30 10:37:05,006 - INFO - Running experiment with dataset: CZoo, model: dinov2, pooling method: attentive, use_class: False, learning rate: 0.0001, batch size: 1
+2024-07-30 10:37:06,218 - INFO - Validation Top-1 acc. for config: 0.9586
+2024-07-30 10:38:39,121 - INFO - Best configuration: batch size=1, learning rate=5e-05, config={'pooling_method': 'attentive', 'use_class': True}
+2024-07-30 10:38:40,402 - INFO - Closed test set Top-1 acc. for best config: 0.97023809523810
+2024-07-30 10:38:40,420 - INFO - Open test set evaluation complete for best config.
+2024-07-30 10:38:40,421 - INFO - ROC AUC for best config: 0.9332

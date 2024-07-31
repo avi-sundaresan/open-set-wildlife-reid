@@ -166,6 +166,7 @@ class AttentiveClassifier(nn.Module):
         )
         self.use_class = use_class
         if use_class:
+            print(embed_dim, num_classes)
             self.linear = nn.Linear(2 * embed_dim, num_classes, bias=True)
         else:
             self.linear = nn.Linear(embed_dim, num_classes, bias=True)

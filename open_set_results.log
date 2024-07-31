@@ -577,3 +577,230 @@
 2024-07-17 00:22:21,764 - INFO - Running experiment with dataset: FriesianCattle2015v2, model: dinov2, pooling method: attentive, use_class: False
 2024-07-17 00:22:21,903 - INFO - Top-1 acc. for config: 0.9545
 2024-07-17 00:22:21,903 - INFO - ROC AUC for config: 0.8523
+2024-07-22 23:07:46,200 - INFO - Using device: cuda:0
+2024-07-22 23:07:46,200 - INFO - /home/avisund/data/wildlife_datasets/StripeSpotter/
+2024-07-22 23:07:46,235 - INFO - Dataset StripeSpotter loaded successfully
+2024-07-22 23:07:46,253 - INFO - Dataset split successfully
+2024-07-22 23:31:49,180 - INFO - Using device: cuda:0
+2024-07-22 23:31:49,181 - INFO - /home/avisund/data/wildlife_datasets/StripeSpotter/
+2024-07-22 23:31:49,215 - INFO - Dataset StripeSpotter loaded successfully
+2024-07-22 23:31:49,232 - INFO - Dataset split successfully
+2024-07-22 23:31:49,235 - INFO - Dataloaders created successfully
+2024-07-22 23:31:49,809 - INFO - using SwiGLU layer as FFN
+2024-07-22 23:32:03,008 - INFO - Feature extractor loaded successfully
+2024-07-22 23:43:37,992 - INFO - Using device: cuda:0
+2024-07-22 23:43:37,993 - INFO - /home/avisund/data/wildlife_datasets/StripeSpotter/
+2024-07-22 23:43:38,027 - INFO - Dataset StripeSpotter loaded successfully
+2024-07-22 23:43:38,045 - INFO - Dataset split successfully
+2024-07-22 23:43:38,048 - INFO - Dataloaders created successfully
+2024-07-22 23:43:38,589 - INFO - using SwiGLU layer as FFN
+2024-07-22 23:43:51,862 - INFO - Feature extractor loaded successfully
+2024-07-23 00:04:28,992 - INFO - Using device: cuda:0
+2024-07-23 00:04:28,993 - INFO - /home/avisund/data/wildlife_datasets/StripeSpotter/
+2024-07-23 00:04:29,027 - INFO - Dataset StripeSpotter loaded successfully
+2024-07-23 00:04:29,044 - INFO - Dataset split successfully
+2024-07-23 00:04:29,047 - INFO - Dataloaders created successfully
+2024-07-23 00:04:29,606 - INFO - using SwiGLU layer as FFN
+2024-07-23 00:04:43,127 - INFO - Feature extractor loaded successfully
+2024-07-23 00:09:49,978 - INFO - Using device: cuda:0
+2024-07-23 00:09:49,978 - INFO - /home/avisund/data/wildlife_datasets/StripeSpotter/
+2024-07-23 00:09:50,012 - INFO - Dataset StripeSpotter loaded successfully
+2024-07-23 00:09:50,030 - INFO - Dataset split successfully
+2024-07-23 00:09:50,033 - INFO - Dataloaders created successfully
+2024-07-23 00:09:50,528 - INFO - using SwiGLU layer as FFN
+2024-07-23 00:10:03,848 - INFO - Feature extractor loaded successfully
+2024-07-23 00:21:46,990 - INFO - Using device: cuda:0
+2024-07-23 00:21:46,990 - INFO - /home/avisund/data/wildlife_datasets/StripeSpotter/
+2024-07-23 00:21:47,025 - INFO - Dataset StripeSpotter loaded successfully
+2024-07-23 00:21:47,042 - INFO - Dataset split successfully
+2024-07-23 00:22:00,862 - INFO - Using device: cuda:0
+2024-07-23 00:22:00,863 - INFO - /home/avisund/data/wildlife_datasets/StripeSpotter/
+2024-07-23 00:22:00,897 - INFO - Dataset StripeSpotter loaded successfully
+2024-07-23 00:22:00,914 - INFO - Dataset split successfully
+2024-07-23 00:22:00,917 - INFO - Dataloaders created successfully
+2024-07-23 00:22:01,522 - INFO - using SwiGLU layer as FFN
+2024-07-23 00:22:14,988 - INFO - Feature extractor loaded successfully
+2024-07-23 00:27:07,357 - INFO - Using device: cuda:0
+2024-07-23 00:27:07,357 - INFO - /home/avisund/data/wildlife_datasets/StripeSpotter/
+2024-07-23 00:27:07,392 - INFO - Dataset StripeSpotter loaded successfully
+2024-07-23 00:27:07,409 - INFO - Dataset split successfully
+2024-07-23 00:27:18,713 - INFO - Using device: cuda:0
+2024-07-23 00:27:18,713 - INFO - /home/avisund/data/wildlife_datasets/StripeSpotter/
+2024-07-23 00:27:18,748 - INFO - Dataset StripeSpotter loaded successfully
+2024-07-23 00:27:18,765 - INFO - Dataset split successfully
+2024-07-23 00:27:18,768 - INFO - Dataloaders created successfully
+2024-07-23 00:27:19,331 - INFO - using SwiGLU layer as FFN
+2024-07-23 00:27:32,697 - INFO - Feature extractor loaded successfully
+2024-07-23 00:28:23,785 - INFO - Using device: cuda:0
+2024-07-23 00:28:23,786 - INFO - /home/avisund/data/wildlife_datasets/FriesianCattle2015v2/
+2024-07-23 00:28:23,799 - INFO - Dataset FriesianCattle2015v2 loaded successfully
+2024-07-23 00:28:23,802 - INFO - Dataset split successfully
+2024-07-23 00:28:23,805 - INFO - Dataloaders created successfully
+2024-07-23 00:28:24,443 - INFO - using SwiGLU layer as FFN
+2024-07-23 00:28:37,766 - INFO - Feature extractor loaded successfully
+2024-07-23 00:28:55,958 - INFO - Running experiment with dataset: FriesianCattle2015v2, model: dinov2, pooling method: attentive, use_class: True
+2024-07-23 00:28:56,079 - INFO - Top-1 acc. for config: 0.8182
+2024-07-23 00:28:56,080 - INFO - ROC AUC for config: 0.8239
+2024-07-23 00:29:03,011 - INFO - Running experiment with dataset: FriesianCattle2015v2, model: dinov2, pooling method: attentive, use_class: False
+2024-07-23 00:29:03,128 - INFO - Top-1 acc. for config: 0.8636
+2024-07-23 00:29:03,128 - INFO - ROC AUC for config: 0.8883
+2024-07-23 00:31:23,354 - INFO - Using device: cuda:0
+2024-07-23 00:31:23,354 - INFO - /home/avisund/data/wildlife_datasets/StripeSpotter/
+2024-07-23 00:31:23,389 - INFO - Dataset StripeSpotter loaded successfully
+2024-07-23 00:31:23,407 - INFO - Dataset split successfully
+2024-07-23 00:31:23,410 - INFO - Dataloaders created successfully
+2024-07-23 00:31:24,011 - INFO - using SwiGLU layer as FFN
+2024-07-23 00:31:37,232 - INFO - Feature extractor loaded successfully
+2024-07-23 00:34:44,059 - INFO - Using device: cuda:0
+2024-07-23 00:34:44,059 - INFO - /home/avisund/data/wildlife_datasets/CZoo/
+2024-07-23 00:34:44,277 - INFO - Dataset CZoo loaded successfully
+2024-07-23 00:34:44,282 - INFO - Dataset split successfully
+2024-07-23 00:34:44,286 - INFO - Dataloaders created successfully
+2024-07-23 00:34:44,821 - INFO - using SwiGLU layer as FFN
+2024-07-23 00:34:58,031 - INFO - Feature extractor loaded successfully
+2024-07-23 00:38:46,901 - INFO - Using device: cuda:0
+2024-07-23 00:38:46,901 - INFO - /home/avisund/data/wildlife_datasets/DogFaceNet/
+2024-07-23 00:38:47,142 - INFO - Dataset DogFaceNet loaded successfully
+2024-07-23 00:38:47,232 - INFO - Dataset split successfully
+2024-07-23 00:38:47,239 - INFO - Dataloaders created successfully
+2024-07-23 00:38:47,855 - INFO - using SwiGLU layer as FFN
+2024-07-23 00:39:01,146 - INFO - Feature extractor loaded successfully
+2024-07-23 00:52:32,363 - INFO - Running experiment with dataset: DogFaceNet, model: dinov2, pooling method: attentive, use_class: True
+2024-07-23 00:52:37,629 - INFO - Top-1 acc. for config: 0.7312
+2024-07-23 00:52:37,629 - INFO - ROC AUC for config: 0.7703
+2024-07-23 00:53:24,674 - INFO - Using device: cuda:0
+2024-07-23 00:53:24,674 - INFO - /home/avisund/data/wildlife_datasets/FriesianCattle2017/
+2024-07-23 00:53:24,698 - INFO - Dataset FriesianCattle2017 loaded successfully
+2024-07-23 00:53:24,705 - INFO - Dataset split successfully
+2024-07-23 00:53:24,708 - INFO - Dataloaders created successfully
+2024-07-23 00:53:25,297 - INFO - using SwiGLU layer as FFN
+2024-07-23 00:53:38,560 - INFO - Feature extractor loaded successfully
+2024-07-23 02:12:47,594 - INFO - Using device: cuda:0
+2024-07-23 02:12:47,594 - INFO - /home/avisund/data/wildlife_datasets/StripeSpotter/
+2024-07-23 02:12:47,628 - INFO - Dataset StripeSpotter loaded successfully
+2024-07-23 02:12:47,646 - INFO - Dataset split successfully
+2024-07-23 02:12:47,649 - INFO - Dataloaders created successfully
+2024-07-23 02:12:48,272 - INFO - using SwiGLU layer as FFN
+2024-07-23 02:13:01,547 - INFO - Feature extractor loaded successfully
+2024-07-23 02:15:28,767 - INFO - Using device: cuda:0
+2024-07-23 02:15:28,767 - INFO - /home/avisund/data/wildlife_datasets/StripeSpotter/
+2024-07-23 02:15:28,802 - INFO - Dataset StripeSpotter loaded successfully
+2024-07-23 02:15:28,819 - INFO - Dataset split successfully
+2024-07-23 02:15:28,822 - INFO - Dataloaders created successfully
+2024-07-23 02:15:29,425 - INFO - using SwiGLU layer as FFN
+2024-07-23 02:15:42,692 - INFO - Feature extractor loaded successfully
+2024-07-23 02:17:13,052 - INFO - Using device: cuda:0
+2024-07-23 02:17:13,052 - INFO - /home/avisund/data/wildlife_datasets/StripeSpotter/
+2024-07-23 02:17:13,087 - INFO - Dataset StripeSpotter loaded successfully
+2024-07-23 02:17:13,104 - INFO - Dataset split successfully
+2024-07-23 02:17:13,107 - INFO - Dataloaders created successfully
+2024-07-23 02:17:13,624 - INFO - using SwiGLU layer as FFN
+2024-07-23 02:17:26,925 - INFO - Feature extractor loaded successfully
+2024-07-23 02:20:03,036 - INFO - Using device: cuda:0
+2024-07-23 02:20:03,036 - INFO - /home/avisund/data/wildlife_datasets/StripeSpotter/
+2024-07-23 02:20:03,071 - INFO - Dataset StripeSpotter loaded successfully
+2024-07-23 02:20:03,089 - INFO - Dataset split successfully
+2024-07-23 02:20:03,092 - INFO - Dataloaders created successfully
+2024-07-23 02:20:03,678 - INFO - using SwiGLU layer as FFN
+2024-07-23 02:20:16,955 - INFO - Feature extractor loaded successfully
+2024-07-23 02:22:47,329 - INFO - Using device: cuda:0
+2024-07-23 02:22:47,330 - INFO - /home/avisund/data/wildlife_datasets/StripeSpotter/
+2024-07-23 02:22:47,364 - INFO - Dataset StripeSpotter loaded successfully
+2024-07-23 02:22:47,382 - INFO - Dataset split successfully
+2024-07-23 02:22:47,385 - INFO - Dataloaders created successfully
+2024-07-23 02:22:47,895 - INFO - using SwiGLU layer as FFN
+2024-07-23 02:23:01,245 - INFO - Feature extractor loaded successfully
+2024-07-23 02:24:36,889 - INFO - Using device: cuda:0
+2024-07-23 02:24:36,889 - INFO - /home/avisund/data/wildlife_datasets/StripeSpotter/
+2024-07-23 02:24:36,923 - INFO - Dataset StripeSpotter loaded successfully
+2024-07-23 02:24:36,940 - INFO - Dataset split successfully
+2024-07-23 02:24:36,943 - INFO - Dataloaders created successfully
+2024-07-23 02:24:37,504 - INFO - using SwiGLU layer as FFN
+2024-07-23 02:24:50,832 - INFO - Feature extractor loaded successfully
+2024-07-23 02:27:17,336 - INFO - Using device: cuda:0
+2024-07-23 02:27:17,336 - INFO - /home/avisund/data/wildlife_datasets/FriesianCattle2015v2/
+2024-07-23 02:27:17,346 - INFO - Dataset FriesianCattle2015v2 loaded successfully
+2024-07-23 02:27:17,349 - INFO - Dataset split successfully
+2024-07-23 02:27:17,352 - INFO - Dataloaders created successfully
+2024-07-23 02:27:17,858 - INFO - using SwiGLU layer as FFN
+2024-07-23 02:27:31,144 - INFO - Feature extractor loaded successfully
+2024-07-23 02:27:48,926 - INFO - Running experiment with dataset: FriesianCattle2015v2, model: dinov2, pooling method: attentive, use_class: True
+2024-07-23 02:27:49,048 - INFO - Top-1 acc. for config: 0.8636
+2024-07-23 02:27:49,048 - INFO - ROC AUC for config: 0.8561
+2024-07-23 02:27:54,867 - INFO - Running experiment with dataset: FriesianCattle2015v2, model: dinov2, pooling method: attentive, use_class: False
+2024-07-23 02:27:54,983 - INFO - Top-1 acc. for config: 0.9091
+2024-07-23 02:27:54,983 - INFO - ROC AUC for config: 0.8826
+2024-07-23 02:28:58,247 - INFO - Using device: cuda:0
+2024-07-23 02:28:58,248 - INFO - /home/avisund/data/wildlife_datasets/FriesianCattle2017/
+2024-07-23 02:28:58,265 - INFO - Dataset FriesianCattle2017 loaded successfully
+2024-07-23 02:28:58,272 - INFO - Dataset split successfully
+2024-07-23 02:28:58,276 - INFO - Dataloaders created successfully
+2024-07-23 02:28:58,817 - INFO - using SwiGLU layer as FFN
+2024-07-23 02:29:12,111 - INFO - Feature extractor loaded successfully
+2024-07-23 02:30:23,303 - INFO - Using device: cuda:0
+2024-07-23 02:30:23,303 - INFO - /home/avisund/data/wildlife_datasets/CZoo/
+2024-07-23 02:30:23,521 - INFO - Dataset CZoo loaded successfully
+2024-07-23 02:30:23,526 - INFO - Dataset split successfully
+2024-07-23 02:30:23,529 - INFO - Dataloaders created successfully
+2024-07-23 02:30:24,140 - INFO - using SwiGLU layer as FFN
+2024-07-23 02:30:37,461 - INFO - Feature extractor loaded successfully
+2024-07-23 02:30:51,256 - INFO - Using device: cuda:0
+2024-07-23 02:30:51,256 - INFO - /home/avisund/data/wildlife_datasets/CTai/
+2024-07-23 02:30:51,785 - INFO - Dataset CTai loaded successfully
+2024-07-23 02:30:51,795 - INFO - Dataset split successfully
+2024-07-23 02:30:51,800 - INFO - Dataloaders created successfully
+2024-07-23 02:30:52,288 - INFO - using SwiGLU layer as FFN
+2024-07-23 02:31:05,633 - INFO - Feature extractor loaded successfully
+2024-07-23 02:38:52,052 - INFO - Using device: cuda:0
+2024-07-23 02:38:52,052 - INFO - /home/avisund/data/wildlife_datasets/DogFaceNet/
+2024-07-23 02:38:52,193 - INFO - Dataset DogFaceNet loaded successfully
+2024-07-23 02:38:52,283 - INFO - Dataset split successfully
+2024-07-23 02:38:52,290 - INFO - Dataloaders created successfully
+2024-07-23 02:38:52,820 - INFO - using SwiGLU layer as FFN
+2024-07-23 02:39:06,386 - INFO - Feature extractor loaded successfully
+2024-07-23 02:39:38,996 - INFO - Using device: cuda:0
+2024-07-23 02:39:38,996 - INFO - /home/avisund/data/wildlife_datasets/CZoo/
+2024-07-23 02:39:39,215 - INFO - Dataset CZoo loaded successfully
+2024-07-23 02:39:39,220 - INFO - Dataset split successfully
+2024-07-23 02:39:39,224 - INFO - Dataloaders created successfully
+2024-07-23 02:39:39,787 - INFO - using SwiGLU layer as FFN
+2024-07-23 02:39:53,147 - INFO - Feature extractor loaded successfully
+2024-07-23 02:43:24,142 - INFO - Running experiment with dataset: CZoo, model: dinov2, pooling method: attentive, use_class: True
+2024-07-23 02:43:25,420 - INFO - Top-1 acc. for config: 0.9643
+2024-07-23 02:43:25,420 - INFO - ROC AUC for config: 0.8301
+2024-07-23 02:43:58,273 - INFO - Using device: cuda:0
+2024-07-23 02:43:58,273 - INFO - /home/avisund/data/wildlife_datasets/CTai/
+2024-07-23 02:43:58,784 - INFO - Dataset CTai loaded successfully
+2024-07-23 02:43:58,793 - INFO - Dataset split successfully
+2024-07-23 02:43:58,799 - INFO - Dataloaders created successfully
+2024-07-23 02:43:59,388 - INFO - using SwiGLU layer as FFN
+2024-07-23 02:44:12,849 - INFO - Feature extractor loaded successfully
+2024-07-23 02:52:44,559 - INFO - Using device: cuda:0
+2024-07-23 02:52:44,560 - INFO - /home/avisund/data/wildlife_datasets/CTai/
+2024-07-23 02:52:55,665 - INFO - Using device: cuda:0
+2024-07-23 02:52:55,665 - INFO - /home/avisund/data/wildlife_datasets/StripeSpotter/
+2024-07-23 02:52:55,700 - INFO - Dataset StripeSpotter loaded successfully
+2024-07-23 02:52:55,717 - INFO - Dataset split successfully
+2024-07-23 02:52:55,720 - INFO - Dataloaders created successfully
+2024-07-23 02:52:56,293 - INFO - using SwiGLU layer as FFN
+2024-07-23 02:53:09,643 - INFO - Feature extractor loaded successfully
+2024-07-23 02:54:25,489 - INFO - Using device: cuda:0
+2024-07-23 02:54:25,489 - INFO - /home/avisund/data/wildlife_datasets/CTai/
+2024-07-23 02:54:26,008 - INFO - Dataset CTai loaded successfully
+2024-07-23 02:54:26,018 - INFO - Dataset split successfully
+2024-07-23 02:54:26,024 - INFO - Dataloaders created successfully
+2024-07-23 02:54:26,592 - INFO - using SwiGLU layer as FFN
+2024-07-23 02:54:40,006 - INFO - Feature extractor loaded successfully
+2024-07-23 23:48:33,397 - INFO - Using device: cuda:0
+2024-07-23 23:48:33,398 - INFO - /home/avisund/data/wildlife_datasets/FriesianCattle2015v2/
+2024-07-23 23:48:33,408 - INFO - Dataset FriesianCattle2015v2 loaded successfully
+2024-07-23 23:48:33,411 - INFO - Dataset split successfully
+2024-07-23 23:48:33,414 - INFO - Dataloaders created successfully
+2024-07-23 23:48:33,527 - INFO - using SwiGLU layer as FFN
+2024-07-23 23:48:47,031 - INFO - Feature extractor loaded successfully
+2024-07-23 23:49:05,428 - INFO - Running experiment with dataset: FriesianCattle2015v2, model: dinov2, pooling method: attentive, use_class: True
+2024-07-23 23:49:05,551 - INFO - Top-1 acc. for config: 0.9091
+2024-07-23 23:49:05,551 - INFO - ROC AUC for config: 0.8504
+2024-07-23 23:49:11,976 - INFO - Running experiment with dataset: FriesianCattle2015v2, model: dinov2, pooling method: attentive, use_class: False
+2024-07-23 23:49:12,091 - INFO - Top-1 acc. for config: 0.8182
+2024-07-23 23:49:12,091 - INFO - ROC AUC for config: 0.9299

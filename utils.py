@@ -65,12 +65,16 @@ def flatten_embeddings(embeddings, labels, pooling_method, use_class, attentive_
     embeddings_f = np.vstack(embeddings_f)
     return np.array(embeddings_f), np.array(labels_f)
 
-def train_attentive_classifier(train_embeddings, train_labels, num_classes=1000, use_class=True, num_epochs=10, learning_rate=0.0001, device='cuda'):
+def combine_train_val(train_embeddings, train_labels, val_embeddings, val_labels):
+    combined_embeddings = train_embeddings + val_embeddings
+    combined_labels = train_labels + val_labels
+    return combined_embeddings, combined_labels
+
+def train_attentive_classifier(train_embeddings, train_labels, use_class, num_classes=1000, num_epochs=10, learning_rate=1e-4, device='cuda'):
     # Create the embeddings dataset and dataloader
     train_dataset = EmbeddingsDataset(train_embeddings, train_labels)
     train_loader = DataLoader(train_dataset, batch_size=None, shuffle=False)
 
-    # Initialize the AttentiveClassifier
     attentive_classifier = AttentiveClassifier(num_classes=num_classes, use_class=use_class).to(device)
     
     # Define loss function and optimizer
@@ -82,9 +86,9 @@ def train_attentive_classifier(train_embeddings, train_labels, num_classes=1000,
         attentive_classifier.train()
         total_loss = 0.0
         for patch_tokens, class_token, labels in train_loader:
-            patch_tokens = patch_tokens.to(device)
-            class_token = class_token.to(device)
-            labels = labels.to(device)
+            patch_tokens = patch_tokens.to(device).float()  
+            class_token = class_token.to(device).float()    
+            labels = labels.to(device).long()              
             
             optimizer.zero_grad()
             

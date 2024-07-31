@@ -64,7 +64,7 @@ def main():
         logging.info('Dataset split successfully')
 
         # Create dataloaders
-        trainloader, closedtestloader, opentestloader = create_dataloaders(root, df, idx_train, idx_test, transformation, args.batch_size)
+        trainloader, closedtestloader, opentestloader, valloader = create_dataloaders(root, df, idx_train, idx_test, transformation, args.batch_size)
         logging.info('Dataloaders created successfully')
 
         # Load feature extractor
@@ -76,8 +76,7 @@ def main():
         embeddings, labels = compute_embeddings(dataloaders, feature_extractor, device)
         train_embeddings, closed_test_embeddings, open_test_embeddings = embeddings
         train_labels, closed_test_labels, open_test_labels = labels
-
-
+        
         for config in configs:
             if args.model == 'dinov2' and config['pooling_method'] == 'none' and not config['use_class']:
                 raise ValueError("Invalid configuration: pooling_method='none' and use_class=False is not allowed.")
@@ -85,7 +84,7 @@ def main():
             # Initialize attentive pooler if needed
             attentive_classifier = None
             if config['pooling_method'] == 'attentive':
-                num_classes = max(train_labels) + 1
+                num_classes = int(max(train_labels).item() + 1)
                 attentive_classifier = train_attentive_classifier(train_embeddings, train_labels, use_class=config['use_class'], num_classes=num_classes)
 
             logging.info(f'Running experiment with dataset: {dataset}, model: {args.model}, pooling method: {config["pooling_method"]}, use_class: {config["use_class"]}')
