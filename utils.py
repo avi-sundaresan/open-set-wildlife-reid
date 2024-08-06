@@ -14,7 +14,8 @@ from models import create_linear_input, AttentiveClassifier
 from datasets import EmbeddingsDataset
 
 def get_transformation(model):
-    if model == 'dinov2' or 'dinov2_reg':
+    print(model)
+    if model == 'dinov2' or model == 'dinov2_reg':
         return transforms.Compose([
             transforms.Resize((224, 224), interpolation=PIL.Image.Resampling.BILINEAR, antialias=True),
             transforms.ToTensor()
@@ -24,6 +25,8 @@ def get_transformation(model):
         transforms.Resize((384, 384), interpolation= PIL.Image.Resampling.BILINEAR, antialias=True),
         transforms.ToTensor(),
     ])
+    else:
+        raise ValueError(f"Unknown model: {model}")
 
 def compute_full_embeddings(dataloader, feature_model, device):
     embeddings = []
@@ -70,7 +73,7 @@ def combine_train_val(train_embeddings, train_labels, val_embeddings, val_labels
     combined_labels = train_labels + val_labels
     return combined_embeddings, combined_labels
 
-def train_attentive_classifier(train_embeddings, train_labels, use_class, num_classes=1000, num_epochs=10, learning_rate=1e-4, device='cuda'):
+def train_attentive_classifier(train_embeddings, train_labels, use_class, num_classes=1000, num_epochs=10, learning_rate=1e-5, device='cuda'):
     # Create the embeddings dataset and dataloader
     train_dataset = EmbeddingsDataset(train_embeddings, train_labels)
     train_loader = DataLoader(train_dataset, batch_size=None, shuffle=False)

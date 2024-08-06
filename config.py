@@ -1,22 +1,21 @@
 import os
 
 # MODEL = 'dinov2_reg'
-MODEL = 'dinov2'
-# MODEL = 'megadescriptor'
+# MODEL = 'dinov2'
+MODEL = 'megadescriptor'
 
-DATASETS = ['FriesianCattle2015v2']
+DATASETS = ['CTai',
+            'CZoo',
+            'DogFaceNet', 
+            'FriesianCattle2015v2',
+            'FriesianCattle2017',
+            'IPanda50',
+            'MacaqueFaces',
+            'NyalaData', 
+            'SeaTurtleIDHeads',
+            'StripeSpotter'
+]
 
-# DATASETS = ['CTai',
-#             'CZoo',
-#             'DogFaceNet', 
-#             'FriesianCattle2015v2',
-#             'FriesianCattle2017',
-#             'IPanda50',
-#             'MacaqueFaces',
-#             'NyalaData', 
-#             'SeaTurtleIDHeads',
-#             'StripeSpotter'
-# ]
 
 # DATASETS = ['AerialCattle2017', 
 #             'CTai',

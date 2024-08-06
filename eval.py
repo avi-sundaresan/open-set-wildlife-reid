@@ -51,6 +51,8 @@ def main():
 
     # Define transformations
     transformation = get_transformation(args.model)
+    print(f"Model: {args.model}")
+    print(f"Transformation: {transformation}")
 
     for dataset in args.datasets:
         # Load dataset
