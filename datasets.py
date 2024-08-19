@@ -88,7 +88,7 @@ def split_dataset(d):
     splitter = splits.OpenSetSplit(0.8, 0.1)
     split = splitter.split(df)
     idx_train, idx_test = split[0]
-    splits.analyze_split(df, idx_train, idx_test)
+    print(splits.analyze_split(df, idx_train, idx_test))
     return df, idx_train, idx_test
 
 def create_dataloaders(root, df, idx_train, idx_test, transformation, batch_size, val=True):

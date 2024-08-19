@@ -4,7 +4,8 @@ import os
 # MODEL = 'dinov2'
 MODEL = 'megadescriptor'
 
-DATASETS = ['CTai',
+DATASETS = ['FriesianCattle2015v2',
+            'CTai',
             'CZoo',
             'DogFaceNet', 
             'FriesianCattle2015v2',

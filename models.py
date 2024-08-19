@@ -54,6 +54,26 @@ def create_linear_input(x_tokens_list, use_avgpool, use_class):
       return class_output.float()
     return None
 
+class LinearClassifier(nn.Module):
+    """Linear layer to train on top of frozen features"""
+
+    def __init__(self, use_avgpool, use_class, embed_dim=1536, num_classes=1000):
+        super().__init__()
+        self.embed_dim = embed_dim
+        self.use_avgpool = use_avgpool
+        self.num_classes = num_classes
+        self.use_class = use_class
+        if use_class and use_avgpool:
+            self.linear = nn.Linear(2 * embed_dim, num_classes)
+        else:
+            self.linear = nn.Linear(embed_dim, num_classes)
+        self.linear.weight.data.normal_(mean=0.0, std=0.01)
+        self.linear.bias.data.zero_()
+
+    def forward(self, x_tokens_list):
+        output = create_linear_input(x_tokens_list, self.use_avgpool, self.use_class)
+        return self.linear(output)
+
 class AttentivePooler(nn.Module):
     """ Attentive Pooler """
     def __init__(
@@ -166,7 +186,6 @@ class AttentiveClassifier(nn.Module):
         )
         self.use_class = use_class
         if use_class:
-            print(embed_dim, num_classes)
             self.linear = nn.Linear(2 * embed_dim, num_classes, bias=True)
         else:
             self.linear = nn.Linear(embed_dim, num_classes, bias=True)

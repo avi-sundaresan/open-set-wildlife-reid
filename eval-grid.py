@@ -9,7 +9,7 @@ from functools import partial
 from models import ModelWithIntermediateLayers, ModelWithIntermediateLayersMD
 from datasets import prepare_datasets, split_dataset, create_dataloaders
 from config_grid import DATASETS, MODEL, BATCH_SIZE, CONFIG_PATH, LEARNING_RATE, get_dataset_root
-from utils import plot_KNN_ROC, flatten_embeddings, evaluate_knn, compute_embeddings, get_transformation, train_attentive_classifier, combine_train_val
+from utils import get_ROC, flatten_embeddings, evaluate_knn, compute_embeddings, get_transformation, train_attentive_classifier, combine_train_val
 
 # Initialize logging
 logging.basicConfig(filename='attentive_grid_results.log', level=logging.INFO, 
@@ -131,7 +131,7 @@ def main():
             logging.info(f'Open test set evaluation complete for best config.')
 
             # Plot ROC curve
-            roc_auc = plot_KNN_ROC(closed_min_dist, open_min_dist)
+            roc_auc = get_ROC(closed_min_dist, open_min_dist)
             logging.info(f'ROC AUC for best config: {roc_auc:.4f}')  
         except Exception as e:
             logging.error(f"Error occurred for dataset {dataset}: {str(e)}")

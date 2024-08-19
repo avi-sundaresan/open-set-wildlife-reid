@@ -8,7 +8,7 @@ from functools import partial
 from models import ModelWithIntermediateLayers, ModelWithIntermediateLayersMD
 from datasets import prepare_datasets, split_dataset, create_dataloaders
 from config import DATASETS, MODEL, BATCH_SIZE, CONFIG_PATH, get_dataset_root
-from utils import get_ROC, flatten_embeddings, evaluate_knn, compute_embeddings, get_transformation, train_attentive_classifier
+from utils import get_ROC, compute_embeddings, get_transformation, train_attentive_classifier, train_linear_classifier, eval_closed_set, eval_open_set
 
 # Initialize logging
 logging.basicConfig(filename='open_set_results.log', level=logging.INFO, 
@@ -46,13 +46,13 @@ def main():
         configs = json.load(f)
 
     # Set device
-    device = torch.device("cuda:0" if torch.cuda.is_available() else "cpu")
+    device = torch.device("cuda:1" if torch.cuda.is_available() else "cpu")
     logging.info(f'Using device: {device}')
 
     # Define transformations
     transformation = get_transformation(args.model)
-    print(f"Model: {args.model}")
-    print(f"Transformation: {transformation}")
+    # print(f"Model: {args.model}")
+    # print(f"Transformation: {transformation}")
 
     for dataset in args.datasets:
         # Load dataset
@@ -83,27 +83,25 @@ def main():
             if args.model == 'dinov2' and config['pooling_method'] == 'none' and not config['use_class']:
                 raise ValueError("Invalid configuration: pooling_method='none' and use_class=False is not allowed.")
 
-            # Initialize attentive pooler if needed
-            attentive_classifier = None
+            num_classes = int(max(train_labels).item() + 1)
             if config['pooling_method'] == 'attentive':
-                num_classes = int(max(train_labels).item() + 1)
-                attentive_classifier = train_attentive_classifier(train_embeddings, train_labels, use_class=config['use_class'], num_classes=num_classes)
+                classifier = train_attentive_classifier(train_embeddings, train_labels, use_class=config['use_class'], device=device, num_classes=num_classes)
+            elif config['pooling_method'] == 'linear':
+                classifier = train_linear_classifier(train_embeddings, train_labels, use_class=config['use_class'], use_avgpool=True, device=device, num_classes=num_classes)
+            elif config['pooling_method'] == 'none':
+                classifier = train_linear_classifier(train_embeddings, train_labels, use_class=config['use_class'], use_avgpool=False, device=device, num_classes=num_classes)
 
-            logging.info(f'Running experiment with dataset: {dataset}, model: {args.model}, pooling method: {config["pooling_method"]}, use_class: {config["use_class"]}')
-            train_embeddings_f, train_labels_f = flatten_embeddings(train_embeddings, train_labels, config['pooling_method'], config['use_class'], attentive_classifier)
-            closed_test_embeddings_f, closed_test_labels_f = flatten_embeddings(closed_test_embeddings, closed_test_labels, config['pooling_method'], config['use_class'], attentive_classifier)
-            open_test_embeddings_f, open_test_labels_f = flatten_embeddings(open_test_embeddings, open_test_labels, config['pooling_method'], config['use_class'], attentive_classifier)
+            closed_top1_acc, closed_msp, closed_mls = eval_closed_set(closed_test_embeddings, closed_test_labels, classifier)
+            open_msp, open_mls = eval_open_set(open_test_embeddings, open_test_labels, classifier)
 
-            # Evaluate KNN for closed test set
-            closed_min_dist, closed_top1_acc = evaluate_knn(train_embeddings_f, closed_test_embeddings_f, train_labels_f, closed_test_labels_f)
-
-            # Evaluate KNN for open test set
-            open_min_dist, _ = evaluate_knn(train_embeddings_f, open_test_embeddings_f, train_labels_f, open_test_labels_f)
+            logging.info(f'Running linear classifier experiment with dataset: {dataset}, model: {args.model}, pooling method: {config["pooling_method"]}, use_class: {config["use_class"]}')
 
             # Plot ROC curve
-            roc_auc = get_ROC(closed_min_dist, open_min_dist)
+            msp_roc_auc = get_ROC(closed_msp, open_msp, knn=False)
+            mls_roc_auc = get_ROC(closed_mls, open_mls, knn=False)
             logging.info(f'Top-1 acc. for config: {closed_top1_acc:.4f}')
-            logging.info(f'ROC AUC for config: {roc_auc:.4f}')  
+            logging.info(f'MSP ROC AUC for config: {msp_roc_auc:.4f}')  
+            logging.info(f'MLS ROC AUC for config: {mls_roc_auc:.4f}')
 
 if __name__ == '__main__':
     main()

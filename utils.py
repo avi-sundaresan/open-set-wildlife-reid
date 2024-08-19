@@ -1,5 +1,6 @@
 import numpy as np
 import torch
+import torch.nn.functional as F
 from torch import nn, optim
 from torchvision import transforms
 import PIL
@@ -10,11 +11,10 @@ from tqdm import tqdm
 from torch.utils.data import DataLoader
 
 
-from models import create_linear_input, AttentiveClassifier
+from models import create_linear_input, LinearClassifier, AttentiveClassifier
 from datasets import EmbeddingsDataset
 
 def get_transformation(model):
-    print(model)
     if model == 'dinov2' or model == 'dinov2_reg':
         return transforms.Compose([
             transforms.Resize((224, 224), interpolation=PIL.Image.Resampling.BILINEAR, antialias=True),
@@ -73,12 +73,49 @@ def combine_train_val(train_embeddings, train_labels, val_embeddings, val_labels
     combined_labels = train_labels + val_labels
     return combined_embeddings, combined_labels
 
-def train_attentive_classifier(train_embeddings, train_labels, use_class, num_classes=1000, num_epochs=10, learning_rate=1e-5, device='cuda'):
+def train_linear_classifier(train_embeddings, train_labels, use_class, use_avgpool, device, num_classes=1000, num_epochs=10, learning_rate=5e-3):
     # Create the embeddings dataset and dataloader
     train_dataset = EmbeddingsDataset(train_embeddings, train_labels)
     train_loader = DataLoader(train_dataset, batch_size=None, shuffle=False)
 
-    attentive_classifier = AttentiveClassifier(num_classes=num_classes, use_class=use_class).to(device)
+    classifier = LinearClassifier(num_classes=num_classes, use_class=use_class, use_avgpool=use_avgpool).to(device)
+    
+    # Define loss function and optimizer
+    criterion = nn.CrossEntropyLoss()
+    optimizer = optim.Adam(classifier.parameters(), lr=learning_rate)
+    
+    # Training loop
+    for epoch in tqdm(range(num_epochs)):
+        classifier.train()
+        total_loss = 0.0
+        for patch_tokens, class_token, labels in train_loader:
+            patch_tokens = patch_tokens.to(device).float()  
+            class_token = class_token.to(device).float()    
+            labels = labels.to(device).long()              
+            
+            optimizer.zero_grad()
+            
+            # Forward pass
+            outputs = classifier((patch_tokens, class_token))
+            loss = criterion(outputs, labels)
+            
+            # Backward pass and optimization
+            loss.backward()
+            optimizer.step()
+            
+            total_loss += loss.item()
+        
+        avg_loss = total_loss / len(train_loader)
+        print(f'Epoch [{epoch+1}/{num_epochs}], Loss: {avg_loss:.4f}')
+    
+    return classifier
+
+def train_attentive_classifier(train_embeddings, train_labels, use_class, device, num_classes=1000, num_epochs=10, learning_rate=1e-5, complete_block=False):
+    # Create the embeddings dataset and dataloader
+    train_dataset = EmbeddingsDataset(train_embeddings, train_labels)
+    train_loader = DataLoader(train_dataset, batch_size=None, shuffle=False)
+
+    attentive_classifier = AttentiveClassifier(num_classes=num_classes, use_class=use_class, complete_block=complete_block).to(device)
     
     # Define loss function and optimizer
     criterion = nn.CrossEntropyLoss()
@@ -110,6 +147,64 @@ def train_attentive_classifier(train_embeddings, train_labels, use_class, num_cl
     
     return attentive_classifier
 
+def compute_scores(outputs):
+    softmax_scores = F.softmax(outputs, dim=1)
+    max_softmax_scores, _ = torch.max(softmax_scores, dim=1)
+    max_logit_scores, _ = torch.max(outputs, dim=1)
+    
+    return max_softmax_scores, max_logit_scores
+
+def compute_top1_accuracy(outputs, labels):
+    # Ensure outputs and labels are tensors and on the same device
+    if not isinstance(outputs, torch.Tensor):
+        outputs = torch.tensor(outputs)
+    if not isinstance(labels, torch.Tensor):
+        labels = torch.tensor(labels)
+        
+    # Ensure outputs and labels are on the same device
+    labels = labels.to(outputs.device)
+
+    _, predicted = torch.max(outputs, 1)
+
+    if predicted.shape != labels.shape:
+        raise ValueError(f"Shape mismatch: predicted shape {predicted.shape}, labels shape {labels.shape}")
+    
+    correct = (predicted == labels).sum().item()
+    accuracy = correct / labels.size(0)
+    
+    return accuracy
+
+def eval_closed_set(embeddings, labels, model, device='cuda'):
+    model.eval()
+
+    test_dataset = EmbeddingsDataset(embeddings, labels)
+    test_loader = DataLoader(test_dataset, batch_size=None, shuffle=False)
+    outputs = []
+    with torch.no_grad():
+        for patch_tokens, class_token, _ in test_loader:          
+            outputs.append(model((patch_tokens, class_token)))
+    
+    outputs = torch.cat(outputs, dim=0)
+    accuracy = compute_top1_accuracy(outputs, labels)
+    max_softmax_scores, max_logit_scores = compute_scores(outputs)
+
+    return accuracy, max_softmax_scores, max_logit_scores
+
+def eval_open_set(embeddings, labels, model, device='cuda'):
+    model.eval()
+
+    test_dataset = EmbeddingsDataset(embeddings, labels)
+    test_loader = DataLoader(test_dataset, batch_size=None, shuffle=False)
+    outputs = []
+    with torch.no_grad():
+        for patch_tokens, class_token, _ in test_loader:            
+            outputs.append(model((patch_tokens, class_token)))
+    
+    outputs = torch.cat(outputs, dim=0)
+    max_softmax_scores, max_logit_scores = compute_scores(outputs)
+
+    return max_softmax_scores, max_logit_scores
+
 def evaluate_knn(train_embeddings, test_embeddings, train_labels, test_labels):
     neighbors = NearestNeighbors(n_neighbors=5, algorithm='brute', metric='cosine').fit(train_embeddings)
     test_knn_distances, test_knn_indices = neighbors.kneighbors(test_embeddings)
@@ -119,9 +214,14 @@ def evaluate_knn(train_embeddings, test_embeddings, train_labels, test_labels):
     min_distances = [elem[0] for elem in test_knn_distances]
     return min_distances, top1_accuracy
 
-def plot_KNN_ROC(closed_min_dist, open_min_dist, plot=False):
-    yt = [1 for elem in open_min_dist] + [0 for elem in closed_min_dist]
-    ys = open_min_dist + closed_min_dist
+def get_ROC(closed_metric, open_metric, plot=False, knn=True):
+    closed_metric = closed_metric.tolist()
+    open_metric = open_metric.tolist()
+    if knn:
+        yt = [1 for _ in open_metric] + [0 for _ in closed_metric]
+    else:
+        yt = [0 for _ in open_metric] + [1 for _ in closed_metric]
+    ys = open_metric + closed_metric
     fpr, tpr, _ = roc_curve(yt, ys)
 
     if plot:
@@ -136,7 +236,8 @@ def plot_KNN_ROC(closed_min_dist, open_min_dist, plot=False):
         plt.xlabel("False Positive Rate")
         plt.ylabel("True Positive Rate")
         plt.legend(loc='lower right')
-        plt.title('Closed/Open Classification ROC (NN Min Distance)')
+        plt.title('Closed/Open Classification ROC')
         plt.show()
+        # plt.savefig('roc.png')
 
     return auc(fpr, tpr)
