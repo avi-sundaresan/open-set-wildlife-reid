@@ -12,7 +12,7 @@ from torch.utils.data import DataLoader
 
 
 from models import create_linear_input, LinearClassifier, AttentiveClassifier
-from datasets import EmbeddingsDataset
+from datasets.datasets import EmbeddingsDataset
 
 def get_transformation(model):
     if model == 'dinov2' or model == 'dinov2_reg':
@@ -215,8 +215,10 @@ def evaluate_knn(train_embeddings, test_embeddings, train_labels, test_labels):
     return min_distances, top1_accuracy
 
 def get_ROC(closed_metric, open_metric, plot=False, knn=True):
-    closed_metric = closed_metric.tolist()
-    open_metric = open_metric.tolist()
+    if isinstance(closed_metric, np.ndarray) or isinstance(closed_metric, torch.Tensor):
+        closed_metric = closed_metric.tolist()
+    if isinstance(open_metric, np.ndarray) or isinstance(open_metric, torch.Tensor):
+        open_metric = open_metric.tolist()
     if knn:
         yt = [1 for _ in open_metric] + [0 for _ in closed_metric]
     else:

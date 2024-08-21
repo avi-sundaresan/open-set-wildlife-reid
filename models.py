@@ -3,7 +3,7 @@ from torch import nn
 import torch.nn.functional as F
 import math
 
-from jepa_utils import Block, CrossAttention, CrossAttentionBlock, trunc_normal_
+from utils.jepa_utils import Block, CrossAttention, CrossAttentionBlock, trunc_normal_
 
 class ModelWithIntermediateLayers(nn.Module):
     def __init__(self, feature_model, n_last_blocks, autocast_ctx):
