@@ -9,18 +9,18 @@ from functools import partial
 from models import ModelWithIntermediateLayers, ModelWithIntermediateLayersMD
 from datasets.datasets import prepare_datasets, split_dataset, create_dataloaders
 from configs.config_grid import DATASETS, MODEL, BATCH_SIZE, CONFIG_PATH, LEARNING_RATE, get_dataset_root
-from utils.utils import get_ROC, flatten_embeddings, evaluate_knn, compute_embeddings, get_transformation, train_attentive_classifier, combine_train_val
+from utils.utils import get_ROC, compute_embeddings, get_transformation, train_val_attentive_classifier, train_val_linear_classifier, eval_closed_set, eval_open_set
 
 # Initialize logging
-logging.basicConfig(filename='attentive_grid_results.log', level=logging.INFO, 
+logging.basicConfig(filename='logs/attentive_grid_results-new.log', level=logging.INFO, 
                     format='%(asctime)s - %(levelname)s - %(message)s')
 
 def parse_args():
-    parser = argparse.ArgumentParser(description="KNN Classification Script")
+    parser = argparse.ArgumentParser(description="Classifier Grid Search Script")
     parser.add_argument('--datasets', type=list, default=DATASETS, help='Datasets to use')
     parser.add_argument('--model', type=str, default=MODEL, help='Feature extractor to use')
     parser.add_argument('--batch_sizes', type=list, default=BATCH_SIZE, help='Batch sizes for data loading')
-    parser.add_argument('--learning-rates', type=list, default=LEARNING_RATE, help='Learning rates for model')
+    parser.add_argument('--learning_rates', type=list, default=LEARNING_RATE, help='Learning rates for classifier')
     parser.add_argument('--configs', type=str, default=CONFIG_PATH, help='Path to JSON file with list of configurations')
     return parser.parse_args()
 
@@ -48,15 +48,10 @@ def main():
         configs = json.load(f)
 
     # Set device
-    device = torch.device("cuda:0" if torch.cuda.is_available() else "cpu")
+    device = torch.device("cuda:1" if torch.cuda.is_available() else "cpu")
     logging.info(f'Using device: {device}')
 
-    # Define transformations
-    transformation = get_transformation(args.model)
-
-    best_acc = 0
-    best_config = None
-    best_attentive_classifier = None
+    best_results = []
 
     for dataset in args.datasets:
         # Load dataset
@@ -71,75 +66,80 @@ def main():
             df, idx_train, idx_test = split_dataset(d)
             logging.info('Dataset split successfully')
 
-            # Create dataloaders
-            for batch_size in args.batch_sizes:
-                trainloader, closedtestloader, opentestloader, valloader = create_dataloaders(root, df, idx_train, idx_test, transformation, batch_size, val=True)
-                logging.info(f'Dataloaders created successfully with batch size {batch_size}')
+            trainloader, closedtestloader, opentestloader, valloader = create_dataloaders(root, df, idx_train, idx_test, get_transformation(args.model), val=True, batch_size=None)
+            logging.info(f'Dataloaders created successfully')
 
-                # Load feature extractor
-                feature_extractor = load_model(args.model, device)
-                logging.info('Feature extractor loaded successfully')
+            # Load feature extractor
+            feature_extractor = load_model(args.model, device)
+            logging.info('Feature extractor loaded successfully')
 
-                # Compute embeddings
-                dataloaders = [trainloader, valloader, closedtestloader, opentestloader]
-                embeddings, labels = compute_embeddings(dataloaders, feature_extractor, device)
-                train_embeddings, val_embeddings, closed_test_embeddings, open_test_embeddings = embeddings
-                train_labels, val_labels, closed_test_labels, open_test_labels = labels
+            # Compute embeddings
+            dataloaders = [trainloader, valloader, closedtestloader, opentestloader]
+            embeddings, labels = compute_embeddings(dataloaders, feature_extractor, device)
+            train_embeddings, val_embeddings, closed_test_embeddings, open_test_embeddings = embeddings
+            train_labels, val_labels, closed_test_labels, open_test_labels = labels
+            logging.info('Embeddings computed successfully')
 
-                for lr in args.learning_rates:
-                    for config in configs:
-                        if args.model == 'dinov2' and config['pooling_method'] == 'none' and not config['use_class']:
-                            raise ValueError("Invalid configuration: pooling_method='none' and use_class=False is not allowed.")
+            num_classes = int(max(train_labels).item() + 1)
+            
+            for config in configs: 
+                if args.model == 'dinov2' and config['pooling_method'] == 'none' and not config['use_class']:
+                    raise ValueError("Invalid configuration: pooling_method='none' and use_class=False is not allowed.")
+                
+                best_val_acc = 0
+                best_batch = None
+                best_lr = None
+                best_epoch = None
 
-                        # Initialize attentive pooler if needed
-                        attentive_classifier = None
+                for batch_size in args.batch_sizes:
+                    for lr in args.learning_rates:
+                        logging.info(f'Grid eval for classifiers: Running experiment with dataset: {dataset}, model: {args.model}, pooling method: {config["pooling_method"]}, use_class: {config["use_class"]}, learning rate: {lr}, batch size: {batch_size}')
+
                         if config['pooling_method'] == 'attentive':
-                            num_classes = int(max(train_labels).item() + 1)
-                            attentive_classifier = train_attentive_classifier(train_embeddings, train_labels, use_class=config['use_class'], num_classes=num_classes, learning_rate=lr)
+                            epoch, val_acc = train_val_attentive_classifier(
+                                train_embeddings, train_labels, val_embeddings, val_labels, 
+                                 use_class=config['use_class'], device=device, num_classes=num_classes, learning_rate=lr, batch_size=batch_size
+                            )
+                            logging.info(f"Training stopped at epoch {epoch} for config: {config}")
+                        elif config['pooling_method'] == 'linear':
+                            epoch, val_acc  = train_val_linear_classifier(
+                                train_embeddings, train_labels, val_embeddings, val_labels, 
+                                use_class=config['use_class'], use_avgpool=True, device=device, num_classes=num_classes, learning_rate=lr, batch_size=batch_size
+                            )
+                            logging.info(f"Training stopped at epoch {epoch} for config: {config}")
+                        elif config['pooling_method'] == 'none':
+                            epoch, val_acc  = train_val_linear_classifier(
+                                train_embeddings, train_labels, val_embeddings, val_labels, 
+                                use_class=config['use_class'], use_avgpool=False, device=device, num_classes=num_classes, learning_rate=lr, batch_size=batch_size
+                            )
+                            logging.info(f"Training stopped at epoch {epoch} for config: {config}")
 
-                        logging.info(f'Running experiment with dataset: {dataset}, model: {args.model}, pooling method: {config["pooling_method"]}, use_class: {config["use_class"]}, learning rate: {lr}, batch size: {batch_size}')
-                        train_embeddings_f, train_labels_f = flatten_embeddings(train_embeddings, train_labels, config['pooling_method'], config['use_class'], attentive_classifier)
-                        val_embeddings_f, val_labels_f = flatten_embeddings(val_embeddings, val_labels, config['pooling_method'], config['use_class'], attentive_classifier)
+                        if val_acc > best_val_acc:
+                            best_batch = batch_size
+                            best_lr = lr
+                            best_epoch = epoch
+                            best_val_acc = val_acc
+                
+                best_results.append({
+                            "dataset": dataset,
+                            "pooling_method": config["pooling_method"],
+                            "batch_size": best_batch,
+                            "learning_rate": best_lr,
+                            "best_epoch": best_epoch,
+                            "best_val_acc": best_val_acc
+                })
 
-                        # Evaluate KNN for validation set
-                        _, val_top1_acc = evaluate_knn(train_embeddings_f, val_embeddings_f, train_labels_f, val_labels_f)
-                        logging.info(f'Validation Top-1 acc. for config: {val_top1_acc:.4f}')
-
-                        if val_top1_acc > best_acc:
-                            best_acc = val_top1_acc
-                            best_config = (batch_size, lr, config)
-                            best_attentive_classifier = attentive_classifier
-        
-            combined_train_embeddings, combined_train_labels = combine_train_val(train_embeddings, train_labels, val_embeddings, val_labels)
-
-            # Retrain on the combined train and validation set
-            best_attentive_classifier = train_attentive_classifier(combined_train_embeddings, combined_train_labels, use_class=best_config[2]['use_class'], num_classes=num_classes, learning_rate=best_config[1])
-
-            # Evaluate on test set with best configuration
-            logging.info(f'Best configuration: batch size={best_config[0]}, learning rate={best_config[1]}, config={best_config[2]}')
-
-            train_embeddings_f, train_labels_f = flatten_embeddings(train_embeddings, train_labels, best_config[2]['pooling_method'], best_config[2]['use_class'], best_attentive_classifier)
-            closed_test_embeddings_f, closed_test_labels_f = flatten_embeddings(closed_test_embeddings, closed_test_labels, best_config[2]['pooling_method'], best_config[2]['use_class'], best_attentive_classifier)
-            open_test_embeddings_f, open_test_labels_f = flatten_embeddings(open_test_embeddings, open_test_labels, best_config[2]['pooling_method'], best_config[2]['use_class'], best_attentive_classifier)
-
-            # Evaluate KNN for closed test set
-            closed_min_dist, closed_top1_acc = evaluate_knn(train_embeddings_f, closed_test_embeddings_f, train_labels_f, closed_test_labels_f)
-            logging.info(f'Closed test set Top-1 acc. for best config: {closed_top1_acc:.14f}')
-
-            # Evaluate KNN for open test set
-            open_min_dist, _ = evaluate_knn(train_embeddings_f, open_test_embeddings_f, train_labels_f, open_test_labels_f)
-            logging.info(f'Open test set evaluation complete for best config.')
-
-            # Plot ROC curve
-            roc_auc = get_ROC(closed_min_dist, open_min_dist)
-            logging.info(f'ROC AUC for best config: {roc_auc:.4f}')  
         except Exception as e:
-            logging.error(f"Error occurred for dataset {dataset}: {str(e)}")
+            logging.error(f"Error occurred for dataset {dataset}, {str(e)}")
             continue
         finally:
             gc.collect()
             torch.cuda.empty_cache()
-
-
+    
+    with open('configs/best_grid_results.json', 'w') as f:
+        json.dump(best_results, f, indent=4)
+    
+    logging.info('Best results saved')
+    
 if __name__ == '__main__':
     main()

@@ -1,0 +1,70 @@
+2024-09-11 01:17:16,031 - INFO - /home/avisund/data/wildlife_datasets/CTai/
+2024-09-11 01:17:16,619 - INFO - Dataset CTai loaded successfully
+2024-09-11 01:17:16,631 - INFO - Dataset split successfully
+2024-09-11 01:17:16,631 - INFO - Number of dataset images: 5078
+2024-09-11 01:17:16,631 - INFO - Number of dataset identities: 72
+2024-09-11 01:17:16,676 - INFO - Image dimension: 327 by 314
+2024-09-11 01:17:16,717 - INFO - Dataset size: 0.34730321634560823 GB
+2024-09-11 01:17:16,717 - INFO - /home/avisund/data/wildlife_datasets/CZoo/
+2024-09-11 01:17:16,961 - INFO - Dataset CZoo loaded successfully
+2024-09-11 01:17:16,967 - INFO - Dataset split successfully
+2024-09-11 01:17:16,967 - INFO - Number of dataset images: 2109
+2024-09-11 01:17:16,967 - INFO - Number of dataset identities: 24
+2024-09-11 01:17:17,013 - INFO - Image dimension: 323 by 477
+2024-09-11 01:17:17,030 - INFO - Dataset size: 0.24274847004562616 GB
+2024-09-11 01:17:17,030 - INFO - /home/avisund/data/wildlife_datasets/DogFaceNet/
+2024-09-11 01:17:17,182 - INFO - Dataset DogFaceNet loaded successfully
+2024-09-11 01:17:17,287 - INFO - Dataset split successfully
+2024-09-11 01:17:17,287 - INFO - Number of dataset images: 8363
+2024-09-11 01:17:17,288 - INFO - Number of dataset identities: 1393
+2024-09-11 01:17:17,302 - INFO - Image dimension: 224 by 224
+2024-09-11 01:17:17,384 - INFO - Dataset size: 0.07046638894826174 GB
+2024-09-11 01:17:17,384 - INFO - /home/avisund/data/wildlife_datasets/FriesianCattle2015v2/
+2024-09-11 01:17:17,394 - INFO - Dataset FriesianCattle2015v2 loaded successfully
+2024-09-11 01:17:17,398 - INFO - Dataset split successfully
+2024-09-11 01:17:17,398 - INFO - Number of dataset images: 193
+2024-09-11 01:17:17,398 - INFO - Number of dataset identities: 25
+2024-09-11 01:17:17,455 - INFO - Image dimension: 1486 by 1230
+2024-09-11 01:17:17,459 - INFO - Dataset size: 0.0771366348490119 GB
+2024-09-11 01:17:17,459 - INFO - /home/avisund/data/wildlife_datasets/FriesianCattle2017/
+2024-09-11 01:17:17,478 - INFO - Dataset FriesianCattle2017 loaded successfully
+2024-09-11 01:17:17,485 - INFO - Dataset split successfully
+2024-09-11 01:17:17,485 - INFO - Number of dataset images: 940
+2024-09-11 01:17:17,485 - INFO - Number of dataset identities: 89
+2024-09-11 01:17:17,858 - INFO - Image dimension: 1486 by 1230
+2024-09-11 01:17:17,868 - INFO - Dataset size: 0.3385710120201111 GB
+2024-09-11 01:17:17,868 - INFO - /home/avisund/data/wildlife_datasets/IPanda50/
+2024-09-11 01:17:18,359 - INFO - Dataset IPanda50 loaded successfully
+2024-09-11 01:17:18,371 - INFO - Dataset split successfully
+2024-09-11 01:17:18,371 - INFO - Number of dataset images: 6874
+2024-09-11 01:17:18,372 - INFO - Number of dataset identities: 50
+2024-09-11 01:17:19,060 - INFO - Image dimension: 1919 by 1076
+2024-09-11 01:17:19,156 - INFO - Dataset size: 0.8642720449715853 GB
+2024-09-11 01:17:19,156 - INFO - /home/avisund/data/wildlife_datasets/MacaqueFaces/
+2024-09-11 01:17:19,324 - INFO - Dataset MacaqueFaces loaded successfully
+2024-09-11 01:17:19,337 - INFO - Dataset split successfully
+2024-09-11 01:17:19,337 - INFO - Number of dataset images: 6280
+2024-09-11 01:17:19,337 - INFO - Number of dataset identities: 34
+2024-09-11 01:17:19,341 - INFO - Image dimension: 100 by 100
+2024-09-11 01:17:19,392 - INFO - Dataset size: 0.011171163059771061 GB
+2024-09-11 01:17:19,392 - INFO - /home/avisund/data/wildlife_datasets/NyalaData/
+2024-09-11 01:17:19,433 - INFO - Dataset NyalaData loaded successfully
+2024-09-11 01:17:19,450 - INFO - Dataset split successfully
+2024-09-11 01:17:19,450 - INFO - Number of dataset images: 1942
+2024-09-11 01:17:19,451 - INFO - Number of dataset identities: 237
+2024-09-11 01:17:20,191 - INFO - Image dimension: 1592 by 1582
+2024-09-11 01:17:20,210 - INFO - Dataset size: 0.4634587336331606 GB
+2024-09-11 01:17:20,210 - INFO - /home/avisund/data/wildlife_datasets/SeaTurtleIDHeads/
+2024-09-11 01:17:20,290 - INFO - Dataset SeaTurtleIDHeads loaded successfully
+2024-09-11 01:17:20,333 - INFO - Dataset split successfully
+2024-09-11 01:17:20,333 - INFO - Number of dataset images: 7582
+2024-09-11 01:17:20,333 - INFO - Number of dataset identities: 400
+2024-09-11 01:17:20,377 - INFO - Image dimension: 372 by 399
+2024-09-11 01:17:20,440 - INFO - Dataset size: 0.3981357188895345 GB
+2024-09-11 01:17:20,440 - INFO - /home/avisund/data/wildlife_datasets/StripeSpotter/
+2024-09-11 01:17:20,476 - INFO - Dataset StripeSpotter loaded successfully
+2024-09-11 01:17:20,496 - INFO - Dataset split successfully
+2024-09-11 01:17:20,496 - INFO - Number of dataset images: 824
+2024-09-11 01:17:20,496 - INFO - Number of dataset identities: 46
+2024-09-11 01:17:21,230 - INFO - Image dimension: 1499 by 1383
+2024-09-11 01:17:21,249 - INFO - Dataset size: 0.21789520140737295 GB

@@ -1,0 +1,10 @@
+[
+    {
+        "dataset": "FriesianCattle2015v2",
+        "pooling_method": "linear",
+        "batch_size": 16,
+        "learning_rate": 0.0001,
+        "best_epoch": 50,
+        "best_val_acc": 0.9666666666666667
+    }
+]

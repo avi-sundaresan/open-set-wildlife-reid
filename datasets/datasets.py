@@ -79,6 +79,60 @@ def prepare_datasets(root, dataset_name):
     elif dataset_name == 'FriesianCattle2017':
         datasets.FriesianCattle2017.get_data(root)
         d = datasets.FriesianCattle2017(root)
+    elif dataset_name == 'SealID':
+        datasets.SealID.get_data(root)
+        d = datasets.SealID(root)
+    elif dataset_name == 'AAUZebraFish':
+        datasets.AAUZebraFish.get_data(root)
+        d = datasets.AAUZebraFish(root)
+    elif dataset_name == 'ATRW':
+        datasets.ATRW.get_data(root)
+        d = datasets.ATRW(root)
+    elif dataset_name == 'BirdIndividualID':
+        datasets.BirdIndividualID.get_data(root)
+        d = datasets.BirdIndividualID(root)
+    elif dataset_name == 'CatIndividualImages':
+        datasets.CatIndividualImages.get_data(root)
+        d = datasets.CatIndividualImages(root)
+    elif dataset_name == 'CowDataset':
+        datasets.CowDataset.get_data(root)
+        d = datasets.CowDataset(root)
+    elif dataset_name == 'Cows2021':
+        datasets.Cows2021.get_data(root)
+        d = datasets.Cows2021(root)
+    elif dataset_name == 'Giraffes':
+        datasets.Giraffes.get_data(root)
+        d = datasets.Giraffes(root)
+    elif dataset_name == 'GiraffeZebraID':
+        datasets.GiraffeZebraID.get_data(root)
+        d = datasets.GiraffeZebraID(root)
+    elif dataset_name == 'HyenaID2022':
+        datasets.HyenaID2022.get_data(root)
+        d = datasets.HyenaID2022(root)
+    elif dataset_name == 'LeopardID2022':
+        datasets.LeopardID2022.get_data(root)
+        d = datasets.LeopardID2022(root)
+    elif dataset_name == 'MPDD':
+        datasets.MPDD.get_data(root)
+        d = datasets.MPDD(root)
+    elif dataset_name == 'NDD20':
+        datasets.NDD20.get_data(root)
+        d = datasets.NDD20(root)
+    elif dataset_name == 'OpenCows2020':
+        datasets.OpenCows2020.get_data(root)
+        d = datasets.OpenCows2020(root)
+    elif dataset_name == 'SeaStarReID2023':
+        datasets.SeaStarReID2023.get_data(root)
+        d = datasets.SeaStarReID2023(root)
+    elif dataset_name == 'SMALST':
+        datasets.SMALST.get_data(root)
+        d = datasets.SMALST(root)
+    elif dataset_name == 'WhaleSharkID':
+        datasets.WhaleSharkID.get_data(root)
+        d = datasets.WhaleSharkID(root)
+    elif dataset_name == 'ZindiTurtleRecall':
+        datasets.ZindiTurtleRecall.get_data(root)
+        d = datasets.ZindiTurtleRecall(root)
     else:
         raise ValueError(f"Unsupported dataset: {dataset_name}")
     return d

@@ -4,20 +4,17 @@ import os
 # MODEL = 'dinov2'
 MODEL = 'megadescriptor'
 
-DATASETS = ['FriesianCattle2015v2']
-
-# DATASETS = ['FriesianCattle2015v2',
-#             'CTai',
-#             'CZoo',
-#             'DogFaceNet', 
-#             'FriesianCattle2015v2',
-#             'FriesianCattle2017',
-#             'IPanda50',
-#             'MacaqueFaces',
-#             'NyalaData', 
-#             'SeaTurtleIDHeads',
-#             'StripeSpotter'
-# ]
+DATASETS = ['CTai',
+            'CZoo',
+            'DogFaceNet', 
+            'FriesianCattle2015v2',
+            'FriesianCattle2017',
+            'IPanda50',
+            'MacaqueFaces',
+            'NyalaData', 
+            'SeaTurtleIDHeads',
+            'StripeSpotter'
+]
 
 
 # DATASETS = ['AerialCattle2017', 
@@ -38,7 +35,7 @@ DATASETS = ['FriesianCattle2015v2']
 ROOT_DIR = '/home/avisund/data/wildlife_datasets/'
 BATCH_SIZE = 1
 # CONFIG_PATH = 'dinov2-configs-2.json'
-CONFIG_PATH = 'md-configs.json'
+CONFIG_PATH = 'configs/md-configs.json'
 
 BEST_LEARNING_RATES = {
     "FriesianCattle2015v2": {
