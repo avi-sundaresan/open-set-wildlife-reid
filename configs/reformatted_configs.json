@@ -1,24 +1,4 @@
-import os
-
-# MODEL = 'dinov2_reg'
-# MODEL = 'dinov2'
-MODEL = 'megadescriptor'
-
-DATASETS = ['StripeSpotter',
-            'CatIndividualImages',
-            'CowDataset',
-            'Cows2021',
-            'Giraffes',
-            'NDD20',
-            'OpenCows2020',
-            'SeaStarReID2023',
-            'ZindiTurtleRecall'
-]
-
-ROOT_DIR = '/home/avisund/data/wildlife_datasets/'
-CONFIG_PATH = 'configs/md-configs.json'
-
-BEST_PARAMS = {
+{
     "FriesianCattle2015v2": {
         "attentive": {
             "batch_size": 8,
@@ -256,22 +236,5 @@ BEST_PARAMS = {
             "best_epoch": 19,
             "best_val_acc": 0.7021161150298426
         }
-    },
-    "StripeSpotter": {
-        "attentive": {
-            "batch_size": 128,
-            "learning_rate": 0.01,
-            "best_epoch": 14, 
-            "best_val_acc": 0.9770992366412213
-        },
-        "linear": {
-            "batch_size": 16,
-            "learning_rate": 0.0005,
-            "best_epoch": 3, 
-            "best_val_acc": 0.9694656488549618
-        }
     }
 }
-
-def get_dataset_root(dataset_name):
-    return os.path.join(ROOT_DIR, dataset_name) + '/'

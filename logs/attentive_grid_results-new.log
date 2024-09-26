@@ -4976,3 +4976,287 @@
     "best_epoch": 19,
     "best_val_acc": 0.7021161150298426
 }
+2024-09-25 21:34:14,901 - INFO - Using device: cuda:1
+2024-09-25 21:34:14,901 - INFO - /home/avisund/data/wildlife_datasets/StripeSpotter/
+2024-09-25 21:34:14,936 - INFO - Dataset StripeSpotter loaded successfully
+2024-09-25 21:34:14,953 - INFO - Dataset split successfully
+2024-09-25 21:34:14,956 - INFO - Dataloaders created successfully
+2024-09-25 21:34:16,976 - INFO - Loading pretrained weights from Hugging Face hub (BVRA/MegaDescriptor-L-384)
+2024-09-25 21:34:18,474 - INFO - Feature extractor loaded successfully
+2024-09-25 21:35:02,792 - INFO - Embeddings computed successfully
+2024-09-25 21:35:02,793 - INFO - Grid eval for classifiers: Running experiment with dataset: StripeSpotter, model: megadescriptor, pooling method: linear, use_class: False, learning rate: 1e-05, batch size: 8
+2024-09-25 21:35:05,260 - INFO - Training stopped at epoch 50 for config: {'pooling_method': 'linear', 'use_class': False}
+2024-09-25 21:35:05,261 - INFO - Grid eval for classifiers: Running experiment with dataset: StripeSpotter, model: megadescriptor, pooling method: linear, use_class: False, learning rate: 2e-05, batch size: 8
+2024-09-25 21:35:07,646 - INFO - Training stopped at epoch 50 for config: {'pooling_method': 'linear', 'use_class': False}
+2024-09-25 21:35:07,646 - INFO - Grid eval for classifiers: Running experiment with dataset: StripeSpotter, model: megadescriptor, pooling method: linear, use_class: False, learning rate: 5e-05, batch size: 8
+2024-09-25 21:35:10,026 - INFO - Training stopped at epoch 50 for config: {'pooling_method': 'linear', 'use_class': False}
+2024-09-25 21:35:10,027 - INFO - Grid eval for classifiers: Running experiment with dataset: StripeSpotter, model: megadescriptor, pooling method: linear, use_class: False, learning rate: 0.0001, batch size: 8
+2024-09-25 21:35:12,416 - INFO - Training stopped at epoch 50 for config: {'pooling_method': 'linear', 'use_class': False}
+2024-09-25 21:35:12,416 - INFO - Grid eval for classifiers: Running experiment with dataset: StripeSpotter, model: megadescriptor, pooling method: linear, use_class: False, learning rate: 0.0002, batch size: 8
+2024-09-25 21:35:14,804 - INFO - Training stopped at epoch 50 for config: {'pooling_method': 'linear', 'use_class': False}
+2024-09-25 21:35:14,805 - INFO - Grid eval for classifiers: Running experiment with dataset: StripeSpotter, model: megadescriptor, pooling method: linear, use_class: False, learning rate: 0.0005, batch size: 8
+2024-09-25 21:35:17,208 - INFO - Training stopped at epoch 50 for config: {'pooling_method': 'linear', 'use_class': False}
+2024-09-25 21:35:17,208 - INFO - Grid eval for classifiers: Running experiment with dataset: StripeSpotter, model: megadescriptor, pooling method: linear, use_class: False, learning rate: 0.001, batch size: 8
+2024-09-25 21:35:19,614 - INFO - Training stopped at epoch 50 for config: {'pooling_method': 'linear', 'use_class': False}
+2024-09-25 21:35:19,614 - INFO - Grid eval for classifiers: Running experiment with dataset: StripeSpotter, model: megadescriptor, pooling method: linear, use_class: False, learning rate: 0.002, batch size: 8
+2024-09-25 21:35:22,000 - INFO - Training stopped at epoch 49 for config: {'pooling_method': 'linear', 'use_class': False}
+2024-09-25 21:35:22,000 - INFO - Grid eval for classifiers: Running experiment with dataset: StripeSpotter, model: megadescriptor, pooling method: linear, use_class: False, learning rate: 0.005, batch size: 8
+2024-09-25 21:35:22,384 - INFO - Training stopped at epoch 3 for config: {'pooling_method': 'linear', 'use_class': False}
+2024-09-25 21:35:22,384 - INFO - Grid eval for classifiers: Running experiment with dataset: StripeSpotter, model: megadescriptor, pooling method: linear, use_class: False, learning rate: 0.01, batch size: 8
+2024-09-25 21:35:22,824 - INFO - Training stopped at epoch 4 for config: {'pooling_method': 'linear', 'use_class': False}
+2024-09-25 21:35:22,824 - INFO - Grid eval for classifiers: Running experiment with dataset: StripeSpotter, model: megadescriptor, pooling method: linear, use_class: False, learning rate: 0.02, batch size: 8
+2024-09-25 21:35:23,159 - INFO - Training stopped at epoch 2 for config: {'pooling_method': 'linear', 'use_class': False}
+2024-09-25 21:35:23,159 - INFO - Grid eval for classifiers: Running experiment with dataset: StripeSpotter, model: megadescriptor, pooling method: linear, use_class: False, learning rate: 0.05, batch size: 8
+2024-09-25 21:35:23,591 - INFO - Training stopped at epoch 4 for config: {'pooling_method': 'linear', 'use_class': False}
+2024-09-25 21:35:23,591 - INFO - Grid eval for classifiers: Running experiment with dataset: StripeSpotter, model: megadescriptor, pooling method: linear, use_class: False, learning rate: 0.1, batch size: 8
+2024-09-25 21:35:24,263 - INFO - Training stopped at epoch 9 for config: {'pooling_method': 'linear', 'use_class': False}
+2024-09-25 21:35:24,263 - INFO - Grid eval for classifiers: Running experiment with dataset: StripeSpotter, model: megadescriptor, pooling method: linear, use_class: False, learning rate: 1e-05, batch size: 16
+2024-09-25 21:35:25,484 - INFO - Training stopped at epoch 50 for config: {'pooling_method': 'linear', 'use_class': False}
+2024-09-25 21:35:25,484 - INFO - Grid eval for classifiers: Running experiment with dataset: StripeSpotter, model: megadescriptor, pooling method: linear, use_class: False, learning rate: 2e-05, batch size: 16
+2024-09-25 21:35:26,703 - INFO - Training stopped at epoch 50 for config: {'pooling_method': 'linear', 'use_class': False}
+2024-09-25 21:35:26,703 - INFO - Grid eval for classifiers: Running experiment with dataset: StripeSpotter, model: megadescriptor, pooling method: linear, use_class: False, learning rate: 5e-05, batch size: 16
+2024-09-25 21:35:27,952 - INFO - Training stopped at epoch 50 for config: {'pooling_method': 'linear', 'use_class': False}
+2024-09-25 21:35:27,952 - INFO - Grid eval for classifiers: Running experiment with dataset: StripeSpotter, model: megadescriptor, pooling method: linear, use_class: False, learning rate: 0.0001, batch size: 16
+2024-09-25 21:35:29,175 - INFO - Training stopped at epoch 50 for config: {'pooling_method': 'linear', 'use_class': False}
+2024-09-25 21:35:29,175 - INFO - Grid eval for classifiers: Running experiment with dataset: StripeSpotter, model: megadescriptor, pooling method: linear, use_class: False, learning rate: 0.0002, batch size: 16
+2024-09-25 21:35:30,384 - INFO - Training stopped at epoch 50 for config: {'pooling_method': 'linear', 'use_class': False}
+2024-09-25 21:35:30,384 - INFO - Grid eval for classifiers: Running experiment with dataset: StripeSpotter, model: megadescriptor, pooling method: linear, use_class: False, learning rate: 0.0005, batch size: 16
+2024-09-25 21:35:31,594 - INFO - Training stopped at epoch 50 for config: {'pooling_method': 'linear', 'use_class': False}
+2024-09-25 21:35:31,594 - INFO - Grid eval for classifiers: Running experiment with dataset: StripeSpotter, model: megadescriptor, pooling method: linear, use_class: False, learning rate: 0.001, batch size: 16
+2024-09-25 21:35:32,802 - INFO - Training stopped at epoch 50 for config: {'pooling_method': 'linear', 'use_class': False}
+2024-09-25 21:35:32,802 - INFO - Grid eval for classifiers: Running experiment with dataset: StripeSpotter, model: megadescriptor, pooling method: linear, use_class: False, learning rate: 0.002, batch size: 16
+2024-09-25 21:35:34,010 - INFO - Training stopped at epoch 50 for config: {'pooling_method': 'linear', 'use_class': False}
+2024-09-25 21:35:34,011 - INFO - Grid eval for classifiers: Running experiment with dataset: StripeSpotter, model: megadescriptor, pooling method: linear, use_class: False, learning rate: 0.005, batch size: 16
+2024-09-25 21:35:35,224 - INFO - Training stopped at epoch 50 for config: {'pooling_method': 'linear', 'use_class': False}
+2024-09-25 21:35:35,224 - INFO - Grid eval for classifiers: Running experiment with dataset: StripeSpotter, model: megadescriptor, pooling method: linear, use_class: False, learning rate: 0.01, batch size: 16
+2024-09-25 21:35:36,437 - INFO - Training stopped at epoch 50 for config: {'pooling_method': 'linear', 'use_class': False}
+2024-09-25 21:35:36,437 - INFO - Grid eval for classifiers: Running experiment with dataset: StripeSpotter, model: megadescriptor, pooling method: linear, use_class: False, learning rate: 0.02, batch size: 16
+2024-09-25 21:35:36,631 - INFO - Training stopped at epoch 3 for config: {'pooling_method': 'linear', 'use_class': False}
+2024-09-25 21:35:36,632 - INFO - Grid eval for classifiers: Running experiment with dataset: StripeSpotter, model: megadescriptor, pooling method: linear, use_class: False, learning rate: 0.05, batch size: 16
+2024-09-25 21:35:36,826 - INFO - Training stopped at epoch 3 for config: {'pooling_method': 'linear', 'use_class': False}
+2024-09-25 21:35:36,826 - INFO - Grid eval for classifiers: Running experiment with dataset: StripeSpotter, model: megadescriptor, pooling method: linear, use_class: False, learning rate: 0.1, batch size: 16
+2024-09-25 21:35:37,044 - INFO - Training stopped at epoch 4 for config: {'pooling_method': 'linear', 'use_class': False}
+2024-09-25 21:35:37,044 - INFO - Grid eval for classifiers: Running experiment with dataset: StripeSpotter, model: megadescriptor, pooling method: linear, use_class: False, learning rate: 1e-05, batch size: 32
+2024-09-25 21:35:37,715 - INFO - Training stopped at epoch 50 for config: {'pooling_method': 'linear', 'use_class': False}
+2024-09-25 21:35:37,715 - INFO - Grid eval for classifiers: Running experiment with dataset: StripeSpotter, model: megadescriptor, pooling method: linear, use_class: False, learning rate: 2e-05, batch size: 32
+2024-09-25 21:35:38,382 - INFO - Training stopped at epoch 50 for config: {'pooling_method': 'linear', 'use_class': False}
+2024-09-25 21:35:38,382 - INFO - Grid eval for classifiers: Running experiment with dataset: StripeSpotter, model: megadescriptor, pooling method: linear, use_class: False, learning rate: 5e-05, batch size: 32
+2024-09-25 21:35:39,049 - INFO - Training stopped at epoch 50 for config: {'pooling_method': 'linear', 'use_class': False}
+2024-09-25 21:35:39,050 - INFO - Grid eval for classifiers: Running experiment with dataset: StripeSpotter, model: megadescriptor, pooling method: linear, use_class: False, learning rate: 0.0001, batch size: 32
+2024-09-25 21:35:39,717 - INFO - Training stopped at epoch 50 for config: {'pooling_method': 'linear', 'use_class': False}
+2024-09-25 21:35:39,718 - INFO - Grid eval for classifiers: Running experiment with dataset: StripeSpotter, model: megadescriptor, pooling method: linear, use_class: False, learning rate: 0.0002, batch size: 32
+2024-09-25 21:35:40,387 - INFO - Training stopped at epoch 50 for config: {'pooling_method': 'linear', 'use_class': False}
+2024-09-25 21:35:40,387 - INFO - Grid eval for classifiers: Running experiment with dataset: StripeSpotter, model: megadescriptor, pooling method: linear, use_class: False, learning rate: 0.0005, batch size: 32
+2024-09-25 21:35:41,056 - INFO - Training stopped at epoch 50 for config: {'pooling_method': 'linear', 'use_class': False}
+2024-09-25 21:35:41,056 - INFO - Grid eval for classifiers: Running experiment with dataset: StripeSpotter, model: megadescriptor, pooling method: linear, use_class: False, learning rate: 0.001, batch size: 32
+2024-09-25 21:35:41,724 - INFO - Training stopped at epoch 50 for config: {'pooling_method': 'linear', 'use_class': False}
+2024-09-25 21:35:41,725 - INFO - Grid eval for classifiers: Running experiment with dataset: StripeSpotter, model: megadescriptor, pooling method: linear, use_class: False, learning rate: 0.002, batch size: 32
+2024-09-25 21:35:42,394 - INFO - Training stopped at epoch 50 for config: {'pooling_method': 'linear', 'use_class': False}
+2024-09-25 21:35:42,394 - INFO - Grid eval for classifiers: Running experiment with dataset: StripeSpotter, model: megadescriptor, pooling method: linear, use_class: False, learning rate: 0.005, batch size: 32
+2024-09-25 21:35:42,995 - INFO - Training stopped at epoch 40 for config: {'pooling_method': 'linear', 'use_class': False}
+2024-09-25 21:35:42,995 - INFO - Grid eval for classifiers: Running experiment with dataset: StripeSpotter, model: megadescriptor, pooling method: linear, use_class: False, learning rate: 0.01, batch size: 32
+2024-09-25 21:35:43,276 - INFO - Training stopped at epoch 16 for config: {'pooling_method': 'linear', 'use_class': False}
+2024-09-25 21:35:43,276 - INFO - Grid eval for classifiers: Running experiment with dataset: StripeSpotter, model: megadescriptor, pooling method: linear, use_class: False, learning rate: 0.02, batch size: 32
+2024-09-25 21:35:43,357 - INFO - Training stopped at epoch 1 for config: {'pooling_method': 'linear', 'use_class': False}
+2024-09-25 21:35:43,357 - INFO - Grid eval for classifiers: Running experiment with dataset: StripeSpotter, model: megadescriptor, pooling method: linear, use_class: False, learning rate: 0.05, batch size: 32
+2024-09-25 21:35:43,438 - INFO - Training stopped at epoch 1 for config: {'pooling_method': 'linear', 'use_class': False}
+2024-09-25 21:35:43,438 - INFO - Grid eval for classifiers: Running experiment with dataset: StripeSpotter, model: megadescriptor, pooling method: linear, use_class: False, learning rate: 0.1, batch size: 32
+2024-09-25 21:35:43,559 - INFO - Training stopped at epoch 4 for config: {'pooling_method': 'linear', 'use_class': False}
+2024-09-25 21:35:43,559 - INFO - Grid eval for classifiers: Running experiment with dataset: StripeSpotter, model: megadescriptor, pooling method: linear, use_class: False, learning rate: 1e-05, batch size: 64
+2024-09-25 21:35:43,979 - INFO - Training stopped at epoch 50 for config: {'pooling_method': 'linear', 'use_class': False}
+2024-09-25 21:35:43,979 - INFO - Grid eval for classifiers: Running experiment with dataset: StripeSpotter, model: megadescriptor, pooling method: linear, use_class: False, learning rate: 2e-05, batch size: 64
+2024-09-25 21:35:44,393 - INFO - Training stopped at epoch 50 for config: {'pooling_method': 'linear', 'use_class': False}
+2024-09-25 21:35:44,393 - INFO - Grid eval for classifiers: Running experiment with dataset: StripeSpotter, model: megadescriptor, pooling method: linear, use_class: False, learning rate: 5e-05, batch size: 64
+2024-09-25 21:35:44,808 - INFO - Training stopped at epoch 50 for config: {'pooling_method': 'linear', 'use_class': False}
+2024-09-25 21:35:44,808 - INFO - Grid eval for classifiers: Running experiment with dataset: StripeSpotter, model: megadescriptor, pooling method: linear, use_class: False, learning rate: 0.0001, batch size: 64
+2024-09-25 21:35:45,222 - INFO - Training stopped at epoch 50 for config: {'pooling_method': 'linear', 'use_class': False}
+2024-09-25 21:35:45,222 - INFO - Grid eval for classifiers: Running experiment with dataset: StripeSpotter, model: megadescriptor, pooling method: linear, use_class: False, learning rate: 0.0002, batch size: 64
+2024-09-25 21:35:45,636 - INFO - Training stopped at epoch 50 for config: {'pooling_method': 'linear', 'use_class': False}
+2024-09-25 21:35:45,637 - INFO - Grid eval for classifiers: Running experiment with dataset: StripeSpotter, model: megadescriptor, pooling method: linear, use_class: False, learning rate: 0.0005, batch size: 64
+2024-09-25 21:35:46,051 - INFO - Training stopped at epoch 50 for config: {'pooling_method': 'linear', 'use_class': False}
+2024-09-25 21:35:46,051 - INFO - Grid eval for classifiers: Running experiment with dataset: StripeSpotter, model: megadescriptor, pooling method: linear, use_class: False, learning rate: 0.001, batch size: 64
+2024-09-25 21:35:46,465 - INFO - Training stopped at epoch 50 for config: {'pooling_method': 'linear', 'use_class': False}
+2024-09-25 21:35:46,465 - INFO - Grid eval for classifiers: Running experiment with dataset: StripeSpotter, model: megadescriptor, pooling method: linear, use_class: False, learning rate: 0.002, batch size: 64
+2024-09-25 21:35:46,879 - INFO - Training stopped at epoch 50 for config: {'pooling_method': 'linear', 'use_class': False}
+2024-09-25 21:35:46,879 - INFO - Grid eval for classifiers: Running experiment with dataset: StripeSpotter, model: megadescriptor, pooling method: linear, use_class: False, learning rate: 0.005, batch size: 64
+2024-09-25 21:35:46,979 - INFO - Training stopped at epoch 7 for config: {'pooling_method': 'linear', 'use_class': False}
+2024-09-25 21:35:46,979 - INFO - Grid eval for classifiers: Running experiment with dataset: StripeSpotter, model: megadescriptor, pooling method: linear, use_class: False, learning rate: 0.01, batch size: 64
+2024-09-25 21:35:47,237 - INFO - Training stopped at epoch 26 for config: {'pooling_method': 'linear', 'use_class': False}
+2024-09-25 21:35:47,237 - INFO - Grid eval for classifiers: Running experiment with dataset: StripeSpotter, model: megadescriptor, pooling method: linear, use_class: False, learning rate: 0.02, batch size: 64
+2024-09-25 21:35:47,304 - INFO - Training stopped at epoch 3 for config: {'pooling_method': 'linear', 'use_class': False}
+2024-09-25 21:35:47,304 - INFO - Grid eval for classifiers: Running experiment with dataset: StripeSpotter, model: megadescriptor, pooling method: linear, use_class: False, learning rate: 0.05, batch size: 64
+2024-09-25 21:35:47,371 - INFO - Training stopped at epoch 3 for config: {'pooling_method': 'linear', 'use_class': False}
+2024-09-25 21:35:47,371 - INFO - Grid eval for classifiers: Running experiment with dataset: StripeSpotter, model: megadescriptor, pooling method: linear, use_class: False, learning rate: 0.1, batch size: 64
+2024-09-25 21:35:47,446 - INFO - Training stopped at epoch 4 for config: {'pooling_method': 'linear', 'use_class': False}
+2024-09-25 21:35:47,447 - INFO - Grid eval for classifiers: Running experiment with dataset: StripeSpotter, model: megadescriptor, pooling method: linear, use_class: False, learning rate: 1e-05, batch size: 128
+2024-09-25 21:35:47,737 - INFO - Training stopped at epoch 50 for config: {'pooling_method': 'linear', 'use_class': False}
+2024-09-25 21:35:47,737 - INFO - Grid eval for classifiers: Running experiment with dataset: StripeSpotter, model: megadescriptor, pooling method: linear, use_class: False, learning rate: 2e-05, batch size: 128
+2024-09-25 21:35:48,026 - INFO - Training stopped at epoch 50 for config: {'pooling_method': 'linear', 'use_class': False}
+2024-09-25 21:35:48,026 - INFO - Grid eval for classifiers: Running experiment with dataset: StripeSpotter, model: megadescriptor, pooling method: linear, use_class: False, learning rate: 5e-05, batch size: 128
+2024-09-25 21:35:48,315 - INFO - Training stopped at epoch 50 for config: {'pooling_method': 'linear', 'use_class': False}
+2024-09-25 21:35:48,315 - INFO - Grid eval for classifiers: Running experiment with dataset: StripeSpotter, model: megadescriptor, pooling method: linear, use_class: False, learning rate: 0.0001, batch size: 128
+2024-09-25 21:35:48,605 - INFO - Training stopped at epoch 50 for config: {'pooling_method': 'linear', 'use_class': False}
+2024-09-25 21:35:48,605 - INFO - Grid eval for classifiers: Running experiment with dataset: StripeSpotter, model: megadescriptor, pooling method: linear, use_class: False, learning rate: 0.0002, batch size: 128
+2024-09-25 21:35:48,894 - INFO - Training stopped at epoch 50 for config: {'pooling_method': 'linear', 'use_class': False}
+2024-09-25 21:35:48,894 - INFO - Grid eval for classifiers: Running experiment with dataset: StripeSpotter, model: megadescriptor, pooling method: linear, use_class: False, learning rate: 0.0005, batch size: 128
+2024-09-25 21:35:49,184 - INFO - Training stopped at epoch 50 for config: {'pooling_method': 'linear', 'use_class': False}
+2024-09-25 21:35:49,184 - INFO - Grid eval for classifiers: Running experiment with dataset: StripeSpotter, model: megadescriptor, pooling method: linear, use_class: False, learning rate: 0.001, batch size: 128
+2024-09-25 21:35:49,474 - INFO - Training stopped at epoch 50 for config: {'pooling_method': 'linear', 'use_class': False}
+2024-09-25 21:35:49,474 - INFO - Grid eval for classifiers: Running experiment with dataset: StripeSpotter, model: megadescriptor, pooling method: linear, use_class: False, learning rate: 0.002, batch size: 128
+2024-09-25 21:35:49,763 - INFO - Training stopped at epoch 50 for config: {'pooling_method': 'linear', 'use_class': False}
+2024-09-25 21:35:49,763 - INFO - Grid eval for classifiers: Running experiment with dataset: StripeSpotter, model: megadescriptor, pooling method: linear, use_class: False, learning rate: 0.005, batch size: 128
+2024-09-25 21:35:49,851 - INFO - Training stopped at epoch 10 for config: {'pooling_method': 'linear', 'use_class': False}
+2024-09-25 21:35:49,851 - INFO - Grid eval for classifiers: Running experiment with dataset: StripeSpotter, model: megadescriptor, pooling method: linear, use_class: False, learning rate: 0.01, batch size: 128
+2024-09-25 21:35:49,961 - INFO - Training stopped at epoch 14 for config: {'pooling_method': 'linear', 'use_class': False}
+2024-09-25 21:35:49,961 - INFO - Grid eval for classifiers: Running experiment with dataset: StripeSpotter, model: megadescriptor, pooling method: linear, use_class: False, learning rate: 0.02, batch size: 128
+2024-09-25 21:35:50,251 - INFO - Training stopped at epoch 50 for config: {'pooling_method': 'linear', 'use_class': False}
+2024-09-25 21:35:50,251 - INFO - Grid eval for classifiers: Running experiment with dataset: StripeSpotter, model: megadescriptor, pooling method: linear, use_class: False, learning rate: 0.05, batch size: 128
+2024-09-25 21:35:50,292 - INFO - Training stopped at epoch 2 for config: {'pooling_method': 'linear', 'use_class': False}
+2024-09-25 21:35:50,292 - INFO - Grid eval for classifiers: Running experiment with dataset: StripeSpotter, model: megadescriptor, pooling method: linear, use_class: False, learning rate: 0.1, batch size: 128
+2024-09-25 21:35:50,362 - INFO - Training stopped at epoch 7 for config: {'pooling_method': 'linear', 'use_class': False}
+2024-09-25 21:35:50,362 - INFO - Best results for dataset StripeSpotter and linear pooling method: {
+    "dataset": "StripeSpotter",
+    "pooling_method": "linear",
+    "batch_size": 128,
+    "learning_rate": 0.01,
+    "best_epoch": 14,
+    "best_val_acc": 0.9770992366412213
+}
+2024-09-25 21:35:50,362 - INFO - Grid eval for classifiers: Running experiment with dataset: StripeSpotter, model: megadescriptor, pooling method: attentive, use_class: False, learning rate: 1e-05, batch size: 8
+2024-09-25 21:36:02,775 - INFO - Training stopped at epoch 50 for config: {'pooling_method': 'attentive', 'use_class': False}
+2024-09-25 21:36:02,775 - INFO - Grid eval for classifiers: Running experiment with dataset: StripeSpotter, model: megadescriptor, pooling method: attentive, use_class: False, learning rate: 2e-05, batch size: 8
+2024-09-25 21:36:15,261 - INFO - Training stopped at epoch 50 for config: {'pooling_method': 'attentive', 'use_class': False}
+2024-09-25 21:36:15,261 - INFO - Grid eval for classifiers: Running experiment with dataset: StripeSpotter, model: megadescriptor, pooling method: attentive, use_class: False, learning rate: 5e-05, batch size: 8
+2024-09-25 21:36:24,554 - INFO - Training stopped at epoch 32 for config: {'pooling_method': 'attentive', 'use_class': False}
+2024-09-25 21:36:24,554 - INFO - Grid eval for classifiers: Running experiment with dataset: StripeSpotter, model: megadescriptor, pooling method: attentive, use_class: False, learning rate: 0.0001, batch size: 8
+2024-09-25 21:36:30,623 - INFO - Training stopped at epoch 19 for config: {'pooling_method': 'attentive', 'use_class': False}
+2024-09-25 21:36:30,623 - INFO - Grid eval for classifiers: Running experiment with dataset: StripeSpotter, model: megadescriptor, pooling method: attentive, use_class: False, learning rate: 0.0002, batch size: 8
+2024-09-25 21:36:34,700 - INFO - Training stopped at epoch 11 for config: {'pooling_method': 'attentive', 'use_class': False}
+2024-09-25 21:36:34,700 - INFO - Grid eval for classifiers: Running experiment with dataset: StripeSpotter, model: megadescriptor, pooling method: attentive, use_class: False, learning rate: 0.0005, batch size: 8
+2024-09-25 21:36:36,527 - INFO - Training stopped at epoch 2 for config: {'pooling_method': 'attentive', 'use_class': False}
+2024-09-25 21:36:36,527 - INFO - Grid eval for classifiers: Running experiment with dataset: StripeSpotter, model: megadescriptor, pooling method: attentive, use_class: False, learning rate: 0.001, batch size: 8
+2024-09-25 21:36:38,354 - INFO - Training stopped at epoch 2 for config: {'pooling_method': 'attentive', 'use_class': False}
+2024-09-25 21:36:38,355 - INFO - Grid eval for classifiers: Running experiment with dataset: StripeSpotter, model: megadescriptor, pooling method: attentive, use_class: False, learning rate: 0.002, batch size: 8
+2024-09-25 21:36:39,930 - INFO - Training stopped at epoch 1 for config: {'pooling_method': 'attentive', 'use_class': False}
+2024-09-25 21:36:39,930 - INFO - Grid eval for classifiers: Running experiment with dataset: StripeSpotter, model: megadescriptor, pooling method: attentive, use_class: False, learning rate: 0.005, batch size: 8
+2024-09-25 21:36:41,500 - INFO - Training stopped at epoch 1 for config: {'pooling_method': 'attentive', 'use_class': False}
+2024-09-25 21:36:41,500 - INFO - Grid eval for classifiers: Running experiment with dataset: StripeSpotter, model: megadescriptor, pooling method: attentive, use_class: False, learning rate: 0.01, batch size: 8
+2024-09-25 21:36:43,070 - INFO - Training stopped at epoch 1 for config: {'pooling_method': 'attentive', 'use_class': False}
+2024-09-25 21:36:43,070 - INFO - Grid eval for classifiers: Running experiment with dataset: StripeSpotter, model: megadescriptor, pooling method: attentive, use_class: False, learning rate: 0.02, batch size: 8
+2024-09-25 21:36:44,641 - INFO - Training stopped at epoch 1 for config: {'pooling_method': 'attentive', 'use_class': False}
+2024-09-25 21:36:44,641 - INFO - Grid eval for classifiers: Running experiment with dataset: StripeSpotter, model: megadescriptor, pooling method: attentive, use_class: False, learning rate: 0.05, batch size: 8
+2024-09-25 21:36:46,212 - INFO - Training stopped at epoch 1 for config: {'pooling_method': 'attentive', 'use_class': False}
+2024-09-25 21:36:46,213 - INFO - Grid eval for classifiers: Running experiment with dataset: StripeSpotter, model: megadescriptor, pooling method: attentive, use_class: False, learning rate: 0.1, batch size: 8
+2024-09-25 21:36:47,763 - INFO - Training stopped at epoch 1 for config: {'pooling_method': 'attentive', 'use_class': False}
+2024-09-25 21:36:47,763 - INFO - Grid eval for classifiers: Running experiment with dataset: StripeSpotter, model: megadescriptor, pooling method: attentive, use_class: False, learning rate: 1e-05, batch size: 16
+2024-09-25 21:36:57,672 - INFO - Training stopped at epoch 50 for config: {'pooling_method': 'attentive', 'use_class': False}
+2024-09-25 21:36:57,672 - INFO - Grid eval for classifiers: Running experiment with dataset: StripeSpotter, model: megadescriptor, pooling method: attentive, use_class: False, learning rate: 2e-05, batch size: 16
+2024-09-25 21:37:07,597 - INFO - Training stopped at epoch 50 for config: {'pooling_method': 'attentive', 'use_class': False}
+2024-09-25 21:37:07,597 - INFO - Grid eval for classifiers: Running experiment with dataset: StripeSpotter, model: megadescriptor, pooling method: attentive, use_class: False, learning rate: 5e-05, batch size: 16
+2024-09-25 21:37:17,541 - INFO - Training stopped at epoch 50 for config: {'pooling_method': 'attentive', 'use_class': False}
+2024-09-25 21:37:17,541 - INFO - Grid eval for classifiers: Running experiment with dataset: StripeSpotter, model: megadescriptor, pooling method: attentive, use_class: False, learning rate: 0.0001, batch size: 16
+2024-09-25 21:37:24,133 - INFO - Training stopped at epoch 28 for config: {'pooling_method': 'attentive', 'use_class': False}
+2024-09-25 21:37:24,133 - INFO - Grid eval for classifiers: Running experiment with dataset: StripeSpotter, model: megadescriptor, pooling method: attentive, use_class: False, learning rate: 0.0002, batch size: 16
+2024-09-25 21:37:26,578 - INFO - Training stopped at epoch 7 for config: {'pooling_method': 'attentive', 'use_class': False}
+2024-09-25 21:37:26,579 - INFO - Grid eval for classifiers: Running experiment with dataset: StripeSpotter, model: megadescriptor, pooling method: attentive, use_class: False, learning rate: 0.0005, batch size: 16
+2024-09-25 21:37:28,232 - INFO - Training stopped at epoch 3 for config: {'pooling_method': 'attentive', 'use_class': False}
+2024-09-25 21:37:28,232 - INFO - Grid eval for classifiers: Running experiment with dataset: StripeSpotter, model: megadescriptor, pooling method: attentive, use_class: False, learning rate: 0.001, batch size: 16
+2024-09-25 21:37:29,689 - INFO - Training stopped at epoch 2 for config: {'pooling_method': 'attentive', 'use_class': False}
+2024-09-25 21:37:29,690 - INFO - Grid eval for classifiers: Running experiment with dataset: StripeSpotter, model: megadescriptor, pooling method: attentive, use_class: False, learning rate: 0.002, batch size: 16
+2024-09-25 21:37:31,143 - INFO - Training stopped at epoch 2 for config: {'pooling_method': 'attentive', 'use_class': False}
+2024-09-25 21:37:31,143 - INFO - Grid eval for classifiers: Running experiment with dataset: StripeSpotter, model: megadescriptor, pooling method: attentive, use_class: False, learning rate: 0.005, batch size: 16
+2024-09-25 21:37:32,393 - INFO - Training stopped at epoch 1 for config: {'pooling_method': 'attentive', 'use_class': False}
+2024-09-25 21:37:32,393 - INFO - Grid eval for classifiers: Running experiment with dataset: StripeSpotter, model: megadescriptor, pooling method: attentive, use_class: False, learning rate: 0.01, batch size: 16
+2024-09-25 21:37:33,636 - INFO - Training stopped at epoch 1 for config: {'pooling_method': 'attentive', 'use_class': False}
+2024-09-25 21:37:33,636 - INFO - Grid eval for classifiers: Running experiment with dataset: StripeSpotter, model: megadescriptor, pooling method: attentive, use_class: False, learning rate: 0.02, batch size: 16
+2024-09-25 21:37:34,881 - INFO - Training stopped at epoch 1 for config: {'pooling_method': 'attentive', 'use_class': False}
+2024-09-25 21:37:34,882 - INFO - Grid eval for classifiers: Running experiment with dataset: StripeSpotter, model: megadescriptor, pooling method: attentive, use_class: False, learning rate: 0.05, batch size: 16
+2024-09-25 21:37:36,126 - INFO - Training stopped at epoch 1 for config: {'pooling_method': 'attentive', 'use_class': False}
+2024-09-25 21:37:36,126 - INFO - Grid eval for classifiers: Running experiment with dataset: StripeSpotter, model: megadescriptor, pooling method: attentive, use_class: False, learning rate: 0.1, batch size: 16
+2024-09-25 21:37:37,369 - INFO - Training stopped at epoch 1 for config: {'pooling_method': 'attentive', 'use_class': False}
+2024-09-25 21:37:37,369 - INFO - Grid eval for classifiers: Running experiment with dataset: StripeSpotter, model: megadescriptor, pooling method: attentive, use_class: False, learning rate: 1e-05, batch size: 32
+2024-09-25 21:37:46,044 - INFO - Training stopped at epoch 50 for config: {'pooling_method': 'attentive', 'use_class': False}
+2024-09-25 21:37:46,044 - INFO - Grid eval for classifiers: Running experiment with dataset: StripeSpotter, model: megadescriptor, pooling method: attentive, use_class: False, learning rate: 2e-05, batch size: 32
+2024-09-25 21:37:54,721 - INFO - Training stopped at epoch 50 for config: {'pooling_method': 'attentive', 'use_class': False}
+2024-09-25 21:37:54,721 - INFO - Grid eval for classifiers: Running experiment with dataset: StripeSpotter, model: megadescriptor, pooling method: attentive, use_class: False, learning rate: 5e-05, batch size: 32
+2024-09-25 21:38:03,406 - INFO - Training stopped at epoch 50 for config: {'pooling_method': 'attentive', 'use_class': False}
+2024-09-25 21:38:03,406 - INFO - Grid eval for classifiers: Running experiment with dataset: StripeSpotter, model: megadescriptor, pooling method: attentive, use_class: False, learning rate: 0.0001, batch size: 32
+2024-09-25 21:38:09,164 - INFO - Training stopped at epoch 28 for config: {'pooling_method': 'attentive', 'use_class': False}
+2024-09-25 21:38:09,164 - INFO - Grid eval for classifiers: Running experiment with dataset: StripeSpotter, model: megadescriptor, pooling method: attentive, use_class: False, learning rate: 0.0002, batch size: 32
+2024-09-25 21:38:11,995 - INFO - Training stopped at epoch 11 for config: {'pooling_method': 'attentive', 'use_class': False}
+2024-09-25 21:38:11,995 - INFO - Grid eval for classifiers: Running experiment with dataset: StripeSpotter, model: megadescriptor, pooling method: attentive, use_class: False, learning rate: 0.0005, batch size: 32
+2024-09-25 21:38:13,274 - INFO - Training stopped at epoch 2 for config: {'pooling_method': 'attentive', 'use_class': False}
+2024-09-25 21:38:13,274 - INFO - Grid eval for classifiers: Running experiment with dataset: StripeSpotter, model: megadescriptor, pooling method: attentive, use_class: False, learning rate: 0.001, batch size: 32
+2024-09-25 21:38:14,895 - INFO - Training stopped at epoch 4 for config: {'pooling_method': 'attentive', 'use_class': False}
+2024-09-25 21:38:14,895 - INFO - Grid eval for classifiers: Running experiment with dataset: StripeSpotter, model: megadescriptor, pooling method: attentive, use_class: False, learning rate: 0.002, batch size: 32
+2024-09-25 21:38:16,346 - INFO - Training stopped at epoch 3 for config: {'pooling_method': 'attentive', 'use_class': False}
+2024-09-25 21:38:16,346 - INFO - Grid eval for classifiers: Running experiment with dataset: StripeSpotter, model: megadescriptor, pooling method: attentive, use_class: False, learning rate: 0.005, batch size: 32
+2024-09-25 21:38:17,791 - INFO - Training stopped at epoch 3 for config: {'pooling_method': 'attentive', 'use_class': False}
+2024-09-25 21:38:17,791 - INFO - Grid eval for classifiers: Running experiment with dataset: StripeSpotter, model: megadescriptor, pooling method: attentive, use_class: False, learning rate: 0.01, batch size: 32
+2024-09-25 21:38:19,053 - INFO - Training stopped at epoch 2 for config: {'pooling_method': 'attentive', 'use_class': False}
+2024-09-25 21:38:19,053 - INFO - Grid eval for classifiers: Running experiment with dataset: StripeSpotter, model: megadescriptor, pooling method: attentive, use_class: False, learning rate: 0.02, batch size: 32
+2024-09-25 21:38:20,142 - INFO - Training stopped at epoch 1 for config: {'pooling_method': 'attentive', 'use_class': False}
+2024-09-25 21:38:20,142 - INFO - Grid eval for classifiers: Running experiment with dataset: StripeSpotter, model: megadescriptor, pooling method: attentive, use_class: False, learning rate: 0.05, batch size: 32
+2024-09-25 21:38:21,229 - INFO - Training stopped at epoch 1 for config: {'pooling_method': 'attentive', 'use_class': False}
+2024-09-25 21:38:21,229 - INFO - Grid eval for classifiers: Running experiment with dataset: StripeSpotter, model: megadescriptor, pooling method: attentive, use_class: False, learning rate: 0.1, batch size: 32
+2024-09-25 21:38:22,485 - INFO - Training stopped at epoch 2 for config: {'pooling_method': 'attentive', 'use_class': False}
+2024-09-25 21:38:22,485 - INFO - Grid eval for classifiers: Running experiment with dataset: StripeSpotter, model: megadescriptor, pooling method: attentive, use_class: False, learning rate: 1e-05, batch size: 64
+2024-09-25 21:38:30,596 - INFO - Training stopped at epoch 50 for config: {'pooling_method': 'attentive', 'use_class': False}
+2024-09-25 21:38:30,596 - INFO - Grid eval for classifiers: Running experiment with dataset: StripeSpotter, model: megadescriptor, pooling method: attentive, use_class: False, learning rate: 2e-05, batch size: 64
+2024-09-25 21:38:38,706 - INFO - Training stopped at epoch 50 for config: {'pooling_method': 'attentive', 'use_class': False}
+2024-09-25 21:38:38,706 - INFO - Grid eval for classifiers: Running experiment with dataset: StripeSpotter, model: megadescriptor, pooling method: attentive, use_class: False, learning rate: 5e-05, batch size: 64
+2024-09-25 21:38:46,819 - INFO - Training stopped at epoch 50 for config: {'pooling_method': 'attentive', 'use_class': False}
+2024-09-25 21:38:46,819 - INFO - Grid eval for classifiers: Running experiment with dataset: StripeSpotter, model: megadescriptor, pooling method: attentive, use_class: False, learning rate: 0.0001, batch size: 64
+2024-09-25 21:38:54,931 - INFO - Training stopped at epoch 50 for config: {'pooling_method': 'attentive', 'use_class': False}
+2024-09-25 21:38:54,932 - INFO - Grid eval for classifiers: Running experiment with dataset: StripeSpotter, model: megadescriptor, pooling method: attentive, use_class: False, learning rate: 0.0002, batch size: 64
+2024-09-25 21:38:57,578 - INFO - Training stopped at epoch 11 for config: {'pooling_method': 'attentive', 'use_class': False}
+2024-09-25 21:38:57,578 - INFO - Grid eval for classifiers: Running experiment with dataset: StripeSpotter, model: megadescriptor, pooling method: attentive, use_class: False, learning rate: 0.0005, batch size: 64
+2024-09-25 21:38:58,774 - INFO - Training stopped at epoch 2 for config: {'pooling_method': 'attentive', 'use_class': False}
+2024-09-25 21:38:58,774 - INFO - Grid eval for classifiers: Running experiment with dataset: StripeSpotter, model: megadescriptor, pooling method: attentive, use_class: False, learning rate: 0.001, batch size: 64
+2024-09-25 21:39:01,423 - INFO - Training stopped at epoch 11 for config: {'pooling_method': 'attentive', 'use_class': False}
+2024-09-25 21:39:01,423 - INFO - Grid eval for classifiers: Running experiment with dataset: StripeSpotter, model: megadescriptor, pooling method: attentive, use_class: False, learning rate: 0.002, batch size: 64
+2024-09-25 21:39:02,941 - INFO - Training stopped at epoch 4 for config: {'pooling_method': 'attentive', 'use_class': False}
+2024-09-25 21:39:02,941 - INFO - Grid eval for classifiers: Running experiment with dataset: StripeSpotter, model: megadescriptor, pooling method: attentive, use_class: False, learning rate: 0.005, batch size: 64
+2024-09-25 21:39:04,295 - INFO - Training stopped at epoch 3 for config: {'pooling_method': 'attentive', 'use_class': False}
+2024-09-25 21:39:04,295 - INFO - Grid eval for classifiers: Running experiment with dataset: StripeSpotter, model: megadescriptor, pooling method: attentive, use_class: False, learning rate: 0.01, batch size: 64
+2024-09-25 21:39:06,117 - INFO - Training stopped at epoch 6 for config: {'pooling_method': 'attentive', 'use_class': False}
+2024-09-25 21:39:06,118 - INFO - Grid eval for classifiers: Running experiment with dataset: StripeSpotter, model: megadescriptor, pooling method: attentive, use_class: False, learning rate: 0.02, batch size: 64
+2024-09-25 21:39:07,302 - INFO - Training stopped at epoch 2 for config: {'pooling_method': 'attentive', 'use_class': False}
+2024-09-25 21:39:07,302 - INFO - Grid eval for classifiers: Running experiment with dataset: StripeSpotter, model: megadescriptor, pooling method: attentive, use_class: False, learning rate: 0.05, batch size: 64
+2024-09-25 21:39:08,797 - INFO - Training stopped at epoch 4 for config: {'pooling_method': 'attentive', 'use_class': False}
+2024-09-25 21:39:08,797 - INFO - Grid eval for classifiers: Running experiment with dataset: StripeSpotter, model: megadescriptor, pooling method: attentive, use_class: False, learning rate: 0.1, batch size: 64
+2024-09-25 21:39:10,136 - INFO - Training stopped at epoch 3 for config: {'pooling_method': 'attentive', 'use_class': False}
+2024-09-25 21:39:10,136 - INFO - Grid eval for classifiers: Running experiment with dataset: StripeSpotter, model: megadescriptor, pooling method: attentive, use_class: False, learning rate: 1e-05, batch size: 128
+2024-09-25 21:39:17,656 - INFO - Training stopped at epoch 50 for config: {'pooling_method': 'attentive', 'use_class': False}
+2024-09-25 21:39:17,656 - INFO - Grid eval for classifiers: Running experiment with dataset: StripeSpotter, model: megadescriptor, pooling method: attentive, use_class: False, learning rate: 2e-05, batch size: 128
+2024-09-25 21:39:25,171 - INFO - Training stopped at epoch 50 for config: {'pooling_method': 'attentive', 'use_class': False}
+2024-09-25 21:39:25,172 - INFO - Grid eval for classifiers: Running experiment with dataset: StripeSpotter, model: megadescriptor, pooling method: attentive, use_class: False, learning rate: 5e-05, batch size: 128
+2024-09-25 21:39:32,689 - INFO - Training stopped at epoch 50 for config: {'pooling_method': 'attentive', 'use_class': False}
+2024-09-25 21:39:32,689 - INFO - Grid eval for classifiers: Running experiment with dataset: StripeSpotter, model: megadescriptor, pooling method: attentive, use_class: False, learning rate: 0.0001, batch size: 128
+2024-09-25 21:39:40,208 - INFO - Training stopped at epoch 50 for config: {'pooling_method': 'attentive', 'use_class': False}
+2024-09-25 21:39:40,208 - INFO - Grid eval for classifiers: Running experiment with dataset: StripeSpotter, model: megadescriptor, pooling method: attentive, use_class: False, learning rate: 0.0002, batch size: 128
+2024-09-25 21:39:42,814 - INFO - Training stopped at epoch 12 for config: {'pooling_method': 'attentive', 'use_class': False}
+2024-09-25 21:39:42,814 - INFO - Grid eval for classifiers: Running experiment with dataset: StripeSpotter, model: megadescriptor, pooling method: attentive, use_class: False, learning rate: 0.0005, batch size: 128
+2024-09-25 21:39:44,078 - INFO - Training stopped at epoch 3 for config: {'pooling_method': 'attentive', 'use_class': False}
+2024-09-25 21:39:44,078 - INFO - Grid eval for classifiers: Running experiment with dataset: StripeSpotter, model: megadescriptor, pooling method: attentive, use_class: False, learning rate: 0.001, batch size: 128
+2024-09-25 21:39:45,789 - INFO - Training stopped at epoch 6 for config: {'pooling_method': 'attentive', 'use_class': False}
+2024-09-25 21:39:45,790 - INFO - Grid eval for classifiers: Running experiment with dataset: StripeSpotter, model: megadescriptor, pooling method: attentive, use_class: False, learning rate: 0.002, batch size: 128
+2024-09-25 21:39:53,310 - INFO - Training stopped at epoch 50 for config: {'pooling_method': 'attentive', 'use_class': False}
+2024-09-25 21:39:53,310 - INFO - Grid eval for classifiers: Running experiment with dataset: StripeSpotter, model: megadescriptor, pooling method: attentive, use_class: False, learning rate: 0.005, batch size: 128
+2024-09-25 21:39:54,720 - INFO - Training stopped at epoch 4 for config: {'pooling_method': 'attentive', 'use_class': False}
+2024-09-25 21:39:54,720 - INFO - Grid eval for classifiers: Running experiment with dataset: StripeSpotter, model: megadescriptor, pooling method: attentive, use_class: False, learning rate: 0.01, batch size: 128
+2024-09-25 21:39:57,437 - INFO - Training stopped at epoch 13 for config: {'pooling_method': 'attentive', 'use_class': False}
+2024-09-25 21:39:57,437 - INFO - Grid eval for classifiers: Running experiment with dataset: StripeSpotter, model: megadescriptor, pooling method: attentive, use_class: False, learning rate: 0.02, batch size: 128
+2024-09-25 21:39:59,124 - INFO - Training stopped at epoch 6 for config: {'pooling_method': 'attentive', 'use_class': False}
+2024-09-25 21:39:59,124 - INFO - Grid eval for classifiers: Running experiment with dataset: StripeSpotter, model: megadescriptor, pooling method: attentive, use_class: False, learning rate: 0.05, batch size: 128
+2024-09-25 21:40:01,395 - INFO - Training stopped at epoch 10 for config: {'pooling_method': 'attentive', 'use_class': False}
+2024-09-25 21:40:01,395 - INFO - Grid eval for classifiers: Running experiment with dataset: StripeSpotter, model: megadescriptor, pooling method: attentive, use_class: False, learning rate: 0.1, batch size: 128
+2024-09-25 21:40:03,075 - INFO - Training stopped at epoch 6 for config: {'pooling_method': 'attentive', 'use_class': False}
+2024-09-25 21:40:03,075 - INFO - Best results for dataset StripeSpotter and attentive pooling method: {
+    "dataset": "StripeSpotter",
+    "pooling_method": "attentive",
+    "batch_size": 16,
+    "learning_rate": 0.0005,
+    "best_epoch": 3,
+    "best_val_acc": 0.9694656488549618
+}

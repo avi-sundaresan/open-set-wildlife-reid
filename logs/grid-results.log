@@ -1,0 +1,273 @@
+
+2024-09-16 02:33:51,487 - INFO - Best results for dataset FriesianCattle2015v2 and attentive pooling method: {
+    "dataset": "FriesianCattle2015v2",
+    "pooling_method": "attentive",
+    "batch_size": 8,
+    "learning_rate": 2e-05,
+    "best_epoch": 50,
+    "best_val_acc": 1.0
+}
+2024-09-16 02:49:39,589 - INFO - Best results for dataset CTai and attentive pooling method: {
+    "dataset": "CTai",
+    "pooling_method": "attentive",
+    "batch_size": 8,
+    "learning_rate": 2e-05,
+    "best_epoch": 14,
+    "best_val_acc": 0.967828418230563
+}
+2024-09-16 02:55:55,130 - INFO - Best results for dataset CZoo and attentive pooling method: {
+    "dataset": "CZoo",
+    "pooling_method": "attentive",
+    "batch_size": 8,
+    "learning_rate": 0.001,
+    "best_epoch": 1,
+    "best_val_acc": 0.9940828402366864
+}
+2024-09-16 03:31:39,661 - INFO - Best results for dataset DogFaceNet and attentive pooling method: {
+    "dataset": "DogFaceNet",
+    "pooling_method": "attentive",
+    "batch_size": 64,
+    "learning_rate": 0.0002,
+    "best_epoch": 10,
+    "best_val_acc": 0.5286984640258691
+}
+2024-09-16 03:36:50,191 - INFO - Best results for dataset FriesianCattle2017 and attentive pooling method: {
+    "dataset": "FriesianCattle2017",
+    "pooling_method": "attentive",
+    "batch_size": 8,
+    "learning_rate": 1e-05,
+    "best_epoch": 50,
+    "best_val_acc": 0.9862068965517241
+}
+2024-09-16 03:58:17,457 - INFO - Best results for dataset IPanda50 and attentive pooling method: {
+    "dataset": "IPanda50",
+    "pooling_method": "attentive",
+    "batch_size": 128,
+    "learning_rate": 0.0002,
+    "best_epoch": 3,
+    "best_val_acc": 0.9700272479564033
+}
+2024-09-16 04:16:38,005 - INFO - Best results for dataset MacaqueFaces and attentive pooling method: {
+    "dataset": "MacaqueFaces",
+    "pooling_method": "attentive",
+    "batch_size": 8,
+    "learning_rate": 0.002,
+    "best_epoch": 1,
+    "best_val_acc": 0.9960238568588469
+}
+2024-09-16 04:24:31,171 - INFO - Best results for dataset NyalaData and attentive pooling method: {
+    "dataset": "NyalaData",
+    "pooling_method": "attentive",
+    "batch_size": 32,
+    "learning_rate": 0.0002,
+    "best_epoch": 5,
+    "best_val_acc": 0.75
+}
+2024-09-16 04:57:30,629 - INFO - Best results for dataset SeaTurtleIDHeads and attentive pooling method: {
+    "dataset": "SeaTurtleIDHeads",
+    "pooling_method": "attentive",
+    "batch_size": 8,
+    "learning_rate": 2e-05,
+    "best_epoch": 15,
+    "best_val_acc": 0.9642857142857143
+}
+2024-09-16 06:21:41,983 - INFO - Best results for dataset CatIndividualImages and attentive pooling method: {
+    "dataset": "CatIndividualImages",
+    "pooling_method": "attentive",
+    "batch_size": 16,
+    "learning_rate": 0.0002,
+    "best_epoch": 6,
+    "best_val_acc": 0.8859607091518926
+}
+2024-09-16 06:32:37,634 - INFO - Best results for dataset CowDataset and attentive pooling method: {
+    "dataset": "CowDataset",
+    "pooling_method": "attentive",
+    "batch_size": 8,
+    "learning_rate": 1e-05,
+    "best_epoch": 50,
+    "best_val_acc": 0.9957983193277311
+}
+2024-09-16 07:23:39,638 - INFO - Best results for dataset Cows2021 and attentive pooling method: {
+    "dataset": "Cows2021",
+    "pooling_method": "attentive",
+    "batch_size": 8,
+    "learning_rate": 1e-05,
+    "best_epoch": 28,
+    "best_val_acc": 0.9992790194664743
+}
+2024-09-16 07:32:49,241 - INFO - Best results for dataset Giraffes and attentive pooling method: {
+    "dataset": "Giraffes",
+    "pooling_method": "attentive",
+    "batch_size": 32,
+    "learning_rate": 0.0002,
+    "best_epoch": 36,
+    "best_val_acc": 0.958139534883721
+}
+2024-09-16 07:43:50,203 - INFO - Best results for dataset NDD20 and attentive pooling method: {
+    "dataset": "NDD20",
+    "pooling_method": "attentive",
+    "batch_size": 16,
+    "learning_rate": 0.0001,
+    "best_epoch": 9,
+    "best_val_acc": 0.8474178403755869
+}
+2024-09-16 08:10:56,562 - INFO - Best results for dataset OpenCows2020 and attentive pooling method: {
+    "dataset": "OpenCows2020",
+    "pooling_method": "attentive",
+    "batch_size": 8,
+    "learning_rate": 1e-05,
+    "best_epoch": 35,
+    "best_val_acc": 1.0
+}
+2024-09-16 08:24:25,973 - INFO - Best results for dataset SeaStarReID2023 and attentive pooling method: {
+    "dataset": "SeaStarReID2023",
+    "pooling_method": "attentive",
+    "batch_size": 8,
+    "learning_rate": 0.0002,
+    "best_epoch": 7,
+    "best_val_acc": 0.8547008547008547
+}
+2024-09-16 09:08:03,635 - INFO - Best results for dataset ZindiTurtleRecall and attentive pooling method: {
+    "dataset": "ZindiTurtleRecall",
+    "pooling_method": "attentive",
+    "batch_size": 8,
+    "learning_rate": 0.0002,
+    "best_epoch": 4,
+    "best_val_acc": 0.6261530113944656
+}
+2024-09-16 13:51:59,742 - INFO - Best results for dataset FriesianCattle2015v2 and linear pooling method: {
+    "dataset": "FriesianCattle2015v2",
+    "pooling_method": "linear",
+    "batch_size": 8,
+    "learning_rate": 0.01,
+    "best_epoch": 50,
+    "best_val_acc": 1.0
+}
+2024-09-16 13:58:24,200 - INFO - Best results for dataset CTai and linear pooling method: {
+    "dataset": "CTai",
+    "pooling_method": "linear",
+    "batch_size": 128,
+    "learning_rate": 0.002,
+    "best_epoch": 2,
+    "best_val_acc": 0.967828418230563
+}
+2024-09-16 14:01:16,639 - INFO - Best results for dataset CZoo and linear pooling method: {
+    "dataset": "CZoo",
+    "pooling_method": "linear",
+    "batch_size": 8,
+    "learning_rate": 1e-05,
+    "best_epoch": 42,
+    "best_val_acc": 0.9940828402366864
+}
+2024-09-16 14:16:13,413 - INFO - Best results for dataset DogFaceNet and linear pooling method: {
+    "dataset": "DogFaceNet",
+    "pooling_method": "linear",
+    "batch_size": 8,
+    "learning_rate": 0.0005,
+    "best_epoch": 23,
+    "best_val_acc": 0.5699272433306386
+}
+2024-09-16 14:18:00,477 - INFO - Best results for dataset FriesianCattle2017 and linear pooling method: {
+    "dataset": "FriesianCattle2017",
+    "pooling_method": "linear",
+    "batch_size": 8,
+    "learning_rate": 2e-05,
+    "best_epoch": 50,
+    "best_val_acc": 0.9862068965517241
+}
+2024-09-16 14:27:41,854 - INFO - Best results for dataset IPanda50 and linear pooling method: {
+    "dataset": "IPanda50",
+    "pooling_method": "linear",
+    "batch_size": 128,
+    "learning_rate": 0.005,
+    "best_epoch": 2,
+    "best_val_acc": 0.9709355131698456
+}
+2024-09-16 14:35:52,300 - INFO - Best results for dataset MacaqueFaces and linear pooling method: {
+    "dataset": "MacaqueFaces",
+    "pooling_method": "linear",
+    "batch_size": 8,
+    "learning_rate": 0.001,
+    "best_epoch": 1,
+    "best_val_acc": 0.9960238568588469
+}
+2024-09-16 14:39:08,829 - INFO - Best results for dataset NyalaData and linear pooling method: {
+    "dataset": "NyalaData",
+    "pooling_method": "linear",
+    "batch_size": 64,
+    "learning_rate": 0.002,
+    "best_epoch": 13,
+    "best_val_acc": 0.7601351351351351
+}
+2024-09-16 14:51:14,632 - INFO - Best results for dataset SeaTurtleIDHeads and linear pooling method: {
+    "dataset": "SeaTurtleIDHeads",
+    "pooling_method": "linear",
+    "batch_size": 16,
+    "learning_rate": 0.002,
+    "best_epoch": 2,
+    "best_val_acc": 0.9659468438538206
+}
+2024-09-16 15:30:56,905 - INFO - Best results for dataset CatIndividualImages and linear pooling method: {
+    "dataset": "CatIndividualImages",
+    "pooling_method": "linear",
+    "batch_size": 8,
+    "learning_rate": 0.0005,
+    "best_epoch": 11,
+    "best_val_acc": 0.8979396262577863
+}
+2024-09-16 15:34:58,534 - INFO - Best results for dataset CowDataset and linear pooling method: {
+    "dataset": "CowDataset",
+    "pooling_method": "linear",
+    "batch_size": 8,
+    "learning_rate": 0.0005,
+    "best_epoch": 50,
+    "best_val_acc": 0.9957983193277311
+}
+2024-09-16 15:49:40,907 - INFO - Best results for dataset Cows2021 and linear pooling method: {
+    "dataset": "Cows2021",
+    "pooling_method": "linear",
+    "batch_size": 8,
+    "learning_rate": 2e-05,
+    "best_epoch": 50,
+    "best_val_acc": 0.9992790194664743
+}
+2024-09-16 15:52:18,769 - INFO - Best results for dataset Giraffes and linear pooling method: {
+    "dataset": "Giraffes",
+    "pooling_method": "linear",
+    "batch_size": 8,
+    "learning_rate": 0.002,
+    "best_epoch": 50,
+    "best_val_acc": 0.9534883720930233
+}
+2024-09-16 15:56:56,227 - INFO - Best results for dataset NDD20 and linear pooling method: {
+    "dataset": "NDD20",
+    "pooling_method": "linear",
+    "batch_size": 8,
+    "learning_rate": 0.0005,
+    "best_epoch": 9,
+    "best_val_acc": 0.8568075117370892
+}
+2024-09-16 16:05:09,649 - INFO - Best results for dataset OpenCows2020 and linear pooling method: {
+    "dataset": "OpenCows2020",
+    "pooling_method": "linear",
+    "batch_size": 8,
+    "learning_rate": 1e-05,
+    "best_epoch": 50,
+    "best_val_acc": 1.0
+}
+2024-09-16 16:10:24,226 - INFO - Best results for dataset SeaStarReID2023 and linear pooling method: {
+    "dataset": "SeaStarReID2023",
+    "pooling_method": "linear",
+    "batch_size": 8,
+    "learning_rate": 0.001,
+    "best_epoch": 38,
+    "best_val_acc": 0.8803418803418803
+}
+2024-09-16 16:33:12,657 - INFO - Best results for dataset ZindiTurtleRecall and linear pooling method: {
+    "dataset": "ZindiTurtleRecall",
+    "pooling_method": "linear",
+    "batch_size": 8,
+    "learning_rate": 0.0002,
+    "best_epoch": 19,
+    "best_val_acc": 0.7021161150298426
+}

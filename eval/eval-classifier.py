@@ -7,18 +7,17 @@ from functools import partial
 
 from models import ModelWithIntermediateLayers, ModelWithIntermediateLayersMD
 from datasets.datasets import prepare_datasets, split_dataset, create_dataloaders
-from configs.config import DATASETS, MODEL, BATCH_SIZE, CONFIG_PATH, BEST_LEARNING_RATES, get_dataset_root
+from configs.config import DATASETS, MODEL, CONFIG_PATH, BEST_PARAMS, get_dataset_root
 from utils.utils import get_ROC, compute_embeddings, get_transformation, train_attentive_classifier, train_linear_classifier, eval_closed_set, eval_open_set
 
 # Initialize logging
-logging.basicConfig(filename='open_set_results.log', level=logging.INFO, 
+logging.basicConfig(filename='logs/open_set_results.log', level=logging.INFO, 
                     format='%(asctime)s - %(levelname)s - %(message)s')
 
 def parse_args():
     parser = argparse.ArgumentParser(description="Classifier Script")
     parser.add_argument('--datasets', type=list, default=DATASETS, help='Datasets to use')
     parser.add_argument('--model', type=str, default=MODEL, help='Feature extractor to use')
-    parser.add_argument('--batch_size', type=int, default=BATCH_SIZE, help='Batch size for data loading')
     parser.add_argument('--configs', type=str, default=CONFIG_PATH, help='Path to JSON file with list of configurations')
     return parser.parse_args()
 
@@ -51,8 +50,6 @@ def main():
 
     # Define transformations
     transformation = get_transformation(args.model)
-    # print(f"Model: {args.model}")
-    # print(f"Transformation: {transformation}")
 
     for dataset in args.datasets:
         # Load dataset
@@ -66,7 +63,7 @@ def main():
         logging.info('Dataset split successfully')
 
         # Create dataloaders
-        trainloader, closedtestloader, opentestloader, valloader = create_dataloaders(root, df, idx_train, idx_test, transformation, args.batch_size)
+        trainloader, closedtestloader, opentestloader, valloader = create_dataloaders(root, df, idx_train, idx_test, transformation, batch_size=None)
         logging.info('Dataloaders created successfully')
 
         # Load feature extractor
@@ -84,21 +81,24 @@ def main():
                 raise ValueError("Invalid configuration: pooling_method='none' and use_class=False is not allowed.")
             
             # Load the best learning rate for the current dataset and pooling method
-            best_lr = BEST_LEARNING_RATES[dataset][config['pooling_method']]
-            logging.info(f"Using best learning rate: {best_lr} for dataset: {dataset}, pooling method: {config['pooling_method']}")
+            params = BEST_PARAMS[dataset][config['pooling_method']]
+            best_batch_size = params['batch_size']
+            best_lr = params['learning_rate']
+            best_epoch = params['best_epoch']
+            logging.info(f"Using best params {params} for dataset: {dataset}, pooling method: {config['pooling_method']}")
 
             num_classes = int(max(train_labels).item() + 1)
             if config['pooling_method'] == 'attentive':
-                classifier = train_attentive_classifier(train_embeddings, train_labels, use_class=config['use_class'], device=device, num_classes=num_classes, learning_rate=best_lr)
+                classifier = train_attentive_classifier(train_embeddings, train_labels, use_class=config['use_class'], device=device, num_classes=num_classes, learning_rate=best_lr, num_epochs=best_epoch, batch_size=best_batch_size)
             elif config['pooling_method'] == 'linear':
-                classifier = train_linear_classifier(train_embeddings, train_labels, use_class=config['use_class'], use_avgpool=True, device=device, num_classes=num_classes, learning_rate=best_lr)
+                classifier = train_linear_classifier(train_embeddings, train_labels, use_class=config['use_class'], use_avgpool=True, device=device, num_classes=num_classes, learning_rate=best_lr, num_epochs=best_epoch, batch_size=best_batch_size)
             elif config['pooling_method'] == 'none':
-                classifier = train_linear_classifier(train_embeddings, train_labels, use_class=config['use_class'], use_avgpool=False, device=device, num_classes=num_classes, learning_rate=best_lr)
+                classifier = train_linear_classifier(train_embeddings, train_labels, use_class=config['use_class'], use_avgpool=False, device=device, num_classes=num_classes, learning_rate=best_lr, num_epochs=best_epoch, batch_size=best_batch_size)
 
-            closed_top1_acc, closed_msp, closed_mls = eval_closed_set(closed_test_embeddings, closed_test_labels, classifier)
-            open_msp, open_mls = eval_open_set(open_test_embeddings, open_test_labels, classifier)
+            closed_top1_acc, closed_msp, closed_mls = eval_closed_set(closed_test_embeddings, closed_test_labels, classifier, best_batch_size)
+            open_msp, open_mls = eval_open_set(open_test_embeddings, open_test_labels, classifier, best_batch_size)
 
-            logging.info(f'Running linear classifier experiment with dataset: {dataset}, model: {args.model}, pooling method: {config["pooling_method"]}, use_class: {config["use_class"]}')
+            logging.info(f'Running classifier experiment with dataset: {dataset}, model: {args.model}, pooling method: {config["pooling_method"]}, use_class: {config["use_class"]}')
 
             # Plot ROC curve 
             msp_roc_auc = get_ROC(closed_msp, open_msp, knn=False)

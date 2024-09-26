@@ -73,10 +73,10 @@ def combine_train_val(train_embeddings, train_labels, val_embeddings, val_labels
     combined_labels = train_labels + val_labels
     return combined_embeddings, combined_labels
 
-def train_linear_classifier(train_embeddings, train_labels, use_class, use_avgpool, device, num_classes=1000, num_epochs=10, learning_rate=5e-3):
+def train_linear_classifier(train_embeddings, train_labels, use_class, use_avgpool, device, num_classes=1000, num_epochs=50, learning_rate=5e-3, batch_size=32):
     # Create the embeddings dataset and dataloader
     train_dataset = EmbeddingsDataset(train_embeddings, train_labels)
-    train_loader = DataLoader(train_dataset, batch_size=None, shuffle=False)
+    train_loader = DataLoader(train_dataset, batch_size=batch_size, shuffle=False)
 
     classifier = LinearClassifier(num_classes=num_classes, use_class=use_class, use_avgpool=use_avgpool).to(device)
     
@@ -109,43 +109,6 @@ def train_linear_classifier(train_embeddings, train_labels, use_class, use_avgpo
         print(f'Epoch [{epoch+1}/{num_epochs}], Loss: {avg_loss:.4f}')
     
     return classifier
-
-def train_attentive_classifier(train_embeddings, train_labels, use_class, device, num_classes=1000, num_epochs=10, learning_rate=1e-5, complete_block=False):
-    # Create the embeddings dataset and dataloader
-    train_dataset = EmbeddingsDataset(train_embeddings, train_labels)
-    train_loader = DataLoader(train_dataset, batch_size=None, shuffle=False)
-
-    attentive_classifier = AttentiveClassifier(num_classes=num_classes, use_class=use_class, complete_block=complete_block).to(device)
-    
-    # Define loss function and optimizer
-    criterion = nn.CrossEntropyLoss()
-    optimizer = optim.Adam(attentive_classifier.parameters(), lr=learning_rate)
-    
-    # Training loop
-    for epoch in tqdm(range(num_epochs)):
-        attentive_classifier.train()
-        total_loss = 0.0
-        for patch_tokens, class_token, labels in train_loader:
-            patch_tokens = patch_tokens.to(device).float()  
-            class_token = class_token.to(device).float()    
-            labels = labels.to(device).long()              
-            
-            optimizer.zero_grad()
-            
-            # Forward pass
-            outputs = attentive_classifier((patch_tokens, class_token))
-            loss = criterion(outputs, labels)
-            
-            # Backward pass and optimization
-            loss.backward()
-            optimizer.step()
-            
-            total_loss += loss.item()
-        
-        avg_loss = total_loss / len(train_loader)
-        print(f'Epoch [{epoch+1}/{num_epochs}], Loss: {avg_loss:.4f}')
-    
-    return attentive_classifier
 
 def train_val_linear_classifier(train_embeddings, train_labels, val_embeddings, val_labels, use_class, use_avgpool, device, num_classes=1000, num_epochs=50, learning_rate=5e-3, batch_size=32, patience=5):
     # Create the embeddings dataset and dataloader
@@ -235,6 +198,43 @@ def train_val_linear_classifier(train_embeddings, train_labels, val_embeddings, 
     
     # Return the epoch with the lowest validation loss and the highest validation accuracy
     return best_epoch, best_val_acc
+
+def train_attentive_classifier(train_embeddings, train_labels, use_class, device, num_classes=1000, num_epochs=50, learning_rate=1e-5, batch_size=32, complete_block=False):
+    # Create the embeddings dataset and dataloader
+    train_dataset = EmbeddingsDataset(train_embeddings, train_labels)
+    train_loader = DataLoader(train_dataset, batch_size=batch_size, shuffle=False)
+
+    attentive_classifier = AttentiveClassifier(num_classes=num_classes, use_class=use_class, complete_block=complete_block).to(device)
+    
+    # Define loss function and optimizer
+    criterion = nn.CrossEntropyLoss()
+    optimizer = optim.Adam(attentive_classifier.parameters(), lr=learning_rate)
+    
+    # Training loop
+    for epoch in tqdm(range(num_epochs)):
+        attentive_classifier.train()
+        total_loss = 0.0
+        for patch_tokens, class_token, labels in train_loader:
+            patch_tokens = patch_tokens.to(device).float()  
+            class_token = class_token.to(device).float()    
+            labels = labels.to(device).long()              
+            
+            optimizer.zero_grad()
+            
+            # Forward pass
+            outputs = attentive_classifier((patch_tokens, class_token))
+            loss = criterion(outputs, labels)
+            
+            # Backward pass and optimization
+            loss.backward()
+            optimizer.step()
+            
+            total_loss += loss.item()
+        
+        avg_loss = total_loss / len(train_loader)
+        print(f'Epoch [{epoch+1}/{num_epochs}], Loss: {avg_loss:.4f}')
+    
+    return attentive_classifier
 
 def train_val_attentive_classifier(train_embeddings, train_labels, val_embeddings, val_labels, use_class, device, num_classes=1000, num_epochs=50, learning_rate=1e-5, batch_size=32, patience=5, complete_block=False):
     # Create the embeddings dataset and dataloader
@@ -352,11 +352,11 @@ def compute_top1_accuracy(outputs, labels):
     
     return accuracy
 
-def eval_closed_set(embeddings, labels, model, device='cuda'):
+def eval_closed_set(embeddings, labels, model, batch_size, device='cuda'):
     model.eval()
 
     test_dataset = EmbeddingsDataset(embeddings, labels)
-    test_loader = DataLoader(test_dataset, batch_size=None, shuffle=False)
+    test_loader = DataLoader(test_dataset, batch_size=batch_size, shuffle=False)
     outputs = []
     with torch.no_grad():
         for patch_tokens, class_token, _ in test_loader:          
@@ -368,11 +368,11 @@ def eval_closed_set(embeddings, labels, model, device='cuda'):
 
     return accuracy, max_softmax_scores, max_logit_scores
 
-def eval_open_set(embeddings, labels, model, device='cuda'):
+def eval_open_set(embeddings, labels, model, batch_size, device='cuda'):
     model.eval()
 
     test_dataset = EmbeddingsDataset(embeddings, labels)
-    test_loader = DataLoader(test_dataset, batch_size=None, shuffle=False)
+    test_loader = DataLoader(test_dataset, batch_size=batch_size, shuffle=False)
     outputs = []
     with torch.no_grad():
         for patch_tokens, class_token, _ in test_loader:            
