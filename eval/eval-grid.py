@@ -128,6 +128,7 @@ def main():
                             "best_epoch": best_epoch,
                             "best_val_acc": best_val_acc
                 })
+                logging.info(f'Best results for dataset {dataset} and {config["pooling_method"]} pooling method: {json.dumps(best_results[-1], indent=4)}')
 
         except Exception as e:
             logging.error(f"Error occurred for dataset {dataset}, {str(e)}")
@@ -135,11 +136,6 @@ def main():
         finally:
             gc.collect()
             torch.cuda.empty_cache()
-    
-    with open('configs/best_grid_results.json', 'w') as f:
-        json.dump(best_results, f, indent=4)
-    
-    logging.info('Best results saved')
     
 if __name__ == '__main__':
     main()

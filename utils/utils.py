@@ -9,8 +9,6 @@ import matplotlib.pyplot as plt
 from sklearn.neighbors import NearestNeighbors
 from tqdm import tqdm 
 from torch.utils.data import DataLoader
-
-
 from models import create_linear_input, LinearClassifier, AttentiveClassifier
 from datasets.datasets import EmbeddingsDataset
 
@@ -241,10 +239,10 @@ def train_val_linear_classifier(train_embeddings, train_labels, val_embeddings, 
 def train_val_attentive_classifier(train_embeddings, train_labels, val_embeddings, val_labels, use_class, device, num_classes=1000, num_epochs=50, learning_rate=1e-5, batch_size=32, patience=5, complete_block=False):
     # Create the embeddings dataset and dataloader
     train_dataset = EmbeddingsDataset(train_embeddings, train_labels)
-    train_loader = DataLoader(train_dataset, batch_size=None, shuffle=False)
+    train_loader = DataLoader(train_dataset, batch_size=batch_size, shuffle=False)
 
     val_dataset = EmbeddingsDataset(val_embeddings, val_labels)
-    val_loader = DataLoader(val_dataset, batch_size=None, shuffle=False)
+    val_loader = DataLoader(val_dataset, batch_size=batch_size, shuffle=False)
 
     attentive_classifier = AttentiveClassifier(num_classes=num_classes, use_class=use_class, complete_block=complete_block).to(device)
     
@@ -326,7 +324,6 @@ def train_val_attentive_classifier(train_embeddings, train_labels, val_embedding
     
     # Return the epoch with the lowest validation loss and the highest validation accuracy
     return best_epoch, best_val_acc
-
 
 def compute_scores(outputs):
     softmax_scores = F.softmax(outputs, dim=1)
