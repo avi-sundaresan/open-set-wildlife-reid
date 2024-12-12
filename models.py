@@ -41,8 +41,7 @@ def create_linear_input(x_tokens_list, use_avgpool, use_class):
     _, class_token = intermediate_output
 
     class_output = torch.cat([class_token], dim=-1)
-    patch_output = torch.mean((intermediate_output[0]).float(), dim=0)
-    print(patch_output.shape)
+    patch_output = torch.mean((intermediate_output[0]).float(), dim=1)
 
     if use_avgpool and use_class:
         output = torch.cat((class_output, patch_output), dim=-1,)

@@ -1046,11 +1046,269 @@
 2024-11-20 22:43:44,411 - INFO - Running experiment with dataset: SeaStarReID2023, model: megadescriptor, pooling method: linear, use_class: False
 2024-11-20 22:44:26,156 - INFO - Top-1 acc. for config: 0.7464
 2024-11-20 22:44:26,156 - INFO - ROC AUC for config: 0.7701
-2024-12-11 19:16:08,881 - INFO - Using device: cuda:0
-2024-12-11 19:16:08,881 - INFO - /home/avisund/data/wildlife_datasets/FriesianCattle2017/
-2024-12-11 19:16:08,911 - INFO - Dataset FriesianCattle2017 loaded successfully
-2024-12-11 19:16:08,919 - INFO - Dataset split successfully
-2024-12-11 19:16:08,922 - INFO - Dataloaders created successfully
-2024-12-11 19:16:10,946 - INFO - Loading pretrained weights from Hugging Face hub (BVRA/MegaDescriptor-L-384)
-2024-12-11 19:16:13,160 - INFO - Feature extractor loaded successfully
-2024-12-11 19:17:09,435 - INFO - Running experiment with dataset: FriesianCattle2017, model: megadescriptor, pooling method: attentive, use_class: False
+2024-12-11 19:44:38,201 - INFO - Using device: cuda:0
+2024-12-11 19:44:38,201 - INFO - /home/avisund/data/wildlife_datasets/FriesianCattle2017/
+2024-12-11 19:44:38,219 - INFO - Dataset FriesianCattle2017 loaded successfully
+2024-12-11 19:44:38,226 - INFO - Dataset split successfully
+2024-12-11 19:44:38,230 - INFO - Dataloaders created successfully
+2024-12-11 19:44:40,170 - INFO - Loading pretrained weights from Hugging Face hub (BVRA/MegaDescriptor-L-384)
+2024-12-11 19:44:41,672 - INFO - Feature extractor loaded successfully
+2024-12-11 19:45:24,937 - INFO - Using best params {'batch_size': 8, 'learning_rate': 2e-05, 'best_epoch': 50, 'best_val_acc': 0.9862068965517241} for dataset: FriesianCattle2017, pooling method: linear
+2024-12-11 19:47:07,317 - INFO - Using device: cuda:0
+2024-12-11 19:47:07,318 - INFO - /home/avisund/data/wildlife_datasets/FriesianCattle2017/
+2024-12-11 19:47:07,336 - INFO - Dataset FriesianCattle2017 loaded successfully
+2024-12-11 19:47:07,343 - INFO - Dataset split successfully
+2024-12-11 19:47:07,346 - INFO - Dataloaders created successfully
+2024-12-11 19:47:09,278 - INFO - Loading pretrained weights from Hugging Face hub (BVRA/MegaDescriptor-L-384)
+2024-12-11 19:47:10,758 - INFO - Feature extractor loaded successfully
+2024-12-11 19:47:54,552 - INFO - Using best params {'batch_size': 8, 'learning_rate': 2e-05, 'best_epoch': 50, 'best_val_acc': 0.9862068965517241} for dataset: FriesianCattle2017, pooling method: linear
+2024-12-11 19:47:57,131 - INFO - Running classifier experiment with dataset: FriesianCattle2017, model: megadescriptor, pooling method: linear, use_class: False
+2024-12-11 19:47:57,133 - INFO - Top-1 acc. for config: 0.9658
+2024-12-11 19:47:57,133 - INFO - MSP ROC AUC for config: 0.9554
+2024-12-11 19:47:57,133 - INFO - MLS ROC AUC for config: 0.9534
+2024-12-11 19:47:57,133 - INFO - Using best params {'batch_size': 8, 'learning_rate': 1e-05, 'best_epoch': 50, 'best_val_acc': 0.9862068965517241} for dataset: FriesianCattle2017, pooling method: attentive
+2024-12-11 19:48:10,174 - INFO - Running classifier experiment with dataset: FriesianCattle2017, model: megadescriptor, pooling method: attentive, use_class: False
+2024-12-11 19:48:10,184 - INFO - Top-1 acc. for config: 0.9744
+2024-12-11 19:48:10,184 - INFO - MSP ROC AUC for config: 0.9532
+2024-12-11 19:48:10,184 - INFO - MLS ROC AUC for config: 0.9574
+2024-12-11 19:49:30,611 - INFO - Using device: cuda:0
+2024-12-11 19:49:30,612 - INFO - /home/avisund/data/wildlife_datasets/AmvrakikosTurtles/
+2024-12-11 19:49:30,622 - INFO - Dataset AmvrakikosTurtles loaded successfully
+2024-12-11 19:49:30,627 - INFO - Dataset split successfully
+2024-12-11 19:49:30,630 - INFO - Dataloaders created successfully
+2024-12-11 19:49:32,568 - INFO - Loading pretrained weights from Hugging Face hub (BVRA/MegaDescriptor-L-384)
+2024-12-11 19:49:34,042 - INFO - Feature extractor loaded successfully
+2024-12-11 19:49:58,793 - INFO - Using best params {'batch_size': 64, 'learning_rate': 0.05, 'best_epoch': 1, 'best_val_acc': 0.4074074074074074} for dataset: AmvrakikosTurtles, pooling method: linear
+2024-12-11 19:49:58,862 - INFO - Running classifier experiment with dataset: AmvrakikosTurtles, model: megadescriptor, pooling method: linear, use_class: False
+2024-12-11 19:49:58,863 - INFO - Top-1 acc. for config: 0.2667
+2024-12-11 19:49:58,863 - INFO - MSP ROC AUC for config: 0.5100
+2024-12-11 19:49:58,863 - INFO - MLS ROC AUC for config: 0.3667
+2024-12-11 19:49:58,863 - INFO - Using best params {'batch_size': 128, 'learning_rate': 0.0005, 'best_epoch': 6, 'best_val_acc': 0.4444444444444444} for dataset: AmvrakikosTurtles, pooling method: attentive
+2024-12-11 19:49:59,130 - INFO - Running classifier experiment with dataset: AmvrakikosTurtles, model: megadescriptor, pooling method: attentive, use_class: False
+2024-12-11 19:49:59,133 - INFO - Top-1 acc. for config: 0.2889
+2024-12-11 19:49:59,133 - INFO - MSP ROC AUC for config: 0.3811
+2024-12-11 19:49:59,133 - INFO - MLS ROC AUC for config: 0.3633
+2024-12-11 19:49:59,133 - INFO - /home/avisund/data/wildlife_datasets/ReunionTurtles/
+2024-12-11 19:49:59,164 - INFO - Dataset ReunionTurtles loaded successfully
+2024-12-11 19:49:59,173 - INFO - Dataset split successfully
+2024-12-11 19:49:59,177 - INFO - Dataloaders created successfully
+2024-12-11 19:50:01,118 - INFO - Loading pretrained weights from Hugging Face hub (BVRA/MegaDescriptor-L-384)
+2024-12-11 19:50:02,364 - INFO - Feature extractor loaded successfully
+2024-12-11 19:50:18,639 - INFO - Using best params {'batch_size': 32, 'learning_rate': 0.01, 'best_epoch': 2, 'best_val_acc': 0.4888888888888889} for dataset: ReunionTurtles, pooling method: linear
+2024-12-11 19:50:18,683 - INFO - Running classifier experiment with dataset: ReunionTurtles, model: megadescriptor, pooling method: linear, use_class: False
+2024-12-11 19:50:18,685 - INFO - Top-1 acc. for config: 0.4000
+2024-12-11 19:50:18,685 - INFO - MSP ROC AUC for config: 0.6496
+2024-12-11 19:50:18,685 - INFO - MLS ROC AUC for config: 0.6281
+2024-12-11 19:50:18,685 - INFO - Using best params {'batch_size': 16, 'learning_rate': 0.0002, 'best_epoch': 5, 'best_val_acc': 0.6} for dataset: ReunionTurtles, pooling method: attentive
+2024-12-11 19:50:19,078 - INFO - Running classifier experiment with dataset: ReunionTurtles, model: megadescriptor, pooling method: attentive, use_class: False
+2024-12-11 19:50:19,083 - INFO - Top-1 acc. for config: 0.4800
+2024-12-11 19:50:19,083 - INFO - MSP ROC AUC for config: 0.6226
+2024-12-11 19:50:19,083 - INFO - MLS ROC AUC for config: 0.6341
+2024-12-11 19:50:19,083 - INFO - /home/avisund/data/wildlife_datasets/SouthernProvinceTurtles/
+2024-12-11 19:50:19,091 - INFO - Dataset SouthernProvinceTurtles loaded successfully
+2024-12-11 19:50:19,096 - INFO - Dataset split successfully
+2024-12-11 19:50:19,099 - INFO - Dataloaders created successfully
+2024-12-11 19:50:20,689 - INFO - Loading pretrained weights from Hugging Face hub (BVRA/MegaDescriptor-L-384)
+2024-12-11 19:50:21,654 - INFO - Feature extractor loaded successfully
+2024-12-11 19:50:44,641 - INFO - Using best params {'batch_size': 64, 'learning_rate': 0.001, 'best_epoch': 50, 'best_val_acc': 0.8266666666666667} for dataset: SouthernProvinceTurtles, pooling method: linear
+2024-12-11 19:50:44,879 - INFO - Running classifier experiment with dataset: SouthernProvinceTurtles, model: megadescriptor, pooling method: linear, use_class: False
+2024-12-11 19:50:44,881 - INFO - Top-1 acc. for config: 0.7167
+2024-12-11 19:50:44,881 - INFO - MSP ROC AUC for config: 0.7806
+2024-12-11 19:50:44,881 - INFO - MLS ROC AUC for config: 0.6903
+2024-12-11 19:50:44,881 - INFO - Using best params {'batch_size': 8, 'learning_rate': 5e-05, 'best_epoch': 25, 'best_val_acc': 0.8133333333333334} for dataset: SouthernProvinceTurtles, pooling method: attentive
+2024-12-11 19:50:48,307 - INFO - Running classifier experiment with dataset: SouthernProvinceTurtles, model: megadescriptor, pooling method: attentive, use_class: False
+2024-12-11 19:50:48,313 - INFO - Top-1 acc. for config: 0.7000
+2024-12-11 19:50:48,313 - INFO - MSP ROC AUC for config: 0.7948
+2024-12-11 19:50:48,313 - INFO - MLS ROC AUC for config: 0.7556
+2024-12-11 19:50:48,313 - INFO - /home/avisund/data/wildlife_datasets/SeaStarReID2023/
+2024-12-11 19:50:48,366 - INFO - Dataset SeaStarReID2023 loaded successfully
+2024-12-11 19:50:48,375 - INFO - Dataset split successfully
+2024-12-11 19:50:48,379 - INFO - Dataloaders created successfully
+2024-12-11 19:50:49,991 - INFO - Loading pretrained weights from Hugging Face hub (BVRA/MegaDescriptor-L-384)
+2024-12-11 19:50:50,863 - INFO - Feature extractor loaded successfully
+2024-12-11 19:53:32,349 - INFO - Using best params {'batch_size': 64, 'learning_rate': 0.01, 'best_epoch': 26, 'best_val_acc': 0.886039886039886} for dataset: SeaStarReID2023, pooling method: linear
+2024-12-11 19:53:32,868 - INFO - Running classifier experiment with dataset: SeaStarReID2023, model: megadescriptor, pooling method: linear, use_class: False
+2024-12-11 19:53:32,870 - INFO - Top-1 acc. for config: 0.8660
+2024-12-11 19:53:32,870 - INFO - MSP ROC AUC for config: 0.7820
+2024-12-11 19:53:32,870 - INFO - MLS ROC AUC for config: 0.7281
+2024-12-11 19:53:32,870 - INFO - Using best params {'batch_size': 8, 'learning_rate': 0.0002, 'best_epoch': 5, 'best_val_acc': 0.8433048433048433} for dataset: SeaStarReID2023, pooling method: attentive
+2024-12-11 19:53:36,116 - INFO - Running classifier experiment with dataset: SeaStarReID2023, model: megadescriptor, pooling method: attentive, use_class: False
+2024-12-11 19:53:36,140 - INFO - Top-1 acc. for config: 0.8373
+2024-12-11 19:53:36,140 - INFO - MSP ROC AUC for config: 0.8094
+2024-12-11 19:53:36,140 - INFO - MLS ROC AUC for config: 0.7684
+2024-12-11 22:26:19,354 - INFO - Using device: cuda:0
+2024-12-11 22:26:19,354 - INFO - /home/avisund/data/wildlife_datasets/AmvrakikosTurtles/
+2024-12-11 22:26:19,364 - INFO - Dataset AmvrakikosTurtles loaded successfully
+2024-12-11 22:26:19,369 - INFO - Dataset split successfully
+2024-12-11 22:26:19,372 - INFO - Dataloaders created successfully
+2024-12-11 22:26:21,314 - INFO - Loading pretrained weights from Hugging Face hub (BVRA/MegaDescriptor-L-384)
+2024-12-11 22:26:22,785 - INFO - Feature extractor loaded successfully
+2024-12-11 22:26:47,197 - INFO - Embeddings computed successfully
+2024-12-11 22:26:47,197 - INFO - Running experiment with dataset: AmvrakikosTurtles, model: megadescriptor, pooling method: linear, use_class: False
+2024-12-11 22:26:47,244 - INFO - Top-1 acc. for config: 0.3556
+2024-12-11 22:26:47,244 - INFO - ROC AUC for config: 0.4144
+2024-12-11 22:26:47,530 - INFO - Running experiment with dataset: AmvrakikosTurtles, model: megadescriptor, pooling method: attentive, use_class: False
+2024-12-11 22:26:47,614 - INFO - Top-1 acc. for config: 0.3333
+2024-12-11 22:26:47,614 - INFO - ROC AUC for config: 0.3644
+2024-12-11 22:26:47,614 - INFO - /home/avisund/data/wildlife_datasets/ReunionTurtles/
+2024-12-11 22:26:47,645 - INFO - Dataset ReunionTurtles loaded successfully
+2024-12-11 22:26:47,653 - INFO - Dataset split successfully
+2024-12-11 22:26:47,657 - INFO - Dataloaders created successfully
+2024-12-11 22:26:49,597 - INFO - Loading pretrained weights from Hugging Face hub (BVRA/MegaDescriptor-L-384)
+2024-12-11 22:26:50,894 - INFO - Feature extractor loaded successfully
+2024-12-11 22:27:06,796 - INFO - Embeddings computed successfully
+2024-12-11 22:27:06,796 - INFO - Running experiment with dataset: ReunionTurtles, model: megadescriptor, pooling method: linear, use_class: False
+2024-12-11 22:27:06,850 - INFO - Top-1 acc. for config: 0.5733
+2024-12-11 22:27:06,850 - INFO - ROC AUC for config: 0.6581
+2024-12-11 22:27:07,233 - INFO - Running experiment with dataset: ReunionTurtles, model: megadescriptor, pooling method: attentive, use_class: False
+2024-12-11 22:27:07,362 - INFO - Top-1 acc. for config: 0.4667
+2024-12-11 22:27:07,362 - INFO - ROC AUC for config: 0.5963
+2024-12-11 22:27:07,362 - INFO - /home/avisund/data/wildlife_datasets/SouthernProvinceTurtles/
+2024-12-11 22:27:07,367 - INFO - Dataset SouthernProvinceTurtles loaded successfully
+2024-12-11 22:27:07,372 - INFO - Dataset split successfully
+2024-12-11 22:27:07,375 - INFO - Dataloaders created successfully
+2024-12-11 22:27:08,969 - INFO - Loading pretrained weights from Hugging Face hub (BVRA/MegaDescriptor-L-384)
+2024-12-11 22:27:09,893 - INFO - Feature extractor loaded successfully
+2024-12-11 22:27:32,578 - INFO - Embeddings computed successfully
+2024-12-11 22:27:32,579 - INFO - Running experiment with dataset: SouthernProvinceTurtles, model: megadescriptor, pooling method: linear, use_class: False
+2024-12-11 22:27:32,645 - INFO - Top-1 acc. for config: 0.7667
+2024-12-11 22:27:32,645 - INFO - ROC AUC for config: 0.6986
+2024-12-11 22:27:36,046 - INFO - Running experiment with dataset: SouthernProvinceTurtles, model: megadescriptor, pooling method: attentive, use_class: False
+2024-12-11 22:27:36,223 - INFO - Top-1 acc. for config: 0.6833
+2024-12-11 22:27:36,223 - INFO - ROC AUC for config: 0.7625
+2024-12-11 22:27:36,223 - INFO - /home/avisund/data/wildlife_datasets/SeaStarReID2023/
+2024-12-11 22:27:36,258 - INFO - Dataset SeaStarReID2023 loaded successfully
+2024-12-11 22:27:36,267 - INFO - Dataset split successfully
+2024-12-11 22:27:36,271 - INFO - Dataloaders created successfully
+2024-12-11 22:27:37,937 - INFO - Loading pretrained weights from Hugging Face hub (BVRA/MegaDescriptor-L-384)
+2024-12-11 22:27:38,608 - INFO - Feature extractor loaded successfully
+2024-12-11 22:30:18,888 - INFO - Embeddings computed successfully
+2024-12-11 22:30:18,888 - INFO - Running experiment with dataset: SeaStarReID2023, model: megadescriptor, pooling method: linear, use_class: False
+2024-12-11 22:30:19,068 - INFO - Top-1 acc. for config: 0.7464
+2024-12-11 22:30:19,068 - INFO - ROC AUC for config: 0.7701
+2024-12-11 22:30:22,317 - INFO - Running experiment with dataset: SeaStarReID2023, model: megadescriptor, pooling method: attentive, use_class: False
+2024-12-11 22:30:23,127 - INFO - Top-1 acc. for config: 0.8325
+2024-12-11 22:30:23,127 - INFO - ROC AUC for config: 0.8110
+2024-12-11 22:30:23,127 - INFO - /home/avisund/data/wildlife_datasets/SeaTurtleIDHeads/
+2024-12-11 22:30:23,291 - INFO - Dataset SeaTurtleIDHeads loaded successfully
+2024-12-11 22:30:23,330 - INFO - Dataset split successfully
+2024-12-11 22:30:23,337 - INFO - Dataloaders created successfully
+2024-12-11 22:30:24,951 - INFO - Loading pretrained weights from Hugging Face hub (BVRA/MegaDescriptor-L-384)
+2024-12-11 22:30:25,624 - INFO - Feature extractor loaded successfully
+2024-12-11 22:36:36,412 - INFO - Embeddings computed successfully
+2024-12-11 22:36:36,413 - INFO - Running experiment with dataset: SeaTurtleIDHeads, model: megadescriptor, pooling method: linear, use_class: False
+2024-12-11 22:36:37,079 - INFO - Top-1 acc. for config: 0.9442
+2024-12-11 22:36:37,079 - INFO - ROC AUC for config: 0.9457
+2024-12-11 22:37:09,881 - INFO - Running experiment with dataset: SeaTurtleIDHeads, model: megadescriptor, pooling method: attentive, use_class: False
+2024-12-11 22:37:12,811 - INFO - Top-1 acc. for config: 0.9268
+2024-12-11 22:37:12,811 - INFO - ROC AUC for config: 0.9742
+2024-12-11 22:37:12,812 - INFO - /home/avisund/data/wildlife_datasets/ZindiTurtleRecall/
+2024-12-11 22:37:12,991 - INFO - Dataset ZindiTurtleRecall loaded successfully
+2024-12-11 22:37:13,203 - INFO - Dataset split successfully
+2024-12-11 22:37:13,214 - INFO - Dataloaders created successfully
+2024-12-11 22:37:14,839 - INFO - Loading pretrained weights from Hugging Face hub (BVRA/MegaDescriptor-L-384)
+2024-12-11 22:37:15,551 - INFO - Feature extractor loaded successfully
+2024-12-11 22:47:59,889 - INFO - Embeddings computed successfully
+2024-12-11 22:47:59,890 - INFO - Running experiment with dataset: ZindiTurtleRecall, model: megadescriptor, pooling method: linear, use_class: False
+2024-12-11 22:48:01,029 - INFO - Top-1 acc. for config: 0.6906
+2024-12-11 22:48:01,029 - INFO - ROC AUC for config: 0.8078
+2024-12-11 22:48:15,727 - INFO - Running experiment with dataset: ZindiTurtleRecall, model: megadescriptor, pooling method: attentive, use_class: False
+2024-12-11 22:48:20,806 - INFO - Top-1 acc. for config: 0.6122
+2024-12-11 22:48:20,806 - INFO - ROC AUC for config: 0.7706
+2024-12-11 23:11:39,154 - INFO - Using device: cuda:0
+2024-12-11 23:11:39,154 - INFO - /home/avisund/data/wildlife_datasets/AmvrakikosTurtles/
+2024-12-11 23:11:39,165 - INFO - Dataset AmvrakikosTurtles loaded successfully
+2024-12-11 23:11:39,170 - INFO - Dataset split successfully
+2024-12-11 23:11:39,173 - INFO - Dataloaders created successfully
+2024-12-11 23:11:41,144 - INFO - Loading pretrained weights from Hugging Face hub (BVRA/MegaDescriptor-L-384)
+2024-12-11 23:11:42,632 - INFO - Feature extractor loaded successfully
+2024-12-11 23:12:07,093 - INFO - Using best params {'batch_size': 64, 'learning_rate': 0.05, 'best_epoch': 1, 'best_val_acc': 0.4074074074074074} for dataset: AmvrakikosTurtles, pooling method: linear
+2024-12-11 23:12:07,164 - INFO - Running classifier experiment with dataset: AmvrakikosTurtles, model: megadescriptor, pooling method: linear, use_class: False
+2024-12-11 23:12:07,166 - INFO - Top-1 acc. for config: 0.2444
+2024-12-11 23:12:07,166 - INFO - MSP ROC AUC for config: 0.4433
+2024-12-11 23:12:07,166 - INFO - MLS ROC AUC for config: 0.4167
+2024-12-11 23:12:07,166 - INFO - Using best params {'batch_size': 128, 'learning_rate': 0.0005, 'best_epoch': 6, 'best_val_acc': 0.4444444444444444} for dataset: AmvrakikosTurtles, pooling method: attentive
+2024-12-11 23:12:07,426 - INFO - Running classifier experiment with dataset: AmvrakikosTurtles, model: megadescriptor, pooling method: attentive, use_class: False
+2024-12-11 23:12:07,429 - INFO - Top-1 acc. for config: 0.2889
+2024-12-11 23:12:07,429 - INFO - MSP ROC AUC for config: 0.3644
+2024-12-11 23:12:07,429 - INFO - MLS ROC AUC for config: 0.3433
+2024-12-11 23:12:07,429 - INFO - /home/avisund/data/wildlife_datasets/ReunionTurtles/
+2024-12-11 23:12:07,460 - INFO - Dataset ReunionTurtles loaded successfully
+2024-12-11 23:12:07,468 - INFO - Dataset split successfully
+2024-12-11 23:12:07,471 - INFO - Dataloaders created successfully
+2024-12-11 23:12:09,389 - INFO - Loading pretrained weights from Hugging Face hub (BVRA/MegaDescriptor-L-384)
+2024-12-11 23:12:10,638 - INFO - Feature extractor loaded successfully
+2024-12-11 23:12:26,535 - INFO - Using best params {'batch_size': 32, 'learning_rate': 0.01, 'best_epoch': 2, 'best_val_acc': 0.4888888888888889} for dataset: ReunionTurtles, pooling method: linear
+2024-12-11 23:12:26,579 - INFO - Running classifier experiment with dataset: ReunionTurtles, model: megadescriptor, pooling method: linear, use_class: False
+2024-12-11 23:12:26,580 - INFO - Top-1 acc. for config: 0.4267
+2024-12-11 23:12:26,580 - INFO - MSP ROC AUC for config: 0.6633
+2024-12-11 23:12:26,580 - INFO - MLS ROC AUC for config: 0.6430
+2024-12-11 23:12:26,580 - INFO - Using best params {'batch_size': 16, 'learning_rate': 0.0002, 'best_epoch': 5, 'best_val_acc': 0.6} for dataset: ReunionTurtles, pooling method: attentive
+2024-12-11 23:12:26,968 - INFO - Running classifier experiment with dataset: ReunionTurtles, model: megadescriptor, pooling method: attentive, use_class: False
+2024-12-11 23:12:26,973 - INFO - Top-1 acc. for config: 0.4533
+2024-12-11 23:12:26,973 - INFO - MSP ROC AUC for config: 0.6419
+2024-12-11 23:12:26,973 - INFO - MLS ROC AUC for config: 0.6430
+2024-12-11 23:12:26,973 - INFO - /home/avisund/data/wildlife_datasets/SouthernProvinceTurtles/
+2024-12-11 23:12:26,978 - INFO - Dataset SouthernProvinceTurtles loaded successfully
+2024-12-11 23:12:26,983 - INFO - Dataset split successfully
+2024-12-11 23:12:26,986 - INFO - Dataloaders created successfully
+2024-12-11 23:12:28,572 - INFO - Loading pretrained weights from Hugging Face hub (BVRA/MegaDescriptor-L-384)
+2024-12-11 23:12:29,532 - INFO - Feature extractor loaded successfully
+2024-12-11 23:12:52,155 - INFO - Using best params {'batch_size': 64, 'learning_rate': 0.001, 'best_epoch': 50, 'best_val_acc': 0.8266666666666667} for dataset: SouthernProvinceTurtles, pooling method: linear
+2024-12-11 23:12:52,399 - INFO - Running classifier experiment with dataset: SouthernProvinceTurtles, model: megadescriptor, pooling method: linear, use_class: False
+2024-12-11 23:12:52,400 - INFO - Top-1 acc. for config: 0.7167
+2024-12-11 23:12:52,400 - INFO - MSP ROC AUC for config: 0.7858
+2024-12-11 23:12:52,400 - INFO - MLS ROC AUC for config: 0.7062
+2024-12-11 23:12:52,400 - INFO - Using best params {'batch_size': 8, 'learning_rate': 5e-05, 'best_epoch': 25, 'best_val_acc': 0.8133333333333334} for dataset: SouthernProvinceTurtles, pooling method: attentive
+2024-12-11 23:12:55,791 - INFO - Running classifier experiment with dataset: SouthernProvinceTurtles, model: megadescriptor, pooling method: attentive, use_class: False
+2024-12-11 23:12:55,796 - INFO - Top-1 acc. for config: 0.7167
+2024-12-11 23:12:55,796 - INFO - MSP ROC AUC for config: 0.8163
+2024-12-11 23:12:55,797 - INFO - MLS ROC AUC for config: 0.7580
+2024-12-11 23:12:55,797 - INFO - /home/avisund/data/wildlife_datasets/SeaStarReID2023/
+2024-12-11 23:12:55,831 - INFO - Dataset SeaStarReID2023 loaded successfully
+2024-12-11 23:12:55,840 - INFO - Dataset split successfully
+2024-12-11 23:12:55,843 - INFO - Dataloaders created successfully
+2024-12-11 23:12:57,452 - INFO - Loading pretrained weights from Hugging Face hub (BVRA/MegaDescriptor-L-384)
+2024-12-11 23:12:58,349 - INFO - Feature extractor loaded successfully
+2024-12-11 23:15:37,910 - INFO - Using best params {'batch_size': 64, 'learning_rate': 0.01, 'best_epoch': 26, 'best_val_acc': 0.886039886039886} for dataset: SeaStarReID2023, pooling method: linear
+2024-12-11 23:15:38,418 - INFO - Running classifier experiment with dataset: SeaStarReID2023, model: megadescriptor, pooling method: linear, use_class: False
+2024-12-11 23:15:38,419 - INFO - Top-1 acc. for config: 0.8421
+2024-12-11 23:15:38,419 - INFO - MSP ROC AUC for config: 0.7964
+2024-12-11 23:15:38,419 - INFO - MLS ROC AUC for config: 0.7420
+2024-12-11 23:15:38,419 - INFO - Using best params {'batch_size': 8, 'learning_rate': 0.0002, 'best_epoch': 5, 'best_val_acc': 0.8433048433048433} for dataset: SeaStarReID2023, pooling method: attentive
+2024-12-11 23:15:41,672 - INFO - Running classifier experiment with dataset: SeaStarReID2023, model: megadescriptor, pooling method: attentive, use_class: False
+2024-12-11 23:15:41,696 - INFO - Top-1 acc. for config: 0.8182
+2024-12-11 23:15:41,696 - INFO - MSP ROC AUC for config: 0.7874
+2024-12-11 23:15:41,696 - INFO - MLS ROC AUC for config: 0.7421
+2024-12-11 23:15:41,696 - INFO - /home/avisund/data/wildlife_datasets/SeaTurtleIDHeads/
+2024-12-11 23:15:41,772 - INFO - Dataset SeaTurtleIDHeads loaded successfully
+2024-12-11 23:15:41,811 - INFO - Dataset split successfully
+2024-12-11 23:15:41,818 - INFO - Dataloaders created successfully
+2024-12-11 23:15:43,408 - INFO - Loading pretrained weights from Hugging Face hub (BVRA/MegaDescriptor-L-384)
+2024-12-11 23:15:44,290 - INFO - Feature extractor loaded successfully
+2024-12-11 23:21:54,568 - INFO - Using best params {'batch_size': 16, 'learning_rate': 0.002, 'best_epoch': 2, 'best_val_acc': 0.9659468438538206} for dataset: SeaTurtleIDHeads, pooling method: linear
+2024-12-11 23:21:55,057 - INFO - Running classifier experiment with dataset: SeaTurtleIDHeads, model: megadescriptor, pooling method: linear, use_class: False
+2024-12-11 23:21:55,059 - INFO - Top-1 acc. for config: 0.9404
+2024-12-11 23:21:55,059 - INFO - MSP ROC AUC for config: 0.9444
+2024-12-11 23:21:55,059 - INFO - MLS ROC AUC for config: 0.9103
+2024-12-11 23:21:55,059 - INFO - Using best params {'batch_size': 8, 'learning_rate': 2e-05, 'best_epoch': 15, 'best_val_acc': 0.9642857142857143} for dataset: SeaTurtleIDHeads, pooling method: attentive
+2024-12-11 23:22:27,976 - INFO - Running classifier experiment with dataset: SeaTurtleIDHeads, model: megadescriptor, pooling method: attentive, use_class: False
+2024-12-11 23:22:28,054 - INFO - Top-1 acc. for config: 0.9355
+2024-12-11 23:22:28,054 - INFO - MSP ROC AUC for config: 0.9778
+2024-12-11 23:22:28,054 - INFO - MLS ROC AUC for config: 0.9813
+2024-12-11 23:22:28,054 - INFO - /home/avisund/data/wildlife_datasets/ZindiTurtleRecall/
+2024-12-11 23:22:28,130 - INFO - Dataset ZindiTurtleRecall loaded successfully
+2024-12-11 23:22:28,356 - INFO - Dataset split successfully
+2024-12-11 23:22:28,367 - INFO - Dataloaders created successfully
+2024-12-11 23:22:30,296 - INFO - Loading pretrained weights from Hugging Face hub (BVRA/MegaDescriptor-L-384)
+2024-12-11 23:22:31,247 - INFO - Feature extractor loaded successfully
+2024-12-11 23:33:14,666 - INFO - Using best params {'batch_size': 8, 'learning_rate': 0.0002, 'best_epoch': 19, 'best_val_acc': 0.7021161150298426} for dataset: ZindiTurtleRecall, pooling method: linear
+2024-12-11 23:33:30,918 - INFO - Running classifier experiment with dataset: ZindiTurtleRecall, model: megadescriptor, pooling method: linear, use_class: False
+2024-12-11 23:33:30,921 - INFO - Top-1 acc. for config: 0.6810
+2024-12-11 23:33:30,921 - INFO - MSP ROC AUC for config: 0.7332
+2024-12-11 23:33:30,921 - INFO - MLS ROC AUC for config: 0.6553
+2024-12-11 23:33:30,921 - INFO - Using best params {'batch_size': 8, 'learning_rate': 0.0002, 'best_epoch': 4, 'best_val_acc': 0.6261530113944656} for dataset: ZindiTurtleRecall, pooling method: attentive
+2024-12-11 23:33:45,880 - INFO - Running classifier experiment with dataset: ZindiTurtleRecall, model: megadescriptor, pooling method: attentive, use_class: False
+2024-12-11 23:33:45,977 - INFO - Top-1 acc. for config: 0.5913
+2024-12-11 23:33:45,977 - INFO - MSP ROC AUC for config: 0.7396
+2024-12-11 23:33:45,977 - INFO - MLS ROC AUC for config: 0.7391

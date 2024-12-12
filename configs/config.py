@@ -25,11 +25,12 @@ MODEL = 'megadescriptor'
 # ]
 
 DATASETS = [
-    'FriesianCattle2017',
     'AmvrakikosTurtles',
     'ReunionTurtles',
     'SouthernProvinceTurtles',
-    'SeaStarReID2023'
+    'SeaStarReID2023',
+    'SeaTurtleIDHeads',
+    'ZindiTurtleRecall'
 ]
 
 ROOT_DIR = '/home/avisund/data/wildlife_datasets/'

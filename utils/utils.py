@@ -55,13 +55,17 @@ def flatten_embeddings(embeddings, labels, pooling_method, use_class, attentive_
     if pooling_method == 'attentive':
         for embedding in embeddings:
             device = embedding[0].device
+            patch_tokens = embedding[0]
+            class_token = embedding[1]
             attentive_classifier = attentive_classifier.to(device)
-            attended_output = attentive_classifier.get_pooled_output(embedding)
+            attended_output = attentive_classifier.get_pooled_output((patch_tokens.unsqueeze(0), class_token.unsqueeze(0)))
             embeddings_f.append(attended_output.cpu().detach().numpy())
             
     else:
         for embedding in embeddings:
-            linear_input = create_linear_input(embedding, use_avgpool=(pooling_method == 'linear'), use_class=use_class)
+            patch_tokens = embedding[0]
+            class_token = embedding[1]
+            linear_input = create_linear_input((patch_tokens.unsqueeze(0), class_token.unsqueeze(0)), use_avgpool=(pooling_method == 'linear'), use_class=use_class)
             embeddings_f.append(np.array([np.array(tr.cpu()) for tr in linear_input]))
 
     labels_f = [np.array(l.cpu()) for l in labels]
@@ -114,7 +118,6 @@ def train_val_linear_classifier(train_embeddings, train_labels, val_embeddings, 
     # Create the embeddings dataset and dataloader
     train_dataset = EmbeddingsDataset(train_embeddings, train_labels)
     train_loader = DataLoader(train_dataset, batch_size=batch_size, shuffle=False)
-    print("made it to train loader")
 
     val_dataset = EmbeddingsDataset(val_embeddings, val_labels)
     val_loader = DataLoader(val_dataset, batch_size=batch_size, shuffle=False)

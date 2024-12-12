@@ -77,6 +77,7 @@ def main():
         embeddings, labels = compute_embeddings(dataloaders, feature_extractor, device)
         train_embeddings, closed_test_embeddings, open_test_embeddings = embeddings
         train_labels, closed_test_labels, open_test_labels = labels
+        logging.info('Embeddings computed successfully')
         
         for config in configs:
             if args.model == 'dinov2' and config['pooling_method'] == 'none' and not config['use_class']:
@@ -94,10 +95,7 @@ def main():
 
             logging.info(f'Running experiment with dataset: {dataset}, model: {args.model}, pooling method: {config["pooling_method"]}, use_class: {config["use_class"]}')
             train_embeddings_f, train_labels_f = flatten_embeddings(train_embeddings, train_labels, config['pooling_method'], config['use_class'], attentive_classifier)
-            print(train_embeddings_f)
-            print(len(train_embeddings_f))
-            print(train_embeddings_f[0].shape)
-            print(train_labels_f)
+
             closed_test_embeddings_f, closed_test_labels_f = flatten_embeddings(closed_test_embeddings, closed_test_labels, config['pooling_method'], config['use_class'], attentive_classifier)
             open_test_embeddings_f, open_test_labels_f = flatten_embeddings(open_test_embeddings, open_test_labels, config['pooling_method'], config['use_class'], attentive_classifier)
 
