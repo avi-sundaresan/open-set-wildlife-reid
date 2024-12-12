@@ -39,19 +39,21 @@ class ModelWithIntermediateLayersMD(nn.Module):
 def create_linear_input(x_tokens_list, use_avgpool, use_class):
     intermediate_output = x_tokens_list
     _, class_token = intermediate_output
+
     class_output = torch.cat([class_token], dim=-1)
-    patch_output = torch.mean((intermediate_output[0]).float(), dim=1)
+    patch_output = torch.mean((intermediate_output[0]).float(), dim=0)
+    print(patch_output.shape)
 
     if use_avgpool and use_class:
-      output = torch.cat((class_output, patch_output), dim=-1,)
-      output = output.reshape(output.shape[0], -1)
-      return output.float()
+        output = torch.cat((class_output, patch_output), dim=-1,)
+        output = output.reshape(output.shape[0], -1)
+        return output.float()
 
     if use_avgpool and not use_class:
-      return patch_output.float()
+        return patch_output.float()
 
     if not use_avgpool and use_class:
-      return class_output.float()
+        return class_output.float()
     return None
 
 class LinearClassifier(nn.Module):

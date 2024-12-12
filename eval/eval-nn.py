@@ -6,19 +6,18 @@ import timm
 from functools import partial
 
 from models import ModelWithIntermediateLayers, ModelWithIntermediateLayersMD
-from datasets.datasets import prepare_datasets, split_dataset, create_dataloaders
-from configs.config import DATASETS, MODEL, BATCH_SIZE, CONFIG_PATH, BEST_LEARNING_RATES, get_dataset_root
+from data_utils.datasets import prepare_datasets, split_dataset, create_dataloaders
+from configs.config import DATASETS, MODEL, CONFIG_PATH, BEST_PARAMS, get_dataset_root
 from utils.utils import get_ROC, flatten_embeddings, evaluate_knn, compute_embeddings, get_transformation, train_attentive_classifier
 
 # Initialize logging
-logging.basicConfig(filename='open_set_results.log', level=logging.INFO, 
+logging.basicConfig(filename='logs/md-ood-test.log', level=logging.INFO, 
                     format='%(asctime)s - %(levelname)s - %(message)s')
 
 def parse_args():
-    parser = argparse.ArgumentParser(description="KNN Classification Script")
+    parser = argparse.ArgumentParser(description="Nearest Neighbors Classification Script")
     parser.add_argument('--datasets', type=list, default=DATASETS, help='Datasets to use')
     parser.add_argument('--model', type=str, default=MODEL, help='Feature extractor to use')
-    parser.add_argument('--batch_size', type=int, default=BATCH_SIZE, help='Batch size for data loading')
     parser.add_argument('--configs', type=str, default=CONFIG_PATH, help='Path to JSON file with list of configurations')
     return parser.parse_args()
 
@@ -66,7 +65,7 @@ def main():
         logging.info('Dataset split successfully')
 
         # Create dataloaders
-        trainloader, closedtestloader, opentestloader, valloader = create_dataloaders(root, df, idx_train, idx_test, transformation, args.batch_size)
+        trainloader, closedtestloader, opentestloader, valloader = create_dataloaders(root, df, idx_train, idx_test, transformation, batch_size=None)
         logging.info('Dataloaders created successfully')
 
         # Load feature extractor
@@ -86,12 +85,19 @@ def main():
             # Initialize attentive pooler if needed
             attentive_classifier = None
             if config['pooling_method'] == 'attentive':
+                params = BEST_PARAMS[dataset][config['pooling_method']]
+                best_batch_size = params['batch_size']
+                best_lr = params['learning_rate']
+                best_epoch = params['best_epoch']
                 num_classes = int(max(train_labels).item() + 1)
-                best_lr = BEST_LEARNING_RATES[dataset][config['pooling_method']]
-                attentive_classifier = train_attentive_classifier(train_embeddings, train_labels, device=device, use_class=config['use_class'], num_classes=num_classes, learning_rate=best_lr)
+                attentive_classifier = train_attentive_classifier(train_embeddings, train_labels, use_class=config['use_class'], device=device, num_classes=num_classes, learning_rate=best_lr, num_epochs=best_epoch, batch_size=best_batch_size)
 
             logging.info(f'Running experiment with dataset: {dataset}, model: {args.model}, pooling method: {config["pooling_method"]}, use_class: {config["use_class"]}')
             train_embeddings_f, train_labels_f = flatten_embeddings(train_embeddings, train_labels, config['pooling_method'], config['use_class'], attentive_classifier)
+            print(train_embeddings_f)
+            print(len(train_embeddings_f))
+            print(train_embeddings_f[0].shape)
+            print(train_labels_f)
             closed_test_embeddings_f, closed_test_labels_f = flatten_embeddings(closed_test_embeddings, closed_test_labels, config['pooling_method'], config['use_class'], attentive_classifier)
             open_test_embeddings_f, open_test_labels_f = flatten_embeddings(open_test_embeddings, open_test_labels, config['pooling_method'], config['use_class'], attentive_classifier)
 

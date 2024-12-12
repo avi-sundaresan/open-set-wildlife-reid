@@ -7,12 +7,12 @@ import gc
 from functools import partial
 
 from models import ModelWithIntermediateLayers, ModelWithIntermediateLayersMD
-from datasets.datasets import prepare_datasets, split_dataset, create_dataloaders
+from data_utils.datasets import prepare_datasets, split_dataset, create_dataloaders
 from configs.config_grid import DATASETS, MODEL, BATCH_SIZE, CONFIG_PATH, LEARNING_RATE, get_dataset_root
 from utils.utils import get_ROC, compute_embeddings, get_transformation, train_val_attentive_classifier, train_val_linear_classifier, eval_closed_set, eval_open_set
 
 # Initialize logging
-logging.basicConfig(filename='logs/attentive_grid_results-new.log', level=logging.INFO, 
+logging.basicConfig(filename='logs/md-ood-test.log', level=logging.INFO, 
                     format='%(asctime)s - %(levelname)s - %(message)s')
 
 def parse_args():

@@ -8,14 +8,14 @@ from functools import partial
 from PIL import Image
 
 from datasets.datasets import prepare_datasets, split_dataset, create_dataloaders
-from configs.config import DATASETS, MODEL, BATCH_SIZE, CONFIG_PATH, BEST_LEARNING_RATES, get_dataset_root
+from configs.config import DATASETS, MODEL, CONFIG_PATH, get_dataset_root
 
 # Initialize logging
 logging.basicConfig(filename='logs/dataset_info.log', level=logging.INFO, 
                     format='%(asctime)s - %(levelname)s - %(message)s')
 
 def parse_args():
-    parser = argparse.ArgumentParser(description="KNN Classification Script")
+    parser = argparse.ArgumentParser(description="Dataset stats")
     parser.add_argument('--datasets', type=list, default=DATASETS, help='Datasets to use')
     parser.add_argument('--configs', type=str, default=CONFIG_PATH, help='Path to JSON file with list of configurations')
     return parser.parse_args()
@@ -30,8 +30,6 @@ def get_size(start_path = '.'):
                 total_size += os.path.getsize(fp)
 
     return total_size / (1024 ** 3)
-
-print(get_size(), 'bytes')
 
 def main():
     args = parse_args()
@@ -54,12 +52,18 @@ def main():
         id_num = len(set(df['identity']))
         logging.info(f'Number of dataset identities: { id_num }')
 
-        image_filepath = df['path'].iloc[0]
-        image = Image.open(root + image_filepath)
-        image.save('/home/avisund/workspace/open-set-wildlife-reid/example-images/' + dataset + '.png')
-        width, height = image.size
+        image_filepaths = df['path']
+        widths = []
+        heights = []
+        for path in image_filepaths:
+            image = Image.open(root + path)
+            width, height = image.size
+            widths.append(width)
+            heights.append(height)
 
-        logging.info(f'Image dimension: {width} by {height}')
+        logging.info(f'Avg. image width: {sum(widths) / len(widths)}')
+        logging.info(f'Avg. image height: {sum(heights) / len(heights)}')
+
         size = get_size(root)
         logging.info(f'Dataset size: {size} GB')
 

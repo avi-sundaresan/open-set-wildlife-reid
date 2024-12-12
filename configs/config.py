@@ -4,19 +4,37 @@ import os
 # MODEL = 'dinov2'
 MODEL = 'megadescriptor'
 
-DATASETS = ['StripeSpotter',
-            'CatIndividualImages',
-            'CowDataset',
-            'Cows2021',
-            'Giraffes',
-            'NDD20',
-            'OpenCows2020',
-            'SeaStarReID2023',
-            'ZindiTurtleRecall'
+# DATASETS = ['FriesianCattle2015v2', 
+#             'CTai',
+#             'CZoo',
+#             'DogFaceNet', 
+#             'FriesianCattle2017',
+#             'IPanda50',
+#             'MacaqueFaces',
+#             'NyalaData', 
+#             'SeaTurtleIDHeads',
+#             'StripeSpotter',
+#             'CatIndividualImages',
+#             'CowDataset',
+#             'Cows2021',
+#             'Giraffes',
+#             'NDD20',
+#             'OpenCows2020',
+#             'SeaStarReID2023',
+#             'ZindiTurtleRecall'
+# ]
+
+DATASETS = [
+    'FriesianCattle2017',
+    'AmvrakikosTurtles',
+    'ReunionTurtles',
+    'SouthernProvinceTurtles',
+    'SeaStarReID2023'
 ]
 
 ROOT_DIR = '/home/avisund/data/wildlife_datasets/'
 CONFIG_PATH = 'configs/md-configs.json'
+# CONFIG_PATH = 'configs/dinov2-configs-2.json'
 
 BEST_PARAMS = {
     "FriesianCattle2015v2": {
@@ -269,6 +287,62 @@ BEST_PARAMS = {
             "learning_rate": 0.0005,
             "best_epoch": 3, 
             "best_val_acc": 0.9694656488549618
+        }
+    },
+    "SeaStarReID2023": {
+        "attentive": {
+            "batch_size": 8,
+            "learning_rate": 0.0002,
+            "best_epoch": 5,
+            "best_val_acc": 0.8433048433048433
+        },
+        "linear": {
+            "batch_size": 64,
+            "learning_rate": 0.01,
+            "best_epoch": 26,
+            "best_val_acc": 0.886039886039886
+        }
+    },
+    "AmvrakikosTurtles": {
+        "attentive": {
+            "batch_size": 128,
+            "learning_rate": 0.0005,
+            "best_epoch": 6,
+            "best_val_acc": 0.4444444444444444
+        },
+        "linear": {
+            "batch_size": 64,
+            "learning_rate": 0.05,
+            "best_epoch": 1,
+            "best_val_acc": 0.4074074074074074
+        }
+    },
+    "ReunionTurtles": {
+        "attentive": {
+            "batch_size": 16,
+            "learning_rate": 0.0002,
+            "best_epoch": 5,
+            "best_val_acc": 0.6
+        },
+        "linear": {
+            "batch_size": 32,
+            "learning_rate": 0.01,
+            "best_epoch": 2,
+            "best_val_acc": 0.4888888888888889
+        }
+    },
+    "SouthernProvinceTurtles": {
+        "attentive": {
+            "batch_size": 8,
+            "learning_rate": 5e-05,
+            "best_epoch": 25,
+            "best_val_acc": 0.8133333333333334
+        },
+        "linear": {
+            "batch_size": 64,
+            "learning_rate": 0.001,
+            "best_epoch": 50,
+            "best_val_acc": 0.8266666666666667
         }
     }
 }

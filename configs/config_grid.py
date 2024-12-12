@@ -2,32 +2,10 @@ import os
 
 MODEL = 'megadescriptor'
 
-# DATASETS = ['FriesianCattle2015v2', 
-#             'CTai',
-#             'CZoo',
-#             'DogFaceNet', 
-#             'FriesianCattle2017',
-#             'IPanda50',
-#             'MacaqueFaces',
-#             'NyalaData', 
-#             'SeaTurtleIDHeads',
-#             'StripeSpotter',
-#             'AerialCattle2017', 
-#             'MPDD', 
-#             'PolarBearVidID',
-#             'CatIndividualImages',
-#             'CowDataset',
-#             'Cows2021',
-#             'Giraffes',
-#             'MPDD',
-#             'NDD20',
-#             'OpenCows2020',
-#             'SeaStarReID2023',
-#             'ZindiTurtleRecall'
-# ]
-
-DATASETS = ['StripeSpotter',
-            'AerialCattle2017', 
+DATASETS = [
+    'AmvrakikosTurtles',
+    'ReunionTurtles',
+    'SouthernProvinceTurtles'
 ]
 
 ROOT_DIR = '/home/avisund/data/wildlife_datasets/'

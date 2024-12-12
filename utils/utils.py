@@ -10,7 +10,7 @@ from sklearn.neighbors import NearestNeighbors
 from tqdm import tqdm 
 from torch.utils.data import DataLoader
 from models import create_linear_input, LinearClassifier, AttentiveClassifier
-from datasets.datasets import EmbeddingsDataset
+from data_utils.datasets import EmbeddingsDataset
 
 def get_transformation(model):
     if model == 'dinov2' or model == 'dinov2_reg':
@@ -52,19 +52,19 @@ def compute_embeddings(dataloaders, feature_model, device):
 
 def flatten_embeddings(embeddings, labels, pooling_method, use_class, attentive_classifier=None):
     embeddings_f = []
-
     if pooling_method == 'attentive':
         for embedding in embeddings:
             device = embedding[0].device
             attentive_classifier = attentive_classifier.to(device)
             attended_output = attentive_classifier.get_pooled_output(embedding)
             embeddings_f.append(attended_output.cpu().detach().numpy())
+            
     else:
         for embedding in embeddings:
             linear_input = create_linear_input(embedding, use_avgpool=(pooling_method == 'linear'), use_class=use_class)
-            embeddings_f.extend([np.array(tr.cpu()) for tr in linear_input])
+            embeddings_f.append(np.array([np.array(tr.cpu()) for tr in linear_input]))
 
-    labels_f = [np.array(l.cpu()) for label in labels for l in label]
+    labels_f = [np.array(l.cpu()) for l in labels]
     embeddings_f = np.vstack(embeddings_f)
     return np.array(embeddings_f), np.array(labels_f)
 
@@ -114,6 +114,7 @@ def train_val_linear_classifier(train_embeddings, train_labels, val_embeddings, 
     # Create the embeddings dataset and dataloader
     train_dataset = EmbeddingsDataset(train_embeddings, train_labels)
     train_loader = DataLoader(train_dataset, batch_size=batch_size, shuffle=False)
+    print("made it to train loader")
 
     val_dataset = EmbeddingsDataset(val_embeddings, val_labels)
     val_loader = DataLoader(val_dataset, batch_size=batch_size, shuffle=False)
@@ -140,7 +141,9 @@ def train_val_linear_classifier(train_embeddings, train_labels, val_embeddings, 
         for patch_tokens, class_token, labels in train_loader:
             patch_tokens = patch_tokens.to(device).float()  
             class_token = class_token.to(device).float()    
-            labels = labels.to(device).long()              
+            labels = labels.to(device).long()          
+            print(patch_tokens.shape)    
+            print(class_token.shape)
             
             optimizer.zero_grad()
             

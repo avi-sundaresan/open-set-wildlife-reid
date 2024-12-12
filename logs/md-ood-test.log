@@ -1,0 +1,1056 @@
+2024-11-14 02:04:10,964 - INFO - Using device: cuda:1
+2024-11-14 02:04:10,964 - INFO - /home/avisund/data/wildlife_datasets/AmvrakikosTurtles/
+2024-11-14 02:04:10,964 - ERROR - Error occurred for dataset AmvrakikosTurtles, Unsupported dataset: AmvrakikosTurtles
+2024-11-14 02:04:11,055 - INFO - /home/avisund/data/wildlife_datasets/ReunionTurtles/
+2024-11-14 02:04:11,055 - ERROR - Error occurred for dataset ReunionTurtles, Unsupported dataset: ReunionTurtles
+2024-11-14 02:04:11,145 - INFO - /home/avisund/data/wildlife_datasets/SouthernProvinceTurtles/
+2024-11-14 02:04:11,145 - ERROR - Error occurred for dataset SouthernProvinceTurtles, Unsupported dataset: SouthernProvinceTurtles
+2024-11-14 02:04:11,235 - INFO - /home/avisund/data/wildlife_datasets/SeaStarReID2023/
+2024-11-14 02:04:11,270 - INFO - Dataset SeaStarReID2023 loaded successfully
+2024-11-14 02:04:11,279 - INFO - Dataset split successfully
+2024-11-14 02:04:11,283 - INFO - Dataloaders created successfully
+2024-11-14 02:04:13,157 - INFO - Loading pretrained weights from Hugging Face hub (BVRA/MegaDescriptor-L-384)
+2024-11-14 02:04:14,580 - INFO - Feature extractor loaded successfully
+2024-11-14 02:07:24,227 - INFO - Embeddings computed successfully
+2024-11-14 02:07:24,231 - INFO - Grid eval for classifiers: Running experiment with dataset: SeaStarReID2023, model: megadescriptor, pooling method: linear, use_class: False, learning rate: 1e-05, batch size: 8
+2024-11-14 02:07:30,674 - INFO - Training stopped at epoch 50 for config: {'pooling_method': 'linear', 'use_class': False}
+2024-11-14 02:07:30,675 - INFO - Grid eval for classifiers: Running experiment with dataset: SeaStarReID2023, model: megadescriptor, pooling method: linear, use_class: False, learning rate: 2e-05, batch size: 8
+2024-11-14 02:07:37,035 - INFO - Training stopped at epoch 50 for config: {'pooling_method': 'linear', 'use_class': False}
+2024-11-14 02:07:37,035 - INFO - Grid eval for classifiers: Running experiment with dataset: SeaStarReID2023, model: megadescriptor, pooling method: linear, use_class: False, learning rate: 5e-05, batch size: 8
+2024-11-14 02:07:43,482 - INFO - Training stopped at epoch 50 for config: {'pooling_method': 'linear', 'use_class': False}
+2024-11-14 02:07:43,482 - INFO - Grid eval for classifiers: Running experiment with dataset: SeaStarReID2023, model: megadescriptor, pooling method: linear, use_class: False, learning rate: 0.0001, batch size: 8
+2024-11-14 02:07:49,809 - INFO - Training stopped at epoch 50 for config: {'pooling_method': 'linear', 'use_class': False}
+2024-11-14 02:07:49,809 - INFO - Grid eval for classifiers: Running experiment with dataset: SeaStarReID2023, model: megadescriptor, pooling method: linear, use_class: False, learning rate: 0.0002, batch size: 8
+2024-11-14 02:07:56,163 - INFO - Training stopped at epoch 50 for config: {'pooling_method': 'linear', 'use_class': False}
+2024-11-14 02:07:56,163 - INFO - Grid eval for classifiers: Running experiment with dataset: SeaStarReID2023, model: megadescriptor, pooling method: linear, use_class: False, learning rate: 0.0005, batch size: 8
+2024-11-14 02:08:02,538 - INFO - Training stopped at epoch 50 for config: {'pooling_method': 'linear', 'use_class': False}
+2024-11-14 02:08:02,538 - INFO - Grid eval for classifiers: Running experiment with dataset: SeaStarReID2023, model: megadescriptor, pooling method: linear, use_class: False, learning rate: 0.001, batch size: 8
+2024-11-14 02:08:08,225 - INFO - Training stopped at epoch 40 for config: {'pooling_method': 'linear', 'use_class': False}
+2024-11-14 02:08:08,225 - INFO - Grid eval for classifiers: Running experiment with dataset: SeaStarReID2023, model: megadescriptor, pooling method: linear, use_class: False, learning rate: 0.002, batch size: 8
+2024-11-14 02:08:12,517 - INFO - Training stopped at epoch 29 for config: {'pooling_method': 'linear', 'use_class': False}
+2024-11-14 02:08:12,517 - INFO - Grid eval for classifiers: Running experiment with dataset: SeaStarReID2023, model: megadescriptor, pooling method: linear, use_class: False, learning rate: 0.005, batch size: 8
+2024-11-14 02:08:15,422 - INFO - Training stopped at epoch 18 for config: {'pooling_method': 'linear', 'use_class': False}
+2024-11-14 02:08:15,422 - INFO - Grid eval for classifiers: Running experiment with dataset: SeaStarReID2023, model: megadescriptor, pooling method: linear, use_class: False, learning rate: 0.01, batch size: 8
+2024-11-14 02:08:16,181 - INFO - Training stopped at epoch 1 for config: {'pooling_method': 'linear', 'use_class': False}
+2024-11-14 02:08:16,181 - INFO - Grid eval for classifiers: Running experiment with dataset: SeaStarReID2023, model: megadescriptor, pooling method: linear, use_class: False, learning rate: 0.02, batch size: 8
+2024-11-14 02:08:17,066 - INFO - Training stopped at epoch 2 for config: {'pooling_method': 'linear', 'use_class': False}
+2024-11-14 02:08:17,066 - INFO - Grid eval for classifiers: Running experiment with dataset: SeaStarReID2023, model: megadescriptor, pooling method: linear, use_class: False, learning rate: 0.05, batch size: 8
+2024-11-14 02:08:18,359 - INFO - Training stopped at epoch 5 for config: {'pooling_method': 'linear', 'use_class': False}
+2024-11-14 02:08:18,360 - INFO - Grid eval for classifiers: Running experiment with dataset: SeaStarReID2023, model: megadescriptor, pooling method: linear, use_class: False, learning rate: 0.1, batch size: 8
+2024-11-14 02:08:19,371 - INFO - Training stopped at epoch 3 for config: {'pooling_method': 'linear', 'use_class': False}
+2024-11-14 02:08:19,371 - INFO - Grid eval for classifiers: Running experiment with dataset: SeaStarReID2023, model: megadescriptor, pooling method: linear, use_class: False, learning rate: 1e-05, batch size: 16
+2024-11-14 02:08:22,650 - INFO - Training stopped at epoch 50 for config: {'pooling_method': 'linear', 'use_class': False}
+2024-11-14 02:08:22,650 - INFO - Grid eval for classifiers: Running experiment with dataset: SeaStarReID2023, model: megadescriptor, pooling method: linear, use_class: False, learning rate: 2e-05, batch size: 16
+2024-11-14 02:08:25,924 - INFO - Training stopped at epoch 50 for config: {'pooling_method': 'linear', 'use_class': False}
+2024-11-14 02:08:25,924 - INFO - Grid eval for classifiers: Running experiment with dataset: SeaStarReID2023, model: megadescriptor, pooling method: linear, use_class: False, learning rate: 5e-05, batch size: 16
+2024-11-14 02:08:29,168 - INFO - Training stopped at epoch 50 for config: {'pooling_method': 'linear', 'use_class': False}
+2024-11-14 02:08:29,168 - INFO - Grid eval for classifiers: Running experiment with dataset: SeaStarReID2023, model: megadescriptor, pooling method: linear, use_class: False, learning rate: 0.0001, batch size: 16
+2024-11-14 02:08:32,506 - INFO - Training stopped at epoch 50 for config: {'pooling_method': 'linear', 'use_class': False}
+2024-11-14 02:08:32,506 - INFO - Grid eval for classifiers: Running experiment with dataset: SeaStarReID2023, model: megadescriptor, pooling method: linear, use_class: False, learning rate: 0.0002, batch size: 16
+2024-11-14 02:08:35,742 - INFO - Training stopped at epoch 50 for config: {'pooling_method': 'linear', 'use_class': False}
+2024-11-14 02:08:35,742 - INFO - Grid eval for classifiers: Running experiment with dataset: SeaStarReID2023, model: megadescriptor, pooling method: linear, use_class: False, learning rate: 0.0005, batch size: 16
+2024-11-14 02:08:39,031 - INFO - Training stopped at epoch 50 for config: {'pooling_method': 'linear', 'use_class': False}
+2024-11-14 02:08:39,031 - INFO - Grid eval for classifiers: Running experiment with dataset: SeaStarReID2023, model: megadescriptor, pooling method: linear, use_class: False, learning rate: 0.001, batch size: 16
+2024-11-14 02:08:42,266 - INFO - Training stopped at epoch 50 for config: {'pooling_method': 'linear', 'use_class': False}
+2024-11-14 02:08:42,266 - INFO - Grid eval for classifiers: Running experiment with dataset: SeaStarReID2023, model: megadescriptor, pooling method: linear, use_class: False, learning rate: 0.002, batch size: 16
+2024-11-14 02:08:45,501 - INFO - Training stopped at epoch 47 for config: {'pooling_method': 'linear', 'use_class': False}
+2024-11-14 02:08:45,501 - INFO - Grid eval for classifiers: Running experiment with dataset: SeaStarReID2023, model: megadescriptor, pooling method: linear, use_class: False, learning rate: 0.005, batch size: 16
+2024-11-14 02:08:47,184 - INFO - Training stopped at epoch 21 for config: {'pooling_method': 'linear', 'use_class': False}
+2024-11-14 02:08:47,184 - INFO - Grid eval for classifiers: Running experiment with dataset: SeaStarReID2023, model: megadescriptor, pooling method: linear, use_class: False, learning rate: 0.01, batch size: 16
+2024-11-14 02:08:47,767 - INFO - Training stopped at epoch 4 for config: {'pooling_method': 'linear', 'use_class': False}
+2024-11-14 02:08:47,767 - INFO - Grid eval for classifiers: Running experiment with dataset: SeaStarReID2023, model: megadescriptor, pooling method: linear, use_class: False, learning rate: 0.02, batch size: 16
+2024-11-14 02:08:48,351 - INFO - Training stopped at epoch 4 for config: {'pooling_method': 'linear', 'use_class': False}
+2024-11-14 02:08:48,351 - INFO - Grid eval for classifiers: Running experiment with dataset: SeaStarReID2023, model: megadescriptor, pooling method: linear, use_class: False, learning rate: 0.05, batch size: 16
+2024-11-14 02:08:48,934 - INFO - Training stopped at epoch 4 for config: {'pooling_method': 'linear', 'use_class': False}
+2024-11-14 02:08:48,934 - INFO - Grid eval for classifiers: Running experiment with dataset: SeaStarReID2023, model: megadescriptor, pooling method: linear, use_class: False, learning rate: 0.1, batch size: 16
+2024-11-14 02:08:49,518 - INFO - Training stopped at epoch 4 for config: {'pooling_method': 'linear', 'use_class': False}
+2024-11-14 02:08:49,518 - INFO - Grid eval for classifiers: Running experiment with dataset: SeaStarReID2023, model: megadescriptor, pooling method: linear, use_class: False, learning rate: 1e-05, batch size: 32
+2024-11-14 02:08:51,262 - INFO - Training stopped at epoch 50 for config: {'pooling_method': 'linear', 'use_class': False}
+2024-11-14 02:08:51,262 - INFO - Grid eval for classifiers: Running experiment with dataset: SeaStarReID2023, model: megadescriptor, pooling method: linear, use_class: False, learning rate: 2e-05, batch size: 32
+2024-11-14 02:08:53,005 - INFO - Training stopped at epoch 50 for config: {'pooling_method': 'linear', 'use_class': False}
+2024-11-14 02:08:53,005 - INFO - Grid eval for classifiers: Running experiment with dataset: SeaStarReID2023, model: megadescriptor, pooling method: linear, use_class: False, learning rate: 5e-05, batch size: 32
+2024-11-14 02:08:54,748 - INFO - Training stopped at epoch 50 for config: {'pooling_method': 'linear', 'use_class': False}
+2024-11-14 02:08:54,749 - INFO - Grid eval for classifiers: Running experiment with dataset: SeaStarReID2023, model: megadescriptor, pooling method: linear, use_class: False, learning rate: 0.0001, batch size: 32
+2024-11-14 02:08:56,491 - INFO - Training stopped at epoch 50 for config: {'pooling_method': 'linear', 'use_class': False}
+2024-11-14 02:08:56,491 - INFO - Grid eval for classifiers: Running experiment with dataset: SeaStarReID2023, model: megadescriptor, pooling method: linear, use_class: False, learning rate: 0.0002, batch size: 32
+2024-11-14 02:08:58,234 - INFO - Training stopped at epoch 50 for config: {'pooling_method': 'linear', 'use_class': False}
+2024-11-14 02:08:58,234 - INFO - Grid eval for classifiers: Running experiment with dataset: SeaStarReID2023, model: megadescriptor, pooling method: linear, use_class: False, learning rate: 0.0005, batch size: 32
+2024-11-14 02:08:59,975 - INFO - Training stopped at epoch 50 for config: {'pooling_method': 'linear', 'use_class': False}
+2024-11-14 02:08:59,975 - INFO - Grid eval for classifiers: Running experiment with dataset: SeaStarReID2023, model: megadescriptor, pooling method: linear, use_class: False, learning rate: 0.001, batch size: 32
+2024-11-14 02:09:01,741 - INFO - Training stopped at epoch 50 for config: {'pooling_method': 'linear', 'use_class': False}
+2024-11-14 02:09:01,741 - INFO - Grid eval for classifiers: Running experiment with dataset: SeaStarReID2023, model: megadescriptor, pooling method: linear, use_class: False, learning rate: 0.002, batch size: 32
+2024-11-14 02:09:03,484 - INFO - Training stopped at epoch 50 for config: {'pooling_method': 'linear', 'use_class': False}
+2024-11-14 02:09:03,484 - INFO - Grid eval for classifiers: Running experiment with dataset: SeaStarReID2023, model: megadescriptor, pooling method: linear, use_class: False, learning rate: 0.005, batch size: 32
+2024-11-14 02:09:04,845 - INFO - Training stopped at epoch 34 for config: {'pooling_method': 'linear', 'use_class': False}
+2024-11-14 02:09:04,845 - INFO - Grid eval for classifiers: Running experiment with dataset: SeaStarReID2023, model: megadescriptor, pooling method: linear, use_class: False, learning rate: 0.01, batch size: 32
+2024-11-14 02:09:06,016 - INFO - Training stopped at epoch 29 for config: {'pooling_method': 'linear', 'use_class': False}
+2024-11-14 02:09:06,016 - INFO - Grid eval for classifiers: Running experiment with dataset: SeaStarReID2023, model: megadescriptor, pooling method: linear, use_class: False, learning rate: 0.02, batch size: 32
+2024-11-14 02:09:06,501 - INFO - Training stopped at epoch 9 for config: {'pooling_method': 'linear', 'use_class': False}
+2024-11-14 02:09:06,501 - INFO - Grid eval for classifiers: Running experiment with dataset: SeaStarReID2023, model: megadescriptor, pooling method: linear, use_class: False, learning rate: 0.05, batch size: 32
+2024-11-14 02:09:06,848 - INFO - Training stopped at epoch 5 for config: {'pooling_method': 'linear', 'use_class': False}
+2024-11-14 02:09:06,848 - INFO - Grid eval for classifiers: Running experiment with dataset: SeaStarReID2023, model: megadescriptor, pooling method: linear, use_class: False, learning rate: 0.1, batch size: 32
+2024-11-14 02:09:07,127 - INFO - Training stopped at epoch 3 for config: {'pooling_method': 'linear', 'use_class': False}
+2024-11-14 02:09:07,127 - INFO - Grid eval for classifiers: Running experiment with dataset: SeaStarReID2023, model: megadescriptor, pooling method: linear, use_class: False, learning rate: 1e-05, batch size: 64
+2024-11-14 02:09:08,157 - INFO - Training stopped at epoch 50 for config: {'pooling_method': 'linear', 'use_class': False}
+2024-11-14 02:09:08,157 - INFO - Grid eval for classifiers: Running experiment with dataset: SeaStarReID2023, model: megadescriptor, pooling method: linear, use_class: False, learning rate: 2e-05, batch size: 64
+2024-11-14 02:09:09,183 - INFO - Training stopped at epoch 50 for config: {'pooling_method': 'linear', 'use_class': False}
+2024-11-14 02:09:09,183 - INFO - Grid eval for classifiers: Running experiment with dataset: SeaStarReID2023, model: megadescriptor, pooling method: linear, use_class: False, learning rate: 5e-05, batch size: 64
+2024-11-14 02:09:10,212 - INFO - Training stopped at epoch 50 for config: {'pooling_method': 'linear', 'use_class': False}
+2024-11-14 02:09:10,212 - INFO - Grid eval for classifiers: Running experiment with dataset: SeaStarReID2023, model: megadescriptor, pooling method: linear, use_class: False, learning rate: 0.0001, batch size: 64
+2024-11-14 02:09:11,235 - INFO - Training stopped at epoch 50 for config: {'pooling_method': 'linear', 'use_class': False}
+2024-11-14 02:09:11,235 - INFO - Grid eval for classifiers: Running experiment with dataset: SeaStarReID2023, model: megadescriptor, pooling method: linear, use_class: False, learning rate: 0.0002, batch size: 64
+2024-11-14 02:09:12,263 - INFO - Training stopped at epoch 50 for config: {'pooling_method': 'linear', 'use_class': False}
+2024-11-14 02:09:12,263 - INFO - Grid eval for classifiers: Running experiment with dataset: SeaStarReID2023, model: megadescriptor, pooling method: linear, use_class: False, learning rate: 0.0005, batch size: 64
+2024-11-14 02:09:13,287 - INFO - Training stopped at epoch 50 for config: {'pooling_method': 'linear', 'use_class': False}
+2024-11-14 02:09:13,287 - INFO - Grid eval for classifiers: Running experiment with dataset: SeaStarReID2023, model: megadescriptor, pooling method: linear, use_class: False, learning rate: 0.001, batch size: 64
+2024-11-14 02:09:14,315 - INFO - Training stopped at epoch 50 for config: {'pooling_method': 'linear', 'use_class': False}
+2024-11-14 02:09:14,315 - INFO - Grid eval for classifiers: Running experiment with dataset: SeaStarReID2023, model: megadescriptor, pooling method: linear, use_class: False, learning rate: 0.002, batch size: 64
+2024-11-14 02:09:15,339 - INFO - Training stopped at epoch 50 for config: {'pooling_method': 'linear', 'use_class': False}
+2024-11-14 02:09:15,339 - INFO - Grid eval for classifiers: Running experiment with dataset: SeaStarReID2023, model: megadescriptor, pooling method: linear, use_class: False, learning rate: 0.005, batch size: 64
+2024-11-14 02:09:16,343 - INFO - Training stopped at epoch 44 for config: {'pooling_method': 'linear', 'use_class': False}
+2024-11-14 02:09:16,343 - INFO - Grid eval for classifiers: Running experiment with dataset: SeaStarReID2023, model: megadescriptor, pooling method: linear, use_class: False, learning rate: 0.01, batch size: 64
+2024-11-14 02:09:16,979 - INFO - Training stopped at epoch 26 for config: {'pooling_method': 'linear', 'use_class': False}
+2024-11-14 02:09:16,979 - INFO - Grid eval for classifiers: Running experiment with dataset: SeaStarReID2023, model: megadescriptor, pooling method: linear, use_class: False, learning rate: 0.02, batch size: 64
+2024-11-14 02:09:18,004 - INFO - Training stopped at epoch 50 for config: {'pooling_method': 'linear', 'use_class': False}
+2024-11-14 02:09:18,004 - INFO - Grid eval for classifiers: Running experiment with dataset: SeaStarReID2023, model: megadescriptor, pooling method: linear, use_class: False, learning rate: 0.05, batch size: 64
+2024-11-14 02:09:18,252 - INFO - Training stopped at epoch 7 for config: {'pooling_method': 'linear', 'use_class': False}
+2024-11-14 02:09:18,252 - INFO - Grid eval for classifiers: Running experiment with dataset: SeaStarReID2023, model: megadescriptor, pooling method: linear, use_class: False, learning rate: 0.1, batch size: 64
+2024-11-14 02:09:18,417 - INFO - Training stopped at epoch 3 for config: {'pooling_method': 'linear', 'use_class': False}
+2024-11-14 02:09:18,417 - INFO - Grid eval for classifiers: Running experiment with dataset: SeaStarReID2023, model: megadescriptor, pooling method: linear, use_class: False, learning rate: 1e-05, batch size: 128
+2024-11-14 02:09:19,089 - INFO - Training stopped at epoch 50 for config: {'pooling_method': 'linear', 'use_class': False}
+2024-11-14 02:09:19,089 - INFO - Grid eval for classifiers: Running experiment with dataset: SeaStarReID2023, model: megadescriptor, pooling method: linear, use_class: False, learning rate: 2e-05, batch size: 128
+2024-11-14 02:09:19,759 - INFO - Training stopped at epoch 50 for config: {'pooling_method': 'linear', 'use_class': False}
+2024-11-14 02:09:19,759 - INFO - Grid eval for classifiers: Running experiment with dataset: SeaStarReID2023, model: megadescriptor, pooling method: linear, use_class: False, learning rate: 5e-05, batch size: 128
+2024-11-14 02:09:20,432 - INFO - Training stopped at epoch 50 for config: {'pooling_method': 'linear', 'use_class': False}
+2024-11-14 02:09:20,432 - INFO - Grid eval for classifiers: Running experiment with dataset: SeaStarReID2023, model: megadescriptor, pooling method: linear, use_class: False, learning rate: 0.0001, batch size: 128
+2024-11-14 02:09:21,103 - INFO - Training stopped at epoch 50 for config: {'pooling_method': 'linear', 'use_class': False}
+2024-11-14 02:09:21,104 - INFO - Grid eval for classifiers: Running experiment with dataset: SeaStarReID2023, model: megadescriptor, pooling method: linear, use_class: False, learning rate: 0.0002, batch size: 128
+2024-11-14 02:09:21,774 - INFO - Training stopped at epoch 50 for config: {'pooling_method': 'linear', 'use_class': False}
+2024-11-14 02:09:21,774 - INFO - Grid eval for classifiers: Running experiment with dataset: SeaStarReID2023, model: megadescriptor, pooling method: linear, use_class: False, learning rate: 0.0005, batch size: 128
+2024-11-14 02:09:22,446 - INFO - Training stopped at epoch 50 for config: {'pooling_method': 'linear', 'use_class': False}
+2024-11-14 02:09:22,446 - INFO - Grid eval for classifiers: Running experiment with dataset: SeaStarReID2023, model: megadescriptor, pooling method: linear, use_class: False, learning rate: 0.001, batch size: 128
+2024-11-14 02:09:23,117 - INFO - Training stopped at epoch 50 for config: {'pooling_method': 'linear', 'use_class': False}
+2024-11-14 02:09:23,117 - INFO - Grid eval for classifiers: Running experiment with dataset: SeaStarReID2023, model: megadescriptor, pooling method: linear, use_class: False, learning rate: 0.002, batch size: 128
+2024-11-14 02:09:23,788 - INFO - Training stopped at epoch 50 for config: {'pooling_method': 'linear', 'use_class': False}
+2024-11-14 02:09:23,788 - INFO - Grid eval for classifiers: Running experiment with dataset: SeaStarReID2023, model: megadescriptor, pooling method: linear, use_class: False, learning rate: 0.005, batch size: 128
+2024-11-14 02:09:24,460 - INFO - Training stopped at epoch 50 for config: {'pooling_method': 'linear', 'use_class': False}
+2024-11-14 02:09:24,460 - INFO - Grid eval for classifiers: Running experiment with dataset: SeaStarReID2023, model: megadescriptor, pooling method: linear, use_class: False, learning rate: 0.01, batch size: 128
+2024-11-14 02:09:25,011 - INFO - Training stopped at epoch 36 for config: {'pooling_method': 'linear', 'use_class': False}
+2024-11-14 02:09:25,011 - INFO - Grid eval for classifiers: Running experiment with dataset: SeaStarReID2023, model: megadescriptor, pooling method: linear, use_class: False, learning rate: 0.02, batch size: 128
+2024-11-14 02:09:25,683 - INFO - Training stopped at epoch 50 for config: {'pooling_method': 'linear', 'use_class': False}
+2024-11-14 02:09:25,683 - INFO - Grid eval for classifiers: Running experiment with dataset: SeaStarReID2023, model: megadescriptor, pooling method: linear, use_class: False, learning rate: 0.05, batch size: 128
+2024-11-14 02:09:25,832 - INFO - Training stopped at epoch 6 for config: {'pooling_method': 'linear', 'use_class': False}
+2024-11-14 02:09:25,832 - INFO - Grid eval for classifiers: Running experiment with dataset: SeaStarReID2023, model: megadescriptor, pooling method: linear, use_class: False, learning rate: 0.1, batch size: 128
+2024-11-14 02:09:25,995 - INFO - Training stopped at epoch 7 for config: {'pooling_method': 'linear', 'use_class': False}
+2024-11-14 02:09:25,995 - INFO - Best results for dataset SeaStarReID2023 and linear pooling method: {
+    "dataset": "SeaStarReID2023",
+    "pooling_method": "linear",
+    "batch_size": 64,
+    "learning_rate": 0.01,
+    "best_epoch": 26,
+    "best_val_acc": 0.886039886039886
+}
+2024-11-14 02:09:25,995 - INFO - Grid eval for classifiers: Running experiment with dataset: SeaStarReID2023, model: megadescriptor, pooling method: attentive, use_class: False, learning rate: 1e-05, batch size: 8
+2024-11-14 02:09:59,700 - INFO - Training stopped at epoch 50 for config: {'pooling_method': 'attentive', 'use_class': False}
+2024-11-14 02:09:59,700 - INFO - Grid eval for classifiers: Running experiment with dataset: SeaStarReID2023, model: megadescriptor, pooling method: attentive, use_class: False, learning rate: 2e-05, batch size: 8
+2024-11-14 02:10:30,969 - INFO - Training stopped at epoch 41 for config: {'pooling_method': 'attentive', 'use_class': False}
+2024-11-14 02:10:30,969 - INFO - Grid eval for classifiers: Running experiment with dataset: SeaStarReID2023, model: megadescriptor, pooling method: attentive, use_class: False, learning rate: 5e-05, batch size: 8
+2024-11-14 02:10:47,948 - INFO - Training stopped at epoch 20 for config: {'pooling_method': 'attentive', 'use_class': False}
+2024-11-14 02:10:47,948 - INFO - Grid eval for classifiers: Running experiment with dataset: SeaStarReID2023, model: megadescriptor, pooling method: attentive, use_class: False, learning rate: 0.0001, batch size: 8
+2024-11-14 02:10:58,859 - INFO - Training stopped at epoch 11 for config: {'pooling_method': 'attentive', 'use_class': False}
+2024-11-14 02:10:58,859 - INFO - Grid eval for classifiers: Running experiment with dataset: SeaStarReID2023, model: megadescriptor, pooling method: attentive, use_class: False, learning rate: 0.0002, batch size: 8
+2024-11-14 02:11:05,705 - INFO - Training stopped at epoch 5 for config: {'pooling_method': 'attentive', 'use_class': False}
+2024-11-14 02:11:05,705 - INFO - Grid eval for classifiers: Running experiment with dataset: SeaStarReID2023, model: megadescriptor, pooling method: attentive, use_class: False, learning rate: 0.0005, batch size: 8
+2024-11-14 02:11:11,880 - INFO - Training stopped at epoch 4 for config: {'pooling_method': 'attentive', 'use_class': False}
+2024-11-14 02:11:11,880 - INFO - Grid eval for classifiers: Running experiment with dataset: SeaStarReID2023, model: megadescriptor, pooling method: attentive, use_class: False, learning rate: 0.001, batch size: 8
+2024-11-14 02:11:16,700 - INFO - Training stopped at epoch 2 for config: {'pooling_method': 'attentive', 'use_class': False}
+2024-11-14 02:11:16,700 - INFO - Grid eval for classifiers: Running experiment with dataset: SeaStarReID2023, model: megadescriptor, pooling method: attentive, use_class: False, learning rate: 0.002, batch size: 8
+2024-11-14 02:11:20,832 - INFO - Training stopped at epoch 1 for config: {'pooling_method': 'attentive', 'use_class': False}
+2024-11-14 02:11:20,832 - INFO - Grid eval for classifiers: Running experiment with dataset: SeaStarReID2023, model: megadescriptor, pooling method: attentive, use_class: False, learning rate: 0.005, batch size: 8
+2024-11-14 02:11:24,952 - INFO - Training stopped at epoch 1 for config: {'pooling_method': 'attentive', 'use_class': False}
+2024-11-14 02:11:24,952 - INFO - Grid eval for classifiers: Running experiment with dataset: SeaStarReID2023, model: megadescriptor, pooling method: attentive, use_class: False, learning rate: 0.01, batch size: 8
+2024-11-14 02:11:29,072 - INFO - Training stopped at epoch 1 for config: {'pooling_method': 'attentive', 'use_class': False}
+2024-11-14 02:11:29,072 - INFO - Grid eval for classifiers: Running experiment with dataset: SeaStarReID2023, model: megadescriptor, pooling method: attentive, use_class: False, learning rate: 0.02, batch size: 8
+2024-11-14 02:11:33,196 - INFO - Training stopped at epoch 1 for config: {'pooling_method': 'attentive', 'use_class': False}
+2024-11-14 02:11:33,197 - INFO - Grid eval for classifiers: Running experiment with dataset: SeaStarReID2023, model: megadescriptor, pooling method: attentive, use_class: False, learning rate: 0.05, batch size: 8
+2024-11-14 02:11:40,679 - INFO - Training stopped at epoch 6 for config: {'pooling_method': 'attentive', 'use_class': False}
+2024-11-14 02:11:40,679 - INFO - Grid eval for classifiers: Running experiment with dataset: SeaStarReID2023, model: megadescriptor, pooling method: attentive, use_class: False, learning rate: 0.1, batch size: 8
+2024-11-14 02:11:44,802 - INFO - Training stopped at epoch 1 for config: {'pooling_method': 'attentive', 'use_class': False}
+2024-11-14 02:11:44,802 - INFO - Grid eval for classifiers: Running experiment with dataset: SeaStarReID2023, model: megadescriptor, pooling method: attentive, use_class: False, learning rate: 1e-05, batch size: 16
+2024-11-14 02:12:11,411 - INFO - Training stopped at epoch 50 for config: {'pooling_method': 'attentive', 'use_class': False}
+2024-11-14 02:12:11,411 - INFO - Grid eval for classifiers: Running experiment with dataset: SeaStarReID2023, model: megadescriptor, pooling method: attentive, use_class: False, learning rate: 2e-05, batch size: 16
+2024-11-14 02:12:38,030 - INFO - Training stopped at epoch 50 for config: {'pooling_method': 'attentive', 'use_class': False}
+2024-11-14 02:12:38,030 - INFO - Grid eval for classifiers: Running experiment with dataset: SeaStarReID2023, model: megadescriptor, pooling method: attentive, use_class: False, learning rate: 5e-05, batch size: 16
+2024-11-14 02:12:58,811 - INFO - Training stopped at epoch 34 for config: {'pooling_method': 'attentive', 'use_class': False}
+2024-11-14 02:12:58,811 - INFO - Grid eval for classifiers: Running experiment with dataset: SeaStarReID2023, model: megadescriptor, pooling method: attentive, use_class: False, learning rate: 0.0001, batch size: 16
+2024-11-14 02:13:10,037 - INFO - Training stopped at epoch 16 for config: {'pooling_method': 'attentive', 'use_class': False}
+2024-11-14 02:13:10,037 - INFO - Grid eval for classifiers: Running experiment with dataset: SeaStarReID2023, model: megadescriptor, pooling method: attentive, use_class: False, learning rate: 0.0002, batch size: 16
+2024-11-14 02:13:17,015 - INFO - Training stopped at epoch 8 for config: {'pooling_method': 'attentive', 'use_class': False}
+2024-11-14 02:13:17,015 - INFO - Grid eval for classifiers: Running experiment with dataset: SeaStarReID2023, model: megadescriptor, pooling method: attentive, use_class: False, learning rate: 0.0005, batch size: 16
+2024-11-14 02:13:21,339 - INFO - Training stopped at epoch 3 for config: {'pooling_method': 'attentive', 'use_class': False}
+2024-11-14 02:13:21,339 - INFO - Grid eval for classifiers: Running experiment with dataset: SeaStarReID2023, model: megadescriptor, pooling method: attentive, use_class: False, learning rate: 0.001, batch size: 16
+2024-11-14 02:13:24,596 - INFO - Training stopped at epoch 1 for config: {'pooling_method': 'attentive', 'use_class': False}
+2024-11-14 02:13:24,596 - INFO - Grid eval for classifiers: Running experiment with dataset: SeaStarReID2023, model: megadescriptor, pooling method: attentive, use_class: False, learning rate: 0.002, batch size: 16
+2024-11-14 02:13:28,376 - INFO - Training stopped at epoch 2 for config: {'pooling_method': 'attentive', 'use_class': False}
+2024-11-14 02:13:28,376 - INFO - Grid eval for classifiers: Running experiment with dataset: SeaStarReID2023, model: megadescriptor, pooling method: attentive, use_class: False, learning rate: 0.005, batch size: 16
+2024-11-14 02:13:31,600 - INFO - Training stopped at epoch 1 for config: {'pooling_method': 'attentive', 'use_class': False}
+2024-11-14 02:13:31,600 - INFO - Grid eval for classifiers: Running experiment with dataset: SeaStarReID2023, model: megadescriptor, pooling method: attentive, use_class: False, learning rate: 0.01, batch size: 16
+2024-11-14 02:13:34,813 - INFO - Training stopped at epoch 1 for config: {'pooling_method': 'attentive', 'use_class': False}
+2024-11-14 02:13:34,813 - INFO - Grid eval for classifiers: Running experiment with dataset: SeaStarReID2023, model: megadescriptor, pooling method: attentive, use_class: False, learning rate: 0.02, batch size: 16
+2024-11-14 02:13:38,028 - INFO - Training stopped at epoch 1 for config: {'pooling_method': 'attentive', 'use_class': False}
+2024-11-14 02:13:38,028 - INFO - Grid eval for classifiers: Running experiment with dataset: SeaStarReID2023, model: megadescriptor, pooling method: attentive, use_class: False, learning rate: 0.05, batch size: 16
+2024-11-14 02:13:41,239 - INFO - Training stopped at epoch 1 for config: {'pooling_method': 'attentive', 'use_class': False}
+2024-11-14 02:13:41,239 - INFO - Grid eval for classifiers: Running experiment with dataset: SeaStarReID2023, model: megadescriptor, pooling method: attentive, use_class: False, learning rate: 0.1, batch size: 16
+2024-11-14 02:13:44,357 - INFO - Training stopped at epoch 1 for config: {'pooling_method': 'attentive', 'use_class': False}
+2024-11-14 02:13:44,357 - INFO - Grid eval for classifiers: Running experiment with dataset: SeaStarReID2023, model: megadescriptor, pooling method: attentive, use_class: False, learning rate: 1e-05, batch size: 32
+2024-11-14 02:14:07,362 - INFO - Training stopped at epoch 50 for config: {'pooling_method': 'attentive', 'use_class': False}
+2024-11-14 02:14:07,362 - INFO - Grid eval for classifiers: Running experiment with dataset: SeaStarReID2023, model: megadescriptor, pooling method: attentive, use_class: False, learning rate: 2e-05, batch size: 32
+2024-11-14 02:14:30,359 - INFO - Training stopped at epoch 50 for config: {'pooling_method': 'attentive', 'use_class': False}
+2024-11-14 02:14:30,359 - INFO - Grid eval for classifiers: Running experiment with dataset: SeaStarReID2023, model: megadescriptor, pooling method: attentive, use_class: False, learning rate: 5e-05, batch size: 32
+2024-11-14 02:14:51,525 - INFO - Training stopped at epoch 41 for config: {'pooling_method': 'attentive', 'use_class': False}
+2024-11-14 02:14:51,525 - INFO - Grid eval for classifiers: Running experiment with dataset: SeaStarReID2023, model: megadescriptor, pooling method: attentive, use_class: False, learning rate: 0.0001, batch size: 32
+2024-11-14 02:15:04,889 - INFO - Training stopped at epoch 24 for config: {'pooling_method': 'attentive', 'use_class': False}
+2024-11-14 02:15:04,889 - INFO - Grid eval for classifiers: Running experiment with dataset: SeaStarReID2023, model: megadescriptor, pooling method: attentive, use_class: False, learning rate: 0.0002, batch size: 32
+2024-11-14 02:15:11,835 - INFO - Training stopped at epoch 10 for config: {'pooling_method': 'attentive', 'use_class': False}
+2024-11-14 02:15:11,835 - INFO - Grid eval for classifiers: Running experiment with dataset: SeaStarReID2023, model: megadescriptor, pooling method: attentive, use_class: False, learning rate: 0.0005, batch size: 32
+2024-11-14 02:15:17,411 - INFO - Training stopped at epoch 7 for config: {'pooling_method': 'attentive', 'use_class': False}
+2024-11-14 02:15:17,411 - INFO - Grid eval for classifiers: Running experiment with dataset: SeaStarReID2023, model: megadescriptor, pooling method: attentive, use_class: False, learning rate: 0.001, batch size: 32
+2024-11-14 02:15:20,694 - INFO - Training stopped at epoch 2 for config: {'pooling_method': 'attentive', 'use_class': False}
+2024-11-14 02:15:20,694 - INFO - Grid eval for classifiers: Running experiment with dataset: SeaStarReID2023, model: megadescriptor, pooling method: attentive, use_class: False, learning rate: 0.002, batch size: 32
+2024-11-14 02:15:24,437 - INFO - Training stopped at epoch 3 for config: {'pooling_method': 'attentive', 'use_class': False}
+2024-11-14 02:15:24,437 - INFO - Grid eval for classifiers: Running experiment with dataset: SeaStarReID2023, model: megadescriptor, pooling method: attentive, use_class: False, learning rate: 0.005, batch size: 32
+2024-11-14 02:15:27,688 - INFO - Training stopped at epoch 2 for config: {'pooling_method': 'attentive', 'use_class': False}
+2024-11-14 02:15:27,688 - INFO - Grid eval for classifiers: Running experiment with dataset: SeaStarReID2023, model: megadescriptor, pooling method: attentive, use_class: False, learning rate: 0.01, batch size: 32
+2024-11-14 02:15:30,473 - INFO - Training stopped at epoch 1 for config: {'pooling_method': 'attentive', 'use_class': False}
+2024-11-14 02:15:30,473 - INFO - Grid eval for classifiers: Running experiment with dataset: SeaStarReID2023, model: megadescriptor, pooling method: attentive, use_class: False, learning rate: 0.02, batch size: 32
+2024-11-14 02:15:33,251 - INFO - Training stopped at epoch 1 for config: {'pooling_method': 'attentive', 'use_class': False}
+2024-11-14 02:15:33,251 - INFO - Grid eval for classifiers: Running experiment with dataset: SeaStarReID2023, model: megadescriptor, pooling method: attentive, use_class: False, learning rate: 0.05, batch size: 32
+2024-11-14 02:15:36,026 - INFO - Training stopped at epoch 1 for config: {'pooling_method': 'attentive', 'use_class': False}
+2024-11-14 02:15:36,026 - INFO - Grid eval for classifiers: Running experiment with dataset: SeaStarReID2023, model: megadescriptor, pooling method: attentive, use_class: False, learning rate: 0.1, batch size: 32
+2024-11-14 02:15:38,802 - INFO - Training stopped at epoch 1 for config: {'pooling_method': 'attentive', 'use_class': False}
+2024-11-14 02:15:38,802 - INFO - Grid eval for classifiers: Running experiment with dataset: SeaStarReID2023, model: megadescriptor, pooling method: attentive, use_class: False, learning rate: 1e-05, batch size: 64
+2024-11-14 02:16:00,227 - INFO - Training stopped at epoch 50 for config: {'pooling_method': 'attentive', 'use_class': False}
+2024-11-14 02:16:00,227 - INFO - Grid eval for classifiers: Running experiment with dataset: SeaStarReID2023, model: megadescriptor, pooling method: attentive, use_class: False, learning rate: 2e-05, batch size: 64
+2024-11-14 02:16:21,660 - INFO - Training stopped at epoch 50 for config: {'pooling_method': 'attentive', 'use_class': False}
+2024-11-14 02:16:21,660 - INFO - Grid eval for classifiers: Running experiment with dataset: SeaStarReID2023, model: megadescriptor, pooling method: attentive, use_class: False, learning rate: 5e-05, batch size: 64
+2024-11-14 02:16:43,080 - INFO - Training stopped at epoch 50 for config: {'pooling_method': 'attentive', 'use_class': False}
+2024-11-14 02:16:43,080 - INFO - Grid eval for classifiers: Running experiment with dataset: SeaStarReID2023, model: megadescriptor, pooling method: attentive, use_class: False, learning rate: 0.0001, batch size: 64
+2024-11-14 02:16:56,389 - INFO - Training stopped at epoch 26 for config: {'pooling_method': 'attentive', 'use_class': False}
+2024-11-14 02:16:56,389 - INFO - Grid eval for classifiers: Running experiment with dataset: SeaStarReID2023, model: megadescriptor, pooling method: attentive, use_class: False, learning rate: 0.0002, batch size: 64
+2024-11-14 02:17:06,705 - INFO - Training stopped at epoch 19 for config: {'pooling_method': 'attentive', 'use_class': False}
+2024-11-14 02:17:06,705 - INFO - Grid eval for classifiers: Running experiment with dataset: SeaStarReID2023, model: megadescriptor, pooling method: attentive, use_class: False, learning rate: 0.0005, batch size: 64
+2024-11-14 02:17:16,174 - INFO - Training stopped at epoch 17 for config: {'pooling_method': 'attentive', 'use_class': False}
+2024-11-14 02:17:16,175 - INFO - Grid eval for classifiers: Running experiment with dataset: SeaStarReID2023, model: megadescriptor, pooling method: attentive, use_class: False, learning rate: 0.001, batch size: 64
+2024-11-14 02:17:20,088 - INFO - Training stopped at epoch 4 for config: {'pooling_method': 'attentive', 'use_class': False}
+2024-11-14 02:17:20,089 - INFO - Grid eval for classifiers: Running experiment with dataset: SeaStarReID2023, model: megadescriptor, pooling method: attentive, use_class: False, learning rate: 0.002, batch size: 64
+2024-11-14 02:17:23,150 - INFO - Training stopped at epoch 2 for config: {'pooling_method': 'attentive', 'use_class': False}
+2024-11-14 02:17:23,150 - INFO - Grid eval for classifiers: Running experiment with dataset: SeaStarReID2023, model: megadescriptor, pooling method: attentive, use_class: False, learning rate: 0.005, batch size: 64
+2024-11-14 02:17:27,031 - INFO - Training stopped at epoch 4 for config: {'pooling_method': 'attentive', 'use_class': False}
+2024-11-14 02:17:27,031 - INFO - Grid eval for classifiers: Running experiment with dataset: SeaStarReID2023, model: megadescriptor, pooling method: attentive, use_class: False, learning rate: 0.01, batch size: 64
+2024-11-14 02:17:30,897 - INFO - Training stopped at epoch 4 for config: {'pooling_method': 'attentive', 'use_class': False}
+2024-11-14 02:17:30,897 - INFO - Grid eval for classifiers: Running experiment with dataset: SeaStarReID2023, model: megadescriptor, pooling method: attentive, use_class: False, learning rate: 0.02, batch size: 64
+2024-11-14 02:17:33,914 - INFO - Training stopped at epoch 2 for config: {'pooling_method': 'attentive', 'use_class': False}
+2024-11-14 02:17:33,914 - INFO - Grid eval for classifiers: Running experiment with dataset: SeaStarReID2023, model: megadescriptor, pooling method: attentive, use_class: False, learning rate: 0.05, batch size: 64
+2024-11-14 02:17:36,925 - INFO - Training stopped at epoch 2 for config: {'pooling_method': 'attentive', 'use_class': False}
+2024-11-14 02:17:36,925 - INFO - Grid eval for classifiers: Running experiment with dataset: SeaStarReID2023, model: megadescriptor, pooling method: attentive, use_class: False, learning rate: 0.1, batch size: 64
+2024-11-14 02:17:39,933 - INFO - Training stopped at epoch 2 for config: {'pooling_method': 'attentive', 'use_class': False}
+2024-11-14 02:17:39,933 - INFO - Grid eval for classifiers: Running experiment with dataset: SeaStarReID2023, model: megadescriptor, pooling method: attentive, use_class: False, learning rate: 1e-05, batch size: 128
+2024-11-14 02:17:59,874 - INFO - Training stopped at epoch 50 for config: {'pooling_method': 'attentive', 'use_class': False}
+2024-11-14 02:17:59,874 - INFO - Grid eval for classifiers: Running experiment with dataset: SeaStarReID2023, model: megadescriptor, pooling method: attentive, use_class: False, learning rate: 2e-05, batch size: 128
+2024-11-14 02:18:19,800 - INFO - Training stopped at epoch 50 for config: {'pooling_method': 'attentive', 'use_class': False}
+2024-11-14 02:18:19,800 - INFO - Grid eval for classifiers: Running experiment with dataset: SeaStarReID2023, model: megadescriptor, pooling method: attentive, use_class: False, learning rate: 5e-05, batch size: 128
+2024-11-14 02:18:39,715 - INFO - Training stopped at epoch 50 for config: {'pooling_method': 'attentive', 'use_class': False}
+2024-11-14 02:18:39,715 - INFO - Grid eval for classifiers: Running experiment with dataset: SeaStarReID2023, model: megadescriptor, pooling method: attentive, use_class: False, learning rate: 0.0001, batch size: 128
+2024-11-14 02:18:53,666 - INFO - Training stopped at epoch 30 for config: {'pooling_method': 'attentive', 'use_class': False}
+2024-11-14 02:18:53,667 - INFO - Grid eval for classifiers: Running experiment with dataset: SeaStarReID2023, model: megadescriptor, pooling method: attentive, use_class: False, learning rate: 0.0002, batch size: 128
+2024-11-14 02:19:01,275 - INFO - Training stopped at epoch 14 for config: {'pooling_method': 'attentive', 'use_class': False}
+2024-11-14 02:19:01,275 - INFO - Grid eval for classifiers: Running experiment with dataset: SeaStarReID2023, model: megadescriptor, pooling method: attentive, use_class: False, learning rate: 0.0005, batch size: 128
+2024-11-14 02:19:06,103 - INFO - Training stopped at epoch 7 for config: {'pooling_method': 'attentive', 'use_class': False}
+2024-11-14 02:19:06,103 - INFO - Grid eval for classifiers: Running experiment with dataset: SeaStarReID2023, model: megadescriptor, pooling method: attentive, use_class: False, learning rate: 0.001, batch size: 128
+2024-11-14 02:19:10,541 - INFO - Training stopped at epoch 6 for config: {'pooling_method': 'attentive', 'use_class': False}
+2024-11-14 02:19:10,541 - INFO - Grid eval for classifiers: Running experiment with dataset: SeaStarReID2023, model: megadescriptor, pooling method: attentive, use_class: False, learning rate: 0.002, batch size: 128
+2024-11-14 02:19:14,189 - INFO - Training stopped at epoch 4 for config: {'pooling_method': 'attentive', 'use_class': False}
+2024-11-14 02:19:14,189 - INFO - Grid eval for classifiers: Running experiment with dataset: SeaStarReID2023, model: megadescriptor, pooling method: attentive, use_class: False, learning rate: 0.005, batch size: 128
+2024-11-14 02:19:18,996 - INFO - Training stopped at epoch 7 for config: {'pooling_method': 'attentive', 'use_class': False}
+2024-11-14 02:19:18,996 - INFO - Grid eval for classifiers: Running experiment with dataset: SeaStarReID2023, model: megadescriptor, pooling method: attentive, use_class: False, learning rate: 0.01, batch size: 128
+2024-11-14 02:19:24,937 - INFO - Training stopped at epoch 10 for config: {'pooling_method': 'attentive', 'use_class': False}
+2024-11-14 02:19:24,937 - INFO - Grid eval for classifiers: Running experiment with dataset: SeaStarReID2023, model: megadescriptor, pooling method: attentive, use_class: False, learning rate: 0.02, batch size: 128
+2024-11-14 02:19:29,308 - INFO - Training stopped at epoch 6 for config: {'pooling_method': 'attentive', 'use_class': False}
+2024-11-14 02:19:29,309 - INFO - Grid eval for classifiers: Running experiment with dataset: SeaStarReID2023, model: megadescriptor, pooling method: attentive, use_class: False, learning rate: 0.05, batch size: 128
+2024-11-14 02:19:34,450 - INFO - Training stopped at epoch 8 for config: {'pooling_method': 'attentive', 'use_class': False}
+2024-11-14 02:19:34,450 - INFO - Grid eval for classifiers: Running experiment with dataset: SeaStarReID2023, model: megadescriptor, pooling method: attentive, use_class: False, learning rate: 0.1, batch size: 128
+2024-11-14 02:19:38,031 - INFO - Training stopped at epoch 4 for config: {'pooling_method': 'attentive', 'use_class': False}
+2024-11-14 02:19:38,031 - INFO - Best results for dataset SeaStarReID2023 and attentive pooling method: {
+    "dataset": "SeaStarReID2023",
+    "pooling_method": "attentive",
+    "batch_size": 8,
+    "learning_rate": 0.0002,
+    "best_epoch": 5,
+    "best_val_acc": 0.8433048433048433
+}
+2024-11-14 07:49:32,632 - INFO - Using device: cuda:1
+2024-11-14 07:49:32,633 - INFO - /home/avisund/data/wildlife_datasets/AmvrakikosTurtles/
+2024-11-14 07:49:32,643 - INFO - Dataset AmvrakikosTurtles loaded successfully
+2024-11-14 07:49:32,647 - INFO - Dataset split successfully
+2024-11-14 07:49:32,650 - INFO - Dataloaders created successfully
+2024-11-14 07:49:34,636 - INFO - Loading pretrained weights from Hugging Face hub (BVRA/MegaDescriptor-L-384)
+2024-11-14 07:49:36,094 - INFO - Feature extractor loaded successfully
+2024-11-14 07:50:04,548 - INFO - Embeddings computed successfully
+2024-11-14 07:50:04,548 - INFO - Grid eval for classifiers: Running experiment with dataset: AmvrakikosTurtles, model: megadescriptor, pooling method: linear, use_class: False, learning rate: 1e-05, batch size: 8
+2024-11-14 07:50:05,121 - INFO - Training stopped at epoch 50 for config: {'pooling_method': 'linear', 'use_class': False}
+2024-11-14 07:50:05,121 - INFO - Grid eval for classifiers: Running experiment with dataset: AmvrakikosTurtles, model: megadescriptor, pooling method: linear, use_class: False, learning rate: 2e-05, batch size: 8
+2024-11-14 07:50:05,634 - INFO - Training stopped at epoch 50 for config: {'pooling_method': 'linear', 'use_class': False}
+2024-11-14 07:50:05,634 - INFO - Grid eval for classifiers: Running experiment with dataset: AmvrakikosTurtles, model: megadescriptor, pooling method: linear, use_class: False, learning rate: 5e-05, batch size: 8
+2024-11-14 07:50:06,145 - INFO - Training stopped at epoch 50 for config: {'pooling_method': 'linear', 'use_class': False}
+2024-11-14 07:50:06,145 - INFO - Grid eval for classifiers: Running experiment with dataset: AmvrakikosTurtles, model: megadescriptor, pooling method: linear, use_class: False, learning rate: 0.0001, batch size: 8
+2024-11-14 07:50:06,659 - INFO - Training stopped at epoch 50 for config: {'pooling_method': 'linear', 'use_class': False}
+2024-11-14 07:50:06,659 - INFO - Grid eval for classifiers: Running experiment with dataset: AmvrakikosTurtles, model: megadescriptor, pooling method: linear, use_class: False, learning rate: 0.0002, batch size: 8
+2024-11-14 07:50:07,174 - INFO - Training stopped at epoch 50 for config: {'pooling_method': 'linear', 'use_class': False}
+2024-11-14 07:50:07,174 - INFO - Grid eval for classifiers: Running experiment with dataset: AmvrakikosTurtles, model: megadescriptor, pooling method: linear, use_class: False, learning rate: 0.0005, batch size: 8
+2024-11-14 07:50:07,556 - INFO - Training stopped at epoch 32 for config: {'pooling_method': 'linear', 'use_class': False}
+2024-11-14 07:50:07,556 - INFO - Grid eval for classifiers: Running experiment with dataset: AmvrakikosTurtles, model: megadescriptor, pooling method: linear, use_class: False, learning rate: 0.001, batch size: 8
+2024-11-14 07:50:07,846 - INFO - Training stopped at epoch 23 for config: {'pooling_method': 'linear', 'use_class': False}
+2024-11-14 07:50:07,846 - INFO - Grid eval for classifiers: Running experiment with dataset: AmvrakikosTurtles, model: megadescriptor, pooling method: linear, use_class: False, learning rate: 0.002, batch size: 8
+2024-11-14 07:50:08,094 - INFO - Training stopped at epoch 19 for config: {'pooling_method': 'linear', 'use_class': False}
+2024-11-14 07:50:08,094 - INFO - Grid eval for classifiers: Running experiment with dataset: AmvrakikosTurtles, model: megadescriptor, pooling method: linear, use_class: False, learning rate: 0.005, batch size: 8
+2024-11-14 07:50:08,157 - INFO - Training stopped at epoch 1 for config: {'pooling_method': 'linear', 'use_class': False}
+2024-11-14 07:50:08,157 - INFO - Grid eval for classifiers: Running experiment with dataset: AmvrakikosTurtles, model: megadescriptor, pooling method: linear, use_class: False, learning rate: 0.01, batch size: 8
+2024-11-14 07:50:08,220 - INFO - Training stopped at epoch 1 for config: {'pooling_method': 'linear', 'use_class': False}
+2024-11-14 07:50:08,220 - INFO - Grid eval for classifiers: Running experiment with dataset: AmvrakikosTurtles, model: megadescriptor, pooling method: linear, use_class: False, learning rate: 0.02, batch size: 8
+2024-11-14 07:50:08,282 - INFO - Training stopped at epoch 1 for config: {'pooling_method': 'linear', 'use_class': False}
+2024-11-14 07:50:08,282 - INFO - Grid eval for classifiers: Running experiment with dataset: AmvrakikosTurtles, model: megadescriptor, pooling method: linear, use_class: False, learning rate: 0.05, batch size: 8
+2024-11-14 07:50:08,345 - INFO - Training stopped at epoch 1 for config: {'pooling_method': 'linear', 'use_class': False}
+2024-11-14 07:50:08,345 - INFO - Grid eval for classifiers: Running experiment with dataset: AmvrakikosTurtles, model: megadescriptor, pooling method: linear, use_class: False, learning rate: 0.1, batch size: 8
+2024-11-14 07:50:08,408 - INFO - Training stopped at epoch 1 for config: {'pooling_method': 'linear', 'use_class': False}
+2024-11-14 07:50:08,408 - INFO - Grid eval for classifiers: Running experiment with dataset: AmvrakikosTurtles, model: megadescriptor, pooling method: linear, use_class: False, learning rate: 1e-05, batch size: 16
+2024-11-14 07:50:08,675 - INFO - Training stopped at epoch 50 for config: {'pooling_method': 'linear', 'use_class': False}
+2024-11-14 07:50:08,675 - INFO - Grid eval for classifiers: Running experiment with dataset: AmvrakikosTurtles, model: megadescriptor, pooling method: linear, use_class: False, learning rate: 2e-05, batch size: 16
+2024-11-14 07:50:08,943 - INFO - Training stopped at epoch 50 for config: {'pooling_method': 'linear', 'use_class': False}
+2024-11-14 07:50:08,943 - INFO - Grid eval for classifiers: Running experiment with dataset: AmvrakikosTurtles, model: megadescriptor, pooling method: linear, use_class: False, learning rate: 5e-05, batch size: 16
+2024-11-14 07:50:09,210 - INFO - Training stopped at epoch 50 for config: {'pooling_method': 'linear', 'use_class': False}
+2024-11-14 07:50:09,210 - INFO - Grid eval for classifiers: Running experiment with dataset: AmvrakikosTurtles, model: megadescriptor, pooling method: linear, use_class: False, learning rate: 0.0001, batch size: 16
+2024-11-14 07:50:09,481 - INFO - Training stopped at epoch 50 for config: {'pooling_method': 'linear', 'use_class': False}
+2024-11-14 07:50:09,481 - INFO - Grid eval for classifiers: Running experiment with dataset: AmvrakikosTurtles, model: megadescriptor, pooling method: linear, use_class: False, learning rate: 0.0002, batch size: 16
+2024-11-14 07:50:09,748 - INFO - Training stopped at epoch 50 for config: {'pooling_method': 'linear', 'use_class': False}
+2024-11-14 07:50:09,748 - INFO - Grid eval for classifiers: Running experiment with dataset: AmvrakikosTurtles, model: megadescriptor, pooling method: linear, use_class: False, learning rate: 0.0005, batch size: 16
+2024-11-14 07:50:09,920 - INFO - Training stopped at epoch 27 for config: {'pooling_method': 'linear', 'use_class': False}
+2024-11-14 07:50:09,920 - INFO - Grid eval for classifiers: Running experiment with dataset: AmvrakikosTurtles, model: megadescriptor, pooling method: linear, use_class: False, learning rate: 0.001, batch size: 16
+2024-11-14 07:50:09,995 - INFO - Training stopped at epoch 9 for config: {'pooling_method': 'linear', 'use_class': False}
+2024-11-14 07:50:09,996 - INFO - Grid eval for classifiers: Running experiment with dataset: AmvrakikosTurtles, model: megadescriptor, pooling method: linear, use_class: False, learning rate: 0.002, batch size: 16
+2024-11-14 07:50:10,055 - INFO - Training stopped at epoch 6 for config: {'pooling_method': 'linear', 'use_class': False}
+2024-11-14 07:50:10,055 - INFO - Grid eval for classifiers: Running experiment with dataset: AmvrakikosTurtles, model: megadescriptor, pooling method: linear, use_class: False, learning rate: 0.005, batch size: 16
+2024-11-14 07:50:10,088 - INFO - Training stopped at epoch 1 for config: {'pooling_method': 'linear', 'use_class': False}
+2024-11-14 07:50:10,088 - INFO - Grid eval for classifiers: Running experiment with dataset: AmvrakikosTurtles, model: megadescriptor, pooling method: linear, use_class: False, learning rate: 0.01, batch size: 16
+2024-11-14 07:50:10,121 - INFO - Training stopped at epoch 1 for config: {'pooling_method': 'linear', 'use_class': False}
+2024-11-14 07:50:10,121 - INFO - Grid eval for classifiers: Running experiment with dataset: AmvrakikosTurtles, model: megadescriptor, pooling method: linear, use_class: False, learning rate: 0.02, batch size: 16
+2024-11-14 07:50:10,154 - INFO - Training stopped at epoch 1 for config: {'pooling_method': 'linear', 'use_class': False}
+2024-11-14 07:50:10,154 - INFO - Grid eval for classifiers: Running experiment with dataset: AmvrakikosTurtles, model: megadescriptor, pooling method: linear, use_class: False, learning rate: 0.05, batch size: 16
+2024-11-14 07:50:10,186 - INFO - Training stopped at epoch 1 for config: {'pooling_method': 'linear', 'use_class': False}
+2024-11-14 07:50:10,187 - INFO - Grid eval for classifiers: Running experiment with dataset: AmvrakikosTurtles, model: megadescriptor, pooling method: linear, use_class: False, learning rate: 0.1, batch size: 16
+2024-11-14 07:50:10,219 - INFO - Training stopped at epoch 1 for config: {'pooling_method': 'linear', 'use_class': False}
+2024-11-14 07:50:10,219 - INFO - Grid eval for classifiers: Running experiment with dataset: AmvrakikosTurtles, model: megadescriptor, pooling method: linear, use_class: False, learning rate: 1e-05, batch size: 32
+2024-11-14 07:50:10,382 - INFO - Training stopped at epoch 50 for config: {'pooling_method': 'linear', 'use_class': False}
+2024-11-14 07:50:10,382 - INFO - Grid eval for classifiers: Running experiment with dataset: AmvrakikosTurtles, model: megadescriptor, pooling method: linear, use_class: False, learning rate: 2e-05, batch size: 32
+2024-11-14 07:50:10,545 - INFO - Training stopped at epoch 50 for config: {'pooling_method': 'linear', 'use_class': False}
+2024-11-14 07:50:10,545 - INFO - Grid eval for classifiers: Running experiment with dataset: AmvrakikosTurtles, model: megadescriptor, pooling method: linear, use_class: False, learning rate: 5e-05, batch size: 32
+2024-11-14 07:50:10,708 - INFO - Training stopped at epoch 50 for config: {'pooling_method': 'linear', 'use_class': False}
+2024-11-14 07:50:10,708 - INFO - Grid eval for classifiers: Running experiment with dataset: AmvrakikosTurtles, model: megadescriptor, pooling method: linear, use_class: False, learning rate: 0.0001, batch size: 32
+2024-11-14 07:50:10,869 - INFO - Training stopped at epoch 50 for config: {'pooling_method': 'linear', 'use_class': False}
+2024-11-14 07:50:10,869 - INFO - Grid eval for classifiers: Running experiment with dataset: AmvrakikosTurtles, model: megadescriptor, pooling method: linear, use_class: False, learning rate: 0.0002, batch size: 32
+2024-11-14 07:50:11,031 - INFO - Training stopped at epoch 50 for config: {'pooling_method': 'linear', 'use_class': False}
+2024-11-14 07:50:11,031 - INFO - Grid eval for classifiers: Running experiment with dataset: AmvrakikosTurtles, model: megadescriptor, pooling method: linear, use_class: False, learning rate: 0.0005, batch size: 32
+2024-11-14 07:50:11,141 - INFO - Training stopped at epoch 29 for config: {'pooling_method': 'linear', 'use_class': False}
+2024-11-14 07:50:11,141 - INFO - Grid eval for classifiers: Running experiment with dataset: AmvrakikosTurtles, model: megadescriptor, pooling method: linear, use_class: False, learning rate: 0.001, batch size: 32
+2024-11-14 07:50:11,199 - INFO - Training stopped at epoch 13 for config: {'pooling_method': 'linear', 'use_class': False}
+2024-11-14 07:50:11,199 - INFO - Grid eval for classifiers: Running experiment with dataset: AmvrakikosTurtles, model: megadescriptor, pooling method: linear, use_class: False, learning rate: 0.002, batch size: 32
+2024-11-14 07:50:11,239 - INFO - Training stopped at epoch 7 for config: {'pooling_method': 'linear', 'use_class': False}
+2024-11-14 07:50:11,239 - INFO - Grid eval for classifiers: Running experiment with dataset: AmvrakikosTurtles, model: megadescriptor, pooling method: linear, use_class: False, learning rate: 0.005, batch size: 32
+2024-11-14 07:50:11,262 - INFO - Training stopped at epoch 2 for config: {'pooling_method': 'linear', 'use_class': False}
+2024-11-14 07:50:11,262 - INFO - Grid eval for classifiers: Running experiment with dataset: AmvrakikosTurtles, model: megadescriptor, pooling method: linear, use_class: False, learning rate: 0.01, batch size: 32
+2024-11-14 07:50:11,283 - INFO - Training stopped at epoch 1 for config: {'pooling_method': 'linear', 'use_class': False}
+2024-11-14 07:50:11,283 - INFO - Grid eval for classifiers: Running experiment with dataset: AmvrakikosTurtles, model: megadescriptor, pooling method: linear, use_class: False, learning rate: 0.02, batch size: 32
+2024-11-14 07:50:11,303 - INFO - Training stopped at epoch 1 for config: {'pooling_method': 'linear', 'use_class': False}
+2024-11-14 07:50:11,303 - INFO - Grid eval for classifiers: Running experiment with dataset: AmvrakikosTurtles, model: megadescriptor, pooling method: linear, use_class: False, learning rate: 0.05, batch size: 32
+2024-11-14 07:50:11,323 - INFO - Training stopped at epoch 1 for config: {'pooling_method': 'linear', 'use_class': False}
+2024-11-14 07:50:11,323 - INFO - Grid eval for classifiers: Running experiment with dataset: AmvrakikosTurtles, model: megadescriptor, pooling method: linear, use_class: False, learning rate: 0.1, batch size: 32
+2024-11-14 07:50:11,343 - INFO - Training stopped at epoch 1 for config: {'pooling_method': 'linear', 'use_class': False}
+2024-11-14 07:50:11,343 - INFO - Grid eval for classifiers: Running experiment with dataset: AmvrakikosTurtles, model: megadescriptor, pooling method: linear, use_class: False, learning rate: 1e-05, batch size: 64
+2024-11-14 07:50:11,449 - INFO - Training stopped at epoch 50 for config: {'pooling_method': 'linear', 'use_class': False}
+2024-11-14 07:50:11,449 - INFO - Grid eval for classifiers: Running experiment with dataset: AmvrakikosTurtles, model: megadescriptor, pooling method: linear, use_class: False, learning rate: 2e-05, batch size: 64
+2024-11-14 07:50:11,550 - INFO - Training stopped at epoch 50 for config: {'pooling_method': 'linear', 'use_class': False}
+2024-11-14 07:50:11,550 - INFO - Grid eval for classifiers: Running experiment with dataset: AmvrakikosTurtles, model: megadescriptor, pooling method: linear, use_class: False, learning rate: 5e-05, batch size: 64
+2024-11-14 07:50:11,650 - INFO - Training stopped at epoch 50 for config: {'pooling_method': 'linear', 'use_class': False}
+2024-11-14 07:50:11,650 - INFO - Grid eval for classifiers: Running experiment with dataset: AmvrakikosTurtles, model: megadescriptor, pooling method: linear, use_class: False, learning rate: 0.0001, batch size: 64
+2024-11-14 07:50:11,750 - INFO - Training stopped at epoch 50 for config: {'pooling_method': 'linear', 'use_class': False}
+2024-11-14 07:50:11,750 - INFO - Grid eval for classifiers: Running experiment with dataset: AmvrakikosTurtles, model: megadescriptor, pooling method: linear, use_class: False, learning rate: 0.0002, batch size: 64
+2024-11-14 07:50:11,850 - INFO - Training stopped at epoch 50 for config: {'pooling_method': 'linear', 'use_class': False}
+2024-11-14 07:50:11,850 - INFO - Grid eval for classifiers: Running experiment with dataset: AmvrakikosTurtles, model: megadescriptor, pooling method: linear, use_class: False, learning rate: 0.0005, batch size: 64
+2024-11-14 07:50:11,930 - INFO - Training stopped at epoch 35 for config: {'pooling_method': 'linear', 'use_class': False}
+2024-11-14 07:50:11,930 - INFO - Grid eval for classifiers: Running experiment with dataset: AmvrakikosTurtles, model: megadescriptor, pooling method: linear, use_class: False, learning rate: 0.001, batch size: 64
+2024-11-14 07:50:11,978 - INFO - Training stopped at epoch 19 for config: {'pooling_method': 'linear', 'use_class': False}
+2024-11-14 07:50:11,978 - INFO - Grid eval for classifiers: Running experiment with dataset: AmvrakikosTurtles, model: megadescriptor, pooling method: linear, use_class: False, learning rate: 0.002, batch size: 64
+2024-11-14 07:50:12,006 - INFO - Training stopped at epoch 9 for config: {'pooling_method': 'linear', 'use_class': False}
+2024-11-14 07:50:12,006 - INFO - Grid eval for classifiers: Running experiment with dataset: AmvrakikosTurtles, model: megadescriptor, pooling method: linear, use_class: False, learning rate: 0.005, batch size: 64
+2024-11-14 07:50:12,023 - INFO - Training stopped at epoch 3 for config: {'pooling_method': 'linear', 'use_class': False}
+2024-11-14 07:50:12,023 - INFO - Grid eval for classifiers: Running experiment with dataset: AmvrakikosTurtles, model: megadescriptor, pooling method: linear, use_class: False, learning rate: 0.01, batch size: 64
+2024-11-14 07:50:12,036 - INFO - Training stopped at epoch 1 for config: {'pooling_method': 'linear', 'use_class': False}
+2024-11-14 07:50:12,036 - INFO - Grid eval for classifiers: Running experiment with dataset: AmvrakikosTurtles, model: megadescriptor, pooling method: linear, use_class: False, learning rate: 0.02, batch size: 64
+2024-11-14 07:50:12,049 - INFO - Training stopped at epoch 1 for config: {'pooling_method': 'linear', 'use_class': False}
+2024-11-14 07:50:12,049 - INFO - Grid eval for classifiers: Running experiment with dataset: AmvrakikosTurtles, model: megadescriptor, pooling method: linear, use_class: False, learning rate: 0.05, batch size: 64
+2024-11-14 07:50:12,062 - INFO - Training stopped at epoch 1 for config: {'pooling_method': 'linear', 'use_class': False}
+2024-11-14 07:50:12,062 - INFO - Grid eval for classifiers: Running experiment with dataset: AmvrakikosTurtles, model: megadescriptor, pooling method: linear, use_class: False, learning rate: 0.1, batch size: 64
+2024-11-14 07:50:12,074 - INFO - Training stopped at epoch 1 for config: {'pooling_method': 'linear', 'use_class': False}
+2024-11-14 07:50:12,074 - INFO - Grid eval for classifiers: Running experiment with dataset: AmvrakikosTurtles, model: megadescriptor, pooling method: linear, use_class: False, learning rate: 1e-05, batch size: 128
+2024-11-14 07:50:12,144 - INFO - Training stopped at epoch 50 for config: {'pooling_method': 'linear', 'use_class': False}
+2024-11-14 07:50:12,144 - INFO - Grid eval for classifiers: Running experiment with dataset: AmvrakikosTurtles, model: megadescriptor, pooling method: linear, use_class: False, learning rate: 2e-05, batch size: 128
+2024-11-14 07:50:12,214 - INFO - Training stopped at epoch 50 for config: {'pooling_method': 'linear', 'use_class': False}
+2024-11-14 07:50:12,214 - INFO - Grid eval for classifiers: Running experiment with dataset: AmvrakikosTurtles, model: megadescriptor, pooling method: linear, use_class: False, learning rate: 5e-05, batch size: 128
+2024-11-14 07:50:12,283 - INFO - Training stopped at epoch 50 for config: {'pooling_method': 'linear', 'use_class': False}
+2024-11-14 07:50:12,283 - INFO - Grid eval for classifiers: Running experiment with dataset: AmvrakikosTurtles, model: megadescriptor, pooling method: linear, use_class: False, learning rate: 0.0001, batch size: 128
+2024-11-14 07:50:12,352 - INFO - Training stopped at epoch 50 for config: {'pooling_method': 'linear', 'use_class': False}
+2024-11-14 07:50:12,352 - INFO - Grid eval for classifiers: Running experiment with dataset: AmvrakikosTurtles, model: megadescriptor, pooling method: linear, use_class: False, learning rate: 0.0002, batch size: 128
+2024-11-14 07:50:12,422 - INFO - Training stopped at epoch 50 for config: {'pooling_method': 'linear', 'use_class': False}
+2024-11-14 07:50:12,422 - INFO - Grid eval for classifiers: Running experiment with dataset: AmvrakikosTurtles, model: megadescriptor, pooling method: linear, use_class: False, learning rate: 0.0005, batch size: 128
+2024-11-14 07:50:12,484 - INFO - Training stopped at epoch 40 for config: {'pooling_method': 'linear', 'use_class': False}
+2024-11-14 07:50:12,485 - INFO - Grid eval for classifiers: Running experiment with dataset: AmvrakikosTurtles, model: megadescriptor, pooling method: linear, use_class: False, learning rate: 0.001, batch size: 128
+2024-11-14 07:50:12,520 - INFO - Training stopped at epoch 20 for config: {'pooling_method': 'linear', 'use_class': False}
+2024-11-14 07:50:12,520 - INFO - Grid eval for classifiers: Running experiment with dataset: AmvrakikosTurtles, model: megadescriptor, pooling method: linear, use_class: False, learning rate: 0.002, batch size: 128
+2024-11-14 07:50:12,543 - INFO - Training stopped at epoch 11 for config: {'pooling_method': 'linear', 'use_class': False}
+2024-11-14 07:50:12,543 - INFO - Grid eval for classifiers: Running experiment with dataset: AmvrakikosTurtles, model: megadescriptor, pooling method: linear, use_class: False, learning rate: 0.005, batch size: 128
+2024-11-14 07:50:12,556 - INFO - Training stopped at epoch 4 for config: {'pooling_method': 'linear', 'use_class': False}
+2024-11-14 07:50:12,556 - INFO - Grid eval for classifiers: Running experiment with dataset: AmvrakikosTurtles, model: megadescriptor, pooling method: linear, use_class: False, learning rate: 0.01, batch size: 128
+2024-11-14 07:50:12,567 - INFO - Training stopped at epoch 2 for config: {'pooling_method': 'linear', 'use_class': False}
+2024-11-14 07:50:12,567 - INFO - Grid eval for classifiers: Running experiment with dataset: AmvrakikosTurtles, model: megadescriptor, pooling method: linear, use_class: False, learning rate: 0.02, batch size: 128
+2024-11-14 07:50:12,576 - INFO - Training stopped at epoch 1 for config: {'pooling_method': 'linear', 'use_class': False}
+2024-11-14 07:50:12,576 - INFO - Grid eval for classifiers: Running experiment with dataset: AmvrakikosTurtles, model: megadescriptor, pooling method: linear, use_class: False, learning rate: 0.05, batch size: 128
+2024-11-14 07:50:12,585 - INFO - Training stopped at epoch 1 for config: {'pooling_method': 'linear', 'use_class': False}
+2024-11-14 07:50:12,585 - INFO - Grid eval for classifiers: Running experiment with dataset: AmvrakikosTurtles, model: megadescriptor, pooling method: linear, use_class: False, learning rate: 0.1, batch size: 128
+2024-11-14 07:50:12,594 - INFO - Training stopped at epoch 1 for config: {'pooling_method': 'linear', 'use_class': False}
+2024-11-14 07:50:12,594 - INFO - Best results for dataset AmvrakikosTurtles and linear pooling method: {
+    "dataset": "AmvrakikosTurtles",
+    "pooling_method": "linear",
+    "batch_size": 64,
+    "learning_rate": 0.05,
+    "best_epoch": 1,
+    "best_val_acc": 0.4074074074074074
+}
+2024-11-14 07:50:12,594 - INFO - Grid eval for classifiers: Running experiment with dataset: AmvrakikosTurtles, model: megadescriptor, pooling method: attentive, use_class: False, learning rate: 1e-05, batch size: 8
+2024-11-14 07:50:15,220 - INFO - Training stopped at epoch 50 for config: {'pooling_method': 'attentive', 'use_class': False}
+2024-11-14 07:50:15,220 - INFO - Grid eval for classifiers: Running experiment with dataset: AmvrakikosTurtles, model: megadescriptor, pooling method: attentive, use_class: False, learning rate: 2e-05, batch size: 8
+2024-11-14 07:50:17,845 - INFO - Training stopped at epoch 47 for config: {'pooling_method': 'attentive', 'use_class': False}
+2024-11-14 07:50:17,845 - INFO - Grid eval for classifiers: Running experiment with dataset: AmvrakikosTurtles, model: megadescriptor, pooling method: attentive, use_class: False, learning rate: 5e-05, batch size: 8
+2024-11-14 07:50:19,447 - INFO - Training stopped at epoch 25 for config: {'pooling_method': 'attentive', 'use_class': False}
+2024-11-14 07:50:19,447 - INFO - Grid eval for classifiers: Running experiment with dataset: AmvrakikosTurtles, model: megadescriptor, pooling method: attentive, use_class: False, learning rate: 0.0001, batch size: 8
+2024-11-14 07:50:20,083 - INFO - Training stopped at epoch 6 for config: {'pooling_method': 'attentive', 'use_class': False}
+2024-11-14 07:50:20,083 - INFO - Grid eval for classifiers: Running experiment with dataset: AmvrakikosTurtles, model: megadescriptor, pooling method: attentive, use_class: False, learning rate: 0.0002, batch size: 8
+2024-11-14 07:50:20,566 - INFO - Training stopped at epoch 3 for config: {'pooling_method': 'attentive', 'use_class': False}
+2024-11-14 07:50:20,566 - INFO - Grid eval for classifiers: Running experiment with dataset: AmvrakikosTurtles, model: megadescriptor, pooling method: attentive, use_class: False, learning rate: 0.0005, batch size: 8
+2024-11-14 07:50:20,948 - INFO - Training stopped at epoch 1 for config: {'pooling_method': 'attentive', 'use_class': False}
+2024-11-14 07:50:20,948 - INFO - Grid eval for classifiers: Running experiment with dataset: AmvrakikosTurtles, model: megadescriptor, pooling method: attentive, use_class: False, learning rate: 0.001, batch size: 8
+2024-11-14 07:50:21,331 - INFO - Training stopped at epoch 1 for config: {'pooling_method': 'attentive', 'use_class': False}
+2024-11-14 07:50:21,331 - INFO - Grid eval for classifiers: Running experiment with dataset: AmvrakikosTurtles, model: megadescriptor, pooling method: attentive, use_class: False, learning rate: 0.002, batch size: 8
+2024-11-14 07:50:21,713 - INFO - Training stopped at epoch 1 for config: {'pooling_method': 'attentive', 'use_class': False}
+2024-11-14 07:50:21,713 - INFO - Grid eval for classifiers: Running experiment with dataset: AmvrakikosTurtles, model: megadescriptor, pooling method: attentive, use_class: False, learning rate: 0.005, batch size: 8
+2024-11-14 07:50:22,095 - INFO - Training stopped at epoch 1 for config: {'pooling_method': 'attentive', 'use_class': False}
+2024-11-14 07:50:22,095 - INFO - Grid eval for classifiers: Running experiment with dataset: AmvrakikosTurtles, model: megadescriptor, pooling method: attentive, use_class: False, learning rate: 0.01, batch size: 8
+2024-11-14 07:50:22,477 - INFO - Training stopped at epoch 1 for config: {'pooling_method': 'attentive', 'use_class': False}
+2024-11-14 07:50:22,477 - INFO - Grid eval for classifiers: Running experiment with dataset: AmvrakikosTurtles, model: megadescriptor, pooling method: attentive, use_class: False, learning rate: 0.02, batch size: 8
+2024-11-14 07:50:22,857 - INFO - Training stopped at epoch 1 for config: {'pooling_method': 'attentive', 'use_class': False}
+2024-11-14 07:50:22,857 - INFO - Grid eval for classifiers: Running experiment with dataset: AmvrakikosTurtles, model: megadescriptor, pooling method: attentive, use_class: False, learning rate: 0.05, batch size: 8
+2024-11-14 07:50:23,238 - INFO - Training stopped at epoch 1 for config: {'pooling_method': 'attentive', 'use_class': False}
+2024-11-14 07:50:23,238 - INFO - Grid eval for classifiers: Running experiment with dataset: AmvrakikosTurtles, model: megadescriptor, pooling method: attentive, use_class: False, learning rate: 0.1, batch size: 8
+2024-11-14 07:50:23,619 - INFO - Training stopped at epoch 1 for config: {'pooling_method': 'attentive', 'use_class': False}
+2024-11-14 07:50:23,619 - INFO - Grid eval for classifiers: Running experiment with dataset: AmvrakikosTurtles, model: megadescriptor, pooling method: attentive, use_class: False, learning rate: 1e-05, batch size: 16
+2024-11-14 07:50:25,650 - INFO - Training stopped at epoch 50 for config: {'pooling_method': 'attentive', 'use_class': False}
+2024-11-14 07:50:25,650 - INFO - Grid eval for classifiers: Running experiment with dataset: AmvrakikosTurtles, model: megadescriptor, pooling method: attentive, use_class: False, learning rate: 2e-05, batch size: 16
+2024-11-14 07:50:27,685 - INFO - Training stopped at epoch 50 for config: {'pooling_method': 'attentive', 'use_class': False}
+2024-11-14 07:50:27,685 - INFO - Grid eval for classifiers: Running experiment with dataset: AmvrakikosTurtles, model: megadescriptor, pooling method: attentive, use_class: False, learning rate: 5e-05, batch size: 16
+2024-11-14 07:50:28,582 - INFO - Training stopped at epoch 16 for config: {'pooling_method': 'attentive', 'use_class': False}
+2024-11-14 07:50:28,582 - INFO - Grid eval for classifiers: Running experiment with dataset: AmvrakikosTurtles, model: megadescriptor, pooling method: attentive, use_class: False, learning rate: 0.0001, batch size: 16
+2024-11-14 07:50:29,166 - INFO - Training stopped at epoch 8 for config: {'pooling_method': 'attentive', 'use_class': False}
+2024-11-14 07:50:29,166 - INFO - Grid eval for classifiers: Running experiment with dataset: AmvrakikosTurtles, model: megadescriptor, pooling method: attentive, use_class: False, learning rate: 0.0002, batch size: 16
+2024-11-14 07:50:29,591 - INFO - Training stopped at epoch 4 for config: {'pooling_method': 'attentive', 'use_class': False}
+2024-11-14 07:50:29,591 - INFO - Grid eval for classifiers: Running experiment with dataset: AmvrakikosTurtles, model: megadescriptor, pooling method: attentive, use_class: False, learning rate: 0.0005, batch size: 16
+2024-11-14 07:50:29,939 - INFO - Training stopped at epoch 2 for config: {'pooling_method': 'attentive', 'use_class': False}
+2024-11-14 07:50:29,939 - INFO - Grid eval for classifiers: Running experiment with dataset: AmvrakikosTurtles, model: megadescriptor, pooling method: attentive, use_class: False, learning rate: 0.001, batch size: 16
+2024-11-14 07:50:30,246 - INFO - Training stopped at epoch 1 for config: {'pooling_method': 'attentive', 'use_class': False}
+2024-11-14 07:50:30,246 - INFO - Grid eval for classifiers: Running experiment with dataset: AmvrakikosTurtles, model: megadescriptor, pooling method: attentive, use_class: False, learning rate: 0.002, batch size: 16
+2024-11-14 07:50:30,552 - INFO - Training stopped at epoch 1 for config: {'pooling_method': 'attentive', 'use_class': False}
+2024-11-14 07:50:30,552 - INFO - Grid eval for classifiers: Running experiment with dataset: AmvrakikosTurtles, model: megadescriptor, pooling method: attentive, use_class: False, learning rate: 0.005, batch size: 16
+2024-11-14 07:50:31,013 - INFO - Training stopped at epoch 5 for config: {'pooling_method': 'attentive', 'use_class': False}
+2024-11-14 07:50:31,014 - INFO - Grid eval for classifiers: Running experiment with dataset: AmvrakikosTurtles, model: megadescriptor, pooling method: attentive, use_class: False, learning rate: 0.01, batch size: 16
+2024-11-14 07:50:31,319 - INFO - Training stopped at epoch 1 for config: {'pooling_method': 'attentive', 'use_class': False}
+2024-11-14 07:50:31,319 - INFO - Grid eval for classifiers: Running experiment with dataset: AmvrakikosTurtles, model: megadescriptor, pooling method: attentive, use_class: False, learning rate: 0.02, batch size: 16
+2024-11-14 07:50:31,624 - INFO - Training stopped at epoch 1 for config: {'pooling_method': 'attentive', 'use_class': False}
+2024-11-14 07:50:31,624 - INFO - Grid eval for classifiers: Running experiment with dataset: AmvrakikosTurtles, model: megadescriptor, pooling method: attentive, use_class: False, learning rate: 0.05, batch size: 16
+2024-11-14 07:50:31,934 - INFO - Training stopped at epoch 1 for config: {'pooling_method': 'attentive', 'use_class': False}
+2024-11-14 07:50:31,934 - INFO - Grid eval for classifiers: Running experiment with dataset: AmvrakikosTurtles, model: megadescriptor, pooling method: attentive, use_class: False, learning rate: 0.1, batch size: 16
+2024-11-14 07:50:32,253 - INFO - Training stopped at epoch 1 for config: {'pooling_method': 'attentive', 'use_class': False}
+2024-11-14 07:50:32,253 - INFO - Grid eval for classifiers: Running experiment with dataset: AmvrakikosTurtles, model: megadescriptor, pooling method: attentive, use_class: False, learning rate: 1e-05, batch size: 32
+2024-11-14 07:50:34,048 - INFO - Training stopped at epoch 50 for config: {'pooling_method': 'attentive', 'use_class': False}
+2024-11-14 07:50:34,049 - INFO - Grid eval for classifiers: Running experiment with dataset: AmvrakikosTurtles, model: megadescriptor, pooling method: attentive, use_class: False, learning rate: 2e-05, batch size: 32
+2024-11-14 07:50:35,847 - INFO - Training stopped at epoch 50 for config: {'pooling_method': 'attentive', 'use_class': False}
+2024-11-14 07:50:35,847 - INFO - Grid eval for classifiers: Running experiment with dataset: AmvrakikosTurtles, model: megadescriptor, pooling method: attentive, use_class: False, learning rate: 5e-05, batch size: 32
+2024-11-14 07:50:36,960 - INFO - Training stopped at epoch 25 for config: {'pooling_method': 'attentive', 'use_class': False}
+2024-11-14 07:50:36,960 - INFO - Grid eval for classifiers: Running experiment with dataset: AmvrakikosTurtles, model: megadescriptor, pooling method: attentive, use_class: False, learning rate: 0.0001, batch size: 32
+2024-11-14 07:50:37,655 - INFO - Training stopped at epoch 13 for config: {'pooling_method': 'attentive', 'use_class': False}
+2024-11-14 07:50:37,655 - INFO - Grid eval for classifiers: Running experiment with dataset: AmvrakikosTurtles, model: megadescriptor, pooling method: attentive, use_class: False, learning rate: 0.0002, batch size: 32
+2024-11-14 07:50:38,110 - INFO - Training stopped at epoch 6 for config: {'pooling_method': 'attentive', 'use_class': False}
+2024-11-14 07:50:38,110 - INFO - Grid eval for classifiers: Running experiment with dataset: AmvrakikosTurtles, model: megadescriptor, pooling method: attentive, use_class: False, learning rate: 0.0005, batch size: 32
+2024-11-14 07:50:38,459 - INFO - Training stopped at epoch 3 for config: {'pooling_method': 'attentive', 'use_class': False}
+2024-11-14 07:50:38,459 - INFO - Grid eval for classifiers: Running experiment with dataset: AmvrakikosTurtles, model: megadescriptor, pooling method: attentive, use_class: False, learning rate: 0.001, batch size: 32
+2024-11-14 07:50:38,741 - INFO - Training stopped at epoch 1 for config: {'pooling_method': 'attentive', 'use_class': False}
+2024-11-14 07:50:38,741 - INFO - Grid eval for classifiers: Running experiment with dataset: AmvrakikosTurtles, model: megadescriptor, pooling method: attentive, use_class: False, learning rate: 0.002, batch size: 32
+2024-11-14 07:50:39,023 - INFO - Training stopped at epoch 1 for config: {'pooling_method': 'attentive', 'use_class': False}
+2024-11-14 07:50:39,023 - INFO - Grid eval for classifiers: Running experiment with dataset: AmvrakikosTurtles, model: megadescriptor, pooling method: attentive, use_class: False, learning rate: 0.005, batch size: 32
+2024-11-14 07:50:39,338 - INFO - Training stopped at epoch 2 for config: {'pooling_method': 'attentive', 'use_class': False}
+2024-11-14 07:50:39,339 - INFO - Grid eval for classifiers: Running experiment with dataset: AmvrakikosTurtles, model: megadescriptor, pooling method: attentive, use_class: False, learning rate: 0.01, batch size: 32
+2024-11-14 07:50:39,619 - INFO - Training stopped at epoch 1 for config: {'pooling_method': 'attentive', 'use_class': False}
+2024-11-14 07:50:39,619 - INFO - Grid eval for classifiers: Running experiment with dataset: AmvrakikosTurtles, model: megadescriptor, pooling method: attentive, use_class: False, learning rate: 0.02, batch size: 32
+2024-11-14 07:50:39,900 - INFO - Training stopped at epoch 1 for config: {'pooling_method': 'attentive', 'use_class': False}
+2024-11-14 07:50:39,900 - INFO - Grid eval for classifiers: Running experiment with dataset: AmvrakikosTurtles, model: megadescriptor, pooling method: attentive, use_class: False, learning rate: 0.05, batch size: 32
+2024-11-14 07:50:40,180 - INFO - Training stopped at epoch 1 for config: {'pooling_method': 'attentive', 'use_class': False}
+2024-11-14 07:50:40,180 - INFO - Grid eval for classifiers: Running experiment with dataset: AmvrakikosTurtles, model: megadescriptor, pooling method: attentive, use_class: False, learning rate: 0.1, batch size: 32
+2024-11-14 07:50:40,460 - INFO - Training stopped at epoch 1 for config: {'pooling_method': 'attentive', 'use_class': False}
+2024-11-14 07:50:40,460 - INFO - Grid eval for classifiers: Running experiment with dataset: AmvrakikosTurtles, model: megadescriptor, pooling method: attentive, use_class: False, learning rate: 1e-05, batch size: 64
+2024-11-14 07:50:42,132 - INFO - Training stopped at epoch 50 for config: {'pooling_method': 'attentive', 'use_class': False}
+2024-11-14 07:50:42,132 - INFO - Grid eval for classifiers: Running experiment with dataset: AmvrakikosTurtles, model: megadescriptor, pooling method: attentive, use_class: False, learning rate: 2e-05, batch size: 64
+2024-11-14 07:50:43,807 - INFO - Training stopped at epoch 50 for config: {'pooling_method': 'attentive', 'use_class': False}
+2024-11-14 07:50:43,807 - INFO - Grid eval for classifiers: Running experiment with dataset: AmvrakikosTurtles, model: megadescriptor, pooling method: attentive, use_class: False, learning rate: 5e-05, batch size: 64
+2024-11-14 07:50:45,198 - INFO - Training stopped at epoch 36 for config: {'pooling_method': 'attentive', 'use_class': False}
+2024-11-14 07:50:45,198 - INFO - Grid eval for classifiers: Running experiment with dataset: AmvrakikosTurtles, model: megadescriptor, pooling method: attentive, use_class: False, learning rate: 0.0001, batch size: 64
+2024-11-14 07:50:46,072 - INFO - Training stopped at epoch 20 for config: {'pooling_method': 'attentive', 'use_class': False}
+2024-11-14 07:50:46,072 - INFO - Grid eval for classifiers: Running experiment with dataset: AmvrakikosTurtles, model: megadescriptor, pooling method: attentive, use_class: False, learning rate: 0.0002, batch size: 64
+2024-11-14 07:50:46,595 - INFO - Training stopped at epoch 9 for config: {'pooling_method': 'attentive', 'use_class': False}
+2024-11-14 07:50:46,595 - INFO - Grid eval for classifiers: Running experiment with dataset: AmvrakikosTurtles, model: megadescriptor, pooling method: attentive, use_class: False, learning rate: 0.0005, batch size: 64
+2024-11-14 07:50:46,959 - INFO - Training stopped at epoch 4 for config: {'pooling_method': 'attentive', 'use_class': False}
+2024-11-14 07:50:46,959 - INFO - Grid eval for classifiers: Running experiment with dataset: AmvrakikosTurtles, model: megadescriptor, pooling method: attentive, use_class: False, learning rate: 0.001, batch size: 64
+2024-11-14 07:50:47,259 - INFO - Training stopped at epoch 2 for config: {'pooling_method': 'attentive', 'use_class': False}
+2024-11-14 07:50:47,259 - INFO - Grid eval for classifiers: Running experiment with dataset: AmvrakikosTurtles, model: megadescriptor, pooling method: attentive, use_class: False, learning rate: 0.002, batch size: 64
+2024-11-14 07:50:47,527 - INFO - Training stopped at epoch 1 for config: {'pooling_method': 'attentive', 'use_class': False}
+2024-11-14 07:50:47,527 - INFO - Grid eval for classifiers: Running experiment with dataset: AmvrakikosTurtles, model: megadescriptor, pooling method: attentive, use_class: False, learning rate: 0.005, batch size: 64
+2024-11-14 07:50:47,791 - INFO - Training stopped at epoch 1 for config: {'pooling_method': 'attentive', 'use_class': False}
+2024-11-14 07:50:47,791 - INFO - Grid eval for classifiers: Running experiment with dataset: AmvrakikosTurtles, model: megadescriptor, pooling method: attentive, use_class: False, learning rate: 0.01, batch size: 64
+2024-11-14 07:50:48,060 - INFO - Training stopped at epoch 1 for config: {'pooling_method': 'attentive', 'use_class': False}
+2024-11-14 07:50:48,060 - INFO - Grid eval for classifiers: Running experiment with dataset: AmvrakikosTurtles, model: megadescriptor, pooling method: attentive, use_class: False, learning rate: 0.02, batch size: 64
+2024-11-14 07:50:48,324 - INFO - Training stopped at epoch 1 for config: {'pooling_method': 'attentive', 'use_class': False}
+2024-11-14 07:50:48,324 - INFO - Grid eval for classifiers: Running experiment with dataset: AmvrakikosTurtles, model: megadescriptor, pooling method: attentive, use_class: False, learning rate: 0.05, batch size: 64
+2024-11-14 07:50:48,618 - INFO - Training stopped at epoch 2 for config: {'pooling_method': 'attentive', 'use_class': False}
+2024-11-14 07:50:48,618 - INFO - Grid eval for classifiers: Running experiment with dataset: AmvrakikosTurtles, model: megadescriptor, pooling method: attentive, use_class: False, learning rate: 0.1, batch size: 64
+2024-11-14 07:50:48,879 - INFO - Training stopped at epoch 1 for config: {'pooling_method': 'attentive', 'use_class': False}
+2024-11-14 07:50:48,879 - INFO - Grid eval for classifiers: Running experiment with dataset: AmvrakikosTurtles, model: megadescriptor, pooling method: attentive, use_class: False, learning rate: 1e-05, batch size: 128
+2024-11-14 07:50:50,504 - INFO - Training stopped at epoch 50 for config: {'pooling_method': 'attentive', 'use_class': False}
+2024-11-14 07:50:50,504 - INFO - Grid eval for classifiers: Running experiment with dataset: AmvrakikosTurtles, model: megadescriptor, pooling method: attentive, use_class: False, learning rate: 2e-05, batch size: 128
+2024-11-14 07:50:52,132 - INFO - Training stopped at epoch 50 for config: {'pooling_method': 'attentive', 'use_class': False}
+2024-11-14 07:50:52,132 - INFO - Grid eval for classifiers: Running experiment with dataset: AmvrakikosTurtles, model: megadescriptor, pooling method: attentive, use_class: False, learning rate: 5e-05, batch size: 128
+2024-11-14 07:50:53,766 - INFO - Training stopped at epoch 50 for config: {'pooling_method': 'attentive', 'use_class': False}
+2024-11-14 07:50:53,766 - INFO - Grid eval for classifiers: Running experiment with dataset: AmvrakikosTurtles, model: megadescriptor, pooling method: attentive, use_class: False, learning rate: 0.0001, batch size: 128
+2024-11-14 07:50:54,899 - INFO - Training stopped at epoch 29 for config: {'pooling_method': 'attentive', 'use_class': False}
+2024-11-14 07:50:54,900 - INFO - Grid eval for classifiers: Running experiment with dataset: AmvrakikosTurtles, model: megadescriptor, pooling method: attentive, use_class: False, learning rate: 0.0002, batch size: 128
+2024-11-14 07:50:55,596 - INFO - Training stopped at epoch 15 for config: {'pooling_method': 'attentive', 'use_class': False}
+2024-11-14 07:50:55,596 - INFO - Grid eval for classifiers: Running experiment with dataset: AmvrakikosTurtles, model: megadescriptor, pooling method: attentive, use_class: False, learning rate: 0.0005, batch size: 128
+2024-11-14 07:50:56,012 - INFO - Training stopped at epoch 6 for config: {'pooling_method': 'attentive', 'use_class': False}
+2024-11-14 07:50:56,012 - INFO - Grid eval for classifiers: Running experiment with dataset: AmvrakikosTurtles, model: megadescriptor, pooling method: attentive, use_class: False, learning rate: 0.001, batch size: 128
+2024-11-14 07:50:56,335 - INFO - Training stopped at epoch 3 for config: {'pooling_method': 'attentive', 'use_class': False}
+2024-11-14 07:50:56,335 - INFO - Grid eval for classifiers: Running experiment with dataset: AmvrakikosTurtles, model: megadescriptor, pooling method: attentive, use_class: False, learning rate: 0.002, batch size: 128
+2024-11-14 07:50:56,624 - INFO - Training stopped at epoch 2 for config: {'pooling_method': 'attentive', 'use_class': False}
+2024-11-14 07:50:56,624 - INFO - Grid eval for classifiers: Running experiment with dataset: AmvrakikosTurtles, model: megadescriptor, pooling method: attentive, use_class: False, learning rate: 0.005, batch size: 128
+2024-11-14 07:50:56,883 - INFO - Training stopped at epoch 1 for config: {'pooling_method': 'attentive', 'use_class': False}
+2024-11-14 07:50:56,884 - INFO - Grid eval for classifiers: Running experiment with dataset: AmvrakikosTurtles, model: megadescriptor, pooling method: attentive, use_class: False, learning rate: 0.01, batch size: 128
+2024-11-14 07:50:57,144 - INFO - Training stopped at epoch 1 for config: {'pooling_method': 'attentive', 'use_class': False}
+2024-11-14 07:50:57,144 - INFO - Grid eval for classifiers: Running experiment with dataset: AmvrakikosTurtles, model: megadescriptor, pooling method: attentive, use_class: False, learning rate: 0.02, batch size: 128
+2024-11-14 07:50:57,404 - INFO - Training stopped at epoch 1 for config: {'pooling_method': 'attentive', 'use_class': False}
+2024-11-14 07:50:57,404 - INFO - Grid eval for classifiers: Running experiment with dataset: AmvrakikosTurtles, model: megadescriptor, pooling method: attentive, use_class: False, learning rate: 0.05, batch size: 128
+2024-11-14 07:50:57,662 - INFO - Training stopped at epoch 1 for config: {'pooling_method': 'attentive', 'use_class': False}
+2024-11-14 07:50:57,662 - INFO - Grid eval for classifiers: Running experiment with dataset: AmvrakikosTurtles, model: megadescriptor, pooling method: attentive, use_class: False, learning rate: 0.1, batch size: 128
+2024-11-14 07:50:57,920 - INFO - Training stopped at epoch 1 for config: {'pooling_method': 'attentive', 'use_class': False}
+2024-11-14 07:50:57,920 - INFO - Best results for dataset AmvrakikosTurtles and attentive pooling method: {
+    "dataset": "AmvrakikosTurtles",
+    "pooling_method": "attentive",
+    "batch_size": 128,
+    "learning_rate": 0.0005,
+    "best_epoch": 6,
+    "best_val_acc": 0.4444444444444444
+}
+2024-11-14 07:50:58,016 - INFO - /home/avisund/data/wildlife_datasets/ReunionTurtles/
+2024-11-14 07:50:58,045 - INFO - Dataset ReunionTurtles loaded successfully
+2024-11-14 07:50:58,055 - INFO - Dataset split successfully
+2024-11-14 07:50:58,058 - INFO - Dataloaders created successfully
+2024-11-14 07:50:59,925 - INFO - Loading pretrained weights from Hugging Face hub (BVRA/MegaDescriptor-L-384)
+2024-11-14 07:51:01,169 - INFO - Feature extractor loaded successfully
+2024-11-14 07:51:20,038 - INFO - Embeddings computed successfully
+2024-11-14 07:51:20,039 - INFO - Grid eval for classifiers: Running experiment with dataset: ReunionTurtles, model: megadescriptor, pooling method: linear, use_class: False, learning rate: 1e-05, batch size: 8
+2024-11-14 07:51:20,896 - INFO - Training stopped at epoch 50 for config: {'pooling_method': 'linear', 'use_class': False}
+2024-11-14 07:51:20,896 - INFO - Grid eval for classifiers: Running experiment with dataset: ReunionTurtles, model: megadescriptor, pooling method: linear, use_class: False, learning rate: 2e-05, batch size: 8
+2024-11-14 07:51:21,743 - INFO - Training stopped at epoch 50 for config: {'pooling_method': 'linear', 'use_class': False}
+2024-11-14 07:51:21,743 - INFO - Grid eval for classifiers: Running experiment with dataset: ReunionTurtles, model: megadescriptor, pooling method: linear, use_class: False, learning rate: 5e-05, batch size: 8
+2024-11-14 07:51:22,573 - INFO - Training stopped at epoch 50 for config: {'pooling_method': 'linear', 'use_class': False}
+2024-11-14 07:51:22,573 - INFO - Grid eval for classifiers: Running experiment with dataset: ReunionTurtles, model: megadescriptor, pooling method: linear, use_class: False, learning rate: 0.0001, batch size: 8
+2024-11-14 07:51:23,403 - INFO - Training stopped at epoch 50 for config: {'pooling_method': 'linear', 'use_class': False}
+2024-11-14 07:51:23,403 - INFO - Grid eval for classifiers: Running experiment with dataset: ReunionTurtles, model: megadescriptor, pooling method: linear, use_class: False, learning rate: 0.0002, batch size: 8
+2024-11-14 07:51:24,232 - INFO - Training stopped at epoch 50 for config: {'pooling_method': 'linear', 'use_class': False}
+2024-11-14 07:51:24,232 - INFO - Grid eval for classifiers: Running experiment with dataset: ReunionTurtles, model: megadescriptor, pooling method: linear, use_class: False, learning rate: 0.0005, batch size: 8
+2024-11-14 07:51:25,060 - INFO - Training stopped at epoch 50 for config: {'pooling_method': 'linear', 'use_class': False}
+2024-11-14 07:51:25,061 - INFO - Grid eval for classifiers: Running experiment with dataset: ReunionTurtles, model: megadescriptor, pooling method: linear, use_class: False, learning rate: 0.001, batch size: 8
+2024-11-14 07:51:25,905 - INFO - Training stopped at epoch 50 for config: {'pooling_method': 'linear', 'use_class': False}
+2024-11-14 07:51:25,905 - INFO - Grid eval for classifiers: Running experiment with dataset: ReunionTurtles, model: megadescriptor, pooling method: linear, use_class: False, learning rate: 0.002, batch size: 8
+2024-11-14 07:51:26,733 - INFO - Training stopped at epoch 50 for config: {'pooling_method': 'linear', 'use_class': False}
+2024-11-14 07:51:26,734 - INFO - Grid eval for classifiers: Running experiment with dataset: ReunionTurtles, model: megadescriptor, pooling method: linear, use_class: False, learning rate: 0.005, batch size: 8
+2024-11-14 07:51:27,562 - INFO - Training stopped at epoch 50 for config: {'pooling_method': 'linear', 'use_class': False}
+2024-11-14 07:51:27,562 - INFO - Grid eval for classifiers: Running experiment with dataset: ReunionTurtles, model: megadescriptor, pooling method: linear, use_class: False, learning rate: 0.01, batch size: 8
+2024-11-14 07:51:28,395 - INFO - Training stopped at epoch 50 for config: {'pooling_method': 'linear', 'use_class': False}
+2024-11-14 07:51:28,395 - INFO - Grid eval for classifiers: Running experiment with dataset: ReunionTurtles, model: megadescriptor, pooling method: linear, use_class: False, learning rate: 0.02, batch size: 8
+2024-11-14 07:51:28,496 - INFO - Training stopped at epoch 1 for config: {'pooling_method': 'linear', 'use_class': False}
+2024-11-14 07:51:28,496 - INFO - Grid eval for classifiers: Running experiment with dataset: ReunionTurtles, model: megadescriptor, pooling method: linear, use_class: False, learning rate: 0.05, batch size: 8
+2024-11-14 07:51:28,597 - INFO - Training stopped at epoch 1 for config: {'pooling_method': 'linear', 'use_class': False}
+2024-11-14 07:51:28,597 - INFO - Grid eval for classifiers: Running experiment with dataset: ReunionTurtles, model: megadescriptor, pooling method: linear, use_class: False, learning rate: 0.1, batch size: 8
+2024-11-14 07:51:28,698 - INFO - Training stopped at epoch 1 for config: {'pooling_method': 'linear', 'use_class': False}
+2024-11-14 07:51:28,698 - INFO - Grid eval for classifiers: Running experiment with dataset: ReunionTurtles, model: megadescriptor, pooling method: linear, use_class: False, learning rate: 1e-05, batch size: 16
+2024-11-14 07:51:29,139 - INFO - Training stopped at epoch 50 for config: {'pooling_method': 'linear', 'use_class': False}
+2024-11-14 07:51:29,139 - INFO - Grid eval for classifiers: Running experiment with dataset: ReunionTurtles, model: megadescriptor, pooling method: linear, use_class: False, learning rate: 2e-05, batch size: 16
+2024-11-14 07:51:29,587 - INFO - Training stopped at epoch 50 for config: {'pooling_method': 'linear', 'use_class': False}
+2024-11-14 07:51:29,587 - INFO - Grid eval for classifiers: Running experiment with dataset: ReunionTurtles, model: megadescriptor, pooling method: linear, use_class: False, learning rate: 5e-05, batch size: 16
+2024-11-14 07:51:30,029 - INFO - Training stopped at epoch 50 for config: {'pooling_method': 'linear', 'use_class': False}
+2024-11-14 07:51:30,030 - INFO - Grid eval for classifiers: Running experiment with dataset: ReunionTurtles, model: megadescriptor, pooling method: linear, use_class: False, learning rate: 0.0001, batch size: 16
+2024-11-14 07:51:30,473 - INFO - Training stopped at epoch 50 for config: {'pooling_method': 'linear', 'use_class': False}
+2024-11-14 07:51:30,474 - INFO - Grid eval for classifiers: Running experiment with dataset: ReunionTurtles, model: megadescriptor, pooling method: linear, use_class: False, learning rate: 0.0002, batch size: 16
+2024-11-14 07:51:30,915 - INFO - Training stopped at epoch 50 for config: {'pooling_method': 'linear', 'use_class': False}
+2024-11-14 07:51:30,915 - INFO - Grid eval for classifiers: Running experiment with dataset: ReunionTurtles, model: megadescriptor, pooling method: linear, use_class: False, learning rate: 0.0005, batch size: 16
+2024-11-14 07:51:31,357 - INFO - Training stopped at epoch 50 for config: {'pooling_method': 'linear', 'use_class': False}
+2024-11-14 07:51:31,357 - INFO - Grid eval for classifiers: Running experiment with dataset: ReunionTurtles, model: megadescriptor, pooling method: linear, use_class: False, learning rate: 0.001, batch size: 16
+2024-11-14 07:51:31,798 - INFO - Training stopped at epoch 50 for config: {'pooling_method': 'linear', 'use_class': False}
+2024-11-14 07:51:31,798 - INFO - Grid eval for classifiers: Running experiment with dataset: ReunionTurtles, model: megadescriptor, pooling method: linear, use_class: False, learning rate: 0.002, batch size: 16
+2024-11-14 07:51:32,239 - INFO - Training stopped at epoch 50 for config: {'pooling_method': 'linear', 'use_class': False}
+2024-11-14 07:51:32,239 - INFO - Grid eval for classifiers: Running experiment with dataset: ReunionTurtles, model: megadescriptor, pooling method: linear, use_class: False, learning rate: 0.005, batch size: 16
+2024-11-14 07:51:32,680 - INFO - Training stopped at epoch 50 for config: {'pooling_method': 'linear', 'use_class': False}
+2024-11-14 07:51:32,680 - INFO - Grid eval for classifiers: Running experiment with dataset: ReunionTurtles, model: megadescriptor, pooling method: linear, use_class: False, learning rate: 0.01, batch size: 16
+2024-11-14 07:51:33,121 - INFO - Training stopped at epoch 50 for config: {'pooling_method': 'linear', 'use_class': False}
+2024-11-14 07:51:33,121 - INFO - Grid eval for classifiers: Running experiment with dataset: ReunionTurtles, model: megadescriptor, pooling method: linear, use_class: False, learning rate: 0.02, batch size: 16
+2024-11-14 07:51:33,175 - INFO - Training stopped at epoch 1 for config: {'pooling_method': 'linear', 'use_class': False}
+2024-11-14 07:51:33,175 - INFO - Grid eval for classifiers: Running experiment with dataset: ReunionTurtles, model: megadescriptor, pooling method: linear, use_class: False, learning rate: 0.05, batch size: 16
+2024-11-14 07:51:33,229 - INFO - Training stopped at epoch 1 for config: {'pooling_method': 'linear', 'use_class': False}
+2024-11-14 07:51:33,229 - INFO - Grid eval for classifiers: Running experiment with dataset: ReunionTurtles, model: megadescriptor, pooling method: linear, use_class: False, learning rate: 0.1, batch size: 16
+2024-11-14 07:51:33,283 - INFO - Training stopped at epoch 1 for config: {'pooling_method': 'linear', 'use_class': False}
+2024-11-14 07:51:33,283 - INFO - Grid eval for classifiers: Running experiment with dataset: ReunionTurtles, model: megadescriptor, pooling method: linear, use_class: False, learning rate: 1e-05, batch size: 32
+2024-11-14 07:51:33,529 - INFO - Training stopped at epoch 50 for config: {'pooling_method': 'linear', 'use_class': False}
+2024-11-14 07:51:33,529 - INFO - Grid eval for classifiers: Running experiment with dataset: ReunionTurtles, model: megadescriptor, pooling method: linear, use_class: False, learning rate: 2e-05, batch size: 32
+2024-11-14 07:51:33,775 - INFO - Training stopped at epoch 50 for config: {'pooling_method': 'linear', 'use_class': False}
+2024-11-14 07:51:33,775 - INFO - Grid eval for classifiers: Running experiment with dataset: ReunionTurtles, model: megadescriptor, pooling method: linear, use_class: False, learning rate: 5e-05, batch size: 32
+2024-11-14 07:51:34,020 - INFO - Training stopped at epoch 50 for config: {'pooling_method': 'linear', 'use_class': False}
+2024-11-14 07:51:34,021 - INFO - Grid eval for classifiers: Running experiment with dataset: ReunionTurtles, model: megadescriptor, pooling method: linear, use_class: False, learning rate: 0.0001, batch size: 32
+2024-11-14 07:51:34,266 - INFO - Training stopped at epoch 50 for config: {'pooling_method': 'linear', 'use_class': False}
+2024-11-14 07:51:34,266 - INFO - Grid eval for classifiers: Running experiment with dataset: ReunionTurtles, model: megadescriptor, pooling method: linear, use_class: False, learning rate: 0.0002, batch size: 32
+2024-11-14 07:51:34,512 - INFO - Training stopped at epoch 50 for config: {'pooling_method': 'linear', 'use_class': False}
+2024-11-14 07:51:34,512 - INFO - Grid eval for classifiers: Running experiment with dataset: ReunionTurtles, model: megadescriptor, pooling method: linear, use_class: False, learning rate: 0.0005, batch size: 32
+2024-11-14 07:51:34,757 - INFO - Training stopped at epoch 50 for config: {'pooling_method': 'linear', 'use_class': False}
+2024-11-14 07:51:34,758 - INFO - Grid eval for classifiers: Running experiment with dataset: ReunionTurtles, model: megadescriptor, pooling method: linear, use_class: False, learning rate: 0.001, batch size: 32
+2024-11-14 07:51:35,003 - INFO - Training stopped at epoch 50 for config: {'pooling_method': 'linear', 'use_class': False}
+2024-11-14 07:51:35,003 - INFO - Grid eval for classifiers: Running experiment with dataset: ReunionTurtles, model: megadescriptor, pooling method: linear, use_class: False, learning rate: 0.002, batch size: 32
+2024-11-14 07:51:35,248 - INFO - Training stopped at epoch 50 for config: {'pooling_method': 'linear', 'use_class': False}
+2024-11-14 07:51:35,249 - INFO - Grid eval for classifiers: Running experiment with dataset: ReunionTurtles, model: megadescriptor, pooling method: linear, use_class: False, learning rate: 0.005, batch size: 32
+2024-11-14 07:51:35,494 - INFO - Training stopped at epoch 50 for config: {'pooling_method': 'linear', 'use_class': False}
+2024-11-14 07:51:35,494 - INFO - Grid eval for classifiers: Running experiment with dataset: ReunionTurtles, model: megadescriptor, pooling method: linear, use_class: False, learning rate: 0.01, batch size: 32
+2024-11-14 07:51:35,530 - INFO - Training stopped at epoch 2 for config: {'pooling_method': 'linear', 'use_class': False}
+2024-11-14 07:51:35,530 - INFO - Grid eval for classifiers: Running experiment with dataset: ReunionTurtles, model: megadescriptor, pooling method: linear, use_class: False, learning rate: 0.02, batch size: 32
+2024-11-14 07:51:35,560 - INFO - Training stopped at epoch 1 for config: {'pooling_method': 'linear', 'use_class': False}
+2024-11-14 07:51:35,560 - INFO - Grid eval for classifiers: Running experiment with dataset: ReunionTurtles, model: megadescriptor, pooling method: linear, use_class: False, learning rate: 0.05, batch size: 32
+2024-11-14 07:51:35,591 - INFO - Training stopped at epoch 1 for config: {'pooling_method': 'linear', 'use_class': False}
+2024-11-14 07:51:35,591 - INFO - Grid eval for classifiers: Running experiment with dataset: ReunionTurtles, model: megadescriptor, pooling method: linear, use_class: False, learning rate: 0.1, batch size: 32
+2024-11-14 07:51:35,621 - INFO - Training stopped at epoch 1 for config: {'pooling_method': 'linear', 'use_class': False}
+2024-11-14 07:51:35,621 - INFO - Grid eval for classifiers: Running experiment with dataset: ReunionTurtles, model: megadescriptor, pooling method: linear, use_class: False, learning rate: 1e-05, batch size: 64
+2024-11-14 07:51:35,768 - INFO - Training stopped at epoch 50 for config: {'pooling_method': 'linear', 'use_class': False}
+2024-11-14 07:51:35,768 - INFO - Grid eval for classifiers: Running experiment with dataset: ReunionTurtles, model: megadescriptor, pooling method: linear, use_class: False, learning rate: 2e-05, batch size: 64
+2024-11-14 07:51:35,913 - INFO - Training stopped at epoch 50 for config: {'pooling_method': 'linear', 'use_class': False}
+2024-11-14 07:51:35,913 - INFO - Grid eval for classifiers: Running experiment with dataset: ReunionTurtles, model: megadescriptor, pooling method: linear, use_class: False, learning rate: 5e-05, batch size: 64
+2024-11-14 07:51:36,057 - INFO - Training stopped at epoch 50 for config: {'pooling_method': 'linear', 'use_class': False}
+2024-11-14 07:51:36,057 - INFO - Grid eval for classifiers: Running experiment with dataset: ReunionTurtles, model: megadescriptor, pooling method: linear, use_class: False, learning rate: 0.0001, batch size: 64
+2024-11-14 07:51:36,202 - INFO - Training stopped at epoch 50 for config: {'pooling_method': 'linear', 'use_class': False}
+2024-11-14 07:51:36,202 - INFO - Grid eval for classifiers: Running experiment with dataset: ReunionTurtles, model: megadescriptor, pooling method: linear, use_class: False, learning rate: 0.0002, batch size: 64
+2024-11-14 07:51:36,348 - INFO - Training stopped at epoch 50 for config: {'pooling_method': 'linear', 'use_class': False}
+2024-11-14 07:51:36,348 - INFO - Grid eval for classifiers: Running experiment with dataset: ReunionTurtles, model: megadescriptor, pooling method: linear, use_class: False, learning rate: 0.0005, batch size: 64
+2024-11-14 07:51:36,493 - INFO - Training stopped at epoch 50 for config: {'pooling_method': 'linear', 'use_class': False}
+2024-11-14 07:51:36,493 - INFO - Grid eval for classifiers: Running experiment with dataset: ReunionTurtles, model: megadescriptor, pooling method: linear, use_class: False, learning rate: 0.001, batch size: 64
+2024-11-14 07:51:36,638 - INFO - Training stopped at epoch 50 for config: {'pooling_method': 'linear', 'use_class': False}
+2024-11-14 07:51:36,638 - INFO - Grid eval for classifiers: Running experiment with dataset: ReunionTurtles, model: megadescriptor, pooling method: linear, use_class: False, learning rate: 0.002, batch size: 64
+2024-11-14 07:51:36,783 - INFO - Training stopped at epoch 50 for config: {'pooling_method': 'linear', 'use_class': False}
+2024-11-14 07:51:36,783 - INFO - Grid eval for classifiers: Running experiment with dataset: ReunionTurtles, model: megadescriptor, pooling method: linear, use_class: False, learning rate: 0.005, batch size: 64
+2024-11-14 07:51:36,816 - INFO - Training stopped at epoch 6 for config: {'pooling_method': 'linear', 'use_class': False}
+2024-11-14 07:51:36,816 - INFO - Grid eval for classifiers: Running experiment with dataset: ReunionTurtles, model: megadescriptor, pooling method: linear, use_class: False, learning rate: 0.01, batch size: 64
+2024-11-14 07:51:36,840 - INFO - Training stopped at epoch 3 for config: {'pooling_method': 'linear', 'use_class': False}
+2024-11-14 07:51:36,840 - INFO - Grid eval for classifiers: Running experiment with dataset: ReunionTurtles, model: megadescriptor, pooling method: linear, use_class: False, learning rate: 0.02, batch size: 64
+2024-11-14 07:51:36,862 - INFO - Training stopped at epoch 2 for config: {'pooling_method': 'linear', 'use_class': False}
+2024-11-14 07:51:36,862 - INFO - Grid eval for classifiers: Running experiment with dataset: ReunionTurtles, model: megadescriptor, pooling method: linear, use_class: False, learning rate: 0.05, batch size: 64
+2024-11-14 07:51:36,883 - INFO - Training stopped at epoch 2 for config: {'pooling_method': 'linear', 'use_class': False}
+2024-11-14 07:51:36,883 - INFO - Grid eval for classifiers: Running experiment with dataset: ReunionTurtles, model: megadescriptor, pooling method: linear, use_class: False, learning rate: 0.1, batch size: 64
+2024-11-14 07:51:36,902 - INFO - Training stopped at epoch 1 for config: {'pooling_method': 'linear', 'use_class': False}
+2024-11-14 07:51:36,902 - INFO - Grid eval for classifiers: Running experiment with dataset: ReunionTurtles, model: megadescriptor, pooling method: linear, use_class: False, learning rate: 1e-05, batch size: 128
+2024-11-14 07:51:37,018 - INFO - Training stopped at epoch 50 for config: {'pooling_method': 'linear', 'use_class': False}
+2024-11-14 07:51:37,018 - INFO - Grid eval for classifiers: Running experiment with dataset: ReunionTurtles, model: megadescriptor, pooling method: linear, use_class: False, learning rate: 2e-05, batch size: 128
+2024-11-14 07:51:37,133 - INFO - Training stopped at epoch 50 for config: {'pooling_method': 'linear', 'use_class': False}
+2024-11-14 07:51:37,133 - INFO - Grid eval for classifiers: Running experiment with dataset: ReunionTurtles, model: megadescriptor, pooling method: linear, use_class: False, learning rate: 5e-05, batch size: 128
+2024-11-14 07:51:37,249 - INFO - Training stopped at epoch 50 for config: {'pooling_method': 'linear', 'use_class': False}
+2024-11-14 07:51:37,249 - INFO - Grid eval for classifiers: Running experiment with dataset: ReunionTurtles, model: megadescriptor, pooling method: linear, use_class: False, learning rate: 0.0001, batch size: 128
+2024-11-14 07:51:37,364 - INFO - Training stopped at epoch 50 for config: {'pooling_method': 'linear', 'use_class': False}
+2024-11-14 07:51:37,364 - INFO - Grid eval for classifiers: Running experiment with dataset: ReunionTurtles, model: megadescriptor, pooling method: linear, use_class: False, learning rate: 0.0002, batch size: 128
+2024-11-14 07:51:37,480 - INFO - Training stopped at epoch 50 for config: {'pooling_method': 'linear', 'use_class': False}
+2024-11-14 07:51:37,480 - INFO - Grid eval for classifiers: Running experiment with dataset: ReunionTurtles, model: megadescriptor, pooling method: linear, use_class: False, learning rate: 0.0005, batch size: 128
+2024-11-14 07:51:37,595 - INFO - Training stopped at epoch 50 for config: {'pooling_method': 'linear', 'use_class': False}
+2024-11-14 07:51:37,595 - INFO - Grid eval for classifiers: Running experiment with dataset: ReunionTurtles, model: megadescriptor, pooling method: linear, use_class: False, learning rate: 0.001, batch size: 128
+2024-11-14 07:51:37,710 - INFO - Training stopped at epoch 50 for config: {'pooling_method': 'linear', 'use_class': False}
+2024-11-14 07:51:37,710 - INFO - Grid eval for classifiers: Running experiment with dataset: ReunionTurtles, model: megadescriptor, pooling method: linear, use_class: False, learning rate: 0.002, batch size: 128
+2024-11-14 07:51:37,825 - INFO - Training stopped at epoch 50 for config: {'pooling_method': 'linear', 'use_class': False}
+2024-11-14 07:51:37,825 - INFO - Grid eval for classifiers: Running experiment with dataset: ReunionTurtles, model: megadescriptor, pooling method: linear, use_class: False, learning rate: 0.005, batch size: 128
+2024-11-14 07:51:37,854 - INFO - Training stopped at epoch 7 for config: {'pooling_method': 'linear', 'use_class': False}
+2024-11-14 07:51:37,854 - INFO - Grid eval for classifiers: Running experiment with dataset: ReunionTurtles, model: megadescriptor, pooling method: linear, use_class: False, learning rate: 0.01, batch size: 128
+2024-11-14 07:51:37,873 - INFO - Training stopped at epoch 3 for config: {'pooling_method': 'linear', 'use_class': False}
+2024-11-14 07:51:37,873 - INFO - Grid eval for classifiers: Running experiment with dataset: ReunionTurtles, model: megadescriptor, pooling method: linear, use_class: False, learning rate: 0.02, batch size: 128
+2024-11-14 07:51:37,888 - INFO - Training stopped at epoch 1 for config: {'pooling_method': 'linear', 'use_class': False}
+2024-11-14 07:51:37,888 - INFO - Grid eval for classifiers: Running experiment with dataset: ReunionTurtles, model: megadescriptor, pooling method: linear, use_class: False, learning rate: 0.05, batch size: 128
+2024-11-14 07:51:37,903 - INFO - Training stopped at epoch 1 for config: {'pooling_method': 'linear', 'use_class': False}
+2024-11-14 07:51:37,904 - INFO - Grid eval for classifiers: Running experiment with dataset: ReunionTurtles, model: megadescriptor, pooling method: linear, use_class: False, learning rate: 0.1, batch size: 128
+2024-11-14 07:51:37,919 - INFO - Training stopped at epoch 1 for config: {'pooling_method': 'linear', 'use_class': False}
+2024-11-14 07:51:37,919 - INFO - Best results for dataset ReunionTurtles and linear pooling method: {
+    "dataset": "ReunionTurtles",
+    "pooling_method": "linear",
+    "batch_size": 32,
+    "learning_rate": 0.01,
+    "best_epoch": 2,
+    "best_val_acc": 0.4888888888888889
+}
+2024-11-14 07:51:37,919 - INFO - Grid eval for classifiers: Running experiment with dataset: ReunionTurtles, model: megadescriptor, pooling method: attentive, use_class: False, learning rate: 1e-05, batch size: 8
+2024-11-14 07:51:42,315 - INFO - Training stopped at epoch 50 for config: {'pooling_method': 'attentive', 'use_class': False}
+2024-11-14 07:51:42,315 - INFO - Grid eval for classifiers: Running experiment with dataset: ReunionTurtles, model: megadescriptor, pooling method: attentive, use_class: False, learning rate: 2e-05, batch size: 8
+2024-11-14 07:51:46,716 - INFO - Training stopped at epoch 50 for config: {'pooling_method': 'attentive', 'use_class': False}
+2024-11-14 07:51:46,717 - INFO - Grid eval for classifiers: Running experiment with dataset: ReunionTurtles, model: megadescriptor, pooling method: attentive, use_class: False, learning rate: 5e-05, batch size: 8
+2024-11-14 07:51:51,120 - INFO - Training stopped at epoch 50 for config: {'pooling_method': 'attentive', 'use_class': False}
+2024-11-14 07:51:51,120 - INFO - Grid eval for classifiers: Running experiment with dataset: ReunionTurtles, model: megadescriptor, pooling method: attentive, use_class: False, learning rate: 0.0001, batch size: 8
+2024-11-14 07:51:54,405 - INFO - Training stopped at epoch 32 for config: {'pooling_method': 'attentive', 'use_class': False}
+2024-11-14 07:51:54,405 - INFO - Grid eval for classifiers: Running experiment with dataset: ReunionTurtles, model: megadescriptor, pooling method: attentive, use_class: False, learning rate: 0.0002, batch size: 8
+2024-11-14 07:51:55,521 - INFO - Training stopped at epoch 7 for config: {'pooling_method': 'attentive', 'use_class': False}
+2024-11-14 07:51:55,521 - INFO - Grid eval for classifiers: Running experiment with dataset: ReunionTurtles, model: megadescriptor, pooling method: attentive, use_class: False, learning rate: 0.0005, batch size: 8
+2024-11-14 07:51:56,205 - INFO - Training stopped at epoch 2 for config: {'pooling_method': 'attentive', 'use_class': False}
+2024-11-14 07:51:56,205 - INFO - Grid eval for classifiers: Running experiment with dataset: ReunionTurtles, model: megadescriptor, pooling method: attentive, use_class: False, learning rate: 0.001, batch size: 8
+2024-11-14 07:51:56,976 - INFO - Training stopped at epoch 3 for config: {'pooling_method': 'attentive', 'use_class': False}
+2024-11-14 07:51:56,976 - INFO - Grid eval for classifiers: Running experiment with dataset: ReunionTurtles, model: megadescriptor, pooling method: attentive, use_class: False, learning rate: 0.002, batch size: 8
+2024-11-14 07:51:57,574 - INFO - Training stopped at epoch 1 for config: {'pooling_method': 'attentive', 'use_class': False}
+2024-11-14 07:51:57,574 - INFO - Grid eval for classifiers: Running experiment with dataset: ReunionTurtles, model: megadescriptor, pooling method: attentive, use_class: False, learning rate: 0.005, batch size: 8
+2024-11-14 07:51:58,172 - INFO - Training stopped at epoch 1 for config: {'pooling_method': 'attentive', 'use_class': False}
+2024-11-14 07:51:58,173 - INFO - Grid eval for classifiers: Running experiment with dataset: ReunionTurtles, model: megadescriptor, pooling method: attentive, use_class: False, learning rate: 0.01, batch size: 8
+2024-11-14 07:51:58,769 - INFO - Training stopped at epoch 1 for config: {'pooling_method': 'attentive', 'use_class': False}
+2024-11-14 07:51:58,769 - INFO - Grid eval for classifiers: Running experiment with dataset: ReunionTurtles, model: megadescriptor, pooling method: attentive, use_class: False, learning rate: 0.02, batch size: 8
+2024-11-14 07:51:59,364 - INFO - Training stopped at epoch 1 for config: {'pooling_method': 'attentive', 'use_class': False}
+2024-11-14 07:51:59,364 - INFO - Grid eval for classifiers: Running experiment with dataset: ReunionTurtles, model: megadescriptor, pooling method: attentive, use_class: False, learning rate: 0.05, batch size: 8
+2024-11-14 07:51:59,960 - INFO - Training stopped at epoch 1 for config: {'pooling_method': 'attentive', 'use_class': False}
+2024-11-14 07:51:59,960 - INFO - Grid eval for classifiers: Running experiment with dataset: ReunionTurtles, model: megadescriptor, pooling method: attentive, use_class: False, learning rate: 0.1, batch size: 8
+2024-11-14 07:52:00,556 - INFO - Training stopped at epoch 1 for config: {'pooling_method': 'attentive', 'use_class': False}
+2024-11-14 07:52:00,556 - INFO - Grid eval for classifiers: Running experiment with dataset: ReunionTurtles, model: megadescriptor, pooling method: attentive, use_class: False, learning rate: 1e-05, batch size: 16
+2024-11-14 07:52:04,051 - INFO - Training stopped at epoch 50 for config: {'pooling_method': 'attentive', 'use_class': False}
+2024-11-14 07:52:04,051 - INFO - Grid eval for classifiers: Running experiment with dataset: ReunionTurtles, model: megadescriptor, pooling method: attentive, use_class: False, learning rate: 2e-05, batch size: 16
+2024-11-14 07:52:07,555 - INFO - Training stopped at epoch 50 for config: {'pooling_method': 'attentive', 'use_class': False}
+2024-11-14 07:52:07,555 - INFO - Grid eval for classifiers: Running experiment with dataset: ReunionTurtles, model: megadescriptor, pooling method: attentive, use_class: False, learning rate: 5e-05, batch size: 16
+2024-11-14 07:52:11,067 - INFO - Training stopped at epoch 50 for config: {'pooling_method': 'attentive', 'use_class': False}
+2024-11-14 07:52:11,067 - INFO - Grid eval for classifiers: Running experiment with dataset: ReunionTurtles, model: megadescriptor, pooling method: attentive, use_class: False, learning rate: 0.0001, batch size: 16
+2024-11-14 07:52:14,581 - INFO - Training stopped at epoch 50 for config: {'pooling_method': 'attentive', 'use_class': False}
+2024-11-14 07:52:14,581 - INFO - Grid eval for classifiers: Running experiment with dataset: ReunionTurtles, model: megadescriptor, pooling method: attentive, use_class: False, learning rate: 0.0002, batch size: 16
+2024-11-14 07:52:15,345 - INFO - Training stopped at epoch 5 for config: {'pooling_method': 'attentive', 'use_class': False}
+2024-11-14 07:52:15,345 - INFO - Grid eval for classifiers: Running experiment with dataset: ReunionTurtles, model: megadescriptor, pooling method: attentive, use_class: False, learning rate: 0.0005, batch size: 16
+2024-11-14 07:52:15,971 - INFO - Training stopped at epoch 3 for config: {'pooling_method': 'attentive', 'use_class': False}
+2024-11-14 07:52:15,971 - INFO - Grid eval for classifiers: Running experiment with dataset: ReunionTurtles, model: megadescriptor, pooling method: attentive, use_class: False, learning rate: 0.001, batch size: 16
+2024-11-14 07:52:16,528 - INFO - Training stopped at epoch 2 for config: {'pooling_method': 'attentive', 'use_class': False}
+2024-11-14 07:52:16,528 - INFO - Grid eval for classifiers: Running experiment with dataset: ReunionTurtles, model: megadescriptor, pooling method: attentive, use_class: False, learning rate: 0.002, batch size: 16
+2024-11-14 07:52:17,016 - INFO - Training stopped at epoch 1 for config: {'pooling_method': 'attentive', 'use_class': False}
+2024-11-14 07:52:17,016 - INFO - Grid eval for classifiers: Running experiment with dataset: ReunionTurtles, model: megadescriptor, pooling method: attentive, use_class: False, learning rate: 0.005, batch size: 16
+2024-11-14 07:52:17,504 - INFO - Training stopped at epoch 1 for config: {'pooling_method': 'attentive', 'use_class': False}
+2024-11-14 07:52:17,504 - INFO - Grid eval for classifiers: Running experiment with dataset: ReunionTurtles, model: megadescriptor, pooling method: attentive, use_class: False, learning rate: 0.01, batch size: 16
+2024-11-14 07:52:17,991 - INFO - Training stopped at epoch 1 for config: {'pooling_method': 'attentive', 'use_class': False}
+2024-11-14 07:52:17,991 - INFO - Grid eval for classifiers: Running experiment with dataset: ReunionTurtles, model: megadescriptor, pooling method: attentive, use_class: False, learning rate: 0.02, batch size: 16
+2024-11-14 07:52:18,476 - INFO - Training stopped at epoch 1 for config: {'pooling_method': 'attentive', 'use_class': False}
+2024-11-14 07:52:18,476 - INFO - Grid eval for classifiers: Running experiment with dataset: ReunionTurtles, model: megadescriptor, pooling method: attentive, use_class: False, learning rate: 0.05, batch size: 16
+2024-11-14 07:52:18,962 - INFO - Training stopped at epoch 1 for config: {'pooling_method': 'attentive', 'use_class': False}
+2024-11-14 07:52:18,963 - INFO - Grid eval for classifiers: Running experiment with dataset: ReunionTurtles, model: megadescriptor, pooling method: attentive, use_class: False, learning rate: 0.1, batch size: 16
+2024-11-14 07:52:19,447 - INFO - Training stopped at epoch 1 for config: {'pooling_method': 'attentive', 'use_class': False}
+2024-11-14 07:52:19,447 - INFO - Grid eval for classifiers: Running experiment with dataset: ReunionTurtles, model: megadescriptor, pooling method: attentive, use_class: False, learning rate: 1e-05, batch size: 32
+2024-11-14 07:52:22,472 - INFO - Training stopped at epoch 50 for config: {'pooling_method': 'attentive', 'use_class': False}
+2024-11-14 07:52:22,472 - INFO - Grid eval for classifiers: Running experiment with dataset: ReunionTurtles, model: megadescriptor, pooling method: attentive, use_class: False, learning rate: 2e-05, batch size: 32
+2024-11-14 07:52:25,498 - INFO - Training stopped at epoch 50 for config: {'pooling_method': 'attentive', 'use_class': False}
+2024-11-14 07:52:25,499 - INFO - Grid eval for classifiers: Running experiment with dataset: ReunionTurtles, model: megadescriptor, pooling method: attentive, use_class: False, learning rate: 5e-05, batch size: 32
+2024-11-14 07:52:28,527 - INFO - Training stopped at epoch 50 for config: {'pooling_method': 'attentive', 'use_class': False}
+2024-11-14 07:52:28,527 - INFO - Grid eval for classifiers: Running experiment with dataset: ReunionTurtles, model: megadescriptor, pooling method: attentive, use_class: False, learning rate: 0.0001, batch size: 32
+2024-11-14 07:52:31,559 - INFO - Training stopped at epoch 50 for config: {'pooling_method': 'attentive', 'use_class': False}
+2024-11-14 07:52:31,559 - INFO - Grid eval for classifiers: Running experiment with dataset: ReunionTurtles, model: megadescriptor, pooling method: attentive, use_class: False, learning rate: 0.0002, batch size: 32
+2024-11-14 07:52:32,523 - INFO - Training stopped at epoch 10 for config: {'pooling_method': 'attentive', 'use_class': False}
+2024-11-14 07:52:32,523 - INFO - Grid eval for classifiers: Running experiment with dataset: ReunionTurtles, model: megadescriptor, pooling method: attentive, use_class: False, learning rate: 0.0005, batch size: 32
+2024-11-14 07:52:33,125 - INFO - Training stopped at epoch 4 for config: {'pooling_method': 'attentive', 'use_class': False}
+2024-11-14 07:52:33,125 - INFO - Grid eval for classifiers: Running experiment with dataset: ReunionTurtles, model: megadescriptor, pooling method: attentive, use_class: False, learning rate: 0.001, batch size: 32
+2024-11-14 07:52:33,609 - INFO - Training stopped at epoch 2 for config: {'pooling_method': 'attentive', 'use_class': False}
+2024-11-14 07:52:33,609 - INFO - Grid eval for classifiers: Running experiment with dataset: ReunionTurtles, model: megadescriptor, pooling method: attentive, use_class: False, learning rate: 0.002, batch size: 32
+2024-11-14 07:52:34,092 - INFO - Training stopped at epoch 2 for config: {'pooling_method': 'attentive', 'use_class': False}
+2024-11-14 07:52:34,092 - INFO - Grid eval for classifiers: Running experiment with dataset: ReunionTurtles, model: megadescriptor, pooling method: attentive, use_class: False, learning rate: 0.005, batch size: 32
+2024-11-14 07:52:34,517 - INFO - Training stopped at epoch 1 for config: {'pooling_method': 'attentive', 'use_class': False}
+2024-11-14 07:52:34,517 - INFO - Grid eval for classifiers: Running experiment with dataset: ReunionTurtles, model: megadescriptor, pooling method: attentive, use_class: False, learning rate: 0.01, batch size: 32
+2024-11-14 07:52:34,940 - INFO - Training stopped at epoch 1 for config: {'pooling_method': 'attentive', 'use_class': False}
+2024-11-14 07:52:34,940 - INFO - Grid eval for classifiers: Running experiment with dataset: ReunionTurtles, model: megadescriptor, pooling method: attentive, use_class: False, learning rate: 0.02, batch size: 32
+2024-11-14 07:52:35,361 - INFO - Training stopped at epoch 1 for config: {'pooling_method': 'attentive', 'use_class': False}
+2024-11-14 07:52:35,361 - INFO - Grid eval for classifiers: Running experiment with dataset: ReunionTurtles, model: megadescriptor, pooling method: attentive, use_class: False, learning rate: 0.05, batch size: 32
+2024-11-14 07:52:35,780 - INFO - Training stopped at epoch 1 for config: {'pooling_method': 'attentive', 'use_class': False}
+2024-11-14 07:52:35,780 - INFO - Grid eval for classifiers: Running experiment with dataset: ReunionTurtles, model: megadescriptor, pooling method: attentive, use_class: False, learning rate: 0.1, batch size: 32
+2024-11-14 07:52:36,198 - INFO - Training stopped at epoch 1 for config: {'pooling_method': 'attentive', 'use_class': False}
+2024-11-14 07:52:36,198 - INFO - Grid eval for classifiers: Running experiment with dataset: ReunionTurtles, model: megadescriptor, pooling method: attentive, use_class: False, learning rate: 1e-05, batch size: 64
+2024-11-14 07:52:39,011 - INFO - Training stopped at epoch 50 for config: {'pooling_method': 'attentive', 'use_class': False}
+2024-11-14 07:52:39,011 - INFO - Grid eval for classifiers: Running experiment with dataset: ReunionTurtles, model: megadescriptor, pooling method: attentive, use_class: False, learning rate: 2e-05, batch size: 64
+2024-11-14 07:52:41,824 - INFO - Training stopped at epoch 50 for config: {'pooling_method': 'attentive', 'use_class': False}
+2024-11-14 07:52:41,824 - INFO - Grid eval for classifiers: Running experiment with dataset: ReunionTurtles, model: megadescriptor, pooling method: attentive, use_class: False, learning rate: 5e-05, batch size: 64
+2024-11-14 07:52:44,639 - INFO - Training stopped at epoch 50 for config: {'pooling_method': 'attentive', 'use_class': False}
+2024-11-14 07:52:44,640 - INFO - Grid eval for classifiers: Running experiment with dataset: ReunionTurtles, model: megadescriptor, pooling method: attentive, use_class: False, learning rate: 0.0001, batch size: 64
+2024-11-14 07:52:46,632 - INFO - Training stopped at epoch 30 for config: {'pooling_method': 'attentive', 'use_class': False}
+2024-11-14 07:52:46,632 - INFO - Grid eval for classifiers: Running experiment with dataset: ReunionTurtles, model: megadescriptor, pooling method: attentive, use_class: False, learning rate: 0.0002, batch size: 64
+2024-11-14 07:52:47,855 - INFO - Training stopped at epoch 16 for config: {'pooling_method': 'attentive', 'use_class': False}
+2024-11-14 07:52:47,855 - INFO - Grid eval for classifiers: Running experiment with dataset: ReunionTurtles, model: megadescriptor, pooling method: attentive, use_class: False, learning rate: 0.0005, batch size: 64
+2024-11-14 07:52:48,472 - INFO - Training stopped at epoch 5 for config: {'pooling_method': 'attentive', 'use_class': False}
+2024-11-14 07:52:48,472 - INFO - Grid eval for classifiers: Running experiment with dataset: ReunionTurtles, model: megadescriptor, pooling method: attentive, use_class: False, learning rate: 0.001, batch size: 64
+2024-11-14 07:52:48,979 - INFO - Training stopped at epoch 3 for config: {'pooling_method': 'attentive', 'use_class': False}
+2024-11-14 07:52:48,979 - INFO - Grid eval for classifiers: Running experiment with dataset: ReunionTurtles, model: megadescriptor, pooling method: attentive, use_class: False, learning rate: 0.002, batch size: 64
+2024-11-14 07:52:49,434 - INFO - Training stopped at epoch 2 for config: {'pooling_method': 'attentive', 'use_class': False}
+2024-11-14 07:52:49,434 - INFO - Grid eval for classifiers: Running experiment with dataset: ReunionTurtles, model: megadescriptor, pooling method: attentive, use_class: False, learning rate: 0.005, batch size: 64
+2024-11-14 07:52:49,833 - INFO - Training stopped at epoch 1 for config: {'pooling_method': 'attentive', 'use_class': False}
+2024-11-14 07:52:49,833 - INFO - Grid eval for classifiers: Running experiment with dataset: ReunionTurtles, model: megadescriptor, pooling method: attentive, use_class: False, learning rate: 0.01, batch size: 64
+2024-11-14 07:52:50,445 - INFO - Training stopped at epoch 5 for config: {'pooling_method': 'attentive', 'use_class': False}
+2024-11-14 07:52:50,445 - INFO - Grid eval for classifiers: Running experiment with dataset: ReunionTurtles, model: megadescriptor, pooling method: attentive, use_class: False, learning rate: 0.02, batch size: 64
+2024-11-14 07:52:50,896 - INFO - Training stopped at epoch 2 for config: {'pooling_method': 'attentive', 'use_class': False}
+2024-11-14 07:52:50,896 - INFO - Grid eval for classifiers: Running experiment with dataset: ReunionTurtles, model: megadescriptor, pooling method: attentive, use_class: False, learning rate: 0.05, batch size: 64
+2024-11-14 07:52:51,397 - INFO - Training stopped at epoch 3 for config: {'pooling_method': 'attentive', 'use_class': False}
+2024-11-14 07:52:51,397 - INFO - Grid eval for classifiers: Running experiment with dataset: ReunionTurtles, model: megadescriptor, pooling method: attentive, use_class: False, learning rate: 0.1, batch size: 64
+2024-11-14 07:52:51,793 - INFO - Training stopped at epoch 1 for config: {'pooling_method': 'attentive', 'use_class': False}
+2024-11-14 07:52:51,793 - INFO - Grid eval for classifiers: Running experiment with dataset: ReunionTurtles, model: megadescriptor, pooling method: attentive, use_class: False, learning rate: 1e-05, batch size: 128
+2024-11-14 07:52:54,485 - INFO - Training stopped at epoch 50 for config: {'pooling_method': 'attentive', 'use_class': False}
+2024-11-14 07:52:54,485 - INFO - Grid eval for classifiers: Running experiment with dataset: ReunionTurtles, model: megadescriptor, pooling method: attentive, use_class: False, learning rate: 2e-05, batch size: 128
+2024-11-14 07:52:57,177 - INFO - Training stopped at epoch 50 for config: {'pooling_method': 'attentive', 'use_class': False}
+2024-11-14 07:52:57,177 - INFO - Grid eval for classifiers: Running experiment with dataset: ReunionTurtles, model: megadescriptor, pooling method: attentive, use_class: False, learning rate: 5e-05, batch size: 128
+2024-11-14 07:52:59,869 - INFO - Training stopped at epoch 50 for config: {'pooling_method': 'attentive', 'use_class': False}
+2024-11-14 07:52:59,869 - INFO - Grid eval for classifiers: Running experiment with dataset: ReunionTurtles, model: megadescriptor, pooling method: attentive, use_class: False, learning rate: 0.0001, batch size: 128
+2024-11-14 07:53:02,560 - INFO - Training stopped at epoch 49 for config: {'pooling_method': 'attentive', 'use_class': False}
+2024-11-14 07:53:02,560 - INFO - Grid eval for classifiers: Running experiment with dataset: ReunionTurtles, model: megadescriptor, pooling method: attentive, use_class: False, learning rate: 0.0002, batch size: 128
+2024-11-14 07:53:05,251 - INFO - Training stopped at epoch 46 for config: {'pooling_method': 'attentive', 'use_class': False}
+2024-11-14 07:53:05,251 - INFO - Grid eval for classifiers: Running experiment with dataset: ReunionTurtles, model: megadescriptor, pooling method: attentive, use_class: False, learning rate: 0.0005, batch size: 128
+2024-11-14 07:53:06,002 - INFO - Training stopped at epoch 8 for config: {'pooling_method': 'attentive', 'use_class': False}
+2024-11-14 07:53:06,002 - INFO - Grid eval for classifiers: Running experiment with dataset: ReunionTurtles, model: megadescriptor, pooling method: attentive, use_class: False, learning rate: 0.001, batch size: 128
+2024-11-14 07:53:06,544 - INFO - Training stopped at epoch 4 for config: {'pooling_method': 'attentive', 'use_class': False}
+2024-11-14 07:53:06,544 - INFO - Grid eval for classifiers: Running experiment with dataset: ReunionTurtles, model: megadescriptor, pooling method: attentive, use_class: False, learning rate: 0.002, batch size: 128
+2024-11-14 07:53:06,979 - INFO - Training stopped at epoch 2 for config: {'pooling_method': 'attentive', 'use_class': False}
+2024-11-14 07:53:06,979 - INFO - Grid eval for classifiers: Running experiment with dataset: ReunionTurtles, model: megadescriptor, pooling method: attentive, use_class: False, learning rate: 0.005, batch size: 128
+2024-11-14 07:53:07,362 - INFO - Training stopped at epoch 1 for config: {'pooling_method': 'attentive', 'use_class': False}
+2024-11-14 07:53:07,362 - INFO - Grid eval for classifiers: Running experiment with dataset: ReunionTurtles, model: megadescriptor, pooling method: attentive, use_class: False, learning rate: 0.01, batch size: 128
+2024-11-14 07:53:07,746 - INFO - Training stopped at epoch 1 for config: {'pooling_method': 'attentive', 'use_class': False}
+2024-11-14 07:53:07,746 - INFO - Grid eval for classifiers: Running experiment with dataset: ReunionTurtles, model: megadescriptor, pooling method: attentive, use_class: False, learning rate: 0.02, batch size: 128
+2024-11-14 07:53:08,126 - INFO - Training stopped at epoch 1 for config: {'pooling_method': 'attentive', 'use_class': False}
+2024-11-14 07:53:08,127 - INFO - Grid eval for classifiers: Running experiment with dataset: ReunionTurtles, model: megadescriptor, pooling method: attentive, use_class: False, learning rate: 0.05, batch size: 128
+2024-11-14 07:53:08,558 - INFO - Training stopped at epoch 2 for config: {'pooling_method': 'attentive', 'use_class': False}
+2024-11-14 07:53:08,558 - INFO - Grid eval for classifiers: Running experiment with dataset: ReunionTurtles, model: megadescriptor, pooling method: attentive, use_class: False, learning rate: 0.1, batch size: 128
+2024-11-14 07:53:08,936 - INFO - Training stopped at epoch 1 for config: {'pooling_method': 'attentive', 'use_class': False}
+2024-11-14 07:53:08,937 - INFO - Best results for dataset ReunionTurtles and attentive pooling method: {
+    "dataset": "ReunionTurtles",
+    "pooling_method": "attentive",
+    "batch_size": 16,
+    "learning_rate": 0.0002,
+    "best_epoch": 5,
+    "best_val_acc": 0.6
+}
+2024-11-14 07:53:09,040 - INFO - /home/avisund/data/wildlife_datasets/SouthernProvinceTurtles/
+2024-11-14 07:53:09,046 - INFO - Dataset SouthernProvinceTurtles loaded successfully
+2024-11-14 07:53:09,050 - INFO - Dataset split successfully
+2024-11-14 07:53:09,053 - INFO - Dataloaders created successfully
+2024-11-14 07:53:10,627 - INFO - Loading pretrained weights from Hugging Face hub (BVRA/MegaDescriptor-L-384)
+2024-11-14 07:53:11,501 - INFO - Feature extractor loaded successfully
+2024-11-14 07:53:39,052 - INFO - Embeddings computed successfully
+2024-11-14 07:53:39,052 - INFO - Grid eval for classifiers: Running experiment with dataset: SouthernProvinceTurtles, model: megadescriptor, pooling method: linear, use_class: False, learning rate: 1e-05, batch size: 8
+2024-11-14 07:53:40,506 - INFO - Training stopped at epoch 50 for config: {'pooling_method': 'linear', 'use_class': False}
+2024-11-14 07:53:40,506 - INFO - Grid eval for classifiers: Running experiment with dataset: SouthernProvinceTurtles, model: megadescriptor, pooling method: linear, use_class: False, learning rate: 2e-05, batch size: 8
+2024-11-14 07:53:41,923 - INFO - Training stopped at epoch 50 for config: {'pooling_method': 'linear', 'use_class': False}
+2024-11-14 07:53:41,923 - INFO - Grid eval for classifiers: Running experiment with dataset: SouthernProvinceTurtles, model: megadescriptor, pooling method: linear, use_class: False, learning rate: 5e-05, batch size: 8
+2024-11-14 07:53:43,368 - INFO - Training stopped at epoch 50 for config: {'pooling_method': 'linear', 'use_class': False}
+2024-11-14 07:53:43,368 - INFO - Grid eval for classifiers: Running experiment with dataset: SouthernProvinceTurtles, model: megadescriptor, pooling method: linear, use_class: False, learning rate: 0.0001, batch size: 8
+2024-11-14 07:53:44,816 - INFO - Training stopped at epoch 50 for config: {'pooling_method': 'linear', 'use_class': False}
+2024-11-14 07:53:44,816 - INFO - Grid eval for classifiers: Running experiment with dataset: SouthernProvinceTurtles, model: megadescriptor, pooling method: linear, use_class: False, learning rate: 0.0002, batch size: 8
+2024-11-14 07:53:46,242 - INFO - Training stopped at epoch 50 for config: {'pooling_method': 'linear', 'use_class': False}
+2024-11-14 07:53:46,242 - INFO - Grid eval for classifiers: Running experiment with dataset: SouthernProvinceTurtles, model: megadescriptor, pooling method: linear, use_class: False, learning rate: 0.0005, batch size: 8
+2024-11-14 07:53:47,607 - INFO - Training stopped at epoch 50 for config: {'pooling_method': 'linear', 'use_class': False}
+2024-11-14 07:53:47,607 - INFO - Grid eval for classifiers: Running experiment with dataset: SouthernProvinceTurtles, model: megadescriptor, pooling method: linear, use_class: False, learning rate: 0.001, batch size: 8
+2024-11-14 07:53:48,927 - INFO - Training stopped at epoch 50 for config: {'pooling_method': 'linear', 'use_class': False}
+2024-11-14 07:53:48,927 - INFO - Grid eval for classifiers: Running experiment with dataset: SouthernProvinceTurtles, model: megadescriptor, pooling method: linear, use_class: False, learning rate: 0.002, batch size: 8
+2024-11-14 07:53:50,247 - INFO - Training stopped at epoch 48 for config: {'pooling_method': 'linear', 'use_class': False}
+2024-11-14 07:53:50,247 - INFO - Grid eval for classifiers: Running experiment with dataset: SouthernProvinceTurtles, model: megadescriptor, pooling method: linear, use_class: False, learning rate: 0.005, batch size: 8
+2024-11-14 07:53:50,829 - INFO - Training stopped at epoch 17 for config: {'pooling_method': 'linear', 'use_class': False}
+2024-11-14 07:53:50,829 - INFO - Grid eval for classifiers: Running experiment with dataset: SouthernProvinceTurtles, model: megadescriptor, pooling method: linear, use_class: False, learning rate: 0.01, batch size: 8
+2024-11-14 07:53:52,149 - INFO - Training stopped at epoch 50 for config: {'pooling_method': 'linear', 'use_class': False}
+2024-11-14 07:53:52,149 - INFO - Grid eval for classifiers: Running experiment with dataset: SouthernProvinceTurtles, model: megadescriptor, pooling method: linear, use_class: False, learning rate: 0.02, batch size: 8
+2024-11-14 07:53:52,361 - INFO - Training stopped at epoch 3 for config: {'pooling_method': 'linear', 'use_class': False}
+2024-11-14 07:53:52,361 - INFO - Grid eval for classifiers: Running experiment with dataset: SouthernProvinceTurtles, model: megadescriptor, pooling method: linear, use_class: False, learning rate: 0.05, batch size: 8
+2024-11-14 07:53:52,573 - INFO - Training stopped at epoch 3 for config: {'pooling_method': 'linear', 'use_class': False}
+2024-11-14 07:53:52,573 - INFO - Grid eval for classifiers: Running experiment with dataset: SouthernProvinceTurtles, model: megadescriptor, pooling method: linear, use_class: False, learning rate: 0.1, batch size: 8
+2024-11-14 07:53:52,785 - INFO - Training stopped at epoch 3 for config: {'pooling_method': 'linear', 'use_class': False}
+2024-11-14 07:53:52,785 - INFO - Grid eval for classifiers: Running experiment with dataset: SouthernProvinceTurtles, model: megadescriptor, pooling method: linear, use_class: False, learning rate: 1e-05, batch size: 16
+2024-11-14 07:53:53,459 - INFO - Training stopped at epoch 50 for config: {'pooling_method': 'linear', 'use_class': False}
+2024-11-14 07:53:53,460 - INFO - Grid eval for classifiers: Running experiment with dataset: SouthernProvinceTurtles, model: megadescriptor, pooling method: linear, use_class: False, learning rate: 2e-05, batch size: 16
+2024-11-14 07:53:54,134 - INFO - Training stopped at epoch 50 for config: {'pooling_method': 'linear', 'use_class': False}
+2024-11-14 07:53:54,134 - INFO - Grid eval for classifiers: Running experiment with dataset: SouthernProvinceTurtles, model: megadescriptor, pooling method: linear, use_class: False, learning rate: 5e-05, batch size: 16
+2024-11-14 07:53:54,807 - INFO - Training stopped at epoch 50 for config: {'pooling_method': 'linear', 'use_class': False}
+2024-11-14 07:53:54,807 - INFO - Grid eval for classifiers: Running experiment with dataset: SouthernProvinceTurtles, model: megadescriptor, pooling method: linear, use_class: False, learning rate: 0.0001, batch size: 16
+2024-11-14 07:53:55,481 - INFO - Training stopped at epoch 50 for config: {'pooling_method': 'linear', 'use_class': False}
+2024-11-14 07:53:55,481 - INFO - Grid eval for classifiers: Running experiment with dataset: SouthernProvinceTurtles, model: megadescriptor, pooling method: linear, use_class: False, learning rate: 0.0002, batch size: 16
+2024-11-14 07:53:56,155 - INFO - Training stopped at epoch 50 for config: {'pooling_method': 'linear', 'use_class': False}
+2024-11-14 07:53:56,155 - INFO - Grid eval for classifiers: Running experiment with dataset: SouthernProvinceTurtles, model: megadescriptor, pooling method: linear, use_class: False, learning rate: 0.0005, batch size: 16
+2024-11-14 07:53:56,828 - INFO - Training stopped at epoch 50 for config: {'pooling_method': 'linear', 'use_class': False}
+2024-11-14 07:53:56,828 - INFO - Grid eval for classifiers: Running experiment with dataset: SouthernProvinceTurtles, model: megadescriptor, pooling method: linear, use_class: False, learning rate: 0.001, batch size: 16
+2024-11-14 07:53:57,510 - INFO - Training stopped at epoch 50 for config: {'pooling_method': 'linear', 'use_class': False}
+2024-11-14 07:53:57,510 - INFO - Grid eval for classifiers: Running experiment with dataset: SouthernProvinceTurtles, model: megadescriptor, pooling method: linear, use_class: False, learning rate: 0.002, batch size: 16
+2024-11-14 07:53:58,187 - INFO - Training stopped at epoch 50 for config: {'pooling_method': 'linear', 'use_class': False}
+2024-11-14 07:53:58,187 - INFO - Grid eval for classifiers: Running experiment with dataset: SouthernProvinceTurtles, model: megadescriptor, pooling method: linear, use_class: False, learning rate: 0.005, batch size: 16
+2024-11-14 07:53:58,309 - INFO - Training stopped at epoch 4 for config: {'pooling_method': 'linear', 'use_class': False}
+2024-11-14 07:53:58,309 - INFO - Grid eval for classifiers: Running experiment with dataset: SouthernProvinceTurtles, model: megadescriptor, pooling method: linear, use_class: False, learning rate: 0.01, batch size: 16
+2024-11-14 07:53:58,983 - INFO - Training stopped at epoch 50 for config: {'pooling_method': 'linear', 'use_class': False}
+2024-11-14 07:53:58,983 - INFO - Grid eval for classifiers: Running experiment with dataset: SouthernProvinceTurtles, model: megadescriptor, pooling method: linear, use_class: False, learning rate: 0.02, batch size: 16
+2024-11-14 07:53:59,657 - INFO - Training stopped at epoch 50 for config: {'pooling_method': 'linear', 'use_class': False}
+2024-11-14 07:53:59,657 - INFO - Grid eval for classifiers: Running experiment with dataset: SouthernProvinceTurtles, model: megadescriptor, pooling method: linear, use_class: False, learning rate: 0.05, batch size: 16
+2024-11-14 07:53:59,806 - INFO - Training stopped at epoch 6 for config: {'pooling_method': 'linear', 'use_class': False}
+2024-11-14 07:53:59,806 - INFO - Grid eval for classifiers: Running experiment with dataset: SouthernProvinceTurtles, model: megadescriptor, pooling method: linear, use_class: False, learning rate: 0.1, batch size: 16
+2024-11-14 07:53:59,928 - INFO - Training stopped at epoch 4 for config: {'pooling_method': 'linear', 'use_class': False}
+2024-11-14 07:53:59,928 - INFO - Grid eval for classifiers: Running experiment with dataset: SouthernProvinceTurtles, model: megadescriptor, pooling method: linear, use_class: False, learning rate: 1e-05, batch size: 32
+2024-11-14 07:54:00,317 - INFO - Training stopped at epoch 50 for config: {'pooling_method': 'linear', 'use_class': False}
+2024-11-14 07:54:00,317 - INFO - Grid eval for classifiers: Running experiment with dataset: SouthernProvinceTurtles, model: megadescriptor, pooling method: linear, use_class: False, learning rate: 2e-05, batch size: 32
+2024-11-14 07:54:00,705 - INFO - Training stopped at epoch 50 for config: {'pooling_method': 'linear', 'use_class': False}
+2024-11-14 07:54:00,705 - INFO - Grid eval for classifiers: Running experiment with dataset: SouthernProvinceTurtles, model: megadescriptor, pooling method: linear, use_class: False, learning rate: 5e-05, batch size: 32
+2024-11-14 07:54:01,094 - INFO - Training stopped at epoch 50 for config: {'pooling_method': 'linear', 'use_class': False}
+2024-11-14 07:54:01,094 - INFO - Grid eval for classifiers: Running experiment with dataset: SouthernProvinceTurtles, model: megadescriptor, pooling method: linear, use_class: False, learning rate: 0.0001, batch size: 32
+2024-11-14 07:54:01,487 - INFO - Training stopped at epoch 50 for config: {'pooling_method': 'linear', 'use_class': False}
+2024-11-14 07:54:01,487 - INFO - Grid eval for classifiers: Running experiment with dataset: SouthernProvinceTurtles, model: megadescriptor, pooling method: linear, use_class: False, learning rate: 0.0002, batch size: 32
+2024-11-14 07:54:01,876 - INFO - Training stopped at epoch 50 for config: {'pooling_method': 'linear', 'use_class': False}
+2024-11-14 07:54:01,876 - INFO - Grid eval for classifiers: Running experiment with dataset: SouthernProvinceTurtles, model: megadescriptor, pooling method: linear, use_class: False, learning rate: 0.0005, batch size: 32
+2024-11-14 07:54:02,263 - INFO - Training stopped at epoch 50 for config: {'pooling_method': 'linear', 'use_class': False}
+2024-11-14 07:54:02,264 - INFO - Grid eval for classifiers: Running experiment with dataset: SouthernProvinceTurtles, model: megadescriptor, pooling method: linear, use_class: False, learning rate: 0.001, batch size: 32
+2024-11-14 07:54:02,651 - INFO - Training stopped at epoch 50 for config: {'pooling_method': 'linear', 'use_class': False}
+2024-11-14 07:54:02,651 - INFO - Grid eval for classifiers: Running experiment with dataset: SouthernProvinceTurtles, model: megadescriptor, pooling method: linear, use_class: False, learning rate: 0.002, batch size: 32
+2024-11-14 07:54:03,037 - INFO - Training stopped at epoch 50 for config: {'pooling_method': 'linear', 'use_class': False}
+2024-11-14 07:54:03,037 - INFO - Grid eval for classifiers: Running experiment with dataset: SouthernProvinceTurtles, model: megadescriptor, pooling method: linear, use_class: False, learning rate: 0.005, batch size: 32
+2024-11-14 07:54:03,308 - INFO - Training stopped at epoch 30 for config: {'pooling_method': 'linear', 'use_class': False}
+2024-11-14 07:54:03,308 - INFO - Grid eval for classifiers: Running experiment with dataset: SouthernProvinceTurtles, model: megadescriptor, pooling method: linear, use_class: False, learning rate: 0.01, batch size: 32
+2024-11-14 07:54:03,363 - INFO - Training stopped at epoch 2 for config: {'pooling_method': 'linear', 'use_class': False}
+2024-11-14 07:54:03,363 - INFO - Grid eval for classifiers: Running experiment with dataset: SouthernProvinceTurtles, model: megadescriptor, pooling method: linear, use_class: False, learning rate: 0.02, batch size: 32
+2024-11-14 07:54:03,418 - INFO - Training stopped at epoch 2 for config: {'pooling_method': 'linear', 'use_class': False}
+2024-11-14 07:54:03,418 - INFO - Grid eval for classifiers: Running experiment with dataset: SouthernProvinceTurtles, model: megadescriptor, pooling method: linear, use_class: False, learning rate: 0.05, batch size: 32
+2024-11-14 07:54:03,473 - INFO - Training stopped at epoch 2 for config: {'pooling_method': 'linear', 'use_class': False}
+2024-11-14 07:54:03,473 - INFO - Grid eval for classifiers: Running experiment with dataset: SouthernProvinceTurtles, model: megadescriptor, pooling method: linear, use_class: False, learning rate: 0.1, batch size: 32
+2024-11-14 07:54:03,528 - INFO - Training stopped at epoch 2 for config: {'pooling_method': 'linear', 'use_class': False}
+2024-11-14 07:54:03,528 - INFO - Grid eval for classifiers: Running experiment with dataset: SouthernProvinceTurtles, model: megadescriptor, pooling method: linear, use_class: False, learning rate: 1e-05, batch size: 64
+2024-11-14 07:54:03,765 - INFO - Training stopped at epoch 50 for config: {'pooling_method': 'linear', 'use_class': False}
+2024-11-14 07:54:03,765 - INFO - Grid eval for classifiers: Running experiment with dataset: SouthernProvinceTurtles, model: megadescriptor, pooling method: linear, use_class: False, learning rate: 2e-05, batch size: 64
+2024-11-14 07:54:03,999 - INFO - Training stopped at epoch 50 for config: {'pooling_method': 'linear', 'use_class': False}
+2024-11-14 07:54:03,999 - INFO - Grid eval for classifiers: Running experiment with dataset: SouthernProvinceTurtles, model: megadescriptor, pooling method: linear, use_class: False, learning rate: 5e-05, batch size: 64
+2024-11-14 07:54:04,233 - INFO - Training stopped at epoch 50 for config: {'pooling_method': 'linear', 'use_class': False}
+2024-11-14 07:54:04,233 - INFO - Grid eval for classifiers: Running experiment with dataset: SouthernProvinceTurtles, model: megadescriptor, pooling method: linear, use_class: False, learning rate: 0.0001, batch size: 64
+2024-11-14 07:54:04,467 - INFO - Training stopped at epoch 50 for config: {'pooling_method': 'linear', 'use_class': False}
+2024-11-14 07:54:04,467 - INFO - Grid eval for classifiers: Running experiment with dataset: SouthernProvinceTurtles, model: megadescriptor, pooling method: linear, use_class: False, learning rate: 0.0002, batch size: 64
+2024-11-14 07:54:04,701 - INFO - Training stopped at epoch 50 for config: {'pooling_method': 'linear', 'use_class': False}
+2024-11-14 07:54:04,701 - INFO - Grid eval for classifiers: Running experiment with dataset: SouthernProvinceTurtles, model: megadescriptor, pooling method: linear, use_class: False, learning rate: 0.0005, batch size: 64
+2024-11-14 07:54:04,936 - INFO - Training stopped at epoch 50 for config: {'pooling_method': 'linear', 'use_class': False}
+2024-11-14 07:54:04,936 - INFO - Grid eval for classifiers: Running experiment with dataset: SouthernProvinceTurtles, model: megadescriptor, pooling method: linear, use_class: False, learning rate: 0.001, batch size: 64
+2024-11-14 07:54:05,170 - INFO - Training stopped at epoch 50 for config: {'pooling_method': 'linear', 'use_class': False}
+2024-11-14 07:54:05,170 - INFO - Grid eval for classifiers: Running experiment with dataset: SouthernProvinceTurtles, model: megadescriptor, pooling method: linear, use_class: False, learning rate: 0.002, batch size: 64
+2024-11-14 07:54:05,407 - INFO - Training stopped at epoch 50 for config: {'pooling_method': 'linear', 'use_class': False}
+2024-11-14 07:54:05,408 - INFO - Grid eval for classifiers: Running experiment with dataset: SouthernProvinceTurtles, model: megadescriptor, pooling method: linear, use_class: False, learning rate: 0.005, batch size: 64
+2024-11-14 07:54:05,503 - INFO - Training stopped at epoch 15 for config: {'pooling_method': 'linear', 'use_class': False}
+2024-11-14 07:54:05,503 - INFO - Grid eval for classifiers: Running experiment with dataset: SouthernProvinceTurtles, model: megadescriptor, pooling method: linear, use_class: False, learning rate: 0.01, batch size: 64
+2024-11-14 07:54:05,536 - INFO - Training stopped at epoch 2 for config: {'pooling_method': 'linear', 'use_class': False}
+2024-11-14 07:54:05,536 - INFO - Grid eval for classifiers: Running experiment with dataset: SouthernProvinceTurtles, model: megadescriptor, pooling method: linear, use_class: False, learning rate: 0.02, batch size: 64
+2024-11-14 07:54:05,566 - INFO - Training stopped at epoch 1 for config: {'pooling_method': 'linear', 'use_class': False}
+2024-11-14 07:54:05,566 - INFO - Grid eval for classifiers: Running experiment with dataset: SouthernProvinceTurtles, model: megadescriptor, pooling method: linear, use_class: False, learning rate: 0.05, batch size: 64
+2024-11-14 07:54:05,604 - INFO - Training stopped at epoch 3 for config: {'pooling_method': 'linear', 'use_class': False}
+2024-11-14 07:54:05,604 - INFO - Grid eval for classifiers: Running experiment with dataset: SouthernProvinceTurtles, model: megadescriptor, pooling method: linear, use_class: False, learning rate: 0.1, batch size: 64
+2024-11-14 07:54:05,643 - INFO - Training stopped at epoch 3 for config: {'pooling_method': 'linear', 'use_class': False}
+2024-11-14 07:54:05,643 - INFO - Grid eval for classifiers: Running experiment with dataset: SouthernProvinceTurtles, model: megadescriptor, pooling method: linear, use_class: False, learning rate: 1e-05, batch size: 128
+2024-11-14 07:54:05,812 - INFO - Training stopped at epoch 50 for config: {'pooling_method': 'linear', 'use_class': False}
+2024-11-14 07:54:05,812 - INFO - Grid eval for classifiers: Running experiment with dataset: SouthernProvinceTurtles, model: megadescriptor, pooling method: linear, use_class: False, learning rate: 2e-05, batch size: 128
+2024-11-14 07:54:05,980 - INFO - Training stopped at epoch 50 for config: {'pooling_method': 'linear', 'use_class': False}
+2024-11-14 07:54:05,980 - INFO - Grid eval for classifiers: Running experiment with dataset: SouthernProvinceTurtles, model: megadescriptor, pooling method: linear, use_class: False, learning rate: 5e-05, batch size: 128
+2024-11-14 07:54:06,148 - INFO - Training stopped at epoch 50 for config: {'pooling_method': 'linear', 'use_class': False}
+2024-11-14 07:54:06,148 - INFO - Grid eval for classifiers: Running experiment with dataset: SouthernProvinceTurtles, model: megadescriptor, pooling method: linear, use_class: False, learning rate: 0.0001, batch size: 128
+2024-11-14 07:54:06,316 - INFO - Training stopped at epoch 50 for config: {'pooling_method': 'linear', 'use_class': False}
+2024-11-14 07:54:06,316 - INFO - Grid eval for classifiers: Running experiment with dataset: SouthernProvinceTurtles, model: megadescriptor, pooling method: linear, use_class: False, learning rate: 0.0002, batch size: 128
+2024-11-14 07:54:06,483 - INFO - Training stopped at epoch 50 for config: {'pooling_method': 'linear', 'use_class': False}
+2024-11-14 07:54:06,483 - INFO - Grid eval for classifiers: Running experiment with dataset: SouthernProvinceTurtles, model: megadescriptor, pooling method: linear, use_class: False, learning rate: 0.0005, batch size: 128
+2024-11-14 07:54:06,650 - INFO - Training stopped at epoch 50 for config: {'pooling_method': 'linear', 'use_class': False}
+2024-11-14 07:54:06,650 - INFO - Grid eval for classifiers: Running experiment with dataset: SouthernProvinceTurtles, model: megadescriptor, pooling method: linear, use_class: False, learning rate: 0.001, batch size: 128
+2024-11-14 07:54:06,818 - INFO - Training stopped at epoch 50 for config: {'pooling_method': 'linear', 'use_class': False}
+2024-11-14 07:54:06,818 - INFO - Grid eval for classifiers: Running experiment with dataset: SouthernProvinceTurtles, model: megadescriptor, pooling method: linear, use_class: False, learning rate: 0.002, batch size: 128
+2024-11-14 07:54:06,985 - INFO - Training stopped at epoch 50 for config: {'pooling_method': 'linear', 'use_class': False}
+2024-11-14 07:54:06,985 - INFO - Grid eval for classifiers: Running experiment with dataset: SouthernProvinceTurtles, model: megadescriptor, pooling method: linear, use_class: False, learning rate: 0.005, batch size: 128
+2024-11-14 07:54:07,029 - INFO - Training stopped at epoch 8 for config: {'pooling_method': 'linear', 'use_class': False}
+2024-11-14 07:54:07,029 - INFO - Grid eval for classifiers: Running experiment with dataset: SouthernProvinceTurtles, model: megadescriptor, pooling method: linear, use_class: False, learning rate: 0.01, batch size: 128
+2024-11-14 07:54:07,057 - INFO - Training stopped at epoch 3 for config: {'pooling_method': 'linear', 'use_class': False}
+2024-11-14 07:54:07,057 - INFO - Grid eval for classifiers: Running experiment with dataset: SouthernProvinceTurtles, model: megadescriptor, pooling method: linear, use_class: False, learning rate: 0.02, batch size: 128
+2024-11-14 07:54:07,085 - INFO - Training stopped at epoch 3 for config: {'pooling_method': 'linear', 'use_class': False}
+2024-11-14 07:54:07,085 - INFO - Grid eval for classifiers: Running experiment with dataset: SouthernProvinceTurtles, model: megadescriptor, pooling method: linear, use_class: False, learning rate: 0.05, batch size: 128
+2024-11-14 07:54:07,106 - INFO - Training stopped at epoch 1 for config: {'pooling_method': 'linear', 'use_class': False}
+2024-11-14 07:54:07,106 - INFO - Grid eval for classifiers: Running experiment with dataset: SouthernProvinceTurtles, model: megadescriptor, pooling method: linear, use_class: False, learning rate: 0.1, batch size: 128
+2024-11-14 07:54:07,126 - INFO - Training stopped at epoch 1 for config: {'pooling_method': 'linear', 'use_class': False}
+2024-11-14 07:54:07,127 - INFO - Best results for dataset SouthernProvinceTurtles and linear pooling method: {
+    "dataset": "SouthernProvinceTurtles",
+    "pooling_method": "linear",
+    "batch_size": 64,
+    "learning_rate": 0.001,
+    "best_epoch": 50,
+    "best_val_acc": 0.8266666666666667
+}
+2024-11-20 22:38:24,990 - INFO - Using device: cuda:0
+2024-11-20 22:38:24,990 - INFO - /home/avisund/data/wildlife_datasets/FriesianCattle2017/
+2024-11-20 22:38:25,021 - INFO - Dataset FriesianCattle2017 loaded successfully
+2024-11-20 22:38:25,028 - INFO - Dataset split successfully
+2024-11-20 22:38:25,031 - INFO - Dataloaders created successfully
+2024-11-20 22:38:26,945 - INFO - Loading pretrained weights from Hugging Face hub (BVRA/MegaDescriptor-L-384)
+2024-11-20 22:38:28,453 - INFO - Feature extractor loaded successfully
+2024-11-20 22:39:11,519 - INFO - Running experiment with dataset: FriesianCattle2017, model: megadescriptor, pooling method: linear, use_class: False
+2024-11-20 22:39:29,259 - INFO - Top-1 acc. for config: 0.9744
+2024-11-20 22:39:29,259 - INFO - ROC AUC for config: 0.9329
+2024-11-20 22:39:29,259 - INFO - /home/avisund/data/wildlife_datasets/AmvrakikosTurtles/
+2024-11-20 22:39:29,272 - INFO - Dataset AmvrakikosTurtles loaded successfully
+2024-11-20 22:39:29,278 - INFO - Dataset split successfully
+2024-11-20 22:39:29,282 - INFO - Dataloaders created successfully
+2024-11-20 22:39:31,175 - INFO - Loading pretrained weights from Hugging Face hub (BVRA/MegaDescriptor-L-384)
+2024-11-20 22:39:32,575 - INFO - Feature extractor loaded successfully
+2024-11-20 22:39:57,178 - INFO - Running experiment with dataset: AmvrakikosTurtles, model: megadescriptor, pooling method: linear, use_class: False
+2024-11-20 22:40:01,064 - INFO - Top-1 acc. for config: 0.3556
+2024-11-20 22:40:01,064 - INFO - ROC AUC for config: 0.4144
+2024-11-20 22:40:01,064 - INFO - /home/avisund/data/wildlife_datasets/ReunionTurtles/
+2024-11-20 22:40:01,094 - INFO - Dataset ReunionTurtles loaded successfully
+2024-11-20 22:40:01,102 - INFO - Dataset split successfully
+2024-11-20 22:40:01,105 - INFO - Dataloaders created successfully
+2024-11-20 22:40:02,665 - INFO - Loading pretrained weights from Hugging Face hub (BVRA/MegaDescriptor-L-384)
+2024-11-20 22:40:03,654 - INFO - Feature extractor loaded successfully
+2024-11-20 22:40:20,008 - INFO - Running experiment with dataset: ReunionTurtles, model: megadescriptor, pooling method: linear, use_class: False
+2024-11-20 22:40:26,666 - INFO - Top-1 acc. for config: 0.5733
+2024-11-20 22:40:26,666 - INFO - ROC AUC for config: 0.6581
+2024-11-20 22:40:26,666 - INFO - /home/avisund/data/wildlife_datasets/SouthernProvinceTurtles/
+2024-11-20 22:40:26,671 - INFO - Dataset SouthernProvinceTurtles loaded successfully
+2024-11-20 22:40:26,676 - INFO - Dataset split successfully
+2024-11-20 22:40:26,679 - INFO - Dataloaders created successfully
+2024-11-20 22:40:28,377 - INFO - Loading pretrained weights from Hugging Face hub (BVRA/MegaDescriptor-L-384)
+2024-11-20 22:40:29,271 - INFO - Feature extractor loaded successfully
+2024-11-20 22:40:52,223 - INFO - Running experiment with dataset: SouthernProvinceTurtles, model: megadescriptor, pooling method: linear, use_class: False
+2024-11-20 22:41:01,364 - INFO - Top-1 acc. for config: 0.7667
+2024-11-20 22:41:01,364 - INFO - ROC AUC for config: 0.6986
+2024-11-20 22:41:01,364 - INFO - /home/avisund/data/wildlife_datasets/SeaStarReID2023/
+2024-11-20 22:41:01,407 - INFO - Dataset SeaStarReID2023 loaded successfully
+2024-11-20 22:41:01,416 - INFO - Dataset split successfully
+2024-11-20 22:41:01,420 - INFO - Dataloaders created successfully
+2024-11-20 22:41:02,980 - INFO - Loading pretrained weights from Hugging Face hub (BVRA/MegaDescriptor-L-384)
+2024-11-20 22:41:03,848 - INFO - Feature extractor loaded successfully
+2024-11-20 22:43:44,411 - INFO - Running experiment with dataset: SeaStarReID2023, model: megadescriptor, pooling method: linear, use_class: False
+2024-11-20 22:44:26,156 - INFO - Top-1 acc. for config: 0.7464
+2024-11-20 22:44:26,156 - INFO - ROC AUC for config: 0.7701
+2024-12-11 19:16:08,881 - INFO - Using device: cuda:0
+2024-12-11 19:16:08,881 - INFO - /home/avisund/data/wildlife_datasets/FriesianCattle2017/
+2024-12-11 19:16:08,911 - INFO - Dataset FriesianCattle2017 loaded successfully
+2024-12-11 19:16:08,919 - INFO - Dataset split successfully
+2024-12-11 19:16:08,922 - INFO - Dataloaders created successfully
+2024-12-11 19:16:10,946 - INFO - Loading pretrained weights from Hugging Face hub (BVRA/MegaDescriptor-L-384)
+2024-12-11 19:16:13,160 - INFO - Feature extractor loaded successfully
+2024-12-11 19:17:09,435 - INFO - Running experiment with dataset: FriesianCattle2017, model: megadescriptor, pooling method: attentive, use_class: False
