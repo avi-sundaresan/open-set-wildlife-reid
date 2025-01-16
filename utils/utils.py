@@ -145,8 +145,6 @@ def train_val_linear_classifier(train_embeddings, train_labels, val_embeddings, 
             patch_tokens = patch_tokens.to(device).float()  
             class_token = class_token.to(device).float()    
             labels = labels.to(device).long()          
-            print(patch_tokens.shape)    
-            print(class_token.shape)
             
             optimizer.zero_grad()
             

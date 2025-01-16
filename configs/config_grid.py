@@ -2,16 +2,9 @@ import os
 
 MODEL = 'megadescriptor'
 
-# DATASETS = [
-#     'AmvrakikosTurtles',
-#     'ReunionTurtles',
-#     'SouthernProvinceTurtles'
-# ]
-
 DATASETS = [
-    'SeaTurtleIDHeads',
-    'SeaStarReID2023',
-    'ReunionTurtles'
+    'AmvrakikosTurtles',
+    'SouthernProvinceTurtles'
 ]
 
 ROOT_DIR = '/home/avisund/data/wildlife_datasets/'

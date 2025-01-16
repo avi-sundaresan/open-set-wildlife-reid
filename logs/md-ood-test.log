@@ -2163,3 +2163,570 @@
     "best_epoch": 27,
     "best_val_acc": 0.5555555555555556
 }
+2025-01-15 23:21:10,617 - INFO - Using device: cuda:1
+2025-01-15 23:21:10,617 - INFO - /home/avisund/data/wildlife_datasets/AmvrakikosTurtles/
+2025-01-15 23:21:10,630 - INFO - Dataset AmvrakikosTurtles loaded successfully
+2025-01-15 23:21:10,635 - INFO - Dataset split successfully
+2025-01-15 23:21:10,638 - INFO - Dataloaders created successfully
+2025-01-15 23:21:12,723 - INFO - Loading pretrained weights from Hugging Face hub (BVRA/MegaDescriptor-L-384)
+2025-01-15 23:21:14,999 - INFO - Feature extractor loaded successfully
+2025-01-15 23:21:44,330 - INFO - Embeddings computed successfully
+2025-01-15 23:21:44,331 - INFO - Grid eval for classifiers: Running experiment with dataset: AmvrakikosTurtles, model: megadescriptor, pooling method: linear, use_class: False, learning rate: 1e-05, batch size: 8
+2025-01-15 23:21:44,967 - INFO - Training stopped at epoch 50 for config: {'pooling_method': 'linear', 'use_class': False}. Validation accuracy: 0.14814814814814814.
+2025-01-15 23:21:44,967 - INFO - Grid eval for classifiers: Running experiment with dataset: AmvrakikosTurtles, model: megadescriptor, pooling method: linear, use_class: False, learning rate: 2e-05, batch size: 8
+2025-01-15 23:21:45,504 - INFO - Training stopped at epoch 50 for config: {'pooling_method': 'linear', 'use_class': False}. Validation accuracy: 0.18518518518518517.
+2025-01-15 23:21:45,504 - INFO - Grid eval for classifiers: Running experiment with dataset: AmvrakikosTurtles, model: megadescriptor, pooling method: linear, use_class: False, learning rate: 5e-05, batch size: 8
+2025-01-15 23:21:46,042 - INFO - Training stopped at epoch 50 for config: {'pooling_method': 'linear', 'use_class': False}. Validation accuracy: 0.25925925925925924.
+2025-01-15 23:21:46,042 - INFO - Grid eval for classifiers: Running experiment with dataset: AmvrakikosTurtles, model: megadescriptor, pooling method: linear, use_class: False, learning rate: 0.0001, batch size: 8
+2025-01-15 23:21:46,586 - INFO - Training stopped at epoch 50 for config: {'pooling_method': 'linear', 'use_class': False}. Validation accuracy: 0.2962962962962963.
+2025-01-15 23:21:46,586 - INFO - Grid eval for classifiers: Running experiment with dataset: AmvrakikosTurtles, model: megadescriptor, pooling method: linear, use_class: False, learning rate: 0.0002, batch size: 8
+2025-01-15 23:21:47,075 - INFO - Training stopped at epoch 40 for config: {'pooling_method': 'linear', 'use_class': False}. Validation accuracy: 0.3333333333333333.
+2025-01-15 23:21:47,075 - INFO - Grid eval for classifiers: Running experiment with dataset: AmvrakikosTurtles, model: megadescriptor, pooling method: linear, use_class: False, learning rate: 0.0005, batch size: 8
+2025-01-15 23:21:47,282 - INFO - Training stopped at epoch 14 for config: {'pooling_method': 'linear', 'use_class': False}. Validation accuracy: 0.2962962962962963.
+2025-01-15 23:21:47,282 - INFO - Grid eval for classifiers: Running experiment with dataset: AmvrakikosTurtles, model: megadescriptor, pooling method: linear, use_class: False, learning rate: 0.001, batch size: 8
+2025-01-15 23:21:47,402 - INFO - Training stopped at epoch 6 for config: {'pooling_method': 'linear', 'use_class': False}. Validation accuracy: 0.37037037037037035.
+2025-01-15 23:21:47,402 - INFO - Grid eval for classifiers: Running experiment with dataset: AmvrakikosTurtles, model: megadescriptor, pooling method: linear, use_class: False, learning rate: 0.002, batch size: 8
+2025-01-15 23:21:47,501 - INFO - Training stopped at epoch 4 for config: {'pooling_method': 'linear', 'use_class': False}. Validation accuracy: 0.3333333333333333.
+2025-01-15 23:21:47,501 - INFO - Grid eval for classifiers: Running experiment with dataset: AmvrakikosTurtles, model: megadescriptor, pooling method: linear, use_class: False, learning rate: 0.005, batch size: 8
+2025-01-15 23:21:48,044 - INFO - Training stopped at epoch 50 for config: {'pooling_method': 'linear', 'use_class': False}. Validation accuracy: 0.3333333333333333.
+2025-01-15 23:21:48,044 - INFO - Grid eval for classifiers: Running experiment with dataset: AmvrakikosTurtles, model: megadescriptor, pooling method: linear, use_class: False, learning rate: 0.01, batch size: 8
+2025-01-15 23:21:48,110 - INFO - Training stopped at epoch 1 for config: {'pooling_method': 'linear', 'use_class': False}. Validation accuracy: 0.3333333333333333.
+2025-01-15 23:21:48,110 - INFO - Grid eval for classifiers: Running experiment with dataset: AmvrakikosTurtles, model: megadescriptor, pooling method: linear, use_class: False, learning rate: 0.02, batch size: 8
+2025-01-15 23:21:48,176 - INFO - Training stopped at epoch 1 for config: {'pooling_method': 'linear', 'use_class': False}. Validation accuracy: 0.2962962962962963.
+2025-01-15 23:21:48,176 - INFO - Grid eval for classifiers: Running experiment with dataset: AmvrakikosTurtles, model: megadescriptor, pooling method: linear, use_class: False, learning rate: 0.05, batch size: 8
+2025-01-15 23:21:48,243 - INFO - Training stopped at epoch 1 for config: {'pooling_method': 'linear', 'use_class': False}. Validation accuracy: 0.25925925925925924.
+2025-01-15 23:21:48,243 - INFO - Grid eval for classifiers: Running experiment with dataset: AmvrakikosTurtles, model: megadescriptor, pooling method: linear, use_class: False, learning rate: 0.1, batch size: 8
+2025-01-15 23:21:48,308 - INFO - Training stopped at epoch 1 for config: {'pooling_method': 'linear', 'use_class': False}. Validation accuracy: 0.18518518518518517.
+2025-01-15 23:21:48,308 - INFO - Grid eval for classifiers: Running experiment with dataset: AmvrakikosTurtles, model: megadescriptor, pooling method: linear, use_class: False, learning rate: 1e-05, batch size: 16
+2025-01-15 23:21:48,588 - INFO - Training stopped at epoch 50 for config: {'pooling_method': 'linear', 'use_class': False}. Validation accuracy: 0.07407407407407407.
+2025-01-15 23:21:48,588 - INFO - Grid eval for classifiers: Running experiment with dataset: AmvrakikosTurtles, model: megadescriptor, pooling method: linear, use_class: False, learning rate: 2e-05, batch size: 16
+2025-01-15 23:21:48,870 - INFO - Training stopped at epoch 50 for config: {'pooling_method': 'linear', 'use_class': False}. Validation accuracy: 0.14814814814814814.
+2025-01-15 23:21:48,870 - INFO - Grid eval for classifiers: Running experiment with dataset: AmvrakikosTurtles, model: megadescriptor, pooling method: linear, use_class: False, learning rate: 5e-05, batch size: 16
+2025-01-15 23:21:49,150 - INFO - Training stopped at epoch 50 for config: {'pooling_method': 'linear', 'use_class': False}. Validation accuracy: 0.14814814814814814.
+2025-01-15 23:21:49,150 - INFO - Grid eval for classifiers: Running experiment with dataset: AmvrakikosTurtles, model: megadescriptor, pooling method: linear, use_class: False, learning rate: 0.0001, batch size: 16
+2025-01-15 23:21:49,431 - INFO - Training stopped at epoch 50 for config: {'pooling_method': 'linear', 'use_class': False}. Validation accuracy: 0.25925925925925924.
+2025-01-15 23:21:49,431 - INFO - Grid eval for classifiers: Running experiment with dataset: AmvrakikosTurtles, model: megadescriptor, pooling method: linear, use_class: False, learning rate: 0.0002, batch size: 16
+2025-01-15 23:21:49,713 - INFO - Training stopped at epoch 50 for config: {'pooling_method': 'linear', 'use_class': False}. Validation accuracy: 0.2962962962962963.
+2025-01-15 23:21:49,713 - INFO - Grid eval for classifiers: Running experiment with dataset: AmvrakikosTurtles, model: megadescriptor, pooling method: linear, use_class: False, learning rate: 0.0005, batch size: 16
+2025-01-15 23:21:49,882 - INFO - Training stopped at epoch 25 for config: {'pooling_method': 'linear', 'use_class': False}. Validation accuracy: 0.25925925925925924.
+2025-01-15 23:21:49,882 - INFO - Grid eval for classifiers: Running experiment with dataset: AmvrakikosTurtles, model: megadescriptor, pooling method: linear, use_class: False, learning rate: 0.001, batch size: 16
+2025-01-15 23:21:49,961 - INFO - Training stopped at epoch 9 for config: {'pooling_method': 'linear', 'use_class': False}. Validation accuracy: 0.25925925925925924.
+2025-01-15 23:21:49,961 - INFO - Grid eval for classifiers: Running experiment with dataset: AmvrakikosTurtles, model: megadescriptor, pooling method: linear, use_class: False, learning rate: 0.002, batch size: 16
+2025-01-15 23:21:50,019 - INFO - Training stopped at epoch 5 for config: {'pooling_method': 'linear', 'use_class': False}. Validation accuracy: 0.4074074074074074.
+2025-01-15 23:21:50,019 - INFO - Grid eval for classifiers: Running experiment with dataset: AmvrakikosTurtles, model: megadescriptor, pooling method: linear, use_class: False, learning rate: 0.005, batch size: 16
+2025-01-15 23:21:50,065 - INFO - Training stopped at epoch 3 for config: {'pooling_method': 'linear', 'use_class': False}. Validation accuracy: 0.3333333333333333.
+2025-01-15 23:21:50,065 - INFO - Grid eval for classifiers: Running experiment with dataset: AmvrakikosTurtles, model: megadescriptor, pooling method: linear, use_class: False, learning rate: 0.01, batch size: 16
+2025-01-15 23:21:50,100 - INFO - Training stopped at epoch 1 for config: {'pooling_method': 'linear', 'use_class': False}. Validation accuracy: 0.3333333333333333.
+2025-01-15 23:21:50,100 - INFO - Grid eval for classifiers: Running experiment with dataset: AmvrakikosTurtles, model: megadescriptor, pooling method: linear, use_class: False, learning rate: 0.02, batch size: 16
+2025-01-15 23:21:50,135 - INFO - Training stopped at epoch 1 for config: {'pooling_method': 'linear', 'use_class': False}. Validation accuracy: 0.2962962962962963.
+2025-01-15 23:21:50,135 - INFO - Grid eval for classifiers: Running experiment with dataset: AmvrakikosTurtles, model: megadescriptor, pooling method: linear, use_class: False, learning rate: 0.05, batch size: 16
+2025-01-15 23:21:50,170 - INFO - Training stopped at epoch 1 for config: {'pooling_method': 'linear', 'use_class': False}. Validation accuracy: 0.25925925925925924.
+2025-01-15 23:21:50,170 - INFO - Grid eval for classifiers: Running experiment with dataset: AmvrakikosTurtles, model: megadescriptor, pooling method: linear, use_class: False, learning rate: 0.1, batch size: 16
+2025-01-15 23:21:50,204 - INFO - Training stopped at epoch 1 for config: {'pooling_method': 'linear', 'use_class': False}. Validation accuracy: 0.25925925925925924.
+2025-01-15 23:21:50,204 - INFO - Grid eval for classifiers: Running experiment with dataset: AmvrakikosTurtles, model: megadescriptor, pooling method: linear, use_class: False, learning rate: 1e-05, batch size: 32
+2025-01-15 23:21:50,376 - INFO - Training stopped at epoch 50 for config: {'pooling_method': 'linear', 'use_class': False}. Validation accuracy: 0.0.
+2025-01-15 23:21:50,376 - INFO - Grid eval for classifiers: Running experiment with dataset: AmvrakikosTurtles, model: megadescriptor, pooling method: linear, use_class: False, learning rate: 2e-05, batch size: 32
+2025-01-15 23:21:50,547 - INFO - Training stopped at epoch 50 for config: {'pooling_method': 'linear', 'use_class': False}. Validation accuracy: 0.14814814814814814.
+2025-01-15 23:21:50,547 - INFO - Grid eval for classifiers: Running experiment with dataset: AmvrakikosTurtles, model: megadescriptor, pooling method: linear, use_class: False, learning rate: 5e-05, batch size: 32
+2025-01-15 23:21:50,718 - INFO - Training stopped at epoch 50 for config: {'pooling_method': 'linear', 'use_class': False}. Validation accuracy: 0.1111111111111111.
+2025-01-15 23:21:50,718 - INFO - Grid eval for classifiers: Running experiment with dataset: AmvrakikosTurtles, model: megadescriptor, pooling method: linear, use_class: False, learning rate: 0.0001, batch size: 32
+2025-01-15 23:21:50,888 - INFO - Training stopped at epoch 50 for config: {'pooling_method': 'linear', 'use_class': False}. Validation accuracy: 0.25925925925925924.
+2025-01-15 23:21:50,888 - INFO - Grid eval for classifiers: Running experiment with dataset: AmvrakikosTurtles, model: megadescriptor, pooling method: linear, use_class: False, learning rate: 0.0002, batch size: 32
+2025-01-15 23:21:51,059 - INFO - Training stopped at epoch 50 for config: {'pooling_method': 'linear', 'use_class': False}. Validation accuracy: 0.2222222222222222.
+2025-01-15 23:21:51,059 - INFO - Grid eval for classifiers: Running experiment with dataset: AmvrakikosTurtles, model: megadescriptor, pooling method: linear, use_class: False, learning rate: 0.0005, batch size: 32
+2025-01-15 23:21:51,162 - INFO - Training stopped at epoch 25 for config: {'pooling_method': 'linear', 'use_class': False}. Validation accuracy: 0.2962962962962963.
+2025-01-15 23:21:51,162 - INFO - Grid eval for classifiers: Running experiment with dataset: AmvrakikosTurtles, model: megadescriptor, pooling method: linear, use_class: False, learning rate: 0.001, batch size: 32
+2025-01-15 23:21:51,221 - INFO - Training stopped at epoch 12 for config: {'pooling_method': 'linear', 'use_class': False}. Validation accuracy: 0.3333333333333333.
+2025-01-15 23:21:51,221 - INFO - Grid eval for classifiers: Running experiment with dataset: AmvrakikosTurtles, model: megadescriptor, pooling method: linear, use_class: False, learning rate: 0.002, batch size: 32
+2025-01-15 23:21:51,263 - INFO - Training stopped at epoch 7 for config: {'pooling_method': 'linear', 'use_class': False}. Validation accuracy: 0.37037037037037035.
+2025-01-15 23:21:51,263 - INFO - Grid eval for classifiers: Running experiment with dataset: AmvrakikosTurtles, model: megadescriptor, pooling method: linear, use_class: False, learning rate: 0.005, batch size: 32
+2025-01-15 23:21:51,291 - INFO - Training stopped at epoch 3 for config: {'pooling_method': 'linear', 'use_class': False}. Validation accuracy: 0.3333333333333333.
+2025-01-15 23:21:51,291 - INFO - Grid eval for classifiers: Running experiment with dataset: AmvrakikosTurtles, model: megadescriptor, pooling method: linear, use_class: False, learning rate: 0.01, batch size: 32
+2025-01-15 23:21:51,312 - INFO - Training stopped at epoch 1 for config: {'pooling_method': 'linear', 'use_class': False}. Validation accuracy: 0.25925925925925924.
+2025-01-15 23:21:51,312 - INFO - Grid eval for classifiers: Running experiment with dataset: AmvrakikosTurtles, model: megadescriptor, pooling method: linear, use_class: False, learning rate: 0.02, batch size: 32
+2025-01-15 23:21:51,334 - INFO - Training stopped at epoch 1 for config: {'pooling_method': 'linear', 'use_class': False}. Validation accuracy: 0.25925925925925924.
+2025-01-15 23:21:51,334 - INFO - Grid eval for classifiers: Running experiment with dataset: AmvrakikosTurtles, model: megadescriptor, pooling method: linear, use_class: False, learning rate: 0.05, batch size: 32
+2025-01-15 23:21:51,355 - INFO - Training stopped at epoch 1 for config: {'pooling_method': 'linear', 'use_class': False}. Validation accuracy: 0.2962962962962963.
+2025-01-15 23:21:51,355 - INFO - Grid eval for classifiers: Running experiment with dataset: AmvrakikosTurtles, model: megadescriptor, pooling method: linear, use_class: False, learning rate: 0.1, batch size: 32
+2025-01-15 23:21:51,377 - INFO - Training stopped at epoch 1 for config: {'pooling_method': 'linear', 'use_class': False}. Validation accuracy: 0.3333333333333333.
+2025-01-15 23:21:51,377 - INFO - Grid eval for classifiers: Running experiment with dataset: AmvrakikosTurtles, model: megadescriptor, pooling method: linear, use_class: False, learning rate: 1e-05, batch size: 64
+2025-01-15 23:21:51,487 - INFO - Training stopped at epoch 50 for config: {'pooling_method': 'linear', 'use_class': False}. Validation accuracy: 0.14814814814814814.
+2025-01-15 23:21:51,487 - INFO - Grid eval for classifiers: Running experiment with dataset: AmvrakikosTurtles, model: megadescriptor, pooling method: linear, use_class: False, learning rate: 2e-05, batch size: 64
+2025-01-15 23:21:51,593 - INFO - Training stopped at epoch 50 for config: {'pooling_method': 'linear', 'use_class': False}. Validation accuracy: 0.1111111111111111.
+2025-01-15 23:21:51,593 - INFO - Grid eval for classifiers: Running experiment with dataset: AmvrakikosTurtles, model: megadescriptor, pooling method: linear, use_class: False, learning rate: 5e-05, batch size: 64
+2025-01-15 23:21:51,699 - INFO - Training stopped at epoch 50 for config: {'pooling_method': 'linear', 'use_class': False}. Validation accuracy: 0.07407407407407407.
+2025-01-15 23:21:51,699 - INFO - Grid eval for classifiers: Running experiment with dataset: AmvrakikosTurtles, model: megadescriptor, pooling method: linear, use_class: False, learning rate: 0.0001, batch size: 64
+2025-01-15 23:21:51,804 - INFO - Training stopped at epoch 50 for config: {'pooling_method': 'linear', 'use_class': False}. Validation accuracy: 0.2962962962962963.
+2025-01-15 23:21:51,804 - INFO - Grid eval for classifiers: Running experiment with dataset: AmvrakikosTurtles, model: megadescriptor, pooling method: linear, use_class: False, learning rate: 0.0002, batch size: 64
+2025-01-15 23:21:51,909 - INFO - Training stopped at epoch 50 for config: {'pooling_method': 'linear', 'use_class': False}. Validation accuracy: 0.2962962962962963.
+2025-01-15 23:21:51,909 - INFO - Grid eval for classifiers: Running experiment with dataset: AmvrakikosTurtles, model: megadescriptor, pooling method: linear, use_class: False, learning rate: 0.0005, batch size: 64
+2025-01-15 23:21:51,992 - INFO - Training stopped at epoch 35 for config: {'pooling_method': 'linear', 'use_class': False}. Validation accuracy: 0.2962962962962963.
+2025-01-15 23:21:51,992 - INFO - Grid eval for classifiers: Running experiment with dataset: AmvrakikosTurtles, model: megadescriptor, pooling method: linear, use_class: False, learning rate: 0.001, batch size: 64
+2025-01-15 23:21:52,039 - INFO - Training stopped at epoch 17 for config: {'pooling_method': 'linear', 'use_class': False}. Validation accuracy: 0.37037037037037035.
+2025-01-15 23:21:52,039 - INFO - Grid eval for classifiers: Running experiment with dataset: AmvrakikosTurtles, model: megadescriptor, pooling method: linear, use_class: False, learning rate: 0.002, batch size: 64
+2025-01-15 23:21:52,068 - INFO - Training stopped at epoch 9 for config: {'pooling_method': 'linear', 'use_class': False}. Validation accuracy: 0.4074074074074074.
+2025-01-15 23:21:52,068 - INFO - Grid eval for classifiers: Running experiment with dataset: AmvrakikosTurtles, model: megadescriptor, pooling method: linear, use_class: False, learning rate: 0.005, batch size: 64
+2025-01-15 23:21:52,088 - INFO - Training stopped at epoch 4 for config: {'pooling_method': 'linear', 'use_class': False}. Validation accuracy: 0.37037037037037035.
+2025-01-15 23:21:52,088 - INFO - Grid eval for classifiers: Running experiment with dataset: AmvrakikosTurtles, model: megadescriptor, pooling method: linear, use_class: False, learning rate: 0.01, batch size: 64
+2025-01-15 23:21:52,103 - INFO - Training stopped at epoch 2 for config: {'pooling_method': 'linear', 'use_class': False}. Validation accuracy: 0.4074074074074074.
+2025-01-15 23:21:52,103 - INFO - Grid eval for classifiers: Running experiment with dataset: AmvrakikosTurtles, model: megadescriptor, pooling method: linear, use_class: False, learning rate: 0.02, batch size: 64
+2025-01-15 23:21:52,117 - INFO - Training stopped at epoch 1 for config: {'pooling_method': 'linear', 'use_class': False}. Validation accuracy: 0.3333333333333333.
+2025-01-15 23:21:52,117 - INFO - Grid eval for classifiers: Running experiment with dataset: AmvrakikosTurtles, model: megadescriptor, pooling method: linear, use_class: False, learning rate: 0.05, batch size: 64
+2025-01-15 23:21:52,130 - INFO - Training stopped at epoch 1 for config: {'pooling_method': 'linear', 'use_class': False}. Validation accuracy: 0.3333333333333333.
+2025-01-15 23:21:52,130 - INFO - Grid eval for classifiers: Running experiment with dataset: AmvrakikosTurtles, model: megadescriptor, pooling method: linear, use_class: False, learning rate: 0.1, batch size: 64
+2025-01-15 23:21:52,143 - INFO - Training stopped at epoch 1 for config: {'pooling_method': 'linear', 'use_class': False}. Validation accuracy: 0.3333333333333333.
+2025-01-15 23:21:52,143 - INFO - Grid eval for classifiers: Running experiment with dataset: AmvrakikosTurtles, model: megadescriptor, pooling method: linear, use_class: False, learning rate: 1e-05, batch size: 128
+2025-01-15 23:21:52,216 - INFO - Training stopped at epoch 50 for config: {'pooling_method': 'linear', 'use_class': False}. Validation accuracy: 0.0.
+2025-01-15 23:21:52,216 - INFO - Grid eval for classifiers: Running experiment with dataset: AmvrakikosTurtles, model: megadescriptor, pooling method: linear, use_class: False, learning rate: 2e-05, batch size: 128
+2025-01-15 23:21:52,288 - INFO - Training stopped at epoch 50 for config: {'pooling_method': 'linear', 'use_class': False}. Validation accuracy: 0.07407407407407407.
+2025-01-15 23:21:52,288 - INFO - Grid eval for classifiers: Running experiment with dataset: AmvrakikosTurtles, model: megadescriptor, pooling method: linear, use_class: False, learning rate: 5e-05, batch size: 128
+2025-01-15 23:21:52,360 - INFO - Training stopped at epoch 50 for config: {'pooling_method': 'linear', 'use_class': False}. Validation accuracy: 0.1111111111111111.
+2025-01-15 23:21:52,360 - INFO - Grid eval for classifiers: Running experiment with dataset: AmvrakikosTurtles, model: megadescriptor, pooling method: linear, use_class: False, learning rate: 0.0001, batch size: 128
+2025-01-15 23:21:52,433 - INFO - Training stopped at epoch 50 for config: {'pooling_method': 'linear', 'use_class': False}. Validation accuracy: 0.14814814814814814.
+2025-01-15 23:21:52,433 - INFO - Grid eval for classifiers: Running experiment with dataset: AmvrakikosTurtles, model: megadescriptor, pooling method: linear, use_class: False, learning rate: 0.0002, batch size: 128
+2025-01-15 23:21:52,504 - INFO - Training stopped at epoch 50 for config: {'pooling_method': 'linear', 'use_class': False}. Validation accuracy: 0.2222222222222222.
+2025-01-15 23:21:52,504 - INFO - Grid eval for classifiers: Running experiment with dataset: AmvrakikosTurtles, model: megadescriptor, pooling method: linear, use_class: False, learning rate: 0.0005, batch size: 128
+2025-01-15 23:21:52,568 - INFO - Training stopped at epoch 39 for config: {'pooling_method': 'linear', 'use_class': False}. Validation accuracy: 0.2962962962962963.
+2025-01-15 23:21:52,568 - INFO - Grid eval for classifiers: Running experiment with dataset: AmvrakikosTurtles, model: megadescriptor, pooling method: linear, use_class: False, learning rate: 0.001, batch size: 128
+2025-01-15 23:21:52,606 - INFO - Training stopped at epoch 21 for config: {'pooling_method': 'linear', 'use_class': False}. Validation accuracy: 0.3333333333333333.
+2025-01-15 23:21:52,606 - INFO - Grid eval for classifiers: Running experiment with dataset: AmvrakikosTurtles, model: megadescriptor, pooling method: linear, use_class: False, learning rate: 0.002, batch size: 128
+2025-01-15 23:21:52,629 - INFO - Training stopped at epoch 11 for config: {'pooling_method': 'linear', 'use_class': False}. Validation accuracy: 0.2962962962962963.
+2025-01-15 23:21:52,629 - INFO - Grid eval for classifiers: Running experiment with dataset: AmvrakikosTurtles, model: megadescriptor, pooling method: linear, use_class: False, learning rate: 0.005, batch size: 128
+2025-01-15 23:21:52,643 - INFO - Training stopped at epoch 4 for config: {'pooling_method': 'linear', 'use_class': False}. Validation accuracy: 0.4074074074074074.
+2025-01-15 23:21:52,643 - INFO - Grid eval for classifiers: Running experiment with dataset: AmvrakikosTurtles, model: megadescriptor, pooling method: linear, use_class: False, learning rate: 0.01, batch size: 128
+2025-01-15 23:21:52,654 - INFO - Training stopped at epoch 2 for config: {'pooling_method': 'linear', 'use_class': False}. Validation accuracy: 0.2962962962962963.
+2025-01-15 23:21:52,654 - INFO - Grid eval for classifiers: Running experiment with dataset: AmvrakikosTurtles, model: megadescriptor, pooling method: linear, use_class: False, learning rate: 0.02, batch size: 128
+2025-01-15 23:21:52,663 - INFO - Training stopped at epoch 1 for config: {'pooling_method': 'linear', 'use_class': False}. Validation accuracy: 0.37037037037037035.
+2025-01-15 23:21:52,663 - INFO - Grid eval for classifiers: Running experiment with dataset: AmvrakikosTurtles, model: megadescriptor, pooling method: linear, use_class: False, learning rate: 0.05, batch size: 128
+2025-01-15 23:21:52,673 - INFO - Training stopped at epoch 1 for config: {'pooling_method': 'linear', 'use_class': False}. Validation accuracy: 0.2962962962962963.
+2025-01-15 23:21:52,673 - INFO - Grid eval for classifiers: Running experiment with dataset: AmvrakikosTurtles, model: megadescriptor, pooling method: linear, use_class: False, learning rate: 0.1, batch size: 128
+2025-01-15 23:21:52,682 - INFO - Training stopped at epoch 1 for config: {'pooling_method': 'linear', 'use_class': False}. Validation accuracy: 0.18518518518518517.
+2025-01-15 23:21:52,682 - INFO - Best results for dataset AmvrakikosTurtles and linear pooling method: {
+    "dataset": "AmvrakikosTurtles",
+    "pooling_method": "linear",
+    "batch_size": 16,
+    "learning_rate": 0.002,
+    "best_epoch": 5,
+    "best_val_acc": 0.4074074074074074
+}
+2025-01-15 23:21:52,682 - INFO - Grid eval for classifiers: Running experiment with dataset: AmvrakikosTurtles, model: megadescriptor, pooling method: attentive, use_class: False, learning rate: 1e-05, batch size: 8
+2025-01-15 23:21:55,337 - INFO - Training stopped at epoch 50 for config: {'pooling_method': 'attentive', 'use_class': False}.  Validation accuracy: 0.2962962962962963.
+2025-01-15 23:21:55,337 - INFO - Grid eval for classifiers: Running experiment with dataset: AmvrakikosTurtles, model: megadescriptor, pooling method: attentive, use_class: False, learning rate: 2e-05, batch size: 8
+2025-01-15 23:21:57,105 - INFO - Training stopped at epoch 28 for config: {'pooling_method': 'attentive', 'use_class': False}.  Validation accuracy: 0.4074074074074074.
+2025-01-15 23:21:57,105 - INFO - Grid eval for classifiers: Running experiment with dataset: AmvrakikosTurtles, model: megadescriptor, pooling method: attentive, use_class: False, learning rate: 5e-05, batch size: 8
+2025-01-15 23:21:57,947 - INFO - Training stopped at epoch 10 for config: {'pooling_method': 'attentive', 'use_class': False}.  Validation accuracy: 0.37037037037037035.
+2025-01-15 23:21:57,947 - INFO - Grid eval for classifiers: Running experiment with dataset: AmvrakikosTurtles, model: megadescriptor, pooling method: attentive, use_class: False, learning rate: 0.0001, batch size: 8
+2025-01-15 23:21:58,585 - INFO - Training stopped at epoch 6 for config: {'pooling_method': 'attentive', 'use_class': False}.  Validation accuracy: 0.4074074074074074.
+2025-01-15 23:21:58,585 - INFO - Grid eval for classifiers: Running experiment with dataset: AmvrakikosTurtles, model: megadescriptor, pooling method: attentive, use_class: False, learning rate: 0.0002, batch size: 8
+2025-01-15 23:21:59,069 - INFO - Training stopped at epoch 3 for config: {'pooling_method': 'attentive', 'use_class': False}.  Validation accuracy: 0.4074074074074074.
+2025-01-15 23:21:59,070 - INFO - Grid eval for classifiers: Running experiment with dataset: AmvrakikosTurtles, model: megadescriptor, pooling method: attentive, use_class: False, learning rate: 0.0005, batch size: 8
+2025-01-15 23:21:59,455 - INFO - Training stopped at epoch 1 for config: {'pooling_method': 'attentive', 'use_class': False}.  Validation accuracy: 0.37037037037037035.
+2025-01-15 23:21:59,456 - INFO - Grid eval for classifiers: Running experiment with dataset: AmvrakikosTurtles, model: megadescriptor, pooling method: attentive, use_class: False, learning rate: 0.001, batch size: 8
+2025-01-15 23:21:59,837 - INFO - Training stopped at epoch 1 for config: {'pooling_method': 'attentive', 'use_class': False}.  Validation accuracy: 0.2962962962962963.
+2025-01-15 23:21:59,837 - INFO - Grid eval for classifiers: Running experiment with dataset: AmvrakikosTurtles, model: megadescriptor, pooling method: attentive, use_class: False, learning rate: 0.002, batch size: 8
+2025-01-15 23:22:00,219 - INFO - Training stopped at epoch 1 for config: {'pooling_method': 'attentive', 'use_class': False}.  Validation accuracy: 0.2222222222222222.
+2025-01-15 23:22:00,219 - INFO - Grid eval for classifiers: Running experiment with dataset: AmvrakikosTurtles, model: megadescriptor, pooling method: attentive, use_class: False, learning rate: 0.005, batch size: 8
+2025-01-15 23:22:00,650 - INFO - Training stopped at epoch 2 for config: {'pooling_method': 'attentive', 'use_class': False}.  Validation accuracy: 0.14814814814814814.
+2025-01-15 23:22:00,650 - INFO - Grid eval for classifiers: Running experiment with dataset: AmvrakikosTurtles, model: megadescriptor, pooling method: attentive, use_class: False, learning rate: 0.01, batch size: 8
+2025-01-15 23:22:01,031 - INFO - Training stopped at epoch 1 for config: {'pooling_method': 'attentive', 'use_class': False}.  Validation accuracy: 0.037037037037037035.
+2025-01-15 23:22:01,032 - INFO - Grid eval for classifiers: Running experiment with dataset: AmvrakikosTurtles, model: megadescriptor, pooling method: attentive, use_class: False, learning rate: 0.02, batch size: 8
+2025-01-15 23:22:01,418 - INFO - Training stopped at epoch 1 for config: {'pooling_method': 'attentive', 'use_class': False}.  Validation accuracy: 0.07407407407407407.
+2025-01-15 23:22:01,418 - INFO - Grid eval for classifiers: Running experiment with dataset: AmvrakikosTurtles, model: megadescriptor, pooling method: attentive, use_class: False, learning rate: 0.05, batch size: 8
+2025-01-15 23:22:01,798 - INFO - Training stopped at epoch 1 for config: {'pooling_method': 'attentive', 'use_class': False}.  Validation accuracy: 0.14814814814814814.
+2025-01-15 23:22:01,798 - INFO - Grid eval for classifiers: Running experiment with dataset: AmvrakikosTurtles, model: megadescriptor, pooling method: attentive, use_class: False, learning rate: 0.1, batch size: 8
+2025-01-15 23:22:02,178 - INFO - Training stopped at epoch 1 for config: {'pooling_method': 'attentive', 'use_class': False}.  Validation accuracy: 0.07407407407407407.
+2025-01-15 23:22:02,178 - INFO - Grid eval for classifiers: Running experiment with dataset: AmvrakikosTurtles, model: megadescriptor, pooling method: attentive, use_class: False, learning rate: 1e-05, batch size: 16
+2025-01-15 23:22:04,218 - INFO - Training stopped at epoch 50 for config: {'pooling_method': 'attentive', 'use_class': False}.  Validation accuracy: 0.2962962962962963.
+2025-01-15 23:22:04,218 - INFO - Grid eval for classifiers: Running experiment with dataset: AmvrakikosTurtles, model: megadescriptor, pooling method: attentive, use_class: False, learning rate: 2e-05, batch size: 16
+2025-01-15 23:22:06,259 - INFO - Training stopped at epoch 50 for config: {'pooling_method': 'attentive', 'use_class': False}.  Validation accuracy: 0.4074074074074074.
+2025-01-15 23:22:06,259 - INFO - Grid eval for classifiers: Running experiment with dataset: AmvrakikosTurtles, model: megadescriptor, pooling method: attentive, use_class: False, learning rate: 5e-05, batch size: 16
+2025-01-15 23:22:07,714 - INFO - Training stopped at epoch 30 for config: {'pooling_method': 'attentive', 'use_class': False}.  Validation accuracy: 0.37037037037037035.
+2025-01-15 23:22:07,714 - INFO - Grid eval for classifiers: Running experiment with dataset: AmvrakikosTurtles, model: megadescriptor, pooling method: attentive, use_class: False, learning rate: 0.0001, batch size: 16
+2025-01-15 23:22:08,339 - INFO - Training stopped at epoch 9 for config: {'pooling_method': 'attentive', 'use_class': False}.  Validation accuracy: 0.37037037037037035.
+2025-01-15 23:22:08,339 - INFO - Grid eval for classifiers: Running experiment with dataset: AmvrakikosTurtles, model: megadescriptor, pooling method: attentive, use_class: False, learning rate: 0.0002, batch size: 16
+2025-01-15 23:22:08,808 - INFO - Training stopped at epoch 5 for config: {'pooling_method': 'attentive', 'use_class': False}.  Validation accuracy: 0.37037037037037035.
+2025-01-15 23:22:08,808 - INFO - Grid eval for classifiers: Running experiment with dataset: AmvrakikosTurtles, model: megadescriptor, pooling method: attentive, use_class: False, learning rate: 0.0005, batch size: 16
+2025-01-15 23:22:09,158 - INFO - Training stopped at epoch 2 for config: {'pooling_method': 'attentive', 'use_class': False}.  Validation accuracy: 0.37037037037037035.
+2025-01-15 23:22:09,158 - INFO - Grid eval for classifiers: Running experiment with dataset: AmvrakikosTurtles, model: megadescriptor, pooling method: attentive, use_class: False, learning rate: 0.001, batch size: 16
+2025-01-15 23:22:09,469 - INFO - Training stopped at epoch 1 for config: {'pooling_method': 'attentive', 'use_class': False}.  Validation accuracy: 0.25925925925925924.
+2025-01-15 23:22:09,470 - INFO - Grid eval for classifiers: Running experiment with dataset: AmvrakikosTurtles, model: megadescriptor, pooling method: attentive, use_class: False, learning rate: 0.002, batch size: 16
+2025-01-15 23:22:09,780 - INFO - Training stopped at epoch 1 for config: {'pooling_method': 'attentive', 'use_class': False}.  Validation accuracy: 0.25925925925925924.
+2025-01-15 23:22:09,780 - INFO - Grid eval for classifiers: Running experiment with dataset: AmvrakikosTurtles, model: megadescriptor, pooling method: attentive, use_class: False, learning rate: 0.005, batch size: 16
+2025-01-15 23:22:10,248 - INFO - Training stopped at epoch 5 for config: {'pooling_method': 'attentive', 'use_class': False}.  Validation accuracy: 0.14814814814814814.
+2025-01-15 23:22:10,248 - INFO - Grid eval for classifiers: Running experiment with dataset: AmvrakikosTurtles, model: megadescriptor, pooling method: attentive, use_class: False, learning rate: 0.01, batch size: 16
+2025-01-15 23:22:10,558 - INFO - Training stopped at epoch 1 for config: {'pooling_method': 'attentive', 'use_class': False}.  Validation accuracy: 0.037037037037037035.
+2025-01-15 23:22:10,558 - INFO - Grid eval for classifiers: Running experiment with dataset: AmvrakikosTurtles, model: megadescriptor, pooling method: attentive, use_class: False, learning rate: 0.02, batch size: 16
+2025-01-15 23:22:10,867 - INFO - Training stopped at epoch 1 for config: {'pooling_method': 'attentive', 'use_class': False}.  Validation accuracy: 0.1111111111111111.
+2025-01-15 23:22:10,867 - INFO - Grid eval for classifiers: Running experiment with dataset: AmvrakikosTurtles, model: megadescriptor, pooling method: attentive, use_class: False, learning rate: 0.05, batch size: 16
+2025-01-15 23:22:11,176 - INFO - Training stopped at epoch 1 for config: {'pooling_method': 'attentive', 'use_class': False}.  Validation accuracy: 0.2222222222222222.
+2025-01-15 23:22:11,176 - INFO - Grid eval for classifiers: Running experiment with dataset: AmvrakikosTurtles, model: megadescriptor, pooling method: attentive, use_class: False, learning rate: 0.1, batch size: 16
+2025-01-15 23:22:11,485 - INFO - Training stopped at epoch 1 for config: {'pooling_method': 'attentive', 'use_class': False}.  Validation accuracy: 0.2222222222222222.
+2025-01-15 23:22:11,485 - INFO - Grid eval for classifiers: Running experiment with dataset: AmvrakikosTurtles, model: megadescriptor, pooling method: attentive, use_class: False, learning rate: 1e-05, batch size: 32
+2025-01-15 23:22:13,293 - INFO - Training stopped at epoch 50 for config: {'pooling_method': 'attentive', 'use_class': False}.  Validation accuracy: 0.18518518518518517.
+2025-01-15 23:22:13,293 - INFO - Grid eval for classifiers: Running experiment with dataset: AmvrakikosTurtles, model: megadescriptor, pooling method: attentive, use_class: False, learning rate: 2e-05, batch size: 32
+2025-01-15 23:22:15,105 - INFO - Training stopped at epoch 50 for config: {'pooling_method': 'attentive', 'use_class': False}.  Validation accuracy: 0.37037037037037035.
+2025-01-15 23:22:15,105 - INFO - Grid eval for classifiers: Running experiment with dataset: AmvrakikosTurtles, model: megadescriptor, pooling method: attentive, use_class: False, learning rate: 5e-05, batch size: 32
+2025-01-15 23:22:16,190 - INFO - Training stopped at epoch 24 for config: {'pooling_method': 'attentive', 'use_class': False}.  Validation accuracy: 0.37037037037037035.
+2025-01-15 23:22:16,190 - INFO - Grid eval for classifiers: Running experiment with dataset: AmvrakikosTurtles, model: megadescriptor, pooling method: attentive, use_class: False, learning rate: 0.0001, batch size: 32
+2025-01-15 23:22:16,890 - INFO - Training stopped at epoch 13 for config: {'pooling_method': 'attentive', 'use_class': False}.  Validation accuracy: 0.37037037037037035.
+2025-01-15 23:22:16,890 - INFO - Grid eval for classifiers: Running experiment with dataset: AmvrakikosTurtles, model: megadescriptor, pooling method: attentive, use_class: False, learning rate: 0.0002, batch size: 32
+2025-01-15 23:22:17,382 - INFO - Training stopped at epoch 7 for config: {'pooling_method': 'attentive', 'use_class': False}.  Validation accuracy: 0.4444444444444444.
+2025-01-15 23:22:17,382 - INFO - Grid eval for classifiers: Running experiment with dataset: AmvrakikosTurtles, model: megadescriptor, pooling method: attentive, use_class: False, learning rate: 0.0005, batch size: 32
+2025-01-15 23:22:17,735 - INFO - Training stopped at epoch 3 for config: {'pooling_method': 'attentive', 'use_class': False}.  Validation accuracy: 0.4074074074074074.
+2025-01-15 23:22:17,735 - INFO - Grid eval for classifiers: Running experiment with dataset: AmvrakikosTurtles, model: megadescriptor, pooling method: attentive, use_class: False, learning rate: 0.001, batch size: 32
+2025-01-15 23:22:18,054 - INFO - Training stopped at epoch 2 for config: {'pooling_method': 'attentive', 'use_class': False}.  Validation accuracy: 0.3333333333333333.
+2025-01-15 23:22:18,054 - INFO - Grid eval for classifiers: Running experiment with dataset: AmvrakikosTurtles, model: megadescriptor, pooling method: attentive, use_class: False, learning rate: 0.002, batch size: 32
+2025-01-15 23:22:18,338 - INFO - Training stopped at epoch 1 for config: {'pooling_method': 'attentive', 'use_class': False}.  Validation accuracy: 0.2962962962962963.
+2025-01-15 23:22:18,339 - INFO - Grid eval for classifiers: Running experiment with dataset: AmvrakikosTurtles, model: megadescriptor, pooling method: attentive, use_class: False, learning rate: 0.005, batch size: 32
+2025-01-15 23:22:18,623 - INFO - Training stopped at epoch 1 for config: {'pooling_method': 'attentive', 'use_class': False}.  Validation accuracy: 0.1111111111111111.
+2025-01-15 23:22:18,623 - INFO - Grid eval for classifiers: Running experiment with dataset: AmvrakikosTurtles, model: megadescriptor, pooling method: attentive, use_class: False, learning rate: 0.01, batch size: 32
+2025-01-15 23:22:18,908 - INFO - Training stopped at epoch 1 for config: {'pooling_method': 'attentive', 'use_class': False}.  Validation accuracy: 0.07407407407407407.
+2025-01-15 23:22:18,908 - INFO - Grid eval for classifiers: Running experiment with dataset: AmvrakikosTurtles, model: megadescriptor, pooling method: attentive, use_class: False, learning rate: 0.02, batch size: 32
+2025-01-15 23:22:19,192 - INFO - Training stopped at epoch 1 for config: {'pooling_method': 'attentive', 'use_class': False}.  Validation accuracy: 0.1111111111111111.
+2025-01-15 23:22:19,192 - INFO - Grid eval for classifiers: Running experiment with dataset: AmvrakikosTurtles, model: megadescriptor, pooling method: attentive, use_class: False, learning rate: 0.05, batch size: 32
+2025-01-15 23:22:19,475 - INFO - Training stopped at epoch 1 for config: {'pooling_method': 'attentive', 'use_class': False}.  Validation accuracy: 0.18518518518518517.
+2025-01-15 23:22:19,475 - INFO - Grid eval for classifiers: Running experiment with dataset: AmvrakikosTurtles, model: megadescriptor, pooling method: attentive, use_class: False, learning rate: 0.1, batch size: 32
+2025-01-15 23:22:19,757 - INFO - Training stopped at epoch 1 for config: {'pooling_method': 'attentive', 'use_class': False}.  Validation accuracy: 0.14814814814814814.
+2025-01-15 23:22:19,757 - INFO - Grid eval for classifiers: Running experiment with dataset: AmvrakikosTurtles, model: megadescriptor, pooling method: attentive, use_class: False, learning rate: 1e-05, batch size: 64
+2025-01-15 23:22:21,443 - INFO - Training stopped at epoch 50 for config: {'pooling_method': 'attentive', 'use_class': False}.  Validation accuracy: 0.1111111111111111.
+2025-01-15 23:22:21,443 - INFO - Grid eval for classifiers: Running experiment with dataset: AmvrakikosTurtles, model: megadescriptor, pooling method: attentive, use_class: False, learning rate: 2e-05, batch size: 64
+2025-01-15 23:22:23,132 - INFO - Training stopped at epoch 50 for config: {'pooling_method': 'attentive', 'use_class': False}.  Validation accuracy: 0.18518518518518517.
+2025-01-15 23:22:23,132 - INFO - Grid eval for classifiers: Running experiment with dataset: AmvrakikosTurtles, model: megadescriptor, pooling method: attentive, use_class: False, learning rate: 5e-05, batch size: 64
+2025-01-15 23:22:24,533 - INFO - Training stopped at epoch 36 for config: {'pooling_method': 'attentive', 'use_class': False}.  Validation accuracy: 0.3333333333333333.
+2025-01-15 23:22:24,533 - INFO - Grid eval for classifiers: Running experiment with dataset: AmvrakikosTurtles, model: megadescriptor, pooling method: attentive, use_class: False, learning rate: 0.0001, batch size: 64
+2025-01-15 23:22:25,382 - INFO - Training stopped at epoch 19 for config: {'pooling_method': 'attentive', 'use_class': False}.  Validation accuracy: 0.37037037037037035.
+2025-01-15 23:22:25,382 - INFO - Grid eval for classifiers: Running experiment with dataset: AmvrakikosTurtles, model: megadescriptor, pooling method: attentive, use_class: False, learning rate: 0.0002, batch size: 64
+2025-01-15 23:22:25,910 - INFO - Training stopped at epoch 9 for config: {'pooling_method': 'attentive', 'use_class': False}.  Validation accuracy: 0.4444444444444444.
+2025-01-15 23:22:25,910 - INFO - Grid eval for classifiers: Running experiment with dataset: AmvrakikosTurtles, model: megadescriptor, pooling method: attentive, use_class: False, learning rate: 0.0005, batch size: 64
+2025-01-15 23:22:26,276 - INFO - Training stopped at epoch 4 for config: {'pooling_method': 'attentive', 'use_class': False}.  Validation accuracy: 0.4444444444444444.
+2025-01-15 23:22:26,276 - INFO - Grid eval for classifiers: Running experiment with dataset: AmvrakikosTurtles, model: megadescriptor, pooling method: attentive, use_class: False, learning rate: 0.001, batch size: 64
+2025-01-15 23:22:26,579 - INFO - Training stopped at epoch 2 for config: {'pooling_method': 'attentive', 'use_class': False}.  Validation accuracy: 0.4074074074074074.
+2025-01-15 23:22:26,579 - INFO - Grid eval for classifiers: Running experiment with dataset: AmvrakikosTurtles, model: megadescriptor, pooling method: attentive, use_class: False, learning rate: 0.002, batch size: 64
+2025-01-15 23:22:26,882 - INFO - Training stopped at epoch 2 for config: {'pooling_method': 'attentive', 'use_class': False}.  Validation accuracy: 0.4074074074074074.
+2025-01-15 23:22:26,882 - INFO - Grid eval for classifiers: Running experiment with dataset: AmvrakikosTurtles, model: megadescriptor, pooling method: attentive, use_class: False, learning rate: 0.005, batch size: 64
+2025-01-15 23:22:27,152 - INFO - Training stopped at epoch 1 for config: {'pooling_method': 'attentive', 'use_class': False}.  Validation accuracy: 0.1111111111111111.
+2025-01-15 23:22:27,152 - INFO - Grid eval for classifiers: Running experiment with dataset: AmvrakikosTurtles, model: megadescriptor, pooling method: attentive, use_class: False, learning rate: 0.01, batch size: 64
+2025-01-15 23:22:27,421 - INFO - Training stopped at epoch 1 for config: {'pooling_method': 'attentive', 'use_class': False}.  Validation accuracy: 0.07407407407407407.
+2025-01-15 23:22:27,422 - INFO - Grid eval for classifiers: Running experiment with dataset: AmvrakikosTurtles, model: megadescriptor, pooling method: attentive, use_class: False, learning rate: 0.02, batch size: 64
+2025-01-15 23:22:27,723 - INFO - Training stopped at epoch 2 for config: {'pooling_method': 'attentive', 'use_class': False}.  Validation accuracy: 0.14814814814814814.
+2025-01-15 23:22:27,723 - INFO - Grid eval for classifiers: Running experiment with dataset: AmvrakikosTurtles, model: megadescriptor, pooling method: attentive, use_class: False, learning rate: 0.05, batch size: 64
+2025-01-15 23:22:27,992 - INFO - Training stopped at epoch 1 for config: {'pooling_method': 'attentive', 'use_class': False}.  Validation accuracy: 0.1111111111111111.
+2025-01-15 23:22:27,992 - INFO - Grid eval for classifiers: Running experiment with dataset: AmvrakikosTurtles, model: megadescriptor, pooling method: attentive, use_class: False, learning rate: 0.1, batch size: 64
+2025-01-15 23:22:28,261 - INFO - Training stopped at epoch 1 for config: {'pooling_method': 'attentive', 'use_class': False}.  Validation accuracy: 0.07407407407407407.
+2025-01-15 23:22:28,261 - INFO - Grid eval for classifiers: Running experiment with dataset: AmvrakikosTurtles, model: megadescriptor, pooling method: attentive, use_class: False, learning rate: 1e-05, batch size: 128
+2025-01-15 23:22:29,903 - INFO - Training stopped at epoch 50 for config: {'pooling_method': 'attentive', 'use_class': False}.  Validation accuracy: 0.14814814814814814.
+2025-01-15 23:22:29,903 - INFO - Grid eval for classifiers: Running experiment with dataset: AmvrakikosTurtles, model: megadescriptor, pooling method: attentive, use_class: False, learning rate: 2e-05, batch size: 128
+2025-01-15 23:22:31,552 - INFO - Training stopped at epoch 50 for config: {'pooling_method': 'attentive', 'use_class': False}.  Validation accuracy: 0.18518518518518517.
+2025-01-15 23:22:31,552 - INFO - Grid eval for classifiers: Running experiment with dataset: AmvrakikosTurtles, model: megadescriptor, pooling method: attentive, use_class: False, learning rate: 5e-05, batch size: 128
+2025-01-15 23:22:33,203 - INFO - Training stopped at epoch 50 for config: {'pooling_method': 'attentive', 'use_class': False}.  Validation accuracy: 0.2962962962962963.
+2025-01-15 23:22:33,203 - INFO - Grid eval for classifiers: Running experiment with dataset: AmvrakikosTurtles, model: megadescriptor, pooling method: attentive, use_class: False, learning rate: 0.0001, batch size: 128
+2025-01-15 23:22:34,318 - INFO - Training stopped at epoch 28 for config: {'pooling_method': 'attentive', 'use_class': False}.  Validation accuracy: 0.4444444444444444.
+2025-01-15 23:22:34,319 - INFO - Grid eval for classifiers: Running experiment with dataset: AmvrakikosTurtles, model: megadescriptor, pooling method: attentive, use_class: False, learning rate: 0.0002, batch size: 128
+2025-01-15 23:22:34,991 - INFO - Training stopped at epoch 14 for config: {'pooling_method': 'attentive', 'use_class': False}.  Validation accuracy: 0.3333333333333333.
+2025-01-15 23:22:34,991 - INFO - Grid eval for classifiers: Running experiment with dataset: AmvrakikosTurtles, model: megadescriptor, pooling method: attentive, use_class: False, learning rate: 0.0005, batch size: 128
+2025-01-15 23:22:35,413 - INFO - Training stopped at epoch 6 for config: {'pooling_method': 'attentive', 'use_class': False}.  Validation accuracy: 0.4074074074074074.
+2025-01-15 23:22:35,413 - INFO - Grid eval for classifiers: Running experiment with dataset: AmvrakikosTurtles, model: megadescriptor, pooling method: attentive, use_class: False, learning rate: 0.001, batch size: 128
+2025-01-15 23:22:35,742 - INFO - Training stopped at epoch 3 for config: {'pooling_method': 'attentive', 'use_class': False}.  Validation accuracy: 0.4444444444444444.
+2025-01-15 23:22:35,743 - INFO - Grid eval for classifiers: Running experiment with dataset: AmvrakikosTurtles, model: megadescriptor, pooling method: attentive, use_class: False, learning rate: 0.002, batch size: 128
+2025-01-15 23:22:36,039 - INFO - Training stopped at epoch 2 for config: {'pooling_method': 'attentive', 'use_class': False}.  Validation accuracy: 0.4074074074074074.
+2025-01-15 23:22:36,039 - INFO - Grid eval for classifiers: Running experiment with dataset: AmvrakikosTurtles, model: megadescriptor, pooling method: attentive, use_class: False, learning rate: 0.005, batch size: 128
+2025-01-15 23:22:36,305 - INFO - Training stopped at epoch 1 for config: {'pooling_method': 'attentive', 'use_class': False}.  Validation accuracy: 0.18518518518518517.
+2025-01-15 23:22:36,305 - INFO - Grid eval for classifiers: Running experiment with dataset: AmvrakikosTurtles, model: megadescriptor, pooling method: attentive, use_class: False, learning rate: 0.01, batch size: 128
+2025-01-15 23:22:36,570 - INFO - Training stopped at epoch 1 for config: {'pooling_method': 'attentive', 'use_class': False}.  Validation accuracy: 0.18518518518518517.
+2025-01-15 23:22:36,571 - INFO - Grid eval for classifiers: Running experiment with dataset: AmvrakikosTurtles, model: megadescriptor, pooling method: attentive, use_class: False, learning rate: 0.02, batch size: 128
+2025-01-15 23:22:36,836 - INFO - Training stopped at epoch 1 for config: {'pooling_method': 'attentive', 'use_class': False}.  Validation accuracy: 0.1111111111111111.
+2025-01-15 23:22:36,836 - INFO - Grid eval for classifiers: Running experiment with dataset: AmvrakikosTurtles, model: megadescriptor, pooling method: attentive, use_class: False, learning rate: 0.05, batch size: 128
+2025-01-15 23:22:37,101 - INFO - Training stopped at epoch 1 for config: {'pooling_method': 'attentive', 'use_class': False}.  Validation accuracy: 0.07407407407407407.
+2025-01-15 23:22:37,101 - INFO - Grid eval for classifiers: Running experiment with dataset: AmvrakikosTurtles, model: megadescriptor, pooling method: attentive, use_class: False, learning rate: 0.1, batch size: 128
+2025-01-15 23:22:37,365 - INFO - Training stopped at epoch 1 for config: {'pooling_method': 'attentive', 'use_class': False}.  Validation accuracy: 0.07407407407407407.
+2025-01-15 23:22:37,365 - INFO - Best results for dataset AmvrakikosTurtles and attentive pooling method: {
+    "dataset": "AmvrakikosTurtles",
+    "pooling_method": "attentive",
+    "batch_size": 32,
+    "learning_rate": 0.0002,
+    "best_epoch": 7,
+    "best_val_acc": 0.4444444444444444
+}
+2025-01-15 23:22:37,465 - INFO - /home/avisund/data/wildlife_datasets/SouthernProvinceTurtles/
+2025-01-15 23:22:37,474 - INFO - Dataset SouthernProvinceTurtles loaded successfully
+2025-01-15 23:22:37,479 - INFO - Dataset split successfully
+2025-01-15 23:22:37,482 - INFO - Dataloaders created successfully
+2025-01-15 23:22:39,477 - INFO - Loading pretrained weights from Hugging Face hub (BVRA/MegaDescriptor-L-384)
+2025-01-15 23:22:40,790 - INFO - Feature extractor loaded successfully
+2025-01-15 23:23:07,990 - INFO - Embeddings computed successfully
+2025-01-15 23:23:07,991 - INFO - Grid eval for classifiers: Running experiment with dataset: SouthernProvinceTurtles, model: megadescriptor, pooling method: linear, use_class: False, learning rate: 1e-05, batch size: 8
+2025-01-15 23:23:09,411 - INFO - Training stopped at epoch 50 for config: {'pooling_method': 'linear', 'use_class': False}. Validation accuracy: 0.56.
+2025-01-15 23:23:09,412 - INFO - Grid eval for classifiers: Running experiment with dataset: SouthernProvinceTurtles, model: megadescriptor, pooling method: linear, use_class: False, learning rate: 2e-05, batch size: 8
+2025-01-15 23:23:10,861 - INFO - Training stopped at epoch 50 for config: {'pooling_method': 'linear', 'use_class': False}. Validation accuracy: 0.64.
+2025-01-15 23:23:10,861 - INFO - Grid eval for classifiers: Running experiment with dataset: SouthernProvinceTurtles, model: megadescriptor, pooling method: linear, use_class: False, learning rate: 5e-05, batch size: 8
+2025-01-15 23:23:12,323 - INFO - Training stopped at epoch 50 for config: {'pooling_method': 'linear', 'use_class': False}. Validation accuracy: 0.76.
+2025-01-15 23:23:12,323 - INFO - Grid eval for classifiers: Running experiment with dataset: SouthernProvinceTurtles, model: megadescriptor, pooling method: linear, use_class: False, learning rate: 0.0001, batch size: 8
+2025-01-15 23:23:13,798 - INFO - Training stopped at epoch 50 for config: {'pooling_method': 'linear', 'use_class': False}. Validation accuracy: 0.7733333333333333.
+2025-01-15 23:23:13,798 - INFO - Grid eval for classifiers: Running experiment with dataset: SouthernProvinceTurtles, model: megadescriptor, pooling method: linear, use_class: False, learning rate: 0.0002, batch size: 8
+2025-01-15 23:23:15,235 - INFO - Training stopped at epoch 50 for config: {'pooling_method': 'linear', 'use_class': False}. Validation accuracy: 0.7866666666666666.
+2025-01-15 23:23:15,235 - INFO - Grid eval for classifiers: Running experiment with dataset: SouthernProvinceTurtles, model: megadescriptor, pooling method: linear, use_class: False, learning rate: 0.0005, batch size: 8
+2025-01-15 23:23:16,700 - INFO - Training stopped at epoch 50 for config: {'pooling_method': 'linear', 'use_class': False}. Validation accuracy: 0.8266666666666667.
+2025-01-15 23:23:16,701 - INFO - Grid eval for classifiers: Running experiment with dataset: SouthernProvinceTurtles, model: megadescriptor, pooling method: linear, use_class: False, learning rate: 0.001, batch size: 8
+2025-01-15 23:23:18,195 - INFO - Training stopped at epoch 50 for config: {'pooling_method': 'linear', 'use_class': False}. Validation accuracy: 0.7866666666666666.
+2025-01-15 23:23:18,195 - INFO - Grid eval for classifiers: Running experiment with dataset: SouthernProvinceTurtles, model: megadescriptor, pooling method: linear, use_class: False, learning rate: 0.002, batch size: 8
+2025-01-15 23:23:19,664 - INFO - Training stopped at epoch 50 for config: {'pooling_method': 'linear', 'use_class': False}. Validation accuracy: 0.8133333333333334.
+2025-01-15 23:23:19,665 - INFO - Grid eval for classifiers: Running experiment with dataset: SouthernProvinceTurtles, model: megadescriptor, pooling method: linear, use_class: False, learning rate: 0.005, batch size: 8
+2025-01-15 23:23:20,759 - INFO - Training stopped at epoch 32 for config: {'pooling_method': 'linear', 'use_class': False}. Validation accuracy: 0.7733333333333333.
+2025-01-15 23:23:20,760 - INFO - Grid eval for classifiers: Running experiment with dataset: SouthernProvinceTurtles, model: megadescriptor, pooling method: linear, use_class: False, learning rate: 0.01, batch size: 8
+2025-01-15 23:23:22,222 - INFO - Training stopped at epoch 50 for config: {'pooling_method': 'linear', 'use_class': False}. Validation accuracy: 0.76.
+2025-01-15 23:23:22,222 - INFO - Grid eval for classifiers: Running experiment with dataset: SouthernProvinceTurtles, model: megadescriptor, pooling method: linear, use_class: False, learning rate: 0.02, batch size: 8
+2025-01-15 23:23:22,456 - INFO - Training stopped at epoch 3 for config: {'pooling_method': 'linear', 'use_class': False}. Validation accuracy: 0.72.
+2025-01-15 23:23:22,456 - INFO - Grid eval for classifiers: Running experiment with dataset: SouthernProvinceTurtles, model: megadescriptor, pooling method: linear, use_class: False, learning rate: 0.05, batch size: 8
+2025-01-15 23:23:22,775 - INFO - Training stopped at epoch 6 for config: {'pooling_method': 'linear', 'use_class': False}. Validation accuracy: 0.7333333333333333.
+2025-01-15 23:23:22,775 - INFO - Grid eval for classifiers: Running experiment with dataset: SouthernProvinceTurtles, model: megadescriptor, pooling method: linear, use_class: False, learning rate: 0.1, batch size: 8
+2025-01-15 23:23:22,951 - INFO - Training stopped at epoch 1 for config: {'pooling_method': 'linear', 'use_class': False}. Validation accuracy: 0.68.
+2025-01-15 23:23:22,951 - INFO - Grid eval for classifiers: Running experiment with dataset: SouthernProvinceTurtles, model: megadescriptor, pooling method: linear, use_class: False, learning rate: 1e-05, batch size: 16
+2025-01-15 23:23:23,695 - INFO - Training stopped at epoch 50 for config: {'pooling_method': 'linear', 'use_class': False}. Validation accuracy: 0.52.
+2025-01-15 23:23:23,695 - INFO - Grid eval for classifiers: Running experiment with dataset: SouthernProvinceTurtles, model: megadescriptor, pooling method: linear, use_class: False, learning rate: 2e-05, batch size: 16
+2025-01-15 23:23:24,435 - INFO - Training stopped at epoch 50 for config: {'pooling_method': 'linear', 'use_class': False}. Validation accuracy: 0.6533333333333333.
+2025-01-15 23:23:24,435 - INFO - Grid eval for classifiers: Running experiment with dataset: SouthernProvinceTurtles, model: megadescriptor, pooling method: linear, use_class: False, learning rate: 5e-05, batch size: 16
+2025-01-15 23:23:25,180 - INFO - Training stopped at epoch 50 for config: {'pooling_method': 'linear', 'use_class': False}. Validation accuracy: 0.7066666666666667.
+2025-01-15 23:23:25,180 - INFO - Grid eval for classifiers: Running experiment with dataset: SouthernProvinceTurtles, model: megadescriptor, pooling method: linear, use_class: False, learning rate: 0.0001, batch size: 16
+2025-01-15 23:23:25,922 - INFO - Training stopped at epoch 50 for config: {'pooling_method': 'linear', 'use_class': False}. Validation accuracy: 0.7466666666666667.
+2025-01-15 23:23:25,922 - INFO - Grid eval for classifiers: Running experiment with dataset: SouthernProvinceTurtles, model: megadescriptor, pooling method: linear, use_class: False, learning rate: 0.0002, batch size: 16
+2025-01-15 23:23:26,668 - INFO - Training stopped at epoch 50 for config: {'pooling_method': 'linear', 'use_class': False}. Validation accuracy: 0.8.
+2025-01-15 23:23:26,668 - INFO - Grid eval for classifiers: Running experiment with dataset: SouthernProvinceTurtles, model: megadescriptor, pooling method: linear, use_class: False, learning rate: 0.0005, batch size: 16
+2025-01-15 23:23:27,418 - INFO - Training stopped at epoch 50 for config: {'pooling_method': 'linear', 'use_class': False}. Validation accuracy: 0.7866666666666666.
+2025-01-15 23:23:27,418 - INFO - Grid eval for classifiers: Running experiment with dataset: SouthernProvinceTurtles, model: megadescriptor, pooling method: linear, use_class: False, learning rate: 0.001, batch size: 16
+2025-01-15 23:23:28,182 - INFO - Training stopped at epoch 50 for config: {'pooling_method': 'linear', 'use_class': False}. Validation accuracy: 0.8.
+2025-01-15 23:23:28,183 - INFO - Grid eval for classifiers: Running experiment with dataset: SouthernProvinceTurtles, model: megadescriptor, pooling method: linear, use_class: False, learning rate: 0.002, batch size: 16
+2025-01-15 23:23:28,947 - INFO - Training stopped at epoch 50 for config: {'pooling_method': 'linear', 'use_class': False}. Validation accuracy: 0.8133333333333334.
+2025-01-15 23:23:28,947 - INFO - Grid eval for classifiers: Running experiment with dataset: SouthernProvinceTurtles, model: megadescriptor, pooling method: linear, use_class: False, learning rate: 0.005, batch size: 16
+2025-01-15 23:23:29,391 - INFO - Training stopped at epoch 24 for config: {'pooling_method': 'linear', 'use_class': False}. Validation accuracy: 0.8133333333333334.
+2025-01-15 23:23:29,391 - INFO - Grid eval for classifiers: Running experiment with dataset: SouthernProvinceTurtles, model: megadescriptor, pooling method: linear, use_class: False, learning rate: 0.01, batch size: 16
+2025-01-15 23:23:29,494 - INFO - Training stopped at epoch 2 for config: {'pooling_method': 'linear', 'use_class': False}. Validation accuracy: 0.7733333333333333.
+2025-01-15 23:23:29,494 - INFO - Grid eval for classifiers: Running experiment with dataset: SouthernProvinceTurtles, model: megadescriptor, pooling method: linear, use_class: False, learning rate: 0.02, batch size: 16
+2025-01-15 23:23:29,597 - INFO - Training stopped at epoch 2 for config: {'pooling_method': 'linear', 'use_class': False}. Validation accuracy: 0.7333333333333333.
+2025-01-15 23:23:29,597 - INFO - Grid eval for classifiers: Running experiment with dataset: SouthernProvinceTurtles, model: megadescriptor, pooling method: linear, use_class: False, learning rate: 0.05, batch size: 16
+2025-01-15 23:23:29,703 - INFO - Training stopped at epoch 2 for config: {'pooling_method': 'linear', 'use_class': False}. Validation accuracy: 0.7466666666666667.
+2025-01-15 23:23:29,703 - INFO - Grid eval for classifiers: Running experiment with dataset: SouthernProvinceTurtles, model: megadescriptor, pooling method: linear, use_class: False, learning rate: 0.1, batch size: 16
+2025-01-15 23:23:29,866 - INFO - Training stopped at epoch 6 for config: {'pooling_method': 'linear', 'use_class': False}. Validation accuracy: 0.7866666666666666.
+2025-01-15 23:23:29,867 - INFO - Grid eval for classifiers: Running experiment with dataset: SouthernProvinceTurtles, model: megadescriptor, pooling method: linear, use_class: False, learning rate: 1e-05, batch size: 32
+2025-01-15 23:23:30,297 - INFO - Training stopped at epoch 50 for config: {'pooling_method': 'linear', 'use_class': False}. Validation accuracy: 0.49333333333333335.
+2025-01-15 23:23:30,297 - INFO - Grid eval for classifiers: Running experiment with dataset: SouthernProvinceTurtles, model: megadescriptor, pooling method: linear, use_class: False, learning rate: 2e-05, batch size: 32
+2025-01-15 23:23:30,728 - INFO - Training stopped at epoch 50 for config: {'pooling_method': 'linear', 'use_class': False}. Validation accuracy: 0.5333333333333333.
+2025-01-15 23:23:30,728 - INFO - Grid eval for classifiers: Running experiment with dataset: SouthernProvinceTurtles, model: megadescriptor, pooling method: linear, use_class: False, learning rate: 5e-05, batch size: 32
+2025-01-15 23:23:31,155 - INFO - Training stopped at epoch 50 for config: {'pooling_method': 'linear', 'use_class': False}. Validation accuracy: 0.6666666666666666.
+2025-01-15 23:23:31,155 - INFO - Grid eval for classifiers: Running experiment with dataset: SouthernProvinceTurtles, model: megadescriptor, pooling method: linear, use_class: False, learning rate: 0.0001, batch size: 32
+2025-01-15 23:23:31,583 - INFO - Training stopped at epoch 50 for config: {'pooling_method': 'linear', 'use_class': False}. Validation accuracy: 0.7466666666666667.
+2025-01-15 23:23:31,583 - INFO - Grid eval for classifiers: Running experiment with dataset: SouthernProvinceTurtles, model: megadescriptor, pooling method: linear, use_class: False, learning rate: 0.0002, batch size: 32
+2025-01-15 23:23:32,005 - INFO - Training stopped at epoch 50 for config: {'pooling_method': 'linear', 'use_class': False}. Validation accuracy: 0.7866666666666666.
+2025-01-15 23:23:32,005 - INFO - Grid eval for classifiers: Running experiment with dataset: SouthernProvinceTurtles, model: megadescriptor, pooling method: linear, use_class: False, learning rate: 0.0005, batch size: 32
+2025-01-15 23:23:32,435 - INFO - Training stopped at epoch 50 for config: {'pooling_method': 'linear', 'use_class': False}. Validation accuracy: 0.84.
+2025-01-15 23:23:32,436 - INFO - Grid eval for classifiers: Running experiment with dataset: SouthernProvinceTurtles, model: megadescriptor, pooling method: linear, use_class: False, learning rate: 0.001, batch size: 32
+2025-01-15 23:23:32,858 - INFO - Training stopped at epoch 50 for config: {'pooling_method': 'linear', 'use_class': False}. Validation accuracy: 0.8266666666666667.
+2025-01-15 23:23:32,858 - INFO - Grid eval for classifiers: Running experiment with dataset: SouthernProvinceTurtles, model: megadescriptor, pooling method: linear, use_class: False, learning rate: 0.002, batch size: 32
+2025-01-15 23:23:33,284 - INFO - Training stopped at epoch 50 for config: {'pooling_method': 'linear', 'use_class': False}. Validation accuracy: 0.8.
+2025-01-15 23:23:33,284 - INFO - Grid eval for classifiers: Running experiment with dataset: SouthernProvinceTurtles, model: megadescriptor, pooling method: linear, use_class: False, learning rate: 0.005, batch size: 32
+2025-01-15 23:23:33,352 - INFO - Training stopped at epoch 3 for config: {'pooling_method': 'linear', 'use_class': False}. Validation accuracy: 0.7733333333333333.
+2025-01-15 23:23:33,352 - INFO - Grid eval for classifiers: Running experiment with dataset: SouthernProvinceTurtles, model: megadescriptor, pooling method: linear, use_class: False, learning rate: 0.01, batch size: 32
+2025-01-15 23:23:33,411 - INFO - Training stopped at epoch 2 for config: {'pooling_method': 'linear', 'use_class': False}. Validation accuracy: 0.7333333333333333.
+2025-01-15 23:23:33,411 - INFO - Grid eval for classifiers: Running experiment with dataset: SouthernProvinceTurtles, model: megadescriptor, pooling method: linear, use_class: False, learning rate: 0.02, batch size: 32
+2025-01-15 23:23:33,470 - INFO - Training stopped at epoch 2 for config: {'pooling_method': 'linear', 'use_class': False}. Validation accuracy: 0.7066666666666667.
+2025-01-15 23:23:33,470 - INFO - Grid eval for classifiers: Running experiment with dataset: SouthernProvinceTurtles, model: megadescriptor, pooling method: linear, use_class: False, learning rate: 0.05, batch size: 32
+2025-01-15 23:23:33,529 - INFO - Training stopped at epoch 2 for config: {'pooling_method': 'linear', 'use_class': False}. Validation accuracy: 0.6933333333333334.
+2025-01-15 23:23:33,529 - INFO - Grid eval for classifiers: Running experiment with dataset: SouthernProvinceTurtles, model: megadescriptor, pooling method: linear, use_class: False, learning rate: 0.1, batch size: 32
+2025-01-15 23:23:33,632 - INFO - Training stopped at epoch 7 for config: {'pooling_method': 'linear', 'use_class': False}. Validation accuracy: 0.72.
+2025-01-15 23:23:33,632 - INFO - Grid eval for classifiers: Running experiment with dataset: SouthernProvinceTurtles, model: megadescriptor, pooling method: linear, use_class: False, learning rate: 1e-05, batch size: 64
+2025-01-15 23:23:33,882 - INFO - Training stopped at epoch 50 for config: {'pooling_method': 'linear', 'use_class': False}. Validation accuracy: 0.36.
+2025-01-15 23:23:33,882 - INFO - Grid eval for classifiers: Running experiment with dataset: SouthernProvinceTurtles, model: megadescriptor, pooling method: linear, use_class: False, learning rate: 2e-05, batch size: 64
+2025-01-15 23:23:34,133 - INFO - Training stopped at epoch 50 for config: {'pooling_method': 'linear', 'use_class': False}. Validation accuracy: 0.52.
+2025-01-15 23:23:34,133 - INFO - Grid eval for classifiers: Running experiment with dataset: SouthernProvinceTurtles, model: megadescriptor, pooling method: linear, use_class: False, learning rate: 5e-05, batch size: 64
+2025-01-15 23:23:34,384 - INFO - Training stopped at epoch 50 for config: {'pooling_method': 'linear', 'use_class': False}. Validation accuracy: 0.5733333333333334.
+2025-01-15 23:23:34,384 - INFO - Grid eval for classifiers: Running experiment with dataset: SouthernProvinceTurtles, model: megadescriptor, pooling method: linear, use_class: False, learning rate: 0.0001, batch size: 64
+2025-01-15 23:23:34,638 - INFO - Training stopped at epoch 50 for config: {'pooling_method': 'linear', 'use_class': False}. Validation accuracy: 0.6666666666666666.
+2025-01-15 23:23:34,638 - INFO - Grid eval for classifiers: Running experiment with dataset: SouthernProvinceTurtles, model: megadescriptor, pooling method: linear, use_class: False, learning rate: 0.0002, batch size: 64
+2025-01-15 23:23:34,893 - INFO - Training stopped at epoch 50 for config: {'pooling_method': 'linear', 'use_class': False}. Validation accuracy: 0.7733333333333333.
+2025-01-15 23:23:34,893 - INFO - Grid eval for classifiers: Running experiment with dataset: SouthernProvinceTurtles, model: megadescriptor, pooling method: linear, use_class: False, learning rate: 0.0005, batch size: 64
+2025-01-15 23:23:35,135 - INFO - Training stopped at epoch 50 for config: {'pooling_method': 'linear', 'use_class': False}. Validation accuracy: 0.8133333333333334.
+2025-01-15 23:23:35,135 - INFO - Grid eval for classifiers: Running experiment with dataset: SouthernProvinceTurtles, model: megadescriptor, pooling method: linear, use_class: False, learning rate: 0.001, batch size: 64
+2025-01-15 23:23:35,367 - INFO - Training stopped at epoch 50 for config: {'pooling_method': 'linear', 'use_class': False}. Validation accuracy: 0.8133333333333334.
+2025-01-15 23:23:35,367 - INFO - Grid eval for classifiers: Running experiment with dataset: SouthernProvinceTurtles, model: megadescriptor, pooling method: linear, use_class: False, learning rate: 0.002, batch size: 64
+2025-01-15 23:23:35,615 - INFO - Training stopped at epoch 50 for config: {'pooling_method': 'linear', 'use_class': False}. Validation accuracy: 0.8133333333333334.
+2025-01-15 23:23:35,615 - INFO - Grid eval for classifiers: Running experiment with dataset: SouthernProvinceTurtles, model: megadescriptor, pooling method: linear, use_class: False, learning rate: 0.005, batch size: 64
+2025-01-15 23:23:35,661 - INFO - Training stopped at epoch 4 for config: {'pooling_method': 'linear', 'use_class': False}. Validation accuracy: 0.76.
+2025-01-15 23:23:35,661 - INFO - Grid eval for classifiers: Running experiment with dataset: SouthernProvinceTurtles, model: megadescriptor, pooling method: linear, use_class: False, learning rate: 0.01, batch size: 64
+2025-01-15 23:23:35,702 - INFO - Training stopped at epoch 3 for config: {'pooling_method': 'linear', 'use_class': False}. Validation accuracy: 0.7333333333333333.
+2025-01-15 23:23:35,702 - INFO - Grid eval for classifiers: Running experiment with dataset: SouthernProvinceTurtles, model: megadescriptor, pooling method: linear, use_class: False, learning rate: 0.02, batch size: 64
+2025-01-15 23:23:35,737 - INFO - Training stopped at epoch 2 for config: {'pooling_method': 'linear', 'use_class': False}. Validation accuracy: 0.72.
+2025-01-15 23:23:35,737 - INFO - Grid eval for classifiers: Running experiment with dataset: SouthernProvinceTurtles, model: megadescriptor, pooling method: linear, use_class: False, learning rate: 0.05, batch size: 64
+2025-01-15 23:23:35,773 - INFO - Training stopped at epoch 2 for config: {'pooling_method': 'linear', 'use_class': False}. Validation accuracy: 0.72.
+2025-01-15 23:23:35,773 - INFO - Grid eval for classifiers: Running experiment with dataset: SouthernProvinceTurtles, model: megadescriptor, pooling method: linear, use_class: False, learning rate: 0.1, batch size: 64
+2025-01-15 23:23:35,808 - INFO - Training stopped at epoch 2 for config: {'pooling_method': 'linear', 'use_class': False}. Validation accuracy: 0.72.
+2025-01-15 23:23:35,808 - INFO - Grid eval for classifiers: Running experiment with dataset: SouthernProvinceTurtles, model: megadescriptor, pooling method: linear, use_class: False, learning rate: 1e-05, batch size: 128
+2025-01-15 23:23:35,983 - INFO - Training stopped at epoch 50 for config: {'pooling_method': 'linear', 'use_class': False}. Validation accuracy: 0.21333333333333335.
+2025-01-15 23:23:35,984 - INFO - Grid eval for classifiers: Running experiment with dataset: SouthernProvinceTurtles, model: megadescriptor, pooling method: linear, use_class: False, learning rate: 2e-05, batch size: 128
+2025-01-15 23:23:36,159 - INFO - Training stopped at epoch 50 for config: {'pooling_method': 'linear', 'use_class': False}. Validation accuracy: 0.4.
+2025-01-15 23:23:36,159 - INFO - Grid eval for classifiers: Running experiment with dataset: SouthernProvinceTurtles, model: megadescriptor, pooling method: linear, use_class: False, learning rate: 5e-05, batch size: 128
+2025-01-15 23:23:36,335 - INFO - Training stopped at epoch 50 for config: {'pooling_method': 'linear', 'use_class': False}. Validation accuracy: 0.5333333333333333.
+2025-01-15 23:23:36,335 - INFO - Grid eval for classifiers: Running experiment with dataset: SouthernProvinceTurtles, model: megadescriptor, pooling method: linear, use_class: False, learning rate: 0.0001, batch size: 128
+2025-01-15 23:23:36,512 - INFO - Training stopped at epoch 50 for config: {'pooling_method': 'linear', 'use_class': False}. Validation accuracy: 0.6266666666666667.
+2025-01-15 23:23:36,512 - INFO - Grid eval for classifiers: Running experiment with dataset: SouthernProvinceTurtles, model: megadescriptor, pooling method: linear, use_class: False, learning rate: 0.0002, batch size: 128
+2025-01-15 23:23:36,689 - INFO - Training stopped at epoch 50 for config: {'pooling_method': 'linear', 'use_class': False}. Validation accuracy: 0.68.
+2025-01-15 23:23:36,689 - INFO - Grid eval for classifiers: Running experiment with dataset: SouthernProvinceTurtles, model: megadescriptor, pooling method: linear, use_class: False, learning rate: 0.0005, batch size: 128
+2025-01-15 23:23:36,869 - INFO - Training stopped at epoch 50 for config: {'pooling_method': 'linear', 'use_class': False}. Validation accuracy: 0.8.
+2025-01-15 23:23:36,869 - INFO - Grid eval for classifiers: Running experiment with dataset: SouthernProvinceTurtles, model: megadescriptor, pooling method: linear, use_class: False, learning rate: 0.001, batch size: 128
+2025-01-15 23:23:37,047 - INFO - Training stopped at epoch 50 for config: {'pooling_method': 'linear', 'use_class': False}. Validation accuracy: 0.8266666666666667.
+2025-01-15 23:23:37,047 - INFO - Grid eval for classifiers: Running experiment with dataset: SouthernProvinceTurtles, model: megadescriptor, pooling method: linear, use_class: False, learning rate: 0.002, batch size: 128
+2025-01-15 23:23:37,225 - INFO - Training stopped at epoch 50 for config: {'pooling_method': 'linear', 'use_class': False}. Validation accuracy: 0.8.
+2025-01-15 23:23:37,225 - INFO - Grid eval for classifiers: Running experiment with dataset: SouthernProvinceTurtles, model: megadescriptor, pooling method: linear, use_class: False, learning rate: 0.005, batch size: 128
+2025-01-15 23:23:37,269 - INFO - Training stopped at epoch 7 for config: {'pooling_method': 'linear', 'use_class': False}. Validation accuracy: 0.76.
+2025-01-15 23:23:37,269 - INFO - Grid eval for classifiers: Running experiment with dataset: SouthernProvinceTurtles, model: megadescriptor, pooling method: linear, use_class: False, learning rate: 0.01, batch size: 128
+2025-01-15 23:23:37,298 - INFO - Training stopped at epoch 3 for config: {'pooling_method': 'linear', 'use_class': False}. Validation accuracy: 0.7066666666666667.
+2025-01-15 23:23:37,298 - INFO - Grid eval for classifiers: Running experiment with dataset: SouthernProvinceTurtles, model: megadescriptor, pooling method: linear, use_class: False, learning rate: 0.02, batch size: 128
+2025-01-15 23:23:37,328 - INFO - Training stopped at epoch 3 for config: {'pooling_method': 'linear', 'use_class': False}. Validation accuracy: 0.6933333333333334.
+2025-01-15 23:23:37,328 - INFO - Grid eval for classifiers: Running experiment with dataset: SouthernProvinceTurtles, model: megadescriptor, pooling method: linear, use_class: False, learning rate: 0.05, batch size: 128
+2025-01-15 23:23:37,350 - INFO - Training stopped at epoch 1 for config: {'pooling_method': 'linear', 'use_class': False}. Validation accuracy: 0.68.
+2025-01-15 23:23:37,350 - INFO - Grid eval for classifiers: Running experiment with dataset: SouthernProvinceTurtles, model: megadescriptor, pooling method: linear, use_class: False, learning rate: 0.1, batch size: 128
+2025-01-15 23:23:37,372 - INFO - Training stopped at epoch 1 for config: {'pooling_method': 'linear', 'use_class': False}. Validation accuracy: 0.6666666666666666.
+2025-01-15 23:23:37,372 - INFO - Best results for dataset SouthernProvinceTurtles and linear pooling method: {
+    "dataset": "SouthernProvinceTurtles",
+    "pooling_method": "linear",
+    "batch_size": 32,
+    "learning_rate": 0.0005,
+    "best_epoch": 50,
+    "best_val_acc": 0.84
+}
+2025-01-15 23:23:37,372 - INFO - Grid eval for classifiers: Running experiment with dataset: SouthernProvinceTurtles, model: megadescriptor, pooling method: attentive, use_class: False, learning rate: 1e-05, batch size: 8
+2025-01-15 23:23:44,610 - INFO - Training stopped at epoch 50 for config: {'pooling_method': 'attentive', 'use_class': False}.  Validation accuracy: 0.8.
+2025-01-15 23:23:44,610 - INFO - Grid eval for classifiers: Running experiment with dataset: SouthernProvinceTurtles, model: megadescriptor, pooling method: attentive, use_class: False, learning rate: 2e-05, batch size: 8
+2025-01-15 23:23:51,870 - INFO - Training stopped at epoch 50 for config: {'pooling_method': 'attentive', 'use_class': False}.  Validation accuracy: 0.7733333333333333.
+2025-01-15 23:23:51,870 - INFO - Grid eval for classifiers: Running experiment with dataset: SouthernProvinceTurtles, model: megadescriptor, pooling method: attentive, use_class: False, learning rate: 5e-05, batch size: 8
+2025-01-15 23:23:56,134 - INFO - Training stopped at epoch 24 for config: {'pooling_method': 'attentive', 'use_class': False}.  Validation accuracy: 0.7733333333333333.
+2025-01-15 23:23:56,134 - INFO - Grid eval for classifiers: Running experiment with dataset: SouthernProvinceTurtles, model: megadescriptor, pooling method: attentive, use_class: False, learning rate: 0.0001, batch size: 8
+2025-01-15 23:23:58,377 - INFO - Training stopped at epoch 10 for config: {'pooling_method': 'attentive', 'use_class': False}.  Validation accuracy: 0.76.
+2025-01-15 23:23:58,377 - INFO - Grid eval for classifiers: Running experiment with dataset: SouthernProvinceTurtles, model: megadescriptor, pooling method: attentive, use_class: False, learning rate: 0.0002, batch size: 8
+2025-01-15 23:23:59,895 - INFO - Training stopped at epoch 5 for config: {'pooling_method': 'attentive', 'use_class': False}.  Validation accuracy: 0.7866666666666666.
+2025-01-15 23:23:59,895 - INFO - Grid eval for classifiers: Running experiment with dataset: SouthernProvinceTurtles, model: megadescriptor, pooling method: attentive, use_class: False, learning rate: 0.0005, batch size: 8
+2025-01-15 23:24:00,980 - INFO - Training stopped at epoch 2 for config: {'pooling_method': 'attentive', 'use_class': False}.  Validation accuracy: 0.7066666666666667.
+2025-01-15 23:24:00,980 - INFO - Grid eval for classifiers: Running experiment with dataset: SouthernProvinceTurtles, model: megadescriptor, pooling method: attentive, use_class: False, learning rate: 0.001, batch size: 8
+2025-01-15 23:24:02,067 - INFO - Training stopped at epoch 2 for config: {'pooling_method': 'attentive', 'use_class': False}.  Validation accuracy: 0.6266666666666667.
+2025-01-15 23:24:02,067 - INFO - Grid eval for classifiers: Running experiment with dataset: SouthernProvinceTurtles, model: megadescriptor, pooling method: attentive, use_class: False, learning rate: 0.002, batch size: 8
+2025-01-15 23:24:03,010 - INFO - Training stopped at epoch 1 for config: {'pooling_method': 'attentive', 'use_class': False}.  Validation accuracy: 0.52.
+2025-01-15 23:24:03,010 - INFO - Grid eval for classifiers: Running experiment with dataset: SouthernProvinceTurtles, model: megadescriptor, pooling method: attentive, use_class: False, learning rate: 0.005, batch size: 8
+2025-01-15 23:24:03,951 - INFO - Training stopped at epoch 1 for config: {'pooling_method': 'attentive', 'use_class': False}.  Validation accuracy: 0.4.
+2025-01-15 23:24:03,951 - INFO - Grid eval for classifiers: Running experiment with dataset: SouthernProvinceTurtles, model: megadescriptor, pooling method: attentive, use_class: False, learning rate: 0.01, batch size: 8
+2025-01-15 23:24:04,889 - INFO - Training stopped at epoch 1 for config: {'pooling_method': 'attentive', 'use_class': False}.  Validation accuracy: 0.41333333333333333.
+2025-01-15 23:24:04,889 - INFO - Grid eval for classifiers: Running experiment with dataset: SouthernProvinceTurtles, model: megadescriptor, pooling method: attentive, use_class: False, learning rate: 0.02, batch size: 8
+2025-01-15 23:24:05,826 - INFO - Training stopped at epoch 1 for config: {'pooling_method': 'attentive', 'use_class': False}.  Validation accuracy: 0.5066666666666667.
+2025-01-15 23:24:05,827 - INFO - Grid eval for classifiers: Running experiment with dataset: SouthernProvinceTurtles, model: megadescriptor, pooling method: attentive, use_class: False, learning rate: 0.05, batch size: 8
+2025-01-15 23:24:06,763 - INFO - Training stopped at epoch 1 for config: {'pooling_method': 'attentive', 'use_class': False}.  Validation accuracy: 0.3466666666666667.
+2025-01-15 23:24:06,764 - INFO - Grid eval for classifiers: Running experiment with dataset: SouthernProvinceTurtles, model: megadescriptor, pooling method: attentive, use_class: False, learning rate: 0.1, batch size: 8
+2025-01-15 23:24:07,701 - INFO - Training stopped at epoch 1 for config: {'pooling_method': 'attentive', 'use_class': False}.  Validation accuracy: 0.4.
+2025-01-15 23:24:07,701 - INFO - Grid eval for classifiers: Running experiment with dataset: SouthernProvinceTurtles, model: megadescriptor, pooling method: attentive, use_class: False, learning rate: 1e-05, batch size: 16
+2025-01-15 23:24:13,386 - INFO - Training stopped at epoch 50 for config: {'pooling_method': 'attentive', 'use_class': False}.  Validation accuracy: 0.72.
+2025-01-15 23:24:13,386 - INFO - Grid eval for classifiers: Running experiment with dataset: SouthernProvinceTurtles, model: megadescriptor, pooling method: attentive, use_class: False, learning rate: 2e-05, batch size: 16
+2025-01-15 23:24:19,086 - INFO - Training stopped at epoch 50 for config: {'pooling_method': 'attentive', 'use_class': False}.  Validation accuracy: 0.76.
+2025-01-15 23:24:19,086 - INFO - Grid eval for classifiers: Running experiment with dataset: SouthernProvinceTurtles, model: megadescriptor, pooling method: attentive, use_class: False, learning rate: 5e-05, batch size: 16
+2025-01-15 23:24:22,761 - INFO - Training stopped at epoch 27 for config: {'pooling_method': 'attentive', 'use_class': False}.  Validation accuracy: 0.7733333333333333.
+2025-01-15 23:24:22,761 - INFO - Grid eval for classifiers: Running experiment with dataset: SouthernProvinceTurtles, model: megadescriptor, pooling method: attentive, use_class: False, learning rate: 0.0001, batch size: 16
+2025-01-15 23:24:24,976 - INFO - Training stopped at epoch 14 for config: {'pooling_method': 'attentive', 'use_class': False}.  Validation accuracy: 0.76.
+2025-01-15 23:24:24,976 - INFO - Grid eval for classifiers: Running experiment with dataset: SouthernProvinceTurtles, model: megadescriptor, pooling method: attentive, use_class: False, learning rate: 0.0002, batch size: 16
+2025-01-15 23:24:26,852 - INFO - Training stopped at epoch 11 for config: {'pooling_method': 'attentive', 'use_class': False}.  Validation accuracy: 0.7866666666666666.
+2025-01-15 23:24:26,852 - INFO - Grid eval for classifiers: Running experiment with dataset: SouthernProvinceTurtles, model: megadescriptor, pooling method: attentive, use_class: False, learning rate: 0.0005, batch size: 16
+2025-01-15 23:24:27,713 - INFO - Training stopped at epoch 2 for config: {'pooling_method': 'attentive', 'use_class': False}.  Validation accuracy: 0.7333333333333333.
+2025-01-15 23:24:27,713 - INFO - Grid eval for classifiers: Running experiment with dataset: SouthernProvinceTurtles, model: megadescriptor, pooling method: attentive, use_class: False, learning rate: 0.001, batch size: 16
+2025-01-15 23:24:28,688 - INFO - Training stopped at epoch 3 for config: {'pooling_method': 'attentive', 'use_class': False}.  Validation accuracy: 0.68.
+2025-01-15 23:24:28,689 - INFO - Grid eval for classifiers: Running experiment with dataset: SouthernProvinceTurtles, model: megadescriptor, pooling method: attentive, use_class: False, learning rate: 0.002, batch size: 16
+2025-01-15 23:24:29,552 - INFO - Training stopped at epoch 2 for config: {'pooling_method': 'attentive', 'use_class': False}.  Validation accuracy: 0.6666666666666666.
+2025-01-15 23:24:29,552 - INFO - Grid eval for classifiers: Running experiment with dataset: SouthernProvinceTurtles, model: megadescriptor, pooling method: attentive, use_class: False, learning rate: 0.005, batch size: 16
+2025-01-15 23:24:30,410 - INFO - Training stopped at epoch 2 for config: {'pooling_method': 'attentive', 'use_class': False}.  Validation accuracy: 0.41333333333333333.
+2025-01-15 23:24:30,410 - INFO - Grid eval for classifiers: Running experiment with dataset: SouthernProvinceTurtles, model: megadescriptor, pooling method: attentive, use_class: False, learning rate: 0.01, batch size: 16
+2025-01-15 23:24:31,153 - INFO - Training stopped at epoch 1 for config: {'pooling_method': 'attentive', 'use_class': False}.  Validation accuracy: 0.4.
+2025-01-15 23:24:31,154 - INFO - Grid eval for classifiers: Running experiment with dataset: SouthernProvinceTurtles, model: megadescriptor, pooling method: attentive, use_class: False, learning rate: 0.02, batch size: 16
+2025-01-15 23:24:31,897 - INFO - Training stopped at epoch 1 for config: {'pooling_method': 'attentive', 'use_class': False}.  Validation accuracy: 0.4533333333333333.
+2025-01-15 23:24:31,897 - INFO - Grid eval for classifiers: Running experiment with dataset: SouthernProvinceTurtles, model: megadescriptor, pooling method: attentive, use_class: False, learning rate: 0.05, batch size: 16
+2025-01-15 23:24:32,641 - INFO - Training stopped at epoch 1 for config: {'pooling_method': 'attentive', 'use_class': False}.  Validation accuracy: 0.44.
+2025-01-15 23:24:32,641 - INFO - Grid eval for classifiers: Running experiment with dataset: SouthernProvinceTurtles, model: megadescriptor, pooling method: attentive, use_class: False, learning rate: 0.1, batch size: 16
+2025-01-15 23:24:33,384 - INFO - Training stopped at epoch 1 for config: {'pooling_method': 'attentive', 'use_class': False}.  Validation accuracy: 0.38666666666666666.
+2025-01-15 23:24:33,384 - INFO - Grid eval for classifiers: Running experiment with dataset: SouthernProvinceTurtles, model: megadescriptor, pooling method: attentive, use_class: False, learning rate: 1e-05, batch size: 32
+2025-01-15 23:24:38,363 - INFO - Training stopped at epoch 50 for config: {'pooling_method': 'attentive', 'use_class': False}.  Validation accuracy: 0.68.
+2025-01-15 23:24:38,363 - INFO - Grid eval for classifiers: Running experiment with dataset: SouthernProvinceTurtles, model: megadescriptor, pooling method: attentive, use_class: False, learning rate: 2e-05, batch size: 32
+2025-01-15 23:24:43,346 - INFO - Training stopped at epoch 50 for config: {'pooling_method': 'attentive', 'use_class': False}.  Validation accuracy: 0.7733333333333333.
+2025-01-15 23:24:43,346 - INFO - Grid eval for classifiers: Running experiment with dataset: SouthernProvinceTurtles, model: megadescriptor, pooling method: attentive, use_class: False, learning rate: 5e-05, batch size: 32
+2025-01-15 23:24:47,446 - INFO - Training stopped at epoch 36 for config: {'pooling_method': 'attentive', 'use_class': False}.  Validation accuracy: 0.8.
+2025-01-15 23:24:47,446 - INFO - Grid eval for classifiers: Running experiment with dataset: SouthernProvinceTurtles, model: megadescriptor, pooling method: attentive, use_class: False, learning rate: 0.0001, batch size: 32
+2025-01-15 23:24:49,880 - INFO - Training stopped at epoch 19 for config: {'pooling_method': 'attentive', 'use_class': False}.  Validation accuracy: 0.7866666666666666.
+2025-01-15 23:24:49,880 - INFO - Grid eval for classifiers: Running experiment with dataset: SouthernProvinceTurtles, model: megadescriptor, pooling method: attentive, use_class: False, learning rate: 0.0002, batch size: 32
+2025-01-15 23:24:51,232 - INFO - Training stopped at epoch 8 for config: {'pooling_method': 'attentive', 'use_class': False}.  Validation accuracy: 0.7733333333333333.
+2025-01-15 23:24:51,232 - INFO - Grid eval for classifiers: Running experiment with dataset: SouthernProvinceTurtles, model: megadescriptor, pooling method: attentive, use_class: False, learning rate: 0.0005, batch size: 32
+2025-01-15 23:24:51,994 - INFO - Training stopped at epoch 2 for config: {'pooling_method': 'attentive', 'use_class': False}.  Validation accuracy: 0.7866666666666666.
+2025-01-15 23:24:51,994 - INFO - Grid eval for classifiers: Running experiment with dataset: SouthernProvinceTurtles, model: megadescriptor, pooling method: attentive, use_class: False, learning rate: 0.001, batch size: 32
+2025-01-15 23:24:52,756 - INFO - Training stopped at epoch 2 for config: {'pooling_method': 'attentive', 'use_class': False}.  Validation accuracy: 0.7466666666666667.
+2025-01-15 23:24:52,756 - INFO - Grid eval for classifiers: Running experiment with dataset: SouthernProvinceTurtles, model: megadescriptor, pooling method: attentive, use_class: False, learning rate: 0.002, batch size: 32
+2025-01-15 23:24:53,518 - INFO - Training stopped at epoch 2 for config: {'pooling_method': 'attentive', 'use_class': False}.  Validation accuracy: 0.64.
+2025-01-15 23:24:53,518 - INFO - Grid eval for classifiers: Running experiment with dataset: SouthernProvinceTurtles, model: megadescriptor, pooling method: attentive, use_class: False, learning rate: 0.005, batch size: 32
+2025-01-15 23:24:54,179 - INFO - Training stopped at epoch 1 for config: {'pooling_method': 'attentive', 'use_class': False}.  Validation accuracy: 0.4666666666666667.
+2025-01-15 23:24:54,179 - INFO - Grid eval for classifiers: Running experiment with dataset: SouthernProvinceTurtles, model: megadescriptor, pooling method: attentive, use_class: False, learning rate: 0.01, batch size: 32
+2025-01-15 23:24:54,934 - INFO - Training stopped at epoch 2 for config: {'pooling_method': 'attentive', 'use_class': False}.  Validation accuracy: 0.36.
+2025-01-15 23:24:54,934 - INFO - Grid eval for classifiers: Running experiment with dataset: SouthernProvinceTurtles, model: megadescriptor, pooling method: attentive, use_class: False, learning rate: 0.02, batch size: 32
+2025-01-15 23:24:55,590 - INFO - Training stopped at epoch 1 for config: {'pooling_method': 'attentive', 'use_class': False}.  Validation accuracy: 0.52.
+2025-01-15 23:24:55,590 - INFO - Grid eval for classifiers: Running experiment with dataset: SouthernProvinceTurtles, model: megadescriptor, pooling method: attentive, use_class: False, learning rate: 0.05, batch size: 32
+2025-01-15 23:24:56,244 - INFO - Training stopped at epoch 1 for config: {'pooling_method': 'attentive', 'use_class': False}.  Validation accuracy: 0.4266666666666667.
+2025-01-15 23:24:56,244 - INFO - Grid eval for classifiers: Running experiment with dataset: SouthernProvinceTurtles, model: megadescriptor, pooling method: attentive, use_class: False, learning rate: 0.1, batch size: 32
+2025-01-15 23:24:56,897 - INFO - Training stopped at epoch 1 for config: {'pooling_method': 'attentive', 'use_class': False}.  Validation accuracy: 0.4666666666666667.
+2025-01-15 23:24:56,897 - INFO - Grid eval for classifiers: Running experiment with dataset: SouthernProvinceTurtles, model: megadescriptor, pooling method: attentive, use_class: False, learning rate: 1e-05, batch size: 64
+2025-01-15 23:25:01,547 - INFO - Training stopped at epoch 50 for config: {'pooling_method': 'attentive', 'use_class': False}.  Validation accuracy: 0.5733333333333334.
+2025-01-15 23:25:01,547 - INFO - Grid eval for classifiers: Running experiment with dataset: SouthernProvinceTurtles, model: megadescriptor, pooling method: attentive, use_class: False, learning rate: 2e-05, batch size: 64
+2025-01-15 23:25:06,195 - INFO - Training stopped at epoch 50 for config: {'pooling_method': 'attentive', 'use_class': False}.  Validation accuracy: 0.7466666666666667.
+2025-01-15 23:25:06,195 - INFO - Grid eval for classifiers: Running experiment with dataset: SouthernProvinceTurtles, model: megadescriptor, pooling method: attentive, use_class: False, learning rate: 5e-05, batch size: 64
+2025-01-15 23:25:10,839 - INFO - Training stopped at epoch 50 for config: {'pooling_method': 'attentive', 'use_class': False}.  Validation accuracy: 0.76.
+2025-01-15 23:25:10,839 - INFO - Grid eval for classifiers: Running experiment with dataset: SouthernProvinceTurtles, model: megadescriptor, pooling method: attentive, use_class: False, learning rate: 0.0001, batch size: 64
+2025-01-15 23:25:13,293 - INFO - Training stopped at epoch 21 for config: {'pooling_method': 'attentive', 'use_class': False}.  Validation accuracy: 0.7733333333333333.
+2025-01-15 23:25:13,293 - INFO - Grid eval for classifiers: Running experiment with dataset: SouthernProvinceTurtles, model: megadescriptor, pooling method: attentive, use_class: False, learning rate: 0.0002, batch size: 64
+2025-01-15 23:25:14,465 - INFO - Training stopped at epoch 7 for config: {'pooling_method': 'attentive', 'use_class': False}.  Validation accuracy: 0.7733333333333333.
+2025-01-15 23:25:14,465 - INFO - Grid eval for classifiers: Running experiment with dataset: SouthernProvinceTurtles, model: megadescriptor, pooling method: attentive, use_class: False, learning rate: 0.0005, batch size: 64
+2025-01-15 23:25:15,266 - INFO - Training stopped at epoch 3 for config: {'pooling_method': 'attentive', 'use_class': False}.  Validation accuracy: 0.7466666666666667.
+2025-01-15 23:25:15,266 - INFO - Grid eval for classifiers: Running experiment with dataset: SouthernProvinceTurtles, model: megadescriptor, pooling method: attentive, use_class: False, learning rate: 0.001, batch size: 64
+2025-01-15 23:25:15,976 - INFO - Training stopped at epoch 2 for config: {'pooling_method': 'attentive', 'use_class': False}.  Validation accuracy: 0.72.
+2025-01-15 23:25:15,977 - INFO - Grid eval for classifiers: Running experiment with dataset: SouthernProvinceTurtles, model: megadescriptor, pooling method: attentive, use_class: False, learning rate: 0.002, batch size: 64
+2025-01-15 23:25:16,777 - INFO - Training stopped at epoch 3 for config: {'pooling_method': 'attentive', 'use_class': False}.  Validation accuracy: 0.7066666666666667.
+2025-01-15 23:25:16,777 - INFO - Grid eval for classifiers: Running experiment with dataset: SouthernProvinceTurtles, model: megadescriptor, pooling method: attentive, use_class: False, learning rate: 0.005, batch size: 64
+2025-01-15 23:25:17,762 - INFO - Training stopped at epoch 5 for config: {'pooling_method': 'attentive', 'use_class': False}.  Validation accuracy: 0.6133333333333333.
+2025-01-15 23:25:17,763 - INFO - Grid eval for classifiers: Running experiment with dataset: SouthernProvinceTurtles, model: megadescriptor, pooling method: attentive, use_class: False, learning rate: 0.01, batch size: 64
+2025-01-15 23:25:18,750 - INFO - Training stopped at epoch 5 for config: {'pooling_method': 'attentive', 'use_class': False}.  Validation accuracy: 0.49333333333333335.
+2025-01-15 23:25:18,750 - INFO - Grid eval for classifiers: Running experiment with dataset: SouthernProvinceTurtles, model: megadescriptor, pooling method: attentive, use_class: False, learning rate: 0.02, batch size: 64
+2025-01-15 23:25:19,457 - INFO - Training stopped at epoch 2 for config: {'pooling_method': 'attentive', 'use_class': False}.  Validation accuracy: 0.37333333333333335.
+2025-01-15 23:25:19,457 - INFO - Grid eval for classifiers: Running experiment with dataset: SouthernProvinceTurtles, model: megadescriptor, pooling method: attentive, use_class: False, learning rate: 0.05, batch size: 64
+2025-01-15 23:25:20,070 - INFO - Training stopped at epoch 1 for config: {'pooling_method': 'attentive', 'use_class': False}.  Validation accuracy: 0.36.
+2025-01-15 23:25:20,070 - INFO - Grid eval for classifiers: Running experiment with dataset: SouthernProvinceTurtles, model: megadescriptor, pooling method: attentive, use_class: False, learning rate: 0.1, batch size: 64
+2025-01-15 23:25:20,956 - INFO - Training stopped at epoch 4 for config: {'pooling_method': 'attentive', 'use_class': False}.  Validation accuracy: 0.6.
+2025-01-15 23:25:20,956 - INFO - Grid eval for classifiers: Running experiment with dataset: SouthernProvinceTurtles, model: megadescriptor, pooling method: attentive, use_class: False, learning rate: 1e-05, batch size: 128
+2025-01-15 23:25:25,357 - INFO - Training stopped at epoch 50 for config: {'pooling_method': 'attentive', 'use_class': False}.  Validation accuracy: 0.4533333333333333.
+2025-01-15 23:25:25,357 - INFO - Grid eval for classifiers: Running experiment with dataset: SouthernProvinceTurtles, model: megadescriptor, pooling method: attentive, use_class: False, learning rate: 2e-05, batch size: 128
+2025-01-15 23:25:29,754 - INFO - Training stopped at epoch 50 for config: {'pooling_method': 'attentive', 'use_class': False}.  Validation accuracy: 0.64.
+2025-01-15 23:25:29,754 - INFO - Grid eval for classifiers: Running experiment with dataset: SouthernProvinceTurtles, model: megadescriptor, pooling method: attentive, use_class: False, learning rate: 5e-05, batch size: 128
+2025-01-15 23:25:34,147 - INFO - Training stopped at epoch 50 for config: {'pooling_method': 'attentive', 'use_class': False}.  Validation accuracy: 0.8133333333333334.
+2025-01-15 23:25:34,147 - INFO - Grid eval for classifiers: Running experiment with dataset: SouthernProvinceTurtles, model: megadescriptor, pooling method: attentive, use_class: False, learning rate: 0.0001, batch size: 128
+2025-01-15 23:25:38,459 - INFO - Training stopped at epoch 44 for config: {'pooling_method': 'attentive', 'use_class': False}.  Validation accuracy: 0.8133333333333334.
+2025-01-15 23:25:38,459 - INFO - Grid eval for classifiers: Running experiment with dataset: SouthernProvinceTurtles, model: megadescriptor, pooling method: attentive, use_class: False, learning rate: 0.0002, batch size: 128
+2025-01-15 23:25:41,386 - INFO - Training stopped at epoch 28 for config: {'pooling_method': 'attentive', 'use_class': False}.  Validation accuracy: 0.7466666666666667.
+2025-01-15 23:25:41,386 - INFO - Grid eval for classifiers: Running experiment with dataset: SouthernProvinceTurtles, model: megadescriptor, pooling method: attentive, use_class: False, learning rate: 0.0005, batch size: 128
+2025-01-15 23:25:42,319 - INFO - Training stopped at epoch 5 for config: {'pooling_method': 'attentive', 'use_class': False}.  Validation accuracy: 0.76.
+2025-01-15 23:25:42,319 - INFO - Grid eval for classifiers: Running experiment with dataset: SouthernProvinceTurtles, model: megadescriptor, pooling method: attentive, use_class: False, learning rate: 0.001, batch size: 128
+2025-01-15 23:25:43,084 - INFO - Training stopped at epoch 3 for config: {'pooling_method': 'attentive', 'use_class': False}.  Validation accuracy: 0.76.
+2025-01-15 23:25:43,084 - INFO - Grid eval for classifiers: Running experiment with dataset: SouthernProvinceTurtles, model: megadescriptor, pooling method: attentive, use_class: False, learning rate: 0.002, batch size: 128
+2025-01-15 23:25:43,759 - INFO - Training stopped at epoch 2 for config: {'pooling_method': 'attentive', 'use_class': False}.  Validation accuracy: 0.6666666666666666.
+2025-01-15 23:25:43,759 - INFO - Grid eval for classifiers: Running experiment with dataset: SouthernProvinceTurtles, model: megadescriptor, pooling method: attentive, use_class: False, learning rate: 0.005, batch size: 128
+2025-01-15 23:25:44,350 - INFO - Training stopped at epoch 1 for config: {'pooling_method': 'attentive', 'use_class': False}.  Validation accuracy: 0.44.
+2025-01-15 23:25:44,350 - INFO - Grid eval for classifiers: Running experiment with dataset: SouthernProvinceTurtles, model: megadescriptor, pooling method: attentive, use_class: False, learning rate: 0.01, batch size: 128
+2025-01-15 23:25:44,937 - INFO - Training stopped at epoch 1 for config: {'pooling_method': 'attentive', 'use_class': False}.  Validation accuracy: 0.37333333333333335.
+2025-01-15 23:25:44,937 - INFO - Grid eval for classifiers: Running experiment with dataset: SouthernProvinceTurtles, model: megadescriptor, pooling method: attentive, use_class: False, learning rate: 0.02, batch size: 128
+2025-01-15 23:25:45,526 - INFO - Training stopped at epoch 1 for config: {'pooling_method': 'attentive', 'use_class': False}.  Validation accuracy: 0.3333333333333333.
+2025-01-15 23:25:45,526 - INFO - Grid eval for classifiers: Running experiment with dataset: SouthernProvinceTurtles, model: megadescriptor, pooling method: attentive, use_class: False, learning rate: 0.05, batch size: 128
+2025-01-15 23:25:46,114 - INFO - Training stopped at epoch 1 for config: {'pooling_method': 'attentive', 'use_class': False}.  Validation accuracy: 0.32.
+2025-01-15 23:25:46,114 - INFO - Grid eval for classifiers: Running experiment with dataset: SouthernProvinceTurtles, model: megadescriptor, pooling method: attentive, use_class: False, learning rate: 0.1, batch size: 128
+2025-01-15 23:25:46,699 - INFO - Training stopped at epoch 1 for config: {'pooling_method': 'attentive', 'use_class': False}.  Validation accuracy: 0.4666666666666667.
+2025-01-15 23:25:46,700 - INFO - Best results for dataset SouthernProvinceTurtles and attentive pooling method: {
+    "dataset": "SouthernProvinceTurtles",
+    "pooling_method": "attentive",
+    "batch_size": 128,
+    "learning_rate": 5e-05,
+    "best_epoch": 50,
+    "best_val_acc": 0.8133333333333334
+}
