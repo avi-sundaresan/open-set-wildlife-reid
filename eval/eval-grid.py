@@ -100,19 +100,19 @@ def main():
                                 train_embeddings, train_labels, val_embeddings, val_labels, 
                                  use_class=config['use_class'], device=device, num_classes=num_classes, learning_rate=lr, batch_size=batch_size
                             )
-                            logging.info(f"Training stopped at epoch {epoch} for config: {config}")
+                            logging.info(f"Training stopped at epoch {epoch} for config: {config}.  Validation accuracy: {val_acc}.")
                         elif config['pooling_method'] == 'linear':
                             epoch, val_acc  = train_val_linear_classifier(
                                 train_embeddings, train_labels, val_embeddings, val_labels, 
                                 use_class=config['use_class'], use_avgpool=True, device=device, num_classes=num_classes, learning_rate=lr, batch_size=batch_size
                             )
-                            logging.info(f"Training stopped at epoch {epoch} for config: {config}")
+                            logging.info(f"Training stopped at epoch {epoch} for config: {config}. Validation accuracy: {val_acc}.")
                         elif config['pooling_method'] == 'none':
                             epoch, val_acc  = train_val_linear_classifier(
                                 train_embeddings, train_labels, val_embeddings, val_labels, 
                                 use_class=config['use_class'], use_avgpool=False, device=device, num_classes=num_classes, learning_rate=lr, batch_size=batch_size
                             )
-                            logging.info(f"Training stopped at epoch {epoch} for config: {config}")
+                            logging.info(f"Training stopped at epoch {epoch} for config: {config}. Validation accuracy: {val_acc}.")
 
                         if val_acc > best_val_acc:
                             best_batch = batch_size

@@ -1312,3 +1312,854 @@
 2024-12-11 23:33:45,977 - INFO - Top-1 acc. for config: 0.5913
 2024-12-11 23:33:45,977 - INFO - MSP ROC AUC for config: 0.7396
 2024-12-11 23:33:45,977 - INFO - MLS ROC AUC for config: 0.7391
+
+2025-01-14 22:28:58,267 - INFO - Using device: cuda:1
+2025-01-14 22:28:58,268 - INFO - /home/avisund/data/wildlife_datasets/SeaTurtleIDHeads/
+2025-01-14 22:28:58,419 - INFO - Dataset SeaTurtleIDHeads loaded successfully
+2025-01-14 22:28:58,456 - INFO - Dataset split successfully
+2025-01-14 22:28:58,463 - INFO - Dataloaders created successfully
+2025-01-14 22:29:00,392 - INFO - Loading pretrained weights from Hugging Face hub (BVRA/MegaDescriptor-L-384)
+2025-01-14 22:29:02,645 - INFO - Feature extractor loaded successfully
+2025-01-14 22:36:14,560 - INFO - Embeddings computed successfully
+2025-01-14 22:36:14,571 - INFO - Grid eval for classifiers: Running experiment with dataset: SeaTurtleIDHeads, model: megadescriptor, pooling method: linear, use_class: False, learning rate: 1e-05, batch size: 8
+2025-01-14 22:36:38,088 - INFO - Training stopped at epoch 50 for config: {'pooling_method': 'linear', 'use_class': False}. Validation accuracy: 0.9651162790697675.
+2025-01-14 22:36:38,089 - INFO - Grid eval for classifiers: Running experiment with dataset: SeaTurtleIDHeads, model: megadescriptor, pooling method: linear, use_class: False, learning rate: 2e-05, batch size: 8
+2025-01-14 22:37:01,520 - INFO - Training stopped at epoch 45 for config: {'pooling_method': 'linear', 'use_class': False}. Validation accuracy: 0.9634551495016611.
+2025-01-14 22:37:01,520 - INFO - Grid eval for classifiers: Running experiment with dataset: SeaTurtleIDHeads, model: megadescriptor, pooling method: linear, use_class: False, learning rate: 5e-05, batch size: 8
+2025-01-14 22:37:16,397 - INFO - Training stopped at epoch 27 for config: {'pooling_method': 'linear', 'use_class': False}. Validation accuracy: 0.9634551495016611.
+2025-01-14 22:37:16,398 - INFO - Grid eval for classifiers: Running experiment with dataset: SeaTurtleIDHeads, model: megadescriptor, pooling method: linear, use_class: False, learning rate: 0.0001, batch size: 8
+2025-01-14 22:37:28,514 - INFO - Training stopped at epoch 21 for config: {'pooling_method': 'linear', 'use_class': False}. Validation accuracy: 0.9634551495016611.
+2025-01-14 22:37:28,514 - INFO - Grid eval for classifiers: Running experiment with dataset: SeaTurtleIDHeads, model: megadescriptor, pooling method: linear, use_class: False, learning rate: 0.0002, batch size: 8
+2025-01-14 22:37:38,899 - INFO - Training stopped at epoch 17 for config: {'pooling_method': 'linear', 'use_class': False}. Validation accuracy: 0.9634551495016611.
+2025-01-14 22:37:38,899 - INFO - Grid eval for classifiers: Running experiment with dataset: SeaTurtleIDHeads, model: megadescriptor, pooling method: linear, use_class: False, learning rate: 0.0005, batch size: 8
+2025-01-14 22:37:47,280 - INFO - Training stopped at epoch 13 for config: {'pooling_method': 'linear', 'use_class': False}. Validation accuracy: 0.9642857142857143.
+2025-01-14 22:37:47,280 - INFO - Grid eval for classifiers: Running experiment with dataset: SeaTurtleIDHeads, model: megadescriptor, pooling method: linear, use_class: False, learning rate: 0.001, batch size: 8
+2025-01-14 22:37:53,789 - INFO - Training stopped at epoch 9 for config: {'pooling_method': 'linear', 'use_class': False}. Validation accuracy: 0.9626245847176079.
+2025-01-14 22:37:53,789 - INFO - Grid eval for classifiers: Running experiment with dataset: SeaTurtleIDHeads, model: megadescriptor, pooling method: linear, use_class: False, learning rate: 0.002, batch size: 8
+2025-01-14 22:38:02,161 - INFO - Training stopped at epoch 13 for config: {'pooling_method': 'linear', 'use_class': False}. Validation accuracy: 0.9642857142857143.
+2025-01-14 22:38:02,161 - INFO - Grid eval for classifiers: Running experiment with dataset: SeaTurtleIDHeads, model: megadescriptor, pooling method: linear, use_class: False, learning rate: 0.005, batch size: 8
+2025-01-14 22:38:25,683 - INFO - Training stopped at epoch 50 for config: {'pooling_method': 'linear', 'use_class': False}. Validation accuracy: 0.9593023255813954.
+2025-01-14 22:38:25,683 - INFO - Grid eval for classifiers: Running experiment with dataset: SeaTurtleIDHeads, model: megadescriptor, pooling method: linear, use_class: False, learning rate: 0.01, batch size: 8
+2025-01-14 22:38:28,992 - INFO - Training stopped at epoch 2 for config: {'pooling_method': 'linear', 'use_class': False}. Validation accuracy: 0.9435215946843853.
+2025-01-14 22:38:28,992 - INFO - Grid eval for classifiers: Running experiment with dataset: SeaTurtleIDHeads, model: megadescriptor, pooling method: linear, use_class: False, learning rate: 0.02, batch size: 8
+2025-01-14 22:38:31,827 - INFO - Training stopped at epoch 1 for config: {'pooling_method': 'linear', 'use_class': False}. Validation accuracy: 0.9393687707641196.
+2025-01-14 22:38:31,827 - INFO - Grid eval for classifiers: Running experiment with dataset: SeaTurtleIDHeads, model: megadescriptor, pooling method: linear, use_class: False, learning rate: 0.05, batch size: 8
+2025-01-14 22:38:34,725 - INFO - Training stopped at epoch 1 for config: {'pooling_method': 'linear', 'use_class': False}. Validation accuracy: 0.9385382059800664.
+2025-01-14 22:38:34,725 - INFO - Grid eval for classifiers: Running experiment with dataset: SeaTurtleIDHeads, model: megadescriptor, pooling method: linear, use_class: False, learning rate: 0.1, batch size: 8
+2025-01-14 22:38:37,641 - INFO - Training stopped at epoch 1 for config: {'pooling_method': 'linear', 'use_class': False}. Validation accuracy: 0.9401993355481728.
+2025-01-14 22:38:37,641 - INFO - Grid eval for classifiers: Running experiment with dataset: SeaTurtleIDHeads, model: megadescriptor, pooling method: linear, use_class: False, learning rate: 1e-05, batch size: 16
+2025-01-14 22:38:49,724 - INFO - Training stopped at epoch 50 for config: {'pooling_method': 'linear', 'use_class': False}. Validation accuracy: 0.9609634551495017.
+2025-01-14 22:38:49,724 - INFO - Grid eval for classifiers: Running experiment with dataset: SeaTurtleIDHeads, model: megadescriptor, pooling method: linear, use_class: False, learning rate: 2e-05, batch size: 16
+2025-01-14 22:39:01,810 - INFO - Training stopped at epoch 50 for config: {'pooling_method': 'linear', 'use_class': False}. Validation accuracy: 0.9634551495016611.
+2025-01-14 22:39:01,810 - INFO - Grid eval for classifiers: Running experiment with dataset: SeaTurtleIDHeads, model: megadescriptor, pooling method: linear, use_class: False, learning rate: 5e-05, batch size: 16
+2025-01-14 22:39:13,944 - INFO - Training stopped at epoch 47 for config: {'pooling_method': 'linear', 'use_class': False}. Validation accuracy: 0.9626245847176079.
+2025-01-14 22:39:13,944 - INFO - Grid eval for classifiers: Running experiment with dataset: SeaTurtleIDHeads, model: megadescriptor, pooling method: linear, use_class: False, learning rate: 0.0001, batch size: 16
+2025-01-14 22:39:24,220 - INFO - Training stopped at epoch 38 for config: {'pooling_method': 'linear', 'use_class': False}. Validation accuracy: 0.9634551495016611.
+2025-01-14 22:39:24,220 - INFO - Grid eval for classifiers: Running experiment with dataset: SeaTurtleIDHeads, model: megadescriptor, pooling method: linear, use_class: False, learning rate: 0.0002, batch size: 16
+2025-01-14 22:39:32,475 - INFO - Training stopped at epoch 30 for config: {'pooling_method': 'linear', 'use_class': False}. Validation accuracy: 0.9634551495016611.
+2025-01-14 22:39:32,476 - INFO - Grid eval for classifiers: Running experiment with dataset: SeaTurtleIDHeads, model: megadescriptor, pooling method: linear, use_class: False, learning rate: 0.0005, batch size: 16
+2025-01-14 22:39:38,882 - INFO - Training stopped at epoch 22 for config: {'pooling_method': 'linear', 'use_class': False}. Validation accuracy: 0.9626245847176079.
+2025-01-14 22:39:38,882 - INFO - Grid eval for classifiers: Running experiment with dataset: SeaTurtleIDHeads, model: megadescriptor, pooling method: linear, use_class: False, learning rate: 0.001, batch size: 16
+2025-01-14 22:39:43,654 - INFO - Training stopped at epoch 15 for config: {'pooling_method': 'linear', 'use_class': False}. Validation accuracy: 0.9626245847176079.
+2025-01-14 22:39:43,654 - INFO - Grid eval for classifiers: Running experiment with dataset: SeaTurtleIDHeads, model: megadescriptor, pooling method: linear, use_class: False, learning rate: 0.002, batch size: 16
+2025-01-14 22:39:47,460 - INFO - Training stopped at epoch 11 for config: {'pooling_method': 'linear', 'use_class': False}. Validation accuracy: 0.9634551495016611.
+2025-01-14 22:39:47,460 - INFO - Grid eval for classifiers: Running experiment with dataset: SeaTurtleIDHeads, model: megadescriptor, pooling method: linear, use_class: False, learning rate: 0.005, batch size: 16
+2025-01-14 22:39:49,780 - INFO - Training stopped at epoch 5 for config: {'pooling_method': 'linear', 'use_class': False}. Validation accuracy: 0.9501661129568106.
+2025-01-14 22:39:49,780 - INFO - Grid eval for classifiers: Running experiment with dataset: SeaTurtleIDHeads, model: megadescriptor, pooling method: linear, use_class: False, learning rate: 0.01, batch size: 16
+2025-01-14 22:39:51,638 - INFO - Training stopped at epoch 3 for config: {'pooling_method': 'linear', 'use_class': False}. Validation accuracy: 0.9451827242524917.
+2025-01-14 22:39:51,638 - INFO - Grid eval for classifiers: Running experiment with dataset: SeaTurtleIDHeads, model: megadescriptor, pooling method: linear, use_class: False, learning rate: 0.02, batch size: 16
+2025-01-14 22:39:53,264 - INFO - Training stopped at epoch 2 for config: {'pooling_method': 'linear', 'use_class': False}. Validation accuracy: 0.9401993355481728.
+2025-01-14 22:39:53,264 - INFO - Grid eval for classifiers: Running experiment with dataset: SeaTurtleIDHeads, model: megadescriptor, pooling method: linear, use_class: False, learning rate: 0.05, batch size: 16
+2025-01-14 22:39:54,674 - INFO - Training stopped at epoch 1 for config: {'pooling_method': 'linear', 'use_class': False}. Validation accuracy: 0.9426910299003323.
+2025-01-14 22:39:54,674 - INFO - Grid eval for classifiers: Running experiment with dataset: SeaTurtleIDHeads, model: megadescriptor, pooling method: linear, use_class: False, learning rate: 0.1, batch size: 16
+2025-01-14 22:39:56,090 - INFO - Training stopped at epoch 1 for config: {'pooling_method': 'linear', 'use_class': False}. Validation accuracy: 0.9410299003322259.
+2025-01-14 22:39:56,090 - INFO - Grid eval for classifiers: Running experiment with dataset: SeaTurtleIDHeads, model: megadescriptor, pooling method: linear, use_class: False, learning rate: 1e-05, batch size: 32
+2025-01-14 22:40:02,237 - INFO - Training stopped at epoch 50 for config: {'pooling_method': 'linear', 'use_class': False}. Validation accuracy: 0.9593023255813954.
+2025-01-14 22:40:02,238 - INFO - Grid eval for classifiers: Running experiment with dataset: SeaTurtleIDHeads, model: megadescriptor, pooling method: linear, use_class: False, learning rate: 2e-05, batch size: 32
+2025-01-14 22:40:08,392 - INFO - Training stopped at epoch 50 for config: {'pooling_method': 'linear', 'use_class': False}. Validation accuracy: 0.9634551495016611.
+2025-01-14 22:40:08,392 - INFO - Grid eval for classifiers: Running experiment with dataset: SeaTurtleIDHeads, model: megadescriptor, pooling method: linear, use_class: False, learning rate: 5e-05, batch size: 32
+2025-01-14 22:40:14,592 - INFO - Training stopped at epoch 50 for config: {'pooling_method': 'linear', 'use_class': False}. Validation accuracy: 0.9634551495016611.
+2025-01-14 22:40:14,592 - INFO - Grid eval for classifiers: Running experiment with dataset: SeaTurtleIDHeads, model: megadescriptor, pooling method: linear, use_class: False, learning rate: 0.0001, batch size: 32
+2025-01-14 22:40:20,774 - INFO - Training stopped at epoch 50 for config: {'pooling_method': 'linear', 'use_class': False}. Validation accuracy: 0.9634551495016611.
+2025-01-14 22:40:20,774 - INFO - Grid eval for classifiers: Running experiment with dataset: SeaTurtleIDHeads, model: megadescriptor, pooling method: linear, use_class: False, learning rate: 0.0002, batch size: 32
+2025-01-14 22:40:26,950 - INFO - Training stopped at epoch 50 for config: {'pooling_method': 'linear', 'use_class': False}. Validation accuracy: 0.9634551495016611.
+2025-01-14 22:40:26,951 - INFO - Grid eval for classifiers: Running experiment with dataset: SeaTurtleIDHeads, model: megadescriptor, pooling method: linear, use_class: False, learning rate: 0.0005, batch size: 32
+2025-01-14 22:40:32,117 - INFO - Training stopped at epoch 37 for config: {'pooling_method': 'linear', 'use_class': False}. Validation accuracy: 0.9634551495016611.
+2025-01-14 22:40:32,117 - INFO - Grid eval for classifiers: Running experiment with dataset: SeaTurtleIDHeads, model: megadescriptor, pooling method: linear, use_class: False, learning rate: 0.001, batch size: 32
+2025-01-14 22:40:35,909 - INFO - Training stopped at epoch 26 for config: {'pooling_method': 'linear', 'use_class': False}. Validation accuracy: 0.9626245847176079.
+2025-01-14 22:40:35,910 - INFO - Grid eval for classifiers: Running experiment with dataset: SeaTurtleIDHeads, model: megadescriptor, pooling method: linear, use_class: False, learning rate: 0.002, batch size: 32
+2025-01-14 22:40:38,240 - INFO - Training stopped at epoch 14 for config: {'pooling_method': 'linear', 'use_class': False}. Validation accuracy: 0.9634551495016611.
+2025-01-14 22:40:38,240 - INFO - Grid eval for classifiers: Running experiment with dataset: SeaTurtleIDHeads, model: megadescriptor, pooling method: linear, use_class: False, learning rate: 0.005, batch size: 32
+2025-01-14 22:40:44,378 - INFO - Training stopped at epoch 50 for config: {'pooling_method': 'linear', 'use_class': False}. Validation accuracy: 0.9609634551495017.
+2025-01-14 22:40:44,378 - INFO - Grid eval for classifiers: Running experiment with dataset: SeaTurtleIDHeads, model: megadescriptor, pooling method: linear, use_class: False, learning rate: 0.01, batch size: 32
+2025-01-14 22:40:45,244 - INFO - Training stopped at epoch 2 for config: {'pooling_method': 'linear', 'use_class': False}. Validation accuracy: 0.9476744186046512.
+2025-01-14 22:40:45,244 - INFO - Grid eval for classifiers: Running experiment with dataset: SeaTurtleIDHeads, model: megadescriptor, pooling method: linear, use_class: False, learning rate: 0.02, batch size: 32
+2025-01-14 22:40:46,111 - INFO - Training stopped at epoch 2 for config: {'pooling_method': 'linear', 'use_class': False}. Validation accuracy: 0.9377076411960132.
+2025-01-14 22:40:46,111 - INFO - Grid eval for classifiers: Running experiment with dataset: SeaTurtleIDHeads, model: megadescriptor, pooling method: linear, use_class: False, learning rate: 0.05, batch size: 32
+2025-01-14 22:40:46,861 - INFO - Training stopped at epoch 1 for config: {'pooling_method': 'linear', 'use_class': False}. Validation accuracy: 0.9493355481727574.
+2025-01-14 22:40:46,861 - INFO - Grid eval for classifiers: Running experiment with dataset: SeaTurtleIDHeads, model: megadescriptor, pooling method: linear, use_class: False, learning rate: 0.1, batch size: 32
+2025-01-14 22:40:47,611 - INFO - Training stopped at epoch 1 for config: {'pooling_method': 'linear', 'use_class': False}. Validation accuracy: 0.9401993355481728.
+2025-01-14 22:40:47,612 - INFO - Grid eval for classifiers: Running experiment with dataset: SeaTurtleIDHeads, model: megadescriptor, pooling method: linear, use_class: False, learning rate: 1e-05, batch size: 64
+2025-01-14 22:40:51,280 - INFO - Training stopped at epoch 50 for config: {'pooling_method': 'linear', 'use_class': False}. Validation accuracy: 0.9534883720930233.
+2025-01-14 22:40:51,280 - INFO - Grid eval for classifiers: Running experiment with dataset: SeaTurtleIDHeads, model: megadescriptor, pooling method: linear, use_class: False, learning rate: 2e-05, batch size: 64
+2025-01-14 22:40:54,956 - INFO - Training stopped at epoch 50 for config: {'pooling_method': 'linear', 'use_class': False}. Validation accuracy: 0.9601328903654485.
+2025-01-14 22:40:54,956 - INFO - Grid eval for classifiers: Running experiment with dataset: SeaTurtleIDHeads, model: megadescriptor, pooling method: linear, use_class: False, learning rate: 5e-05, batch size: 64
+2025-01-14 22:40:58,635 - INFO - Training stopped at epoch 50 for config: {'pooling_method': 'linear', 'use_class': False}. Validation accuracy: 0.9626245847176079.
+2025-01-14 22:40:58,635 - INFO - Grid eval for classifiers: Running experiment with dataset: SeaTurtleIDHeads, model: megadescriptor, pooling method: linear, use_class: False, learning rate: 0.0001, batch size: 64
+2025-01-14 22:41:02,317 - INFO - Training stopped at epoch 50 for config: {'pooling_method': 'linear', 'use_class': False}. Validation accuracy: 0.9642857142857143.
+2025-01-14 22:41:02,317 - INFO - Grid eval for classifiers: Running experiment with dataset: SeaTurtleIDHeads, model: megadescriptor, pooling method: linear, use_class: False, learning rate: 0.0002, batch size: 64
+2025-01-14 22:41:06,000 - INFO - Training stopped at epoch 50 for config: {'pooling_method': 'linear', 'use_class': False}. Validation accuracy: 0.9634551495016611.
+2025-01-14 22:41:06,000 - INFO - Grid eval for classifiers: Running experiment with dataset: SeaTurtleIDHeads, model: megadescriptor, pooling method: linear, use_class: False, learning rate: 0.0005, batch size: 64
+2025-01-14 22:41:09,680 - INFO - Training stopped at epoch 50 for config: {'pooling_method': 'linear', 'use_class': False}. Validation accuracy: 0.9642857142857143.
+2025-01-14 22:41:09,680 - INFO - Grid eval for classifiers: Running experiment with dataset: SeaTurtleIDHeads, model: megadescriptor, pooling method: linear, use_class: False, learning rate: 0.001, batch size: 64
+2025-01-14 22:41:12,983 - INFO - Training stopped at epoch 40 for config: {'pooling_method': 'linear', 'use_class': False}. Validation accuracy: 0.9626245847176079.
+2025-01-14 22:41:12,983 - INFO - Grid eval for classifiers: Running experiment with dataset: SeaTurtleIDHeads, model: megadescriptor, pooling method: linear, use_class: False, learning rate: 0.002, batch size: 64
+2025-01-14 22:41:15,409 - INFO - Training stopped at epoch 28 for config: {'pooling_method': 'linear', 'use_class': False}. Validation accuracy: 0.9634551495016611.
+2025-01-14 22:41:15,409 - INFO - Grid eval for classifiers: Running experiment with dataset: SeaTurtleIDHeads, model: megadescriptor, pooling method: linear, use_class: False, learning rate: 0.005, batch size: 64
+2025-01-14 22:41:18,563 - INFO - Training stopped at epoch 37 for config: {'pooling_method': 'linear', 'use_class': False}. Validation accuracy: 0.9617940199335548.
+2025-01-14 22:41:18,563 - INFO - Grid eval for classifiers: Running experiment with dataset: SeaTurtleIDHeads, model: megadescriptor, pooling method: linear, use_class: False, learning rate: 0.01, batch size: 64
+2025-01-14 22:41:19,170 - INFO - Training stopped at epoch 3 for config: {'pooling_method': 'linear', 'use_class': False}. Validation accuracy: 0.9509966777408638.
+2025-01-14 22:41:19,170 - INFO - Grid eval for classifiers: Running experiment with dataset: SeaTurtleIDHeads, model: megadescriptor, pooling method: linear, use_class: False, learning rate: 0.02, batch size: 64
+2025-01-14 22:41:19,702 - INFO - Training stopped at epoch 2 for config: {'pooling_method': 'linear', 'use_class': False}. Validation accuracy: 0.9451827242524917.
+2025-01-14 22:41:19,702 - INFO - Grid eval for classifiers: Running experiment with dataset: SeaTurtleIDHeads, model: megadescriptor, pooling method: linear, use_class: False, learning rate: 0.05, batch size: 64
+2025-01-14 22:41:20,234 - INFO - Training stopped at epoch 2 for config: {'pooling_method': 'linear', 'use_class': False}. Validation accuracy: 0.9493355481727574.
+2025-01-14 22:41:20,234 - INFO - Grid eval for classifiers: Running experiment with dataset: SeaTurtleIDHeads, model: megadescriptor, pooling method: linear, use_class: False, learning rate: 0.1, batch size: 64
+2025-01-14 22:41:20,765 - INFO - Training stopped at epoch 2 for config: {'pooling_method': 'linear', 'use_class': False}. Validation accuracy: 0.946843853820598.
+2025-01-14 22:41:20,765 - INFO - Grid eval for classifiers: Running experiment with dataset: SeaTurtleIDHeads, model: megadescriptor, pooling method: linear, use_class: False, learning rate: 1e-05, batch size: 128
+2025-01-14 22:41:23,223 - INFO - Training stopped at epoch 50 for config: {'pooling_method': 'linear', 'use_class': False}. Validation accuracy: 0.9435215946843853.
+2025-01-14 22:41:23,223 - INFO - Grid eval for classifiers: Running experiment with dataset: SeaTurtleIDHeads, model: megadescriptor, pooling method: linear, use_class: False, learning rate: 2e-05, batch size: 128
+2025-01-14 22:41:25,677 - INFO - Training stopped at epoch 50 for config: {'pooling_method': 'linear', 'use_class': False}. Validation accuracy: 0.9593023255813954.
+2025-01-14 22:41:25,677 - INFO - Grid eval for classifiers: Running experiment with dataset: SeaTurtleIDHeads, model: megadescriptor, pooling method: linear, use_class: False, learning rate: 5e-05, batch size: 128
+2025-01-14 22:41:28,134 - INFO - Training stopped at epoch 50 for config: {'pooling_method': 'linear', 'use_class': False}. Validation accuracy: 0.9634551495016611.
+2025-01-14 22:41:28,134 - INFO - Grid eval for classifiers: Running experiment with dataset: SeaTurtleIDHeads, model: megadescriptor, pooling method: linear, use_class: False, learning rate: 0.0001, batch size: 128
+2025-01-14 22:41:30,592 - INFO - Training stopped at epoch 50 for config: {'pooling_method': 'linear', 'use_class': False}. Validation accuracy: 0.9642857142857143.
+2025-01-14 22:41:30,592 - INFO - Grid eval for classifiers: Running experiment with dataset: SeaTurtleIDHeads, model: megadescriptor, pooling method: linear, use_class: False, learning rate: 0.0002, batch size: 128
+2025-01-14 22:41:33,050 - INFO - Training stopped at epoch 50 for config: {'pooling_method': 'linear', 'use_class': False}. Validation accuracy: 0.9634551495016611.
+2025-01-14 22:41:33,050 - INFO - Grid eval for classifiers: Running experiment with dataset: SeaTurtleIDHeads, model: megadescriptor, pooling method: linear, use_class: False, learning rate: 0.0005, batch size: 128
+2025-01-14 22:41:35,508 - INFO - Training stopped at epoch 50 for config: {'pooling_method': 'linear', 'use_class': False}. Validation accuracy: 0.9634551495016611.
+2025-01-14 22:41:35,508 - INFO - Grid eval for classifiers: Running experiment with dataset: SeaTurtleIDHeads, model: megadescriptor, pooling method: linear, use_class: False, learning rate: 0.001, batch size: 128
+2025-01-14 22:41:37,964 - INFO - Training stopped at epoch 50 for config: {'pooling_method': 'linear', 'use_class': False}. Validation accuracy: 0.9642857142857143.
+2025-01-14 22:41:37,964 - INFO - Grid eval for classifiers: Running experiment with dataset: SeaTurtleIDHeads, model: megadescriptor, pooling method: linear, use_class: False, learning rate: 0.002, batch size: 128
+2025-01-14 22:41:40,226 - INFO - Training stopped at epoch 41 for config: {'pooling_method': 'linear', 'use_class': False}. Validation accuracy: 0.9634551495016611.
+2025-01-14 22:41:40,226 - INFO - Grid eval for classifiers: Running experiment with dataset: SeaTurtleIDHeads, model: megadescriptor, pooling method: linear, use_class: False, learning rate: 0.005, batch size: 128
+2025-01-14 22:41:40,527 - INFO - Training stopped at epoch 1 for config: {'pooling_method': 'linear', 'use_class': False}. Validation accuracy: 0.9634551495016611.
+2025-01-14 22:41:40,527 - INFO - Grid eval for classifiers: Running experiment with dataset: SeaTurtleIDHeads, model: megadescriptor, pooling method: linear, use_class: False, learning rate: 0.01, batch size: 128
+2025-01-14 22:41:40,826 - INFO - Training stopped at epoch 1 for config: {'pooling_method': 'linear', 'use_class': False}. Validation accuracy: 0.9593023255813954.
+2025-01-14 22:41:40,827 - INFO - Grid eval for classifiers: Running experiment with dataset: SeaTurtleIDHeads, model: megadescriptor, pooling method: linear, use_class: False, learning rate: 0.02, batch size: 128
+2025-01-14 22:41:41,175 - INFO - Training stopped at epoch 2 for config: {'pooling_method': 'linear', 'use_class': False}. Validation accuracy: 0.9526578073089701.
+2025-01-14 22:41:41,175 - INFO - Grid eval for classifiers: Running experiment with dataset: SeaTurtleIDHeads, model: megadescriptor, pooling method: linear, use_class: False, learning rate: 0.05, batch size: 128
+2025-01-14 22:41:41,523 - INFO - Training stopped at epoch 2 for config: {'pooling_method': 'linear', 'use_class': False}. Validation accuracy: 0.9460132890365448.
+2025-01-14 22:41:41,523 - INFO - Grid eval for classifiers: Running experiment with dataset: SeaTurtleIDHeads, model: megadescriptor, pooling method: linear, use_class: False, learning rate: 0.1, batch size: 128
+2025-01-14 22:41:41,919 - INFO - Training stopped at epoch 3 for config: {'pooling_method': 'linear', 'use_class': False}. Validation accuracy: 0.9509966777408638.
+2025-01-14 22:41:41,919 - INFO - Best results for dataset SeaTurtleIDHeads and linear pooling method: {
+    "dataset": "SeaTurtleIDHeads",
+    "pooling_method": "linear",
+    "batch_size": 8,
+    "learning_rate": 1e-05,
+    "best_epoch": 50,
+    "best_val_acc": 0.9651162790697675
+}
+2025-01-14 22:41:41,919 - INFO - Grid eval for classifiers: Running experiment with dataset: SeaTurtleIDHeads, model: megadescriptor, pooling method: attentive, use_class: False, learning rate: 1e-05, batch size: 8
+2025-01-14 22:42:45,780 - INFO - Training stopped at epoch 22 for config: {'pooling_method': 'attentive', 'use_class': False}.  Validation accuracy: 0.9609634551495017.
+2025-01-14 22:42:45,780 - INFO - Grid eval for classifiers: Running experiment with dataset: SeaTurtleIDHeads, model: megadescriptor, pooling method: attentive, use_class: False, learning rate: 2e-05, batch size: 8
+2025-01-14 22:43:30,675 - INFO - Training stopped at epoch 14 for config: {'pooling_method': 'attentive', 'use_class': False}.  Validation accuracy: 0.9609634551495017.
+2025-01-14 22:43:30,676 - INFO - Grid eval for classifiers: Running experiment with dataset: SeaTurtleIDHeads, model: megadescriptor, pooling method: attentive, use_class: False, learning rate: 5e-05, batch size: 8
+2025-01-14 22:44:03,808 - INFO - Training stopped at epoch 9 for config: {'pooling_method': 'attentive', 'use_class': False}.  Validation accuracy: 0.9601328903654485.
+2025-01-14 22:44:03,809 - INFO - Grid eval for classifiers: Running experiment with dataset: SeaTurtleIDHeads, model: megadescriptor, pooling method: attentive, use_class: False, learning rate: 0.0001, batch size: 8
+2025-01-14 22:44:27,489 - INFO - Training stopped at epoch 5 for config: {'pooling_method': 'attentive', 'use_class': False}.  Validation accuracy: 0.9601328903654485.
+2025-01-14 22:44:27,489 - INFO - Grid eval for classifiers: Running experiment with dataset: SeaTurtleIDHeads, model: megadescriptor, pooling method: attentive, use_class: False, learning rate: 0.0002, batch size: 8
+2025-01-14 22:44:53,547 - INFO - Training stopped at epoch 6 for config: {'pooling_method': 'attentive', 'use_class': False}.  Validation accuracy: 0.957641196013289.
+2025-01-14 22:44:53,547 - INFO - Grid eval for classifiers: Running experiment with dataset: SeaTurtleIDHeads, model: megadescriptor, pooling method: attentive, use_class: False, learning rate: 0.0005, batch size: 8
+2025-01-14 22:45:07,777 - INFO - Training stopped at epoch 1 for config: {'pooling_method': 'attentive', 'use_class': False}.  Validation accuracy: 0.9302325581395349.
+2025-01-14 22:45:07,777 - INFO - Grid eval for classifiers: Running experiment with dataset: SeaTurtleIDHeads, model: megadescriptor, pooling method: attentive, use_class: False, learning rate: 0.001, batch size: 8
+2025-01-14 22:45:21,936 - INFO - Training stopped at epoch 1 for config: {'pooling_method': 'attentive', 'use_class': False}.  Validation accuracy: 0.9053156146179402.
+2025-01-14 22:45:21,936 - INFO - Grid eval for classifiers: Running experiment with dataset: SeaTurtleIDHeads, model: megadescriptor, pooling method: attentive, use_class: False, learning rate: 0.002, batch size: 8
+2025-01-14 22:45:38,352 - INFO - Training stopped at epoch 2 for config: {'pooling_method': 'attentive', 'use_class': False}.  Validation accuracy: 0.9069767441860465.
+2025-01-14 22:45:38,353 - INFO - Grid eval for classifiers: Running experiment with dataset: SeaTurtleIDHeads, model: megadescriptor, pooling method: attentive, use_class: False, learning rate: 0.005, batch size: 8
+2025-01-14 22:45:52,423 - INFO - Training stopped at epoch 1 for config: {'pooling_method': 'attentive', 'use_class': False}.  Validation accuracy: 0.9011627906976745.
+2025-01-14 22:45:52,423 - INFO - Grid eval for classifiers: Running experiment with dataset: SeaTurtleIDHeads, model: megadescriptor, pooling method: attentive, use_class: False, learning rate: 0.01, batch size: 8
+2025-01-14 22:46:06,478 - INFO - Training stopped at epoch 1 for config: {'pooling_method': 'attentive', 'use_class': False}.  Validation accuracy: 0.8961794019933554.
+2025-01-14 22:46:06,478 - INFO - Grid eval for classifiers: Running experiment with dataset: SeaTurtleIDHeads, model: megadescriptor, pooling method: attentive, use_class: False, learning rate: 0.02, batch size: 8
+2025-01-14 22:46:20,272 - INFO - Training stopped at epoch 1 for config: {'pooling_method': 'attentive', 'use_class': False}.  Validation accuracy: 0.6370431893687708.
+2025-01-14 22:46:20,272 - INFO - Grid eval for classifiers: Running experiment with dataset: SeaTurtleIDHeads, model: megadescriptor, pooling method: attentive, use_class: False, learning rate: 0.05, batch size: 8
+2025-01-14 22:46:34,049 - INFO - Training stopped at epoch 1 for config: {'pooling_method': 'attentive', 'use_class': False}.  Validation accuracy: 0.6943521594684385.
+2025-01-14 22:46:34,049 - INFO - Grid eval for classifiers: Running experiment with dataset: SeaTurtleIDHeads, model: megadescriptor, pooling method: attentive, use_class: False, learning rate: 0.1, batch size: 8
+2025-01-14 22:46:45,508 - INFO - Training stopped at epoch 0 for config: {'pooling_method': 'attentive', 'use_class': False}.  Validation accuracy: 0.0033222591362126247.
+2025-01-14 22:46:45,508 - INFO - Grid eval for classifiers: Running experiment with dataset: SeaTurtleIDHeads, model: megadescriptor, pooling method: attentive, use_class: False, learning rate: 1e-05, batch size: 16
+2025-01-14 22:47:57,333 - INFO - Training stopped at epoch 34 for config: {'pooling_method': 'attentive', 'use_class': False}.  Validation accuracy: 0.9601328903654485.
+2025-01-14 22:47:57,333 - INFO - Grid eval for classifiers: Running experiment with dataset: SeaTurtleIDHeads, model: megadescriptor, pooling method: attentive, use_class: False, learning rate: 2e-05, batch size: 16
+2025-01-14 22:48:50,736 - INFO - Training stopped at epoch 24 for config: {'pooling_method': 'attentive', 'use_class': False}.  Validation accuracy: 0.9593023255813954.
+2025-01-14 22:48:50,736 - INFO - Grid eval for classifiers: Running experiment with dataset: SeaTurtleIDHeads, model: megadescriptor, pooling method: attentive, use_class: False, learning rate: 5e-05, batch size: 16
+2025-01-14 22:49:22,071 - INFO - Training stopped at epoch 12 for config: {'pooling_method': 'attentive', 'use_class': False}.  Validation accuracy: 0.9609634551495017.
+2025-01-14 22:49:22,071 - INFO - Grid eval for classifiers: Running experiment with dataset: SeaTurtleIDHeads, model: megadescriptor, pooling method: attentive, use_class: False, learning rate: 0.0001, batch size: 16
+2025-01-14 22:49:46,066 - INFO - Training stopped at epoch 8 for config: {'pooling_method': 'attentive', 'use_class': False}.  Validation accuracy: 0.9609634551495017.
+2025-01-14 22:49:46,066 - INFO - Grid eval for classifiers: Running experiment with dataset: SeaTurtleIDHeads, model: megadescriptor, pooling method: attentive, use_class: False, learning rate: 0.0002, batch size: 16
+2025-01-14 22:50:04,544 - INFO - Training stopped at epoch 5 for config: {'pooling_method': 'attentive', 'use_class': False}.  Validation accuracy: 0.9601328903654485.
+2025-01-14 22:50:04,544 - INFO - Grid eval for classifiers: Running experiment with dataset: SeaTurtleIDHeads, model: megadescriptor, pooling method: attentive, use_class: False, learning rate: 0.0005, batch size: 16
+2025-01-14 22:50:15,668 - INFO - Training stopped at epoch 1 for config: {'pooling_method': 'attentive', 'use_class': False}.  Validation accuracy: 0.9318936877076412.
+2025-01-14 22:50:15,668 - INFO - Grid eval for classifiers: Running experiment with dataset: SeaTurtleIDHeads, model: megadescriptor, pooling method: attentive, use_class: False, learning rate: 0.001, batch size: 16
+2025-01-14 22:50:26,737 - INFO - Training stopped at epoch 1 for config: {'pooling_method': 'attentive', 'use_class': False}.  Validation accuracy: 0.9119601328903655.
+2025-01-14 22:50:26,737 - INFO - Grid eval for classifiers: Running experiment with dataset: SeaTurtleIDHeads, model: megadescriptor, pooling method: attentive, use_class: False, learning rate: 0.002, batch size: 16
+2025-01-14 22:50:37,716 - INFO - Training stopped at epoch 1 for config: {'pooling_method': 'attentive', 'use_class': False}.  Validation accuracy: 0.9069767441860465.
+2025-01-14 22:50:37,716 - INFO - Grid eval for classifiers: Running experiment with dataset: SeaTurtleIDHeads, model: megadescriptor, pooling method: attentive, use_class: False, learning rate: 0.005, batch size: 16
+2025-01-14 22:50:48,650 - INFO - Training stopped at epoch 1 for config: {'pooling_method': 'attentive', 'use_class': False}.  Validation accuracy: 0.8745847176079734.
+2025-01-14 22:50:48,650 - INFO - Grid eval for classifiers: Running experiment with dataset: SeaTurtleIDHeads, model: megadescriptor, pooling method: attentive, use_class: False, learning rate: 0.01, batch size: 16
+2025-01-14 22:50:59,570 - INFO - Training stopped at epoch 1 for config: {'pooling_method': 'attentive', 'use_class': False}.  Validation accuracy: 0.8986710963455149.
+2025-01-14 22:50:59,570 - INFO - Grid eval for classifiers: Running experiment with dataset: SeaTurtleIDHeads, model: megadescriptor, pooling method: attentive, use_class: False, learning rate: 0.02, batch size: 16
+2025-01-14 22:51:10,497 - INFO - Training stopped at epoch 1 for config: {'pooling_method': 'attentive', 'use_class': False}.  Validation accuracy: 0.8803986710963455.
+2025-01-14 22:51:10,497 - INFO - Grid eval for classifiers: Running experiment with dataset: SeaTurtleIDHeads, model: megadescriptor, pooling method: attentive, use_class: False, learning rate: 0.05, batch size: 16
+2025-01-14 22:51:19,372 - INFO - Training stopped at epoch 0 for config: {'pooling_method': 'attentive', 'use_class': False}.  Validation accuracy: 0.0033222591362126247.
+2025-01-14 22:51:19,372 - INFO - Grid eval for classifiers: Running experiment with dataset: SeaTurtleIDHeads, model: megadescriptor, pooling method: attentive, use_class: False, learning rate: 0.1, batch size: 16
+2025-01-14 22:51:28,242 - INFO - Training stopped at epoch 0 for config: {'pooling_method': 'attentive', 'use_class': False}.  Validation accuracy: 0.0033222591362126247.
+2025-01-14 22:51:28,243 - INFO - Grid eval for classifiers: Running experiment with dataset: SeaTurtleIDHeads, model: megadescriptor, pooling method: attentive, use_class: False, learning rate: 1e-05, batch size: 32
+2025-01-14 22:52:47,594 - INFO - Training stopped at epoch 50 for config: {'pooling_method': 'attentive', 'use_class': False}.  Validation accuracy: 0.957641196013289.
+2025-01-14 22:52:47,594 - INFO - Grid eval for classifiers: Running experiment with dataset: SeaTurtleIDHeads, model: megadescriptor, pooling method: attentive, use_class: False, learning rate: 2e-05, batch size: 32
+2025-01-14 22:53:55,783 - INFO - Training stopped at epoch 38 for config: {'pooling_method': 'attentive', 'use_class': False}.  Validation accuracy: 0.9601328903654485.
+2025-01-14 22:53:55,783 - INFO - Grid eval for classifiers: Running experiment with dataset: SeaTurtleIDHeads, model: megadescriptor, pooling method: attentive, use_class: False, learning rate: 5e-05, batch size: 32
+2025-01-14 22:54:38,609 - INFO - Training stopped at epoch 22 for config: {'pooling_method': 'attentive', 'use_class': False}.  Validation accuracy: 0.9601328903654485.
+2025-01-14 22:54:38,609 - INFO - Grid eval for classifiers: Running experiment with dataset: SeaTurtleIDHeads, model: megadescriptor, pooling method: attentive, use_class: False, learning rate: 0.0001, batch size: 32
+2025-01-14 22:55:04,020 - INFO - Training stopped at epoch 11 for config: {'pooling_method': 'attentive', 'use_class': False}.  Validation accuracy: 0.9609634551495017.
+2025-01-14 22:55:04,020 - INFO - Grid eval for classifiers: Running experiment with dataset: SeaTurtleIDHeads, model: megadescriptor, pooling method: attentive, use_class: False, learning rate: 0.0002, batch size: 32
+2025-01-14 22:55:21,519 - INFO - Training stopped at epoch 6 for config: {'pooling_method': 'attentive', 'use_class': False}.  Validation accuracy: 0.9601328903654485.
+2025-01-14 22:55:21,519 - INFO - Grid eval for classifiers: Running experiment with dataset: SeaTurtleIDHeads, model: megadescriptor, pooling method: attentive, use_class: False, learning rate: 0.0005, batch size: 32
+2025-01-14 22:55:32,689 - INFO - Training stopped at epoch 2 for config: {'pooling_method': 'attentive', 'use_class': False}.  Validation accuracy: 0.9543189368770764.
+2025-01-14 22:55:32,690 - INFO - Grid eval for classifiers: Running experiment with dataset: SeaTurtleIDHeads, model: megadescriptor, pooling method: attentive, use_class: False, learning rate: 0.001, batch size: 32
+2025-01-14 22:55:42,247 - INFO - Training stopped at epoch 1 for config: {'pooling_method': 'attentive', 'use_class': False}.  Validation accuracy: 0.9235880398671097.
+2025-01-14 22:55:42,247 - INFO - Grid eval for classifiers: Running experiment with dataset: SeaTurtleIDHeads, model: megadescriptor, pooling method: attentive, use_class: False, learning rate: 0.002, batch size: 32
+2025-01-14 22:55:51,723 - INFO - Training stopped at epoch 1 for config: {'pooling_method': 'attentive', 'use_class': False}.  Validation accuracy: 0.8995016611295681.
+2025-01-14 22:55:51,723 - INFO - Grid eval for classifiers: Running experiment with dataset: SeaTurtleIDHeads, model: megadescriptor, pooling method: attentive, use_class: False, learning rate: 0.005, batch size: 32
+2025-01-14 22:56:01,102 - INFO - Training stopped at epoch 1 for config: {'pooling_method': 'attentive', 'use_class': False}.  Validation accuracy: 0.8945182724252492.
+2025-01-14 22:56:01,102 - INFO - Grid eval for classifiers: Running experiment with dataset: SeaTurtleIDHeads, model: megadescriptor, pooling method: attentive, use_class: False, learning rate: 0.01, batch size: 32
+2025-01-14 22:56:10,456 - INFO - Training stopped at epoch 1 for config: {'pooling_method': 'attentive', 'use_class': False}.  Validation accuracy: 0.8870431893687708.
+2025-01-14 22:56:10,456 - INFO - Grid eval for classifiers: Running experiment with dataset: SeaTurtleIDHeads, model: megadescriptor, pooling method: attentive, use_class: False, learning rate: 0.02, batch size: 32
+2025-01-14 22:56:19,814 - INFO - Training stopped at epoch 1 for config: {'pooling_method': 'attentive', 'use_class': False}.  Validation accuracy: 0.8679401993355482.
+2025-01-14 22:56:19,814 - INFO - Grid eval for classifiers: Running experiment with dataset: SeaTurtleIDHeads, model: megadescriptor, pooling method: attentive, use_class: False, learning rate: 0.05, batch size: 32
+2025-01-14 22:56:29,014 - INFO - Training stopped at epoch 1 for config: {'pooling_method': 'attentive', 'use_class': False}.  Validation accuracy: 0.8089700996677741.
+2025-01-14 22:56:29,015 - INFO - Grid eval for classifiers: Running experiment with dataset: SeaTurtleIDHeads, model: megadescriptor, pooling method: attentive, use_class: False, learning rate: 0.1, batch size: 32
+2025-01-14 22:56:36,569 - INFO - Training stopped at epoch 0 for config: {'pooling_method': 'attentive', 'use_class': False}.  Validation accuracy: 0.0033222591362126247.
+2025-01-14 22:56:36,570 - INFO - Grid eval for classifiers: Running experiment with dataset: SeaTurtleIDHeads, model: megadescriptor, pooling method: attentive, use_class: False, learning rate: 1e-05, batch size: 64
+2025-01-14 22:57:50,303 - INFO - Training stopped at epoch 50 for config: {'pooling_method': 'attentive', 'use_class': False}.  Validation accuracy: 0.9551495016611296.
+2025-01-14 22:57:50,303 - INFO - Grid eval for classifiers: Running experiment with dataset: SeaTurtleIDHeads, model: megadescriptor, pooling method: attentive, use_class: False, learning rate: 2e-05, batch size: 64
+2025-01-14 22:59:04,051 - INFO - Training stopped at epoch 50 for config: {'pooling_method': 'attentive', 'use_class': False}.  Validation accuracy: 0.9593023255813954.
+2025-01-14 22:59:04,051 - INFO - Grid eval for classifiers: Running experiment with dataset: SeaTurtleIDHeads, model: megadescriptor, pooling method: attentive, use_class: False, learning rate: 5e-05, batch size: 64
+2025-01-14 22:59:54,214 - INFO - Training stopped at epoch 29 for config: {'pooling_method': 'attentive', 'use_class': False}.  Validation accuracy: 0.9609634551495017.
+2025-01-14 22:59:54,214 - INFO - Grid eval for classifiers: Running experiment with dataset: SeaTurtleIDHeads, model: megadescriptor, pooling method: attentive, use_class: False, learning rate: 0.0001, batch size: 64
+2025-01-14 23:00:31,084 - INFO - Training stopped at epoch 20 for config: {'pooling_method': 'attentive', 'use_class': False}.  Validation accuracy: 0.9609634551495017.
+2025-01-14 23:00:31,084 - INFO - Grid eval for classifiers: Running experiment with dataset: SeaTurtleIDHeads, model: megadescriptor, pooling method: attentive, use_class: False, learning rate: 0.0002, batch size: 64
+2025-01-14 23:00:51,751 - INFO - Training stopped at epoch 9 for config: {'pooling_method': 'attentive', 'use_class': False}.  Validation accuracy: 0.9601328903654485.
+2025-01-14 23:00:51,752 - INFO - Grid eval for classifiers: Running experiment with dataset: SeaTurtleIDHeads, model: megadescriptor, pooling method: attentive, use_class: False, learning rate: 0.0005, batch size: 64
+2025-01-14 23:01:09,494 - INFO - Training stopped at epoch 7 for config: {'pooling_method': 'attentive', 'use_class': False}.  Validation accuracy: 0.957641196013289.
+2025-01-14 23:01:09,494 - INFO - Grid eval for classifiers: Running experiment with dataset: SeaTurtleIDHeads, model: megadescriptor, pooling method: attentive, use_class: False, learning rate: 0.001, batch size: 64
+2025-01-14 23:01:18,402 - INFO - Training stopped at epoch 1 for config: {'pooling_method': 'attentive', 'use_class': False}.  Validation accuracy: 0.9343853820598007.
+2025-01-14 23:01:18,402 - INFO - Grid eval for classifiers: Running experiment with dataset: SeaTurtleIDHeads, model: megadescriptor, pooling method: attentive, use_class: False, learning rate: 0.002, batch size: 64
+2025-01-14 23:01:27,243 - INFO - Training stopped at epoch 1 for config: {'pooling_method': 'attentive', 'use_class': False}.  Validation accuracy: 0.9078073089700996.
+2025-01-14 23:01:27,243 - INFO - Grid eval for classifiers: Running experiment with dataset: SeaTurtleIDHeads, model: megadescriptor, pooling method: attentive, use_class: False, learning rate: 0.005, batch size: 64
+2025-01-14 23:01:36,016 - INFO - Training stopped at epoch 1 for config: {'pooling_method': 'attentive', 'use_class': False}.  Validation accuracy: 0.8745847176079734.
+2025-01-14 23:01:36,016 - INFO - Grid eval for classifiers: Running experiment with dataset: SeaTurtleIDHeads, model: megadescriptor, pooling method: attentive, use_class: False, learning rate: 0.01, batch size: 64
+2025-01-14 23:01:44,747 - INFO - Training stopped at epoch 1 for config: {'pooling_method': 'attentive', 'use_class': False}.  Validation accuracy: 0.8837209302325582.
+2025-01-14 23:01:44,747 - INFO - Grid eval for classifiers: Running experiment with dataset: SeaTurtleIDHeads, model: megadescriptor, pooling method: attentive, use_class: False, learning rate: 0.02, batch size: 64
+2025-01-14 23:01:53,465 - INFO - Training stopped at epoch 1 for config: {'pooling_method': 'attentive', 'use_class': False}.  Validation accuracy: 0.9003322259136213.
+2025-01-14 23:01:53,465 - INFO - Grid eval for classifiers: Running experiment with dataset: SeaTurtleIDHeads, model: megadescriptor, pooling method: attentive, use_class: False, learning rate: 0.05, batch size: 64
+2025-01-14 23:02:02,184 - INFO - Training stopped at epoch 1 for config: {'pooling_method': 'attentive', 'use_class': False}.  Validation accuracy: 0.8745847176079734.
+2025-01-14 23:02:02,184 - INFO - Grid eval for classifiers: Running experiment with dataset: SeaTurtleIDHeads, model: megadescriptor, pooling method: attentive, use_class: False, learning rate: 0.1, batch size: 64
+2025-01-14 23:02:10,739 - INFO - Training stopped at epoch 1 for config: {'pooling_method': 'attentive', 'use_class': False}.  Validation accuracy: 0.8313953488372093.
+2025-01-14 23:02:10,739 - INFO - Grid eval for classifiers: Running experiment with dataset: SeaTurtleIDHeads, model: megadescriptor, pooling method: attentive, use_class: False, learning rate: 1e-05, batch size: 128
+2025-01-14 23:03:18,783 - INFO - Training stopped at epoch 50 for config: {'pooling_method': 'attentive', 'use_class': False}.  Validation accuracy: 0.9584717607973422.
+2025-01-14 23:03:18,783 - INFO - Grid eval for classifiers: Running experiment with dataset: SeaTurtleIDHeads, model: megadescriptor, pooling method: attentive, use_class: False, learning rate: 2e-05, batch size: 128
+2025-01-14 23:04:26,879 - INFO - Training stopped at epoch 50 for config: {'pooling_method': 'attentive', 'use_class': False}.  Validation accuracy: 0.9593023255813954.
+2025-01-14 23:04:26,879 - INFO - Grid eval for classifiers: Running experiment with dataset: SeaTurtleIDHeads, model: megadescriptor, pooling method: attentive, use_class: False, learning rate: 5e-05, batch size: 128
+2025-01-14 23:05:34,924 - INFO - Training stopped at epoch 47 for config: {'pooling_method': 'attentive', 'use_class': False}.  Validation accuracy: 0.957641196013289.
+2025-01-14 23:05:34,924 - INFO - Grid eval for classifiers: Running experiment with dataset: SeaTurtleIDHeads, model: megadescriptor, pooling method: attentive, use_class: False, learning rate: 0.0001, batch size: 128
+2025-01-14 23:06:14,389 - INFO - Training stopped at epoch 24 for config: {'pooling_method': 'attentive', 'use_class': False}.  Validation accuracy: 0.9593023255813954.
+2025-01-14 23:06:14,389 - INFO - Grid eval for classifiers: Running experiment with dataset: SeaTurtleIDHeads, model: megadescriptor, pooling method: attentive, use_class: False, learning rate: 0.0002, batch size: 128
+2025-01-14 23:06:38,911 - INFO - Training stopped at epoch 13 for config: {'pooling_method': 'attentive', 'use_class': False}.  Validation accuracy: 0.9584717607973422.
+2025-01-14 23:06:38,912 - INFO - Grid eval for classifiers: Running experiment with dataset: SeaTurtleIDHeads, model: megadescriptor, pooling method: attentive, use_class: False, learning rate: 0.0005, batch size: 128
+2025-01-14 23:06:51,211 - INFO - Training stopped at epoch 4 for config: {'pooling_method': 'attentive', 'use_class': False}.  Validation accuracy: 0.9617940199335548.
+2025-01-14 23:06:51,211 - INFO - Grid eval for classifiers: Running experiment with dataset: SeaTurtleIDHeads, model: megadescriptor, pooling method: attentive, use_class: False, learning rate: 0.001, batch size: 128
+2025-01-14 23:07:03,528 - INFO - Training stopped at epoch 4 for config: {'pooling_method': 'attentive', 'use_class': False}.  Validation accuracy: 0.9526578073089701.
+2025-01-14 23:07:03,528 - INFO - Grid eval for classifiers: Running experiment with dataset: SeaTurtleIDHeads, model: megadescriptor, pooling method: attentive, use_class: False, learning rate: 0.002, batch size: 128
+2025-01-14 23:07:11,739 - INFO - Training stopped at epoch 1 for config: {'pooling_method': 'attentive', 'use_class': False}.  Validation accuracy: 0.9327242524916943.
+2025-01-14 23:07:11,739 - INFO - Grid eval for classifiers: Running experiment with dataset: SeaTurtleIDHeads, model: megadescriptor, pooling method: attentive, use_class: False, learning rate: 0.005, batch size: 128
+2025-01-14 23:07:19,859 - INFO - Training stopped at epoch 1 for config: {'pooling_method': 'attentive', 'use_class': False}.  Validation accuracy: 0.882890365448505.
+2025-01-14 23:07:19,859 - INFO - Grid eval for classifiers: Running experiment with dataset: SeaTurtleIDHeads, model: megadescriptor, pooling method: attentive, use_class: False, learning rate: 0.01, batch size: 128
+2025-01-14 23:07:27,935 - INFO - Training stopped at epoch 1 for config: {'pooling_method': 'attentive', 'use_class': False}.  Validation accuracy: 0.8812292358803987.
+2025-01-14 23:07:27,935 - INFO - Grid eval for classifiers: Running experiment with dataset: SeaTurtleIDHeads, model: megadescriptor, pooling method: attentive, use_class: False, learning rate: 0.02, batch size: 128
+2025-01-14 23:07:36,001 - INFO - Training stopped at epoch 1 for config: {'pooling_method': 'attentive', 'use_class': False}.  Validation accuracy: 0.8928571428571429.
+2025-01-14 23:07:36,001 - INFO - Grid eval for classifiers: Running experiment with dataset: SeaTurtleIDHeads, model: megadescriptor, pooling method: attentive, use_class: False, learning rate: 0.05, batch size: 128
+2025-01-14 23:07:44,062 - INFO - Training stopped at epoch 1 for config: {'pooling_method': 'attentive', 'use_class': False}.  Validation accuracy: 0.8588039867109635.
+2025-01-14 23:07:44,062 - INFO - Grid eval for classifiers: Running experiment with dataset: SeaTurtleIDHeads, model: megadescriptor, pooling method: attentive, use_class: False, learning rate: 0.1, batch size: 128
+2025-01-14 23:07:51,997 - INFO - Training stopped at epoch 1 for config: {'pooling_method': 'attentive', 'use_class': False}.  Validation accuracy: 0.8197674418604651.
+2025-01-14 23:07:51,997 - INFO - Best results for dataset SeaTurtleIDHeads and attentive pooling method: {
+    "dataset": "SeaTurtleIDHeads",
+    "pooling_method": "attentive",
+    "batch_size": 128,
+    "learning_rate": 0.0005,
+    "best_epoch": 4,
+    "best_val_acc": 0.9617940199335548
+}
+2025-01-14 23:07:52,100 - INFO - /home/avisund/data/wildlife_datasets/SeaStarReID2023/
+2025-01-14 23:07:52,154 - INFO - Dataset SeaStarReID2023 loaded successfully
+2025-01-14 23:07:52,163 - INFO - Dataset split successfully
+2025-01-14 23:07:52,166 - INFO - Dataloaders created successfully
+2025-01-14 23:07:54,006 - INFO - Loading pretrained weights from Hugging Face hub (BVRA/MegaDescriptor-L-384)
+2025-01-14 23:07:55,408 - INFO - Feature extractor loaded successfully
+2025-01-14 23:11:08,810 - INFO - Embeddings computed successfully
+2025-01-14 23:11:08,816 - INFO - Grid eval for classifiers: Running experiment with dataset: SeaStarReID2023, model: megadescriptor, pooling method: linear, use_class: False, learning rate: 1e-05, batch size: 8
+2025-01-14 23:11:15,249 - INFO - Training stopped at epoch 50 for config: {'pooling_method': 'linear', 'use_class': False}. Validation accuracy: 0.6381766381766382.
+2025-01-14 23:11:15,253 - INFO - Grid eval for classifiers: Running experiment with dataset: SeaStarReID2023, model: megadescriptor, pooling method: linear, use_class: False, learning rate: 2e-05, batch size: 8
+2025-01-14 23:11:21,658 - INFO - Training stopped at epoch 50 for config: {'pooling_method': 'linear', 'use_class': False}. Validation accuracy: 0.7749287749287749.
+2025-01-14 23:11:21,659 - INFO - Grid eval for classifiers: Running experiment with dataset: SeaStarReID2023, model: megadescriptor, pooling method: linear, use_class: False, learning rate: 5e-05, batch size: 8
+2025-01-14 23:11:28,053 - INFO - Training stopped at epoch 50 for config: {'pooling_method': 'linear', 'use_class': False}. Validation accuracy: 0.8347578347578347.
+2025-01-14 23:11:28,053 - INFO - Grid eval for classifiers: Running experiment with dataset: SeaStarReID2023, model: megadescriptor, pooling method: linear, use_class: False, learning rate: 0.0001, batch size: 8
+2025-01-14 23:11:34,448 - INFO - Training stopped at epoch 50 for config: {'pooling_method': 'linear', 'use_class': False}. Validation accuracy: 0.8689458689458689.
+2025-01-14 23:11:34,449 - INFO - Grid eval for classifiers: Running experiment with dataset: SeaStarReID2023, model: megadescriptor, pooling method: linear, use_class: False, learning rate: 0.0002, batch size: 8
+2025-01-14 23:11:40,856 - INFO - Training stopped at epoch 50 for config: {'pooling_method': 'linear', 'use_class': False}. Validation accuracy: 0.8746438746438746.
+2025-01-14 23:11:40,859 - INFO - Grid eval for classifiers: Running experiment with dataset: SeaStarReID2023, model: megadescriptor, pooling method: linear, use_class: False, learning rate: 0.0005, batch size: 8
+2025-01-14 23:11:47,260 - INFO - Training stopped at epoch 50 for config: {'pooling_method': 'linear', 'use_class': False}. Validation accuracy: 0.8803418803418803.
+2025-01-14 23:11:47,260 - INFO - Grid eval for classifiers: Running experiment with dataset: SeaStarReID2023, model: megadescriptor, pooling method: linear, use_class: False, learning rate: 0.001, batch size: 8
+2025-01-14 23:11:53,044 - INFO - Training stopped at epoch 40 for config: {'pooling_method': 'linear', 'use_class': False}. Validation accuracy: 0.8831908831908832.
+2025-01-14 23:11:53,045 - INFO - Grid eval for classifiers: Running experiment with dataset: SeaStarReID2023, model: megadescriptor, pooling method: linear, use_class: False, learning rate: 0.002, batch size: 8
+2025-01-14 23:11:57,552 - INFO - Training stopped at epoch 30 for config: {'pooling_method': 'linear', 'use_class': False}. Validation accuracy: 0.8803418803418803.
+2025-01-14 23:11:57,555 - INFO - Grid eval for classifiers: Running experiment with dataset: SeaStarReID2023, model: megadescriptor, pooling method: linear, use_class: False, learning rate: 0.005, batch size: 8
+2025-01-14 23:12:01,033 - INFO - Training stopped at epoch 22 for config: {'pooling_method': 'linear', 'use_class': False}. Validation accuracy: 0.8774928774928775.
+2025-01-14 23:12:01,035 - INFO - Grid eval for classifiers: Running experiment with dataset: SeaStarReID2023, model: megadescriptor, pooling method: linear, use_class: False, learning rate: 0.01, batch size: 8
+2025-01-14 23:12:07,473 - INFO - Training stopped at epoch 50 for config: {'pooling_method': 'linear', 'use_class': False}. Validation accuracy: 0.8461538461538461.
+2025-01-14 23:12:07,477 - INFO - Grid eval for classifiers: Running experiment with dataset: SeaStarReID2023, model: megadescriptor, pooling method: linear, use_class: False, learning rate: 0.02, batch size: 8
+2025-01-14 23:12:08,252 - INFO - Training stopped at epoch 1 for config: {'pooling_method': 'linear', 'use_class': False}. Validation accuracy: 0.7150997150997151.
+2025-01-14 23:12:08,253 - INFO - Grid eval for classifiers: Running experiment with dataset: SeaStarReID2023, model: megadescriptor, pooling method: linear, use_class: False, learning rate: 0.05, batch size: 8
+2025-01-14 23:12:09,285 - INFO - Training stopped at epoch 3 for config: {'pooling_method': 'linear', 'use_class': False}. Validation accuracy: 0.7293447293447294.
+2025-01-14 23:12:09,285 - INFO - Grid eval for classifiers: Running experiment with dataset: SeaStarReID2023, model: megadescriptor, pooling method: linear, use_class: False, learning rate: 0.1, batch size: 8
+2025-01-14 23:12:10,834 - INFO - Training stopped at epoch 7 for config: {'pooling_method': 'linear', 'use_class': False}. Validation accuracy: 0.7378917378917379.
+2025-01-14 23:12:10,834 - INFO - Grid eval for classifiers: Running experiment with dataset: SeaStarReID2023, model: megadescriptor, pooling method: linear, use_class: False, learning rate: 1e-05, batch size: 16
+2025-01-14 23:12:14,115 - INFO - Training stopped at epoch 50 for config: {'pooling_method': 'linear', 'use_class': False}. Validation accuracy: 0.5897435897435898.
+2025-01-14 23:12:14,116 - INFO - Grid eval for classifiers: Running experiment with dataset: SeaStarReID2023, model: megadescriptor, pooling method: linear, use_class: False, learning rate: 2e-05, batch size: 16
+2025-01-14 23:12:17,397 - INFO - Training stopped at epoch 50 for config: {'pooling_method': 'linear', 'use_class': False}. Validation accuracy: 0.7008547008547008.
+2025-01-14 23:12:17,398 - INFO - Grid eval for classifiers: Running experiment with dataset: SeaStarReID2023, model: megadescriptor, pooling method: linear, use_class: False, learning rate: 5e-05, batch size: 16
+2025-01-14 23:12:20,637 - INFO - Training stopped at epoch 50 for config: {'pooling_method': 'linear', 'use_class': False}. Validation accuracy: 0.811965811965812.
+2025-01-14 23:12:20,638 - INFO - Grid eval for classifiers: Running experiment with dataset: SeaStarReID2023, model: megadescriptor, pooling method: linear, use_class: False, learning rate: 0.0001, batch size: 16
+2025-01-14 23:12:23,923 - INFO - Training stopped at epoch 50 for config: {'pooling_method': 'linear', 'use_class': False}. Validation accuracy: 0.8461538461538461.
+2025-01-14 23:12:23,923 - INFO - Grid eval for classifiers: Running experiment with dataset: SeaStarReID2023, model: megadescriptor, pooling method: linear, use_class: False, learning rate: 0.0002, batch size: 16
+2025-01-14 23:12:27,182 - INFO - Training stopped at epoch 50 for config: {'pooling_method': 'linear', 'use_class': False}. Validation accuracy: 0.8660968660968661.
+2025-01-14 23:12:27,182 - INFO - Grid eval for classifiers: Running experiment with dataset: SeaStarReID2023, model: megadescriptor, pooling method: linear, use_class: False, learning rate: 0.0005, batch size: 16
+2025-01-14 23:12:30,466 - INFO - Training stopped at epoch 50 for config: {'pooling_method': 'linear', 'use_class': False}. Validation accuracy: 0.8774928774928775.
+2025-01-14 23:12:30,466 - INFO - Grid eval for classifiers: Running experiment with dataset: SeaStarReID2023, model: megadescriptor, pooling method: linear, use_class: False, learning rate: 0.001, batch size: 16
+2025-01-14 23:12:33,751 - INFO - Training stopped at epoch 50 for config: {'pooling_method': 'linear', 'use_class': False}. Validation accuracy: 0.8774928774928775.
+2025-01-14 23:12:33,751 - INFO - Grid eval for classifiers: Running experiment with dataset: SeaStarReID2023, model: megadescriptor, pooling method: linear, use_class: False, learning rate: 0.002, batch size: 16
+2025-01-14 23:12:37,037 - INFO - Training stopped at epoch 47 for config: {'pooling_method': 'linear', 'use_class': False}. Validation accuracy: 0.8774928774928775.
+2025-01-14 23:12:37,038 - INFO - Grid eval for classifiers: Running experiment with dataset: SeaStarReID2023, model: megadescriptor, pooling method: linear, use_class: False, learning rate: 0.005, batch size: 16
+2025-01-14 23:12:39,403 - INFO - Training stopped at epoch 31 for config: {'pooling_method': 'linear', 'use_class': False}. Validation accuracy: 0.8717948717948718.
+2025-01-14 23:12:39,404 - INFO - Grid eval for classifiers: Running experiment with dataset: SeaStarReID2023, model: megadescriptor, pooling method: linear, use_class: False, learning rate: 0.01, batch size: 16
+2025-01-14 23:12:42,691 - INFO - Training stopped at epoch 50 for config: {'pooling_method': 'linear', 'use_class': False}. Validation accuracy: 0.8518518518518519.
+2025-01-14 23:12:42,692 - INFO - Grid eval for classifiers: Running experiment with dataset: SeaStarReID2023, model: megadescriptor, pooling method: linear, use_class: False, learning rate: 0.02, batch size: 16
+2025-01-14 23:12:43,219 - INFO - Training stopped at epoch 3 for config: {'pooling_method': 'linear', 'use_class': False}. Validation accuracy: 0.7407407407407407.
+2025-01-14 23:12:43,219 - INFO - Grid eval for classifiers: Running experiment with dataset: SeaStarReID2023, model: megadescriptor, pooling method: linear, use_class: False, learning rate: 0.05, batch size: 16
+2025-01-14 23:12:43,681 - INFO - Training stopped at epoch 2 for config: {'pooling_method': 'linear', 'use_class': False}. Validation accuracy: 0.7321937321937322.
+2025-01-14 23:12:43,681 - INFO - Grid eval for classifiers: Running experiment with dataset: SeaStarReID2023, model: megadescriptor, pooling method: linear, use_class: False, learning rate: 0.1, batch size: 16
+2025-01-14 23:12:44,274 - INFO - Training stopped at epoch 4 for config: {'pooling_method': 'linear', 'use_class': False}. Validation accuracy: 0.7350427350427351.
+2025-01-14 23:12:44,274 - INFO - Grid eval for classifiers: Running experiment with dataset: SeaStarReID2023, model: megadescriptor, pooling method: linear, use_class: False, learning rate: 1e-05, batch size: 32
+2025-01-14 23:12:46,018 - INFO - Training stopped at epoch 50 for config: {'pooling_method': 'linear', 'use_class': False}. Validation accuracy: 0.5213675213675214.
+2025-01-14 23:12:46,018 - INFO - Grid eval for classifiers: Running experiment with dataset: SeaStarReID2023, model: megadescriptor, pooling method: linear, use_class: False, learning rate: 2e-05, batch size: 32
+2025-01-14 23:12:47,753 - INFO - Training stopped at epoch 50 for config: {'pooling_method': 'linear', 'use_class': False}. Validation accuracy: 0.6495726495726496.
+2025-01-14 23:12:47,754 - INFO - Grid eval for classifiers: Running experiment with dataset: SeaStarReID2023, model: megadescriptor, pooling method: linear, use_class: False, learning rate: 5e-05, batch size: 32
+2025-01-14 23:12:49,489 - INFO - Training stopped at epoch 50 for config: {'pooling_method': 'linear', 'use_class': False}. Validation accuracy: 0.7749287749287749.
+2025-01-14 23:12:49,490 - INFO - Grid eval for classifiers: Running experiment with dataset: SeaStarReID2023, model: megadescriptor, pooling method: linear, use_class: False, learning rate: 0.0001, batch size: 32
+2025-01-14 23:12:51,225 - INFO - Training stopped at epoch 50 for config: {'pooling_method': 'linear', 'use_class': False}. Validation accuracy: 0.8347578347578347.
+2025-01-14 23:12:51,226 - INFO - Grid eval for classifiers: Running experiment with dataset: SeaStarReID2023, model: megadescriptor, pooling method: linear, use_class: False, learning rate: 0.0002, batch size: 32
+2025-01-14 23:12:52,962 - INFO - Training stopped at epoch 50 for config: {'pooling_method': 'linear', 'use_class': False}. Validation accuracy: 0.8632478632478633.
+2025-01-14 23:12:52,962 - INFO - Grid eval for classifiers: Running experiment with dataset: SeaStarReID2023, model: megadescriptor, pooling method: linear, use_class: False, learning rate: 0.0005, batch size: 32
+2025-01-14 23:12:54,699 - INFO - Training stopped at epoch 50 for config: {'pooling_method': 'linear', 'use_class': False}. Validation accuracy: 0.8689458689458689.
+2025-01-14 23:12:54,699 - INFO - Grid eval for classifiers: Running experiment with dataset: SeaStarReID2023, model: megadescriptor, pooling method: linear, use_class: False, learning rate: 0.001, batch size: 32
+2025-01-14 23:12:56,437 - INFO - Training stopped at epoch 50 for config: {'pooling_method': 'linear', 'use_class': False}. Validation accuracy: 0.8746438746438746.
+2025-01-14 23:12:56,437 - INFO - Grid eval for classifiers: Running experiment with dataset: SeaStarReID2023, model: megadescriptor, pooling method: linear, use_class: False, learning rate: 0.002, batch size: 32
+2025-01-14 23:12:58,171 - INFO - Training stopped at epoch 50 for config: {'pooling_method': 'linear', 'use_class': False}. Validation accuracy: 0.8803418803418803.
+2025-01-14 23:12:58,171 - INFO - Grid eval for classifiers: Running experiment with dataset: SeaStarReID2023, model: megadescriptor, pooling method: linear, use_class: False, learning rate: 0.005, batch size: 32
+2025-01-14 23:12:59,525 - INFO - Training stopped at epoch 34 for config: {'pooling_method': 'linear', 'use_class': False}. Validation accuracy: 0.8803418803418803.
+2025-01-14 23:12:59,526 - INFO - Grid eval for classifiers: Running experiment with dataset: SeaStarReID2023, model: megadescriptor, pooling method: linear, use_class: False, learning rate: 0.01, batch size: 32
+2025-01-14 23:13:00,845 - INFO - Training stopped at epoch 33 for config: {'pooling_method': 'linear', 'use_class': False}. Validation accuracy: 0.8660968660968661.
+2025-01-14 23:13:00,846 - INFO - Grid eval for classifiers: Running experiment with dataset: SeaStarReID2023, model: megadescriptor, pooling method: linear, use_class: False, learning rate: 0.02, batch size: 32
+2025-01-14 23:13:01,124 - INFO - Training stopped at epoch 3 for config: {'pooling_method': 'linear', 'use_class': False}. Validation accuracy: 0.8062678062678063.
+2025-01-14 23:13:01,125 - INFO - Grid eval for classifiers: Running experiment with dataset: SeaStarReID2023, model: megadescriptor, pooling method: linear, use_class: False, learning rate: 0.05, batch size: 32
+2025-01-14 23:13:01,508 - INFO - Training stopped at epoch 6 for config: {'pooling_method': 'linear', 'use_class': False}. Validation accuracy: 0.7635327635327636.
+2025-01-14 23:13:01,508 - INFO - Grid eval for classifiers: Running experiment with dataset: SeaStarReID2023, model: megadescriptor, pooling method: linear, use_class: False, learning rate: 0.1, batch size: 32
+2025-01-14 23:13:01,822 - INFO - Training stopped at epoch 4 for config: {'pooling_method': 'linear', 'use_class': False}. Validation accuracy: 0.7663817663817664.
+2025-01-14 23:13:01,822 - INFO - Grid eval for classifiers: Running experiment with dataset: SeaStarReID2023, model: megadescriptor, pooling method: linear, use_class: False, learning rate: 1e-05, batch size: 64
+2025-01-14 23:13:02,852 - INFO - Training stopped at epoch 50 for config: {'pooling_method': 'linear', 'use_class': False}. Validation accuracy: 0.38746438746438744.
+2025-01-14 23:13:02,852 - INFO - Grid eval for classifiers: Running experiment with dataset: SeaStarReID2023, model: megadescriptor, pooling method: linear, use_class: False, learning rate: 2e-05, batch size: 64
+2025-01-14 23:13:03,880 - INFO - Training stopped at epoch 50 for config: {'pooling_method': 'linear', 'use_class': False}. Validation accuracy: 0.5470085470085471.
+2025-01-14 23:13:03,880 - INFO - Grid eval for classifiers: Running experiment with dataset: SeaStarReID2023, model: megadescriptor, pooling method: linear, use_class: False, learning rate: 5e-05, batch size: 64
+2025-01-14 23:13:04,908 - INFO - Training stopped at epoch 50 for config: {'pooling_method': 'linear', 'use_class': False}. Validation accuracy: 0.7094017094017094.
+2025-01-14 23:13:04,908 - INFO - Grid eval for classifiers: Running experiment with dataset: SeaStarReID2023, model: megadescriptor, pooling method: linear, use_class: False, learning rate: 0.0001, batch size: 64
+2025-01-14 23:13:05,935 - INFO - Training stopped at epoch 50 for config: {'pooling_method': 'linear', 'use_class': False}. Validation accuracy: 0.8034188034188035.
+2025-01-14 23:13:05,935 - INFO - Grid eval for classifiers: Running experiment with dataset: SeaStarReID2023, model: megadescriptor, pooling method: linear, use_class: False, learning rate: 0.0002, batch size: 64
+2025-01-14 23:13:06,963 - INFO - Training stopped at epoch 50 for config: {'pooling_method': 'linear', 'use_class': False}. Validation accuracy: 0.8461538461538461.
+2025-01-14 23:13:06,964 - INFO - Grid eval for classifiers: Running experiment with dataset: SeaStarReID2023, model: megadescriptor, pooling method: linear, use_class: False, learning rate: 0.0005, batch size: 64
+2025-01-14 23:13:07,991 - INFO - Training stopped at epoch 50 for config: {'pooling_method': 'linear', 'use_class': False}. Validation accuracy: 0.8632478632478633.
+2025-01-14 23:13:07,991 - INFO - Grid eval for classifiers: Running experiment with dataset: SeaStarReID2023, model: megadescriptor, pooling method: linear, use_class: False, learning rate: 0.001, batch size: 64
+2025-01-14 23:13:09,020 - INFO - Training stopped at epoch 50 for config: {'pooling_method': 'linear', 'use_class': False}. Validation accuracy: 0.8717948717948718.
+2025-01-14 23:13:09,020 - INFO - Grid eval for classifiers: Running experiment with dataset: SeaStarReID2023, model: megadescriptor, pooling method: linear, use_class: False, learning rate: 0.002, batch size: 64
+2025-01-14 23:13:10,047 - INFO - Training stopped at epoch 50 for config: {'pooling_method': 'linear', 'use_class': False}. Validation accuracy: 0.8746438746438746.
+2025-01-14 23:13:10,047 - INFO - Grid eval for classifiers: Running experiment with dataset: SeaStarReID2023, model: megadescriptor, pooling method: linear, use_class: False, learning rate: 0.005, batch size: 64
+2025-01-14 23:13:11,076 - INFO - Training stopped at epoch 47 for config: {'pooling_method': 'linear', 'use_class': False}. Validation accuracy: 0.8774928774928775.
+2025-01-14 23:13:11,076 - INFO - Grid eval for classifiers: Running experiment with dataset: SeaStarReID2023, model: megadescriptor, pooling method: linear, use_class: False, learning rate: 0.01, batch size: 64
+2025-01-14 23:13:12,021 - INFO - Training stopped at epoch 41 for config: {'pooling_method': 'linear', 'use_class': False}. Validation accuracy: 0.8689458689458689.
+2025-01-14 23:13:12,022 - INFO - Grid eval for classifiers: Running experiment with dataset: SeaStarReID2023, model: megadescriptor, pooling method: linear, use_class: False, learning rate: 0.02, batch size: 64
+2025-01-14 23:13:13,050 - INFO - Training stopped at epoch 50 for config: {'pooling_method': 'linear', 'use_class': False}. Validation accuracy: 0.8404558404558404.
+2025-01-14 23:13:13,050 - INFO - Grid eval for classifiers: Running experiment with dataset: SeaStarReID2023, model: megadescriptor, pooling method: linear, use_class: False, learning rate: 0.05, batch size: 64
+2025-01-14 23:13:13,360 - INFO - Training stopped at epoch 10 for config: {'pooling_method': 'linear', 'use_class': False}. Validation accuracy: 0.8233618233618234.
+2025-01-14 23:13:13,360 - INFO - Grid eval for classifiers: Running experiment with dataset: SeaStarReID2023, model: megadescriptor, pooling method: linear, use_class: False, learning rate: 0.1, batch size: 64
+2025-01-14 23:13:13,608 - INFO - Training stopped at epoch 7 for config: {'pooling_method': 'linear', 'use_class': False}. Validation accuracy: 0.7692307692307693.
+2025-01-14 23:13:13,608 - INFO - Grid eval for classifiers: Running experiment with dataset: SeaStarReID2023, model: megadescriptor, pooling method: linear, use_class: False, learning rate: 1e-05, batch size: 128
+2025-01-14 23:13:14,289 - INFO - Training stopped at epoch 50 for config: {'pooling_method': 'linear', 'use_class': False}. Validation accuracy: 0.3162393162393162.
+2025-01-14 23:13:14,289 - INFO - Grid eval for classifiers: Running experiment with dataset: SeaStarReID2023, model: megadescriptor, pooling method: linear, use_class: False, learning rate: 2e-05, batch size: 128
+2025-01-14 23:13:14,967 - INFO - Training stopped at epoch 50 for config: {'pooling_method': 'linear', 'use_class': False}. Validation accuracy: 0.49572649572649574.
+2025-01-14 23:13:14,967 - INFO - Grid eval for classifiers: Running experiment with dataset: SeaStarReID2023, model: megadescriptor, pooling method: linear, use_class: False, learning rate: 5e-05, batch size: 128
+2025-01-14 23:13:15,644 - INFO - Training stopped at epoch 50 for config: {'pooling_method': 'linear', 'use_class': False}. Validation accuracy: 0.6552706552706553.
+2025-01-14 23:13:15,644 - INFO - Grid eval for classifiers: Running experiment with dataset: SeaStarReID2023, model: megadescriptor, pooling method: linear, use_class: False, learning rate: 0.0001, batch size: 128
+2025-01-14 23:13:16,322 - INFO - Training stopped at epoch 50 for config: {'pooling_method': 'linear', 'use_class': False}. Validation accuracy: 0.7521367521367521.
+2025-01-14 23:13:16,322 - INFO - Grid eval for classifiers: Running experiment with dataset: SeaStarReID2023, model: megadescriptor, pooling method: linear, use_class: False, learning rate: 0.0002, batch size: 128
+2025-01-14 23:13:16,999 - INFO - Training stopped at epoch 50 for config: {'pooling_method': 'linear', 'use_class': False}. Validation accuracy: 0.8205128205128205.
+2025-01-14 23:13:16,999 - INFO - Grid eval for classifiers: Running experiment with dataset: SeaStarReID2023, model: megadescriptor, pooling method: linear, use_class: False, learning rate: 0.0005, batch size: 128
+2025-01-14 23:13:17,676 - INFO - Training stopped at epoch 50 for config: {'pooling_method': 'linear', 'use_class': False}. Validation accuracy: 0.8632478632478633.
+2025-01-14 23:13:17,676 - INFO - Grid eval for classifiers: Running experiment with dataset: SeaStarReID2023, model: megadescriptor, pooling method: linear, use_class: False, learning rate: 0.001, batch size: 128
+2025-01-14 23:13:18,354 - INFO - Training stopped at epoch 50 for config: {'pooling_method': 'linear', 'use_class': False}. Validation accuracy: 0.8689458689458689.
+2025-01-14 23:13:18,354 - INFO - Grid eval for classifiers: Running experiment with dataset: SeaStarReID2023, model: megadescriptor, pooling method: linear, use_class: False, learning rate: 0.002, batch size: 128
+2025-01-14 23:13:19,032 - INFO - Training stopped at epoch 50 for config: {'pooling_method': 'linear', 'use_class': False}. Validation accuracy: 0.8746438746438746.
+2025-01-14 23:13:19,032 - INFO - Grid eval for classifiers: Running experiment with dataset: SeaStarReID2023, model: megadescriptor, pooling method: linear, use_class: False, learning rate: 0.005, batch size: 128
+2025-01-14 23:13:19,710 - INFO - Training stopped at epoch 50 for config: {'pooling_method': 'linear', 'use_class': False}. Validation accuracy: 0.8746438746438746.
+2025-01-14 23:13:19,710 - INFO - Grid eval for classifiers: Running experiment with dataset: SeaStarReID2023, model: megadescriptor, pooling method: linear, use_class: False, learning rate: 0.01, batch size: 128
+2025-01-14 23:13:20,387 - INFO - Training stopped at epoch 50 for config: {'pooling_method': 'linear', 'use_class': False}. Validation accuracy: 0.8774928774928775.
+2025-01-14 23:13:20,387 - INFO - Grid eval for classifiers: Running experiment with dataset: SeaStarReID2023, model: megadescriptor, pooling method: linear, use_class: False, learning rate: 0.02, batch size: 128
+2025-01-14 23:13:21,065 - INFO - Training stopped at epoch 50 for config: {'pooling_method': 'linear', 'use_class': False}. Validation accuracy: 0.8547008547008547.
+2025-01-14 23:13:21,065 - INFO - Grid eval for classifiers: Running experiment with dataset: SeaStarReID2023, model: megadescriptor, pooling method: linear, use_class: False, learning rate: 0.05, batch size: 128
+2025-01-14 23:13:21,243 - INFO - Training stopped at epoch 8 for config: {'pooling_method': 'linear', 'use_class': False}. Validation accuracy: 0.8176638176638177.
+2025-01-14 23:13:21,243 - INFO - Grid eval for classifiers: Running experiment with dataset: SeaStarReID2023, model: megadescriptor, pooling method: linear, use_class: False, learning rate: 0.1, batch size: 128
+2025-01-14 23:13:21,380 - INFO - Training stopped at epoch 5 for config: {'pooling_method': 'linear', 'use_class': False}. Validation accuracy: 0.7720797720797721.
+2025-01-14 23:13:21,380 - INFO - Best results for dataset SeaStarReID2023 and linear pooling method: {
+    "dataset": "SeaStarReID2023",
+    "pooling_method": "linear",
+    "batch_size": 8,
+    "learning_rate": 0.001,
+    "best_epoch": 40,
+    "best_val_acc": 0.8831908831908832
+}
+2025-01-14 23:13:21,380 - INFO - Grid eval for classifiers: Running experiment with dataset: SeaStarReID2023, model: megadescriptor, pooling method: attentive, use_class: False, learning rate: 1e-05, batch size: 8
+2025-01-14 23:13:55,036 - INFO - Training stopped at epoch 50 for config: {'pooling_method': 'attentive', 'use_class': False}.  Validation accuracy: 0.8062678062678063.
+2025-01-14 23:13:55,036 - INFO - Grid eval for classifiers: Running experiment with dataset: SeaStarReID2023, model: megadescriptor, pooling method: attentive, use_class: False, learning rate: 2e-05, batch size: 8
+2025-01-14 23:14:22,918 - INFO - Training stopped at epoch 36 for config: {'pooling_method': 'attentive', 'use_class': False}.  Validation accuracy: 0.792022792022792.
+2025-01-14 23:14:22,918 - INFO - Grid eval for classifiers: Running experiment with dataset: SeaStarReID2023, model: megadescriptor, pooling method: attentive, use_class: False, learning rate: 5e-05, batch size: 8
+2025-01-14 23:14:39,299 - INFO - Training stopped at epoch 19 for config: {'pooling_method': 'attentive', 'use_class': False}.  Validation accuracy: 0.8005698005698005.
+2025-01-14 23:14:39,299 - INFO - Grid eval for classifiers: Running experiment with dataset: SeaStarReID2023, model: megadescriptor, pooling method: attentive, use_class: False, learning rate: 0.0001, batch size: 8
+2025-01-14 23:14:50,254 - INFO - Training stopped at epoch 11 for config: {'pooling_method': 'attentive', 'use_class': False}.  Validation accuracy: 0.8148148148148148.
+2025-01-14 23:14:50,254 - INFO - Grid eval for classifiers: Running experiment with dataset: SeaStarReID2023, model: megadescriptor, pooling method: attentive, use_class: False, learning rate: 0.0002, batch size: 8
+2025-01-14 23:14:59,172 - INFO - Training stopped at epoch 8 for config: {'pooling_method': 'attentive', 'use_class': False}.  Validation accuracy: 0.8575498575498576.
+2025-01-14 23:14:59,172 - INFO - Grid eval for classifiers: Running experiment with dataset: SeaStarReID2023, model: megadescriptor, pooling method: attentive, use_class: False, learning rate: 0.0005, batch size: 8
+2025-01-14 23:15:09,461 - INFO - Training stopped at epoch 10 for config: {'pooling_method': 'attentive', 'use_class': False}.  Validation accuracy: 0.8404558404558404.
+2025-01-14 23:15:09,461 - INFO - Grid eval for classifiers: Running experiment with dataset: SeaStarReID2023, model: megadescriptor, pooling method: attentive, use_class: False, learning rate: 0.001, batch size: 8
+2025-01-14 23:15:14,302 - INFO - Training stopped at epoch 2 for config: {'pooling_method': 'attentive', 'use_class': False}.  Validation accuracy: 0.6267806267806267.
+2025-01-14 23:15:14,303 - INFO - Grid eval for classifiers: Running experiment with dataset: SeaStarReID2023, model: megadescriptor, pooling method: attentive, use_class: False, learning rate: 0.002, batch size: 8
+2025-01-14 23:15:18,451 - INFO - Training stopped at epoch 1 for config: {'pooling_method': 'attentive', 'use_class': False}.  Validation accuracy: 0.4757834757834758.
+2025-01-14 23:15:18,452 - INFO - Grid eval for classifiers: Running experiment with dataset: SeaStarReID2023, model: megadescriptor, pooling method: attentive, use_class: False, learning rate: 0.005, batch size: 8
+2025-01-14 23:15:22,582 - INFO - Training stopped at epoch 1 for config: {'pooling_method': 'attentive', 'use_class': False}.  Validation accuracy: 0.3504273504273504.
+2025-01-14 23:15:22,582 - INFO - Grid eval for classifiers: Running experiment with dataset: SeaStarReID2023, model: megadescriptor, pooling method: attentive, use_class: False, learning rate: 0.01, batch size: 8
+2025-01-14 23:15:26,712 - INFO - Training stopped at epoch 1 for config: {'pooling_method': 'attentive', 'use_class': False}.  Validation accuracy: 0.36752136752136755.
+2025-01-14 23:15:26,712 - INFO - Grid eval for classifiers: Running experiment with dataset: SeaStarReID2023, model: megadescriptor, pooling method: attentive, use_class: False, learning rate: 0.02, batch size: 8
+2025-01-14 23:15:30,843 - INFO - Training stopped at epoch 1 for config: {'pooling_method': 'attentive', 'use_class': False}.  Validation accuracy: 0.41595441595441596.
+2025-01-14 23:15:30,843 - INFO - Grid eval for classifiers: Running experiment with dataset: SeaStarReID2023, model: megadescriptor, pooling method: attentive, use_class: False, learning rate: 0.05, batch size: 8
+2025-01-14 23:15:38,348 - INFO - Training stopped at epoch 6 for config: {'pooling_method': 'attentive', 'use_class': False}.  Validation accuracy: 0.3247863247863248.
+2025-01-14 23:15:38,348 - INFO - Grid eval for classifiers: Running experiment with dataset: SeaStarReID2023, model: megadescriptor, pooling method: attentive, use_class: False, learning rate: 0.1, batch size: 8
+2025-01-14 23:15:41,710 - INFO - Training stopped at epoch 0 for config: {'pooling_method': 'attentive', 'use_class': False}.  Validation accuracy: 0.002849002849002849.
+2025-01-14 23:15:41,711 - INFO - Grid eval for classifiers: Running experiment with dataset: SeaStarReID2023, model: megadescriptor, pooling method: attentive, use_class: False, learning rate: 1e-05, batch size: 16
+2025-01-14 23:16:08,467 - INFO - Training stopped at epoch 50 for config: {'pooling_method': 'attentive', 'use_class': False}.  Validation accuracy: 0.8034188034188035.
+2025-01-14 23:16:08,467 - INFO - Grid eval for classifiers: Running experiment with dataset: SeaStarReID2023, model: megadescriptor, pooling method: attentive, use_class: False, learning rate: 2e-05, batch size: 16
+2025-01-14 23:16:35,209 - INFO - Training stopped at epoch 50 for config: {'pooling_method': 'attentive', 'use_class': False}.  Validation accuracy: 0.7806267806267806.
+2025-01-14 23:16:35,209 - INFO - Grid eval for classifiers: Running experiment with dataset: SeaStarReID2023, model: megadescriptor, pooling method: attentive, use_class: False, learning rate: 5e-05, batch size: 16
+2025-01-14 23:16:52,885 - INFO - Training stopped at epoch 28 for config: {'pooling_method': 'attentive', 'use_class': False}.  Validation accuracy: 0.7977207977207977.
+2025-01-14 23:16:52,885 - INFO - Grid eval for classifiers: Running experiment with dataset: SeaStarReID2023, model: megadescriptor, pooling method: attentive, use_class: False, learning rate: 0.0001, batch size: 16
+2025-01-14 23:17:02,559 - INFO - Training stopped at epoch 13 for config: {'pooling_method': 'attentive', 'use_class': False}.  Validation accuracy: 0.8034188034188035.
+2025-01-14 23:17:02,559 - INFO - Grid eval for classifiers: Running experiment with dataset: SeaStarReID2023, model: megadescriptor, pooling method: attentive, use_class: False, learning rate: 0.0002, batch size: 16
+2025-01-14 23:17:08,496 - INFO - Training stopped at epoch 6 for config: {'pooling_method': 'attentive', 'use_class': False}.  Validation accuracy: 0.8376068376068376.
+2025-01-14 23:17:08,496 - INFO - Grid eval for classifiers: Running experiment with dataset: SeaStarReID2023, model: megadescriptor, pooling method: attentive, use_class: False, learning rate: 0.0005, batch size: 16
+2025-01-14 23:17:13,375 - INFO - Training stopped at epoch 4 for config: {'pooling_method': 'attentive', 'use_class': False}.  Validation accuracy: 0.7720797720797721.
+2025-01-14 23:17:13,375 - INFO - Grid eval for classifiers: Running experiment with dataset: SeaStarReID2023, model: megadescriptor, pooling method: attentive, use_class: False, learning rate: 0.001, batch size: 16
+2025-01-14 23:17:18,788 - INFO - Training stopped at epoch 5 for config: {'pooling_method': 'attentive', 'use_class': False}.  Validation accuracy: 0.7578347578347578.
+2025-01-14 23:17:18,788 - INFO - Grid eval for classifiers: Running experiment with dataset: SeaStarReID2023, model: megadescriptor, pooling method: attentive, use_class: False, learning rate: 0.002, batch size: 16
+2025-01-14 23:17:22,583 - INFO - Training stopped at epoch 2 for config: {'pooling_method': 'attentive', 'use_class': False}.  Validation accuracy: 0.50997150997151.
+2025-01-14 23:17:22,583 - INFO - Grid eval for classifiers: Running experiment with dataset: SeaStarReID2023, model: megadescriptor, pooling method: attentive, use_class: False, learning rate: 0.005, batch size: 16
+2025-01-14 23:17:25,827 - INFO - Training stopped at epoch 1 for config: {'pooling_method': 'attentive', 'use_class': False}.  Validation accuracy: 0.20797720797720798.
+2025-01-14 23:17:25,827 - INFO - Grid eval for classifiers: Running experiment with dataset: SeaStarReID2023, model: megadescriptor, pooling method: attentive, use_class: False, learning rate: 0.01, batch size: 16
+2025-01-14 23:17:29,062 - INFO - Training stopped at epoch 1 for config: {'pooling_method': 'attentive', 'use_class': False}.  Validation accuracy: 0.4415954415954416.
+2025-01-14 23:17:29,062 - INFO - Grid eval for classifiers: Running experiment with dataset: SeaStarReID2023, model: megadescriptor, pooling method: attentive, use_class: False, learning rate: 0.02, batch size: 16
+2025-01-14 23:17:32,297 - INFO - Training stopped at epoch 1 for config: {'pooling_method': 'attentive', 'use_class': False}.  Validation accuracy: 0.32763532763532766.
+2025-01-14 23:17:32,297 - INFO - Grid eval for classifiers: Running experiment with dataset: SeaStarReID2023, model: megadescriptor, pooling method: attentive, use_class: False, learning rate: 0.05, batch size: 16
+2025-01-14 23:17:35,526 - INFO - Training stopped at epoch 1 for config: {'pooling_method': 'attentive', 'use_class': False}.  Validation accuracy: 0.3333333333333333.
+2025-01-14 23:17:35,527 - INFO - Grid eval for classifiers: Running experiment with dataset: SeaStarReID2023, model: megadescriptor, pooling method: attentive, use_class: False, learning rate: 0.1, batch size: 16
+2025-01-14 23:17:43,491 - INFO - Training stopped at epoch 10 for config: {'pooling_method': 'attentive', 'use_class': False}.  Validation accuracy: 0.37037037037037035.
+2025-01-14 23:17:43,491 - INFO - Grid eval for classifiers: Running experiment with dataset: SeaStarReID2023, model: megadescriptor, pooling method: attentive, use_class: False, learning rate: 1e-05, batch size: 32
+2025-01-14 23:18:06,586 - INFO - Training stopped at epoch 50 for config: {'pooling_method': 'attentive', 'use_class': False}.  Validation accuracy: 0.7948717948717948.
+2025-01-14 23:18:06,587 - INFO - Grid eval for classifiers: Running experiment with dataset: SeaStarReID2023, model: megadescriptor, pooling method: attentive, use_class: False, learning rate: 2e-05, batch size: 32
+2025-01-14 23:18:29,679 - INFO - Training stopped at epoch 50 for config: {'pooling_method': 'attentive', 'use_class': False}.  Validation accuracy: 0.7977207977207977.
+2025-01-14 23:18:29,679 - INFO - Grid eval for classifiers: Running experiment with dataset: SeaStarReID2023, model: megadescriptor, pooling method: attentive, use_class: False, learning rate: 5e-05, batch size: 32
+2025-01-14 23:18:48,162 - INFO - Training stopped at epoch 35 for config: {'pooling_method': 'attentive', 'use_class': False}.  Validation accuracy: 0.811965811965812.
+2025-01-14 23:18:48,162 - INFO - Grid eval for classifiers: Running experiment with dataset: SeaStarReID2023, model: megadescriptor, pooling method: attentive, use_class: False, learning rate: 0.0001, batch size: 32
+2025-01-14 23:18:58,821 - INFO - Training stopped at epoch 18 for config: {'pooling_method': 'attentive', 'use_class': False}.  Validation accuracy: 0.8091168091168092.
+2025-01-14 23:18:58,821 - INFO - Grid eval for classifiers: Running experiment with dataset: SeaStarReID2023, model: megadescriptor, pooling method: attentive, use_class: False, learning rate: 0.0002, batch size: 32
+2025-01-14 23:19:04,874 - INFO - Training stopped at epoch 8 for config: {'pooling_method': 'attentive', 'use_class': False}.  Validation accuracy: 0.8290598290598291.
+2025-01-14 23:19:04,874 - INFO - Grid eval for classifiers: Running experiment with dataset: SeaStarReID2023, model: megadescriptor, pooling method: attentive, use_class: False, learning rate: 0.0005, batch size: 32
+2025-01-14 23:19:08,167 - INFO - Training stopped at epoch 2 for config: {'pooling_method': 'attentive', 'use_class': False}.  Validation accuracy: 0.7948717948717948.
+2025-01-14 23:19:08,167 - INFO - Grid eval for classifiers: Running experiment with dataset: SeaStarReID2023, model: megadescriptor, pooling method: attentive, use_class: False, learning rate: 0.001, batch size: 32
+2025-01-14 23:19:11,459 - INFO - Training stopped at epoch 2 for config: {'pooling_method': 'attentive', 'use_class': False}.  Validation accuracy: 0.7777777777777778.
+2025-01-14 23:19:11,459 - INFO - Grid eval for classifiers: Running experiment with dataset: SeaStarReID2023, model: megadescriptor, pooling method: attentive, use_class: False, learning rate: 0.002, batch size: 32
+2025-01-14 23:19:14,752 - INFO - Training stopped at epoch 2 for config: {'pooling_method': 'attentive', 'use_class': False}.  Validation accuracy: 0.6182336182336182.
+2025-01-14 23:19:14,752 - INFO - Grid eval for classifiers: Running experiment with dataset: SeaStarReID2023, model: megadescriptor, pooling method: attentive, use_class: False, learning rate: 0.005, batch size: 32
+2025-01-14 23:19:18,009 - INFO - Training stopped at epoch 2 for config: {'pooling_method': 'attentive', 'use_class': False}.  Validation accuracy: 0.36752136752136755.
+2025-01-14 23:19:18,009 - INFO - Grid eval for classifiers: Running experiment with dataset: SeaStarReID2023, model: megadescriptor, pooling method: attentive, use_class: False, learning rate: 0.01, batch size: 32
+2025-01-14 23:19:20,800 - INFO - Training stopped at epoch 1 for config: {'pooling_method': 'attentive', 'use_class': False}.  Validation accuracy: 0.3190883190883191.
+2025-01-14 23:19:20,800 - INFO - Grid eval for classifiers: Running experiment with dataset: SeaStarReID2023, model: megadescriptor, pooling method: attentive, use_class: False, learning rate: 0.02, batch size: 32
+2025-01-14 23:19:23,585 - INFO - Training stopped at epoch 1 for config: {'pooling_method': 'attentive', 'use_class': False}.  Validation accuracy: 0.43874643874643876.
+2025-01-14 23:19:23,585 - INFO - Grid eval for classifiers: Running experiment with dataset: SeaStarReID2023, model: megadescriptor, pooling method: attentive, use_class: False, learning rate: 0.05, batch size: 32
+2025-01-14 23:19:26,367 - INFO - Training stopped at epoch 1 for config: {'pooling_method': 'attentive', 'use_class': False}.  Validation accuracy: 0.33618233618233617.
+2025-01-14 23:19:26,367 - INFO - Grid eval for classifiers: Running experiment with dataset: SeaStarReID2023, model: megadescriptor, pooling method: attentive, use_class: False, learning rate: 0.1, batch size: 32
+2025-01-14 23:19:29,151 - INFO - Training stopped at epoch 1 for config: {'pooling_method': 'attentive', 'use_class': False}.  Validation accuracy: 0.2564102564102564.
+2025-01-14 23:19:29,151 - INFO - Grid eval for classifiers: Running experiment with dataset: SeaStarReID2023, model: megadescriptor, pooling method: attentive, use_class: False, learning rate: 1e-05, batch size: 64
+2025-01-14 23:19:50,686 - INFO - Training stopped at epoch 50 for config: {'pooling_method': 'attentive', 'use_class': False}.  Validation accuracy: 0.7948717948717948.
+2025-01-14 23:19:50,687 - INFO - Grid eval for classifiers: Running experiment with dataset: SeaStarReID2023, model: megadescriptor, pooling method: attentive, use_class: False, learning rate: 2e-05, batch size: 64
+2025-01-14 23:20:12,206 - INFO - Training stopped at epoch 50 for config: {'pooling_method': 'attentive', 'use_class': False}.  Validation accuracy: 0.8148148148148148.
+2025-01-14 23:20:12,206 - INFO - Grid eval for classifiers: Running experiment with dataset: SeaStarReID2023, model: megadescriptor, pooling method: attentive, use_class: False, learning rate: 5e-05, batch size: 64
+2025-01-14 23:20:33,723 - INFO - Training stopped at epoch 50 for config: {'pooling_method': 'attentive', 'use_class': False}.  Validation accuracy: 0.8176638176638177.
+2025-01-14 23:20:33,723 - INFO - Grid eval for classifiers: Running experiment with dataset: SeaStarReID2023, model: megadescriptor, pooling method: attentive, use_class: False, learning rate: 0.0001, batch size: 64
+2025-01-14 23:20:47,511 - INFO - Training stopped at epoch 27 for config: {'pooling_method': 'attentive', 'use_class': False}.  Validation accuracy: 0.8148148148148148.
+2025-01-14 23:20:47,511 - INFO - Grid eval for classifiers: Running experiment with dataset: SeaStarReID2023, model: megadescriptor, pooling method: attentive, use_class: False, learning rate: 0.0002, batch size: 64
+2025-01-14 23:20:54,444 - INFO - Training stopped at epoch 11 for config: {'pooling_method': 'attentive', 'use_class': False}.  Validation accuracy: 0.8148148148148148.
+2025-01-14 23:20:54,444 - INFO - Grid eval for classifiers: Running experiment with dataset: SeaStarReID2023, model: megadescriptor, pooling method: attentive, use_class: False, learning rate: 0.0005, batch size: 64
+2025-01-14 23:21:02,677 - INFO - Training stopped at epoch 14 for config: {'pooling_method': 'attentive', 'use_class': False}.  Validation accuracy: 0.8233618233618234.
+2025-01-14 23:21:02,677 - INFO - Grid eval for classifiers: Running experiment with dataset: SeaStarReID2023, model: megadescriptor, pooling method: attentive, use_class: False, learning rate: 0.001, batch size: 64
+2025-01-14 23:21:05,758 - INFO - Training stopped at epoch 2 for config: {'pooling_method': 'attentive', 'use_class': False}.  Validation accuracy: 0.7635327635327636.
+2025-01-14 23:21:05,758 - INFO - Grid eval for classifiers: Running experiment with dataset: SeaStarReID2023, model: megadescriptor, pooling method: attentive, use_class: False, learning rate: 0.002, batch size: 64
+2025-01-14 23:21:08,840 - INFO - Training stopped at epoch 2 for config: {'pooling_method': 'attentive', 'use_class': False}.  Validation accuracy: 0.7492877492877493.
+2025-01-14 23:21:08,840 - INFO - Grid eval for classifiers: Running experiment with dataset: SeaStarReID2023, model: megadescriptor, pooling method: attentive, use_class: False, learning rate: 0.005, batch size: 64
+2025-01-14 23:21:12,325 - INFO - Training stopped at epoch 3 for config: {'pooling_method': 'attentive', 'use_class': False}.  Validation accuracy: 0.5299145299145299.
+2025-01-14 23:21:12,325 - INFO - Grid eval for classifiers: Running experiment with dataset: SeaStarReID2023, model: megadescriptor, pooling method: attentive, use_class: False, learning rate: 0.01, batch size: 64
+2025-01-14 23:21:17,056 - INFO - Training stopped at epoch 6 for config: {'pooling_method': 'attentive', 'use_class': False}.  Validation accuracy: 0.38461538461538464.
+2025-01-14 23:21:17,056 - INFO - Grid eval for classifiers: Running experiment with dataset: SeaStarReID2023, model: megadescriptor, pooling method: attentive, use_class: False, learning rate: 0.02, batch size: 64
+2025-01-14 23:21:20,087 - INFO - Training stopped at epoch 2 for config: {'pooling_method': 'attentive', 'use_class': False}.  Validation accuracy: 0.2934472934472934.
+2025-01-14 23:21:20,087 - INFO - Grid eval for classifiers: Running experiment with dataset: SeaStarReID2023, model: megadescriptor, pooling method: attentive, use_class: False, learning rate: 0.05, batch size: 64
+2025-01-14 23:21:22,691 - INFO - Training stopped at epoch 1 for config: {'pooling_method': 'attentive', 'use_class': False}.  Validation accuracy: 0.4472934472934473.
+2025-01-14 23:21:22,691 - INFO - Grid eval for classifiers: Running experiment with dataset: SeaStarReID2023, model: megadescriptor, pooling method: attentive, use_class: False, learning rate: 0.1, batch size: 64
+2025-01-14 23:21:25,285 - INFO - Training stopped at epoch 1 for config: {'pooling_method': 'attentive', 'use_class': False}.  Validation accuracy: 0.24216524216524216.
+2025-01-14 23:21:25,285 - INFO - Grid eval for classifiers: Running experiment with dataset: SeaStarReID2023, model: megadescriptor, pooling method: attentive, use_class: False, learning rate: 1e-05, batch size: 128
+2025-01-14 23:21:45,335 - INFO - Training stopped at epoch 50 for config: {'pooling_method': 'attentive', 'use_class': False}.  Validation accuracy: 0.7492877492877493.
+2025-01-14 23:21:45,335 - INFO - Grid eval for classifiers: Running experiment with dataset: SeaStarReID2023, model: megadescriptor, pooling method: attentive, use_class: False, learning rate: 2e-05, batch size: 128
+2025-01-14 23:22:05,381 - INFO - Training stopped at epoch 50 for config: {'pooling_method': 'attentive', 'use_class': False}.  Validation accuracy: 0.8205128205128205.
+2025-01-14 23:22:05,381 - INFO - Grid eval for classifiers: Running experiment with dataset: SeaStarReID2023, model: megadescriptor, pooling method: attentive, use_class: False, learning rate: 5e-05, batch size: 128
+2025-01-14 23:22:25,402 - INFO - Training stopped at epoch 50 for config: {'pooling_method': 'attentive', 'use_class': False}.  Validation accuracy: 0.8233618233618234.
+2025-01-14 23:22:25,402 - INFO - Grid eval for classifiers: Running experiment with dataset: SeaStarReID2023, model: megadescriptor, pooling method: attentive, use_class: False, learning rate: 0.0001, batch size: 128
+2025-01-14 23:22:40,644 - INFO - Training stopped at epoch 33 for config: {'pooling_method': 'attentive', 'use_class': False}.  Validation accuracy: 0.7977207977207977.
+2025-01-14 23:22:40,644 - INFO - Grid eval for classifiers: Running experiment with dataset: SeaStarReID2023, model: megadescriptor, pooling method: attentive, use_class: False, learning rate: 0.0002, batch size: 128
+2025-01-14 23:22:48,698 - INFO - Training stopped at epoch 15 for config: {'pooling_method': 'attentive', 'use_class': False}.  Validation accuracy: 0.8148148148148148.
+2025-01-14 23:22:48,698 - INFO - Grid eval for classifiers: Running experiment with dataset: SeaStarReID2023, model: megadescriptor, pooling method: attentive, use_class: False, learning rate: 0.0005, batch size: 128
+2025-01-14 23:22:53,557 - INFO - Training stopped at epoch 7 for config: {'pooling_method': 'attentive', 'use_class': False}.  Validation accuracy: 0.8148148148148148.
+2025-01-14 23:22:53,557 - INFO - Grid eval for classifiers: Running experiment with dataset: SeaStarReID2023, model: megadescriptor, pooling method: attentive, use_class: False, learning rate: 0.001, batch size: 128
+2025-01-14 23:22:57,624 - INFO - Training stopped at epoch 5 for config: {'pooling_method': 'attentive', 'use_class': False}.  Validation accuracy: 0.7977207977207977.
+2025-01-14 23:22:57,624 - INFO - Grid eval for classifiers: Running experiment with dataset: SeaStarReID2023, model: megadescriptor, pooling method: attentive, use_class: False, learning rate: 0.002, batch size: 128
+2025-01-14 23:23:01,293 - INFO - Training stopped at epoch 4 for config: {'pooling_method': 'attentive', 'use_class': False}.  Validation accuracy: 0.7777777777777778.
+2025-01-14 23:23:01,293 - INFO - Grid eval for classifiers: Running experiment with dataset: SeaStarReID2023, model: megadescriptor, pooling method: attentive, use_class: False, learning rate: 0.005, batch size: 128
+2025-01-14 23:23:06,530 - INFO - Training stopped at epoch 8 for config: {'pooling_method': 'attentive', 'use_class': False}.  Validation accuracy: 0.7037037037037037.
+2025-01-14 23:23:06,531 - INFO - Grid eval for classifiers: Running experiment with dataset: SeaStarReID2023, model: megadescriptor, pooling method: attentive, use_class: False, learning rate: 0.01, batch size: 128
+2025-01-14 23:23:12,521 - INFO - Training stopped at epoch 10 for config: {'pooling_method': 'attentive', 'use_class': False}.  Validation accuracy: 0.6723646723646723.
+2025-01-14 23:23:12,521 - INFO - Grid eval for classifiers: Running experiment with dataset: SeaStarReID2023, model: megadescriptor, pooling method: attentive, use_class: False, learning rate: 0.02, batch size: 128
+2025-01-14 23:23:17,311 - INFO - Training stopped at epoch 7 for config: {'pooling_method': 'attentive', 'use_class': False}.  Validation accuracy: 0.36182336182336183.
+2025-01-14 23:23:17,312 - INFO - Grid eval for classifiers: Running experiment with dataset: SeaStarReID2023, model: megadescriptor, pooling method: attentive, use_class: False, learning rate: 0.05, batch size: 128
+2025-01-14 23:23:21,310 - INFO - Training stopped at epoch 5 for config: {'pooling_method': 'attentive', 'use_class': False}.  Validation accuracy: 0.5441595441595442.
+2025-01-14 23:23:21,310 - INFO - Grid eval for classifiers: Running experiment with dataset: SeaStarReID2023, model: megadescriptor, pooling method: attentive, use_class: False, learning rate: 0.1, batch size: 128
+2025-01-14 23:23:25,306 - INFO - Training stopped at epoch 5 for config: {'pooling_method': 'attentive', 'use_class': False}.  Validation accuracy: 0.4358974358974359.
+2025-01-14 23:23:25,306 - INFO - Best results for dataset SeaStarReID2023 and attentive pooling method: {
+    "dataset": "SeaStarReID2023",
+    "pooling_method": "attentive",
+    "batch_size": 8,
+    "learning_rate": 0.0002,
+    "best_epoch": 8,
+    "best_val_acc": 0.8575498575498576
+}
+2025-01-14 23:23:25,707 - INFO - /home/avisund/data/wildlife_datasets/ReunionTurtles/
+2025-01-14 23:23:25,756 - INFO - Dataset ReunionTurtles loaded successfully
+2025-01-14 23:23:25,764 - INFO - Dataset split successfully
+2025-01-14 23:23:25,767 - INFO - Dataloaders created successfully
+2025-01-14 23:23:27,552 - INFO - Loading pretrained weights from Hugging Face hub (BVRA/MegaDescriptor-L-384)
+2025-01-14 23:23:28,933 - INFO - Feature extractor loaded successfully
+2025-01-14 23:23:48,333 - INFO - Embeddings computed successfully
+2025-01-14 23:23:48,334 - INFO - Grid eval for classifiers: Running experiment with dataset: ReunionTurtles, model: megadescriptor, pooling method: linear, use_class: False, learning rate: 1e-05, batch size: 8
+2025-01-14 23:23:49,235 - INFO - Training stopped at epoch 50 for config: {'pooling_method': 'linear', 'use_class': False}. Validation accuracy: 0.15555555555555556.
+2025-01-14 23:23:49,236 - INFO - Grid eval for classifiers: Running experiment with dataset: ReunionTurtles, model: megadescriptor, pooling method: linear, use_class: False, learning rate: 2e-05, batch size: 8
+2025-01-14 23:23:50,105 - INFO - Training stopped at epoch 50 for config: {'pooling_method': 'linear', 'use_class': False}. Validation accuracy: 0.26666666666666666.
+2025-01-14 23:23:50,105 - INFO - Grid eval for classifiers: Running experiment with dataset: ReunionTurtles, model: megadescriptor, pooling method: linear, use_class: False, learning rate: 5e-05, batch size: 8
+2025-01-14 23:23:50,977 - INFO - Training stopped at epoch 50 for config: {'pooling_method': 'linear', 'use_class': False}. Validation accuracy: 0.35555555555555557.
+2025-01-14 23:23:50,977 - INFO - Grid eval for classifiers: Running experiment with dataset: ReunionTurtles, model: megadescriptor, pooling method: linear, use_class: False, learning rate: 0.0001, batch size: 8
+2025-01-14 23:23:51,828 - INFO - Training stopped at epoch 50 for config: {'pooling_method': 'linear', 'use_class': False}. Validation accuracy: 0.37777777777777777.
+2025-01-14 23:23:51,828 - INFO - Grid eval for classifiers: Running experiment with dataset: ReunionTurtles, model: megadescriptor, pooling method: linear, use_class: False, learning rate: 0.0002, batch size: 8
+2025-01-14 23:23:52,679 - INFO - Training stopped at epoch 50 for config: {'pooling_method': 'linear', 'use_class': False}. Validation accuracy: 0.4222222222222222.
+2025-01-14 23:23:52,679 - INFO - Grid eval for classifiers: Running experiment with dataset: ReunionTurtles, model: megadescriptor, pooling method: linear, use_class: False, learning rate: 0.0005, batch size: 8
+2025-01-14 23:23:53,529 - INFO - Training stopped at epoch 50 for config: {'pooling_method': 'linear', 'use_class': False}. Validation accuracy: 0.4222222222222222.
+2025-01-14 23:23:53,529 - INFO - Grid eval for classifiers: Running experiment with dataset: ReunionTurtles, model: megadescriptor, pooling method: linear, use_class: False, learning rate: 0.001, batch size: 8
+2025-01-14 23:23:54,380 - INFO - Training stopped at epoch 50 for config: {'pooling_method': 'linear', 'use_class': False}. Validation accuracy: 0.4666666666666667.
+2025-01-14 23:23:54,380 - INFO - Grid eval for classifiers: Running experiment with dataset: ReunionTurtles, model: megadescriptor, pooling method: linear, use_class: False, learning rate: 0.002, batch size: 8
+2025-01-14 23:23:55,231 - INFO - Training stopped at epoch 50 for config: {'pooling_method': 'linear', 'use_class': False}. Validation accuracy: 0.4666666666666667.
+2025-01-14 23:23:55,232 - INFO - Grid eval for classifiers: Running experiment with dataset: ReunionTurtles, model: megadescriptor, pooling method: linear, use_class: False, learning rate: 0.005, batch size: 8
+2025-01-14 23:23:56,083 - INFO - Training stopped at epoch 50 for config: {'pooling_method': 'linear', 'use_class': False}. Validation accuracy: 0.4444444444444444.
+2025-01-14 23:23:56,084 - INFO - Grid eval for classifiers: Running experiment with dataset: ReunionTurtles, model: megadescriptor, pooling method: linear, use_class: False, learning rate: 0.01, batch size: 8
+2025-01-14 23:23:56,943 - INFO - Training stopped at epoch 50 for config: {'pooling_method': 'linear', 'use_class': False}. Validation accuracy: 0.4.
+2025-01-14 23:23:56,944 - INFO - Grid eval for classifiers: Running experiment with dataset: ReunionTurtles, model: megadescriptor, pooling method: linear, use_class: False, learning rate: 0.02, batch size: 8
+2025-01-14 23:23:57,050 - INFO - Training stopped at epoch 1 for config: {'pooling_method': 'linear', 'use_class': False}. Validation accuracy: 0.37777777777777777.
+2025-01-14 23:23:57,050 - INFO - Grid eval for classifiers: Running experiment with dataset: ReunionTurtles, model: megadescriptor, pooling method: linear, use_class: False, learning rate: 0.05, batch size: 8
+2025-01-14 23:23:57,157 - INFO - Training stopped at epoch 1 for config: {'pooling_method': 'linear', 'use_class': False}. Validation accuracy: 0.3111111111111111.
+2025-01-14 23:23:57,157 - INFO - Grid eval for classifiers: Running experiment with dataset: ReunionTurtles, model: megadescriptor, pooling method: linear, use_class: False, learning rate: 0.1, batch size: 8
+2025-01-14 23:23:57,264 - INFO - Training stopped at epoch 1 for config: {'pooling_method': 'linear', 'use_class': False}. Validation accuracy: 0.26666666666666666.
+2025-01-14 23:23:57,264 - INFO - Grid eval for classifiers: Running experiment with dataset: ReunionTurtles, model: megadescriptor, pooling method: linear, use_class: False, learning rate: 1e-05, batch size: 16
+2025-01-14 23:23:57,732 - INFO - Training stopped at epoch 50 for config: {'pooling_method': 'linear', 'use_class': False}. Validation accuracy: 0.13333333333333333.
+2025-01-14 23:23:57,732 - INFO - Grid eval for classifiers: Running experiment with dataset: ReunionTurtles, model: megadescriptor, pooling method: linear, use_class: False, learning rate: 2e-05, batch size: 16
+2025-01-14 23:23:58,200 - INFO - Training stopped at epoch 50 for config: {'pooling_method': 'linear', 'use_class': False}. Validation accuracy: 0.2222222222222222.
+2025-01-14 23:23:58,201 - INFO - Grid eval for classifiers: Running experiment with dataset: ReunionTurtles, model: megadescriptor, pooling method: linear, use_class: False, learning rate: 5e-05, batch size: 16
+2025-01-14 23:23:58,668 - INFO - Training stopped at epoch 50 for config: {'pooling_method': 'linear', 'use_class': False}. Validation accuracy: 0.3333333333333333.
+2025-01-14 23:23:58,669 - INFO - Grid eval for classifiers: Running experiment with dataset: ReunionTurtles, model: megadescriptor, pooling method: linear, use_class: False, learning rate: 0.0001, batch size: 16
+2025-01-14 23:23:59,136 - INFO - Training stopped at epoch 50 for config: {'pooling_method': 'linear', 'use_class': False}. Validation accuracy: 0.37777777777777777.
+2025-01-14 23:23:59,136 - INFO - Grid eval for classifiers: Running experiment with dataset: ReunionTurtles, model: megadescriptor, pooling method: linear, use_class: False, learning rate: 0.0002, batch size: 16
+2025-01-14 23:23:59,603 - INFO - Training stopped at epoch 50 for config: {'pooling_method': 'linear', 'use_class': False}. Validation accuracy: 0.37777777777777777.
+2025-01-14 23:23:59,603 - INFO - Grid eval for classifiers: Running experiment with dataset: ReunionTurtles, model: megadescriptor, pooling method: linear, use_class: False, learning rate: 0.0005, batch size: 16
+2025-01-14 23:24:00,070 - INFO - Training stopped at epoch 50 for config: {'pooling_method': 'linear', 'use_class': False}. Validation accuracy: 0.4444444444444444.
+2025-01-14 23:24:00,071 - INFO - Grid eval for classifiers: Running experiment with dataset: ReunionTurtles, model: megadescriptor, pooling method: linear, use_class: False, learning rate: 0.001, batch size: 16
+2025-01-14 23:24:00,524 - INFO - Training stopped at epoch 50 for config: {'pooling_method': 'linear', 'use_class': False}. Validation accuracy: 0.4444444444444444.
+2025-01-14 23:24:00,524 - INFO - Grid eval for classifiers: Running experiment with dataset: ReunionTurtles, model: megadescriptor, pooling method: linear, use_class: False, learning rate: 0.002, batch size: 16
+2025-01-14 23:24:00,970 - INFO - Training stopped at epoch 50 for config: {'pooling_method': 'linear', 'use_class': False}. Validation accuracy: 0.4666666666666667.
+2025-01-14 23:24:00,971 - INFO - Grid eval for classifiers: Running experiment with dataset: ReunionTurtles, model: megadescriptor, pooling method: linear, use_class: False, learning rate: 0.005, batch size: 16
+2025-01-14 23:24:01,407 - INFO - Training stopped at epoch 50 for config: {'pooling_method': 'linear', 'use_class': False}. Validation accuracy: 0.4444444444444444.
+2025-01-14 23:24:01,407 - INFO - Grid eval for classifiers: Running experiment with dataset: ReunionTurtles, model: megadescriptor, pooling method: linear, use_class: False, learning rate: 0.01, batch size: 16
+2025-01-14 23:24:01,844 - INFO - Training stopped at epoch 50 for config: {'pooling_method': 'linear', 'use_class': False}. Validation accuracy: 0.4.
+2025-01-14 23:24:01,844 - INFO - Grid eval for classifiers: Running experiment with dataset: ReunionTurtles, model: megadescriptor, pooling method: linear, use_class: False, learning rate: 0.02, batch size: 16
+2025-01-14 23:24:01,898 - INFO - Training stopped at epoch 1 for config: {'pooling_method': 'linear', 'use_class': False}. Validation accuracy: 0.37777777777777777.
+2025-01-14 23:24:01,899 - INFO - Grid eval for classifiers: Running experiment with dataset: ReunionTurtles, model: megadescriptor, pooling method: linear, use_class: False, learning rate: 0.05, batch size: 16
+2025-01-14 23:24:01,952 - INFO - Training stopped at epoch 1 for config: {'pooling_method': 'linear', 'use_class': False}. Validation accuracy: 0.3333333333333333.
+2025-01-14 23:24:01,952 - INFO - Grid eval for classifiers: Running experiment with dataset: ReunionTurtles, model: megadescriptor, pooling method: linear, use_class: False, learning rate: 0.1, batch size: 16
+2025-01-14 23:24:02,007 - INFO - Training stopped at epoch 1 for config: {'pooling_method': 'linear', 'use_class': False}. Validation accuracy: 0.3333333333333333.
+2025-01-14 23:24:02,007 - INFO - Grid eval for classifiers: Running experiment with dataset: ReunionTurtles, model: megadescriptor, pooling method: linear, use_class: False, learning rate: 1e-05, batch size: 32
+2025-01-14 23:24:02,252 - INFO - Training stopped at epoch 50 for config: {'pooling_method': 'linear', 'use_class': False}. Validation accuracy: 0.06666666666666667.
+2025-01-14 23:24:02,252 - INFO - Grid eval for classifiers: Running experiment with dataset: ReunionTurtles, model: megadescriptor, pooling method: linear, use_class: False, learning rate: 2e-05, batch size: 32
+2025-01-14 23:24:02,498 - INFO - Training stopped at epoch 50 for config: {'pooling_method': 'linear', 'use_class': False}. Validation accuracy: 0.08888888888888889.
+2025-01-14 23:24:02,498 - INFO - Grid eval for classifiers: Running experiment with dataset: ReunionTurtles, model: megadescriptor, pooling method: linear, use_class: False, learning rate: 5e-05, batch size: 32
+2025-01-14 23:24:02,743 - INFO - Training stopped at epoch 50 for config: {'pooling_method': 'linear', 'use_class': False}. Validation accuracy: 0.24444444444444444.
+2025-01-14 23:24:02,743 - INFO - Grid eval for classifiers: Running experiment with dataset: ReunionTurtles, model: megadescriptor, pooling method: linear, use_class: False, learning rate: 0.0001, batch size: 32
+2025-01-14 23:24:02,988 - INFO - Training stopped at epoch 50 for config: {'pooling_method': 'linear', 'use_class': False}. Validation accuracy: 0.3111111111111111.
+2025-01-14 23:24:02,989 - INFO - Grid eval for classifiers: Running experiment with dataset: ReunionTurtles, model: megadescriptor, pooling method: linear, use_class: False, learning rate: 0.0002, batch size: 32
+2025-01-14 23:24:03,238 - INFO - Training stopped at epoch 50 for config: {'pooling_method': 'linear', 'use_class': False}. Validation accuracy: 0.37777777777777777.
+2025-01-14 23:24:03,238 - INFO - Grid eval for classifiers: Running experiment with dataset: ReunionTurtles, model: megadescriptor, pooling method: linear, use_class: False, learning rate: 0.0005, batch size: 32
+2025-01-14 23:24:03,485 - INFO - Training stopped at epoch 50 for config: {'pooling_method': 'linear', 'use_class': False}. Validation accuracy: 0.4.
+2025-01-14 23:24:03,486 - INFO - Grid eval for classifiers: Running experiment with dataset: ReunionTurtles, model: megadescriptor, pooling method: linear, use_class: False, learning rate: 0.001, batch size: 32
+2025-01-14 23:24:03,732 - INFO - Training stopped at epoch 50 for config: {'pooling_method': 'linear', 'use_class': False}. Validation accuracy: 0.4444444444444444.
+2025-01-14 23:24:03,732 - INFO - Grid eval for classifiers: Running experiment with dataset: ReunionTurtles, model: megadescriptor, pooling method: linear, use_class: False, learning rate: 0.002, batch size: 32
+2025-01-14 23:24:03,975 - INFO - Training stopped at epoch 50 for config: {'pooling_method': 'linear', 'use_class': False}. Validation accuracy: 0.4666666666666667.
+2025-01-14 23:24:03,976 - INFO - Grid eval for classifiers: Running experiment with dataset: ReunionTurtles, model: megadescriptor, pooling method: linear, use_class: False, learning rate: 0.005, batch size: 32
+2025-01-14 23:24:04,169 - INFO - Training stopped at epoch 34 for config: {'pooling_method': 'linear', 'use_class': False}. Validation accuracy: 0.4.
+2025-01-14 23:24:04,169 - INFO - Grid eval for classifiers: Running experiment with dataset: ReunionTurtles, model: megadescriptor, pooling method: linear, use_class: False, learning rate: 0.01, batch size: 32
+2025-01-14 23:24:04,204 - INFO - Training stopped at epoch 2 for config: {'pooling_method': 'linear', 'use_class': False}. Validation accuracy: 0.4.
+2025-01-14 23:24:04,204 - INFO - Grid eval for classifiers: Running experiment with dataset: ReunionTurtles, model: megadescriptor, pooling method: linear, use_class: False, learning rate: 0.02, batch size: 32
+2025-01-14 23:24:04,235 - INFO - Training stopped at epoch 1 for config: {'pooling_method': 'linear', 'use_class': False}. Validation accuracy: 0.37777777777777777.
+2025-01-14 23:24:04,235 - INFO - Grid eval for classifiers: Running experiment with dataset: ReunionTurtles, model: megadescriptor, pooling method: linear, use_class: False, learning rate: 0.05, batch size: 32
+2025-01-14 23:24:04,265 - INFO - Training stopped at epoch 1 for config: {'pooling_method': 'linear', 'use_class': False}. Validation accuracy: 0.35555555555555557.
+2025-01-14 23:24:04,265 - INFO - Grid eval for classifiers: Running experiment with dataset: ReunionTurtles, model: megadescriptor, pooling method: linear, use_class: False, learning rate: 0.1, batch size: 32
+2025-01-14 23:24:04,301 - INFO - Training stopped at epoch 2 for config: {'pooling_method': 'linear', 'use_class': False}. Validation accuracy: 0.35555555555555557.
+2025-01-14 23:24:04,301 - INFO - Grid eval for classifiers: Running experiment with dataset: ReunionTurtles, model: megadescriptor, pooling method: linear, use_class: False, learning rate: 1e-05, batch size: 64
+2025-01-14 23:24:04,447 - INFO - Training stopped at epoch 50 for config: {'pooling_method': 'linear', 'use_class': False}. Validation accuracy: 0.06666666666666667.
+2025-01-14 23:24:04,447 - INFO - Grid eval for classifiers: Running experiment with dataset: ReunionTurtles, model: megadescriptor, pooling method: linear, use_class: False, learning rate: 2e-05, batch size: 64
+2025-01-14 23:24:04,591 - INFO - Training stopped at epoch 50 for config: {'pooling_method': 'linear', 'use_class': False}. Validation accuracy: 0.08888888888888889.
+2025-01-14 23:24:04,591 - INFO - Grid eval for classifiers: Running experiment with dataset: ReunionTurtles, model: megadescriptor, pooling method: linear, use_class: False, learning rate: 5e-05, batch size: 64
+2025-01-14 23:24:04,735 - INFO - Training stopped at epoch 50 for config: {'pooling_method': 'linear', 'use_class': False}. Validation accuracy: 0.26666666666666666.
+2025-01-14 23:24:04,735 - INFO - Grid eval for classifiers: Running experiment with dataset: ReunionTurtles, model: megadescriptor, pooling method: linear, use_class: False, learning rate: 0.0001, batch size: 64
+2025-01-14 23:24:04,879 - INFO - Training stopped at epoch 50 for config: {'pooling_method': 'linear', 'use_class': False}. Validation accuracy: 0.2222222222222222.
+2025-01-14 23:24:04,879 - INFO - Grid eval for classifiers: Running experiment with dataset: ReunionTurtles, model: megadescriptor, pooling method: linear, use_class: False, learning rate: 0.0002, batch size: 64
+2025-01-14 23:24:05,023 - INFO - Training stopped at epoch 50 for config: {'pooling_method': 'linear', 'use_class': False}. Validation accuracy: 0.35555555555555557.
+2025-01-14 23:24:05,023 - INFO - Grid eval for classifiers: Running experiment with dataset: ReunionTurtles, model: megadescriptor, pooling method: linear, use_class: False, learning rate: 0.0005, batch size: 64
+2025-01-14 23:24:05,169 - INFO - Training stopped at epoch 50 for config: {'pooling_method': 'linear', 'use_class': False}. Validation accuracy: 0.37777777777777777.
+2025-01-14 23:24:05,169 - INFO - Grid eval for classifiers: Running experiment with dataset: ReunionTurtles, model: megadescriptor, pooling method: linear, use_class: False, learning rate: 0.001, batch size: 64
+2025-01-14 23:24:05,314 - INFO - Training stopped at epoch 50 for config: {'pooling_method': 'linear', 'use_class': False}. Validation accuracy: 0.37777777777777777.
+2025-01-14 23:24:05,314 - INFO - Grid eval for classifiers: Running experiment with dataset: ReunionTurtles, model: megadescriptor, pooling method: linear, use_class: False, learning rate: 0.002, batch size: 64
+2025-01-14 23:24:05,458 - INFO - Training stopped at epoch 50 for config: {'pooling_method': 'linear', 'use_class': False}. Validation accuracy: 0.37777777777777777.
+2025-01-14 23:24:05,458 - INFO - Grid eval for classifiers: Running experiment with dataset: ReunionTurtles, model: megadescriptor, pooling method: linear, use_class: False, learning rate: 0.005, batch size: 64
+2025-01-14 23:24:05,491 - INFO - Training stopped at epoch 6 for config: {'pooling_method': 'linear', 'use_class': False}. Validation accuracy: 0.4222222222222222.
+2025-01-14 23:24:05,491 - INFO - Grid eval for classifiers: Running experiment with dataset: ReunionTurtles, model: megadescriptor, pooling method: linear, use_class: False, learning rate: 0.01, batch size: 64
+2025-01-14 23:24:05,515 - INFO - Training stopped at epoch 3 for config: {'pooling_method': 'linear', 'use_class': False}. Validation accuracy: 0.4444444444444444.
+2025-01-14 23:24:05,515 - INFO - Grid eval for classifiers: Running experiment with dataset: ReunionTurtles, model: megadescriptor, pooling method: linear, use_class: False, learning rate: 0.02, batch size: 64
+2025-01-14 23:24:05,537 - INFO - Training stopped at epoch 2 for config: {'pooling_method': 'linear', 'use_class': False}. Validation accuracy: 0.3333333333333333.
+2025-01-14 23:24:05,537 - INFO - Grid eval for classifiers: Running experiment with dataset: ReunionTurtles, model: megadescriptor, pooling method: linear, use_class: False, learning rate: 0.05, batch size: 64
+2025-01-14 23:24:05,555 - INFO - Training stopped at epoch 1 for config: {'pooling_method': 'linear', 'use_class': False}. Validation accuracy: 0.35555555555555557.
+2025-01-14 23:24:05,555 - INFO - Grid eval for classifiers: Running experiment with dataset: ReunionTurtles, model: megadescriptor, pooling method: linear, use_class: False, learning rate: 0.1, batch size: 64
+2025-01-14 23:24:05,574 - INFO - Training stopped at epoch 1 for config: {'pooling_method': 'linear', 'use_class': False}. Validation accuracy: 0.35555555555555557.
+2025-01-14 23:24:05,574 - INFO - Grid eval for classifiers: Running experiment with dataset: ReunionTurtles, model: megadescriptor, pooling method: linear, use_class: False, learning rate: 1e-05, batch size: 128
+2025-01-14 23:24:05,689 - INFO - Training stopped at epoch 50 for config: {'pooling_method': 'linear', 'use_class': False}. Validation accuracy: 0.022222222222222223.
+2025-01-14 23:24:05,689 - INFO - Grid eval for classifiers: Running experiment with dataset: ReunionTurtles, model: megadescriptor, pooling method: linear, use_class: False, learning rate: 2e-05, batch size: 128
+2025-01-14 23:24:05,805 - INFO - Training stopped at epoch 50 for config: {'pooling_method': 'linear', 'use_class': False}. Validation accuracy: 0.1111111111111111.
+2025-01-14 23:24:05,805 - INFO - Grid eval for classifiers: Running experiment with dataset: ReunionTurtles, model: megadescriptor, pooling method: linear, use_class: False, learning rate: 5e-05, batch size: 128
+2025-01-14 23:24:05,920 - INFO - Training stopped at epoch 50 for config: {'pooling_method': 'linear', 'use_class': False}. Validation accuracy: 0.17777777777777778.
+2025-01-14 23:24:05,921 - INFO - Grid eval for classifiers: Running experiment with dataset: ReunionTurtles, model: megadescriptor, pooling method: linear, use_class: False, learning rate: 0.0001, batch size: 128
+2025-01-14 23:24:06,036 - INFO - Training stopped at epoch 50 for config: {'pooling_method': 'linear', 'use_class': False}. Validation accuracy: 0.2.
+2025-01-14 23:24:06,036 - INFO - Grid eval for classifiers: Running experiment with dataset: ReunionTurtles, model: megadescriptor, pooling method: linear, use_class: False, learning rate: 0.0002, batch size: 128
+2025-01-14 23:24:06,151 - INFO - Training stopped at epoch 50 for config: {'pooling_method': 'linear', 'use_class': False}. Validation accuracy: 0.3111111111111111.
+2025-01-14 23:24:06,151 - INFO - Grid eval for classifiers: Running experiment with dataset: ReunionTurtles, model: megadescriptor, pooling method: linear, use_class: False, learning rate: 0.0005, batch size: 128
+2025-01-14 23:24:06,266 - INFO - Training stopped at epoch 50 for config: {'pooling_method': 'linear', 'use_class': False}. Validation accuracy: 0.3333333333333333.
+2025-01-14 23:24:06,266 - INFO - Grid eval for classifiers: Running experiment with dataset: ReunionTurtles, model: megadescriptor, pooling method: linear, use_class: False, learning rate: 0.001, batch size: 128
+2025-01-14 23:24:06,381 - INFO - Training stopped at epoch 50 for config: {'pooling_method': 'linear', 'use_class': False}. Validation accuracy: 0.37777777777777777.
+2025-01-14 23:24:06,381 - INFO - Grid eval for classifiers: Running experiment with dataset: ReunionTurtles, model: megadescriptor, pooling method: linear, use_class: False, learning rate: 0.002, batch size: 128
+2025-01-14 23:24:06,496 - INFO - Training stopped at epoch 50 for config: {'pooling_method': 'linear', 'use_class': False}. Validation accuracy: 0.4.
+2025-01-14 23:24:06,496 - INFO - Grid eval for classifiers: Running experiment with dataset: ReunionTurtles, model: megadescriptor, pooling method: linear, use_class: False, learning rate: 0.005, batch size: 128
+2025-01-14 23:24:06,528 - INFO - Training stopped at epoch 8 for config: {'pooling_method': 'linear', 'use_class': False}. Validation accuracy: 0.37777777777777777.
+2025-01-14 23:24:06,528 - INFO - Grid eval for classifiers: Running experiment with dataset: ReunionTurtles, model: megadescriptor, pooling method: linear, use_class: False, learning rate: 0.01, batch size: 128
+2025-01-14 23:24:06,547 - INFO - Training stopped at epoch 3 for config: {'pooling_method': 'linear', 'use_class': False}. Validation accuracy: 0.37777777777777777.
+2025-01-14 23:24:06,547 - INFO - Grid eval for classifiers: Running experiment with dataset: ReunionTurtles, model: megadescriptor, pooling method: linear, use_class: False, learning rate: 0.02, batch size: 128
+2025-01-14 23:24:06,562 - INFO - Training stopped at epoch 1 for config: {'pooling_method': 'linear', 'use_class': False}. Validation accuracy: 0.3111111111111111.
+2025-01-14 23:24:06,562 - INFO - Grid eval for classifiers: Running experiment with dataset: ReunionTurtles, model: megadescriptor, pooling method: linear, use_class: False, learning rate: 0.05, batch size: 128
+2025-01-14 23:24:06,577 - INFO - Training stopped at epoch 1 for config: {'pooling_method': 'linear', 'use_class': False}. Validation accuracy: 0.3333333333333333.
+2025-01-14 23:24:06,577 - INFO - Grid eval for classifiers: Running experiment with dataset: ReunionTurtles, model: megadescriptor, pooling method: linear, use_class: False, learning rate: 0.1, batch size: 128
+2025-01-14 23:24:06,592 - INFO - Training stopped at epoch 1 for config: {'pooling_method': 'linear', 'use_class': False}. Validation accuracy: 0.4.
+2025-01-14 23:24:06,592 - INFO - Best results for dataset ReunionTurtles and linear pooling method: {
+    "dataset": "ReunionTurtles",
+    "pooling_method": "linear",
+    "batch_size": 8,
+    "learning_rate": 0.001,
+    "best_epoch": 50,
+    "best_val_acc": 0.4666666666666667
+}
+2025-01-14 23:24:06,592 - INFO - Grid eval for classifiers: Running experiment with dataset: ReunionTurtles, model: megadescriptor, pooling method: attentive, use_class: False, learning rate: 1e-05, batch size: 8
+2025-01-14 23:24:10,998 - INFO - Training stopped at epoch 50 for config: {'pooling_method': 'attentive', 'use_class': False}.  Validation accuracy: 0.4222222222222222.
+2025-01-14 23:24:10,999 - INFO - Grid eval for classifiers: Running experiment with dataset: ReunionTurtles, model: megadescriptor, pooling method: attentive, use_class: False, learning rate: 2e-05, batch size: 8
+2025-01-14 23:24:15,409 - INFO - Training stopped at epoch 50 for config: {'pooling_method': 'attentive', 'use_class': False}.  Validation accuracy: 0.4.
+2025-01-14 23:24:15,409 - INFO - Grid eval for classifiers: Running experiment with dataset: ReunionTurtles, model: megadescriptor, pooling method: attentive, use_class: False, learning rate: 5e-05, batch size: 8
+2025-01-14 23:24:19,826 - INFO - Training stopped at epoch 50 for config: {'pooling_method': 'attentive', 'use_class': False}.  Validation accuracy: 0.5333333333333333.
+2025-01-14 23:24:19,827 - INFO - Grid eval for classifiers: Running experiment with dataset: ReunionTurtles, model: megadescriptor, pooling method: attentive, use_class: False, learning rate: 0.0001, batch size: 8
+2025-01-14 23:24:22,944 - INFO - Training stopped at epoch 30 for config: {'pooling_method': 'attentive', 'use_class': False}.  Validation accuracy: 0.4666666666666667.
+2025-01-14 23:24:22,944 - INFO - Grid eval for classifiers: Running experiment with dataset: ReunionTurtles, model: megadescriptor, pooling method: attentive, use_class: False, learning rate: 0.0002, batch size: 8
+2025-01-14 23:24:23,803 - INFO - Training stopped at epoch 4 for config: {'pooling_method': 'attentive', 'use_class': False}.  Validation accuracy: 0.4666666666666667.
+2025-01-14 23:24:23,803 - INFO - Grid eval for classifiers: Running experiment with dataset: ReunionTurtles, model: megadescriptor, pooling method: attentive, use_class: False, learning rate: 0.0005, batch size: 8
+2025-01-14 23:24:24,488 - INFO - Training stopped at epoch 2 for config: {'pooling_method': 'attentive', 'use_class': False}.  Validation accuracy: 0.37777777777777777.
+2025-01-14 23:24:24,488 - INFO - Grid eval for classifiers: Running experiment with dataset: ReunionTurtles, model: megadescriptor, pooling method: attentive, use_class: False, learning rate: 0.001, batch size: 8
+2025-01-14 23:24:25,260 - INFO - Training stopped at epoch 3 for config: {'pooling_method': 'attentive', 'use_class': False}.  Validation accuracy: 0.37777777777777777.
+2025-01-14 23:24:25,260 - INFO - Grid eval for classifiers: Running experiment with dataset: ReunionTurtles, model: megadescriptor, pooling method: attentive, use_class: False, learning rate: 0.002, batch size: 8
+2025-01-14 23:24:25,858 - INFO - Training stopped at epoch 1 for config: {'pooling_method': 'attentive', 'use_class': False}.  Validation accuracy: 0.2222222222222222.
+2025-01-14 23:24:25,858 - INFO - Grid eval for classifiers: Running experiment with dataset: ReunionTurtles, model: megadescriptor, pooling method: attentive, use_class: False, learning rate: 0.005, batch size: 8
+2025-01-14 23:24:26,455 - INFO - Training stopped at epoch 1 for config: {'pooling_method': 'attentive', 'use_class': False}.  Validation accuracy: 0.17777777777777778.
+2025-01-14 23:24:26,455 - INFO - Grid eval for classifiers: Running experiment with dataset: ReunionTurtles, model: megadescriptor, pooling method: attentive, use_class: False, learning rate: 0.01, batch size: 8
+2025-01-14 23:24:27,051 - INFO - Training stopped at epoch 1 for config: {'pooling_method': 'attentive', 'use_class': False}.  Validation accuracy: 0.1111111111111111.
+2025-01-14 23:24:27,051 - INFO - Grid eval for classifiers: Running experiment with dataset: ReunionTurtles, model: megadescriptor, pooling method: attentive, use_class: False, learning rate: 0.02, batch size: 8
+2025-01-14 23:24:27,646 - INFO - Training stopped at epoch 1 for config: {'pooling_method': 'attentive', 'use_class': False}.  Validation accuracy: 0.15555555555555556.
+2025-01-14 23:24:27,646 - INFO - Grid eval for classifiers: Running experiment with dataset: ReunionTurtles, model: megadescriptor, pooling method: attentive, use_class: False, learning rate: 0.05, batch size: 8
+2025-01-14 23:24:28,242 - INFO - Training stopped at epoch 1 for config: {'pooling_method': 'attentive', 'use_class': False}.  Validation accuracy: 0.1111111111111111.
+2025-01-14 23:24:28,242 - INFO - Grid eval for classifiers: Running experiment with dataset: ReunionTurtles, model: megadescriptor, pooling method: attentive, use_class: False, learning rate: 0.1, batch size: 8
+2025-01-14 23:24:28,838 - INFO - Training stopped at epoch 1 for config: {'pooling_method': 'attentive', 'use_class': False}.  Validation accuracy: 0.13333333333333333.
+2025-01-14 23:24:28,838 - INFO - Grid eval for classifiers: Running experiment with dataset: ReunionTurtles, model: megadescriptor, pooling method: attentive, use_class: False, learning rate: 1e-05, batch size: 16
+2025-01-14 23:24:32,339 - INFO - Training stopped at epoch 50 for config: {'pooling_method': 'attentive', 'use_class': False}.  Validation accuracy: 0.37777777777777777.
+2025-01-14 23:24:32,339 - INFO - Grid eval for classifiers: Running experiment with dataset: ReunionTurtles, model: megadescriptor, pooling method: attentive, use_class: False, learning rate: 2e-05, batch size: 16
+2025-01-14 23:24:35,855 - INFO - Training stopped at epoch 50 for config: {'pooling_method': 'attentive', 'use_class': False}.  Validation accuracy: 0.4666666666666667.
+2025-01-14 23:24:35,855 - INFO - Grid eval for classifiers: Running experiment with dataset: ReunionTurtles, model: megadescriptor, pooling method: attentive, use_class: False, learning rate: 5e-05, batch size: 16
+2025-01-14 23:24:39,374 - INFO - Training stopped at epoch 50 for config: {'pooling_method': 'attentive', 'use_class': False}.  Validation accuracy: 0.4666666666666667.
+2025-01-14 23:24:39,374 - INFO - Grid eval for classifiers: Running experiment with dataset: ReunionTurtles, model: megadescriptor, pooling method: attentive, use_class: False, learning rate: 0.0001, batch size: 16
+2025-01-14 23:24:42,897 - INFO - Training stopped at epoch 50 for config: {'pooling_method': 'attentive', 'use_class': False}.  Validation accuracy: 0.5333333333333333.
+2025-01-14 23:24:42,897 - INFO - Grid eval for classifiers: Running experiment with dataset: ReunionTurtles, model: megadescriptor, pooling method: attentive, use_class: False, learning rate: 0.0002, batch size: 16
+2025-01-14 23:24:43,866 - INFO - Training stopped at epoch 8 for config: {'pooling_method': 'attentive', 'use_class': False}.  Validation accuracy: 0.4666666666666667.
+2025-01-14 23:24:43,866 - INFO - Grid eval for classifiers: Running experiment with dataset: ReunionTurtles, model: megadescriptor, pooling method: attentive, use_class: False, learning rate: 0.0005, batch size: 16
+2025-01-14 23:24:44,420 - INFO - Training stopped at epoch 2 for config: {'pooling_method': 'attentive', 'use_class': False}.  Validation accuracy: 0.4.
+2025-01-14 23:24:44,420 - INFO - Grid eval for classifiers: Running experiment with dataset: ReunionTurtles, model: megadescriptor, pooling method: attentive, use_class: False, learning rate: 0.001, batch size: 16
+2025-01-14 23:24:44,974 - INFO - Training stopped at epoch 2 for config: {'pooling_method': 'attentive', 'use_class': False}.  Validation accuracy: 0.4666666666666667.
+2025-01-14 23:24:44,974 - INFO - Grid eval for classifiers: Running experiment with dataset: ReunionTurtles, model: megadescriptor, pooling method: attentive, use_class: False, learning rate: 0.002, batch size: 16
+2025-01-14 23:24:45,460 - INFO - Training stopped at epoch 1 for config: {'pooling_method': 'attentive', 'use_class': False}.  Validation accuracy: 0.3333333333333333.
+2025-01-14 23:24:45,460 - INFO - Grid eval for classifiers: Running experiment with dataset: ReunionTurtles, model: megadescriptor, pooling method: attentive, use_class: False, learning rate: 0.005, batch size: 16
+2025-01-14 23:24:45,944 - INFO - Training stopped at epoch 1 for config: {'pooling_method': 'attentive', 'use_class': False}.  Validation accuracy: 0.13333333333333333.
+2025-01-14 23:24:45,944 - INFO - Grid eval for classifiers: Running experiment with dataset: ReunionTurtles, model: megadescriptor, pooling method: attentive, use_class: False, learning rate: 0.01, batch size: 16
+2025-01-14 23:24:46,428 - INFO - Training stopped at epoch 1 for config: {'pooling_method': 'attentive', 'use_class': False}.  Validation accuracy: 0.1111111111111111.
+2025-01-14 23:24:46,428 - INFO - Grid eval for classifiers: Running experiment with dataset: ReunionTurtles, model: megadescriptor, pooling method: attentive, use_class: False, learning rate: 0.02, batch size: 16
+2025-01-14 23:24:46,911 - INFO - Training stopped at epoch 1 for config: {'pooling_method': 'attentive', 'use_class': False}.  Validation accuracy: 0.13333333333333333.
+2025-01-14 23:24:46,911 - INFO - Grid eval for classifiers: Running experiment with dataset: ReunionTurtles, model: megadescriptor, pooling method: attentive, use_class: False, learning rate: 0.05, batch size: 16
+2025-01-14 23:24:47,392 - INFO - Training stopped at epoch 1 for config: {'pooling_method': 'attentive', 'use_class': False}.  Validation accuracy: 0.06666666666666667.
+2025-01-14 23:24:47,392 - INFO - Grid eval for classifiers: Running experiment with dataset: ReunionTurtles, model: megadescriptor, pooling method: attentive, use_class: False, learning rate: 0.1, batch size: 16
+2025-01-14 23:24:47,873 - INFO - Training stopped at epoch 1 for config: {'pooling_method': 'attentive', 'use_class': False}.  Validation accuracy: 0.08888888888888889.
+2025-01-14 23:24:47,873 - INFO - Grid eval for classifiers: Running experiment with dataset: ReunionTurtles, model: megadescriptor, pooling method: attentive, use_class: False, learning rate: 1e-05, batch size: 32
+2025-01-14 23:24:50,913 - INFO - Training stopped at epoch 50 for config: {'pooling_method': 'attentive', 'use_class': False}.  Validation accuracy: 0.2222222222222222.
+2025-01-14 23:24:50,914 - INFO - Grid eval for classifiers: Running experiment with dataset: ReunionTurtles, model: megadescriptor, pooling method: attentive, use_class: False, learning rate: 2e-05, batch size: 32
+2025-01-14 23:24:53,958 - INFO - Training stopped at epoch 50 for config: {'pooling_method': 'attentive', 'use_class': False}.  Validation accuracy: 0.4666666666666667.
+2025-01-14 23:24:53,958 - INFO - Grid eval for classifiers: Running experiment with dataset: ReunionTurtles, model: megadescriptor, pooling method: attentive, use_class: False, learning rate: 5e-05, batch size: 32
+2025-01-14 23:24:57,006 - INFO - Training stopped at epoch 50 for config: {'pooling_method': 'attentive', 'use_class': False}.  Validation accuracy: 0.4222222222222222.
+2025-01-14 23:24:57,006 - INFO - Grid eval for classifiers: Running experiment with dataset: ReunionTurtles, model: megadescriptor, pooling method: attentive, use_class: False, learning rate: 0.0001, batch size: 32
+2025-01-14 23:25:00,055 - INFO - Training stopped at epoch 50 for config: {'pooling_method': 'attentive', 'use_class': False}.  Validation accuracy: 0.4444444444444444.
+2025-01-14 23:25:00,056 - INFO - Grid eval for classifiers: Running experiment with dataset: ReunionTurtles, model: megadescriptor, pooling method: attentive, use_class: False, learning rate: 0.0002, batch size: 32
+2025-01-14 23:25:01,081 - INFO - Training stopped at epoch 11 for config: {'pooling_method': 'attentive', 'use_class': False}.  Validation accuracy: 0.4666666666666667.
+2025-01-14 23:25:01,081 - INFO - Grid eval for classifiers: Running experiment with dataset: ReunionTurtles, model: megadescriptor, pooling method: attentive, use_class: False, learning rate: 0.0005, batch size: 32
+2025-01-14 23:25:01,685 - INFO - Training stopped at epoch 4 for config: {'pooling_method': 'attentive', 'use_class': False}.  Validation accuracy: 0.4666666666666667.
+2025-01-14 23:25:01,685 - INFO - Grid eval for classifiers: Running experiment with dataset: ReunionTurtles, model: megadescriptor, pooling method: attentive, use_class: False, learning rate: 0.001, batch size: 32
+2025-01-14 23:25:02,171 - INFO - Training stopped at epoch 2 for config: {'pooling_method': 'attentive', 'use_class': False}.  Validation accuracy: 0.5111111111111111.
+2025-01-14 23:25:02,171 - INFO - Grid eval for classifiers: Running experiment with dataset: ReunionTurtles, model: megadescriptor, pooling method: attentive, use_class: False, learning rate: 0.002, batch size: 32
+2025-01-14 23:25:02,657 - INFO - Training stopped at epoch 2 for config: {'pooling_method': 'attentive', 'use_class': False}.  Validation accuracy: 0.4222222222222222.
+2025-01-14 23:25:02,657 - INFO - Grid eval for classifiers: Running experiment with dataset: ReunionTurtles, model: megadescriptor, pooling method: attentive, use_class: False, learning rate: 0.005, batch size: 32
+2025-01-14 23:25:03,262 - INFO - Training stopped at epoch 4 for config: {'pooling_method': 'attentive', 'use_class': False}.  Validation accuracy: 0.26666666666666666.
+2025-01-14 23:25:03,262 - INFO - Grid eval for classifiers: Running experiment with dataset: ReunionTurtles, model: megadescriptor, pooling method: attentive, use_class: False, learning rate: 0.01, batch size: 32
+2025-01-14 23:25:03,687 - INFO - Training stopped at epoch 1 for config: {'pooling_method': 'attentive', 'use_class': False}.  Validation accuracy: 0.022222222222222223.
+2025-01-14 23:25:03,687 - INFO - Grid eval for classifiers: Running experiment with dataset: ReunionTurtles, model: megadescriptor, pooling method: attentive, use_class: False, learning rate: 0.02, batch size: 32
+2025-01-14 23:25:04,168 - INFO - Training stopped at epoch 2 for config: {'pooling_method': 'attentive', 'use_class': False}.  Validation accuracy: 0.13333333333333333.
+2025-01-14 23:25:04,168 - INFO - Grid eval for classifiers: Running experiment with dataset: ReunionTurtles, model: megadescriptor, pooling method: attentive, use_class: False, learning rate: 0.05, batch size: 32
+2025-01-14 23:25:04,589 - INFO - Training stopped at epoch 1 for config: {'pooling_method': 'attentive', 'use_class': False}.  Validation accuracy: 0.17777777777777778.
+2025-01-14 23:25:04,589 - INFO - Grid eval for classifiers: Running experiment with dataset: ReunionTurtles, model: megadescriptor, pooling method: attentive, use_class: False, learning rate: 0.1, batch size: 32
+2025-01-14 23:25:05,011 - INFO - Training stopped at epoch 1 for config: {'pooling_method': 'attentive', 'use_class': False}.  Validation accuracy: 0.13333333333333333.
+2025-01-14 23:25:05,011 - INFO - Grid eval for classifiers: Running experiment with dataset: ReunionTurtles, model: megadescriptor, pooling method: attentive, use_class: False, learning rate: 1e-05, batch size: 64
+2025-01-14 23:25:07,846 - INFO - Training stopped at epoch 50 for config: {'pooling_method': 'attentive', 'use_class': False}.  Validation accuracy: 0.15555555555555556.
+2025-01-14 23:25:07,846 - INFO - Grid eval for classifiers: Running experiment with dataset: ReunionTurtles, model: megadescriptor, pooling method: attentive, use_class: False, learning rate: 2e-05, batch size: 64
+2025-01-14 23:25:10,681 - INFO - Training stopped at epoch 50 for config: {'pooling_method': 'attentive', 'use_class': False}.  Validation accuracy: 0.24444444444444444.
+2025-01-14 23:25:10,681 - INFO - Grid eval for classifiers: Running experiment with dataset: ReunionTurtles, model: megadescriptor, pooling method: attentive, use_class: False, learning rate: 5e-05, batch size: 64
+2025-01-14 23:25:13,520 - INFO - Training stopped at epoch 50 for config: {'pooling_method': 'attentive', 'use_class': False}.  Validation accuracy: 0.4222222222222222.
+2025-01-14 23:25:13,520 - INFO - Grid eval for classifiers: Running experiment with dataset: ReunionTurtles, model: megadescriptor, pooling method: attentive, use_class: False, learning rate: 0.0001, batch size: 64
+2025-01-14 23:25:15,359 - INFO - Training stopped at epoch 27 for config: {'pooling_method': 'attentive', 'use_class': False}.  Validation accuracy: 0.4666666666666667.
+2025-01-14 23:25:15,359 - INFO - Grid eval for classifiers: Running experiment with dataset: ReunionTurtles, model: megadescriptor, pooling method: attentive, use_class: False, learning rate: 0.0002, batch size: 64
+2025-01-14 23:25:16,813 - INFO - Training stopped at epoch 20 for config: {'pooling_method': 'attentive', 'use_class': False}.  Validation accuracy: 0.5333333333333333.
+2025-01-14 23:25:16,814 - INFO - Grid eval for classifiers: Running experiment with dataset: ReunionTurtles, model: megadescriptor, pooling method: attentive, use_class: False, learning rate: 0.0005, batch size: 64
+2025-01-14 23:25:17,435 - INFO - Training stopped at epoch 5 for config: {'pooling_method': 'attentive', 'use_class': False}.  Validation accuracy: 0.5333333333333333.
+2025-01-14 23:25:17,435 - INFO - Grid eval for classifiers: Running experiment with dataset: ReunionTurtles, model: megadescriptor, pooling method: attentive, use_class: False, learning rate: 0.001, batch size: 64
+2025-01-14 23:25:17,947 - INFO - Training stopped at epoch 3 for config: {'pooling_method': 'attentive', 'use_class': False}.  Validation accuracy: 0.4888888888888889.
+2025-01-14 23:25:17,948 - INFO - Grid eval for classifiers: Running experiment with dataset: ReunionTurtles, model: megadescriptor, pooling method: attentive, use_class: False, learning rate: 0.002, batch size: 64
+2025-01-14 23:25:18,404 - INFO - Training stopped at epoch 2 for config: {'pooling_method': 'attentive', 'use_class': False}.  Validation accuracy: 0.4222222222222222.
+2025-01-14 23:25:18,404 - INFO - Grid eval for classifiers: Running experiment with dataset: ReunionTurtles, model: megadescriptor, pooling method: attentive, use_class: False, learning rate: 0.005, batch size: 64
+2025-01-14 23:25:18,862 - INFO - Training stopped at epoch 2 for config: {'pooling_method': 'attentive', 'use_class': False}.  Validation accuracy: 0.26666666666666666.
+2025-01-14 23:25:18,862 - INFO - Grid eval for classifiers: Running experiment with dataset: ReunionTurtles, model: megadescriptor, pooling method: attentive, use_class: False, learning rate: 0.01, batch size: 64
+2025-01-14 23:25:19,262 - INFO - Training stopped at epoch 1 for config: {'pooling_method': 'attentive', 'use_class': False}.  Validation accuracy: 0.1111111111111111.
+2025-01-14 23:25:19,262 - INFO - Grid eval for classifiers: Running experiment with dataset: ReunionTurtles, model: megadescriptor, pooling method: attentive, use_class: False, learning rate: 0.02, batch size: 64
+2025-01-14 23:25:19,770 - INFO - Training stopped at epoch 3 for config: {'pooling_method': 'attentive', 'use_class': False}.  Validation accuracy: 0.1111111111111111.
+2025-01-14 23:25:19,770 - INFO - Grid eval for classifiers: Running experiment with dataset: ReunionTurtles, model: megadescriptor, pooling method: attentive, use_class: False, learning rate: 0.05, batch size: 64
+2025-01-14 23:25:20,221 - INFO - Training stopped at epoch 2 for config: {'pooling_method': 'attentive', 'use_class': False}.  Validation accuracy: 0.06666666666666667.
+2025-01-14 23:25:20,221 - INFO - Grid eval for classifiers: Running experiment with dataset: ReunionTurtles, model: megadescriptor, pooling method: attentive, use_class: False, learning rate: 0.1, batch size: 64
+2025-01-14 23:25:21,049 - INFO - Training stopped at epoch 9 for config: {'pooling_method': 'attentive', 'use_class': False}.  Validation accuracy: 0.17777777777777778.
+2025-01-14 23:25:21,050 - INFO - Grid eval for classifiers: Running experiment with dataset: ReunionTurtles, model: megadescriptor, pooling method: attentive, use_class: False, learning rate: 1e-05, batch size: 128
+2025-01-14 23:25:23,761 - INFO - Training stopped at epoch 50 for config: {'pooling_method': 'attentive', 'use_class': False}.  Validation accuracy: 0.1111111111111111.
+2025-01-14 23:25:23,761 - INFO - Grid eval for classifiers: Running experiment with dataset: ReunionTurtles, model: megadescriptor, pooling method: attentive, use_class: False, learning rate: 2e-05, batch size: 128
+2025-01-14 23:25:26,472 - INFO - Training stopped at epoch 50 for config: {'pooling_method': 'attentive', 'use_class': False}.  Validation accuracy: 0.2222222222222222.
+2025-01-14 23:25:26,472 - INFO - Grid eval for classifiers: Running experiment with dataset: ReunionTurtles, model: megadescriptor, pooling method: attentive, use_class: False, learning rate: 5e-05, batch size: 128
+2025-01-14 23:25:29,184 - INFO - Training stopped at epoch 50 for config: {'pooling_method': 'attentive', 'use_class': False}.  Validation accuracy: 0.4666666666666667.
+2025-01-14 23:25:29,184 - INFO - Grid eval for classifiers: Running experiment with dataset: ReunionTurtles, model: megadescriptor, pooling method: attentive, use_class: False, learning rate: 0.0001, batch size: 128
+2025-01-14 23:25:31,472 - INFO - Training stopped at epoch 37 for config: {'pooling_method': 'attentive', 'use_class': False}.  Validation accuracy: 0.5111111111111111.
+2025-01-14 23:25:31,472 - INFO - Grid eval for classifiers: Running experiment with dataset: ReunionTurtles, model: megadescriptor, pooling method: attentive, use_class: False, learning rate: 0.0002, batch size: 128
+2025-01-14 23:25:33,232 - INFO - Training stopped at epoch 27 for config: {'pooling_method': 'attentive', 'use_class': False}.  Validation accuracy: 0.5555555555555556.
+2025-01-14 23:25:33,232 - INFO - Grid eval for classifiers: Running experiment with dataset: ReunionTurtles, model: megadescriptor, pooling method: attentive, use_class: False, learning rate: 0.0005, batch size: 128
+2025-01-14 23:25:33,987 - INFO - Training stopped at epoch 8 for config: {'pooling_method': 'attentive', 'use_class': False}.  Validation accuracy: 0.4888888888888889.
+2025-01-14 23:25:33,988 - INFO - Grid eval for classifiers: Running experiment with dataset: ReunionTurtles, model: megadescriptor, pooling method: attentive, use_class: False, learning rate: 0.001, batch size: 128
+2025-01-14 23:25:34,532 - INFO - Training stopped at epoch 4 for config: {'pooling_method': 'attentive', 'use_class': False}.  Validation accuracy: 0.5111111111111111.
+2025-01-14 23:25:34,532 - INFO - Grid eval for classifiers: Running experiment with dataset: ReunionTurtles, model: megadescriptor, pooling method: attentive, use_class: False, learning rate: 0.002, batch size: 128
+2025-01-14 23:25:34,971 - INFO - Training stopped at epoch 2 for config: {'pooling_method': 'attentive', 'use_class': False}.  Validation accuracy: 0.4222222222222222.
+2025-01-14 23:25:34,971 - INFO - Grid eval for classifiers: Running experiment with dataset: ReunionTurtles, model: megadescriptor, pooling method: attentive, use_class: False, learning rate: 0.005, batch size: 128
+2025-01-14 23:25:35,357 - INFO - Training stopped at epoch 1 for config: {'pooling_method': 'attentive', 'use_class': False}.  Validation accuracy: 0.35555555555555557.
+2025-01-14 23:25:35,357 - INFO - Grid eval for classifiers: Running experiment with dataset: ReunionTurtles, model: megadescriptor, pooling method: attentive, use_class: False, learning rate: 0.01, batch size: 128
+2025-01-14 23:25:35,743 - INFO - Training stopped at epoch 1 for config: {'pooling_method': 'attentive', 'use_class': False}.  Validation accuracy: 0.06666666666666667.
+2025-01-14 23:25:35,743 - INFO - Grid eval for classifiers: Running experiment with dataset: ReunionTurtles, model: megadescriptor, pooling method: attentive, use_class: False, learning rate: 0.02, batch size: 128
+2025-01-14 23:25:36,180 - INFO - Training stopped at epoch 2 for config: {'pooling_method': 'attentive', 'use_class': False}.  Validation accuracy: 0.08888888888888889.
+2025-01-14 23:25:36,181 - INFO - Grid eval for classifiers: Running experiment with dataset: ReunionTurtles, model: megadescriptor, pooling method: attentive, use_class: False, learning rate: 0.05, batch size: 128
+2025-01-14 23:25:36,618 - INFO - Training stopped at epoch 2 for config: {'pooling_method': 'attentive', 'use_class': False}.  Validation accuracy: 0.1111111111111111.
+2025-01-14 23:25:36,618 - INFO - Grid eval for classifiers: Running experiment with dataset: ReunionTurtles, model: megadescriptor, pooling method: attentive, use_class: False, learning rate: 0.1, batch size: 128
+2025-01-14 23:25:37,000 - INFO - Training stopped at epoch 1 for config: {'pooling_method': 'attentive', 'use_class': False}.  Validation accuracy: 0.17777777777777778.
+2025-01-14 23:25:37,000 - INFO - Best results for dataset ReunionTurtles and attentive pooling method: {
+    "dataset": "ReunionTurtles",
+    "pooling_method": "attentive",
+    "batch_size": 128,
+    "learning_rate": 0.0002,
+    "best_epoch": 27,
+    "best_val_acc": 0.5555555555555556
+}
