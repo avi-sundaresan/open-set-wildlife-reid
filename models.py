@@ -215,7 +215,7 @@ class GeMPooler(nn.Module):
         Args:
             x: Input tensor of shape (B, N, D), where:
                 B - Batch size
-                N - Number of patches (spatial dimension, e.g., 14 x 14 = 196)
+                N - Number of patches (spatial dimension, e.g., 12 x 12 = 144)
                 D - Embedding dimension (e.g., 1536)
         Returns:
             Tensor of shape (B, D), pooled across the spatial dimension.
@@ -228,7 +228,7 @@ class GeMClassifier(nn.Module):
         self,
         embed_dim=1536,
         num_classes=1000,
-        use_class=True,
+        use_class=False,
         p=3.0,
         eps=1e-6,
     ):
@@ -262,4 +262,74 @@ class GeMClassifier(nn.Module):
             pooled_output = torch.cat([pooled_output, class_token], dim=-1)  # Shape: (B, 2 * D)
 
         # Pass through the linear layer for classification
+        return self.linear(pooled_output)
+
+class WeightedAveragePooler(nn.Module):
+    """ Weighted Average Pooler """
+    def __init__(self, embed_dim, num_patches):
+        super().__init__()
+        self.embed_dim = embed_dim
+        self.num_patches = num_patches
+        # 1x1 convolutional layer to predict weights for each patch
+        self.weight_predictor = nn.Conv1d(
+            in_channels=embed_dim, 
+            out_channels=num_patches, 
+            kernel_size=1, 
+            stride=1,
+            bias=True
+        )
+        self.softmax = nn.Softmax(dim=-1)  # To normalize weights across patches
+
+    def forward(self, patch_embeddings):
+        """
+        Args:
+            patch_embeddings: Tensor of shape (B, N, D), where:
+                B - Batch size
+                N - Number of patches (e.g., 12x12=144)
+                D - Embedding dimension
+        Returns:
+            Tensor of shape (B, D), the weighted average pooled embedding.
+        """
+        # Compute z_avg (average-pooled embedding)
+        z_avg = patch_embeddings.mean(dim=1, keepdim=True)  # Shape: (B, 1, D)
+
+        # Compute input for weight predictor (z_i + z_avg for each patch)
+        combined_embeddings = patch_embeddings + z_avg  # Shape: (B, N, D)
+
+        # Transpose for Conv1d: (B, D, N)
+        combined_embeddings = combined_embeddings.permute(0, 2, 1)
+
+        # Predict weights using a 1x1 convolution
+        weights = self.weight_predictor(combined_embeddings)  # Shape: (B, N, N)
+
+        # Normalize weights across patches
+        weights = self.softmax(weights)  # Shape: (B, N, N)
+
+        # Compute weighted average of patch embeddings
+        weighted_pooled = torch.bmm(weights, patch_embeddings)  # Shape: (B, N, D)
+
+        return weighted_pooled.mean(dim=1)  # Final pooled embedding, Shape: (B, D)
+
+class WeightedAverageClassifier(nn.Module):
+    """ Weighted Average Classifier """
+    def __init__(self, embed_dim=1536, num_patches=144, num_classes=1000):
+        super().__init__()
+        self.pooler = WeightedAveragePooler(embed_dim, num_patches)
+        self.linear = nn.Linear(embed_dim, num_classes, bias=True)
+
+        # Initialize weights
+        self.linear.weight.data.normal_(mean=0.0, std=0.01)
+        self.linear.bias.data.zero_()
+
+    def forward(self, x):
+        """
+        Args:
+            x: A tuple of (patch_tokens, class_token), where:
+                patch_tokens: Tensor of shape (B, N, D)
+                class_token: Tensor of shape (B, D)
+        Returns:
+            Classification output of shape (B, num_classes)
+        """
+        patch_tokens, class_token = x
+        pooled_output = self.pooler(patch_tokens)  # Shape: (B, D)
         return self.linear(pooled_output)

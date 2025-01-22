@@ -2,10 +2,12 @@ import os
 
 MODEL = 'megadescriptor'
 
-DATASETS = [
-    'AmvrakikosTurtles',
-    'SouthernProvinceTurtles'
-]
+# DATASETS = [
+#     'AmvrakikosTurtles',
+#     'SouthernProvinceTurtles'
+# ]
+
+DATASETS = ['FriesianCattle2015v2']
 
 ROOT_DIR = '/home/avisund/data/wildlife_datasets/'
 BATCH_SIZE = [8, 16, 32, 64, 128]

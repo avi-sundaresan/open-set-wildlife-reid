@@ -3371,3 +3371,117 @@
 2025-01-21 01:22:27,567 - INFO - Grid eval for classifiers: Running experiment with dataset: SouthernProvinceTurtles, model: megadescriptor, pooling method: GeM, use_class: False, learning rate: 0.0001, batch size: 16
 2025-01-21 01:22:29,412 - INFO - Training stopped at epoch 50 for config: {'pooling_method': 'GeM', 'use_class': False}. Validation accuracy: 0.7066666666666667. Learned p: 3.113413095474243
 2025-01-21 01:22:29,412 - INFO - Grid eval for classifiers: Running experiment with dataset: SouthernProvinceTurtles, model: megadescriptor, pooling method: GeM, use_class: False, learning rate: 0.0002, batch size: 16
+2025-01-22 01:11:20,752 - INFO - Using device: cuda:1
+2025-01-22 01:11:20,752 - INFO - /home/avisund/data/wildlife_datasets/AmvrakikosTurtles/
+2025-01-22 01:11:20,762 - INFO - Dataset AmvrakikosTurtles loaded successfully
+2025-01-22 01:11:20,767 - INFO - Dataset split successfully
+2025-01-22 01:11:20,770 - INFO - Dataloaders created successfully
+2025-01-22 01:11:22,753 - INFO - Loading pretrained weights from Hugging Face hub (BVRA/MegaDescriptor-L-384)
+2025-01-22 01:11:24,372 - INFO - Feature extractor loaded successfully
+2025-01-22 01:11:53,026 - INFO - Embeddings computed successfully
+2025-01-22 01:11:53,026 - INFO - Grid eval for classifiers: Running experiment with dataset: AmvrakikosTurtles, model: megadescriptor, pooling method: GeM, use_class: False, learning rate: 1e-05, batch size: 8
+2025-01-22 01:14:54,976 - INFO - Using device: cuda:1
+2025-01-22 01:14:54,977 - INFO - /home/avisund/data/wildlife_datasets/AmvrakikosTurtles/
+2025-01-22 01:14:54,987 - INFO - Dataset AmvrakikosTurtles loaded successfully
+2025-01-22 01:14:54,992 - INFO - Dataset split successfully
+2025-01-22 01:14:54,995 - INFO - Dataloaders created successfully
+2025-01-22 01:14:56,949 - INFO - Loading pretrained weights from Hugging Face hub (BVRA/MegaDescriptor-L-384)
+2025-01-22 01:14:58,518 - INFO - Feature extractor loaded successfully
+2025-01-22 01:15:27,049 - INFO - Embeddings computed successfully
+2025-01-22 01:15:27,049 - INFO - Grid eval for classifiers: Running experiment with dataset: AmvrakikosTurtles, model: megadescriptor, pooling method: GeM, use_class: False, learning rate: 1e-05, batch size: 8
+2025-01-22 01:31:29,534 - INFO - Using device: cuda:1
+2025-01-22 01:31:29,534 - INFO - /home/avisund/data/wildlife_datasets/AmvrakikosTurtles/
+2025-01-22 01:31:29,545 - INFO - Dataset AmvrakikosTurtles loaded successfully
+2025-01-22 01:31:29,549 - INFO - Dataset split successfully
+2025-01-22 01:31:29,552 - INFO - Dataloaders created successfully
+2025-01-22 01:31:31,684 - INFO - Loading pretrained weights from Hugging Face hub (BVRA/MegaDescriptor-L-384)
+2025-01-22 01:31:33,308 - INFO - Feature extractor loaded successfully
+2025-01-22 01:32:01,903 - INFO - Embeddings computed successfully
+2025-01-22 01:32:01,903 - INFO - Grid eval for classifiers: Running experiment with dataset: AmvrakikosTurtles, model: megadescriptor, pooling method: weighted, use_class: False, learning rate: 1e-05, batch size: 8
+2025-01-22 01:32:01,903 - ERROR - Error occurred for dataset AmvrakikosTurtles, WeightedAverageClassifier.__init__() got an unexpected keyword argument 'use_class'
+2025-01-22 01:32:02,001 - INFO - /home/avisund/data/wildlife_datasets/SouthernProvinceTurtles/
+2025-01-22 01:32:02,006 - INFO - Dataset SouthernProvinceTurtles loaded successfully
+2025-01-22 01:32:02,011 - INFO - Dataset split successfully
+2025-01-22 01:32:02,014 - INFO - Dataloaders created successfully
+2025-01-22 01:32:03,954 - INFO - Loading pretrained weights from Hugging Face hub (BVRA/MegaDescriptor-L-384)
+2025-01-22 01:32:05,275 - INFO - Feature extractor loaded successfully
+2025-01-22 01:32:31,427 - INFO - Embeddings computed successfully
+2025-01-22 01:32:31,428 - INFO - Grid eval for classifiers: Running experiment with dataset: SouthernProvinceTurtles, model: megadescriptor, pooling method: weighted, use_class: False, learning rate: 1e-05, batch size: 8
+2025-01-22 01:32:31,428 - ERROR - Error occurred for dataset SouthernProvinceTurtles, WeightedAverageClassifier.__init__() got an unexpected keyword argument 'use_class'
+2025-01-22 01:35:57,963 - INFO - Using device: cuda:1
+2025-01-22 01:35:57,963 - INFO - /home/avisund/data/wildlife_datasets/AmvrakikosTurtles/
+2025-01-22 01:35:57,974 - INFO - Dataset AmvrakikosTurtles loaded successfully
+2025-01-22 01:35:57,978 - INFO - Dataset split successfully
+2025-01-22 01:35:57,982 - INFO - Dataloaders created successfully
+2025-01-22 01:35:59,951 - INFO - Loading pretrained weights from Hugging Face hub (BVRA/MegaDescriptor-L-384)
+2025-01-22 01:36:01,592 - INFO - Feature extractor loaded successfully
+2025-01-22 01:36:30,172 - INFO - Embeddings computed successfully
+2025-01-22 01:36:30,173 - INFO - Grid eval for classifiers: Running experiment with dataset: AmvrakikosTurtles, model: megadescriptor, pooling method: weighted, use_class: False, learning rate: 1e-05, batch size: 8
+2025-01-22 01:36:30,199 - ERROR - Error occurred for dataset AmvrakikosTurtles, name 'attentive_classifier' is not defined
+2025-01-22 01:36:30,296 - INFO - /home/avisund/data/wildlife_datasets/SouthernProvinceTurtles/
+2025-01-22 01:36:30,302 - INFO - Dataset SouthernProvinceTurtles loaded successfully
+2025-01-22 01:36:30,307 - INFO - Dataset split successfully
+2025-01-22 01:36:30,310 - INFO - Dataloaders created successfully
+2025-01-22 01:36:32,210 - INFO - Loading pretrained weights from Hugging Face hub (BVRA/MegaDescriptor-L-384)
+2025-01-22 01:36:33,551 - INFO - Feature extractor loaded successfully
+2025-01-22 01:36:59,904 - INFO - Embeddings computed successfully
+2025-01-22 01:36:59,905 - INFO - Grid eval for classifiers: Running experiment with dataset: SouthernProvinceTurtles, model: megadescriptor, pooling method: weighted, use_class: False, learning rate: 1e-05, batch size: 8
+2025-01-22 01:36:59,935 - ERROR - Error occurred for dataset SouthernProvinceTurtles, name 'attentive_classifier' is not defined
+2025-01-22 01:41:57,663 - INFO - Using device: cuda:1
+2025-01-22 01:41:57,664 - INFO - /home/avisund/data/wildlife_datasets/AmvrakikosTurtles/
+2025-01-22 01:41:57,675 - INFO - Dataset AmvrakikosTurtles loaded successfully
+2025-01-22 01:41:57,679 - INFO - Dataset split successfully
+2025-01-22 01:41:57,683 - INFO - Dataloaders created successfully
+2025-01-22 01:41:59,670 - INFO - Loading pretrained weights from Hugging Face hub (BVRA/MegaDescriptor-L-384)
+2025-01-22 01:42:01,278 - INFO - Feature extractor loaded successfully
+2025-01-22 01:42:29,666 - INFO - Embeddings computed successfully
+2025-01-22 01:42:29,666 - INFO - Grid eval for classifiers: Running experiment with dataset: AmvrakikosTurtles, model: megadescriptor, pooling method: weighted, use_class: False, learning rate: 1e-05, batch size: 8
+2025-01-22 01:44:59,124 - INFO - Using device: cuda:1
+2025-01-22 01:44:59,124 - INFO - /home/avisund/data/wildlife_datasets/AmvrakikosTurtles/
+2025-01-22 01:44:59,134 - INFO - Dataset AmvrakikosTurtles loaded successfully
+2025-01-22 01:44:59,139 - INFO - Dataset split successfully
+2025-01-22 01:44:59,142 - INFO - Dataloaders created successfully
+2025-01-22 01:45:01,100 - INFO - Loading pretrained weights from Hugging Face hub (BVRA/MegaDescriptor-L-384)
+2025-01-22 01:45:02,703 - INFO - Feature extractor loaded successfully
+2025-01-22 01:45:31,336 - INFO - Embeddings computed successfully
+2025-01-22 01:45:31,337 - INFO - Grid eval for classifiers: Running experiment with dataset: AmvrakikosTurtles, model: megadescriptor, pooling method: weighted, use_class: False, learning rate: 1e-05, batch size: 8
+2025-01-22 01:45:31,362 - ERROR - Error occurred for dataset AmvrakikosTurtles, 'tuple' object has no attribute 'mean'
+2025-01-22 01:45:31,459 - INFO - /home/avisund/data/wildlife_datasets/SouthernProvinceTurtles/
+2025-01-22 01:45:31,465 - INFO - Dataset SouthernProvinceTurtles loaded successfully
+2025-01-22 01:45:31,470 - INFO - Dataset split successfully
+2025-01-22 01:45:31,473 - INFO - Dataloaders created successfully
+2025-01-22 01:45:33,445 - INFO - Loading pretrained weights from Hugging Face hub (BVRA/MegaDescriptor-L-384)
+2025-01-22 01:45:34,797 - INFO - Feature extractor loaded successfully
+2025-01-22 01:46:01,164 - INFO - Embeddings computed successfully
+2025-01-22 01:46:01,165 - INFO - Grid eval for classifiers: Running experiment with dataset: SouthernProvinceTurtles, model: megadescriptor, pooling method: weighted, use_class: False, learning rate: 1e-05, batch size: 8
+2025-01-22 01:46:01,192 - ERROR - Error occurred for dataset SouthernProvinceTurtles, 'tuple' object has no attribute 'mean'
+2025-01-22 01:47:56,989 - INFO - Using device: cuda:1
+2025-01-22 01:47:56,989 - INFO - /home/avisund/data/wildlife_datasets/FriesianCattle2015v2/
+2025-01-22 01:47:57,004 - INFO - Dataset FriesianCattle2015v2 loaded successfully
+2025-01-22 01:47:57,007 - INFO - Dataset split successfully
+2025-01-22 01:47:57,010 - INFO - Dataloaders created successfully
+2025-01-22 01:47:59,047 - INFO - Loading pretrained weights from Hugging Face hub (BVRA/MegaDescriptor-L-384)
+2025-01-22 01:48:00,631 - INFO - Feature extractor loaded successfully
+2025-01-22 01:48:11,071 - INFO - Embeddings computed successfully
+2025-01-22 01:48:11,071 - INFO - Grid eval for classifiers: Running experiment with dataset: FriesianCattle2015v2, model: megadescriptor, pooling method: weighted, use_class: False, learning rate: 1e-05, batch size: 8
+2025-01-22 01:48:11,172 - ERROR - Error occurred for dataset FriesianCattle2015v2, 'tuple' object has no attribute 'mean'
+2025-01-22 01:48:53,634 - INFO - Using device: cuda:1
+2025-01-22 01:48:53,634 - INFO - /home/avisund/data/wildlife_datasets/FriesianCattle2015v2/
+2025-01-22 01:48:53,645 - INFO - Dataset FriesianCattle2015v2 loaded successfully
+2025-01-22 01:48:53,648 - INFO - Dataset split successfully
+2025-01-22 01:48:53,651 - INFO - Dataloaders created successfully
+2025-01-22 01:48:55,709 - INFO - Loading pretrained weights from Hugging Face hub (BVRA/MegaDescriptor-L-384)
+2025-01-22 01:48:57,298 - INFO - Feature extractor loaded successfully
+2025-01-22 01:49:07,750 - INFO - Embeddings computed successfully
+2025-01-22 01:49:07,751 - INFO - Grid eval for classifiers: Running experiment with dataset: FriesianCattle2015v2, model: megadescriptor, pooling method: weighted, use_class: False, learning rate: 1e-05, batch size: 8
+2025-01-22 01:49:07,781 - ERROR - Error occurred for dataset FriesianCattle2015v2, 'tuple' object has no attribute 'mean'
+2025-01-22 01:50:25,724 - INFO - Using device: cuda:1
+2025-01-22 01:50:25,724 - INFO - /home/avisund/data/wildlife_datasets/FriesianCattle2015v2/
+2025-01-22 01:50:25,734 - INFO - Dataset FriesianCattle2015v2 loaded successfully
+2025-01-22 01:50:25,737 - INFO - Dataset split successfully
+2025-01-22 01:50:25,740 - INFO - Dataloaders created successfully
+2025-01-22 01:50:27,685 - INFO - Loading pretrained weights from Hugging Face hub (BVRA/MegaDescriptor-L-384)
+2025-01-22 01:50:29,306 - INFO - Feature extractor loaded successfully
+2025-01-22 01:50:39,698 - INFO - Embeddings computed successfully
+2025-01-22 01:50:39,699 - INFO - Grid eval for classifiers: Running experiment with dataset: FriesianCattle2015v2, model: megadescriptor, pooling method: weighted, use_class: False, learning rate: 1e-05, batch size: 8
+2025-01-22 01:50:40,744 - ERROR - Error occurred for dataset FriesianCattle2015v2, not enough values to unpack (expected 3, got 2)
