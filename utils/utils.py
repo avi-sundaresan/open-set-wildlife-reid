@@ -84,8 +84,8 @@ def train_val_pooling_classifier(
     val_labels,
     model_type="linear",  # "linear", "attentive", "gem", or "weighted"
     use_class=False,
-    use_avgpool=False,
-    device="cuda",
+    use_avgpool=True,
+    device="cuda:0",
     num_classes=1000,
     num_epochs=50,
     learning_rate=1e-5,

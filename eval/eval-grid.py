@@ -9,7 +9,7 @@ from functools import partial
 from models import ModelWithIntermediateLayers, ModelWithIntermediateLayersMD
 from data_utils.datasets import prepare_datasets, split_dataset, create_dataloaders
 from configs.config_grid import DATASETS, MODEL, BATCH_SIZE, CONFIG_PATH, LEARNING_RATE, get_dataset_root
-from utils.utils import get_ROC, compute_embeddings, get_transformation, train_val_attentive_classifier, train_val_linear_classifier, train_val_gem_classifier, train_val_weighted_classifier, eval_closed_set, eval_open_set
+from utils.utils import get_ROC, compute_embeddings, get_transformation, train_val_pooling_classifier, eval_closed_set, eval_open_set
 
 # Initialize logging
 logging.basicConfig(filename='logs/md-ood-test.log', level=logging.INFO, 
@@ -95,37 +95,21 @@ def main():
                     for lr in args.learning_rates:
                         logging.info(f'Grid eval for classifiers: Running experiment with dataset: {dataset}, model: {args.model}, pooling method: {config["pooling_method"]}, use_class: {config["use_class"]}, learning rate: {lr}, batch size: {batch_size}')
 
-                        if config['pooling_method'] == 'attentive':
-                            epoch, val_acc = train_val_attentive_classifier(
-                                train_embeddings, train_labels, val_embeddings, val_labels, 
-                                 use_class=config['use_class'], device=device, num_classes=num_classes, learning_rate=lr, batch_size=batch_size
+                        epoch, val_acc = train_val_pooling_classifier(
+                                train_embeddings, 
+                                train_labels, 
+                                val_embeddings,
+                                val_labels, 
+                                model_type=config['pooling_method'],
+                                use_class=config['use_class'], 
+                                device=device, 
+                                num_classes=num_classes, 
+                                learning_rate=lr, 
+                                batch_size=batch_size
                             )
-                            logging.info(f"Training stopped at epoch {epoch} for config: {config}.  Validation accuracy: {val_acc}.")
-                        elif config['pooling_method'] == 'linear':
-                            epoch, val_acc  = train_val_linear_classifier(
-                                train_embeddings, train_labels, val_embeddings, val_labels, 
-                                use_class=config['use_class'], use_avgpool=True, device=device, num_classes=num_classes, learning_rate=lr, batch_size=batch_size
-                            )
-                            logging.info(f"Training stopped at epoch {epoch} for config: {config}. Validation accuracy: {val_acc}.")
-                        elif config['pooling_method'] == 'GeM':
-                            epoch, val_acc, p = train_val_gem_classifier(
-                                train_embeddings, train_labels, val_embeddings, val_labels, 
-                                use_class=config['use_class'], device=device, num_classes=num_classes, learning_rate=lr, batch_size=batch_size
-                            )
-                            logging.info(f"Training stopped at epoch {epoch} for config: {config}. Validation accuracy: {val_acc}. Learned p: {p}")
-                        elif config['pooling_method'] == 'weighted':
-                            epoch, val_acc, p = train_val_weighted_classifier(
-                                train_embeddings, train_labels, val_embeddings, val_labels, 
-                                use_class=config['use_class'], device=device, num_classes=num_classes, learning_rate=lr, batch_size=batch_size
-                            )
-                            logging.info(f"Training stopped at epoch {epoch} for config: {config}. Validation accuracy: {val_acc}. Learned p: {p}")
-                        elif config['pooling_method'] == 'none':
-                            epoch, val_acc  = train_val_linear_classifier(
-                                train_embeddings, train_labels, val_embeddings, val_labels, 
-                                use_class=config['use_class'], use_avgpool=False, device=device, num_classes=num_classes, learning_rate=lr, batch_size=batch_size
-                            )
-                            logging.info(f"Training stopped at epoch {epoch} for config: {config}. Validation accuracy: {val_acc}.")
-
+                        
+                        logging.info(f"Training stopped at epoch {epoch} for config: {config}.  Validation accuracy: {val_acc}.")
+                    
                         if val_acc > best_val_acc:
                             best_batch = batch_size
                             best_lr = lr
