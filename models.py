@@ -202,3 +202,64 @@ class AttentiveClassifier(nn.Module):
         if self.use_class:
             pooled_output = torch.cat([pooled_output, class_token], dim=-1)
         return pooled_output
+
+class GeMPooler(nn.Module):
+    """ GeM Pooling Layer """
+    def __init__(self, p=3.0, eps=1e-6):
+        super().__init__()
+        self.p = nn.Parameter(torch.ones(1) * p)  # Learnable parameter p
+        self.eps = eps  # Small value to prevent division by zero
+
+    def forward(self, x):
+        """
+        Args:
+            x: Input tensor of shape (B, N, D), where:
+                B - Batch size
+                N - Number of patches (spatial dimension, e.g., 14 x 14 = 196)
+                D - Embedding dimension (e.g., 1536)
+        Returns:
+            Tensor of shape (B, D), pooled across the spatial dimension.
+        """
+        return ((x.clamp(min=self.eps).pow(self.p).mean(dim=1)).pow(1.0 / self.p))
+
+class GeMClassifier(nn.Module):
+    """ GeM Classifier """
+    def __init__(
+        self,
+        embed_dim=1536,
+        num_classes=1000,
+        use_class=True,
+        p=3.0,
+        eps=1e-6,
+    ):
+        super().__init__()
+        self.gem_pooler = GeMPooler(p=p, eps=eps)
+        self.use_class = use_class
+        if use_class:
+            self.linear = nn.Linear(2 * embed_dim, num_classes, bias=True)
+        else:
+            self.linear = nn.Linear(embed_dim, num_classes, bias=True)
+
+        self.linear.weight.data.normal_(mean=0.0, std=0.01)
+        self.linear.bias.data.zero_()
+
+    def forward(self, x):
+        """
+        Args:
+            x: A tuple of (patch_tokens, class_token), where:
+                patch_tokens: Tensor of shape (B, N, D)
+                class_token: Tensor of shape (B, D)
+        Returns:
+            Classification output of shape (B, num_classes)
+        """
+        patch_tokens, class_token = x
+
+        # GeM pooling on patch tokens (spatial dimension)
+        pooled_output = self.gem_pooler(patch_tokens)  # Shape: (B, D)
+
+        if self.use_class:
+            # Concatenate pooled patch output with class token
+            pooled_output = torch.cat([pooled_output, class_token], dim=-1)  # Shape: (B, 2 * D)
+
+        # Pass through the linear layer for classification
+        return self.linear(pooled_output)

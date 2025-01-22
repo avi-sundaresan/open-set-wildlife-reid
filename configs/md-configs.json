@@ -1,10 +1,6 @@
 [   
     {
-        "pooling_method": "linear",
-        "use_class": false
-    },
-    {
-        "pooling_method": "attentive",
+        "pooling_method": "GeM",
         "use_class": false
     }
 ]
