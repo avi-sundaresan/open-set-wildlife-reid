@@ -229,7 +229,7 @@ class GeMClassifier(nn.Module):
         embed_dim=1536,
         num_classes=1000,
         use_class=False,
-        p=3.0,
+        p=1.0,
         eps=1e-6,
     ):
         super().__init__()
@@ -330,6 +330,7 @@ class WeightedAverageClassifier(nn.Module):
         Returns:
             Classification output of shape (B, num_classes)
         """
+
         patch_tokens, class_token = x
         pooled_output = self.pooler(patch_tokens)  # Shape: (B, D)
         return self.linear(pooled_output)

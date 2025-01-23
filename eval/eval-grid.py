@@ -95,7 +95,7 @@ def main():
                     for lr in args.learning_rates:
                         logging.info(f'Grid eval for classifiers: Running experiment with dataset: {dataset}, model: {args.model}, pooling method: {config["pooling_method"]}, use_class: {config["use_class"]}, learning rate: {lr}, batch size: {batch_size}')
 
-                        epoch, val_acc = train_val_pooling_classifier(
+                        epoch, val_acc, learned_param = train_val_pooling_classifier(
                                 train_embeddings, 
                                 train_labels, 
                                 val_embeddings,
@@ -109,7 +109,8 @@ def main():
                             )
                         
                         logging.info(f"Training stopped at epoch {epoch} for config: {config}.  Validation accuracy: {val_acc}.")
-                    
+                        if learned_param is not None:
+                            logging.info(f"Param {learned_param} learned for pooling method: {config}")
                         if val_acc > best_val_acc:
                             best_batch = batch_size
                             best_lr = lr

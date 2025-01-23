@@ -200,7 +200,7 @@ def train_val_pooling_classifier(
         print(f"Learned p value: {learned_p}")
         return best_epoch, best_val_acc, learned_p
 
-    return best_epoch, best_val_acc
+    return best_epoch, best_val_acc, None
 
 def train_linear_classifier(train_embeddings, train_labels, use_class, use_avgpool, device, num_classes=1000, num_epochs=50, learning_rate=5e-3, batch_size=32):
     # Create the embeddings dataset and dataloader

@@ -1,6 +1,6 @@
 [   
     {
-        "pooling_method": "weighted",
+        "pooling_method": "gem",
         "use_class": false
     }
 ]
