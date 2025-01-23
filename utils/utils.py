@@ -202,476 +202,75 @@ def train_val_pooling_classifier(
 
     return best_epoch, best_val_acc, None
 
-def train_linear_classifier(train_embeddings, train_labels, use_class, use_avgpool, device, num_classes=1000, num_epochs=50, learning_rate=5e-3, batch_size=32):
+def train_pooling_classifier(
+    train_embeddings,
+    train_labels,
+    model_type="linear",  # "linear", "attentive", "gem", or "weighted"
+    use_class=False,
+    use_avgpool=True,
+    device="cuda",
+    num_classes=1000,
+    num_epochs=50,
+    learning_rate=1e-5,
+    batch_size=32,
+    complete_block=False,
+):
+    """
+    Unified training loop for pooling classifiers.
+
+    """
     # Create the embeddings dataset and dataloader
     train_dataset = EmbeddingsDataset(train_embeddings, train_labels)
     train_loader = DataLoader(train_dataset, batch_size=batch_size, shuffle=False)
 
-    classifier = LinearClassifier(num_classes=num_classes, use_class=use_class, use_avgpool=use_avgpool).to(device)
-    
+    # Initialize the classifier based on the model type
+    if model_type == "linear":
+        classifier = LinearClassifier(
+            num_classes=num_classes, use_class=use_class, use_avgpool=use_avgpool
+        ).to(device)
+    elif model_type == "attentive":
+        classifier = AttentiveClassifier(
+            num_classes=num_classes,
+            use_class=use_class,
+            complete_block=complete_block,
+        ).to(device)
+    elif model_type == "gem":
+        classifier = GeMClassifier(num_classes=num_classes, use_class=use_class).to(device)
+    elif model_type == "weighted":
+        classifier = WeightedAverageClassifier(num_classes=num_classes).to(device)
+    else:
+        raise ValueError("Invalid model_type. Choose 'linear', 'attentive', 'gem', or 'weighted'.")
+
     # Define loss function and optimizer
     criterion = nn.CrossEntropyLoss()
     optimizer = optim.Adam(classifier.parameters(), lr=learning_rate)
-    
+
     # Training loop
     for epoch in tqdm(range(num_epochs)):
         classifier.train()
         total_loss = 0.0
         for patch_tokens, class_token, labels in train_loader:
-            patch_tokens = patch_tokens.to(device).float()  
-            class_token = class_token.to(device).float()    
-            labels = labels.to(device).long()              
-            
+            patch_tokens = patch_tokens.to(device).float()
+            class_token = class_token.to(device).float()
+            labels = labels.to(device).long()
+
             optimizer.zero_grad()
-            
+
             # Forward pass
             outputs = classifier((patch_tokens, class_token))
             loss = criterion(outputs, labels)
-            
+
             # Backward pass and optimization
             loss.backward()
             optimizer.step()
-            
+
             total_loss += loss.item()
-        
+
         avg_loss = total_loss / len(train_loader)
-        print(f'Epoch [{epoch+1}/{num_epochs}], Loss: {avg_loss:.4f}')
-    
+        print(f"Epoch [{epoch+1}/{num_epochs}], Loss: {avg_loss:.4f}")
+
     return classifier
-
-def train_val_linear_classifier(train_embeddings, train_labels, val_embeddings, val_labels, use_class, use_avgpool, device, num_classes=1000, num_epochs=50, learning_rate=5e-3, batch_size=32, patience=5):
-    # Create the embeddings dataset and dataloader
-    train_dataset = EmbeddingsDataset(train_embeddings, train_labels)
-    train_loader = DataLoader(train_dataset, batch_size=batch_size, shuffle=False)
-
-    val_dataset = EmbeddingsDataset(val_embeddings, val_labels)
-    val_loader = DataLoader(val_dataset, batch_size=batch_size, shuffle=False)
-
-    classifier = LinearClassifier(num_classes=num_classes, use_class=use_class, use_avgpool=use_avgpool).to(device)
     
-    # Define loss function and optimizer
-    criterion = nn.CrossEntropyLoss()
-    optimizer = optim.Adam(classifier.parameters(), lr=learning_rate)
-    
-    # Early stopping variables
-    best_val_loss = float('inf')
-    best_epoch = 0
-    best_val_acc = 0.0  # Track the best validation accuracy
-    epochs_no_improve = 0
-    early_stop = False
-    
-    for epoch in range(num_epochs):
-        if early_stop:
-            break
-        
-        classifier.train()
-        total_loss = 0.0
-        for patch_tokens, class_token, labels in train_loader:
-            patch_tokens = patch_tokens.to(device).float()  
-            class_token = class_token.to(device).float()    
-            labels = labels.to(device).long()          
-            
-            optimizer.zero_grad()
-            
-            # Forward pass
-            outputs = classifier((patch_tokens, class_token))
-            loss = criterion(outputs, labels)
-            
-            # Backward pass and optimization
-            loss.backward()
-            optimizer.step()
-            
-            total_loss += loss.item()
-        
-        avg_loss = total_loss / len(train_loader)
-        print(f'Epoch [{epoch+1}/{num_epochs}], Loss: {avg_loss:.4f}')
-        
-        # Evaluate on validation set
-        classifier.eval()
-        total_val_loss = 0.0
-        correct = 0
-        total = 0
-        with torch.no_grad():
-            for patch_tokens, class_token, labels in val_loader:
-                patch_tokens = patch_tokens.to(device).float()
-                class_token = class_token.to(device).float()
-                labels = labels.to(device).long()
-
-                outputs = classifier((patch_tokens, class_token))
-                loss = criterion(outputs, labels)
-                total_val_loss += loss.item()
-
-                _, predicted = torch.max(outputs, 1)
-                total += labels.size(0)
-                correct += (predicted == labels).sum().item()
-
-        avg_val_loss = total_val_loss / len(val_loader)
-        val_acc = correct / total
-        
-        print(f'Validation Loss: {avg_val_loss:.4f}, Validation Accuracy: {val_acc:.4f}')
-        
-        # Track the best validation accuracy
-        if val_acc > best_val_acc:
-            best_val_acc = val_acc
-        
-        # Early stopping logic based on validation loss
-        if avg_val_loss < best_val_loss:
-            best_val_loss = avg_val_loss
-            best_epoch = epoch + 1  # Save the best epoch
-            epochs_no_improve = 0
-        else:
-            epochs_no_improve += 1
-            if epochs_no_improve >= patience:
-                print(f"Early stopping at epoch {epoch+1}")
-                early_stop = True
-    
-    # Return the epoch with the lowest validation loss and the highest validation accuracy
-    return best_epoch, best_val_acc
-
-def train_attentive_classifier(train_embeddings, train_labels, use_class, device, num_classes=1000, num_epochs=50, learning_rate=1e-5, batch_size=32, complete_block=False):
-    # Create the embeddings dataset and dataloader
-    train_dataset = EmbeddingsDataset(train_embeddings, train_labels)
-    train_loader = DataLoader(train_dataset, batch_size=batch_size, shuffle=False)
-
-    attentive_classifier = AttentiveClassifier(num_classes=num_classes, use_class=use_class, complete_block=complete_block).to(device)
-    
-    # Define loss function and optimizer
-    criterion = nn.CrossEntropyLoss()
-    optimizer = optim.Adam(attentive_classifier.parameters(), lr=learning_rate)
-    
-    # Training loop
-    for epoch in tqdm(range(num_epochs)):
-        attentive_classifier.train()
-        total_loss = 0.0
-        for patch_tokens, class_token, labels in train_loader:
-            patch_tokens = patch_tokens.to(device).float()  
-            class_token = class_token.to(device).float()    
-            labels = labels.to(device).long()              
-            
-            optimizer.zero_grad()
-            
-            # Forward pass
-            outputs = attentive_classifier((patch_tokens, class_token))
-            loss = criterion(outputs, labels)
-            
-            # Backward pass and optimization
-            loss.backward()
-            optimizer.step()
-            
-            total_loss += loss.item()
-        
-        avg_loss = total_loss / len(train_loader)
-        print(f'Epoch [{epoch+1}/{num_epochs}], Loss: {avg_loss:.4f}')
-    
-    return attentive_classifier
-
-def train_val_attentive_classifier(train_embeddings, train_labels, val_embeddings, val_labels, use_class, device, num_classes=1000, num_epochs=50, learning_rate=1e-5, batch_size=32, patience=5, complete_block=False):
-    # Create the embeddings dataset and dataloader
-    train_dataset = EmbeddingsDataset(train_embeddings, train_labels)
-    train_loader = DataLoader(train_dataset, batch_size=batch_size, shuffle=False)
-
-    val_dataset = EmbeddingsDataset(val_embeddings, val_labels)
-    val_loader = DataLoader(val_dataset, batch_size=batch_size, shuffle=False)
-
-    attentive_classifier = AttentiveClassifier(num_classes=num_classes, use_class=use_class, complete_block=complete_block).to(device)
-    
-    # Define loss function and optimizer
-    criterion = nn.CrossEntropyLoss()
-    optimizer = optim.Adam(attentive_classifier.parameters(), lr=learning_rate)
-    
-    # Early stopping variables
-    best_val_loss = float('inf')
-    best_epoch = 0
-    best_val_acc = 0.0  # Track the best validation accuracy
-    epochs_no_improve = 0
-    early_stop = False
-    
-    for epoch in range(num_epochs):
-        if early_stop:
-            break
-        
-        attentive_classifier.train()
-        total_loss = 0.0
-        for patch_tokens, class_token, labels in train_loader:
-            patch_tokens = patch_tokens.to(device).float()  
-            class_token = class_token.to(device).float()    
-            labels = labels.to(device).long()              
-            
-            optimizer.zero_grad()
-            
-            # Forward pass
-            outputs = attentive_classifier((patch_tokens, class_token))
-            loss = criterion(outputs, labels)
-            
-            # Backward pass and optimization
-            loss.backward()
-            optimizer.step()
-            
-            total_loss += loss.item()
-        
-        avg_loss = total_loss / len(train_loader)
-        print(f'Epoch [{epoch+1}/{num_epochs}], Loss: {avg_loss:.4f}')
-        
-        # Evaluate on validation set
-        attentive_classifier.eval()
-        total_val_loss = 0.0
-        correct = 0
-        total = 0
-        with torch.no_grad():
-            for patch_tokens, class_token, labels in val_loader:
-                patch_tokens = patch_tokens.to(device).float()
-                class_token = class_token.to(device).float()
-                labels = labels.to(device).long()
-
-                outputs = attentive_classifier((patch_tokens, class_token))
-                loss = criterion(outputs, labels)
-                total_val_loss += loss.item()
-
-                _, predicted = torch.max(outputs, 1)
-                total += labels.size(0)
-                correct += (predicted == labels).sum().item()
-
-        avg_val_loss = total_val_loss / len(val_loader)
-        val_acc = correct / total
-        
-        print(f'Validation Loss: {avg_val_loss:.4f}, Validation Accuracy: {val_acc:.4f}')
-        
-        # Track the best validation accuracy
-        if val_acc > best_val_acc:
-            best_val_acc = val_acc
-        
-        # Early stopping logic based on validation loss
-        if avg_val_loss < best_val_loss:
-            best_val_loss = avg_val_loss
-            best_epoch = epoch + 1  # Save the best epoch
-            epochs_no_improve = 0
-        else:
-            epochs_no_improve += 1
-            if epochs_no_improve >= patience:
-                print(f"Early stopping at epoch {epoch+1}")
-                early_stop = True
-    
-    # Return the epoch with the lowest validation loss and the highest validation accuracy
-    return best_epoch, best_val_acc
-
-def train_gem_classifier(train_embeddings, train_labels, use_class, device, num_classes=1000, num_epochs=50, learning_rate=1e-5, batch_size=32):
-    # Create the embeddings dataset and dataloader
-    train_dataset = EmbeddingsDataset(train_embeddings, train_labels)
-    train_loader = DataLoader(train_dataset, batch_size=batch_size, shuffle=False)
-
-    gem_classifier = GeMClassifier(num_classes=num_classes, use_class=use_class).to(device)
-    
-    # Define loss function and optimizer
-    criterion = nn.CrossEntropyLoss()
-    optimizer = optim.Adam(gem_classifier.parameters(), lr=learning_rate)
-    
-    # Training loop
-    for epoch in tqdm(range(num_epochs)):
-        gem_classifier.train()
-        total_loss = 0.0
-        for patch_tokens, class_token, labels in train_loader:
-            patch_tokens = patch_tokens.to(device).float()  # Shape: (B, N, D)
-            class_token = class_token.to(device).float()    # Shape: (B, D)
-            labels = labels.to(device).long()              # Shape: (B,)
-            
-            optimizer.zero_grad()
-            
-            # Forward pass
-            outputs = gem_classifier((patch_tokens, class_token))
-            loss = criterion(outputs, labels)
-            
-            # Backward pass and optimization
-            loss.backward()
-            optimizer.step()
-            
-            total_loss += loss.item()
-        
-        avg_loss = total_loss / len(train_loader)
-        print(f'Epoch [{epoch+1}/{num_epochs}], Loss: {avg_loss:.4f}')
-    
-    return gem_classifier
-
-
-def train_val_gem_classifier(train_embeddings, train_labels, val_embeddings, val_labels, use_class, device, num_classes=1000, num_epochs=50, learning_rate=1e-5, batch_size=32, patience=5):
-    # Create the embeddings dataset and dataloader
-    train_dataset = EmbeddingsDataset(train_embeddings, train_labels)
-    train_loader = DataLoader(train_dataset, batch_size=batch_size, shuffle=False)
-
-    val_dataset = EmbeddingsDataset(val_embeddings, val_labels)
-    val_loader = DataLoader(val_dataset, batch_size=batch_size, shuffle=False)
-
-    # Initialize the GeMClassifier
-    gem_classifier = GeMClassifier(num_classes=num_classes, use_class=use_class).to(device)
-    
-    # Define loss function and optimizer
-    criterion = nn.CrossEntropyLoss()
-    optimizer = optim.Adam(gem_classifier.parameters(), lr=learning_rate)
-    
-    # Early stopping variables
-    best_val_loss = float('inf')
-    best_epoch = 0
-    best_val_acc = 0.0  # Track the best validation accuracy
-    epochs_no_improve = 0
-    early_stop = False
-    
-    for epoch in range(num_epochs):
-        if early_stop:
-            break
-        
-        gem_classifier.train()
-        total_loss = 0.0
-        for patch_tokens, class_token, labels in train_loader:
-            patch_tokens = patch_tokens.to(device).float()  # Shape: (B, N, D)
-            class_token = class_token.to(device).float()    # Shape: (B, D)
-            labels = labels.to(device).long()              # Shape: (B,)
-            
-            optimizer.zero_grad()
-            
-            # Forward pass
-            outputs = gem_classifier((patch_tokens, class_token))
-            loss = criterion(outputs, labels)
-            
-            # Backward pass and optimization
-            loss.backward()
-            optimizer.step()
-            
-            total_loss += loss.item()
-        
-        avg_loss = total_loss / len(train_loader)
-        print(f'Epoch [{epoch+1}/{num_epochs}], Loss: {avg_loss:.4f}')
-
-        # Evaluate on validation set
-        gem_classifier.eval()
-        total_val_loss = 0.0
-        correct = 0
-        total = 0
-        with torch.no_grad():
-            for patch_tokens, class_token, labels in val_loader:
-                patch_tokens = patch_tokens.to(device).float()
-                class_token = class_token.to(device).float()
-                labels = labels.to(device).long()
-
-                outputs = gem_classifier((patch_tokens, class_token))
-                loss = criterion(outputs, labels)
-                total_val_loss += loss.item()
-
-                _, predicted = torch.max(outputs, 1)
-                total += labels.size(0)
-                correct += (predicted == labels).sum().item()
-
-        avg_val_loss = total_val_loss / len(val_loader)
-        val_acc = correct / total
-        
-        print(f'Validation Loss: {avg_val_loss:.4f}, Validation Accuracy: {val_acc:.4f}')
-        learned_p = gem_classifier.gem_pooler.p.item()
-        
-        # Track the best validation accuracy
-        if val_acc > best_val_acc:
-            best_val_acc = val_acc
-        
-        # Early stopping logic based on validation loss
-        if avg_val_loss < best_val_loss:
-            best_val_loss = avg_val_loss
-            best_epoch = epoch + 1  # Save the best epoch
-            epochs_no_improve = 0
-        else:
-            epochs_no_improve += 1
-            if epochs_no_improve >= patience:
-                print(f"Early stopping at epoch {epoch+1}")
-                early_stop = True
-    
-    # Return the epoch with the lowest validation loss and the highest validation accuracy
-    return best_epoch, best_val_acc, learned_p
-
-def train_val_weighted_classifier(train_embeddings, train_labels, val_embeddings, val_labels, use_class, device, num_classes=1000, num_epochs=50, learning_rate=1e-5, batch_size=32, patience=5):
-    # Create the embeddings dataset and dataloader
-    train_dataset = EmbeddingsDataset(train_embeddings, train_labels)
-    train_loader = DataLoader(train_dataset, batch_size=batch_size, shuffle=False)
-
-    val_dataset = EmbeddingsDataset(val_embeddings, val_labels)
-    val_loader = DataLoader(val_dataset, batch_size=batch_size, shuffle=False)
-
-    classifier = WeightedAverageClassifier(num_classes=num_classes).to(device)
-    
-    # Define loss function and optimizer
-    criterion = nn.CrossEntropyLoss()
-    optimizer = optim.Adam(classifier.parameters(), lr=learning_rate)
-    
-    # Early stopping variables
-    best_val_loss = float('inf')
-    best_epoch = 0
-    best_val_acc = 0.0  # Track the best validation accuracy
-    epochs_no_improve = 0
-    early_stop = False
-    
-    for epoch in range(num_epochs):
-        if early_stop:
-            break
-        
-        classifier.train()
-        total_loss = 0.0
-        for patch_tokens, class_token, labels in train_loader:
-            patch_tokens = patch_tokens.to(device).float()  
-            class_token = class_token.to(device).float()    
-            labels = labels.to(device).long()              
-            
-            optimizer.zero_grad()
-            
-            # Forward pass
-            outputs = classifier((patch_tokens, class_token))
-            loss = criterion(outputs, labels)
-            
-            # Backward pass and optimization
-            loss.backward()
-            optimizer.step()
-            
-            total_loss += loss.item()
-        
-        avg_loss = total_loss / len(train_loader)
-        print(f'Epoch [{epoch+1}/{num_epochs}], Loss: {avg_loss:.4f}')
-        
-        # Evaluate on validation set
-        classifier.eval()
-        total_val_loss = 0.0
-        correct = 0
-        total = 0
-        with torch.no_grad():
-            for patch_tokens, class_token, labels in val_loader:
-                patch_tokens = patch_tokens.to(device).float()
-                class_token = class_token.to(device).float()
-                labels = labels.to(device).long()
-
-                outputs = classifier((patch_tokens, class_token))
-                loss = criterion(outputs, labels)
-                total_val_loss += loss.item()
-
-                _, predicted = torch.max(outputs, 1)
-                total += labels.size(0)
-                correct += (predicted == labels).sum().item()
-
-        avg_val_loss = total_val_loss / len(val_loader)
-        val_acc = correct / total
-        
-        print(f'Validation Loss: {avg_val_loss:.4f}, Validation Accuracy: {val_acc:.4f}')
-        
-        # Track the best validation accuracy
-        if val_acc > best_val_acc:
-            best_val_acc = val_acc
-        
-        # Early stopping logic based on validation loss
-        if avg_val_loss < best_val_loss:
-            best_val_loss = avg_val_loss
-            best_epoch = epoch + 1  # Save the best epoch
-            epochs_no_improve = 0
-        else:
-            epochs_no_improve += 1
-            if epochs_no_improve >= patience:
-                print(f"Early stopping at epoch {epoch+1}")
-                early_stop = True
-    
-    # Return the epoch with the lowest validation loss and the highest validation accuracy
-    return best_epoch, best_val_acc
-
 def compute_scores(outputs):
     softmax_scores = F.softmax(outputs, dim=1)
     max_softmax_scores, _ = torch.max(softmax_scores, dim=1)

@@ -162,6 +162,18 @@ BEST_PARAMS = {
             "learning_rate": 0.002,
             "best_epoch": 2,
             "best_val_acc": 0.9659468438538206
+        },
+        "weighted": {
+            "batch_size": 128,
+            "learning_rate": 0.01,
+            "best_epoch": 1,
+            "best_val_acc": 0.9667774086378738
+        },
+        "gem": {
+            "batch_size": 8,
+            "learning_rate": 0.0001,
+            "best_epoch": 14,
+            "best_val_acc": 0.9651162790697675
         }
     },
     "CatIndividualImages": {
@@ -274,6 +286,18 @@ BEST_PARAMS = {
             "learning_rate": 0.0002,
             "best_epoch": 19,
             "best_val_acc": 0.7021161150298426
+        },
+        "weighted": {
+            "batch_size": 64,
+            "learning_rate": 0.002,
+            "best_epoch": 3,
+            "best_val_acc": 0.6885512750949538
+        },
+        "gem": {
+            "batch_size": 8,
+            "learning_rate": 0.002,
+            "best_epoch": 3,
+            "best_val_acc": 0.7015735214324471
         }
     },
     "StripeSpotter": {
@@ -302,6 +326,18 @@ BEST_PARAMS = {
             "learning_rate": 0.01,
             "best_epoch": 26,
             "best_val_acc": 0.886039886039886
+        },
+        "weighted": {
+            "batch_size": 64,
+            "learning_rate": 0.1,
+            "best_epoch": 13,
+            "best_val_acc": 0.8689458689458689
+        },
+        "gem": {
+            "batch_size": 16,
+            "learning_rate": 0.002,
+            "best_epoch": 50,
+            "best_val_acc": 0.8717948717948718
         }
     },
     "AmvrakikosTurtles": {
@@ -316,6 +352,18 @@ BEST_PARAMS = {
             "learning_rate": 0.05,
             "best_epoch": 1,
             "best_val_acc": 0.4074074074074074
+        },
+        "weighted": {
+            "batch_size": 8,
+            "learning_rate": 0.0005,
+            "best_epoch": 6,
+            "best_val_acc": 0.37037037037037035
+        },
+        "gem": {
+             "batch_size": 8,
+            "learning_rate": 0.05,
+            "best_epoch": 3,
+            "best_val_acc": 0.3333333333333333
         }
     },
     "ReunionTurtles": {
@@ -330,6 +378,18 @@ BEST_PARAMS = {
             "learning_rate": 0.01,
             "best_epoch": 2,
             "best_val_acc": 0.4888888888888889
+        },
+        "weighted": {
+            "batch_size": 32,
+            "learning_rate": 0.0005,
+            "best_epoch": 50,
+            "best_val_acc": 0.5333333333333333
+        },
+        "gem": {
+            "batch_size": 16,
+            "learning_rate": 0.05,
+            "best_epoch": 3,
+            "best_val_acc": 0.4666666666666667
         }
     },
     "SouthernProvinceTurtles": {
@@ -344,6 +404,18 @@ BEST_PARAMS = {
             "learning_rate": 0.001,
             "best_epoch": 50,
             "best_val_acc": 0.8266666666666667
+        },
+        "weighted": {
+            "batch_size": 64,
+            "learning_rate": 0.001,
+            "best_epoch": 15,
+            "best_val_acc": 0.8266666666666667
+        },
+        "gem": {
+            "batch_size": 8,
+            "learning_rate": 0.01,
+            "best_epoch": 31,
+            "best_val_acc": 0.7866666666666666
         }
     }
 }

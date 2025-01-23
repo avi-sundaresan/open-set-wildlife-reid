@@ -5732,9 +5732,215 @@
     "best_epoch": 14,
     "best_val_acc": 0.9651162790697675
 }
-2025-01-22 20:55:16,827 - INFO - /home/avisund/data/wildlife_datasets/ZindiTurtleRecall/
-2025-01-22 20:55:16,902 - INFO - Dataset ZindiTurtleRecall loaded successfully
-2025-01-22 20:55:17,121 - INFO - Dataset split successfully
-2025-01-22 20:55:17,132 - INFO - Dataloaders created successfully
-2025-01-22 20:55:18,777 - INFO - Loading pretrained weights from Hugging Face hub (BVRA/MegaDescriptor-L-384)
-2025-01-22 20:55:19,884 - INFO - Feature extractor loaded successfully
+
+2025-01-23 00:33:39,313 - INFO - Using device: cuda:1
+2025-01-23 00:33:39,313 - INFO - /home/avisund/data/wildlife_datasets/ZindiTurtleRecall/
+2025-01-23 00:33:39,393 - INFO - Dataset ZindiTurtleRecall loaded successfully
+2025-01-23 00:33:39,614 - INFO - Dataset split successfully
+2025-01-23 00:33:39,625 - INFO - Dataloaders created successfully
+2025-01-23 00:33:41,655 - INFO - Loading pretrained weights from Hugging Face hub (BVRA/MegaDescriptor-L-384)
+2025-01-23 00:33:43,302 - INFO - Feature extractor loaded successfully
+2025-01-23 00:46:10,837 - INFO - Embeddings computed successfully
+2025-01-23 00:46:10,855 - INFO - Grid eval for classifiers: Running experiment with dataset: ZindiTurtleRecall, model: megadescriptor, pooling method: gem, use_class: False, learning rate: 1e-05, batch size: 8
+2025-01-23 00:47:27,386 - INFO - Training stopped at epoch 50 for config: {'pooling_method': 'gem', 'use_class': False}.  Validation accuracy: 0.6418882257189366.
+2025-01-23 00:47:27,386 - INFO - Param 1.455182433128357 learned for pooling method: {'pooling_method': 'gem', 'use_class': False}
+2025-01-23 00:47:27,386 - INFO - Grid eval for classifiers: Running experiment with dataset: ZindiTurtleRecall, model: megadescriptor, pooling method: gem, use_class: False, learning rate: 2e-05, batch size: 8
+2025-01-23 00:48:40,099 - INFO - Training stopped at epoch 50 for config: {'pooling_method': 'gem', 'use_class': False}.  Validation accuracy: 0.6646771568095496.
+2025-01-23 00:48:40,099 - INFO - Param 1.8374327421188354 learned for pooling method: {'pooling_method': 'gem', 'use_class': False}
+2025-01-23 00:48:40,099 - INFO - Grid eval for classifiers: Running experiment with dataset: ZindiTurtleRecall, model: megadescriptor, pooling method: gem, use_class: False, learning rate: 5e-05, batch size: 8
+2025-01-23 00:49:14,162 - INFO - Training stopped at epoch 17 for config: {'pooling_method': 'gem', 'use_class': False}.  Validation accuracy: 0.6668475311991319.
+2025-01-23 00:49:14,162 - INFO - Param 1.8337351083755493 learned for pooling method: {'pooling_method': 'gem', 'use_class': False}
+2025-01-23 00:49:14,162 - INFO - Grid eval for classifiers: Running experiment with dataset: ZindiTurtleRecall, model: megadescriptor, pooling method: gem, use_class: False, learning rate: 0.0001, batch size: 8
+2025-01-23 00:49:39,171 - INFO - Training stopped at epoch 11 for config: {'pooling_method': 'gem', 'use_class': False}.  Validation accuracy: 0.6684753119913185.
+2025-01-23 00:49:39,172 - INFO - Param 1.9773783683776855 learned for pooling method: {'pooling_method': 'gem', 'use_class': False}
+2025-01-23 00:49:39,172 - INFO - Grid eval for classifiers: Running experiment with dataset: ZindiTurtleRecall, model: megadescriptor, pooling method: gem, use_class: False, learning rate: 0.0002, batch size: 8
+2025-01-23 00:49:59,524 - INFO - Training stopped at epoch 8 for config: {'pooling_method': 'gem', 'use_class': False}.  Validation accuracy: 0.6771568095496473.
+2025-01-23 00:49:59,525 - INFO - Param 2.083782911300659 learned for pooling method: {'pooling_method': 'gem', 'use_class': False}
+2025-01-23 00:49:59,525 - INFO - Grid eval for classifiers: Running experiment with dataset: ZindiTurtleRecall, model: megadescriptor, pooling method: gem, use_class: False, learning rate: 0.0005, batch size: 8
+2025-01-23 00:50:18,175 - INFO - Training stopped at epoch 7 for config: {'pooling_method': 'gem', 'use_class': False}.  Validation accuracy: 0.6852957135105806.
+2025-01-23 00:50:18,175 - INFO - Param 2.0692477226257324 learned for pooling method: {'pooling_method': 'gem', 'use_class': False}
+2025-01-23 00:50:18,176 - INFO - Grid eval for classifiers: Running experiment with dataset: ZindiTurtleRecall, model: megadescriptor, pooling method: gem, use_class: False, learning rate: 0.001, batch size: 8
+2025-01-23 00:50:32,186 - INFO - Training stopped at epoch 4 for config: {'pooling_method': 'gem', 'use_class': False}.  Validation accuracy: 0.6928920238741183.
+2025-01-23 00:50:32,186 - INFO - Param 1.5898839235305786 learned for pooling method: {'pooling_method': 'gem', 'use_class': False}
+2025-01-23 00:50:32,186 - INFO - Grid eval for classifiers: Running experiment with dataset: ZindiTurtleRecall, model: megadescriptor, pooling method: gem, use_class: False, learning rate: 0.002, batch size: 8
+2025-01-23 00:50:44,623 - INFO - Training stopped at epoch 3 for config: {'pooling_method': 'gem', 'use_class': False}.  Validation accuracy: 0.7015735214324471.
+2025-01-23 00:50:44,623 - INFO - Param 0.9758505821228027 learned for pooling method: {'pooling_method': 'gem', 'use_class': False}
+2025-01-23 00:50:44,623 - INFO - Grid eval for classifiers: Running experiment with dataset: ZindiTurtleRecall, model: megadescriptor, pooling method: gem, use_class: False, learning rate: 0.005, batch size: 8
+2025-01-23 00:50:57,041 - INFO - Training stopped at epoch 3 for config: {'pooling_method': 'gem', 'use_class': False}.  Validation accuracy: 0.6977753662506783.
+2025-01-23 00:50:57,041 - INFO - Param 0.44868186116218567 learned for pooling method: {'pooling_method': 'gem', 'use_class': False}
+2025-01-23 00:50:57,041 - INFO - Grid eval for classifiers: Running experiment with dataset: ZindiTurtleRecall, model: megadescriptor, pooling method: gem, use_class: False, learning rate: 0.01, batch size: 8
+2025-01-23 00:51:07,907 - INFO - Training stopped at epoch 2 for config: {'pooling_method': 'gem', 'use_class': False}.  Validation accuracy: 0.6809549647314161.
+2025-01-23 00:51:07,907 - INFO - Param 0.25756388902664185 learned for pooling method: {'pooling_method': 'gem', 'use_class': False}
+2025-01-23 00:51:07,907 - INFO - Grid eval for classifiers: Running experiment with dataset: ZindiTurtleRecall, model: megadescriptor, pooling method: gem, use_class: False, learning rate: 0.02, batch size: 8
+2025-01-23 00:51:18,829 - INFO - Training stopped at epoch 2 for config: {'pooling_method': 'gem', 'use_class': False}.  Validation accuracy: 0.5946825827455237.
+2025-01-23 00:51:18,829 - INFO - Param 0.12598994374275208 learned for pooling method: {'pooling_method': 'gem', 'use_class': False}
+2025-01-23 00:51:18,829 - INFO - Grid eval for classifiers: Running experiment with dataset: ZindiTurtleRecall, model: megadescriptor, pooling method: gem, use_class: False, learning rate: 0.05, batch size: 8
+2025-01-23 00:51:29,685 - INFO - Training stopped at epoch 2 for config: {'pooling_method': 'gem', 'use_class': False}.  Validation accuracy: 0.4053174172544764.
+2025-01-23 00:51:29,685 - INFO - Param -0.25792592763900757 learned for pooling method: {'pooling_method': 'gem', 'use_class': False}
+2025-01-23 00:51:29,685 - INFO - Grid eval for classifiers: Running experiment with dataset: ZindiTurtleRecall, model: megadescriptor, pooling method: gem, use_class: False, learning rate: 0.1, batch size: 8
+2025-01-23 00:51:38,978 - INFO - Training stopped at epoch 1 for config: {'pooling_method': 'gem', 'use_class': False}.  Validation accuracy: 0.3157894736842105.
+2025-01-23 00:51:38,978 - INFO - Param -0.45874732732772827 learned for pooling method: {'pooling_method': 'gem', 'use_class': False}
+2025-01-23 00:51:38,978 - INFO - Grid eval for classifiers: Running experiment with dataset: ZindiTurtleRecall, model: megadescriptor, pooling method: gem, use_class: False, learning rate: 1e-05, batch size: 16
+2025-01-23 00:52:19,190 - INFO - Training stopped at epoch 50 for config: {'pooling_method': 'gem', 'use_class': False}.  Validation accuracy: 0.578404774823657.
+2025-01-23 00:52:19,190 - INFO - Param 1.2441309690475464 learned for pooling method: {'pooling_method': 'gem', 'use_class': False}
+2025-01-23 00:52:19,190 - INFO - Grid eval for classifiers: Running experiment with dataset: ZindiTurtleRecall, model: megadescriptor, pooling method: gem, use_class: False, learning rate: 2e-05, batch size: 16
+2025-01-23 00:52:59,272 - INFO - Training stopped at epoch 50 for config: {'pooling_method': 'gem', 'use_class': False}.  Validation accuracy: 0.6581660336408031.
+2025-01-23 00:52:59,272 - INFO - Param 1.4634277820587158 learned for pooling method: {'pooling_method': 'gem', 'use_class': False}
+2025-01-23 00:52:59,272 - INFO - Grid eval for classifiers: Running experiment with dataset: ZindiTurtleRecall, model: megadescriptor, pooling method: gem, use_class: False, learning rate: 5e-05, batch size: 16
+2025-01-23 00:53:23,944 - INFO - Training stopped at epoch 29 for config: {'pooling_method': 'gem', 'use_class': False}.  Validation accuracy: 0.6663049376017363.
+2025-01-23 00:53:23,944 - INFO - Param 1.6887611150741577 learned for pooling method: {'pooling_method': 'gem', 'use_class': False}
+2025-01-23 00:53:23,944 - INFO - Grid eval for classifiers: Running experiment with dataset: ZindiTurtleRecall, model: megadescriptor, pooling method: gem, use_class: False, learning rate: 0.0001, batch size: 16
+2025-01-23 00:53:44,718 - INFO - Training stopped at epoch 22 for config: {'pooling_method': 'gem', 'use_class': False}.  Validation accuracy: 0.6749864351600651.
+2025-01-23 00:53:44,718 - INFO - Param 1.8564112186431885 learned for pooling method: {'pooling_method': 'gem', 'use_class': False}
+2025-01-23 00:53:44,718 - INFO - Grid eval for classifiers: Running experiment with dataset: ZindiTurtleRecall, model: megadescriptor, pooling method: gem, use_class: False, learning rate: 0.0002, batch size: 16
+2025-01-23 00:54:03,973 - INFO - Training stopped at epoch 21 for config: {'pooling_method': 'gem', 'use_class': False}.  Validation accuracy: 0.6852957135105806.
+2025-01-23 00:54:03,974 - INFO - Param 2.0494613647460938 learned for pooling method: {'pooling_method': 'gem', 'use_class': False}
+2025-01-23 00:54:03,974 - INFO - Grid eval for classifiers: Running experiment with dataset: ZindiTurtleRecall, model: megadescriptor, pooling method: gem, use_class: False, learning rate: 0.0005, batch size: 16
+2025-01-23 00:54:20,379 - INFO - Training stopped at epoch 17 for config: {'pooling_method': 'gem', 'use_class': False}.  Validation accuracy: 0.6874660879001627.
+2025-01-23 00:54:20,379 - INFO - Param 2.078543186187744 learned for pooling method: {'pooling_method': 'gem', 'use_class': False}
+2025-01-23 00:54:20,379 - INFO - Grid eval for classifiers: Running experiment with dataset: ZindiTurtleRecall, model: megadescriptor, pooling method: gem, use_class: False, learning rate: 0.001, batch size: 16
+2025-01-23 00:54:31,308 - INFO - Training stopped at epoch 9 for config: {'pooling_method': 'gem', 'use_class': False}.  Validation accuracy: 0.689636462289745.
+2025-01-23 00:54:31,308 - INFO - Param 1.7818223237991333 learned for pooling method: {'pooling_method': 'gem', 'use_class': False}
+2025-01-23 00:54:31,308 - INFO - Grid eval for classifiers: Running experiment with dataset: ZindiTurtleRecall, model: megadescriptor, pooling method: gem, use_class: False, learning rate: 0.002, batch size: 16
+2025-01-23 00:54:38,353 - INFO - Training stopped at epoch 4 for config: {'pooling_method': 'gem', 'use_class': False}.  Validation accuracy: 0.6950623982637005.
+2025-01-23 00:54:38,353 - INFO - Param 1.3065134286880493 learned for pooling method: {'pooling_method': 'gem', 'use_class': False}
+2025-01-23 00:54:38,353 - INFO - Grid eval for classifiers: Running experiment with dataset: ZindiTurtleRecall, model: megadescriptor, pooling method: gem, use_class: False, learning rate: 0.005, batch size: 16
+2025-01-23 00:54:44,616 - INFO - Training stopped at epoch 3 for config: {'pooling_method': 'gem', 'use_class': False}.  Validation accuracy: 0.6939772110689094.
+2025-01-23 00:54:44,616 - INFO - Param 0.6537303328514099 learned for pooling method: {'pooling_method': 'gem', 'use_class': False}
+2025-01-23 00:54:44,616 - INFO - Grid eval for classifiers: Running experiment with dataset: ZindiTurtleRecall, model: megadescriptor, pooling method: gem, use_class: False, learning rate: 0.01, batch size: 16
+2025-01-23 00:54:50,876 - INFO - Training stopped at epoch 3 for config: {'pooling_method': 'gem', 'use_class': False}.  Validation accuracy: 0.6874660879001627.
+2025-01-23 00:54:50,876 - INFO - Param 0.3612287640571594 learned for pooling method: {'pooling_method': 'gem', 'use_class': False}
+2025-01-23 00:54:50,876 - INFO - Grid eval for classifiers: Running experiment with dataset: ZindiTurtleRecall, model: megadescriptor, pooling method: gem, use_class: False, learning rate: 0.02, batch size: 16
+2025-01-23 00:55:01,031 - INFO - Training stopped at epoch 8 for config: {'pooling_method': 'gem', 'use_class': False}.  Validation accuracy: 0.6549104720564297.
+2025-01-23 00:55:01,031 - INFO - Param 0.22687341272830963 learned for pooling method: {'pooling_method': 'gem', 'use_class': False}
+2025-01-23 00:55:01,031 - INFO - Grid eval for classifiers: Running experiment with dataset: ZindiTurtleRecall, model: megadescriptor, pooling method: gem, use_class: False, learning rate: 0.05, batch size: 16
+2025-01-23 00:55:06,526 - INFO - Training stopped at epoch 2 for config: {'pooling_method': 'gem', 'use_class': False}.  Validation accuracy: 0.5029842647856755.
+2025-01-23 00:55:06,527 - INFO - Param -0.10815609246492386 learned for pooling method: {'pooling_method': 'gem', 'use_class': False}
+2025-01-23 00:55:06,527 - INFO - Grid eval for classifiers: Running experiment with dataset: ZindiTurtleRecall, model: megadescriptor, pooling method: gem, use_class: False, learning rate: 0.1, batch size: 16
+2025-01-23 00:55:11,230 - INFO - Training stopped at epoch 1 for config: {'pooling_method': 'gem', 'use_class': False}.  Validation accuracy: 0.3640803038524145.
+2025-01-23 00:55:11,230 - INFO - Param -0.4166121482849121 learned for pooling method: {'pooling_method': 'gem', 'use_class': False}
+2025-01-23 00:55:11,230 - INFO - Grid eval for classifiers: Running experiment with dataset: ZindiTurtleRecall, model: megadescriptor, pooling method: gem, use_class: False, learning rate: 1e-05, batch size: 32
+2025-01-23 00:55:35,198 - INFO - Training stopped at epoch 50 for config: {'pooling_method': 'gem', 'use_class': False}.  Validation accuracy: 0.50244167118828.
+2025-01-23 00:55:35,198 - INFO - Param 1.131339430809021 learned for pooling method: {'pooling_method': 'gem', 'use_class': False}
+2025-01-23 00:55:35,198 - INFO - Grid eval for classifiers: Running experiment with dataset: ZindiTurtleRecall, model: megadescriptor, pooling method: gem, use_class: False, learning rate: 2e-05, batch size: 32
+2025-01-23 00:55:59,164 - INFO - Training stopped at epoch 50 for config: {'pooling_method': 'gem', 'use_class': False}.  Validation accuracy: 0.6082474226804123.
+2025-01-23 00:55:59,164 - INFO - Param 1.2545220851898193 learned for pooling method: {'pooling_method': 'gem', 'use_class': False}
+2025-01-23 00:55:59,164 - INFO - Grid eval for classifiers: Running experiment with dataset: ZindiTurtleRecall, model: megadescriptor, pooling method: gem, use_class: False, learning rate: 5e-05, batch size: 32
+2025-01-23 00:56:22,366 - INFO - Training stopped at epoch 50 for config: {'pooling_method': 'gem', 'use_class': False}.  Validation accuracy: 0.6663049376017363.
+2025-01-23 00:56:22,366 - INFO - Param 1.5300135612487793 learned for pooling method: {'pooling_method': 'gem', 'use_class': False}
+2025-01-23 00:56:22,366 - INFO - Grid eval for classifiers: Running experiment with dataset: ZindiTurtleRecall, model: megadescriptor, pooling method: gem, use_class: False, learning rate: 0.0001, batch size: 32
+2025-01-23 00:56:46,069 - INFO - Training stopped at epoch 49 for config: {'pooling_method': 'gem', 'use_class': False}.  Validation accuracy: 0.6782419967444384.
+2025-01-23 00:56:46,069 - INFO - Param 1.7603285312652588 learned for pooling method: {'pooling_method': 'gem', 'use_class': False}
+2025-01-23 00:56:46,069 - INFO - Grid eval for classifiers: Running experiment with dataset: ZindiTurtleRecall, model: megadescriptor, pooling method: gem, use_class: False, learning rate: 0.0002, batch size: 32
+2025-01-23 00:57:10,397 - INFO - Training stopped at epoch 45 for config: {'pooling_method': 'gem', 'use_class': False}.  Validation accuracy: 0.6863809007053717.
+2025-01-23 00:57:10,397 - INFO - Param 1.9309625625610352 learned for pooling method: {'pooling_method': 'gem', 'use_class': False}
+2025-01-23 00:57:10,397 - INFO - Grid eval for classifiers: Running experiment with dataset: ZindiTurtleRecall, model: megadescriptor, pooling method: gem, use_class: False, learning rate: 0.0005, batch size: 32
+2025-01-23 00:57:30,829 - INFO - Training stopped at epoch 37 for config: {'pooling_method': 'gem', 'use_class': False}.  Validation accuracy: 0.695604991861096.
+2025-01-23 00:57:30,829 - INFO - Param 1.9828702211380005 learned for pooling method: {'pooling_method': 'gem', 'use_class': False}
+2025-01-23 00:57:30,829 - INFO - Grid eval for classifiers: Running experiment with dataset: ZindiTurtleRecall, model: megadescriptor, pooling method: gem, use_class: False, learning rate: 0.001, batch size: 32
+2025-01-23 00:57:46,950 - INFO - Training stopped at epoch 28 for config: {'pooling_method': 'gem', 'use_class': False}.  Validation accuracy: 0.6945198046663049.
+2025-01-23 00:57:46,951 - INFO - Param 1.905393123626709 learned for pooling method: {'pooling_method': 'gem', 'use_class': False}
+2025-01-23 00:57:46,951 - INFO - Grid eval for classifiers: Running experiment with dataset: ZindiTurtleRecall, model: megadescriptor, pooling method: gem, use_class: False, learning rate: 0.002, batch size: 32
+2025-01-23 00:57:55,266 - INFO - Training stopped at epoch 12 for config: {'pooling_method': 'gem', 'use_class': False}.  Validation accuracy: 0.6934346174715138.
+2025-01-23 00:57:55,266 - INFO - Param 1.553101897239685 learned for pooling method: {'pooling_method': 'gem', 'use_class': False}
+2025-01-23 00:57:55,266 - INFO - Grid eval for classifiers: Running experiment with dataset: ZindiTurtleRecall, model: megadescriptor, pooling method: gem, use_class: False, learning rate: 0.005, batch size: 32
+2025-01-23 00:57:59,677 - INFO - Training stopped at epoch 4 for config: {'pooling_method': 'gem', 'use_class': False}.  Validation accuracy: 0.6880086814975583.
+2025-01-23 00:57:59,677 - INFO - Param 0.9408671259880066 learned for pooling method: {'pooling_method': 'gem', 'use_class': False}
+2025-01-23 00:57:59,677 - INFO - Grid eval for classifiers: Running experiment with dataset: ZindiTurtleRecall, model: megadescriptor, pooling method: gem, use_class: False, learning rate: 0.01, batch size: 32
+2025-01-23 00:58:04,579 - INFO - Training stopped at epoch 5 for config: {'pooling_method': 'gem', 'use_class': False}.  Validation accuracy: 0.6760716223548562.
+2025-01-23 00:58:04,579 - INFO - Param 0.5964218974113464 learned for pooling method: {'pooling_method': 'gem', 'use_class': False}
+2025-01-23 00:58:04,579 - INFO - Grid eval for classifiers: Running experiment with dataset: ZindiTurtleRecall, model: megadescriptor, pooling method: gem, use_class: False, learning rate: 0.02, batch size: 32
+2025-01-23 00:58:11,933 - INFO - Training stopped at epoch 10 for config: {'pooling_method': 'gem', 'use_class': False}.  Validation accuracy: 0.6690179055887141.
+2025-01-23 00:58:11,933 - INFO - Param 0.1262114942073822 learned for pooling method: {'pooling_method': 'gem', 'use_class': False}
+2025-01-23 00:58:11,933 - INFO - Grid eval for classifiers: Running experiment with dataset: ZindiTurtleRecall, model: megadescriptor, pooling method: gem, use_class: False, learning rate: 0.05, batch size: 32
+2025-01-23 00:58:16,849 - INFO - Training stopped at epoch 5 for config: {'pooling_method': 'gem', 'use_class': False}.  Validation accuracy: 0.5935973955507325.
+2025-01-23 00:58:16,850 - INFO - Param 0.07686411589384079 learned for pooling method: {'pooling_method': 'gem', 'use_class': False}
+2025-01-23 00:58:16,850 - INFO - Grid eval for classifiers: Running experiment with dataset: ZindiTurtleRecall, model: megadescriptor, pooling method: gem, use_class: False, learning rate: 0.1, batch size: 32
+2025-01-23 00:58:20,307 - INFO - Training stopped at epoch 2 for config: {'pooling_method': 'gem', 'use_class': False}.  Validation accuracy: 0.3922951709169832.
+2025-01-23 00:58:20,307 - INFO - Param -0.19401226937770844 learned for pooling method: {'pooling_method': 'gem', 'use_class': False}
+2025-01-23 00:58:20,307 - INFO - Grid eval for classifiers: Running experiment with dataset: ZindiTurtleRecall, model: megadescriptor, pooling method: gem, use_class: False, learning rate: 1e-05, batch size: 64
+2025-01-23 00:58:37,087 - INFO - Training stopped at epoch 50 for config: {'pooling_method': 'gem', 'use_class': False}.  Validation accuracy: 0.41237113402061853.
+2025-01-23 00:58:37,088 - INFO - Param 1.0713542699813843 learned for pooling method: {'pooling_method': 'gem', 'use_class': False}
+2025-01-23 00:58:37,088 - INFO - Grid eval for classifiers: Running experiment with dataset: ZindiTurtleRecall, model: megadescriptor, pooling method: gem, use_class: False, learning rate: 2e-05, batch size: 64
+2025-01-23 00:58:53,725 - INFO - Training stopped at epoch 50 for config: {'pooling_method': 'gem', 'use_class': False}.  Validation accuracy: 0.5387954422137818.
+2025-01-23 00:58:53,725 - INFO - Param 1.1398996114730835 learned for pooling method: {'pooling_method': 'gem', 'use_class': False}
+2025-01-23 00:58:53,725 - INFO - Grid eval for classifiers: Running experiment with dataset: ZindiTurtleRecall, model: megadescriptor, pooling method: gem, use_class: False, learning rate: 5e-05, batch size: 64
+2025-01-23 00:59:10,388 - INFO - Training stopped at epoch 50 for config: {'pooling_method': 'gem', 'use_class': False}.  Validation accuracy: 0.6500271296798698.
+2025-01-23 00:59:10,388 - INFO - Param 1.3117270469665527 learned for pooling method: {'pooling_method': 'gem', 'use_class': False}
+2025-01-23 00:59:10,388 - INFO - Grid eval for classifiers: Running experiment with dataset: ZindiTurtleRecall, model: megadescriptor, pooling method: gem, use_class: False, learning rate: 0.0001, batch size: 64
+2025-01-23 00:59:27,041 - INFO - Training stopped at epoch 50 for config: {'pooling_method': 'gem', 'use_class': False}.  Validation accuracy: 0.6684753119913185.
+2025-01-23 00:59:27,041 - INFO - Param 1.4759893417358398 learned for pooling method: {'pooling_method': 'gem', 'use_class': False}
+2025-01-23 00:59:27,041 - INFO - Grid eval for classifiers: Running experiment with dataset: ZindiTurtleRecall, model: megadescriptor, pooling method: gem, use_class: False, learning rate: 0.0002, batch size: 64
+2025-01-23 00:59:43,719 - INFO - Training stopped at epoch 50 for config: {'pooling_method': 'gem', 'use_class': False}.  Validation accuracy: 0.6782419967444384.
+2025-01-23 00:59:43,719 - INFO - Param 1.6100001335144043 learned for pooling method: {'pooling_method': 'gem', 'use_class': False}
+2025-01-23 00:59:43,719 - INFO - Grid eval for classifiers: Running experiment with dataset: ZindiTurtleRecall, model: megadescriptor, pooling method: gem, use_class: False, learning rate: 0.0005, batch size: 64
+2025-01-23 01:00:00,417 - INFO - Training stopped at epoch 50 for config: {'pooling_method': 'gem', 'use_class': False}.  Validation accuracy: 0.6858383071079761.
+2025-01-23 01:00:00,417 - INFO - Param 1.7189050912857056 learned for pooling method: {'pooling_method': 'gem', 'use_class': False}
+2025-01-23 01:00:00,417 - INFO - Grid eval for classifiers: Running experiment with dataset: ZindiTurtleRecall, model: megadescriptor, pooling method: gem, use_class: False, learning rate: 0.001, batch size: 64
+2025-01-23 01:00:17,073 - INFO - Training stopped at epoch 50 for config: {'pooling_method': 'gem', 'use_class': False}.  Validation accuracy: 0.6918068366793272.
+2025-01-23 01:00:17,073 - INFO - Param 1.7719899415969849 learned for pooling method: {'pooling_method': 'gem', 'use_class': False}
+2025-01-23 01:00:17,073 - INFO - Grid eval for classifiers: Running experiment with dataset: ZindiTurtleRecall, model: megadescriptor, pooling method: gem, use_class: False, learning rate: 0.002, batch size: 64
+2025-01-23 01:00:32,096 - INFO - Training stopped at epoch 40 for config: {'pooling_method': 'gem', 'use_class': False}.  Validation accuracy: 0.6945198046663049.
+2025-01-23 01:00:32,096 - INFO - Param 1.690073013305664 learned for pooling method: {'pooling_method': 'gem', 'use_class': False}
+2025-01-23 01:00:32,096 - INFO - Grid eval for classifiers: Running experiment with dataset: ZindiTurtleRecall, model: megadescriptor, pooling method: gem, use_class: False, learning rate: 0.005, batch size: 64
+2025-01-23 01:00:36,451 - INFO - Training stopped at epoch 8 for config: {'pooling_method': 'gem', 'use_class': False}.  Validation accuracy: 0.6863809007053717.
+2025-01-23 01:00:36,451 - INFO - Param 1.1331541538238525 learned for pooling method: {'pooling_method': 'gem', 'use_class': False}
+2025-01-23 01:00:36,452 - INFO - Grid eval for classifiers: Running experiment with dataset: ZindiTurtleRecall, model: megadescriptor, pooling method: gem, use_class: False, learning rate: 0.01, batch size: 64
+2025-01-23 01:00:40,138 - INFO - Training stopped at epoch 6 for config: {'pooling_method': 'gem', 'use_class': False}.  Validation accuracy: 0.6804123711340206.
+2025-01-23 01:00:40,138 - INFO - Param 0.7759613990783691 learned for pooling method: {'pooling_method': 'gem', 'use_class': False}
+2025-01-23 01:00:40,138 - INFO - Grid eval for classifiers: Running experiment with dataset: ZindiTurtleRecall, model: megadescriptor, pooling method: gem, use_class: False, learning rate: 0.02, batch size: 64
+2025-01-23 01:00:43,488 - INFO - Training stopped at epoch 5 for config: {'pooling_method': 'gem', 'use_class': False}.  Validation accuracy: 0.6576234400434074.
+2025-01-23 01:00:43,488 - INFO - Param 0.4180116653442383 learned for pooling method: {'pooling_method': 'gem', 'use_class': False}
+2025-01-23 01:00:43,488 - INFO - Grid eval for classifiers: Running experiment with dataset: ZindiTurtleRecall, model: megadescriptor, pooling method: gem, use_class: False, learning rate: 0.05, batch size: 64
+2025-01-23 01:00:45,869 - INFO - Training stopped at epoch 2 for config: {'pooling_method': 'gem', 'use_class': False}.  Validation accuracy: 0.6245252306022789.
+2025-01-23 01:00:45,869 - INFO - Param 0.13535051047801971 learned for pooling method: {'pooling_method': 'gem', 'use_class': False}
+2025-01-23 01:00:45,869 - INFO - Grid eval for classifiers: Running experiment with dataset: ZindiTurtleRecall, model: megadescriptor, pooling method: gem, use_class: False, learning rate: 0.1, batch size: 64
+2025-01-23 01:00:48,583 - INFO - Training stopped at epoch 3 for config: {'pooling_method': 'gem', 'use_class': False}.  Validation accuracy: 0.4595767769940315.
+2025-01-23 01:00:48,583 - INFO - Param -0.19017353653907776 learned for pooling method: {'pooling_method': 'gem', 'use_class': False}
+2025-01-23 01:00:48,583 - INFO - Grid eval for classifiers: Running experiment with dataset: ZindiTurtleRecall, model: megadescriptor, pooling method: gem, use_class: False, learning rate: 1e-05, batch size: 128
+2025-01-23 01:01:02,983 - INFO - Training stopped at epoch 50 for config: {'pooling_method': 'gem', 'use_class': False}.  Validation accuracy: 0.3038524145415084.
+2025-01-23 01:01:02,983 - INFO - Param 1.0385675430297852 learned for pooling method: {'pooling_method': 'gem', 'use_class': False}
+2025-01-23 01:01:02,983 - INFO - Grid eval for classifiers: Running experiment with dataset: ZindiTurtleRecall, model: megadescriptor, pooling method: gem, use_class: False, learning rate: 2e-05, batch size: 128
+2025-01-23 01:01:17,354 - INFO - Training stopped at epoch 50 for config: {'pooling_method': 'gem', 'use_class': False}.  Validation accuracy: 0.45577862181226264.
+2025-01-23 01:01:17,355 - INFO - Param 1.0758062601089478 learned for pooling method: {'pooling_method': 'gem', 'use_class': False}
+2025-01-23 01:01:17,355 - INFO - Grid eval for classifiers: Running experiment with dataset: ZindiTurtleRecall, model: megadescriptor, pooling method: gem, use_class: False, learning rate: 5e-05, batch size: 128
+2025-01-23 01:01:31,727 - INFO - Training stopped at epoch 50 for config: {'pooling_method': 'gem', 'use_class': False}.  Validation accuracy: 0.5865436787845903.
+2025-01-23 01:01:31,727 - INFO - Param 1.1782792806625366 learned for pooling method: {'pooling_method': 'gem', 'use_class': False}
+2025-01-23 01:01:31,727 - INFO - Grid eval for classifiers: Running experiment with dataset: ZindiTurtleRecall, model: megadescriptor, pooling method: gem, use_class: False, learning rate: 0.0001, batch size: 128
+2025-01-23 01:01:46,115 - INFO - Training stopped at epoch 50 for config: {'pooling_method': 'gem', 'use_class': False}.  Validation accuracy: 0.6538252848616386.
+2025-01-23 01:01:46,115 - INFO - Param 1.300660252571106 learned for pooling method: {'pooling_method': 'gem', 'use_class': False}
+2025-01-23 01:01:46,115 - INFO - Grid eval for classifiers: Running experiment with dataset: ZindiTurtleRecall, model: megadescriptor, pooling method: gem, use_class: False, learning rate: 0.0002, batch size: 128
+2025-01-23 01:02:00,494 - INFO - Training stopped at epoch 50 for config: {'pooling_method': 'gem', 'use_class': False}.  Validation accuracy: 0.6668475311991319.
+2025-01-23 01:02:00,494 - INFO - Param 1.419913649559021 learned for pooling method: {'pooling_method': 'gem', 'use_class': False}
+2025-01-23 01:02:00,494 - INFO - Grid eval for classifiers: Running experiment with dataset: ZindiTurtleRecall, model: megadescriptor, pooling method: gem, use_class: False, learning rate: 0.0005, batch size: 128
+2025-01-23 01:02:14,874 - INFO - Training stopped at epoch 50 for config: {'pooling_method': 'gem', 'use_class': False}.  Validation accuracy: 0.6766142159522518.
+2025-01-23 01:02:14,874 - INFO - Param 1.5200966596603394 learned for pooling method: {'pooling_method': 'gem', 'use_class': False}
+2025-01-23 01:02:14,874 - INFO - Grid eval for classifiers: Running experiment with dataset: ZindiTurtleRecall, model: megadescriptor, pooling method: gem, use_class: False, learning rate: 0.001, batch size: 128
+2025-01-23 01:02:29,254 - INFO - Training stopped at epoch 50 for config: {'pooling_method': 'gem', 'use_class': False}.  Validation accuracy: 0.6863809007053717.
+2025-01-23 01:02:29,254 - INFO - Param 1.5670273303985596 learned for pooling method: {'pooling_method': 'gem', 'use_class': False}
+2025-01-23 01:02:29,254 - INFO - Grid eval for classifiers: Running experiment with dataset: ZindiTurtleRecall, model: megadescriptor, pooling method: gem, use_class: False, learning rate: 0.002, batch size: 128
+2025-01-23 01:02:43,629 - INFO - Training stopped at epoch 50 for config: {'pooling_method': 'gem', 'use_class': False}.  Validation accuracy: 0.6885512750949538.
+2025-01-23 01:02:43,629 - INFO - Param 1.5688917636871338 learned for pooling method: {'pooling_method': 'gem', 'use_class': False}
+2025-01-23 01:02:43,629 - INFO - Grid eval for classifiers: Running experiment with dataset: ZindiTurtleRecall, model: megadescriptor, pooling method: gem, use_class: False, learning rate: 0.005, batch size: 128
+2025-01-23 01:02:57,142 - INFO - Training stopped at epoch 42 for config: {'pooling_method': 'gem', 'use_class': False}.  Validation accuracy: 0.6945198046663049.
+2025-01-23 01:02:57,142 - INFO - Param 1.3367844820022583 learned for pooling method: {'pooling_method': 'gem', 'use_class': False}
+2025-01-23 01:02:57,142 - INFO - Grid eval for classifiers: Running experiment with dataset: ZindiTurtleRecall, model: megadescriptor, pooling method: gem, use_class: False, learning rate: 0.01, batch size: 128
+2025-01-23 01:03:02,047 - INFO - Training stopped at epoch 12 for config: {'pooling_method': 'gem', 'use_class': False}.  Validation accuracy: 0.6787845903418339.
+2025-01-23 01:03:02,047 - INFO - Param 0.9090758562088013 learned for pooling method: {'pooling_method': 'gem', 'use_class': False}
+2025-01-23 01:03:02,047 - INFO - Grid eval for classifiers: Running experiment with dataset: ZindiTurtleRecall, model: megadescriptor, pooling method: gem, use_class: False, learning rate: 0.02, batch size: 128
+2025-01-23 01:03:05,518 - INFO - Training stopped at epoch 7 for config: {'pooling_method': 'gem', 'use_class': False}.  Validation accuracy: 0.6663049376017363.
+2025-01-23 01:03:05,518 - INFO - Param 0.5625238418579102 learned for pooling method: {'pooling_method': 'gem', 'use_class': False}
+2025-01-23 01:03:05,518 - INFO - Grid eval for classifiers: Running experiment with dataset: ZindiTurtleRecall, model: megadescriptor, pooling method: gem, use_class: False, learning rate: 0.05, batch size: 128
+2025-01-23 01:03:07,840 - INFO - Training stopped at epoch 3 for config: {'pooling_method': 'gem', 'use_class': False}.  Validation accuracy: 0.6391752577319587.
+2025-01-23 01:03:07,840 - INFO - Param 0.19809238612651825 learned for pooling method: {'pooling_method': 'gem', 'use_class': False}
+2025-01-23 01:03:07,840 - INFO - Grid eval for classifiers: Running experiment with dataset: ZindiTurtleRecall, model: megadescriptor, pooling method: gem, use_class: False, learning rate: 0.1, batch size: 128
+2025-01-23 01:03:12,459 - INFO - Training stopped at epoch 11 for config: {'pooling_method': 'gem', 'use_class': False}.  Validation accuracy: 0.5545306565382528.
+2025-01-23 01:03:12,459 - INFO - Param -0.035508234053850174 learned for pooling method: {'pooling_method': 'gem', 'use_class': False}
+2025-01-23 01:03:12,459 - INFO - Best results for dataset ZindiTurtleRecall and gem pooling method: {
+    "dataset": "ZindiTurtleRecall",
+    "pooling_method": "gem",
+    "batch_size": 8,
+    "learning_rate": 0.002,
+    "best_epoch": 3,
+    "best_val_acc": 0.7015735214324471
+}

@@ -7,12 +7,16 @@ MODEL = 'megadescriptor'
 #     'SouthernProvinceTurtles'
 # ]
 
+# DATASETS = [
+#     'AmvrakikosTurtles',
+#     'ReunionTurtles',
+#     'SouthernProvinceTurtles',
+#     'SeaStarReID2023',
+#     'SeaTurtleIDHeads',
+#     'ZindiTurtleRecall'
+# ]
+
 DATASETS = [
-    'AmvrakikosTurtles',
-    'ReunionTurtles',
-    'SouthernProvinceTurtles',
-    'SeaStarReID2023',
-    'SeaTurtleIDHeads',
     'ZindiTurtleRecall'
 ]
 

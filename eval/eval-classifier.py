@@ -88,12 +88,19 @@ def main():
             logging.info(f"Using best params {params} for dataset: {dataset}, pooling method: {config['pooling_method']}")
 
             num_classes = int(max(train_labels).item() + 1)
-            if config['pooling_method'] == 'attentive':
-                classifier = train_attentive_classifier(train_embeddings, train_labels, use_class=config['use_class'], device=device, num_classes=num_classes, learning_rate=best_lr, num_epochs=best_epoch, batch_size=best_batch_size)
-            elif config['pooling_method'] == 'linear':
-                classifier = train_linear_classifier(train_embeddings, train_labels, use_class=config['use_class'], use_avgpool=True, device=device, num_classes=num_classes, learning_rate=best_lr, num_epochs=best_epoch, batch_size=best_batch_size)
-            elif config['pooling_method'] == 'none':
-                classifier = train_linear_classifier(train_embeddings, train_labels, use_class=config['use_class'], use_avgpool=False, device=device, num_classes=num_classes, learning_rate=best_lr, num_epochs=best_epoch, batch_size=best_batch_size)
+            classifier = train_pooling_classifier(
+                train_embeddings,
+                train_labels,
+                use_class=config['use_class'],
+                device=device, 
+                num_classes=num_classes, 
+                learning_rate=best_lr, 
+                num_epochs=best_epoch, 
+                batch_size=best_batch_size
+            )
+            
+            # elif config['pooling_method'] == 'none':
+            #     classifier = train_linear_classifier(train_embeddings, train_labels, use_class=config['use_class'], use_avgpool=False, device=device, num_classes=num_classes, learning_rate=best_lr, num_epochs=best_epoch, batch_size=best_batch_size)
 
             closed_top1_acc, closed_msp, closed_mls = eval_closed_set(closed_test_embeddings, closed_test_labels, classifier, best_batch_size)
             open_msp, open_mls = eval_open_set(open_test_embeddings, open_test_labels, classifier, best_batch_size)
