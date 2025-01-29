@@ -7,18 +7,14 @@ MODEL = 'megadescriptor'
 #     'SouthernProvinceTurtles'
 # ]
 
-# DATASETS = [
-#     'AmvrakikosTurtles',
-#     'ReunionTurtles',
-#     'SouthernProvinceTurtles',
-#     'SeaStarReID2023',
-#     'SeaTurtleIDHeads',
-#     'ZindiTurtleRecall'
-# ]
-
 DATASETS = [
-    'ZindiTurtleRecall'
+    'AmvrakikosTurtles',
+    'ReunionTurtles',
+    'SouthernProvinceTurtles',
+    'SeaStarReID2023',
+    'SeaTurtleIDHeads'
 ]
+
 
 ROOT_DIR = '/home/avisund/data/wildlife_datasets/'
 BATCH_SIZE = [8, 16, 32, 64, 128]

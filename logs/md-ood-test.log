@@ -5944,3 +5944,1040 @@
     "best_epoch": 3,
     "best_val_acc": 0.7015735214324471
 }
+-------------------
+2025-01-23 01:05:17,247 - INFO - Using device: cuda:0
+2025-01-23 01:05:17,247 - INFO - /home/avisund/data/wildlife_datasets/AmvrakikosTurtles/
+2025-01-23 01:05:17,258 - INFO - Dataset AmvrakikosTurtles loaded successfully
+2025-01-23 01:05:17,262 - INFO - Dataset split successfully
+2025-01-23 01:05:17,265 - INFO - Dataloaders created successfully
+2025-01-23 01:05:19,401 - INFO - Loading pretrained weights from Hugging Face hub (BVRA/MegaDescriptor-L-384)
+2025-01-23 01:05:21,037 - INFO - Feature extractor loaded successfully
+2025-01-23 01:05:45,730 - INFO - Using best params {'batch_size': 8, 'learning_rate': 0.0005, 'best_epoch': 6, 'best_val_acc': 0.37037037037037035} for dataset: AmvrakikosTurtles, pooling method: weighted
+2025-01-23 01:05:45,858 - INFO - Running classifier experiment with dataset: AmvrakikosTurtles, model: megadescriptor, pooling method: weighted, use_class: False
+2025-01-23 01:05:45,860 - INFO - Top-1 acc. for config: 0.2444
+2025-01-23 01:05:45,860 - INFO - MSP ROC AUC for config: 0.2956
+2025-01-23 01:05:45,860 - INFO - MLS ROC AUC for config: 0.3467
+2025-01-23 01:05:45,860 - INFO - Using best params {'batch_size': 8, 'learning_rate': 0.05, 'best_epoch': 3, 'best_val_acc': 0.3333333333333333} for dataset: AmvrakikosTurtles, pooling method: gem
+2025-01-23 01:05:45,889 - INFO - Running classifier experiment with dataset: AmvrakikosTurtles, model: megadescriptor, pooling method: gem, use_class: False
+2025-01-23 01:05:45,890 - INFO - Top-1 acc. for config: 0.2222
+2025-01-23 01:05:45,890 - INFO - MSP ROC AUC for config: 0.4517
+2025-01-23 01:05:45,890 - INFO - MLS ROC AUC for config: 0.4644
+2025-01-23 01:05:45,890 - INFO - /home/avisund/data/wildlife_datasets/ReunionTurtles/
+2025-01-23 01:05:45,921 - INFO - Dataset ReunionTurtles loaded successfully
+2025-01-23 01:05:45,930 - INFO - Dataset split successfully
+2025-01-23 01:05:45,933 - INFO - Dataloaders created successfully
+2025-01-23 01:05:47,864 - INFO - Loading pretrained weights from Hugging Face hub (BVRA/MegaDescriptor-L-384)
+2025-01-23 01:05:49,201 - INFO - Feature extractor loaded successfully
+2025-01-23 01:06:05,487 - INFO - Using best params {'batch_size': 32, 'learning_rate': 0.0005, 'best_epoch': 50, 'best_val_acc': 0.5333333333333333} for dataset: ReunionTurtles, pooling method: weighted
+2025-01-23 01:06:05,735 - INFO - Running classifier experiment with dataset: ReunionTurtles, model: megadescriptor, pooling method: weighted, use_class: False
+2025-01-23 01:06:05,736 - INFO - Top-1 acc. for config: 0.5467
+2025-01-23 01:06:05,736 - INFO - MSP ROC AUC for config: 0.7293
+2025-01-23 01:06:05,736 - INFO - MLS ROC AUC for config: 0.6996
+2025-01-23 01:06:05,736 - INFO - Using best params {'batch_size': 16, 'learning_rate': 0.05, 'best_epoch': 3, 'best_val_acc': 0.4666666666666667} for dataset: ReunionTurtles, pooling method: gem
+2025-01-23 01:06:05,763 - INFO - Running classifier experiment with dataset: ReunionTurtles, model: megadescriptor, pooling method: gem, use_class: False
+2025-01-23 01:06:05,764 - INFO - Top-1 acc. for config: 0.3467
+2025-01-23 01:06:05,764 - INFO - MSP ROC AUC for config: 0.6802
+2025-01-23 01:06:05,764 - INFO - MLS ROC AUC for config: 0.6648
+2025-01-23 01:06:05,764 - INFO - /home/avisund/data/wildlife_datasets/SouthernProvinceTurtles/
+2025-01-23 01:06:05,769 - INFO - Dataset SouthernProvinceTurtles loaded successfully
+2025-01-23 01:06:05,774 - INFO - Dataset split successfully
+2025-01-23 01:06:05,777 - INFO - Dataloaders created successfully
+2025-01-23 01:06:07,508 - INFO - Loading pretrained weights from Hugging Face hub (BVRA/MegaDescriptor-L-384)
+2025-01-23 01:06:08,416 - INFO - Feature extractor loaded successfully
+2025-01-23 01:06:31,572 - INFO - Using best params {'batch_size': 64, 'learning_rate': 0.001, 'best_epoch': 15, 'best_val_acc': 0.8266666666666667} for dataset: SouthernProvinceTurtles, pooling method: weighted
+2025-01-23 01:06:31,672 - INFO - Running classifier experiment with dataset: SouthernProvinceTurtles, model: megadescriptor, pooling method: weighted, use_class: False
+2025-01-23 01:06:31,673 - INFO - Top-1 acc. for config: 0.7500
+2025-01-23 01:06:31,673 - INFO - MSP ROC AUC for config: 0.7691
+2025-01-23 01:06:31,673 - INFO - MLS ROC AUC for config: 0.6965
+2025-01-23 01:06:31,673 - INFO - Using best params {'batch_size': 8, 'learning_rate': 0.01, 'best_epoch': 31, 'best_val_acc': 0.7866666666666666} for dataset: SouthernProvinceTurtles, pooling method: gem
+2025-01-23 01:06:32,469 - INFO - Running classifier experiment with dataset: SouthernProvinceTurtles, model: megadescriptor, pooling method: gem, use_class: False
+2025-01-23 01:06:32,470 - INFO - Top-1 acc. for config: 0.7667
+2025-01-23 01:06:32,470 - INFO - MSP ROC AUC for config: 0.7538
+2025-01-23 01:06:32,470 - INFO - MLS ROC AUC for config: 0.6875
+2025-01-23 01:06:32,470 - INFO - /home/avisund/data/wildlife_datasets/SeaStarReID2023/
+2025-01-23 01:06:32,505 - INFO - Dataset SeaStarReID2023 loaded successfully
+2025-01-23 01:06:32,514 - INFO - Dataset split successfully
+2025-01-23 01:06:32,517 - INFO - Dataloaders created successfully
+2025-01-23 01:06:34,111 - INFO - Loading pretrained weights from Hugging Face hub (BVRA/MegaDescriptor-L-384)
+2025-01-23 01:06:34,978 - INFO - Feature extractor loaded successfully
+2025-01-23 01:09:17,489 - INFO - Using best params {'batch_size': 64, 'learning_rate': 0.1, 'best_epoch': 13, 'best_val_acc': 0.8689458689458689} for dataset: SeaStarReID2023, pooling method: weighted
+2025-01-23 01:09:17,762 - INFO - Running classifier experiment with dataset: SeaStarReID2023, model: megadescriptor, pooling method: weighted, use_class: False
+2025-01-23 01:09:17,764 - INFO - Top-1 acc. for config: 0.7703
+2025-01-23 01:09:17,764 - INFO - MSP ROC AUC for config: 0.6229
+2025-01-23 01:09:17,764 - INFO - MLS ROC AUC for config: 0.6922
+2025-01-23 01:09:17,764 - INFO - Using best params {'batch_size': 16, 'learning_rate': 0.002, 'best_epoch': 50, 'best_val_acc': 0.8717948717948718} for dataset: SeaStarReID2023, pooling method: gem
+2025-01-23 01:09:20,772 - INFO - Running classifier experiment with dataset: SeaStarReID2023, model: megadescriptor, pooling method: gem, use_class: False
+2025-01-23 01:09:20,774 - INFO - Top-1 acc. for config: 0.8660
+2025-01-23 01:09:20,774 - INFO - MSP ROC AUC for config: 0.8122
+2025-01-23 01:09:20,774 - INFO - MLS ROC AUC for config: 0.7411
+2025-01-23 01:09:20,774 - INFO - /home/avisund/data/wildlife_datasets/SeaTurtleIDHeads/
+2025-01-23 01:09:20,849 - INFO - Dataset SeaTurtleIDHeads loaded successfully
+2025-01-23 01:09:20,887 - INFO - Dataset split successfully
+2025-01-23 01:09:20,894 - INFO - Dataloaders created successfully
+2025-01-23 01:09:22,540 - INFO - Loading pretrained weights from Hugging Face hub (BVRA/MegaDescriptor-L-384)
+2025-01-23 01:09:23,257 - INFO - Feature extractor loaded successfully
+2025-01-23 01:15:33,935 - INFO - Using best params {'batch_size': 128, 'learning_rate': 0.01, 'best_epoch': 1, 'best_val_acc': 0.9667774086378738} for dataset: SeaTurtleIDHeads, pooling method: weighted
+2025-01-23 01:15:34,013 - INFO - Running classifier experiment with dataset: SeaTurtleIDHeads, model: megadescriptor, pooling method: weighted, use_class: False
+2025-01-23 01:15:34,016 - INFO - Top-1 acc. for config: 0.9218
+2025-01-23 01:15:34,016 - INFO - MSP ROC AUC for config: 0.9351
+2025-01-23 01:15:34,016 - INFO - MLS ROC AUC for config: 0.9262
+2025-01-23 01:15:34,016 - INFO - Using best params {'batch_size': 8, 'learning_rate': 0.0001, 'best_epoch': 14, 'best_val_acc': 0.9651162790697675} for dataset: SeaTurtleIDHeads, pooling method: gem
+2025-01-23 01:15:40,070 - INFO - Running classifier experiment with dataset: SeaTurtleIDHeads, model: megadescriptor, pooling method: gem, use_class: False
+2025-01-23 01:15:40,072 - INFO - Top-1 acc. for config: 0.9417
+2025-01-23 01:15:40,072 - INFO - MSP ROC AUC for config: 0.9513
+2025-01-23 01:15:40,072 - INFO - MLS ROC AUC for config: 0.9419
+2025-01-23 01:15:40,072 - INFO - /home/avisund/data/wildlife_datasets/ZindiTurtleRecall/
+2025-01-23 01:15:40,148 - INFO - Dataset ZindiTurtleRecall loaded successfully
+2025-01-23 01:15:40,376 - INFO - Dataset split successfully
+2025-01-23 01:15:40,387 - INFO - Dataloaders created successfully
+2025-01-23 01:15:42,083 - INFO - Loading pretrained weights from Hugging Face hub (BVRA/MegaDescriptor-L-384)
+2025-01-23 01:15:42,884 - INFO - Feature extractor loaded successfully
+2025-01-23 01:26:27,731 - INFO - Using best params {'batch_size': 64, 'learning_rate': 0.002, 'best_epoch': 3, 'best_val_acc': 0.6885512750949538} for dataset: ZindiTurtleRecall, pooling method: weighted
+2025-01-23 01:26:28,186 - INFO - Running classifier experiment with dataset: ZindiTurtleRecall, model: megadescriptor, pooling method: weighted, use_class: False
+2025-01-23 01:26:28,190 - INFO - Top-1 acc. for config: 0.6614
+2025-01-23 01:26:28,190 - INFO - MSP ROC AUC for config: 0.7391
+2025-01-23 01:26:28,190 - INFO - MLS ROC AUC for config: 0.6403
+2025-01-23 01:26:28,190 - INFO - Using best params {'batch_size': 8, 'learning_rate': 0.002, 'best_epoch': 3, 'best_val_acc': 0.7015735214324471} for dataset: ZindiTurtleRecall, pooling method: gem
+2025-01-23 01:26:30,949 - INFO - Running classifier experiment with dataset: ZindiTurtleRecall, model: megadescriptor, pooling method: gem, use_class: False
+2025-01-23 01:26:30,952 - INFO - Top-1 acc. for config: 0.6580
+2025-01-23 01:26:30,952 - INFO - MSP ROC AUC for config: 0.7056
+2025-01-23 01:26:30,952 - INFO - MLS ROC AUC for config: 0.5653
+2025-01-27 22:57:19,303 - INFO - Using device: cuda:1
+2025-01-27 22:57:19,303 - INFO - /home/avisund/data/wildlife_datasets/ZindiTurtleRecall/
+2025-01-27 22:57:19,382 - INFO - Dataset ZindiTurtleRecall loaded successfully
+2025-01-27 22:57:19,608 - INFO - Dataset split successfully
+2025-01-27 22:57:19,619 - INFO - Dataloaders created successfully
+2025-01-27 22:57:21,566 - INFO - Loading pretrained weights from Hugging Face hub (BVRA/MegaDescriptor-L-384)
+2025-01-27 22:57:23,172 - INFO - Feature extractor loaded successfully
+2025-01-27 23:09:49,134 - INFO - Embeddings computed successfully
+2025-01-27 23:09:49,152 - INFO - Grid eval for classifiers: Running experiment with dataset: ZindiTurtleRecall, model: megadescriptor, pooling method: weighted, use_class: False, learning rate: 1e-05, batch size: 8
+2025-01-27 23:10:55,158 - INFO - Training stopped at epoch 48 for config: {'pooling_method': 'weighted', 'use_class': False}.  Validation accuracy: 0.6055344546934346.
+2025-01-27 23:10:55,158 - INFO - Grid eval for classifiers: Running experiment with dataset: ZindiTurtleRecall, model: megadescriptor, pooling method: weighted, use_class: False, learning rate: 2e-05, batch size: 8
+2025-01-27 23:11:36,741 - INFO - Training stopped at epoch 27 for config: {'pooling_method': 'weighted', 'use_class': False}.  Validation accuracy: 0.6028214867064569.
+2025-01-27 23:11:36,741 - INFO - Grid eval for classifiers: Running experiment with dataset: ZindiTurtleRecall, model: megadescriptor, pooling method: weighted, use_class: False, learning rate: 5e-05, batch size: 8
+2025-01-27 23:12:02,456 - INFO - Training stopped at epoch 15 for config: {'pooling_method': 'weighted', 'use_class': False}.  Validation accuracy: 0.619641888225719.
+2025-01-27 23:12:02,456 - INFO - Grid eval for classifiers: Running experiment with dataset: ZindiTurtleRecall, model: megadescriptor, pooling method: weighted, use_class: False, learning rate: 0.0001, batch size: 8
+2025-01-27 23:12:24,277 - INFO - Training stopped at epoch 12 for config: {'pooling_method': 'weighted', 'use_class': False}.  Validation accuracy: 0.6272381985892567.
+2025-01-27 23:12:24,277 - INFO - Grid eval for classifiers: Running experiment with dataset: ZindiTurtleRecall, model: megadescriptor, pooling method: weighted, use_class: False, learning rate: 0.0002, batch size: 8
+2025-01-27 23:12:42,463 - INFO - Training stopped at epoch 9 for config: {'pooling_method': 'weighted', 'use_class': False}.  Validation accuracy: 0.6348345089527944.
+2025-01-27 23:12:42,463 - INFO - Grid eval for classifiers: Running experiment with dataset: ZindiTurtleRecall, model: megadescriptor, pooling method: weighted, use_class: False, learning rate: 0.0005, batch size: 8
+2025-01-27 23:12:52,955 - INFO - Training stopped at epoch 3 for config: {'pooling_method': 'weighted', 'use_class': False}.  Validation accuracy: 0.6711882799782962.
+2025-01-27 23:12:52,955 - INFO - Grid eval for classifiers: Running experiment with dataset: ZindiTurtleRecall, model: megadescriptor, pooling method: weighted, use_class: False, learning rate: 0.001, batch size: 8
+2025-01-27 23:13:03,365 - INFO - Training stopped at epoch 3 for config: {'pooling_method': 'weighted', 'use_class': False}.  Validation accuracy: 0.6858383071079761.
+2025-01-27 23:13:03,365 - INFO - Grid eval for classifiers: Running experiment with dataset: ZindiTurtleRecall, model: megadescriptor, pooling method: weighted, use_class: False, learning rate: 0.002, batch size: 8
+2025-01-27 23:13:11,990 - INFO - Training stopped at epoch 2 for config: {'pooling_method': 'weighted', 'use_class': False}.  Validation accuracy: 0.6668475311991319.
+2025-01-27 23:13:11,990 - INFO - Grid eval for classifiers: Running experiment with dataset: ZindiTurtleRecall, model: megadescriptor, pooling method: weighted, use_class: False, learning rate: 0.005, batch size: 8
+2025-01-27 23:13:20,885 - INFO - Training stopped at epoch 2 for config: {'pooling_method': 'weighted', 'use_class': False}.  Validation accuracy: 0.6163863266413456.
+2025-01-27 23:13:20,885 - INFO - Grid eval for classifiers: Running experiment with dataset: ZindiTurtleRecall, model: megadescriptor, pooling method: weighted, use_class: False, learning rate: 0.01, batch size: 8
+2025-01-27 23:13:29,229 - INFO - Training stopped at epoch 2 for config: {'pooling_method': 'weighted', 'use_class': False}.  Validation accuracy: 0.594139989148128.
+2025-01-27 23:13:29,229 - INFO - Grid eval for classifiers: Running experiment with dataset: ZindiTurtleRecall, model: megadescriptor, pooling method: weighted, use_class: False, learning rate: 0.02, batch size: 8
+2025-01-27 23:13:36,959 - INFO - Training stopped at epoch 1 for config: {'pooling_method': 'weighted', 'use_class': False}.  Validation accuracy: 0.5311991318502441.
+2025-01-27 23:13:36,959 - INFO - Grid eval for classifiers: Running experiment with dataset: ZindiTurtleRecall, model: megadescriptor, pooling method: weighted, use_class: False, learning rate: 0.05, batch size: 8
+2025-01-27 23:13:44,754 - INFO - Training stopped at epoch 1 for config: {'pooling_method': 'weighted', 'use_class': False}.  Validation accuracy: 0.4682582745523603.
+2025-01-27 23:13:44,754 - INFO - Grid eval for classifiers: Running experiment with dataset: ZindiTurtleRecall, model: megadescriptor, pooling method: weighted, use_class: False, learning rate: 0.1, batch size: 8
+2025-01-27 23:13:52,556 - INFO - Training stopped at epoch 1 for config: {'pooling_method': 'weighted', 'use_class': False}.  Validation accuracy: 0.42485078676071625.
+2025-01-27 23:13:52,556 - INFO - Grid eval for classifiers: Running experiment with dataset: ZindiTurtleRecall, model: megadescriptor, pooling method: weighted, use_class: False, learning rate: 1e-05, batch size: 16
+2025-01-27 23:14:23,053 - INFO - Training stopped at epoch 50 for config: {'pooling_method': 'weighted', 'use_class': False}.  Validation accuracy: 0.594139989148128.
+2025-01-27 23:14:23,053 - INFO - Grid eval for classifiers: Running experiment with dataset: ZindiTurtleRecall, model: megadescriptor, pooling method: weighted, use_class: False, learning rate: 2e-05, batch size: 16
+2025-01-27 23:14:51,538 - INFO - Training stopped at epoch 38 for config: {'pooling_method': 'weighted', 'use_class': False}.  Validation accuracy: 0.6055344546934346.
+2025-01-27 23:14:51,538 - INFO - Grid eval for classifiers: Running experiment with dataset: ZindiTurtleRecall, model: megadescriptor, pooling method: weighted, use_class: False, learning rate: 5e-05, batch size: 16
+2025-01-27 23:15:11,666 - INFO - Training stopped at epoch 26 for config: {'pooling_method': 'weighted', 'use_class': False}.  Validation accuracy: 0.6087900162778079.
+2025-01-27 23:15:11,666 - INFO - Grid eval for classifiers: Running experiment with dataset: ZindiTurtleRecall, model: megadescriptor, pooling method: weighted, use_class: False, learning rate: 0.0001, batch size: 16
+2025-01-27 23:15:28,471 - INFO - Training stopped at epoch 21 for config: {'pooling_method': 'weighted', 'use_class': False}.  Validation accuracy: 0.6190992946283234.
+2025-01-27 23:15:28,471 - INFO - Grid eval for classifiers: Running experiment with dataset: ZindiTurtleRecall, model: megadescriptor, pooling method: weighted, use_class: False, learning rate: 0.0002, batch size: 16
+2025-01-27 23:15:40,913 - INFO - Training stopped at epoch 15 for config: {'pooling_method': 'weighted', 'use_class': False}.  Validation accuracy: 0.6283233857840478.
+2025-01-27 23:15:40,913 - INFO - Grid eval for classifiers: Running experiment with dataset: ZindiTurtleRecall, model: megadescriptor, pooling method: weighted, use_class: False, learning rate: 0.0005, batch size: 16
+2025-01-27 23:15:46,809 - INFO - Training stopped at epoch 4 for config: {'pooling_method': 'weighted', 'use_class': False}.  Validation accuracy: 0.6641345632121541.
+2025-01-27 23:15:46,809 - INFO - Grid eval for classifiers: Running experiment with dataset: ZindiTurtleRecall, model: megadescriptor, pooling method: weighted, use_class: False, learning rate: 0.001, batch size: 16
+2025-01-27 23:15:51,791 - INFO - Training stopped at epoch 3 for config: {'pooling_method': 'weighted', 'use_class': False}.  Validation accuracy: 0.6852957135105806.
+2025-01-27 23:15:51,792 - INFO - Grid eval for classifiers: Running experiment with dataset: ZindiTurtleRecall, model: megadescriptor, pooling method: weighted, use_class: False, learning rate: 0.002, batch size: 16
+2025-01-27 23:15:58,307 - INFO - Training stopped at epoch 5 for config: {'pooling_method': 'weighted', 'use_class': False}.  Validation accuracy: 0.6706456863809007.
+2025-01-27 23:15:58,308 - INFO - Grid eval for classifiers: Running experiment with dataset: ZindiTurtleRecall, model: megadescriptor, pooling method: weighted, use_class: False, learning rate: 0.005, batch size: 16
+2025-01-27 23:16:02,850 - INFO - Training stopped at epoch 2 for config: {'pooling_method': 'weighted', 'use_class': False}.  Validation accuracy: 0.6174715138361367.
+2025-01-27 23:16:02,850 - INFO - Grid eval for classifiers: Running experiment with dataset: ZindiTurtleRecall, model: megadescriptor, pooling method: weighted, use_class: False, learning rate: 0.01, batch size: 16
+2025-01-27 23:16:07,521 - INFO - Training stopped at epoch 2 for config: {'pooling_method': 'weighted', 'use_class': False}.  Validation accuracy: 0.6093326098752034.
+2025-01-27 23:16:07,522 - INFO - Grid eval for classifiers: Running experiment with dataset: ZindiTurtleRecall, model: megadescriptor, pooling method: weighted, use_class: False, learning rate: 0.02, batch size: 16
+2025-01-27 23:16:11,533 - INFO - Training stopped at epoch 1 for config: {'pooling_method': 'weighted', 'use_class': False}.  Validation accuracy: 0.5626695604991861.
+2025-01-27 23:16:11,534 - INFO - Grid eval for classifiers: Running experiment with dataset: ZindiTurtleRecall, model: megadescriptor, pooling method: weighted, use_class: False, learning rate: 0.05, batch size: 16
+2025-01-27 23:16:15,553 - INFO - Training stopped at epoch 1 for config: {'pooling_method': 'weighted', 'use_class': False}.  Validation accuracy: 0.48833423765599565.
+2025-01-27 23:16:15,553 - INFO - Grid eval for classifiers: Running experiment with dataset: ZindiTurtleRecall, model: megadescriptor, pooling method: weighted, use_class: False, learning rate: 0.1, batch size: 16
+2025-01-27 23:16:20,239 - INFO - Training stopped at epoch 2 for config: {'pooling_method': 'weighted', 'use_class': False}.  Validation accuracy: 0.47314161692892026.
+2025-01-27 23:16:20,239 - INFO - Grid eval for classifiers: Running experiment with dataset: ZindiTurtleRecall, model: megadescriptor, pooling method: weighted, use_class: False, learning rate: 1e-05, batch size: 32
+2025-01-27 23:16:37,988 - INFO - Training stopped at epoch 50 for config: {'pooling_method': 'weighted', 'use_class': False}.  Validation accuracy: 0.5610417797069994.
+2025-01-27 23:16:37,989 - INFO - Grid eval for classifiers: Running experiment with dataset: ZindiTurtleRecall, model: megadescriptor, pooling method: weighted, use_class: False, learning rate: 2e-05, batch size: 32
+2025-01-27 23:16:55,864 - INFO - Training stopped at epoch 50 for config: {'pooling_method': 'weighted', 'use_class': False}.  Validation accuracy: 0.6022788931090614.
+2025-01-27 23:16:55,865 - INFO - Grid eval for classifiers: Running experiment with dataset: ZindiTurtleRecall, model: megadescriptor, pooling method: weighted, use_class: False, learning rate: 5e-05, batch size: 32
+2025-01-27 23:17:14,253 - INFO - Training stopped at epoch 46 for config: {'pooling_method': 'weighted', 'use_class': False}.  Validation accuracy: 0.6093326098752034.
+2025-01-27 23:17:14,253 - INFO - Grid eval for classifiers: Running experiment with dataset: ZindiTurtleRecall, model: megadescriptor, pooling method: weighted, use_class: False, learning rate: 0.0001, batch size: 32
+2025-01-27 23:17:28,917 - INFO - Training stopped at epoch 35 for config: {'pooling_method': 'weighted', 'use_class': False}.  Validation accuracy: 0.6190992946283234.
+2025-01-27 23:17:28,917 - INFO - Grid eval for classifiers: Running experiment with dataset: ZindiTurtleRecall, model: megadescriptor, pooling method: weighted, use_class: False, learning rate: 0.0002, batch size: 32
+2025-01-27 23:17:39,674 - INFO - Training stopped at epoch 25 for config: {'pooling_method': 'weighted', 'use_class': False}.  Validation accuracy: 0.6223548562126967.
+2025-01-27 23:17:39,675 - INFO - Grid eval for classifiers: Running experiment with dataset: ZindiTurtleRecall, model: megadescriptor, pooling method: weighted, use_class: False, learning rate: 0.0005, batch size: 32
+2025-01-27 23:17:44,343 - INFO - Training stopped at epoch 8 for config: {'pooling_method': 'weighted', 'use_class': False}.  Validation accuracy: 0.6478567552902875.
+2025-01-27 23:17:44,343 - INFO - Grid eval for classifiers: Running experiment with dataset: ZindiTurtleRecall, model: megadescriptor, pooling method: weighted, use_class: False, learning rate: 0.001, batch size: 32
+2025-01-27 23:17:47,565 - INFO - Training stopped at epoch 4 for config: {'pooling_method': 'weighted', 'use_class': False}.  Validation accuracy: 0.6722734671730873.
+2025-01-27 23:17:47,565 - INFO - Grid eval for classifiers: Running experiment with dataset: ZindiTurtleRecall, model: megadescriptor, pooling method: weighted, use_class: False, learning rate: 0.002, batch size: 32
+2025-01-27 23:17:50,777 - INFO - Training stopped at epoch 4 for config: {'pooling_method': 'weighted', 'use_class': False}.  Validation accuracy: 0.6771568095496473.
+2025-01-27 23:17:50,777 - INFO - Grid eval for classifiers: Running experiment with dataset: ZindiTurtleRecall, model: megadescriptor, pooling method: weighted, use_class: False, learning rate: 0.005, batch size: 32
+2025-01-27 23:17:53,281 - INFO - Training stopped at epoch 2 for config: {'pooling_method': 'weighted', 'use_class': False}.  Validation accuracy: 0.6375474769397721.
+2025-01-27 23:17:53,282 - INFO - Grid eval for classifiers: Running experiment with dataset: ZindiTurtleRecall, model: megadescriptor, pooling method: weighted, use_class: False, learning rate: 0.01, batch size: 32
+2025-01-27 23:17:55,786 - INFO - Training stopped at epoch 2 for config: {'pooling_method': 'weighted', 'use_class': False}.  Validation accuracy: 0.619641888225719.
+2025-01-27 23:17:55,786 - INFO - Grid eval for classifiers: Running experiment with dataset: ZindiTurtleRecall, model: megadescriptor, pooling method: weighted, use_class: False, learning rate: 0.02, batch size: 32
+2025-01-27 23:17:57,940 - INFO - Training stopped at epoch 1 for config: {'pooling_method': 'weighted', 'use_class': False}.  Validation accuracy: 0.5756918068366793.
+2025-01-27 23:17:57,940 - INFO - Grid eval for classifiers: Running experiment with dataset: ZindiTurtleRecall, model: megadescriptor, pooling method: weighted, use_class: False, learning rate: 0.05, batch size: 32
+2025-01-27 23:18:00,097 - INFO - Training stopped at epoch 1 for config: {'pooling_method': 'weighted', 'use_class': False}.  Validation accuracy: 0.5029842647856755.
+2025-01-27 23:18:00,097 - INFO - Grid eval for classifiers: Running experiment with dataset: ZindiTurtleRecall, model: megadescriptor, pooling method: weighted, use_class: False, learning rate: 0.1, batch size: 32
+2025-01-27 23:18:02,251 - INFO - Training stopped at epoch 1 for config: {'pooling_method': 'weighted', 'use_class': False}.  Validation accuracy: 0.45306565382528485.
+2025-01-27 23:18:02,251 - INFO - Grid eval for classifiers: Running experiment with dataset: ZindiTurtleRecall, model: megadescriptor, pooling method: weighted, use_class: False, learning rate: 1e-05, batch size: 64
+2025-01-27 23:18:16,050 - INFO - Training stopped at epoch 50 for config: {'pooling_method': 'weighted', 'use_class': False}.  Validation accuracy: 0.5355398806294086.
+2025-01-27 23:18:16,050 - INFO - Grid eval for classifiers: Running experiment with dataset: ZindiTurtleRecall, model: megadescriptor, pooling method: weighted, use_class: False, learning rate: 2e-05, batch size: 64
+2025-01-27 23:18:29,840 - INFO - Training stopped at epoch 50 for config: {'pooling_method': 'weighted', 'use_class': False}.  Validation accuracy: 0.5979381443298969.
+2025-01-27 23:18:29,840 - INFO - Grid eval for classifiers: Running experiment with dataset: ZindiTurtleRecall, model: megadescriptor, pooling method: weighted, use_class: False, learning rate: 5e-05, batch size: 64
+2025-01-27 23:18:43,631 - INFO - Training stopped at epoch 50 for config: {'pooling_method': 'weighted', 'use_class': False}.  Validation accuracy: 0.6077048290830168.
+2025-01-27 23:18:43,632 - INFO - Grid eval for classifiers: Running experiment with dataset: ZindiTurtleRecall, model: megadescriptor, pooling method: weighted, use_class: False, learning rate: 0.0001, batch size: 64
+2025-01-27 23:18:57,432 - INFO - Training stopped at epoch 50 for config: {'pooling_method': 'weighted', 'use_class': False}.  Validation accuracy: 0.6218122626153011.
+2025-01-27 23:18:57,432 - INFO - Grid eval for classifiers: Running experiment with dataset: ZindiTurtleRecall, model: megadescriptor, pooling method: weighted, use_class: False, learning rate: 0.0002, batch size: 64
+2025-01-27 23:19:10,122 - INFO - Training stopped at epoch 41 for config: {'pooling_method': 'weighted', 'use_class': False}.  Validation accuracy: 0.6223548562126967.
+2025-01-27 23:19:10,123 - INFO - Grid eval for classifiers: Running experiment with dataset: ZindiTurtleRecall, model: megadescriptor, pooling method: weighted, use_class: False, learning rate: 0.0005, batch size: 64
+2025-01-27 23:19:17,578 - INFO - Training stopped at epoch 22 for config: {'pooling_method': 'weighted', 'use_class': False}.  Validation accuracy: 0.6402604449267498.
+2025-01-27 23:19:17,578 - INFO - Grid eval for classifiers: Running experiment with dataset: ZindiTurtleRecall, model: megadescriptor, pooling method: weighted, use_class: False, learning rate: 0.001, batch size: 64
+2025-01-27 23:19:20,355 - INFO - Training stopped at epoch 5 for config: {'pooling_method': 'weighted', 'use_class': False}.  Validation accuracy: 0.6619641888225719.
+2025-01-27 23:19:20,355 - INFO - Grid eval for classifiers: Running experiment with dataset: ZindiTurtleRecall, model: megadescriptor, pooling method: weighted, use_class: False, learning rate: 0.002, batch size: 64
+2025-01-27 23:19:22,584 - INFO - Training stopped at epoch 3 for config: {'pooling_method': 'weighted', 'use_class': False}.  Validation accuracy: 0.6717308735756918.
+2025-01-27 23:19:22,584 - INFO - Grid eval for classifiers: Running experiment with dataset: ZindiTurtleRecall, model: megadescriptor, pooling method: weighted, use_class: False, learning rate: 0.005, batch size: 64
+2025-01-27 23:19:25,086 - INFO - Training stopped at epoch 4 for config: {'pooling_method': 'weighted', 'use_class': False}.  Validation accuracy: 0.6527400976668475.
+2025-01-27 23:19:25,086 - INFO - Grid eval for classifiers: Running experiment with dataset: ZindiTurtleRecall, model: megadescriptor, pooling method: weighted, use_class: False, learning rate: 0.01, batch size: 64
+2025-01-27 23:19:27,313 - INFO - Training stopped at epoch 3 for config: {'pooling_method': 'weighted', 'use_class': False}.  Validation accuracy: 0.6261530113944656.
+2025-01-27 23:19:27,313 - INFO - Grid eval for classifiers: Running experiment with dataset: ZindiTurtleRecall, model: megadescriptor, pooling method: weighted, use_class: False, learning rate: 0.02, batch size: 64
+2025-01-27 23:19:28,989 - INFO - Training stopped at epoch 1 for config: {'pooling_method': 'weighted', 'use_class': False}.  Validation accuracy: 0.5952251763429192.
+2025-01-27 23:19:28,990 - INFO - Grid eval for classifiers: Running experiment with dataset: ZindiTurtleRecall, model: megadescriptor, pooling method: weighted, use_class: False, learning rate: 0.05, batch size: 64
+2025-01-27 23:19:30,667 - INFO - Training stopped at epoch 1 for config: {'pooling_method': 'weighted', 'use_class': False}.  Validation accuracy: 0.5257731958762887.
+2025-01-27 23:19:30,667 - INFO - Grid eval for classifiers: Running experiment with dataset: ZindiTurtleRecall, model: megadescriptor, pooling method: weighted, use_class: False, learning rate: 0.1, batch size: 64
+2025-01-27 23:19:32,345 - INFO - Training stopped at epoch 1 for config: {'pooling_method': 'weighted', 'use_class': False}.  Validation accuracy: 0.4682582745523603.
+2025-01-27 23:19:32,345 - INFO - Grid eval for classifiers: Running experiment with dataset: ZindiTurtleRecall, model: megadescriptor, pooling method: weighted, use_class: False, learning rate: 1e-05, batch size: 128
+2025-01-27 23:19:44,269 - INFO - Training stopped at epoch 50 for config: {'pooling_method': 'weighted', 'use_class': False}.  Validation accuracy: 0.4877916440586001.
+2025-01-27 23:19:44,269 - INFO - Grid eval for classifiers: Running experiment with dataset: ZindiTurtleRecall, model: megadescriptor, pooling method: weighted, use_class: False, learning rate: 2e-05, batch size: 128
+2025-01-27 23:19:56,188 - INFO - Training stopped at epoch 50 for config: {'pooling_method': 'weighted', 'use_class': False}.  Validation accuracy: 0.5751492132392838.
+2025-01-27 23:19:56,188 - INFO - Grid eval for classifiers: Running experiment with dataset: ZindiTurtleRecall, model: megadescriptor, pooling method: weighted, use_class: False, learning rate: 5e-05, batch size: 128
+2025-01-27 23:20:08,111 - INFO - Training stopped at epoch 50 for config: {'pooling_method': 'weighted', 'use_class': False}.  Validation accuracy: 0.6120455778621813.
+2025-01-27 23:20:08,111 - INFO - Grid eval for classifiers: Running experiment with dataset: ZindiTurtleRecall, model: megadescriptor, pooling method: weighted, use_class: False, learning rate: 0.0001, batch size: 128
+2025-01-27 23:20:20,033 - INFO - Training stopped at epoch 50 for config: {'pooling_method': 'weighted', 'use_class': False}.  Validation accuracy: 0.619641888225719.
+2025-01-27 23:20:20,034 - INFO - Grid eval for classifiers: Running experiment with dataset: ZindiTurtleRecall, model: megadescriptor, pooling method: weighted, use_class: False, learning rate: 0.0002, batch size: 128
+2025-01-27 23:20:31,955 - INFO - Training stopped at epoch 50 for config: {'pooling_method': 'weighted', 'use_class': False}.  Validation accuracy: 0.6256104177970699.
+2025-01-27 23:20:31,956 - INFO - Grid eval for classifiers: Running experiment with dataset: ZindiTurtleRecall, model: megadescriptor, pooling method: weighted, use_class: False, learning rate: 0.0005, batch size: 128
+2025-01-27 23:20:41,022 - INFO - Training stopped at epoch 33 for config: {'pooling_method': 'weighted', 'use_class': False}.  Validation accuracy: 0.6288659793814433.
+2025-01-27 23:20:41,022 - INFO - Grid eval for classifiers: Running experiment with dataset: ZindiTurtleRecall, model: megadescriptor, pooling method: weighted, use_class: False, learning rate: 0.001, batch size: 128
+2025-01-27 23:20:43,425 - INFO - Training stopped at epoch 5 for config: {'pooling_method': 'weighted', 'use_class': False}.  Validation accuracy: 0.6478567552902875.
+2025-01-27 23:20:43,425 - INFO - Grid eval for classifiers: Running experiment with dataset: ZindiTurtleRecall, model: megadescriptor, pooling method: weighted, use_class: False, learning rate: 0.002, batch size: 128
+2025-01-27 23:20:45,590 - INFO - Training stopped at epoch 4 for config: {'pooling_method': 'weighted', 'use_class': False}.  Validation accuracy: 0.6782419967444384.
+2025-01-27 23:20:45,590 - INFO - Grid eval for classifiers: Running experiment with dataset: ZindiTurtleRecall, model: megadescriptor, pooling method: weighted, use_class: False, learning rate: 0.005, batch size: 128
+2025-01-27 23:20:48,229 - INFO - Training stopped at epoch 6 for config: {'pooling_method': 'weighted', 'use_class': False}.  Validation accuracy: 0.6614215952251763.
+2025-01-27 23:20:48,229 - INFO - Grid eval for classifiers: Running experiment with dataset: ZindiTurtleRecall, model: megadescriptor, pooling method: weighted, use_class: False, learning rate: 0.01, batch size: 128
+2025-01-27 23:20:49,917 - INFO - Training stopped at epoch 2 for config: {'pooling_method': 'weighted', 'use_class': False}.  Validation accuracy: 0.6245252306022789.
+2025-01-27 23:20:49,917 - INFO - Grid eval for classifiers: Running experiment with dataset: ZindiTurtleRecall, model: megadescriptor, pooling method: weighted, use_class: False, learning rate: 0.02, batch size: 128
+2025-01-27 23:20:51,605 - INFO - Training stopped at epoch 2 for config: {'pooling_method': 'weighted', 'use_class': False}.  Validation accuracy: 0.6163863266413456.
+2025-01-27 23:20:51,605 - INFO - Grid eval for classifiers: Running experiment with dataset: ZindiTurtleRecall, model: megadescriptor, pooling method: weighted, use_class: False, learning rate: 0.05, batch size: 128
+2025-01-27 23:20:53,057 - INFO - Training stopped at epoch 1 for config: {'pooling_method': 'weighted', 'use_class': False}.  Validation accuracy: 0.5518176885512751.
+2025-01-27 23:20:53,057 - INFO - Grid eval for classifiers: Running experiment with dataset: ZindiTurtleRecall, model: megadescriptor, pooling method: weighted, use_class: False, learning rate: 0.1, batch size: 128
+2025-01-27 23:20:54,508 - INFO - Training stopped at epoch 1 for config: {'pooling_method': 'weighted', 'use_class': False}.  Validation accuracy: 0.5116657623440043.
+2025-01-27 23:20:54,508 - INFO - Best results for dataset ZindiTurtleRecall and weighted pooling method: {
+    "dataset": "ZindiTurtleRecall",
+    "pooling_method": "weighted",
+    "batch_size": 8,
+    "learning_rate": 0.001,
+    "best_epoch": 3,
+    "best_val_acc": 0.6858383071079761
+}
+2025-01-27 23:39:07,163 - INFO - Using device: cuda:1
+2025-01-27 23:39:07,163 - INFO - /home/avisund/data/wildlife_datasets/AmvrakikosTurtles/
+2025-01-27 23:39:07,173 - INFO - Dataset AmvrakikosTurtles loaded successfully
+2025-01-27 23:39:07,178 - INFO - Dataset split successfully
+2025-01-27 23:39:07,181 - INFO - Dataloaders created successfully
+2025-01-27 23:39:09,200 - INFO - Loading pretrained weights from Hugging Face hub (BVRA/MegaDescriptor-L-384)
+2025-01-27 23:39:10,742 - INFO - Feature extractor loaded successfully
+2025-01-27 23:39:39,236 - INFO - Embeddings computed successfully
+2025-01-27 23:39:39,236 - INFO - Grid eval for classifiers: Running experiment with dataset: AmvrakikosTurtles, model: megadescriptor, pooling method: weighted, use_class: False, learning rate: 1e-05, batch size: 8
+2025-01-27 23:39:40,182 - INFO - Training stopped at epoch 50 for config: {'pooling_method': 'weighted', 'use_class': False}.  Validation accuracy: 0.07407407407407407.
+2025-01-27 23:39:40,182 - INFO - Grid eval for classifiers: Running experiment with dataset: AmvrakikosTurtles, model: megadescriptor, pooling method: weighted, use_class: False, learning rate: 2e-05, batch size: 8
+2025-01-27 23:39:41,019 - INFO - Training stopped at epoch 50 for config: {'pooling_method': 'weighted', 'use_class': False}.  Validation accuracy: 0.25925925925925924.
+2025-01-27 23:39:41,019 - INFO - Grid eval for classifiers: Running experiment with dataset: AmvrakikosTurtles, model: megadescriptor, pooling method: weighted, use_class: False, learning rate: 5e-05, batch size: 8
+2025-01-27 23:39:41,859 - INFO - Training stopped at epoch 50 for config: {'pooling_method': 'weighted', 'use_class': False}.  Validation accuracy: 0.2222222222222222.
+2025-01-27 23:39:41,859 - INFO - Grid eval for classifiers: Running experiment with dataset: AmvrakikosTurtles, model: megadescriptor, pooling method: weighted, use_class: False, learning rate: 0.0001, batch size: 8
+2025-01-27 23:39:42,312 - INFO - Training stopped at epoch 22 for config: {'pooling_method': 'weighted', 'use_class': False}.  Validation accuracy: 0.3333333333333333.
+2025-01-27 23:39:42,312 - INFO - Grid eval for classifiers: Running experiment with dataset: AmvrakikosTurtles, model: megadescriptor, pooling method: weighted, use_class: False, learning rate: 0.0002, batch size: 8
+2025-01-27 23:39:42,566 - INFO - Training stopped at epoch 10 for config: {'pooling_method': 'weighted', 'use_class': False}.  Validation accuracy: 0.18518518518518517.
+2025-01-27 23:39:42,566 - INFO - Grid eval for classifiers: Running experiment with dataset: AmvrakikosTurtles, model: megadescriptor, pooling method: weighted, use_class: False, learning rate: 0.0005, batch size: 8
+2025-01-27 23:39:43,002 - INFO - Training stopped at epoch 21 for config: {'pooling_method': 'weighted', 'use_class': False}.  Validation accuracy: 0.2962962962962963.
+2025-01-27 23:39:43,002 - INFO - Grid eval for classifiers: Running experiment with dataset: AmvrakikosTurtles, model: megadescriptor, pooling method: weighted, use_class: False, learning rate: 0.001, batch size: 8
+2025-01-27 23:39:43,171 - INFO - Training stopped at epoch 5 for config: {'pooling_method': 'weighted', 'use_class': False}.  Validation accuracy: 0.3333333333333333.
+2025-01-27 23:39:43,171 - INFO - Grid eval for classifiers: Running experiment with dataset: AmvrakikosTurtles, model: megadescriptor, pooling method: weighted, use_class: False, learning rate: 0.002, batch size: 8
+2025-01-27 23:39:43,274 - INFO - Training stopped at epoch 1 for config: {'pooling_method': 'weighted', 'use_class': False}.  Validation accuracy: 0.37037037037037035.
+2025-01-27 23:39:43,274 - INFO - Grid eval for classifiers: Running experiment with dataset: AmvrakikosTurtles, model: megadescriptor, pooling method: weighted, use_class: False, learning rate: 0.005, batch size: 8
+2025-01-27 23:39:43,377 - INFO - Training stopped at epoch 1 for config: {'pooling_method': 'weighted', 'use_class': False}.  Validation accuracy: 0.3333333333333333.
+2025-01-27 23:39:43,377 - INFO - Grid eval for classifiers: Running experiment with dataset: AmvrakikosTurtles, model: megadescriptor, pooling method: weighted, use_class: False, learning rate: 0.01, batch size: 8
+2025-01-27 23:39:43,479 - INFO - Training stopped at epoch 1 for config: {'pooling_method': 'weighted', 'use_class': False}.  Validation accuracy: 0.2962962962962963.
+2025-01-27 23:39:43,479 - INFO - Grid eval for classifiers: Running experiment with dataset: AmvrakikosTurtles, model: megadescriptor, pooling method: weighted, use_class: False, learning rate: 0.02, batch size: 8
+2025-01-27 23:39:43,598 - INFO - Training stopped at epoch 2 for config: {'pooling_method': 'weighted', 'use_class': False}.  Validation accuracy: 0.3333333333333333.
+2025-01-27 23:39:43,598 - INFO - Grid eval for classifiers: Running experiment with dataset: AmvrakikosTurtles, model: megadescriptor, pooling method: weighted, use_class: False, learning rate: 0.05, batch size: 8
+2025-01-27 23:39:43,716 - INFO - Training stopped at epoch 2 for config: {'pooling_method': 'weighted', 'use_class': False}.  Validation accuracy: 0.25925925925925924.
+2025-01-27 23:39:43,716 - INFO - Grid eval for classifiers: Running experiment with dataset: AmvrakikosTurtles, model: megadescriptor, pooling method: weighted, use_class: False, learning rate: 0.1, batch size: 8
+2025-01-27 23:39:43,835 - INFO - Training stopped at epoch 2 for config: {'pooling_method': 'weighted', 'use_class': False}.  Validation accuracy: 0.2222222222222222.
+2025-01-27 23:39:43,835 - INFO - Grid eval for classifiers: Running experiment with dataset: AmvrakikosTurtles, model: megadescriptor, pooling method: weighted, use_class: False, learning rate: 1e-05, batch size: 16
+2025-01-27 23:39:44,277 - INFO - Training stopped at epoch 50 for config: {'pooling_method': 'weighted', 'use_class': False}.  Validation accuracy: 0.07407407407407407.
+2025-01-27 23:39:44,277 - INFO - Grid eval for classifiers: Running experiment with dataset: AmvrakikosTurtles, model: megadescriptor, pooling method: weighted, use_class: False, learning rate: 2e-05, batch size: 16
+2025-01-27 23:39:44,705 - INFO - Training stopped at epoch 50 for config: {'pooling_method': 'weighted', 'use_class': False}.  Validation accuracy: 0.14814814814814814.
+2025-01-27 23:39:44,705 - INFO - Grid eval for classifiers: Running experiment with dataset: AmvrakikosTurtles, model: megadescriptor, pooling method: weighted, use_class: False, learning rate: 5e-05, batch size: 16
+2025-01-27 23:39:45,134 - INFO - Training stopped at epoch 50 for config: {'pooling_method': 'weighted', 'use_class': False}.  Validation accuracy: 0.25925925925925924.
+2025-01-27 23:39:45,134 - INFO - Grid eval for classifiers: Running experiment with dataset: AmvrakikosTurtles, model: megadescriptor, pooling method: weighted, use_class: False, learning rate: 0.0001, batch size: 16
+2025-01-27 23:39:45,560 - INFO - Training stopped at epoch 50 for config: {'pooling_method': 'weighted', 'use_class': False}.  Validation accuracy: 0.2962962962962963.
+2025-01-27 23:39:45,561 - INFO - Grid eval for classifiers: Running experiment with dataset: AmvrakikosTurtles, model: megadescriptor, pooling method: weighted, use_class: False, learning rate: 0.0002, batch size: 16
+2025-01-27 23:39:45,983 - INFO - Training stopped at epoch 44 for config: {'pooling_method': 'weighted', 'use_class': False}.  Validation accuracy: 0.2962962962962963.
+2025-01-27 23:39:45,983 - INFO - Grid eval for classifiers: Running experiment with dataset: AmvrakikosTurtles, model: megadescriptor, pooling method: weighted, use_class: False, learning rate: 0.0005, batch size: 16
+2025-01-27 23:39:46,096 - INFO - Training stopped at epoch 8 for config: {'pooling_method': 'weighted', 'use_class': False}.  Validation accuracy: 0.2962962962962963.
+2025-01-27 23:39:46,096 - INFO - Grid eval for classifiers: Running experiment with dataset: AmvrakikosTurtles, model: megadescriptor, pooling method: weighted, use_class: False, learning rate: 0.001, batch size: 16
+2025-01-27 23:39:46,185 - INFO - Training stopped at epoch 5 for config: {'pooling_method': 'weighted', 'use_class': False}.  Validation accuracy: 0.3333333333333333.
+2025-01-27 23:39:46,185 - INFO - Grid eval for classifiers: Running experiment with dataset: AmvrakikosTurtles, model: megadescriptor, pooling method: weighted, use_class: False, learning rate: 0.002, batch size: 16
+2025-01-27 23:39:46,255 - INFO - Training stopped at epoch 3 for config: {'pooling_method': 'weighted', 'use_class': False}.  Validation accuracy: 0.2962962962962963.
+2025-01-27 23:39:46,255 - INFO - Grid eval for classifiers: Running experiment with dataset: AmvrakikosTurtles, model: megadescriptor, pooling method: weighted, use_class: False, learning rate: 0.005, batch size: 16
+2025-01-27 23:39:46,307 - INFO - Training stopped at epoch 1 for config: {'pooling_method': 'weighted', 'use_class': False}.  Validation accuracy: 0.37037037037037035.
+2025-01-27 23:39:46,307 - INFO - Grid eval for classifiers: Running experiment with dataset: AmvrakikosTurtles, model: megadescriptor, pooling method: weighted, use_class: False, learning rate: 0.01, batch size: 16
+2025-01-27 23:39:46,369 - INFO - Training stopped at epoch 2 for config: {'pooling_method': 'weighted', 'use_class': False}.  Validation accuracy: 0.2962962962962963.
+2025-01-27 23:39:46,369 - INFO - Grid eval for classifiers: Running experiment with dataset: AmvrakikosTurtles, model: megadescriptor, pooling method: weighted, use_class: False, learning rate: 0.02, batch size: 16
+2025-01-27 23:39:46,431 - INFO - Training stopped at epoch 2 for config: {'pooling_method': 'weighted', 'use_class': False}.  Validation accuracy: 0.25925925925925924.
+2025-01-27 23:39:46,431 - INFO - Grid eval for classifiers: Running experiment with dataset: AmvrakikosTurtles, model: megadescriptor, pooling method: weighted, use_class: False, learning rate: 0.05, batch size: 16
+2025-01-27 23:39:46,492 - INFO - Training stopped at epoch 2 for config: {'pooling_method': 'weighted', 'use_class': False}.  Validation accuracy: 0.3333333333333333.
+2025-01-27 23:39:46,492 - INFO - Grid eval for classifiers: Running experiment with dataset: AmvrakikosTurtles, model: megadescriptor, pooling method: weighted, use_class: False, learning rate: 0.1, batch size: 16
+2025-01-27 23:39:46,553 - INFO - Training stopped at epoch 2 for config: {'pooling_method': 'weighted', 'use_class': False}.  Validation accuracy: 0.18518518518518517.
+2025-01-27 23:39:46,553 - INFO - Grid eval for classifiers: Running experiment with dataset: AmvrakikosTurtles, model: megadescriptor, pooling method: weighted, use_class: False, learning rate: 1e-05, batch size: 32
+2025-01-27 23:39:46,822 - INFO - Training stopped at epoch 50 for config: {'pooling_method': 'weighted', 'use_class': False}.  Validation accuracy: 0.1111111111111111.
+2025-01-27 23:39:46,822 - INFO - Grid eval for classifiers: Running experiment with dataset: AmvrakikosTurtles, model: megadescriptor, pooling method: weighted, use_class: False, learning rate: 2e-05, batch size: 32
+2025-01-27 23:39:47,086 - INFO - Training stopped at epoch 50 for config: {'pooling_method': 'weighted', 'use_class': False}.  Validation accuracy: 0.037037037037037035.
+2025-01-27 23:39:47,086 - INFO - Grid eval for classifiers: Running experiment with dataset: AmvrakikosTurtles, model: megadescriptor, pooling method: weighted, use_class: False, learning rate: 5e-05, batch size: 32
+2025-01-27 23:39:47,349 - INFO - Training stopped at epoch 50 for config: {'pooling_method': 'weighted', 'use_class': False}.  Validation accuracy: 0.14814814814814814.
+2025-01-27 23:39:47,349 - INFO - Grid eval for classifiers: Running experiment with dataset: AmvrakikosTurtles, model: megadescriptor, pooling method: weighted, use_class: False, learning rate: 0.0001, batch size: 32
+2025-01-27 23:39:47,610 - INFO - Training stopped at epoch 50 for config: {'pooling_method': 'weighted', 'use_class': False}.  Validation accuracy: 0.3333333333333333.
+2025-01-27 23:39:47,610 - INFO - Grid eval for classifiers: Running experiment with dataset: AmvrakikosTurtles, model: megadescriptor, pooling method: weighted, use_class: False, learning rate: 0.0002, batch size: 32
+2025-01-27 23:39:47,871 - INFO - Training stopped at epoch 50 for config: {'pooling_method': 'weighted', 'use_class': False}.  Validation accuracy: 0.2222222222222222.
+2025-01-27 23:39:47,871 - INFO - Grid eval for classifiers: Running experiment with dataset: AmvrakikosTurtles, model: megadescriptor, pooling method: weighted, use_class: False, learning rate: 0.0005, batch size: 32
+2025-01-27 23:39:47,960 - INFO - Training stopped at epoch 12 for config: {'pooling_method': 'weighted', 'use_class': False}.  Validation accuracy: 0.2962962962962963.
+2025-01-27 23:39:47,960 - INFO - Grid eval for classifiers: Running experiment with dataset: AmvrakikosTurtles, model: megadescriptor, pooling method: weighted, use_class: False, learning rate: 0.001, batch size: 32
+2025-01-27 23:39:48,018 - INFO - Training stopped at epoch 6 for config: {'pooling_method': 'weighted', 'use_class': False}.  Validation accuracy: 0.3333333333333333.
+2025-01-27 23:39:48,018 - INFO - Grid eval for classifiers: Running experiment with dataset: AmvrakikosTurtles, model: megadescriptor, pooling method: weighted, use_class: False, learning rate: 0.002, batch size: 32
+2025-01-27 23:39:48,066 - INFO - Training stopped at epoch 4 for config: {'pooling_method': 'weighted', 'use_class': False}.  Validation accuracy: 0.2962962962962963.
+2025-01-27 23:39:48,066 - INFO - Grid eval for classifiers: Running experiment with dataset: AmvrakikosTurtles, model: megadescriptor, pooling method: weighted, use_class: False, learning rate: 0.005, batch size: 32
+2025-01-27 23:39:48,103 - INFO - Training stopped at epoch 2 for config: {'pooling_method': 'weighted', 'use_class': False}.  Validation accuracy: 0.2962962962962963.
+2025-01-27 23:39:48,103 - INFO - Grid eval for classifiers: Running experiment with dataset: AmvrakikosTurtles, model: megadescriptor, pooling method: weighted, use_class: False, learning rate: 0.01, batch size: 32
+2025-01-27 23:39:48,141 - INFO - Training stopped at epoch 2 for config: {'pooling_method': 'weighted', 'use_class': False}.  Validation accuracy: 0.37037037037037035.
+2025-01-27 23:39:48,141 - INFO - Grid eval for classifiers: Running experiment with dataset: AmvrakikosTurtles, model: megadescriptor, pooling method: weighted, use_class: False, learning rate: 0.02, batch size: 32
+2025-01-27 23:39:48,173 - INFO - Training stopped at epoch 1 for config: {'pooling_method': 'weighted', 'use_class': False}.  Validation accuracy: 0.25925925925925924.
+2025-01-27 23:39:48,173 - INFO - Grid eval for classifiers: Running experiment with dataset: AmvrakikosTurtles, model: megadescriptor, pooling method: weighted, use_class: False, learning rate: 0.05, batch size: 32
+2025-01-27 23:39:48,210 - INFO - Training stopped at epoch 2 for config: {'pooling_method': 'weighted', 'use_class': False}.  Validation accuracy: 0.25925925925925924.
+2025-01-27 23:39:48,210 - INFO - Grid eval for classifiers: Running experiment with dataset: AmvrakikosTurtles, model: megadescriptor, pooling method: weighted, use_class: False, learning rate: 0.1, batch size: 32
+2025-01-27 23:39:48,259 - INFO - Training stopped at epoch 4 for config: {'pooling_method': 'weighted', 'use_class': False}.  Validation accuracy: 0.2222222222222222.
+2025-01-27 23:39:48,259 - INFO - Grid eval for classifiers: Running experiment with dataset: AmvrakikosTurtles, model: megadescriptor, pooling method: weighted, use_class: False, learning rate: 1e-05, batch size: 64
+2025-01-27 23:39:48,449 - INFO - Training stopped at epoch 50 for config: {'pooling_method': 'weighted', 'use_class': False}.  Validation accuracy: 0.0.
+2025-01-27 23:39:48,449 - INFO - Grid eval for classifiers: Running experiment with dataset: AmvrakikosTurtles, model: megadescriptor, pooling method: weighted, use_class: False, learning rate: 2e-05, batch size: 64
+2025-01-27 23:39:48,624 - INFO - Training stopped at epoch 50 for config: {'pooling_method': 'weighted', 'use_class': False}.  Validation accuracy: 0.07407407407407407.
+2025-01-27 23:39:48,624 - INFO - Grid eval for classifiers: Running experiment with dataset: AmvrakikosTurtles, model: megadescriptor, pooling method: weighted, use_class: False, learning rate: 5e-05, batch size: 64
+2025-01-27 23:39:48,798 - INFO - Training stopped at epoch 50 for config: {'pooling_method': 'weighted', 'use_class': False}.  Validation accuracy: 0.18518518518518517.
+2025-01-27 23:39:48,798 - INFO - Grid eval for classifiers: Running experiment with dataset: AmvrakikosTurtles, model: megadescriptor, pooling method: weighted, use_class: False, learning rate: 0.0001, batch size: 64
+2025-01-27 23:39:48,972 - INFO - Training stopped at epoch 50 for config: {'pooling_method': 'weighted', 'use_class': False}.  Validation accuracy: 0.18518518518518517.
+2025-01-27 23:39:48,972 - INFO - Grid eval for classifiers: Running experiment with dataset: AmvrakikosTurtles, model: megadescriptor, pooling method: weighted, use_class: False, learning rate: 0.0002, batch size: 64
+2025-01-27 23:39:49,147 - INFO - Training stopped at epoch 50 for config: {'pooling_method': 'weighted', 'use_class': False}.  Validation accuracy: 0.25925925925925924.
+2025-01-27 23:39:49,147 - INFO - Grid eval for classifiers: Running experiment with dataset: AmvrakikosTurtles, model: megadescriptor, pooling method: weighted, use_class: False, learning rate: 0.0005, batch size: 64
+2025-01-27 23:39:49,231 - INFO - Training stopped at epoch 19 for config: {'pooling_method': 'weighted', 'use_class': False}.  Validation accuracy: 0.37037037037037035.
+2025-01-27 23:39:49,231 - INFO - Grid eval for classifiers: Running experiment with dataset: AmvrakikosTurtles, model: megadescriptor, pooling method: weighted, use_class: False, learning rate: 0.001, batch size: 64
+2025-01-27 23:39:49,284 - INFO - Training stopped at epoch 10 for config: {'pooling_method': 'weighted', 'use_class': False}.  Validation accuracy: 0.3333333333333333.
+2025-01-27 23:39:49,284 - INFO - Grid eval for classifiers: Running experiment with dataset: AmvrakikosTurtles, model: megadescriptor, pooling method: weighted, use_class: False, learning rate: 0.002, batch size: 64
+2025-01-27 23:39:49,320 - INFO - Training stopped at epoch 5 for config: {'pooling_method': 'weighted', 'use_class': False}.  Validation accuracy: 0.25925925925925924.
+2025-01-27 23:39:49,320 - INFO - Grid eval for classifiers: Running experiment with dataset: AmvrakikosTurtles, model: megadescriptor, pooling method: weighted, use_class: False, learning rate: 0.005, batch size: 64
+2025-01-27 23:39:49,342 - INFO - Training stopped at epoch 1 for config: {'pooling_method': 'weighted', 'use_class': False}.  Validation accuracy: 0.3333333333333333.
+2025-01-27 23:39:49,342 - INFO - Grid eval for classifiers: Running experiment with dataset: AmvrakikosTurtles, model: megadescriptor, pooling method: weighted, use_class: False, learning rate: 0.01, batch size: 64
+2025-01-27 23:39:49,364 - INFO - Training stopped at epoch 1 for config: {'pooling_method': 'weighted', 'use_class': False}.  Validation accuracy: 0.2222222222222222.
+2025-01-27 23:39:49,364 - INFO - Grid eval for classifiers: Running experiment with dataset: AmvrakikosTurtles, model: megadescriptor, pooling method: weighted, use_class: False, learning rate: 0.02, batch size: 64
+2025-01-27 23:39:49,386 - INFO - Training stopped at epoch 1 for config: {'pooling_method': 'weighted', 'use_class': False}.  Validation accuracy: 0.37037037037037035.
+2025-01-27 23:39:49,386 - INFO - Grid eval for classifiers: Running experiment with dataset: AmvrakikosTurtles, model: megadescriptor, pooling method: weighted, use_class: False, learning rate: 0.05, batch size: 64
+2025-01-27 23:39:49,408 - INFO - Training stopped at epoch 1 for config: {'pooling_method': 'weighted', 'use_class': False}.  Validation accuracy: 0.25925925925925924.
+2025-01-27 23:39:49,408 - INFO - Grid eval for classifiers: Running experiment with dataset: AmvrakikosTurtles, model: megadescriptor, pooling method: weighted, use_class: False, learning rate: 0.1, batch size: 64
+2025-01-27 23:39:49,430 - INFO - Training stopped at epoch 1 for config: {'pooling_method': 'weighted', 'use_class': False}.  Validation accuracy: 0.2222222222222222.
+2025-01-27 23:39:49,430 - INFO - Grid eval for classifiers: Running experiment with dataset: AmvrakikosTurtles, model: megadescriptor, pooling method: weighted, use_class: False, learning rate: 1e-05, batch size: 128
+2025-01-27 23:39:49,594 - INFO - Training stopped at epoch 50 for config: {'pooling_method': 'weighted', 'use_class': False}.  Validation accuracy: 0.037037037037037035.
+2025-01-27 23:39:49,594 - INFO - Grid eval for classifiers: Running experiment with dataset: AmvrakikosTurtles, model: megadescriptor, pooling method: weighted, use_class: False, learning rate: 2e-05, batch size: 128
+2025-01-27 23:39:49,755 - INFO - Training stopped at epoch 50 for config: {'pooling_method': 'weighted', 'use_class': False}.  Validation accuracy: 0.14814814814814814.
+2025-01-27 23:39:49,755 - INFO - Grid eval for classifiers: Running experiment with dataset: AmvrakikosTurtles, model: megadescriptor, pooling method: weighted, use_class: False, learning rate: 5e-05, batch size: 128
+2025-01-27 23:39:49,916 - INFO - Training stopped at epoch 50 for config: {'pooling_method': 'weighted', 'use_class': False}.  Validation accuracy: 0.14814814814814814.
+2025-01-27 23:39:49,916 - INFO - Grid eval for classifiers: Running experiment with dataset: AmvrakikosTurtles, model: megadescriptor, pooling method: weighted, use_class: False, learning rate: 0.0001, batch size: 128
+2025-01-27 23:39:50,077 - INFO - Training stopped at epoch 50 for config: {'pooling_method': 'weighted', 'use_class': False}.  Validation accuracy: 0.2962962962962963.
+2025-01-27 23:39:50,077 - INFO - Grid eval for classifiers: Running experiment with dataset: AmvrakikosTurtles, model: megadescriptor, pooling method: weighted, use_class: False, learning rate: 0.0002, batch size: 128
+2025-01-27 23:39:50,238 - INFO - Training stopped at epoch 50 for config: {'pooling_method': 'weighted', 'use_class': False}.  Validation accuracy: 0.25925925925925924.
+2025-01-27 23:39:50,238 - INFO - Grid eval for classifiers: Running experiment with dataset: AmvrakikosTurtles, model: megadescriptor, pooling method: weighted, use_class: False, learning rate: 0.0005, batch size: 128
+2025-01-27 23:39:50,332 - INFO - Training stopped at epoch 24 for config: {'pooling_method': 'weighted', 'use_class': False}.  Validation accuracy: 0.2222222222222222.
+2025-01-27 23:39:50,332 - INFO - Grid eval for classifiers: Running experiment with dataset: AmvrakikosTurtles, model: megadescriptor, pooling method: weighted, use_class: False, learning rate: 0.001, batch size: 128
+2025-01-27 23:39:50,391 - INFO - Training stopped at epoch 13 for config: {'pooling_method': 'weighted', 'use_class': False}.  Validation accuracy: 0.37037037037037035.
+2025-01-27 23:39:50,391 - INFO - Grid eval for classifiers: Running experiment with dataset: AmvrakikosTurtles, model: megadescriptor, pooling method: weighted, use_class: False, learning rate: 0.002, batch size: 128
+2025-01-27 23:39:50,427 - INFO - Training stopped at epoch 6 for config: {'pooling_method': 'weighted', 'use_class': False}.  Validation accuracy: 0.3333333333333333.
+2025-01-27 23:39:50,427 - INFO - Grid eval for classifiers: Running experiment with dataset: AmvrakikosTurtles, model: megadescriptor, pooling method: weighted, use_class: False, learning rate: 0.005, batch size: 128
+2025-01-27 23:39:50,454 - INFO - Training stopped at epoch 3 for config: {'pooling_method': 'weighted', 'use_class': False}.  Validation accuracy: 0.4074074074074074.
+2025-01-27 23:39:50,454 - INFO - Grid eval for classifiers: Running experiment with dataset: AmvrakikosTurtles, model: megadescriptor, pooling method: weighted, use_class: False, learning rate: 0.01, batch size: 128
+2025-01-27 23:39:50,474 - INFO - Training stopped at epoch 1 for config: {'pooling_method': 'weighted', 'use_class': False}.  Validation accuracy: 0.25925925925925924.
+2025-01-27 23:39:50,474 - INFO - Grid eval for classifiers: Running experiment with dataset: AmvrakikosTurtles, model: megadescriptor, pooling method: weighted, use_class: False, learning rate: 0.02, batch size: 128
+2025-01-27 23:39:50,494 - INFO - Training stopped at epoch 1 for config: {'pooling_method': 'weighted', 'use_class': False}.  Validation accuracy: 0.2962962962962963.
+2025-01-27 23:39:50,494 - INFO - Grid eval for classifiers: Running experiment with dataset: AmvrakikosTurtles, model: megadescriptor, pooling method: weighted, use_class: False, learning rate: 0.05, batch size: 128
+2025-01-27 23:39:50,514 - INFO - Training stopped at epoch 1 for config: {'pooling_method': 'weighted', 'use_class': False}.  Validation accuracy: 0.18518518518518517.
+2025-01-27 23:39:50,514 - INFO - Grid eval for classifiers: Running experiment with dataset: AmvrakikosTurtles, model: megadescriptor, pooling method: weighted, use_class: False, learning rate: 0.1, batch size: 128
+2025-01-27 23:39:50,535 - INFO - Training stopped at epoch 1 for config: {'pooling_method': 'weighted', 'use_class': False}.  Validation accuracy: 0.18518518518518517.
+2025-01-27 23:39:50,535 - INFO - Best results for dataset AmvrakikosTurtles and weighted pooling method: {
+    "dataset": "AmvrakikosTurtles",
+    "pooling_method": "weighted",
+    "batch_size": 128,
+    "learning_rate": 0.005,
+    "best_epoch": 3,
+    "best_val_acc": 0.4074074074074074
+}
+2025-01-27 23:39:50,633 - INFO - /home/avisund/data/wildlife_datasets/ReunionTurtles/
+2025-01-27 23:39:50,664 - INFO - Dataset ReunionTurtles loaded successfully
+2025-01-27 23:39:50,672 - INFO - Dataset split successfully
+2025-01-27 23:39:50,676 - INFO - Dataloaders created successfully
+2025-01-27 23:39:52,609 - INFO - Loading pretrained weights from Hugging Face hub (BVRA/MegaDescriptor-L-384)
+2025-01-27 23:39:53,915 - INFO - Feature extractor loaded successfully
+2025-01-27 23:40:12,334 - INFO - Embeddings computed successfully
+2025-01-27 23:40:12,335 - INFO - Grid eval for classifiers: Running experiment with dataset: ReunionTurtles, model: megadescriptor, pooling method: weighted, use_class: False, learning rate: 1e-05, batch size: 8
+2025-01-27 23:40:13,722 - INFO - Training stopped at epoch 50 for config: {'pooling_method': 'weighted', 'use_class': False}.  Validation accuracy: 0.15555555555555556.
+2025-01-27 23:40:13,722 - INFO - Grid eval for classifiers: Running experiment with dataset: ReunionTurtles, model: megadescriptor, pooling method: weighted, use_class: False, learning rate: 2e-05, batch size: 8
+2025-01-27 23:40:15,085 - INFO - Training stopped at epoch 50 for config: {'pooling_method': 'weighted', 'use_class': False}.  Validation accuracy: 0.4.
+2025-01-27 23:40:15,086 - INFO - Grid eval for classifiers: Running experiment with dataset: ReunionTurtles, model: megadescriptor, pooling method: weighted, use_class: False, learning rate: 5e-05, batch size: 8
+2025-01-27 23:40:16,455 - INFO - Training stopped at epoch 50 for config: {'pooling_method': 'weighted', 'use_class': False}.  Validation accuracy: 0.4.
+2025-01-27 23:40:16,455 - INFO - Grid eval for classifiers: Running experiment with dataset: ReunionTurtles, model: megadescriptor, pooling method: weighted, use_class: False, learning rate: 0.0001, batch size: 8
+2025-01-27 23:40:17,819 - INFO - Training stopped at epoch 50 for config: {'pooling_method': 'weighted', 'use_class': False}.  Validation accuracy: 0.4888888888888889.
+2025-01-27 23:40:17,819 - INFO - Grid eval for classifiers: Running experiment with dataset: ReunionTurtles, model: megadescriptor, pooling method: weighted, use_class: False, learning rate: 0.0002, batch size: 8
+2025-01-27 23:40:19,206 - INFO - Training stopped at epoch 50 for config: {'pooling_method': 'weighted', 'use_class': False}.  Validation accuracy: 0.4222222222222222.
+2025-01-27 23:40:19,206 - INFO - Grid eval for classifiers: Running experiment with dataset: ReunionTurtles, model: megadescriptor, pooling method: weighted, use_class: False, learning rate: 0.0005, batch size: 8
+2025-01-27 23:40:20,603 - INFO - Training stopped at epoch 50 for config: {'pooling_method': 'weighted', 'use_class': False}.  Validation accuracy: 0.4888888888888889.
+2025-01-27 23:40:20,604 - INFO - Grid eval for classifiers: Running experiment with dataset: ReunionTurtles, model: megadescriptor, pooling method: weighted, use_class: False, learning rate: 0.001, batch size: 8
+2025-01-27 23:40:22,002 - INFO - Training stopped at epoch 50 for config: {'pooling_method': 'weighted', 'use_class': False}.  Validation accuracy: 0.4444444444444444.
+2025-01-27 23:40:22,002 - INFO - Grid eval for classifiers: Running experiment with dataset: ReunionTurtles, model: megadescriptor, pooling method: weighted, use_class: False, learning rate: 0.002, batch size: 8
+2025-01-27 23:40:22,533 - INFO - Training stopped at epoch 14 for config: {'pooling_method': 'weighted', 'use_class': False}.  Validation accuracy: 0.4222222222222222.
+2025-01-27 23:40:22,533 - INFO - Grid eval for classifiers: Running experiment with dataset: ReunionTurtles, model: megadescriptor, pooling method: weighted, use_class: False, learning rate: 0.005, batch size: 8
+2025-01-27 23:40:22,726 - INFO - Training stopped at epoch 2 for config: {'pooling_method': 'weighted', 'use_class': False}.  Validation accuracy: 0.35555555555555557.
+2025-01-27 23:40:22,726 - INFO - Grid eval for classifiers: Running experiment with dataset: ReunionTurtles, model: megadescriptor, pooling method: weighted, use_class: False, learning rate: 0.01, batch size: 8
+2025-01-27 23:40:22,891 - INFO - Training stopped at epoch 1 for config: {'pooling_method': 'weighted', 'use_class': False}.  Validation accuracy: 0.3111111111111111.
+2025-01-27 23:40:22,892 - INFO - Grid eval for classifiers: Running experiment with dataset: ReunionTurtles, model: megadescriptor, pooling method: weighted, use_class: False, learning rate: 0.02, batch size: 8
+2025-01-27 23:40:23,085 - INFO - Training stopped at epoch 2 for config: {'pooling_method': 'weighted', 'use_class': False}.  Validation accuracy: 0.3333333333333333.
+2025-01-27 23:40:23,085 - INFO - Grid eval for classifiers: Running experiment with dataset: ReunionTurtles, model: megadescriptor, pooling method: weighted, use_class: False, learning rate: 0.05, batch size: 8
+2025-01-27 23:40:23,251 - INFO - Training stopped at epoch 1 for config: {'pooling_method': 'weighted', 'use_class': False}.  Validation accuracy: 0.3333333333333333.
+2025-01-27 23:40:23,251 - INFO - Grid eval for classifiers: Running experiment with dataset: ReunionTurtles, model: megadescriptor, pooling method: weighted, use_class: False, learning rate: 0.1, batch size: 8
+2025-01-27 23:40:23,417 - INFO - Training stopped at epoch 1 for config: {'pooling_method': 'weighted', 'use_class': False}.  Validation accuracy: 0.28888888888888886.
+2025-01-27 23:40:23,417 - INFO - Grid eval for classifiers: Running experiment with dataset: ReunionTurtles, model: megadescriptor, pooling method: weighted, use_class: False, learning rate: 1e-05, batch size: 16
+2025-01-27 23:40:24,155 - INFO - Training stopped at epoch 50 for config: {'pooling_method': 'weighted', 'use_class': False}.  Validation accuracy: 0.1111111111111111.
+2025-01-27 23:40:24,155 - INFO - Grid eval for classifiers: Running experiment with dataset: ReunionTurtles, model: megadescriptor, pooling method: weighted, use_class: False, learning rate: 2e-05, batch size: 16
+2025-01-27 23:40:24,884 - INFO - Training stopped at epoch 50 for config: {'pooling_method': 'weighted', 'use_class': False}.  Validation accuracy: 0.17777777777777778.
+2025-01-27 23:40:24,884 - INFO - Grid eval for classifiers: Running experiment with dataset: ReunionTurtles, model: megadescriptor, pooling method: weighted, use_class: False, learning rate: 5e-05, batch size: 16
+2025-01-27 23:40:25,589 - INFO - Training stopped at epoch 50 for config: {'pooling_method': 'weighted', 'use_class': False}.  Validation accuracy: 0.4.
+2025-01-27 23:40:25,589 - INFO - Grid eval for classifiers: Running experiment with dataset: ReunionTurtles, model: megadescriptor, pooling method: weighted, use_class: False, learning rate: 0.0001, batch size: 16
+2025-01-27 23:40:26,299 - INFO - Training stopped at epoch 50 for config: {'pooling_method': 'weighted', 'use_class': False}.  Validation accuracy: 0.4.
+2025-01-27 23:40:26,299 - INFO - Grid eval for classifiers: Running experiment with dataset: ReunionTurtles, model: megadescriptor, pooling method: weighted, use_class: False, learning rate: 0.0002, batch size: 16
+2025-01-27 23:40:27,021 - INFO - Training stopped at epoch 50 for config: {'pooling_method': 'weighted', 'use_class': False}.  Validation accuracy: 0.4444444444444444.
+2025-01-27 23:40:27,021 - INFO - Grid eval for classifiers: Running experiment with dataset: ReunionTurtles, model: megadescriptor, pooling method: weighted, use_class: False, learning rate: 0.0005, batch size: 16
+2025-01-27 23:40:27,739 - INFO - Training stopped at epoch 50 for config: {'pooling_method': 'weighted', 'use_class': False}.  Validation accuracy: 0.37777777777777777.
+2025-01-27 23:40:27,739 - INFO - Grid eval for classifiers: Running experiment with dataset: ReunionTurtles, model: megadescriptor, pooling method: weighted, use_class: False, learning rate: 0.001, batch size: 16
+2025-01-27 23:40:28,453 - INFO - Training stopped at epoch 50 for config: {'pooling_method': 'weighted', 'use_class': False}.  Validation accuracy: 0.4444444444444444.
+2025-01-27 23:40:28,454 - INFO - Grid eval for classifiers: Running experiment with dataset: ReunionTurtles, model: megadescriptor, pooling method: weighted, use_class: False, learning rate: 0.002, batch size: 16
+2025-01-27 23:40:28,583 - INFO - Training stopped at epoch 4 for config: {'pooling_method': 'weighted', 'use_class': False}.  Validation accuracy: 0.4222222222222222.
+2025-01-27 23:40:28,583 - INFO - Grid eval for classifiers: Running experiment with dataset: ReunionTurtles, model: megadescriptor, pooling method: weighted, use_class: False, learning rate: 0.005, batch size: 16
+2025-01-27 23:40:28,683 - INFO - Training stopped at epoch 2 for config: {'pooling_method': 'weighted', 'use_class': False}.  Validation accuracy: 0.37777777777777777.
+2025-01-27 23:40:28,683 - INFO - Grid eval for classifiers: Running experiment with dataset: ReunionTurtles, model: megadescriptor, pooling method: weighted, use_class: False, learning rate: 0.01, batch size: 16
+2025-01-27 23:40:28,784 - INFO - Training stopped at epoch 2 for config: {'pooling_method': 'weighted', 'use_class': False}.  Validation accuracy: 0.35555555555555557.
+2025-01-27 23:40:28,784 - INFO - Grid eval for classifiers: Running experiment with dataset: ReunionTurtles, model: megadescriptor, pooling method: weighted, use_class: False, learning rate: 0.02, batch size: 16
+2025-01-27 23:40:28,885 - INFO - Training stopped at epoch 2 for config: {'pooling_method': 'weighted', 'use_class': False}.  Validation accuracy: 0.26666666666666666.
+2025-01-27 23:40:28,885 - INFO - Grid eval for classifiers: Running experiment with dataset: ReunionTurtles, model: megadescriptor, pooling method: weighted, use_class: False, learning rate: 0.05, batch size: 16
+2025-01-27 23:40:28,985 - INFO - Training stopped at epoch 2 for config: {'pooling_method': 'weighted', 'use_class': False}.  Validation accuracy: 0.3111111111111111.
+2025-01-27 23:40:28,985 - INFO - Grid eval for classifiers: Running experiment with dataset: ReunionTurtles, model: megadescriptor, pooling method: weighted, use_class: False, learning rate: 0.1, batch size: 16
+2025-01-27 23:40:29,071 - INFO - Training stopped at epoch 1 for config: {'pooling_method': 'weighted', 'use_class': False}.  Validation accuracy: 0.3111111111111111.
+2025-01-27 23:40:29,071 - INFO - Grid eval for classifiers: Running experiment with dataset: ReunionTurtles, model: megadescriptor, pooling method: weighted, use_class: False, learning rate: 1e-05, batch size: 32
+2025-01-27 23:40:29,471 - INFO - Training stopped at epoch 50 for config: {'pooling_method': 'weighted', 'use_class': False}.  Validation accuracy: 0.06666666666666667.
+2025-01-27 23:40:29,471 - INFO - Grid eval for classifiers: Running experiment with dataset: ReunionTurtles, model: megadescriptor, pooling method: weighted, use_class: False, learning rate: 2e-05, batch size: 32
+2025-01-27 23:40:29,870 - INFO - Training stopped at epoch 50 for config: {'pooling_method': 'weighted', 'use_class': False}.  Validation accuracy: 0.13333333333333333.
+2025-01-27 23:40:29,870 - INFO - Grid eval for classifiers: Running experiment with dataset: ReunionTurtles, model: megadescriptor, pooling method: weighted, use_class: False, learning rate: 5e-05, batch size: 32
+2025-01-27 23:40:30,269 - INFO - Training stopped at epoch 50 for config: {'pooling_method': 'weighted', 'use_class': False}.  Validation accuracy: 0.3333333333333333.
+2025-01-27 23:40:30,269 - INFO - Grid eval for classifiers: Running experiment with dataset: ReunionTurtles, model: megadescriptor, pooling method: weighted, use_class: False, learning rate: 0.0001, batch size: 32
+2025-01-27 23:40:30,663 - INFO - Training stopped at epoch 50 for config: {'pooling_method': 'weighted', 'use_class': False}.  Validation accuracy: 0.35555555555555557.
+2025-01-27 23:40:30,663 - INFO - Grid eval for classifiers: Running experiment with dataset: ReunionTurtles, model: megadescriptor, pooling method: weighted, use_class: False, learning rate: 0.0002, batch size: 32
+2025-01-27 23:40:31,065 - INFO - Training stopped at epoch 50 for config: {'pooling_method': 'weighted', 'use_class': False}.  Validation accuracy: 0.4.
+2025-01-27 23:40:31,065 - INFO - Grid eval for classifiers: Running experiment with dataset: ReunionTurtles, model: megadescriptor, pooling method: weighted, use_class: False, learning rate: 0.0005, batch size: 32
+2025-01-27 23:40:31,468 - INFO - Training stopped at epoch 50 for config: {'pooling_method': 'weighted', 'use_class': False}.  Validation accuracy: 0.4444444444444444.
+2025-01-27 23:40:31,468 - INFO - Grid eval for classifiers: Running experiment with dataset: ReunionTurtles, model: megadescriptor, pooling method: weighted, use_class: False, learning rate: 0.001, batch size: 32
+2025-01-27 23:40:31,861 - INFO - Training stopped at epoch 50 for config: {'pooling_method': 'weighted', 'use_class': False}.  Validation accuracy: 0.5111111111111111.
+2025-01-27 23:40:31,861 - INFO - Grid eval for classifiers: Running experiment with dataset: ReunionTurtles, model: megadescriptor, pooling method: weighted, use_class: False, learning rate: 0.002, batch size: 32
+2025-01-27 23:40:32,090 - INFO - Training stopped at epoch 24 for config: {'pooling_method': 'weighted', 'use_class': False}.  Validation accuracy: 0.37777777777777777.
+2025-01-27 23:40:32,090 - INFO - Grid eval for classifiers: Running experiment with dataset: ReunionTurtles, model: megadescriptor, pooling method: weighted, use_class: False, learning rate: 0.005, batch size: 32
+2025-01-27 23:40:32,147 - INFO - Training stopped at epoch 2 for config: {'pooling_method': 'weighted', 'use_class': False}.  Validation accuracy: 0.4222222222222222.
+2025-01-27 23:40:32,147 - INFO - Grid eval for classifiers: Running experiment with dataset: ReunionTurtles, model: megadescriptor, pooling method: weighted, use_class: False, learning rate: 0.01, batch size: 32
+2025-01-27 23:40:32,204 - INFO - Training stopped at epoch 2 for config: {'pooling_method': 'weighted', 'use_class': False}.  Validation accuracy: 0.28888888888888886.
+2025-01-27 23:40:32,204 - INFO - Grid eval for classifiers: Running experiment with dataset: ReunionTurtles, model: megadescriptor, pooling method: weighted, use_class: False, learning rate: 0.02, batch size: 32
+2025-01-27 23:40:32,253 - INFO - Training stopped at epoch 1 for config: {'pooling_method': 'weighted', 'use_class': False}.  Validation accuracy: 0.37777777777777777.
+2025-01-27 23:40:32,253 - INFO - Grid eval for classifiers: Running experiment with dataset: ReunionTurtles, model: megadescriptor, pooling method: weighted, use_class: False, learning rate: 0.05, batch size: 32
+2025-01-27 23:40:32,310 - INFO - Training stopped at epoch 2 for config: {'pooling_method': 'weighted', 'use_class': False}.  Validation accuracy: 0.3333333333333333.
+2025-01-27 23:40:32,310 - INFO - Grid eval for classifiers: Running experiment with dataset: ReunionTurtles, model: megadescriptor, pooling method: weighted, use_class: False, learning rate: 0.1, batch size: 32
+2025-01-27 23:40:32,358 - INFO - Training stopped at epoch 1 for config: {'pooling_method': 'weighted', 'use_class': False}.  Validation accuracy: 0.28888888888888886.
+2025-01-27 23:40:32,359 - INFO - Grid eval for classifiers: Running experiment with dataset: ReunionTurtles, model: megadescriptor, pooling method: weighted, use_class: False, learning rate: 1e-05, batch size: 64
+2025-01-27 23:40:32,644 - INFO - Training stopped at epoch 50 for config: {'pooling_method': 'weighted', 'use_class': False}.  Validation accuracy: 0.06666666666666667.
+2025-01-27 23:40:32,644 - INFO - Grid eval for classifiers: Running experiment with dataset: ReunionTurtles, model: megadescriptor, pooling method: weighted, use_class: False, learning rate: 2e-05, batch size: 64
+2025-01-27 23:40:32,923 - INFO - Training stopped at epoch 50 for config: {'pooling_method': 'weighted', 'use_class': False}.  Validation accuracy: 0.06666666666666667.
+2025-01-27 23:40:32,923 - INFO - Grid eval for classifiers: Running experiment with dataset: ReunionTurtles, model: megadescriptor, pooling method: weighted, use_class: False, learning rate: 5e-05, batch size: 64
+2025-01-27 23:40:33,204 - INFO - Training stopped at epoch 50 for config: {'pooling_method': 'weighted', 'use_class': False}.  Validation accuracy: 0.2222222222222222.
+2025-01-27 23:40:33,204 - INFO - Grid eval for classifiers: Running experiment with dataset: ReunionTurtles, model: megadescriptor, pooling method: weighted, use_class: False, learning rate: 0.0001, batch size: 64
+2025-01-27 23:40:33,484 - INFO - Training stopped at epoch 50 for config: {'pooling_method': 'weighted', 'use_class': False}.  Validation accuracy: 0.4666666666666667.
+2025-01-27 23:40:33,484 - INFO - Grid eval for classifiers: Running experiment with dataset: ReunionTurtles, model: megadescriptor, pooling method: weighted, use_class: False, learning rate: 0.0002, batch size: 64
+2025-01-27 23:40:33,763 - INFO - Training stopped at epoch 50 for config: {'pooling_method': 'weighted', 'use_class': False}.  Validation accuracy: 0.4.
+2025-01-27 23:40:33,763 - INFO - Grid eval for classifiers: Running experiment with dataset: ReunionTurtles, model: megadescriptor, pooling method: weighted, use_class: False, learning rate: 0.0005, batch size: 64
+2025-01-27 23:40:34,043 - INFO - Training stopped at epoch 50 for config: {'pooling_method': 'weighted', 'use_class': False}.  Validation accuracy: 0.4.
+2025-01-27 23:40:34,043 - INFO - Grid eval for classifiers: Running experiment with dataset: ReunionTurtles, model: megadescriptor, pooling method: weighted, use_class: False, learning rate: 0.001, batch size: 64
+2025-01-27 23:40:34,156 - INFO - Training stopped at epoch 15 for config: {'pooling_method': 'weighted', 'use_class': False}.  Validation accuracy: 0.4666666666666667.
+2025-01-27 23:40:34,156 - INFO - Grid eval for classifiers: Running experiment with dataset: ReunionTurtles, model: megadescriptor, pooling method: weighted, use_class: False, learning rate: 0.002, batch size: 64
+2025-01-27 23:40:34,225 - INFO - Training stopped at epoch 7 for config: {'pooling_method': 'weighted', 'use_class': False}.  Validation accuracy: 0.4666666666666667.
+2025-01-27 23:40:34,225 - INFO - Grid eval for classifiers: Running experiment with dataset: ReunionTurtles, model: megadescriptor, pooling method: weighted, use_class: False, learning rate: 0.005, batch size: 64
+2025-01-27 23:40:34,265 - INFO - Training stopped at epoch 2 for config: {'pooling_method': 'weighted', 'use_class': False}.  Validation accuracy: 0.3333333333333333.
+2025-01-27 23:40:34,265 - INFO - Grid eval for classifiers: Running experiment with dataset: ReunionTurtles, model: megadescriptor, pooling method: weighted, use_class: False, learning rate: 0.01, batch size: 64
+2025-01-27 23:40:34,300 - INFO - Training stopped at epoch 1 for config: {'pooling_method': 'weighted', 'use_class': False}.  Validation accuracy: 0.4.
+2025-01-27 23:40:34,300 - INFO - Grid eval for classifiers: Running experiment with dataset: ReunionTurtles, model: megadescriptor, pooling method: weighted, use_class: False, learning rate: 0.02, batch size: 64
+2025-01-27 23:40:34,340 - INFO - Training stopped at epoch 2 for config: {'pooling_method': 'weighted', 'use_class': False}.  Validation accuracy: 0.4222222222222222.
+2025-01-27 23:40:34,340 - INFO - Grid eval for classifiers: Running experiment with dataset: ReunionTurtles, model: megadescriptor, pooling method: weighted, use_class: False, learning rate: 0.05, batch size: 64
+2025-01-27 23:40:34,375 - INFO - Training stopped at epoch 1 for config: {'pooling_method': 'weighted', 'use_class': False}.  Validation accuracy: 0.4222222222222222.
+2025-01-27 23:40:34,375 - INFO - Grid eval for classifiers: Running experiment with dataset: ReunionTurtles, model: megadescriptor, pooling method: weighted, use_class: False, learning rate: 0.1, batch size: 64
+2025-01-27 23:40:34,415 - INFO - Training stopped at epoch 2 for config: {'pooling_method': 'weighted', 'use_class': False}.  Validation accuracy: 0.3333333333333333.
+2025-01-27 23:40:34,415 - INFO - Grid eval for classifiers: Running experiment with dataset: ReunionTurtles, model: megadescriptor, pooling method: weighted, use_class: False, learning rate: 1e-05, batch size: 128
+2025-01-27 23:40:34,684 - INFO - Training stopped at epoch 50 for config: {'pooling_method': 'weighted', 'use_class': False}.  Validation accuracy: 0.06666666666666667.
+2025-01-27 23:40:34,684 - INFO - Grid eval for classifiers: Running experiment with dataset: ReunionTurtles, model: megadescriptor, pooling method: weighted, use_class: False, learning rate: 2e-05, batch size: 128
+2025-01-27 23:40:34,949 - INFO - Training stopped at epoch 50 for config: {'pooling_method': 'weighted', 'use_class': False}.  Validation accuracy: 0.06666666666666667.
+2025-01-27 23:40:34,949 - INFO - Grid eval for classifiers: Running experiment with dataset: ReunionTurtles, model: megadescriptor, pooling method: weighted, use_class: False, learning rate: 5e-05, batch size: 128
+2025-01-27 23:40:35,216 - INFO - Training stopped at epoch 50 for config: {'pooling_method': 'weighted', 'use_class': False}.  Validation accuracy: 0.13333333333333333.
+2025-01-27 23:40:35,216 - INFO - Grid eval for classifiers: Running experiment with dataset: ReunionTurtles, model: megadescriptor, pooling method: weighted, use_class: False, learning rate: 0.0001, batch size: 128
+2025-01-27 23:40:35,482 - INFO - Training stopped at epoch 50 for config: {'pooling_method': 'weighted', 'use_class': False}.  Validation accuracy: 0.26666666666666666.
+2025-01-27 23:40:35,482 - INFO - Grid eval for classifiers: Running experiment with dataset: ReunionTurtles, model: megadescriptor, pooling method: weighted, use_class: False, learning rate: 0.0002, batch size: 128
+2025-01-27 23:40:35,747 - INFO - Training stopped at epoch 50 for config: {'pooling_method': 'weighted', 'use_class': False}.  Validation accuracy: 0.4666666666666667.
+2025-01-27 23:40:35,747 - INFO - Grid eval for classifiers: Running experiment with dataset: ReunionTurtles, model: megadescriptor, pooling method: weighted, use_class: False, learning rate: 0.0005, batch size: 128
+2025-01-27 23:40:35,923 - INFO - Training stopped at epoch 28 for config: {'pooling_method': 'weighted', 'use_class': False}.  Validation accuracy: 0.4444444444444444.
+2025-01-27 23:40:35,923 - INFO - Grid eval for classifiers: Running experiment with dataset: ReunionTurtles, model: megadescriptor, pooling method: weighted, use_class: False, learning rate: 0.001, batch size: 128
+2025-01-27 23:40:36,046 - INFO - Training stopped at epoch 18 for config: {'pooling_method': 'weighted', 'use_class': False}.  Validation accuracy: 0.4222222222222222.
+2025-01-27 23:40:36,046 - INFO - Grid eval for classifiers: Running experiment with dataset: ReunionTurtles, model: megadescriptor, pooling method: weighted, use_class: False, learning rate: 0.002, batch size: 128
+2025-01-27 23:40:36,121 - INFO - Training stopped at epoch 9 for config: {'pooling_method': 'weighted', 'use_class': False}.  Validation accuracy: 0.4444444444444444.
+2025-01-27 23:40:36,121 - INFO - Grid eval for classifiers: Running experiment with dataset: ReunionTurtles, model: megadescriptor, pooling method: weighted, use_class: False, learning rate: 0.005, batch size: 128
+2025-01-27 23:40:36,165 - INFO - Training stopped at epoch 3 for config: {'pooling_method': 'weighted', 'use_class': False}.  Validation accuracy: 0.4222222222222222.
+2025-01-27 23:40:36,165 - INFO - Grid eval for classifiers: Running experiment with dataset: ReunionTurtles, model: megadescriptor, pooling method: weighted, use_class: False, learning rate: 0.01, batch size: 128
+2025-01-27 23:40:36,204 - INFO - Training stopped at epoch 2 for config: {'pooling_method': 'weighted', 'use_class': False}.  Validation accuracy: 0.4444444444444444.
+2025-01-27 23:40:36,204 - INFO - Grid eval for classifiers: Running experiment with dataset: ReunionTurtles, model: megadescriptor, pooling method: weighted, use_class: False, learning rate: 0.02, batch size: 128
+2025-01-27 23:40:36,237 - INFO - Training stopped at epoch 1 for config: {'pooling_method': 'weighted', 'use_class': False}.  Validation accuracy: 0.37777777777777777.
+2025-01-27 23:40:36,237 - INFO - Grid eval for classifiers: Running experiment with dataset: ReunionTurtles, model: megadescriptor, pooling method: weighted, use_class: False, learning rate: 0.05, batch size: 128
+2025-01-27 23:40:36,270 - INFO - Training stopped at epoch 1 for config: {'pooling_method': 'weighted', 'use_class': False}.  Validation accuracy: 0.35555555555555557.
+2025-01-27 23:40:36,270 - INFO - Grid eval for classifiers: Running experiment with dataset: ReunionTurtles, model: megadescriptor, pooling method: weighted, use_class: False, learning rate: 0.1, batch size: 128
+2025-01-27 23:40:36,303 - INFO - Training stopped at epoch 1 for config: {'pooling_method': 'weighted', 'use_class': False}.  Validation accuracy: 0.3333333333333333.
+2025-01-27 23:40:36,303 - INFO - Best results for dataset ReunionTurtles and weighted pooling method: {
+    "dataset": "ReunionTurtles",
+    "pooling_method": "weighted",
+    "batch_size": 32,
+    "learning_rate": 0.001,
+    "best_epoch": 50,
+    "best_val_acc": 0.5111111111111111
+}
+2025-01-27 23:40:36,412 - INFO - /home/avisund/data/wildlife_datasets/SouthernProvinceTurtles/
+2025-01-27 23:40:36,417 - INFO - Dataset SouthernProvinceTurtles loaded successfully
+2025-01-27 23:40:36,422 - INFO - Dataset split successfully
+2025-01-27 23:40:36,425 - INFO - Dataloaders created successfully
+2025-01-27 23:40:38,022 - INFO - Loading pretrained weights from Hugging Face hub (BVRA/MegaDescriptor-L-384)
+2025-01-27 23:40:38,929 - INFO - Feature extractor loaded successfully
+2025-01-27 23:41:06,072 - INFO - Embeddings computed successfully
+2025-01-27 23:41:06,073 - INFO - Grid eval for classifiers: Running experiment with dataset: SouthernProvinceTurtles, model: megadescriptor, pooling method: weighted, use_class: False, learning rate: 1e-05, batch size: 8
+2025-01-27 23:41:08,374 - INFO - Training stopped at epoch 50 for config: {'pooling_method': 'weighted', 'use_class': False}.  Validation accuracy: 0.5866666666666667.
+2025-01-27 23:41:08,374 - INFO - Grid eval for classifiers: Running experiment with dataset: SouthernProvinceTurtles, model: megadescriptor, pooling method: weighted, use_class: False, learning rate: 2e-05, batch size: 8
+2025-01-27 23:41:10,693 - INFO - Training stopped at epoch 50 for config: {'pooling_method': 'weighted', 'use_class': False}.  Validation accuracy: 0.6666666666666666.
+2025-01-27 23:41:10,693 - INFO - Grid eval for classifiers: Running experiment with dataset: SouthernProvinceTurtles, model: megadescriptor, pooling method: weighted, use_class: False, learning rate: 5e-05, batch size: 8
+2025-01-27 23:41:12,992 - INFO - Training stopped at epoch 50 for config: {'pooling_method': 'weighted', 'use_class': False}.  Validation accuracy: 0.7733333333333333.
+2025-01-27 23:41:12,992 - INFO - Grid eval for classifiers: Running experiment with dataset: SouthernProvinceTurtles, model: megadescriptor, pooling method: weighted, use_class: False, learning rate: 0.0001, batch size: 8
+2025-01-27 23:41:15,311 - INFO - Training stopped at epoch 50 for config: {'pooling_method': 'weighted', 'use_class': False}.  Validation accuracy: 0.76.
+2025-01-27 23:41:15,311 - INFO - Grid eval for classifiers: Running experiment with dataset: SouthernProvinceTurtles, model: megadescriptor, pooling method: weighted, use_class: False, learning rate: 0.0002, batch size: 8
+2025-01-27 23:41:17,634 - INFO - Training stopped at epoch 50 for config: {'pooling_method': 'weighted', 'use_class': False}.  Validation accuracy: 0.8133333333333334.
+2025-01-27 23:41:17,635 - INFO - Grid eval for classifiers: Running experiment with dataset: SouthernProvinceTurtles, model: megadescriptor, pooling method: weighted, use_class: False, learning rate: 0.0005, batch size: 8
+2025-01-27 23:41:19,583 - INFO - Training stopped at epoch 38 for config: {'pooling_method': 'weighted', 'use_class': False}.  Validation accuracy: 0.7866666666666666.
+2025-01-27 23:41:19,583 - INFO - Grid eval for classifiers: Running experiment with dataset: SouthernProvinceTurtles, model: megadescriptor, pooling method: weighted, use_class: False, learning rate: 0.001, batch size: 8
+2025-01-27 23:41:20,464 - INFO - Training stopped at epoch 14 for config: {'pooling_method': 'weighted', 'use_class': False}.  Validation accuracy: 0.8133333333333334.
+2025-01-27 23:41:20,464 - INFO - Grid eval for classifiers: Running experiment with dataset: SouthernProvinceTurtles, model: megadescriptor, pooling method: weighted, use_class: False, learning rate: 0.002, batch size: 8
+2025-01-27 23:41:22,281 - INFO - Training stopped at epoch 35 for config: {'pooling_method': 'weighted', 'use_class': False}.  Validation accuracy: 0.7733333333333333.
+2025-01-27 23:41:22,281 - INFO - Grid eval for classifiers: Running experiment with dataset: SouthernProvinceTurtles, model: megadescriptor, pooling method: weighted, use_class: False, learning rate: 0.005, batch size: 8
+2025-01-27 23:41:22,603 - INFO - Training stopped at epoch 2 for config: {'pooling_method': 'weighted', 'use_class': False}.  Validation accuracy: 0.7333333333333333.
+2025-01-27 23:41:22,603 - INFO - Grid eval for classifiers: Running experiment with dataset: SouthernProvinceTurtles, model: megadescriptor, pooling method: weighted, use_class: False, learning rate: 0.01, batch size: 8
+2025-01-27 23:41:22,970 - INFO - Training stopped at epoch 3 for config: {'pooling_method': 'weighted', 'use_class': False}.  Validation accuracy: 0.7066666666666667.
+2025-01-27 23:41:22,970 - INFO - Grid eval for classifiers: Running experiment with dataset: SouthernProvinceTurtles, model: megadescriptor, pooling method: weighted, use_class: False, learning rate: 0.02, batch size: 8
+2025-01-27 23:41:23,298 - INFO - Training stopped at epoch 2 for config: {'pooling_method': 'weighted', 'use_class': False}.  Validation accuracy: 0.72.
+2025-01-27 23:41:23,299 - INFO - Grid eval for classifiers: Running experiment with dataset: SouthernProvinceTurtles, model: megadescriptor, pooling method: weighted, use_class: False, learning rate: 0.05, batch size: 8
+2025-01-27 23:41:23,583 - INFO - Training stopped at epoch 1 for config: {'pooling_method': 'weighted', 'use_class': False}.  Validation accuracy: 0.6666666666666666.
+2025-01-27 23:41:23,583 - INFO - Grid eval for classifiers: Running experiment with dataset: SouthernProvinceTurtles, model: megadescriptor, pooling method: weighted, use_class: False, learning rate: 0.1, batch size: 8
+2025-01-27 23:41:23,952 - INFO - Training stopped at epoch 3 for config: {'pooling_method': 'weighted', 'use_class': False}.  Validation accuracy: 0.6533333333333333.
+2025-01-27 23:41:23,952 - INFO - Grid eval for classifiers: Running experiment with dataset: SouthernProvinceTurtles, model: megadescriptor, pooling method: weighted, use_class: False, learning rate: 1e-05, batch size: 16
+2025-01-27 23:41:25,152 - INFO - Training stopped at epoch 50 for config: {'pooling_method': 'weighted', 'use_class': False}.  Validation accuracy: 0.56.
+2025-01-27 23:41:25,152 - INFO - Grid eval for classifiers: Running experiment with dataset: SouthernProvinceTurtles, model: megadescriptor, pooling method: weighted, use_class: False, learning rate: 2e-05, batch size: 16
+2025-01-27 23:41:26,332 - INFO - Training stopped at epoch 50 for config: {'pooling_method': 'weighted', 'use_class': False}.  Validation accuracy: 0.6666666666666666.
+2025-01-27 23:41:26,332 - INFO - Grid eval for classifiers: Running experiment with dataset: SouthernProvinceTurtles, model: megadescriptor, pooling method: weighted, use_class: False, learning rate: 5e-05, batch size: 16
+2025-01-27 23:41:27,510 - INFO - Training stopped at epoch 50 for config: {'pooling_method': 'weighted', 'use_class': False}.  Validation accuracy: 0.76.
+2025-01-27 23:41:27,510 - INFO - Grid eval for classifiers: Running experiment with dataset: SouthernProvinceTurtles, model: megadescriptor, pooling method: weighted, use_class: False, learning rate: 0.0001, batch size: 16
+2025-01-27 23:41:28,688 - INFO - Training stopped at epoch 50 for config: {'pooling_method': 'weighted', 'use_class': False}.  Validation accuracy: 0.7466666666666667.
+2025-01-27 23:41:28,688 - INFO - Grid eval for classifiers: Running experiment with dataset: SouthernProvinceTurtles, model: megadescriptor, pooling method: weighted, use_class: False, learning rate: 0.0002, batch size: 16
+2025-01-27 23:41:29,854 - INFO - Training stopped at epoch 50 for config: {'pooling_method': 'weighted', 'use_class': False}.  Validation accuracy: 0.7733333333333333.
+2025-01-27 23:41:29,854 - INFO - Grid eval for classifiers: Running experiment with dataset: SouthernProvinceTurtles, model: megadescriptor, pooling method: weighted, use_class: False, learning rate: 0.0005, batch size: 16
+2025-01-27 23:41:31,050 - INFO - Training stopped at epoch 45 for config: {'pooling_method': 'weighted', 'use_class': False}.  Validation accuracy: 0.8.
+2025-01-27 23:41:31,050 - INFO - Grid eval for classifiers: Running experiment with dataset: SouthernProvinceTurtles, model: megadescriptor, pooling method: weighted, use_class: False, learning rate: 0.001, batch size: 16
+2025-01-27 23:41:31,536 - INFO - Training stopped at epoch 15 for config: {'pooling_method': 'weighted', 'use_class': False}.  Validation accuracy: 0.7866666666666666.
+2025-01-27 23:41:31,536 - INFO - Grid eval for classifiers: Running experiment with dataset: SouthernProvinceTurtles, model: megadescriptor, pooling method: weighted, use_class: False, learning rate: 0.002, batch size: 16
+2025-01-27 23:41:32,245 - INFO - Training stopped at epoch 25 for config: {'pooling_method': 'weighted', 'use_class': False}.  Validation accuracy: 0.7733333333333333.
+2025-01-27 23:41:32,245 - INFO - Grid eval for classifiers: Running experiment with dataset: SouthernProvinceTurtles, model: megadescriptor, pooling method: weighted, use_class: False, learning rate: 0.005, batch size: 16
+2025-01-27 23:41:32,435 - INFO - Training stopped at epoch 3 for config: {'pooling_method': 'weighted', 'use_class': False}.  Validation accuracy: 0.72.
+2025-01-27 23:41:32,435 - INFO - Grid eval for classifiers: Running experiment with dataset: SouthernProvinceTurtles, model: megadescriptor, pooling method: weighted, use_class: False, learning rate: 0.01, batch size: 16
+2025-01-27 23:41:32,600 - INFO - Training stopped at epoch 2 for config: {'pooling_method': 'weighted', 'use_class': False}.  Validation accuracy: 0.76.
+2025-01-27 23:41:32,600 - INFO - Grid eval for classifiers: Running experiment with dataset: SouthernProvinceTurtles, model: megadescriptor, pooling method: weighted, use_class: False, learning rate: 0.02, batch size: 16
+2025-01-27 23:41:32,766 - INFO - Training stopped at epoch 2 for config: {'pooling_method': 'weighted', 'use_class': False}.  Validation accuracy: 0.68.
+2025-01-27 23:41:32,766 - INFO - Grid eval for classifiers: Running experiment with dataset: SouthernProvinceTurtles, model: megadescriptor, pooling method: weighted, use_class: False, learning rate: 0.05, batch size: 16
+2025-01-27 23:41:32,932 - INFO - Training stopped at epoch 2 for config: {'pooling_method': 'weighted', 'use_class': False}.  Validation accuracy: 0.6933333333333334.
+2025-01-27 23:41:32,932 - INFO - Grid eval for classifiers: Running experiment with dataset: SouthernProvinceTurtles, model: megadescriptor, pooling method: weighted, use_class: False, learning rate: 0.1, batch size: 16
+2025-01-27 23:41:34,089 - INFO - Training stopped at epoch 50 for config: {'pooling_method': 'weighted', 'use_class': False}.  Validation accuracy: 0.6933333333333334.
+2025-01-27 23:41:34,090 - INFO - Grid eval for classifiers: Running experiment with dataset: SouthernProvinceTurtles, model: megadescriptor, pooling method: weighted, use_class: False, learning rate: 1e-05, batch size: 32
+2025-01-27 23:41:34,743 - INFO - Training stopped at epoch 50 for config: {'pooling_method': 'weighted', 'use_class': False}.  Validation accuracy: 0.4266666666666667.
+2025-01-27 23:41:34,743 - INFO - Grid eval for classifiers: Running experiment with dataset: SouthernProvinceTurtles, model: megadescriptor, pooling method: weighted, use_class: False, learning rate: 2e-05, batch size: 32
+2025-01-27 23:41:35,405 - INFO - Training stopped at epoch 50 for config: {'pooling_method': 'weighted', 'use_class': False}.  Validation accuracy: 0.5733333333333334.
+2025-01-27 23:41:35,405 - INFO - Grid eval for classifiers: Running experiment with dataset: SouthernProvinceTurtles, model: megadescriptor, pooling method: weighted, use_class: False, learning rate: 5e-05, batch size: 32
+2025-01-27 23:41:36,057 - INFO - Training stopped at epoch 50 for config: {'pooling_method': 'weighted', 'use_class': False}.  Validation accuracy: 0.7866666666666666.
+2025-01-27 23:41:36,057 - INFO - Grid eval for classifiers: Running experiment with dataset: SouthernProvinceTurtles, model: megadescriptor, pooling method: weighted, use_class: False, learning rate: 0.0001, batch size: 32
+2025-01-27 23:41:36,713 - INFO - Training stopped at epoch 50 for config: {'pooling_method': 'weighted', 'use_class': False}.  Validation accuracy: 0.76.
+2025-01-27 23:41:36,713 - INFO - Grid eval for classifiers: Running experiment with dataset: SouthernProvinceTurtles, model: megadescriptor, pooling method: weighted, use_class: False, learning rate: 0.0002, batch size: 32
+2025-01-27 23:41:37,378 - INFO - Training stopped at epoch 50 for config: {'pooling_method': 'weighted', 'use_class': False}.  Validation accuracy: 0.7733333333333333.
+2025-01-27 23:41:37,378 - INFO - Grid eval for classifiers: Running experiment with dataset: SouthernProvinceTurtles, model: megadescriptor, pooling method: weighted, use_class: False, learning rate: 0.0005, batch size: 32
+2025-01-27 23:41:38,043 - INFO - Training stopped at epoch 50 for config: {'pooling_method': 'weighted', 'use_class': False}.  Validation accuracy: 0.8133333333333334.
+2025-01-27 23:41:38,043 - INFO - Grid eval for classifiers: Running experiment with dataset: SouthernProvinceTurtles, model: megadescriptor, pooling method: weighted, use_class: False, learning rate: 0.001, batch size: 32
+2025-01-27 23:41:38,468 - INFO - Training stopped at epoch 27 for config: {'pooling_method': 'weighted', 'use_class': False}.  Validation accuracy: 0.76.
+2025-01-27 23:41:38,468 - INFO - Grid eval for classifiers: Running experiment with dataset: SouthernProvinceTurtles, model: megadescriptor, pooling method: weighted, use_class: False, learning rate: 0.002, batch size: 32
+2025-01-27 23:41:38,588 - INFO - Training stopped at epoch 4 for config: {'pooling_method': 'weighted', 'use_class': False}.  Validation accuracy: 0.76.
+2025-01-27 23:41:38,588 - INFO - Grid eval for classifiers: Running experiment with dataset: SouthernProvinceTurtles, model: megadescriptor, pooling method: weighted, use_class: False, learning rate: 0.005, batch size: 32
+2025-01-27 23:41:38,748 - INFO - Training stopped at epoch 7 for config: {'pooling_method': 'weighted', 'use_class': False}.  Validation accuracy: 0.7866666666666666.
+2025-01-27 23:41:38,748 - INFO - Grid eval for classifiers: Running experiment with dataset: SouthernProvinceTurtles, model: megadescriptor, pooling method: weighted, use_class: False, learning rate: 0.01, batch size: 32
+2025-01-27 23:41:38,842 - INFO - Training stopped at epoch 2 for config: {'pooling_method': 'weighted', 'use_class': False}.  Validation accuracy: 0.6666666666666666.
+2025-01-27 23:41:38,842 - INFO - Grid eval for classifiers: Running experiment with dataset: SouthernProvinceTurtles, model: megadescriptor, pooling method: weighted, use_class: False, learning rate: 0.02, batch size: 32
+2025-01-27 23:41:38,990 - INFO - Training stopped at epoch 6 for config: {'pooling_method': 'weighted', 'use_class': False}.  Validation accuracy: 0.7466666666666667.
+2025-01-27 23:41:38,990 - INFO - Grid eval for classifiers: Running experiment with dataset: SouthernProvinceTurtles, model: megadescriptor, pooling method: weighted, use_class: False, learning rate: 0.05, batch size: 32
+2025-01-27 23:41:39,085 - INFO - Training stopped at epoch 2 for config: {'pooling_method': 'weighted', 'use_class': False}.  Validation accuracy: 0.7066666666666667.
+2025-01-27 23:41:39,085 - INFO - Grid eval for classifiers: Running experiment with dataset: SouthernProvinceTurtles, model: megadescriptor, pooling method: weighted, use_class: False, learning rate: 0.1, batch size: 32
+2025-01-27 23:41:39,166 - INFO - Training stopped at epoch 1 for config: {'pooling_method': 'weighted', 'use_class': False}.  Validation accuracy: 0.6133333333333333.
+2025-01-27 23:41:39,167 - INFO - Grid eval for classifiers: Running experiment with dataset: SouthernProvinceTurtles, model: megadescriptor, pooling method: weighted, use_class: False, learning rate: 1e-05, batch size: 64
+2025-01-27 23:41:39,642 - INFO - Training stopped at epoch 50 for config: {'pooling_method': 'weighted', 'use_class': False}.  Validation accuracy: 0.3333333333333333.
+2025-01-27 23:41:39,642 - INFO - Grid eval for classifiers: Running experiment with dataset: SouthernProvinceTurtles, model: megadescriptor, pooling method: weighted, use_class: False, learning rate: 2e-05, batch size: 64
+2025-01-27 23:41:40,112 - INFO - Training stopped at epoch 50 for config: {'pooling_method': 'weighted', 'use_class': False}.  Validation accuracy: 0.56.
+2025-01-27 23:41:40,113 - INFO - Grid eval for classifiers: Running experiment with dataset: SouthernProvinceTurtles, model: megadescriptor, pooling method: weighted, use_class: False, learning rate: 5e-05, batch size: 64
+2025-01-27 23:41:40,580 - INFO - Training stopped at epoch 50 for config: {'pooling_method': 'weighted', 'use_class': False}.  Validation accuracy: 0.6933333333333334.
+2025-01-27 23:41:40,580 - INFO - Grid eval for classifiers: Running experiment with dataset: SouthernProvinceTurtles, model: megadescriptor, pooling method: weighted, use_class: False, learning rate: 0.0001, batch size: 64
+2025-01-27 23:41:41,049 - INFO - Training stopped at epoch 50 for config: {'pooling_method': 'weighted', 'use_class': False}.  Validation accuracy: 0.72.
+2025-01-27 23:41:41,049 - INFO - Grid eval for classifiers: Running experiment with dataset: SouthernProvinceTurtles, model: megadescriptor, pooling method: weighted, use_class: False, learning rate: 0.0002, batch size: 64
+2025-01-27 23:41:41,517 - INFO - Training stopped at epoch 50 for config: {'pooling_method': 'weighted', 'use_class': False}.  Validation accuracy: 0.8.
+2025-01-27 23:41:41,517 - INFO - Grid eval for classifiers: Running experiment with dataset: SouthernProvinceTurtles, model: megadescriptor, pooling method: weighted, use_class: False, learning rate: 0.0005, batch size: 64
+2025-01-27 23:41:41,987 - INFO - Training stopped at epoch 50 for config: {'pooling_method': 'weighted', 'use_class': False}.  Validation accuracy: 0.7866666666666666.
+2025-01-27 23:41:41,987 - INFO - Grid eval for classifiers: Running experiment with dataset: SouthernProvinceTurtles, model: megadescriptor, pooling method: weighted, use_class: False, learning rate: 0.001, batch size: 64
+2025-01-27 23:41:42,215 - INFO - Training stopped at epoch 19 for config: {'pooling_method': 'weighted', 'use_class': False}.  Validation accuracy: 0.7866666666666666.
+2025-01-27 23:41:42,215 - INFO - Grid eval for classifiers: Running experiment with dataset: SouthernProvinceTurtles, model: megadescriptor, pooling method: weighted, use_class: False, learning rate: 0.002, batch size: 64
+2025-01-27 23:41:42,319 - INFO - Training stopped at epoch 6 for config: {'pooling_method': 'weighted', 'use_class': False}.  Validation accuracy: 0.7733333333333333.
+2025-01-27 23:41:42,319 - INFO - Grid eval for classifiers: Running experiment with dataset: SouthernProvinceTurtles, model: megadescriptor, pooling method: weighted, use_class: False, learning rate: 0.005, batch size: 64
+2025-01-27 23:41:42,394 - INFO - Training stopped at epoch 3 for config: {'pooling_method': 'weighted', 'use_class': False}.  Validation accuracy: 0.7333333333333333.
+2025-01-27 23:41:42,395 - INFO - Grid eval for classifiers: Running experiment with dataset: SouthernProvinceTurtles, model: megadescriptor, pooling method: weighted, use_class: False, learning rate: 0.01, batch size: 64
+2025-01-27 23:41:42,472 - INFO - Training stopped at epoch 3 for config: {'pooling_method': 'weighted', 'use_class': False}.  Validation accuracy: 0.7466666666666667.
+2025-01-27 23:41:42,472 - INFO - Grid eval for classifiers: Running experiment with dataset: SouthernProvinceTurtles, model: megadescriptor, pooling method: weighted, use_class: False, learning rate: 0.02, batch size: 64
+2025-01-27 23:41:42,530 - INFO - Training stopped at epoch 1 for config: {'pooling_method': 'weighted', 'use_class': False}.  Validation accuracy: 0.7066666666666667.
+2025-01-27 23:41:42,530 - INFO - Grid eval for classifiers: Running experiment with dataset: SouthernProvinceTurtles, model: megadescriptor, pooling method: weighted, use_class: False, learning rate: 0.05, batch size: 64
+2025-01-27 23:41:42,596 - INFO - Training stopped at epoch 2 for config: {'pooling_method': 'weighted', 'use_class': False}.  Validation accuracy: 0.6933333333333334.
+2025-01-27 23:41:42,596 - INFO - Grid eval for classifiers: Running experiment with dataset: SouthernProvinceTurtles, model: megadescriptor, pooling method: weighted, use_class: False, learning rate: 0.1, batch size: 64
+2025-01-27 23:41:42,747 - INFO - Training stopped at epoch 11 for config: {'pooling_method': 'weighted', 'use_class': False}.  Validation accuracy: 0.7466666666666667.
+2025-01-27 23:41:42,747 - INFO - Grid eval for classifiers: Running experiment with dataset: SouthernProvinceTurtles, model: megadescriptor, pooling method: weighted, use_class: False, learning rate: 1e-05, batch size: 128
+2025-01-27 23:41:43,179 - INFO - Training stopped at epoch 50 for config: {'pooling_method': 'weighted', 'use_class': False}.  Validation accuracy: 0.32.
+2025-01-27 23:41:43,179 - INFO - Grid eval for classifiers: Running experiment with dataset: SouthernProvinceTurtles, model: megadescriptor, pooling method: weighted, use_class: False, learning rate: 2e-05, batch size: 128
+2025-01-27 23:41:43,607 - INFO - Training stopped at epoch 50 for config: {'pooling_method': 'weighted', 'use_class': False}.  Validation accuracy: 0.41333333333333333.
+2025-01-27 23:41:43,607 - INFO - Grid eval for classifiers: Running experiment with dataset: SouthernProvinceTurtles, model: megadescriptor, pooling method: weighted, use_class: False, learning rate: 5e-05, batch size: 128
+2025-01-27 23:41:44,036 - INFO - Training stopped at epoch 50 for config: {'pooling_method': 'weighted', 'use_class': False}.  Validation accuracy: 0.5466666666666666.
+2025-01-27 23:41:44,036 - INFO - Grid eval for classifiers: Running experiment with dataset: SouthernProvinceTurtles, model: megadescriptor, pooling method: weighted, use_class: False, learning rate: 0.0001, batch size: 128
+2025-01-27 23:41:44,466 - INFO - Training stopped at epoch 50 for config: {'pooling_method': 'weighted', 'use_class': False}.  Validation accuracy: 0.6666666666666666.
+2025-01-27 23:41:44,466 - INFO - Grid eval for classifiers: Running experiment with dataset: SouthernProvinceTurtles, model: megadescriptor, pooling method: weighted, use_class: False, learning rate: 0.0002, batch size: 128
+2025-01-27 23:41:44,895 - INFO - Training stopped at epoch 50 for config: {'pooling_method': 'weighted', 'use_class': False}.  Validation accuracy: 0.7333333333333333.
+2025-01-27 23:41:44,895 - INFO - Grid eval for classifiers: Running experiment with dataset: SouthernProvinceTurtles, model: megadescriptor, pooling method: weighted, use_class: False, learning rate: 0.0005, batch size: 128
+2025-01-27 23:41:45,325 - INFO - Training stopped at epoch 50 for config: {'pooling_method': 'weighted', 'use_class': False}.  Validation accuracy: 0.7866666666666666.
+2025-01-27 23:41:45,325 - INFO - Grid eval for classifiers: Running experiment with dataset: SouthernProvinceTurtles, model: megadescriptor, pooling method: weighted, use_class: False, learning rate: 0.001, batch size: 128
+2025-01-27 23:41:45,754 - INFO - Training stopped at epoch 50 for config: {'pooling_method': 'weighted', 'use_class': False}.  Validation accuracy: 0.8133333333333334.
+2025-01-27 23:41:45,755 - INFO - Grid eval for classifiers: Running experiment with dataset: SouthernProvinceTurtles, model: megadescriptor, pooling method: weighted, use_class: False, learning rate: 0.002, batch size: 128
+2025-01-27 23:41:45,858 - INFO - Training stopped at epoch 7 for config: {'pooling_method': 'weighted', 'use_class': False}.  Validation accuracy: 0.7733333333333333.
+2025-01-27 23:41:45,859 - INFO - Grid eval for classifiers: Running experiment with dataset: SouthernProvinceTurtles, model: megadescriptor, pooling method: weighted, use_class: False, learning rate: 0.005, batch size: 128
+2025-01-27 23:41:45,920 - INFO - Training stopped at epoch 2 for config: {'pooling_method': 'weighted', 'use_class': False}.  Validation accuracy: 0.7466666666666667.
+2025-01-27 23:41:45,920 - INFO - Grid eval for classifiers: Running experiment with dataset: SouthernProvinceTurtles, model: megadescriptor, pooling method: weighted, use_class: False, learning rate: 0.01, batch size: 128
+2025-01-27 23:41:45,981 - INFO - Training stopped at epoch 2 for config: {'pooling_method': 'weighted', 'use_class': False}.  Validation accuracy: 0.7333333333333333.
+2025-01-27 23:41:45,981 - INFO - Grid eval for classifiers: Running experiment with dataset: SouthernProvinceTurtles, model: megadescriptor, pooling method: weighted, use_class: False, learning rate: 0.02, batch size: 128
+2025-01-27 23:41:46,035 - INFO - Training stopped at epoch 1 for config: {'pooling_method': 'weighted', 'use_class': False}.  Validation accuracy: 0.68.
+2025-01-27 23:41:46,035 - INFO - Grid eval for classifiers: Running experiment with dataset: SouthernProvinceTurtles, model: megadescriptor, pooling method: weighted, use_class: False, learning rate: 0.05, batch size: 128
+2025-01-27 23:41:46,087 - INFO - Training stopped at epoch 1 for config: {'pooling_method': 'weighted', 'use_class': False}.  Validation accuracy: 0.6533333333333333.
+2025-01-27 23:41:46,088 - INFO - Grid eval for classifiers: Running experiment with dataset: SouthernProvinceTurtles, model: megadescriptor, pooling method: weighted, use_class: False, learning rate: 0.1, batch size: 128
+2025-01-27 23:41:46,157 - INFO - Training stopped at epoch 3 for config: {'pooling_method': 'weighted', 'use_class': False}.  Validation accuracy: 0.6933333333333334.
+2025-01-27 23:41:46,158 - INFO - Best results for dataset SouthernProvinceTurtles and weighted pooling method: {
+    "dataset": "SouthernProvinceTurtles",
+    "pooling_method": "weighted",
+    "batch_size": 8,
+    "learning_rate": 0.0002,
+    "best_epoch": 50,
+    "best_val_acc": 0.8133333333333334
+}
+2025-01-27 23:41:46,272 - INFO - /home/avisund/data/wildlife_datasets/SeaStarReID2023/
+2025-01-27 23:41:46,307 - INFO - Dataset SeaStarReID2023 loaded successfully
+2025-01-27 23:41:46,316 - INFO - Dataset split successfully
+2025-01-27 23:41:46,320 - INFO - Dataloaders created successfully
+2025-01-27 23:41:48,005 - INFO - Loading pretrained weights from Hugging Face hub (BVRA/MegaDescriptor-L-384)
+2025-01-27 23:41:48,963 - INFO - Feature extractor loaded successfully
+2025-01-27 23:45:03,926 - INFO - Embeddings computed successfully
+2025-01-27 23:45:03,930 - INFO - Grid eval for classifiers: Running experiment with dataset: SeaStarReID2023, model: megadescriptor, pooling method: weighted, use_class: False, learning rate: 1e-05, batch size: 8
+2025-01-27 23:45:14,457 - INFO - Training stopped at epoch 50 for config: {'pooling_method': 'weighted', 'use_class': False}.  Validation accuracy: 0.7350427350427351.
+2025-01-27 23:45:14,457 - INFO - Grid eval for classifiers: Running experiment with dataset: SeaStarReID2023, model: megadescriptor, pooling method: weighted, use_class: False, learning rate: 2e-05, batch size: 8
+2025-01-27 23:45:24,424 - INFO - Training stopped at epoch 50 for config: {'pooling_method': 'weighted', 'use_class': False}.  Validation accuracy: 0.7720797720797721.
+2025-01-27 23:45:24,424 - INFO - Grid eval for classifiers: Running experiment with dataset: SeaStarReID2023, model: megadescriptor, pooling method: weighted, use_class: False, learning rate: 5e-05, batch size: 8
+2025-01-27 23:45:33,751 - INFO - Training stopped at epoch 50 for config: {'pooling_method': 'weighted', 'use_class': False}.  Validation accuracy: 0.7834757834757835.
+2025-01-27 23:45:33,751 - INFO - Grid eval for classifiers: Running experiment with dataset: SeaStarReID2023, model: megadescriptor, pooling method: weighted, use_class: False, learning rate: 0.0001, batch size: 8
+2025-01-27 23:45:42,212 - INFO - Training stopped at epoch 42 for config: {'pooling_method': 'weighted', 'use_class': False}.  Validation accuracy: 0.7777777777777778.
+2025-01-27 23:45:42,212 - INFO - Grid eval for classifiers: Running experiment with dataset: SeaStarReID2023, model: megadescriptor, pooling method: weighted, use_class: False, learning rate: 0.0002, batch size: 8
+2025-01-27 23:45:47,319 - INFO - Training stopped at epoch 23 for config: {'pooling_method': 'weighted', 'use_class': False}.  Validation accuracy: 0.7863247863247863.
+2025-01-27 23:45:47,319 - INFO - Grid eval for classifiers: Running experiment with dataset: SeaStarReID2023, model: megadescriptor, pooling method: weighted, use_class: False, learning rate: 0.0005, batch size: 8
+2025-01-27 23:45:50,302 - INFO - Training stopped at epoch 10 for config: {'pooling_method': 'weighted', 'use_class': False}.  Validation accuracy: 0.8148148148148148.
+2025-01-27 23:45:50,302 - INFO - Grid eval for classifiers: Running experiment with dataset: SeaStarReID2023, model: megadescriptor, pooling method: weighted, use_class: False, learning rate: 0.001, batch size: 8
+2025-01-27 23:45:52,483 - INFO - Training stopped at epoch 6 for config: {'pooling_method': 'weighted', 'use_class': False}.  Validation accuracy: 0.8290598290598291.
+2025-01-27 23:45:52,483 - INFO - Grid eval for classifiers: Running experiment with dataset: SeaStarReID2023, model: megadescriptor, pooling method: weighted, use_class: False, learning rate: 0.002, batch size: 8
+2025-01-27 23:45:55,059 - INFO - Training stopped at epoch 8 for config: {'pooling_method': 'weighted', 'use_class': False}.  Validation accuracy: 0.8376068376068376.
+2025-01-27 23:45:55,059 - INFO - Grid eval for classifiers: Running experiment with dataset: SeaStarReID2023, model: megadescriptor, pooling method: weighted, use_class: False, learning rate: 0.005, batch size: 8
+2025-01-27 23:45:57,436 - INFO - Training stopped at epoch 7 for config: {'pooling_method': 'weighted', 'use_class': False}.  Validation accuracy: 0.8319088319088319.
+2025-01-27 23:45:57,436 - INFO - Grid eval for classifiers: Running experiment with dataset: SeaStarReID2023, model: megadescriptor, pooling method: weighted, use_class: False, learning rate: 0.01, batch size: 8
+2025-01-27 23:45:59,415 - INFO - Training stopped at epoch 5 for config: {'pooling_method': 'weighted', 'use_class': False}.  Validation accuracy: 0.8262108262108262.
+2025-01-27 23:45:59,415 - INFO - Grid eval for classifiers: Running experiment with dataset: SeaStarReID2023, model: megadescriptor, pooling method: weighted, use_class: False, learning rate: 0.02, batch size: 8
+2025-01-27 23:46:01,679 - INFO - Training stopped at epoch 7 for config: {'pooling_method': 'weighted', 'use_class': False}.  Validation accuracy: 0.8148148148148148.
+2025-01-27 23:46:01,679 - INFO - Grid eval for classifiers: Running experiment with dataset: SeaStarReID2023, model: megadescriptor, pooling method: weighted, use_class: False, learning rate: 0.05, batch size: 8
+2025-01-27 23:46:03,301 - INFO - Training stopped at epoch 4 for config: {'pooling_method': 'weighted', 'use_class': False}.  Validation accuracy: 0.7264957264957265.
+2025-01-27 23:46:03,301 - INFO - Grid eval for classifiers: Running experiment with dataset: SeaStarReID2023, model: megadescriptor, pooling method: weighted, use_class: False, learning rate: 0.1, batch size: 8
+2025-01-27 23:46:04,563 - INFO - Training stopped at epoch 2 for config: {'pooling_method': 'weighted', 'use_class': False}.  Validation accuracy: 0.6552706552706553.
+2025-01-27 23:46:04,563 - INFO - Grid eval for classifiers: Running experiment with dataset: SeaStarReID2023, model: megadescriptor, pooling method: weighted, use_class: False, learning rate: 1e-05, batch size: 16
+2025-01-27 23:46:09,161 - INFO - Training stopped at epoch 50 for config: {'pooling_method': 'weighted', 'use_class': False}.  Validation accuracy: 0.698005698005698.
+2025-01-27 23:46:09,161 - INFO - Grid eval for classifiers: Running experiment with dataset: SeaStarReID2023, model: megadescriptor, pooling method: weighted, use_class: False, learning rate: 2e-05, batch size: 16
+2025-01-27 23:46:14,138 - INFO - Training stopped at epoch 50 for config: {'pooling_method': 'weighted', 'use_class': False}.  Validation accuracy: 0.7635327635327636.
+2025-01-27 23:46:14,138 - INFO - Grid eval for classifiers: Running experiment with dataset: SeaStarReID2023, model: megadescriptor, pooling method: weighted, use_class: False, learning rate: 5e-05, batch size: 16
+2025-01-27 23:46:19,166 - INFO - Training stopped at epoch 50 for config: {'pooling_method': 'weighted', 'use_class': False}.  Validation accuracy: 0.7863247863247863.
+2025-01-27 23:46:19,166 - INFO - Grid eval for classifiers: Running experiment with dataset: SeaStarReID2023, model: megadescriptor, pooling method: weighted, use_class: False, learning rate: 0.0001, batch size: 16
+2025-01-27 23:46:23,844 - INFO - Training stopped at epoch 50 for config: {'pooling_method': 'weighted', 'use_class': False}.  Validation accuracy: 0.7863247863247863.
+2025-01-27 23:46:23,844 - INFO - Grid eval for classifiers: Running experiment with dataset: SeaStarReID2023, model: megadescriptor, pooling method: weighted, use_class: False, learning rate: 0.0002, batch size: 16
+2025-01-27 23:46:28,373 - INFO - Training stopped at epoch 41 for config: {'pooling_method': 'weighted', 'use_class': False}.  Validation accuracy: 0.7720797720797721.
+2025-01-27 23:46:28,373 - INFO - Grid eval for classifiers: Running experiment with dataset: SeaStarReID2023, model: megadescriptor, pooling method: weighted, use_class: False, learning rate: 0.0005, batch size: 16
+2025-01-27 23:46:30,485 - INFO - Training stopped at epoch 16 for config: {'pooling_method': 'weighted', 'use_class': False}.  Validation accuracy: 0.811965811965812.
+2025-01-27 23:46:30,485 - INFO - Grid eval for classifiers: Running experiment with dataset: SeaStarReID2023, model: megadescriptor, pooling method: weighted, use_class: False, learning rate: 0.001, batch size: 16
+2025-01-27 23:46:31,793 - INFO - Training stopped at epoch 8 for config: {'pooling_method': 'weighted', 'use_class': False}.  Validation accuracy: 0.8091168091168092.
+2025-01-27 23:46:31,793 - INFO - Grid eval for classifiers: Running experiment with dataset: SeaStarReID2023, model: megadescriptor, pooling method: weighted, use_class: False, learning rate: 0.002, batch size: 16
+2025-01-27 23:46:33,000 - INFO - Training stopped at epoch 7 for config: {'pooling_method': 'weighted', 'use_class': False}.  Validation accuracy: 0.8376068376068376.
+2025-01-27 23:46:33,000 - INFO - Grid eval for classifiers: Running experiment with dataset: SeaStarReID2023, model: megadescriptor, pooling method: weighted, use_class: False, learning rate: 0.005, batch size: 16
+2025-01-27 23:46:33,905 - INFO - Training stopped at epoch 4 for config: {'pooling_method': 'weighted', 'use_class': False}.  Validation accuracy: 0.8262108262108262.
+2025-01-27 23:46:33,906 - INFO - Grid eval for classifiers: Running experiment with dataset: SeaStarReID2023, model: megadescriptor, pooling method: weighted, use_class: False, learning rate: 0.01, batch size: 16
+2025-01-27 23:46:35,012 - INFO - Training stopped at epoch 6 for config: {'pooling_method': 'weighted', 'use_class': False}.  Validation accuracy: 0.8319088319088319.
+2025-01-27 23:46:35,012 - INFO - Grid eval for classifiers: Running experiment with dataset: SeaStarReID2023, model: megadescriptor, pooling method: weighted, use_class: False, learning rate: 0.02, batch size: 16
+2025-01-27 23:46:36,119 - INFO - Training stopped at epoch 6 for config: {'pooling_method': 'weighted', 'use_class': False}.  Validation accuracy: 0.8433048433048433.
+2025-01-27 23:46:36,119 - INFO - Grid eval for classifiers: Running experiment with dataset: SeaStarReID2023, model: megadescriptor, pooling method: weighted, use_class: False, learning rate: 0.05, batch size: 16
+2025-01-27 23:46:37,427 - INFO - Training stopped at epoch 8 for config: {'pooling_method': 'weighted', 'use_class': False}.  Validation accuracy: 0.7863247863247863.
+2025-01-27 23:46:37,427 - INFO - Grid eval for classifiers: Running experiment with dataset: SeaStarReID2023, model: megadescriptor, pooling method: weighted, use_class: False, learning rate: 0.1, batch size: 16
+2025-01-27 23:46:39,141 - INFO - Training stopped at epoch 12 for config: {'pooling_method': 'weighted', 'use_class': False}.  Validation accuracy: 0.8005698005698005.
+2025-01-27 23:46:39,141 - INFO - Grid eval for classifiers: Running experiment with dataset: SeaStarReID2023, model: megadescriptor, pooling method: weighted, use_class: False, learning rate: 1e-05, batch size: 32
+2025-01-27 23:46:41,720 - INFO - Training stopped at epoch 50 for config: {'pooling_method': 'weighted', 'use_class': False}.  Validation accuracy: 0.6353276353276354.
+2025-01-27 23:46:41,720 - INFO - Grid eval for classifiers: Running experiment with dataset: SeaStarReID2023, model: megadescriptor, pooling method: weighted, use_class: False, learning rate: 2e-05, batch size: 32
+2025-01-27 23:46:44,221 - INFO - Training stopped at epoch 50 for config: {'pooling_method': 'weighted', 'use_class': False}.  Validation accuracy: 0.7321937321937322.
+2025-01-27 23:46:44,221 - INFO - Grid eval for classifiers: Running experiment with dataset: SeaStarReID2023, model: megadescriptor, pooling method: weighted, use_class: False, learning rate: 5e-05, batch size: 32
+2025-01-27 23:46:46,724 - INFO - Training stopped at epoch 50 for config: {'pooling_method': 'weighted', 'use_class': False}.  Validation accuracy: 0.7777777777777778.
+2025-01-27 23:46:46,724 - INFO - Grid eval for classifiers: Running experiment with dataset: SeaStarReID2023, model: megadescriptor, pooling method: weighted, use_class: False, learning rate: 0.0001, batch size: 32
+2025-01-27 23:46:49,229 - INFO - Training stopped at epoch 50 for config: {'pooling_method': 'weighted', 'use_class': False}.  Validation accuracy: 0.7891737891737892.
+2025-01-27 23:46:49,229 - INFO - Grid eval for classifiers: Running experiment with dataset: SeaStarReID2023, model: megadescriptor, pooling method: weighted, use_class: False, learning rate: 0.0002, batch size: 32
+2025-01-27 23:46:51,734 - INFO - Training stopped at epoch 50 for config: {'pooling_method': 'weighted', 'use_class': False}.  Validation accuracy: 0.7777777777777778.
+2025-01-27 23:46:51,734 - INFO - Grid eval for classifiers: Running experiment with dataset: SeaStarReID2023, model: megadescriptor, pooling method: weighted, use_class: False, learning rate: 0.0005, batch size: 32
+2025-01-27 23:46:53,489 - INFO - Training stopped at epoch 29 for config: {'pooling_method': 'weighted', 'use_class': False}.  Validation accuracy: 0.8005698005698005.
+2025-01-27 23:46:53,489 - INFO - Grid eval for classifiers: Running experiment with dataset: SeaStarReID2023, model: megadescriptor, pooling method: weighted, use_class: False, learning rate: 0.001, batch size: 32
+2025-01-27 23:46:54,550 - INFO - Training stopped at epoch 16 for config: {'pooling_method': 'weighted', 'use_class': False}.  Validation accuracy: 0.8091168091168092.
+2025-01-27 23:46:54,550 - INFO - Grid eval for classifiers: Running experiment with dataset: SeaStarReID2023, model: megadescriptor, pooling method: weighted, use_class: False, learning rate: 0.002, batch size: 32
+2025-01-27 23:46:55,103 - INFO - Training stopped at epoch 6 for config: {'pooling_method': 'weighted', 'use_class': False}.  Validation accuracy: 0.8233618233618234.
+2025-01-27 23:46:55,103 - INFO - Grid eval for classifiers: Running experiment with dataset: SeaStarReID2023, model: megadescriptor, pooling method: weighted, use_class: False, learning rate: 0.005, batch size: 32
+2025-01-27 23:46:56,247 - INFO - Training stopped at epoch 17 for config: {'pooling_method': 'weighted', 'use_class': False}.  Validation accuracy: 0.8290598290598291.
+2025-01-27 23:46:56,247 - INFO - Grid eval for classifiers: Running experiment with dataset: SeaStarReID2023, model: megadescriptor, pooling method: weighted, use_class: False, learning rate: 0.01, batch size: 32
+2025-01-27 23:46:57,179 - INFO - Training stopped at epoch 12 for config: {'pooling_method': 'weighted', 'use_class': False}.  Validation accuracy: 0.8205128205128205.
+2025-01-27 23:46:57,179 - INFO - Grid eval for classifiers: Running experiment with dataset: SeaStarReID2023, model: megadescriptor, pooling method: weighted, use_class: False, learning rate: 0.02, batch size: 32
+2025-01-27 23:46:57,728 - INFO - Training stopped at epoch 5 for config: {'pooling_method': 'weighted', 'use_class': False}.  Validation accuracy: 0.8319088319088319.
+2025-01-27 23:46:57,728 - INFO - Grid eval for classifiers: Running experiment with dataset: SeaStarReID2023, model: megadescriptor, pooling method: weighted, use_class: False, learning rate: 0.05, batch size: 32
+2025-01-27 23:46:58,387 - INFO - Training stopped at epoch 7 for config: {'pooling_method': 'weighted', 'use_class': False}.  Validation accuracy: 0.8005698005698005.
+2025-01-27 23:46:58,387 - INFO - Grid eval for classifiers: Running experiment with dataset: SeaStarReID2023, model: megadescriptor, pooling method: weighted, use_class: False, learning rate: 0.1, batch size: 32
+2025-01-27 23:46:59,159 - INFO - Training stopped at epoch 9 for config: {'pooling_method': 'weighted', 'use_class': False}.  Validation accuracy: 0.8347578347578347.
+2025-01-27 23:46:59,160 - INFO - Grid eval for classifiers: Running experiment with dataset: SeaStarReID2023, model: megadescriptor, pooling method: weighted, use_class: False, learning rate: 1e-05, batch size: 64
+2025-01-27 23:47:01,304 - INFO - Training stopped at epoch 50 for config: {'pooling_method': 'weighted', 'use_class': False}.  Validation accuracy: 0.5783475783475783.
+2025-01-27 23:47:01,304 - INFO - Grid eval for classifiers: Running experiment with dataset: SeaStarReID2023, model: megadescriptor, pooling method: weighted, use_class: False, learning rate: 2e-05, batch size: 64
+2025-01-27 23:47:03,444 - INFO - Training stopped at epoch 50 for config: {'pooling_method': 'weighted', 'use_class': False}.  Validation accuracy: 0.7094017094017094.
+2025-01-27 23:47:03,444 - INFO - Grid eval for classifiers: Running experiment with dataset: SeaStarReID2023, model: megadescriptor, pooling method: weighted, use_class: False, learning rate: 5e-05, batch size: 64
+2025-01-27 23:47:05,584 - INFO - Training stopped at epoch 50 for config: {'pooling_method': 'weighted', 'use_class': False}.  Validation accuracy: 0.7777777777777778.
+2025-01-27 23:47:05,584 - INFO - Grid eval for classifiers: Running experiment with dataset: SeaStarReID2023, model: megadescriptor, pooling method: weighted, use_class: False, learning rate: 0.0001, batch size: 64
+2025-01-27 23:47:07,729 - INFO - Training stopped at epoch 50 for config: {'pooling_method': 'weighted', 'use_class': False}.  Validation accuracy: 0.792022792022792.
+2025-01-27 23:47:07,730 - INFO - Grid eval for classifiers: Running experiment with dataset: SeaStarReID2023, model: megadescriptor, pooling method: weighted, use_class: False, learning rate: 0.0002, batch size: 64
+2025-01-27 23:47:09,877 - INFO - Training stopped at epoch 50 for config: {'pooling_method': 'weighted', 'use_class': False}.  Validation accuracy: 0.8034188034188035.
+2025-01-27 23:47:09,877 - INFO - Grid eval for classifiers: Running experiment with dataset: SeaStarReID2023, model: megadescriptor, pooling method: weighted, use_class: False, learning rate: 0.0005, batch size: 64
+2025-01-27 23:47:11,980 - INFO - Training stopped at epoch 44 for config: {'pooling_method': 'weighted', 'use_class': False}.  Validation accuracy: 0.792022792022792.
+2025-01-27 23:47:11,980 - INFO - Grid eval for classifiers: Running experiment with dataset: SeaStarReID2023, model: megadescriptor, pooling method: weighted, use_class: False, learning rate: 0.001, batch size: 64
+2025-01-27 23:47:12,969 - INFO - Training stopped at epoch 18 for config: {'pooling_method': 'weighted', 'use_class': False}.  Validation accuracy: 0.8034188034188035.
+2025-01-27 23:47:12,969 - INFO - Grid eval for classifiers: Running experiment with dataset: SeaStarReID2023, model: megadescriptor, pooling method: weighted, use_class: False, learning rate: 0.002, batch size: 64
+2025-01-27 23:47:13,442 - INFO - Training stopped at epoch 6 for config: {'pooling_method': 'weighted', 'use_class': False}.  Validation accuracy: 0.8262108262108262.
+2025-01-27 23:47:13,442 - INFO - Grid eval for classifiers: Running experiment with dataset: SeaStarReID2023, model: megadescriptor, pooling method: weighted, use_class: False, learning rate: 0.005, batch size: 64
+2025-01-27 23:47:14,516 - INFO - Training stopped at epoch 20 for config: {'pooling_method': 'weighted', 'use_class': False}.  Validation accuracy: 0.8262108262108262.
+2025-01-27 23:47:14,516 - INFO - Grid eval for classifiers: Running experiment with dataset: SeaStarReID2023, model: megadescriptor, pooling method: weighted, use_class: False, learning rate: 0.01, batch size: 64
+2025-01-27 23:47:15,161 - INFO - Training stopped at epoch 10 for config: {'pooling_method': 'weighted', 'use_class': False}.  Validation accuracy: 0.8005698005698005.
+2025-01-27 23:47:15,161 - INFO - Grid eval for classifiers: Running experiment with dataset: SeaStarReID2023, model: megadescriptor, pooling method: weighted, use_class: False, learning rate: 0.02, batch size: 64
+2025-01-27 23:47:15,678 - INFO - Training stopped at epoch 7 for config: {'pooling_method': 'weighted', 'use_class': False}.  Validation accuracy: 0.8233618233618234.
+2025-01-27 23:47:15,678 - INFO - Grid eval for classifiers: Running experiment with dataset: SeaStarReID2023, model: megadescriptor, pooling method: weighted, use_class: False, learning rate: 0.05, batch size: 64
+2025-01-27 23:47:16,280 - INFO - Training stopped at epoch 9 for config: {'pooling_method': 'weighted', 'use_class': False}.  Validation accuracy: 0.8347578347578347.
+2025-01-27 23:47:16,280 - INFO - Grid eval for classifiers: Running experiment with dataset: SeaStarReID2023, model: megadescriptor, pooling method: weighted, use_class: False, learning rate: 0.1, batch size: 64
+2025-01-27 23:47:17,141 - INFO - Training stopped at epoch 15 for config: {'pooling_method': 'weighted', 'use_class': False}.  Validation accuracy: 0.8205128205128205.
+2025-01-27 23:47:17,141 - INFO - Grid eval for classifiers: Running experiment with dataset: SeaStarReID2023, model: megadescriptor, pooling method: weighted, use_class: False, learning rate: 1e-05, batch size: 128
+2025-01-27 23:47:19,110 - INFO - Training stopped at epoch 50 for config: {'pooling_method': 'weighted', 'use_class': False}.  Validation accuracy: 0.4017094017094017.
+2025-01-27 23:47:19,110 - INFO - Grid eval for classifiers: Running experiment with dataset: SeaStarReID2023, model: megadescriptor, pooling method: weighted, use_class: False, learning rate: 2e-05, batch size: 128
+2025-01-27 23:47:21,074 - INFO - Training stopped at epoch 50 for config: {'pooling_method': 'weighted', 'use_class': False}.  Validation accuracy: 0.6182336182336182.
+2025-01-27 23:47:21,074 - INFO - Grid eval for classifiers: Running experiment with dataset: SeaStarReID2023, model: megadescriptor, pooling method: weighted, use_class: False, learning rate: 5e-05, batch size: 128
+2025-01-27 23:47:23,038 - INFO - Training stopped at epoch 50 for config: {'pooling_method': 'weighted', 'use_class': False}.  Validation accuracy: 0.7777777777777778.
+2025-01-27 23:47:23,038 - INFO - Grid eval for classifiers: Running experiment with dataset: SeaStarReID2023, model: megadescriptor, pooling method: weighted, use_class: False, learning rate: 0.0001, batch size: 128
+2025-01-27 23:47:25,002 - INFO - Training stopped at epoch 50 for config: {'pooling_method': 'weighted', 'use_class': False}.  Validation accuracy: 0.792022792022792.
+2025-01-27 23:47:25,002 - INFO - Grid eval for classifiers: Running experiment with dataset: SeaStarReID2023, model: megadescriptor, pooling method: weighted, use_class: False, learning rate: 0.0002, batch size: 128
+2025-01-27 23:47:26,967 - INFO - Training stopped at epoch 50 for config: {'pooling_method': 'weighted', 'use_class': False}.  Validation accuracy: 0.7891737891737892.
+2025-01-27 23:47:26,967 - INFO - Grid eval for classifiers: Running experiment with dataset: SeaStarReID2023, model: megadescriptor, pooling method: weighted, use_class: False, learning rate: 0.0005, batch size: 128
+2025-01-27 23:47:28,932 - INFO - Training stopped at epoch 50 for config: {'pooling_method': 'weighted', 'use_class': False}.  Validation accuracy: 0.8034188034188035.
+2025-01-27 23:47:28,932 - INFO - Grid eval for classifiers: Running experiment with dataset: SeaStarReID2023, model: megadescriptor, pooling method: weighted, use_class: False, learning rate: 0.001, batch size: 128
+2025-01-27 23:47:30,425 - INFO - Training stopped at epoch 33 for config: {'pooling_method': 'weighted', 'use_class': False}.  Validation accuracy: 0.811965811965812.
+2025-01-27 23:47:30,426 - INFO - Grid eval for classifiers: Running experiment with dataset: SeaStarReID2023, model: megadescriptor, pooling method: weighted, use_class: False, learning rate: 0.002, batch size: 128
+2025-01-27 23:47:30,898 - INFO - Training stopped at epoch 7 for config: {'pooling_method': 'weighted', 'use_class': False}.  Validation accuracy: 0.8062678062678063.
+2025-01-27 23:47:30,898 - INFO - Grid eval for classifiers: Running experiment with dataset: SeaStarReID2023, model: megadescriptor, pooling method: weighted, use_class: False, learning rate: 0.005, batch size: 128
+2025-01-27 23:47:31,686 - INFO - Training stopped at epoch 15 for config: {'pooling_method': 'weighted', 'use_class': False}.  Validation accuracy: 0.8376068376068376.
+2025-01-27 23:47:31,686 - INFO - Grid eval for classifiers: Running experiment with dataset: SeaStarReID2023, model: megadescriptor, pooling method: weighted, use_class: False, learning rate: 0.01, batch size: 128
+2025-01-27 23:47:32,748 - INFO - Training stopped at epoch 22 for config: {'pooling_method': 'weighted', 'use_class': False}.  Validation accuracy: 0.7977207977207977.
+2025-01-27 23:47:32,748 - INFO - Grid eval for classifiers: Running experiment with dataset: SeaStarReID2023, model: megadescriptor, pooling method: weighted, use_class: False, learning rate: 0.02, batch size: 128
+2025-01-27 23:47:33,222 - INFO - Training stopped at epoch 7 for config: {'pooling_method': 'weighted', 'use_class': False}.  Validation accuracy: 0.8091168091168092.
+2025-01-27 23:47:33,222 - INFO - Grid eval for classifiers: Running experiment with dataset: SeaStarReID2023, model: megadescriptor, pooling method: weighted, use_class: False, learning rate: 0.05, batch size: 128
+2025-01-27 23:47:33,773 - INFO - Training stopped at epoch 9 for config: {'pooling_method': 'weighted', 'use_class': False}.  Validation accuracy: 0.8262108262108262.
+2025-01-27 23:47:33,773 - INFO - Grid eval for classifiers: Running experiment with dataset: SeaStarReID2023, model: megadescriptor, pooling method: weighted, use_class: False, learning rate: 0.1, batch size: 128
+2025-01-27 23:47:34,483 - INFO - Training stopped at epoch 13 for config: {'pooling_method': 'weighted', 'use_class': False}.  Validation accuracy: 0.8319088319088319.
+2025-01-27 23:47:34,483 - INFO - Best results for dataset SeaStarReID2023 and weighted pooling method: {
+    "dataset": "SeaStarReID2023",
+    "pooling_method": "weighted",
+    "batch_size": 16,
+    "learning_rate": 0.02,
+    "best_epoch": 6,
+    "best_val_acc": 0.8433048433048433
+}
+2025-01-27 23:47:34,603 - INFO - /home/avisund/data/wildlife_datasets/SeaTurtleIDHeads/
+2025-01-27 23:47:34,677 - INFO - Dataset SeaTurtleIDHeads loaded successfully
+2025-01-27 23:47:34,716 - INFO - Dataset split successfully
+2025-01-27 23:47:34,722 - INFO - Dataloaders created successfully
+2025-01-27 23:47:36,353 - INFO - Loading pretrained weights from Hugging Face hub (BVRA/MegaDescriptor-L-384)
+2025-01-27 23:47:37,231 - INFO - Feature extractor loaded successfully
+2025-01-27 23:54:57,595 - INFO - Embeddings computed successfully
+2025-01-27 23:54:57,609 - INFO - Grid eval for classifiers: Running experiment with dataset: SeaTurtleIDHeads, model: megadescriptor, pooling method: weighted, use_class: False, learning rate: 1e-05, batch size: 8
+2025-01-27 23:55:33,216 - INFO - Training stopped at epoch 50 for config: {'pooling_method': 'weighted', 'use_class': False}.  Validation accuracy: 0.9609634551495017.
+2025-01-27 23:55:33,216 - INFO - Grid eval for classifiers: Running experiment with dataset: SeaTurtleIDHeads, model: megadescriptor, pooling method: weighted, use_class: False, learning rate: 2e-05, batch size: 8
+2025-01-27 23:55:59,273 - INFO - Training stopped at epoch 32 for config: {'pooling_method': 'weighted', 'use_class': False}.  Validation accuracy: 0.9593023255813954.
+2025-01-27 23:55:59,273 - INFO - Grid eval for classifiers: Running experiment with dataset: SeaTurtleIDHeads, model: megadescriptor, pooling method: weighted, use_class: False, learning rate: 5e-05, batch size: 8
+2025-01-27 23:56:17,522 - INFO - Training stopped at epoch 21 for config: {'pooling_method': 'weighted', 'use_class': False}.  Validation accuracy: 0.9617940199335548.
+2025-01-27 23:56:17,522 - INFO - Grid eval for classifiers: Running experiment with dataset: SeaTurtleIDHeads, model: megadescriptor, pooling method: weighted, use_class: False, learning rate: 0.0001, batch size: 8
+2025-01-27 23:56:30,768 - INFO - Training stopped at epoch 16 for config: {'pooling_method': 'weighted', 'use_class': False}.  Validation accuracy: 0.9593023255813954.
+2025-01-27 23:56:30,768 - INFO - Grid eval for classifiers: Running experiment with dataset: SeaTurtleIDHeads, model: megadescriptor, pooling method: weighted, use_class: False, learning rate: 0.0002, batch size: 8
+2025-01-27 23:56:42,521 - INFO - Training stopped at epoch 12 for config: {'pooling_method': 'weighted', 'use_class': False}.  Validation accuracy: 0.9617940199335548.
+2025-01-27 23:56:42,521 - INFO - Grid eval for classifiers: Running experiment with dataset: SeaTurtleIDHeads, model: megadescriptor, pooling method: weighted, use_class: False, learning rate: 0.0005, batch size: 8
+2025-01-27 23:56:50,122 - INFO - Training stopped at epoch 6 for config: {'pooling_method': 'weighted', 'use_class': False}.  Validation accuracy: 0.9659468438538206.
+2025-01-27 23:56:50,122 - INFO - Grid eval for classifiers: Running experiment with dataset: SeaTurtleIDHeads, model: megadescriptor, pooling method: weighted, use_class: False, learning rate: 0.001, batch size: 8
+2025-01-27 23:56:57,723 - INFO - Training stopped at epoch 6 for config: {'pooling_method': 'weighted', 'use_class': False}.  Validation accuracy: 0.9626245847176079.
+2025-01-27 23:56:57,723 - INFO - Grid eval for classifiers: Running experiment with dataset: SeaTurtleIDHeads, model: megadescriptor, pooling method: weighted, use_class: False, learning rate: 0.002, batch size: 8
+2025-01-27 23:57:02,560 - INFO - Training stopped at epoch 2 for config: {'pooling_method': 'weighted', 'use_class': False}.  Validation accuracy: 0.9526578073089701.
+2025-01-27 23:57:02,560 - INFO - Grid eval for classifiers: Running experiment with dataset: SeaTurtleIDHeads, model: megadescriptor, pooling method: weighted, use_class: False, learning rate: 0.005, batch size: 8
+2025-01-27 23:57:06,702 - INFO - Training stopped at epoch 1 for config: {'pooling_method': 'weighted', 'use_class': False}.  Validation accuracy: 0.9485049833887044.
+2025-01-27 23:57:06,702 - INFO - Grid eval for classifiers: Running experiment with dataset: SeaTurtleIDHeads, model: megadescriptor, pooling method: weighted, use_class: False, learning rate: 0.01, batch size: 8
+2025-01-27 23:57:11,533 - INFO - Training stopped at epoch 2 for config: {'pooling_method': 'weighted', 'use_class': False}.  Validation accuracy: 0.9435215946843853.
+2025-01-27 23:57:11,533 - INFO - Grid eval for classifiers: Running experiment with dataset: SeaTurtleIDHeads, model: megadescriptor, pooling method: weighted, use_class: False, learning rate: 0.02, batch size: 8
+2025-01-27 23:57:17,100 - INFO - Training stopped at epoch 3 for config: {'pooling_method': 'weighted', 'use_class': False}.  Validation accuracy: 0.9318936877076412.
+2025-01-27 23:57:17,100 - INFO - Grid eval for classifiers: Running experiment with dataset: SeaTurtleIDHeads, model: megadescriptor, pooling method: weighted, use_class: False, learning rate: 0.05, batch size: 8
+2025-01-27 23:57:21,243 - INFO - Training stopped at epoch 1 for config: {'pooling_method': 'weighted', 'use_class': False}.  Validation accuracy: 0.9086378737541528.
+2025-01-27 23:57:21,243 - INFO - Grid eval for classifiers: Running experiment with dataset: SeaTurtleIDHeads, model: megadescriptor, pooling method: weighted, use_class: False, learning rate: 0.1, batch size: 8
+2025-01-27 23:57:27,529 - INFO - Training stopped at epoch 4 for config: {'pooling_method': 'weighted', 'use_class': False}.  Validation accuracy: 0.9177740863787376.
+2025-01-27 23:57:27,529 - INFO - Grid eval for classifiers: Running experiment with dataset: SeaTurtleIDHeads, model: megadescriptor, pooling method: weighted, use_class: False, learning rate: 1e-05, batch size: 16
+2025-01-27 23:57:46,197 - INFO - Training stopped at epoch 50 for config: {'pooling_method': 'weighted', 'use_class': False}.  Validation accuracy: 0.9593023255813954.
+2025-01-27 23:57:46,198 - INFO - Grid eval for classifiers: Running experiment with dataset: SeaTurtleIDHeads, model: megadescriptor, pooling method: weighted, use_class: False, learning rate: 2e-05, batch size: 16
+2025-01-27 23:58:04,876 - INFO - Training stopped at epoch 50 for config: {'pooling_method': 'weighted', 'use_class': False}.  Validation accuracy: 0.9617940199335548.
+2025-01-27 23:58:04,876 - INFO - Grid eval for classifiers: Running experiment with dataset: SeaTurtleIDHeads, model: megadescriptor, pooling method: weighted, use_class: False, learning rate: 5e-05, batch size: 16
+2025-01-27 23:58:20,212 - INFO - Training stopped at epoch 36 for config: {'pooling_method': 'weighted', 'use_class': False}.  Validation accuracy: 0.9617940199335548.
+2025-01-27 23:58:20,212 - INFO - Grid eval for classifiers: Running experiment with dataset: SeaTurtleIDHeads, model: megadescriptor, pooling method: weighted, use_class: False, learning rate: 0.0001, batch size: 16
+2025-01-27 23:58:32,546 - INFO - Training stopped at epoch 28 for config: {'pooling_method': 'weighted', 'use_class': False}.  Validation accuracy: 0.9617940199335548.
+2025-01-27 23:58:32,546 - INFO - Grid eval for classifiers: Running experiment with dataset: SeaTurtleIDHeads, model: megadescriptor, pooling method: weighted, use_class: False, learning rate: 0.0002, batch size: 16
+2025-01-27 23:58:42,257 - INFO - Training stopped at epoch 21 for config: {'pooling_method': 'weighted', 'use_class': False}.  Validation accuracy: 0.9593023255813954.
+2025-01-27 23:58:42,257 - INFO - Grid eval for classifiers: Running experiment with dataset: SeaTurtleIDHeads, model: megadescriptor, pooling method: weighted, use_class: False, learning rate: 0.0005, batch size: 16
+2025-01-27 23:58:48,254 - INFO - Training stopped at epoch 11 for config: {'pooling_method': 'weighted', 'use_class': False}.  Validation accuracy: 0.9634551495016611.
+2025-01-27 23:58:48,254 - INFO - Grid eval for classifiers: Running experiment with dataset: SeaTurtleIDHeads, model: megadescriptor, pooling method: weighted, use_class: False, learning rate: 0.001, batch size: 16
+2025-01-27 23:58:51,253 - INFO - Training stopped at epoch 3 for config: {'pooling_method': 'weighted', 'use_class': False}.  Validation accuracy: 0.9642857142857143.
+2025-01-27 23:58:51,253 - INFO - Grid eval for classifiers: Running experiment with dataset: SeaTurtleIDHeads, model: megadescriptor, pooling method: weighted, use_class: False, learning rate: 0.002, batch size: 16
+2025-01-27 23:58:53,873 - INFO - Training stopped at epoch 2 for config: {'pooling_method': 'weighted', 'use_class': False}.  Validation accuracy: 0.9559800664451827.
+2025-01-27 23:58:53,873 - INFO - Grid eval for classifiers: Running experiment with dataset: SeaTurtleIDHeads, model: megadescriptor, pooling method: weighted, use_class: False, learning rate: 0.005, batch size: 16
+2025-01-27 23:58:56,122 - INFO - Training stopped at epoch 1 for config: {'pooling_method': 'weighted', 'use_class': False}.  Validation accuracy: 0.946843853820598.
+2025-01-27 23:58:56,122 - INFO - Grid eval for classifiers: Running experiment with dataset: SeaTurtleIDHeads, model: megadescriptor, pooling method: weighted, use_class: False, learning rate: 0.01, batch size: 16
+2025-01-27 23:58:58,373 - INFO - Training stopped at epoch 1 for config: {'pooling_method': 'weighted', 'use_class': False}.  Validation accuracy: 0.946843853820598.
+2025-01-27 23:58:58,373 - INFO - Grid eval for classifiers: Running experiment with dataset: SeaTurtleIDHeads, model: megadescriptor, pooling method: weighted, use_class: False, learning rate: 0.02, batch size: 16
+2025-01-27 23:59:00,622 - INFO - Training stopped at epoch 1 for config: {'pooling_method': 'weighted', 'use_class': False}.  Validation accuracy: 0.9460132890365448.
+2025-01-27 23:59:00,622 - INFO - Grid eval for classifiers: Running experiment with dataset: SeaTurtleIDHeads, model: megadescriptor, pooling method: weighted, use_class: False, learning rate: 0.05, batch size: 16
+2025-01-27 23:59:02,873 - INFO - Training stopped at epoch 1 for config: {'pooling_method': 'weighted', 'use_class': False}.  Validation accuracy: 0.9277408637873754.
+2025-01-27 23:59:02,873 - INFO - Grid eval for classifiers: Running experiment with dataset: SeaTurtleIDHeads, model: megadescriptor, pooling method: weighted, use_class: False, learning rate: 0.1, batch size: 16
+2025-01-27 23:59:05,107 - INFO - Training stopped at epoch 1 for config: {'pooling_method': 'weighted', 'use_class': False}.  Validation accuracy: 0.9161129568106312.
+2025-01-27 23:59:05,107 - INFO - Grid eval for classifiers: Running experiment with dataset: SeaTurtleIDHeads, model: megadescriptor, pooling method: weighted, use_class: False, learning rate: 1e-05, batch size: 32
+2025-01-27 23:59:15,143 - INFO - Training stopped at epoch 50 for config: {'pooling_method': 'weighted', 'use_class': False}.  Validation accuracy: 0.957641196013289.
+2025-01-27 23:59:15,144 - INFO - Grid eval for classifiers: Running experiment with dataset: SeaTurtleIDHeads, model: megadescriptor, pooling method: weighted, use_class: False, learning rate: 2e-05, batch size: 32
+2025-01-27 23:59:25,344 - INFO - Training stopped at epoch 50 for config: {'pooling_method': 'weighted', 'use_class': False}.  Validation accuracy: 0.9617940199335548.
+2025-01-27 23:59:25,344 - INFO - Grid eval for classifiers: Running experiment with dataset: SeaTurtleIDHeads, model: megadescriptor, pooling method: weighted, use_class: False, learning rate: 5e-05, batch size: 32
+2025-01-27 23:59:35,593 - INFO - Training stopped at epoch 50 for config: {'pooling_method': 'weighted', 'use_class': False}.  Validation accuracy: 0.9626245847176079.
+2025-01-27 23:59:35,593 - INFO - Grid eval for classifiers: Running experiment with dataset: SeaTurtleIDHeads, model: megadescriptor, pooling method: weighted, use_class: False, learning rate: 0.0001, batch size: 32
+2025-01-27 23:59:45,899 - INFO - Training stopped at epoch 48 for config: {'pooling_method': 'weighted', 'use_class': False}.  Validation accuracy: 0.9626245847176079.
+2025-01-27 23:59:45,899 - INFO - Grid eval for classifiers: Running experiment with dataset: SeaTurtleIDHeads, model: megadescriptor, pooling method: weighted, use_class: False, learning rate: 0.0002, batch size: 32
+2025-01-27 23:59:53,755 - INFO - Training stopped at epoch 34 for config: {'pooling_method': 'weighted', 'use_class': False}.  Validation accuracy: 0.9617940199335548.
+2025-01-27 23:59:53,755 - INFO - Grid eval for classifiers: Running experiment with dataset: SeaTurtleIDHeads, model: megadescriptor, pooling method: weighted, use_class: False, learning rate: 0.0005, batch size: 32
+2025-01-27 23:59:58,389 - INFO - Training stopped at epoch 18 for config: {'pooling_method': 'weighted', 'use_class': False}.  Validation accuracy: 0.9617940199335548.
+2025-01-27 23:59:58,389 - INFO - Grid eval for classifiers: Running experiment with dataset: SeaTurtleIDHeads, model: megadescriptor, pooling method: weighted, use_class: False, learning rate: 0.001, batch size: 32
+2025-01-28 00:00:00,789 - INFO - Training stopped at epoch 7 for config: {'pooling_method': 'weighted', 'use_class': False}.  Validation accuracy: 0.9642857142857143.
+2025-01-28 00:00:00,789 - INFO - Grid eval for classifiers: Running experiment with dataset: SeaTurtleIDHeads, model: megadescriptor, pooling method: weighted, use_class: False, learning rate: 0.002, batch size: 32
+2025-01-28 00:00:02,925 - INFO - Training stopped at epoch 6 for config: {'pooling_method': 'weighted', 'use_class': False}.  Validation accuracy: 0.9634551495016611.
+2025-01-28 00:00:02,925 - INFO - Grid eval for classifiers: Running experiment with dataset: SeaTurtleIDHeads, model: megadescriptor, pooling method: weighted, use_class: False, learning rate: 0.005, batch size: 32
+2025-01-28 00:00:04,092 - INFO - Training stopped at epoch 1 for config: {'pooling_method': 'weighted', 'use_class': False}.  Validation accuracy: 0.9509966777408638.
+2025-01-28 00:00:04,092 - INFO - Grid eval for classifiers: Running experiment with dataset: SeaTurtleIDHeads, model: megadescriptor, pooling method: weighted, use_class: False, learning rate: 0.01, batch size: 32
+2025-01-28 00:00:05,258 - INFO - Training stopped at epoch 1 for config: {'pooling_method': 'weighted', 'use_class': False}.  Validation accuracy: 0.9509966777408638.
+2025-01-28 00:00:05,258 - INFO - Grid eval for classifiers: Running experiment with dataset: SeaTurtleIDHeads, model: megadescriptor, pooling method: weighted, use_class: False, learning rate: 0.02, batch size: 32
+2025-01-28 00:00:06,424 - INFO - Training stopped at epoch 1 for config: {'pooling_method': 'weighted', 'use_class': False}.  Validation accuracy: 0.946843853820598.
+2025-01-28 00:00:06,424 - INFO - Grid eval for classifiers: Running experiment with dataset: SeaTurtleIDHeads, model: megadescriptor, pooling method: weighted, use_class: False, learning rate: 0.05, batch size: 32
+2025-01-28 00:00:07,589 - INFO - Training stopped at epoch 1 for config: {'pooling_method': 'weighted', 'use_class': False}.  Validation accuracy: 0.9310631229235881.
+2025-01-28 00:00:07,589 - INFO - Grid eval for classifiers: Running experiment with dataset: SeaTurtleIDHeads, model: megadescriptor, pooling method: weighted, use_class: False, learning rate: 0.1, batch size: 32
+2025-01-28 00:00:08,755 - INFO - Training stopped at epoch 1 for config: {'pooling_method': 'weighted', 'use_class': False}.  Validation accuracy: 0.9169435215946844.
+2025-01-28 00:00:08,755 - INFO - Grid eval for classifiers: Running experiment with dataset: SeaTurtleIDHeads, model: megadescriptor, pooling method: weighted, use_class: False, learning rate: 1e-05, batch size: 64
+2025-01-28 00:00:16,375 - INFO - Training stopped at epoch 50 for config: {'pooling_method': 'weighted', 'use_class': False}.  Validation accuracy: 0.957641196013289.
+2025-01-28 00:00:16,375 - INFO - Grid eval for classifiers: Running experiment with dataset: SeaTurtleIDHeads, model: megadescriptor, pooling method: weighted, use_class: False, learning rate: 2e-05, batch size: 64
+2025-01-28 00:00:23,998 - INFO - Training stopped at epoch 50 for config: {'pooling_method': 'weighted', 'use_class': False}.  Validation accuracy: 0.9601328903654485.
+2025-01-28 00:00:23,998 - INFO - Grid eval for classifiers: Running experiment with dataset: SeaTurtleIDHeads, model: megadescriptor, pooling method: weighted, use_class: False, learning rate: 5e-05, batch size: 64
+2025-01-28 00:00:31,621 - INFO - Training stopped at epoch 50 for config: {'pooling_method': 'weighted', 'use_class': False}.  Validation accuracy: 0.9617940199335548.
+2025-01-28 00:00:31,621 - INFO - Grid eval for classifiers: Running experiment with dataset: SeaTurtleIDHeads, model: megadescriptor, pooling method: weighted, use_class: False, learning rate: 0.0001, batch size: 64
+2025-01-28 00:00:39,247 - INFO - Training stopped at epoch 50 for config: {'pooling_method': 'weighted', 'use_class': False}.  Validation accuracy: 0.9642857142857143.
+2025-01-28 00:00:39,247 - INFO - Grid eval for classifiers: Running experiment with dataset: SeaTurtleIDHeads, model: megadescriptor, pooling method: weighted, use_class: False, learning rate: 0.0002, batch size: 64
+2025-01-28 00:00:46,875 - INFO - Training stopped at epoch 50 for config: {'pooling_method': 'weighted', 'use_class': False}.  Validation accuracy: 0.9626245847176079.
+2025-01-28 00:00:46,875 - INFO - Grid eval for classifiers: Running experiment with dataset: SeaTurtleIDHeads, model: megadescriptor, pooling method: weighted, use_class: False, learning rate: 0.0005, batch size: 64
+2025-01-28 00:00:52,373 - INFO - Training stopped at epoch 31 for config: {'pooling_method': 'weighted', 'use_class': False}.  Validation accuracy: 0.9617940199335548.
+2025-01-28 00:00:52,373 - INFO - Grid eval for classifiers: Running experiment with dataset: SeaTurtleIDHeads, model: megadescriptor, pooling method: weighted, use_class: False, learning rate: 0.001, batch size: 64
+2025-01-28 00:00:55,276 - INFO - Training stopped at epoch 14 for config: {'pooling_method': 'weighted', 'use_class': False}.  Validation accuracy: 0.9609634551495017.
+2025-01-28 00:00:55,276 - INFO - Grid eval for classifiers: Running experiment with dataset: SeaTurtleIDHeads, model: megadescriptor, pooling method: weighted, use_class: False, learning rate: 0.002, batch size: 64
+2025-01-28 00:00:56,652 - INFO - Training stopped at epoch 4 for config: {'pooling_method': 'weighted', 'use_class': False}.  Validation accuracy: 0.9626245847176079.
+2025-01-28 00:00:56,653 - INFO - Grid eval for classifiers: Running experiment with dataset: SeaTurtleIDHeads, model: megadescriptor, pooling method: weighted, use_class: False, learning rate: 0.005, batch size: 64
+2025-01-28 00:00:57,572 - INFO - Training stopped at epoch 1 for config: {'pooling_method': 'weighted', 'use_class': False}.  Validation accuracy: 0.9584717607973422.
+2025-01-28 00:00:57,572 - INFO - Grid eval for classifiers: Running experiment with dataset: SeaTurtleIDHeads, model: megadescriptor, pooling method: weighted, use_class: False, learning rate: 0.01, batch size: 64
+2025-01-28 00:00:58,491 - INFO - Training stopped at epoch 1 for config: {'pooling_method': 'weighted', 'use_class': False}.  Validation accuracy: 0.9568106312292359.
+2025-01-28 00:00:58,491 - INFO - Grid eval for classifiers: Running experiment with dataset: SeaTurtleIDHeads, model: megadescriptor, pooling method: weighted, use_class: False, learning rate: 0.02, batch size: 64
+2025-01-28 00:00:59,411 - INFO - Training stopped at epoch 1 for config: {'pooling_method': 'weighted', 'use_class': False}.  Validation accuracy: 0.9559800664451827.
+2025-01-28 00:00:59,411 - INFO - Grid eval for classifiers: Running experiment with dataset: SeaTurtleIDHeads, model: megadescriptor, pooling method: weighted, use_class: False, learning rate: 0.05, batch size: 64
+2025-01-28 00:01:00,331 - INFO - Training stopped at epoch 1 for config: {'pooling_method': 'weighted', 'use_class': False}.  Validation accuracy: 0.9460132890365448.
+2025-01-28 00:01:00,331 - INFO - Grid eval for classifiers: Running experiment with dataset: SeaTurtleIDHeads, model: megadescriptor, pooling method: weighted, use_class: False, learning rate: 0.1, batch size: 64
+2025-01-28 00:01:01,405 - INFO - Training stopped at epoch 2 for config: {'pooling_method': 'weighted', 'use_class': False}.  Validation accuracy: 0.9285714285714286.
+2025-01-28 00:01:01,405 - INFO - Grid eval for classifiers: Running experiment with dataset: SeaTurtleIDHeads, model: megadescriptor, pooling method: weighted, use_class: False, learning rate: 1e-05, batch size: 128
+2025-01-28 00:01:08,305 - INFO - Training stopped at epoch 50 for config: {'pooling_method': 'weighted', 'use_class': False}.  Validation accuracy: 0.9534883720930233.
+2025-01-28 00:01:08,305 - INFO - Grid eval for classifiers: Running experiment with dataset: SeaTurtleIDHeads, model: megadescriptor, pooling method: weighted, use_class: False, learning rate: 2e-05, batch size: 128
+2025-01-28 00:01:15,200 - INFO - Training stopped at epoch 50 for config: {'pooling_method': 'weighted', 'use_class': False}.  Validation accuracy: 0.9593023255813954.
+2025-01-28 00:01:15,200 - INFO - Grid eval for classifiers: Running experiment with dataset: SeaTurtleIDHeads, model: megadescriptor, pooling method: weighted, use_class: False, learning rate: 5e-05, batch size: 128
+2025-01-28 00:01:22,095 - INFO - Training stopped at epoch 50 for config: {'pooling_method': 'weighted', 'use_class': False}.  Validation accuracy: 0.9634551495016611.
+2025-01-28 00:01:22,095 - INFO - Grid eval for classifiers: Running experiment with dataset: SeaTurtleIDHeads, model: megadescriptor, pooling method: weighted, use_class: False, learning rate: 0.0001, batch size: 128
+2025-01-28 00:01:28,989 - INFO - Training stopped at epoch 50 for config: {'pooling_method': 'weighted', 'use_class': False}.  Validation accuracy: 0.9642857142857143.
+2025-01-28 00:01:28,990 - INFO - Grid eval for classifiers: Running experiment with dataset: SeaTurtleIDHeads, model: megadescriptor, pooling method: weighted, use_class: False, learning rate: 0.0002, batch size: 128
+2025-01-28 00:01:35,883 - INFO - Training stopped at epoch 50 for config: {'pooling_method': 'weighted', 'use_class': False}.  Validation accuracy: 0.9634551495016611.
+2025-01-28 00:01:35,883 - INFO - Grid eval for classifiers: Running experiment with dataset: SeaTurtleIDHeads, model: megadescriptor, pooling method: weighted, use_class: False, learning rate: 0.0005, batch size: 128
+2025-01-28 00:01:42,778 - INFO - Training stopped at epoch 49 for config: {'pooling_method': 'weighted', 'use_class': False}.  Validation accuracy: 0.9634551495016611.
+2025-01-28 00:01:42,778 - INFO - Grid eval for classifiers: Running experiment with dataset: SeaTurtleIDHeads, model: megadescriptor, pooling method: weighted, use_class: False, learning rate: 0.001, batch size: 128
+2025-01-28 00:01:46,779 - INFO - Training stopped at epoch 24 for config: {'pooling_method': 'weighted', 'use_class': False}.  Validation accuracy: 0.9617940199335548.
+2025-01-28 00:01:46,779 - INFO - Grid eval for classifiers: Running experiment with dataset: SeaTurtleIDHeads, model: megadescriptor, pooling method: weighted, use_class: False, learning rate: 0.002, batch size: 128
+2025-01-28 00:01:47,748 - INFO - Training stopped at epoch 2 for config: {'pooling_method': 'weighted', 'use_class': False}.  Validation accuracy: 0.9626245847176079.
+2025-01-28 00:01:47,748 - INFO - Grid eval for classifiers: Running experiment with dataset: SeaTurtleIDHeads, model: megadescriptor, pooling method: weighted, use_class: False, learning rate: 0.005, batch size: 128
+2025-01-28 00:01:48,579 - INFO - Training stopped at epoch 1 for config: {'pooling_method': 'weighted', 'use_class': False}.  Validation accuracy: 0.9609634551495017.
+2025-01-28 00:01:48,579 - INFO - Grid eval for classifiers: Running experiment with dataset: SeaTurtleIDHeads, model: megadescriptor, pooling method: weighted, use_class: False, learning rate: 0.01, batch size: 128
+2025-01-28 00:01:49,411 - INFO - Training stopped at epoch 1 for config: {'pooling_method': 'weighted', 'use_class': False}.  Validation accuracy: 0.9534883720930233.
+2025-01-28 00:01:49,411 - INFO - Grid eval for classifiers: Running experiment with dataset: SeaTurtleIDHeads, model: megadescriptor, pooling method: weighted, use_class: False, learning rate: 0.02, batch size: 128
+2025-01-28 00:01:50,242 - INFO - Training stopped at epoch 1 for config: {'pooling_method': 'weighted', 'use_class': False}.  Validation accuracy: 0.9584717607973422.
+2025-01-28 00:01:50,242 - INFO - Grid eval for classifiers: Running experiment with dataset: SeaTurtleIDHeads, model: megadescriptor, pooling method: weighted, use_class: False, learning rate: 0.05, batch size: 128
+2025-01-28 00:01:51,217 - INFO - Training stopped at epoch 2 for config: {'pooling_method': 'weighted', 'use_class': False}.  Validation accuracy: 0.9518272425249169.
+2025-01-28 00:01:51,217 - INFO - Grid eval for classifiers: Running experiment with dataset: SeaTurtleIDHeads, model: megadescriptor, pooling method: weighted, use_class: False, learning rate: 0.1, batch size: 128
+2025-01-28 00:01:52,049 - INFO - Training stopped at epoch 1 for config: {'pooling_method': 'weighted', 'use_class': False}.  Validation accuracy: 0.9435215946843853.
+2025-01-28 00:01:52,049 - INFO - Best results for dataset SeaTurtleIDHeads and weighted pooling method: {
+    "dataset": "SeaTurtleIDHeads",
+    "pooling_method": "weighted",
+    "batch_size": 8,
+    "learning_rate": 0.0005,
+    "best_epoch": 6,
+    "best_val_acc": 0.9659468438538206
+}
+2025-01-28 01:24:19,572 - INFO - Using device: cuda:0
+2025-01-28 01:24:19,573 - INFO - /home/avisund/data/wildlife_datasets/AmvrakikosTurtles/
+2025-01-28 01:24:19,583 - INFO - Dataset AmvrakikosTurtles loaded successfully
+2025-01-28 01:24:19,588 - INFO - Dataset split successfully
+2025-01-28 01:24:19,591 - INFO - Dataloaders created successfully
+2025-01-28 01:24:21,551 - INFO - Loading pretrained weights from Hugging Face hub (BVRA/MegaDescriptor-L-384)
+2025-01-28 01:24:23,165 - INFO - Feature extractor loaded successfully
+2025-01-28 01:24:47,795 - INFO - Using best params {'batch_size': 128, 'learning_rate': 0.005, 'best_epoch': 3, 'best_val_acc': 0.4074074074074074} for dataset: AmvrakikosTurtles, pooling method: weighted
+2025-01-28 01:24:47,871 - INFO - Running classifier experiment with dataset: AmvrakikosTurtles, model: megadescriptor, pooling method: weighted, use_class: False
+2025-01-28 01:24:47,873 - INFO - Top-1 acc. for config: 0.3111
+2025-01-28 01:24:47,873 - INFO - MSP ROC AUC for config: 0.3900
+2025-01-28 01:24:47,873 - INFO - MLS ROC AUC for config: 0.3722
+2025-01-28 01:24:47,873 - INFO - /home/avisund/data/wildlife_datasets/ReunionTurtles/
+2025-01-28 01:24:47,904 - INFO - Dataset ReunionTurtles loaded successfully
+2025-01-28 01:24:47,912 - INFO - Dataset split successfully
+2025-01-28 01:24:47,915 - INFO - Dataloaders created successfully
+2025-01-28 01:24:49,853 - INFO - Loading pretrained weights from Hugging Face hub (BVRA/MegaDescriptor-L-384)
+2025-01-28 01:24:51,179 - INFO - Feature extractor loaded successfully
+2025-01-28 01:25:07,160 - INFO - Using best params {'batch_size': 32, 'learning_rate': 0.001, 'best_epoch': 50, 'best_val_acc': 0.5111111111111111} for dataset: ReunionTurtles, pooling method: weighted
+2025-01-28 01:25:07,415 - INFO - Running classifier experiment with dataset: ReunionTurtles, model: megadescriptor, pooling method: weighted, use_class: False
+2025-01-28 01:25:07,416 - INFO - Top-1 acc. for config: 0.5600
+2025-01-28 01:25:07,416 - INFO - MSP ROC AUC for config: 0.7304
+2025-01-28 01:25:07,416 - INFO - MLS ROC AUC for config: 0.7030
+2025-01-28 01:25:07,416 - INFO - /home/avisund/data/wildlife_datasets/SouthernProvinceTurtles/
+2025-01-28 01:25:07,421 - INFO - Dataset SouthernProvinceTurtles loaded successfully
+2025-01-28 01:25:07,426 - INFO - Dataset split successfully
+2025-01-28 01:25:07,429 - INFO - Dataloaders created successfully
+2025-01-28 01:25:09,024 - INFO - Loading pretrained weights from Hugging Face hub (BVRA/MegaDescriptor-L-384)
+2025-01-28 01:25:10,086 - INFO - Feature extractor loaded successfully
+2025-01-28 01:25:32,795 - INFO - Using best params {'batch_size': 8, 'learning_rate': 0.0002, 'best_epoch': 50, 'best_val_acc': 0.8133333333333334} for dataset: SouthernProvinceTurtles, pooling method: weighted
+2025-01-28 01:25:34,118 - INFO - Running classifier experiment with dataset: SouthernProvinceTurtles, model: megadescriptor, pooling method: weighted, use_class: False
+2025-01-28 01:25:34,119 - INFO - Top-1 acc. for config: 0.7167
+2025-01-28 01:25:34,119 - INFO - MSP ROC AUC for config: 0.7896
+2025-01-28 01:25:34,119 - INFO - MLS ROC AUC for config: 0.7469
+2025-01-28 01:25:34,120 - INFO - /home/avisund/data/wildlife_datasets/SeaStarReID2023/
+2025-01-28 01:25:34,154 - INFO - Dataset SeaStarReID2023 loaded successfully
+2025-01-28 01:25:34,163 - INFO - Dataset split successfully
+2025-01-28 01:25:34,167 - INFO - Dataloaders created successfully
+2025-01-28 01:25:35,759 - INFO - Loading pretrained weights from Hugging Face hub (BVRA/MegaDescriptor-L-384)
+2025-01-28 01:25:36,652 - INFO - Feature extractor loaded successfully
+2025-01-28 01:28:18,252 - INFO - Using best params {'batch_size': 16, 'learning_rate': 0.02, 'best_epoch': 6, 'best_val_acc': 0.8433048433048433} for dataset: SeaStarReID2023, pooling method: weighted
+2025-01-28 01:28:18,657 - INFO - Running classifier experiment with dataset: SeaStarReID2023, model: megadescriptor, pooling method: weighted, use_class: False
+2025-01-28 01:28:18,658 - INFO - Top-1 acc. for config: 0.7225
+2025-01-28 01:28:18,659 - INFO - MSP ROC AUC for config: 0.7025
+2025-01-28 01:28:18,659 - INFO - MLS ROC AUC for config: 0.6875
+2025-01-28 01:28:18,659 - INFO - /home/avisund/data/wildlife_datasets/SeaTurtleIDHeads/
+2025-01-28 01:28:18,734 - INFO - Dataset SeaTurtleIDHeads loaded successfully
+2025-01-28 01:28:18,774 - INFO - Dataset split successfully
+2025-01-28 01:28:18,781 - INFO - Dataloaders created successfully
+2025-01-28 01:28:20,388 - INFO - Loading pretrained weights from Hugging Face hub (BVRA/MegaDescriptor-L-384)
+2025-01-28 01:28:21,078 - INFO - Feature extractor loaded successfully
+2025-01-28 01:34:30,134 - INFO - Using best params {'batch_size': 8, 'learning_rate': 0.0005, 'best_epoch': 6, 'best_val_acc': 0.9659468438538206} for dataset: SeaTurtleIDHeads, pooling method: weighted
+2025-01-28 01:34:32,726 - INFO - Running classifier experiment with dataset: SeaTurtleIDHeads, model: megadescriptor, pooling method: weighted, use_class: False
+2025-01-28 01:34:32,728 - INFO - Top-1 acc. for config: 0.9417
+2025-01-28 01:34:32,728 - INFO - MSP ROC AUC for config: 0.9430
+2025-01-28 01:34:32,728 - INFO - MLS ROC AUC for config: 0.9189
+2025-01-28 01:34:32,728 - INFO - /home/avisund/data/wildlife_datasets/ZindiTurtleRecall/
+2025-01-28 01:34:32,802 - INFO - Dataset ZindiTurtleRecall loaded successfully
+2025-01-28 01:34:33,023 - INFO - Dataset split successfully
+2025-01-28 01:34:33,034 - INFO - Dataloaders created successfully
+2025-01-28 01:34:34,630 - INFO - Loading pretrained weights from Hugging Face hub (BVRA/MegaDescriptor-L-384)
+2025-01-28 01:34:35,425 - INFO - Feature extractor loaded successfully
+2025-01-28 01:45:19,019 - INFO - Using best params {'batch_size': 8, 'learning_rate': 0.001, 'best_epoch': 3, 'best_val_acc': 0.6858383071079761} for dataset: ZindiTurtleRecall, pooling method: weighted
+2025-01-28 01:45:21,785 - INFO - Running classifier experiment with dataset: ZindiTurtleRecall, model: megadescriptor, pooling method: weighted, use_class: False
+2025-01-28 01:45:21,789 - INFO - Top-1 acc. for config: 0.6710
+2025-01-28 01:45:21,789 - INFO - MSP ROC AUC for config: 0.7395
+2025-01-28 01:45:21,789 - INFO - MLS ROC AUC for config: 0.5995

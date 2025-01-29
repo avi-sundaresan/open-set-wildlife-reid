@@ -205,7 +205,7 @@ class AttentiveClassifier(nn.Module):
 
 class GeMPooler(nn.Module):
     """ GeM Pooling Layer """
-    def __init__(self, p=3.0, eps=1e-6):
+    def __init__(self, p=1.0, eps=1e-6):
         super().__init__()
         self.p = nn.Parameter(torch.ones(1) * p)  # Learnable parameter p
         self.eps = eps  # Small value to prevent division by zero
@@ -220,6 +220,8 @@ class GeMPooler(nn.Module):
         Returns:
             Tensor of shape (B, D), pooled across the spatial dimension.
         """
+        ## what happens when x is negative? 
+        ## clamping to epsilon
         return ((x.clamp(min=self.eps).pow(self.p).mean(dim=1)).pow(1.0 / self.p))
 
 class GeMClassifier(nn.Module):
@@ -273,7 +275,7 @@ class WeightedAveragePooler(nn.Module):
         # 1x1 convolutional layer to predict weights for each patch
         self.weight_predictor = nn.Conv1d(
             in_channels=embed_dim, 
-            out_channels=num_patches, 
+            out_channels=1, # this should be 1 --> outputs (B x N x 1)
             kernel_size=1, 
             stride=1,
             bias=True
@@ -300,15 +302,19 @@ class WeightedAveragePooler(nn.Module):
         combined_embeddings = combined_embeddings.permute(0, 2, 1)
 
         # Predict weights using a 1x1 convolution
-        weights = self.weight_predictor(combined_embeddings)  # Shape: (B, N, N)
+        weights = self.weight_predictor(combined_embeddings)  # Shape: (B, N, 1)
 
-        # Normalize weights across patches
-        weights = self.softmax(weights)  # Shape: (B, N, N)
+        # Squeeze and normalize weights across patches
+        weights = weights.squeeze(1)  # Shape: (B, N)
+        weights = self.softmax(weights)  # Shape: (B, N)
+
+        # Reshape weights for batched matrix multiplication
+        weights = weights.unsqueeze(1)  # Shape: (B, 1, N)
 
         # Compute weighted average of patch embeddings
-        weighted_pooled = torch.bmm(weights, patch_embeddings)  # Shape: (B, N, D)
+        weighted_pooled = torch.bmm(weights, patch_embeddings)  # Shape: (B, 1, D)
 
-        return weighted_pooled.mean(dim=1)  # Final pooled embedding, Shape: (B, D)
+        return weighted_pooled.squeeze(1)  # Final pooled embedding, Shape: (B, D)
 
 class WeightedAverageClassifier(nn.Module):
     """ Weighted Average Classifier """

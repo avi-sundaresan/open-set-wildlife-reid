@@ -164,10 +164,10 @@ BEST_PARAMS = {
             "best_val_acc": 0.9659468438538206
         },
         "weighted": {
-            "batch_size": 128,
-            "learning_rate": 0.01,
-            "best_epoch": 1,
-            "best_val_acc": 0.9667774086378738
+            "batch_size": 8,
+            "learning_rate": 0.0005,
+            "best_epoch": 6,
+            "best_val_acc": 0.9659468438538206
         },
         "gem": {
             "batch_size": 8,
@@ -260,20 +260,6 @@ BEST_PARAMS = {
             "best_val_acc": 1.0
         }
     },
-    "SeaStarReID2023": {
-        "attentive": {
-            "batch_size": 8,
-            "learning_rate": 0.0002,
-            "best_epoch": 7,
-            "best_val_acc": 0.8547008547008547
-        },
-        "linear": {
-            "batch_size": 8,
-            "learning_rate": 0.001,
-            "best_epoch": 38,
-            "best_val_acc": 0.8803418803418803
-        }
-    },
     "ZindiTurtleRecall": {
         "attentive": {
             "batch_size": 8,
@@ -288,10 +274,10 @@ BEST_PARAMS = {
             "best_val_acc": 0.7021161150298426
         },
         "weighted": {
-            "batch_size": 64,
-            "learning_rate": 0.002,
+            "batch_size": 8,
+            "learning_rate": 0.001,
             "best_epoch": 3,
-            "best_val_acc": 0.6885512750949538
+            "best_val_acc": 0.6858383071079761
         },
         "gem": {
             "batch_size": 8,
@@ -328,10 +314,10 @@ BEST_PARAMS = {
             "best_val_acc": 0.886039886039886
         },
         "weighted": {
-            "batch_size": 64,
-            "learning_rate": 0.1,
-            "best_epoch": 13,
-            "best_val_acc": 0.8689458689458689
+            "batch_size": 16,
+            "learning_rate": 0.02,
+            "best_epoch": 6,
+            "best_val_acc": 0.8433048433048433
         },
         "gem": {
             "batch_size": 16,
@@ -354,10 +340,10 @@ BEST_PARAMS = {
             "best_val_acc": 0.4074074074074074
         },
         "weighted": {
-            "batch_size": 8,
-            "learning_rate": 0.0005,
-            "best_epoch": 6,
-            "best_val_acc": 0.37037037037037035
+            "batch_size": 128,
+            "learning_rate": 0.005,
+            "best_epoch": 3,
+            "best_val_acc": 0.4074074074074074
         },
         "gem": {
              "batch_size": 8,
@@ -381,9 +367,9 @@ BEST_PARAMS = {
         },
         "weighted": {
             "batch_size": 32,
-            "learning_rate": 0.0005,
+            "learning_rate": 0.001,
             "best_epoch": 50,
-            "best_val_acc": 0.5333333333333333
+            "best_val_acc": 0.5111111111111111
         },
         "gem": {
             "batch_size": 16,
@@ -406,10 +392,10 @@ BEST_PARAMS = {
             "best_val_acc": 0.8266666666666667
         },
         "weighted": {
-            "batch_size": 64,
-            "learning_rate": 0.001,
-            "best_epoch": 15,
-            "best_val_acc": 0.8266666666666667
+            "batch_size": 8,
+            "learning_rate": 0.0002,
+            "best_epoch": 50,
+            "best_val_acc": 0.8133333333333334
         },
         "gem": {
             "batch_size": 8,
