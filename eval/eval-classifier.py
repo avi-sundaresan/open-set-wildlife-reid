@@ -33,7 +33,9 @@ def load_model(name, device):
         return ModelWithIntermediateLayers(model, n_last_blocks, autocast_ctx).to(device)
     if name == 'megadescriptor':
         model = timm.create_model("hf-hub:BVRA/MegaDescriptor-L-384", pretrained=True)
-        autocast_ctx = partial(torch.cuda.amp.autocast, enabled=True, dtype=torch.float)
+        return ModelWithIntermediateLayersMD(model, autocast_ctx).to(device)
+    if name == 'SwinT':
+        model = timm.create_model('swin_large_patch4_window12_384', num_classes=0, pretrained=True)
         return ModelWithIntermediateLayersMD(model, autocast_ctx).to(device)
     else:
         raise ValueError(f"Unsupported feature extractor: {name}")
@@ -81,7 +83,7 @@ def main():
                 raise ValueError("Invalid configuration: pooling_method='none' and use_class=False is not allowed.")
             
             # Load the best learning rate for the current dataset and pooling method
-            params = BEST_PARAMS[dataset][config['pooling_method']]
+            params = BEST_PARAMS[dataset][args.model][config['pooling_method']]
             best_batch_size = params['batch_size']
             best_lr = params['learning_rate']
             best_epoch = params['best_epoch']

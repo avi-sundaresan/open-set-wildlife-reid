@@ -18,7 +18,7 @@ def get_transformation(model):
             transforms.Resize((224, 224), interpolation=PIL.Image.Resampling.BILINEAR, antialias=True),
             transforms.ToTensor()
         ])
-    elif model == "megadescriptor":
+    elif model == "megadescriptor" or 'SwinT':
         return transforms.Compose([
         transforms.Resize((384, 384), interpolation= PIL.Image.Resampling.BILINEAR, antialias=True),
         transforms.ToTensor(),

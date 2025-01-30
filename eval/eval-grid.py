@@ -37,7 +37,7 @@ def load_model(name, device):
     if name == 'megadescriptor':
         model = timm.create_model("hf-hub:BVRA/MegaDescriptor-L-384", pretrained=True)
         return ModelWithIntermediateLayersMD(model, autocast_ctx).to(device)
-    if name == 'SwinT'
+    if name == 'SwinT':
         model = timm.create_model('swin_large_patch4_window12_384', num_classes=0, pretrained=True)
         return ModelWithIntermediateLayersMD(model, autocast_ctx).to(device)
     else:
