@@ -11,7 +11,7 @@ from wildlife_datasets.datasets.ipanda import IPanda50
 from wildlife_datasets.datasets.mpdd import MPDD
 from wildlife_datasets.datasets.nyala_data import NyalaData
 from wildlife_datasets.datasets.polar_bear_vid_id import PolarBearVidID
-from wildlife_datasets.datasets.sea_turtle_id import SeaTurtleIDHeads
+from wildlife_datasets.datasets.sea_turtle_id import SeaTurtleID2022, SeaTurtleIDHeads
 from wildlife_datasets.datasets.seal_id import SealID
 from wildlife_datasets.datasets.aau_zebrafish import AAUZebraFish
 from wildlife_datasets.datasets.atrw import ATRW
@@ -25,7 +25,7 @@ from wildlife_datasets.datasets.hyena_id import HyenaID2022
 from wildlife_datasets.datasets.leopard_id import LeopardID2022
 from wildlife_datasets.datasets.ndd import NDD20
 from wildlife_datasets.datasets.open_cows import OpenCows2020
-# from wildlife_datasets.datasets.sea_star_reid import SeaStarReID2023
+# from wildlife_datasets.datasets.sea_star_reid import SeaStarReID202
 from wildlife_datasets.datasets.smalst import SMALST
 from wildlife_datasets.datasets.whaleshark_id import WhaleSharkID
 from wildlife_datasets.datasets.zindi_turtle_recall import ZindiTurtleRecall
@@ -35,16 +35,10 @@ from wildlife_datasets.datasets.southern_province_turtles import SouthernProvinc
 from wildlife_datasets.datasets.drosophila import Drosophila
 from wildlife_datasets.datasets.chicks4free_id import Chicks4FreeID
 
-DATASETS = [
-    'AmvrakikosTurtles',
-    'ReunionTurtles',
-    'SouthernProvinceTurtles',
-    'SeaStarReID2023'
-]
+DATASETS = ['SeaTurtleID2022']
 
-
-for dataset in DATASETS:
-    root = '/home/avisund/data/wildlife_datasets/' + dataset + '/'
+for dataset_name in DATASETS:
+    root = '/home/avisund/data/wildlife_datasets/' + dataset_name + '/'
     try:
         if dataset_name == 'AerialCattle2017':
             datasets.AerialCattle2017.get_data(root)
@@ -157,16 +151,19 @@ for dataset in DATASETS:
         elif dataset_name == 'Chicks4FreeID':
             datasets.Chicks4FreeID.get_data(root)
             d = datasets.Chicks4FreeID(root)
+        elif dataset_name == 'SeaTurtleID2022':
+            datasets.SeaTurtleID2022.get_data(root)
+            d = datasets.SeaTurtleID2022(root)
         else:
-            print(f"Dataset {dataset} not recognized.")
+            print(f"Dataset {dataset_name} not recognized.")
     except Exception as e:
-        print(f"Error downloading {dataset}: {e}")
+        print(f"Error downloading {dataset_name}: {e}")
         continue
     try: 
         df = d.df
         splitter = splits.OpenSetSplit(0.8, 0.1)
         split = splitter.split(df)
         idx_train, idx_test = split[0]
-        print(f"Split dataset {dataset} successfully.")
+        print(f"Split dataset {dataset_name} successfully.")
     except Exception as e:
-        print(f"Error with open-set split for dataset {dataset}: {e}")
+        print(f"Error with open-set split for dataset {dataset_name}: {e}")

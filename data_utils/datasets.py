@@ -134,8 +134,8 @@ def prepare_datasets(root, dataset_name):
         datasets.ZindiTurtleRecall.get_data(root)
         d = datasets.ZindiTurtleRecall(root)
     elif dataset_name == 'AmvrakikosTurtles':
-            datasets.AmvrakikosTurtles.get_data(root)
-            d = datasets.AmvrakikosTurtles(root)
+        datasets.AmvrakikosTurtles.get_data(root)
+        d = datasets.AmvrakikosTurtles(root)
     elif dataset_name == 'ReunionTurtles':
         datasets.ReunionTurtles.get_data(root)
         d = datasets.ReunionTurtles(root)
@@ -148,6 +148,9 @@ def prepare_datasets(root, dataset_name):
     elif dataset_name == 'Chicks4FreeID':
         datasets.Chicks4FreeID.get_data(root)
         d = datasets.Chicks4FreeID(root)
+    elif dataset_name == 'SeaTurtleID2022':
+        datasets.SeaTurtleID2022.get_data(root)
+        d = datasets.SeaTurtleID2022(root)
     else:
         raise ValueError(f"Unsupported dataset: {dataset_name}")
     return d

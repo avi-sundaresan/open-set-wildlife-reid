@@ -1,17 +1,13 @@
 import os
 
-MODEL = 'SwinT'
-
-# DATASETS = [
-#     'AmvrakikosTurtles',
-#     'ReunionTurtles',
-#     'SouthernProvinceTurtles',
-#     'SeaStarReID2023',
-#     'SeaTurtleIDHeads',
-#     'ZindiTurtleRecall'
-# ]
+MODEL = 'megadescriptor'
 
 DATASETS = [
+    'AmvrakikosTurtles',
+    'ReunionTurtles',
+    'SouthernProvinceTurtles',
+    'SeaStarReID2023',
+    'SeaTurtleIDHeads',
     'ZindiTurtleRecall'
 ]
 

@@ -92,6 +92,7 @@ def train_val_pooling_classifier(
     batch_size=32,
     patience=5,
     complete_block=False,
+    seed=42
 ):
     # Create the embeddings dataset and dataloader
     train_dataset = EmbeddingsDataset(train_embeddings, train_labels)
