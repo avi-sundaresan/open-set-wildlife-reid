@@ -231,14 +231,19 @@ def train_pooling_classifier(
     learning_rate=1e-5,
     batch_size=32,
     complete_block=False,
+    seed=42
 ):
     """
     Unified training loop for pooling classifiers.
 
     """
+    set_seed(seed) # not explicitly necessary bc no shuffle here
+
     # Create the embeddings dataset and dataloader
     train_dataset = EmbeddingsDataset(train_embeddings, train_labels)
     train_loader = DataLoader(train_dataset, batch_size=batch_size, shuffle=False)
+
+    set_seed(seed) # before model initialization 
 
     # Initialize the classifier based on the model type
     if model_type == "linear":
@@ -264,6 +269,9 @@ def train_pooling_classifier(
 
     # Training loop
     for epoch in tqdm(range(num_epochs)):
+
+        set_seed(seed + epoch) # *consistent* randomness per epoch
+
         classifier.train()
         total_loss = 0.0
         for patch_tokens, class_token, labels in train_loader:

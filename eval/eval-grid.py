@@ -67,8 +67,6 @@ def main():
             # Split dataset
             df, idx_train, idx_test = split_dataset(d)
             logging.info('Dataset split successfully')
-            logging.info(idx_train)
-            logging.info(idx_test)
 
             trainloader, closedtestloader, opentestloader, valloader = create_dataloaders(root, df, idx_train, idx_test, get_transformation(args.model), val=True, batch_size=None)
             logging.info(f'Dataloaders created successfully')

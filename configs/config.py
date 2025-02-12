@@ -2,8 +2,8 @@ import os
 
 # MODEL = 'dinov2_reg'
 # MODEL = 'dinov2'
-# MODEL = 'megadescriptor'
-MODEL = 'SwinT'
+MODEL = 'megadescriptor'
+# MODEL = 'SwinT'
 
 # DATASETS = ['FriesianCattle2015v2', 
 #             'CTai',
@@ -25,14 +25,17 @@ MODEL = 'SwinT'
 #             'ZindiTurtleRecall'
 # ]
 
-DATASETS = [
-    'AmvrakikosTurtles',
-    'ReunionTurtles',
-    'SouthernProvinceTurtles',
-    'SeaStarReID2023',
-    'SeaTurtleIDHeads',
-    'ZindiTurtleRecall'
-]
+# DATASETS = [
+#     'AmvrakikosTurtles',
+#     'ReunionTurtles',
+#     'SouthernProvinceTurtles',
+#     'SeaStarReID2023',
+#     'SeaTurtleIDHeads',
+#     'ZindiTurtleRecall'
+# ]
+
+DATASETS = ['SeaStarReID2023']
+SEEDS = [0, 1, 2, 3, 4]
 
 ROOT_DIR = '/home/avisund/data/wildlife_datasets/'
 CONFIG_PATH = 'configs/md-configs.json'
@@ -170,27 +173,27 @@ BEST_PARAMS = {
     "SeaTurtleIDHeads": {
         "megadescriptor": {
             "attentive": {
-                "batch_size": 8,
-                "learning_rate": 2e-05,
-                "best_epoch": 15,
+                "batch_size": 16,
+                "learning_rate": 0.0002,
+                "best_epoch": 5,
                 "best_val_acc": 0.9642857142857143
             },
             "linear": {
-                "batch_size": 16,
+                "batch_size": 8,
                 "learning_rate": 0.002,
                 "best_epoch": 2,
                 "best_val_acc": 0.9659468438538206
             },
             "weighted": {
-                "batch_size": 8,
+                "batch_size": 32,
                 "learning_rate": 0.0005,
-                "best_epoch": 6,
+                "best_epoch": 20,
                 "best_val_acc": 0.9659468438538206
             },
             "gem": {
                 "batch_size": 8,
-                "learning_rate": 0.0001,
-                "best_epoch": 14,
+                "learning_rate": 1e-05,
+                "best_epoch": 50,
                 "best_val_acc": 0.9651162790697675
             }
         }, 
@@ -390,26 +393,26 @@ BEST_PARAMS = {
     "SeaStarReID2023": {
         "megadescriptor": {
             "attentive": {
-                "batch_size": 8,
+                "batch_size": 16,
                 "learning_rate": 0.0002,
-                "best_epoch": 5,
-                "best_val_acc": 0.8433048433048433
+                "best_epoch": 8,
+                "best_val_acc": 0.8461538461538461
             },
             "linear": {
-                "batch_size": 64,
-                "learning_rate": 0.01,
-                "best_epoch": 26,
-                "best_val_acc": 0.886039886039886
+                "batch_size": 8,
+                "learning_rate": 0.002,
+                "best_epoch": 29,
+                "best_val_acc": 0.8803418803418803
             },
             "weighted": {
-                "batch_size": 16,
-                "learning_rate": 0.02,
-                "best_epoch": 6,
-                "best_val_acc": 0.8433048433048433
+                "batch_size": 8,
+                "learning_rate": 0.001,
+                "best_epoch": 7,
+                "best_val_acc": 0.8461538461538461
             },
             "gem": {
                 "batch_size": 16,
-                "learning_rate": 0.002,
+                "learning_rate": 0.001,
                 "best_epoch": 50,
                 "best_val_acc": 0.8717948717948718
             }

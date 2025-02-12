@@ -7,11 +7,14 @@ from functools import partial
 
 from models import ModelWithIntermediateLayers, ModelWithIntermediateLayersMD
 from data_utils.datasets import prepare_datasets, split_dataset, create_dataloaders
-from configs.config import DATASETS, MODEL, CONFIG_PATH, BEST_PARAMS, get_dataset_root
+from configs.config import DATASETS, MODEL, CONFIG_PATH, BEST_PARAMS, SEEDS, get_dataset_root
 from utils.utils import get_ROC, compute_embeddings, get_transformation, train_pooling_classifier, eval_closed_set, eval_open_set
 
 # Initialize logging
-logging.basicConfig(filename='logs/md-ood-test.log', level=logging.INFO, 
+# logging.basicConfig(filename='logs/md-ood-test.log', level=logging.INFO, 
+#                     format='%(asctime)s - %(levelname)s - %(message)s')
+
+logging.basicConfig(filename='logs/test-seed.log', level=logging.INFO, 
                     format='%(asctime)s - %(levelname)s - %(message)s')
 
 def parse_args():
@@ -19,6 +22,7 @@ def parse_args():
     parser.add_argument('--datasets', type=list, default=DATASETS, help='Datasets to use')
     parser.add_argument('--model', type=str, default=MODEL, help='Feature extractor to use')
     parser.add_argument('--configs', type=str, default=CONFIG_PATH, help='Path to JSON file with list of configurations')
+    parser.add_argument('--seeds', type=list, default=SEEDS, help='Seed to use in train loop')
     return parser.parse_args()
 
 def load_model(name, device):
@@ -81,40 +85,42 @@ def main():
         for config in configs:
             if args.model == 'dinov2' and config['pooling_method'] == 'none' and not config['use_class']:
                 raise ValueError("Invalid configuration: pooling_method='none' and use_class=False is not allowed.")
-            
-            # Load the best learning rate for the current dataset and pooling method
-            params = BEST_PARAMS[dataset][args.model][config['pooling_method']]
-            best_batch_size = params['batch_size']
-            best_lr = params['learning_rate']
-            best_epoch = params['best_epoch']
-            logging.info(f"Using best params {params} for dataset: {dataset}, pooling method: {config['pooling_method']}")
 
-            num_classes = int(max(train_labels).item() + 1)
-            classifier = train_pooling_classifier(
-                train_embeddings,
-                train_labels,
-                use_class=config['use_class'],
-                device=device, 
-                num_classes=num_classes, 
-                learning_rate=best_lr, 
-                num_epochs=best_epoch, 
-                batch_size=best_batch_size
-            )
-            
-            # elif config['pooling_method'] == 'none':
-            #     classifier = train_linear_classifier(train_embeddings, train_labels, use_class=config['use_class'], use_avgpool=False, device=device, num_classes=num_classes, learning_rate=best_lr, num_epochs=best_epoch, batch_size=best_batch_size)
+            for seed in args.seeds: 
+                # Load the best learning rate for the current dataset and pooling method
+                params = BEST_PARAMS[dataset][args.model][config['pooling_method']]
+                best_batch_size = params['batch_size']
+                best_lr = params['learning_rate']
+                best_epoch = params['best_epoch']
+                logging.info(f"Using best params {params} for dataset: {dataset}, pooling method: {config['pooling_method']}")
 
-            closed_top1_acc, closed_msp, closed_mls = eval_closed_set(closed_test_embeddings, closed_test_labels, classifier, best_batch_size)
-            open_msp, open_mls = eval_open_set(open_test_embeddings, open_test_labels, classifier, best_batch_size)
+                num_classes = int(max(train_labels).item() + 1)
+                classifier = train_pooling_classifier(
+                    train_embeddings,
+                    train_labels,
+                    use_class=config['use_class'],
+                    device=device, 
+                    num_classes=num_classes, 
+                    learning_rate=best_lr, 
+                    num_epochs=best_epoch, 
+                    batch_size=best_batch_size, 
+                    seed=seed
+                )
+                
+                # elif config['pooling_method'] == 'none':
+                #     classifier = train_linear_classifier(train_embeddings, train_labels, use_class=config['use_class'], use_avgpool=False, device=device, num_classes=num_classes, learning_rate=best_lr, num_epochs=best_epoch, batch_size=best_batch_size)
 
-            logging.info(f'Running classifier experiment with dataset: {dataset}, model: {args.model}, pooling method: {config["pooling_method"]}, use_class: {config["use_class"]}')
+                closed_top1_acc, closed_msp, closed_mls = eval_closed_set(closed_test_embeddings, closed_test_labels, classifier, best_batch_size)
+                open_msp, open_mls = eval_open_set(open_test_embeddings, open_test_labels, classifier, best_batch_size)
 
-            # Plot ROC curve 
-            msp_roc_auc = get_ROC(closed_msp, open_msp, knn=False)
-            mls_roc_auc = get_ROC(closed_mls, open_mls, knn=False)
-            logging.info(f'Top-1 acc. for config: {closed_top1_acc:.4f}')
-            logging.info(f'MSP ROC AUC for config: {msp_roc_auc:.4f}')  
-            logging.info(f'MLS ROC AUC for config: {mls_roc_auc:.4f}')
+                logging.info(f'Running classifier experiment with dataset: {dataset}, model: {args.model}, pooling method: {config["pooling_method"]}, use_class: {config["use_class"]}, seed: {seed}')
+
+                # Plot ROC curve 
+                msp_roc_auc = get_ROC(closed_msp, open_msp, knn=False)
+                mls_roc_auc = get_ROC(closed_mls, open_mls, knn=False)
+                logging.info(f'Top-1 acc. for config: {closed_top1_acc:.4f}')
+                logging.info(f'MSP ROC AUC for config: {msp_roc_auc:.4f}')  
+                logging.info(f'MLS ROC AUC for config: {mls_roc_auc:.4f}')
 
 if __name__ == '__main__':
     main()
