@@ -1,8 +1,8 @@
 [   
     {
-    "pooling_method": "linear",
-    "use_class": false
-    },
+        "pooling_method": "linear",
+        "use_class": false
+    }, 
     {
         "pooling_method": "gem",
         "use_class": false

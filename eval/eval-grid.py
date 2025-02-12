@@ -12,7 +12,7 @@ from configs.config_grid import DATASETS, MODEL, BATCH_SIZE, CONFIG_PATH, LEARNI
 from utils.utils import get_ROC, compute_embeddings, get_transformation, train_val_pooling_classifier, eval_closed_set, eval_open_set
 
 # Initialize logging
-logging.basicConfig(filename='logs/md-ood-test.log', level=logging.INFO, 
+logging.basicConfig(filename='logs/test-seed.log', level=logging.INFO, 
                     format='%(asctime)s - %(levelname)s - %(message)s')
 
 def parse_args():
@@ -67,6 +67,8 @@ def main():
             # Split dataset
             df, idx_train, idx_test = split_dataset(d)
             logging.info('Dataset split successfully')
+            logging.info(idx_train)
+            logging.info(idx_test)
 
             trainloader, closedtestloader, opentestloader, valloader = create_dataloaders(root, df, idx_train, idx_test, get_transformation(args.model), val=True, batch_size=None)
             logging.info(f'Dataloaders created successfully')

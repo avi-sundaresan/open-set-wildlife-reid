@@ -11,6 +11,16 @@ from tqdm import tqdm
 from torch.utils.data import DataLoader
 from models import create_linear_input, LinearClassifier, AttentiveClassifier, GeMClassifier, WeightedAverageClassifier
 from data_utils.datasets import EmbeddingsDataset
+import random
+
+def set_seed(seed=42):
+    """Set all necessary seeds for full reproducibility."""
+    random.seed(seed)  # Python RNG
+    np.random.seed(seed)  # NumPy RNG
+    torch.manual_seed(seed)  # PyTorch CPU RNG
+    torch.cuda.manual_seed_all(seed)  # PyTorch GPU RNG
+    torch.backends.cudnn.deterministic = True  # Ensures deterministic behavior
+    torch.backends.cudnn.benchmark = False  # Disables auto-optimization for reproducibility
 
 def get_transformation(model):
     if model == 'dinov2' or model == 'dinov2_reg':
@@ -94,12 +104,16 @@ def train_val_pooling_classifier(
     complete_block=False,
     seed=42
 ):
+    set_seed(seed) # not explicitly necessary bc no shuffle here
+
     # Create the embeddings dataset and dataloader
     train_dataset = EmbeddingsDataset(train_embeddings, train_labels)
     train_loader = DataLoader(train_dataset, batch_size=batch_size, shuffle=False)
 
     val_dataset = EmbeddingsDataset(val_embeddings, val_labels)
     val_loader = DataLoader(val_dataset, batch_size=batch_size, shuffle=False)
+
+    set_seed(seed) # before model initialization 
 
     # Initialize the classifier based on the model type
     if model_type == "linear":
@@ -134,6 +148,8 @@ def train_val_pooling_classifier(
         if early_stop:
             break
 
+        set_seed(seed + epoch) # *consistent* randomness per epoch
+
         classifier.train()
         total_loss = 0.0
         for patch_tokens, class_token, labels in train_loader:
@@ -154,7 +170,7 @@ def train_val_pooling_classifier(
             total_loss += loss.item()
 
         avg_loss = total_loss / len(train_loader)
-        print(f"Epoch [{epoch+1}/{num_epochs}], Loss: {avg_loss:.4f}")
+        # print(f"Epoch [{epoch+1}/{num_epochs}], Loss: {avg_loss:.4f}")
 
         # Evaluate on validation set
         classifier.eval()
@@ -178,7 +194,7 @@ def train_val_pooling_classifier(
         avg_val_loss = total_val_loss / len(val_loader)
         val_acc = correct / total
 
-        print(f"Validation Loss: {avg_val_loss:.4f}, Validation Accuracy: {val_acc:.4f}")
+        # print(f"Validation Loss: {avg_val_loss:.4f}, Validation Accuracy: {val_acc:.4f}")
 
         # Track the best validation accuracy
         if val_acc > best_val_acc:

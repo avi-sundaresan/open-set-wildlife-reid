@@ -194,7 +194,7 @@ def create_dataloaders(root, df, idx_train, idx_test, transformation, batch_size
             full_train_paths, train_labels, test_size=0.2, random_state=42
         )
         val_dataset = CustomDataset(val_paths, val_labels, transformation)
-        valloader = torch.utils.data.DataLoader(val_dataset, batch_size=batch_size, shuffle=True)
+        valloader = torch.utils.data.DataLoader(val_dataset, batch_size=batch_size, shuffle=False)
     else:
         valloader = None
 
@@ -202,8 +202,8 @@ def create_dataloaders(root, df, idx_train, idx_test, transformation, batch_size
     closed_test_dataset = CustomDataset(full_closed_test_paths, closed_test_labels, transformation)
     open_test_dataset = CustomDataset(full_open_test_paths, open_test_labels, transformation)
 
-    trainloader = torch.utils.data.DataLoader(train_dataset, batch_size=batch_size, shuffle=True)
-    closedtestloader = torch.utils.data.DataLoader(closed_test_dataset, batch_size=batch_size, shuffle=True)
-    opentestloader = torch.utils.data.DataLoader(open_test_dataset, batch_size=batch_size, shuffle=True)
+    trainloader = torch.utils.data.DataLoader(train_dataset, batch_size=batch_size, shuffle=False)
+    closedtestloader = torch.utils.data.DataLoader(closed_test_dataset, batch_size=batch_size, shuffle=False)
+    opentestloader = torch.utils.data.DataLoader(open_test_dataset, batch_size=batch_size, shuffle=False)
 
     return trainloader, closedtestloader, opentestloader, valloader
