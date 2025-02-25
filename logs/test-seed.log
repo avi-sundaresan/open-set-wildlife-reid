@@ -915,3 +915,15 @@
 2025-02-11 20:50:11,243 - INFO - Dataloaders created successfully
 2025-02-11 20:50:13,534 - INFO - Loading pretrained weights from Hugging Face hub (BVRA/MegaDescriptor-L-384)
 2025-02-11 20:50:15,279 - INFO - Feature extractor loaded successfully
+2025-02-11 23:07:34,421 - INFO - Using device: cuda:0
+2025-02-11 23:07:34,421 - INFO - /home/avisund/data/wildlife_datasets/SeaTurtleIDHeads/
+2025-02-11 23:07:34,502 - INFO - Dataset SeaTurtleIDHeads loaded successfully
+2025-02-11 23:07:34,542 - INFO - Dataset split successfully
+2025-02-11 23:07:34,549 - INFO - Dataloaders created successfully
+2025-02-11 23:07:36,937 - INFO - Loading pretrained weights from Hugging Face hub (BVRA/MegaDescriptor-L-384)
+2025-02-11 23:08:11,329 - INFO - Using device: cuda:0
+2025-02-11 23:08:11,330 - INFO - /home/avisund/data/wildlife_datasets/FriesianCattle2015v2/
+2025-02-11 23:08:11,340 - INFO - Dataset FriesianCattle2015v2 loaded successfully
+2025-02-11 23:08:11,343 - INFO - Dataset split successfully
+2025-02-11 23:08:11,346 - INFO - Dataloaders created successfully
+2025-02-11 23:08:13,529 - INFO - Loading pretrained weights from Hugging Face hub (BVRA/MegaDescriptor-L-384)

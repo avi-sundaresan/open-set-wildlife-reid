@@ -34,8 +34,8 @@ MODEL = 'megadescriptor'
 #     'ZindiTurtleRecall'
 # ]
 
-DATASETS = ['SeaStarReID2023']
-SEEDS = [0, 1, 2, 3, 4]
+DATASETS = ['FriesianCattle2015v2']
+SEEDS = [42]
 
 ROOT_DIR = '/home/avisund/data/wildlife_datasets/'
 CONFIG_PATH = 'configs/md-configs.json'
